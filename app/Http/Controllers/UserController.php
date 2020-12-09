@@ -54,6 +54,8 @@ class UserController extends Controller
 
     return view('others.feedback');
 
+  }
+
   public function viewChangePassword()
   {
       return view('user.change-password');
