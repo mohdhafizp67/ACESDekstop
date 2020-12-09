@@ -10,13 +10,13 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h2 class="pageheader-title">ACES Academy Student Dashboard</h2>
-
+                            <h2 class="pageheader-title">E-commerce Dashboard Template </h2>
+                            <p class="pageheader-text">Nulla euismod urna eros, sit amet scelerisque torton lectus vel mauris facilisis faucibus at enim quis massa lobortis rutrum.</p>
                             <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Student Dashboard</li>
+                                        <li class="breadcrumb-item active" aria-current="page">E-Commerce Dashboard Template</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -32,12 +32,12 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="text-muted">Lessons</h5>
+                                    <h5 class="text-muted">Total Revenue</h5>
                                     <div class="metric-value d-inline-block">
-                                        <h1 class="mb-1">10</h1>
+                                        <h1 class="mb-1">$12099</h1>
                                     </div>
                                     <div class="metric-label d-inline-block float-right text-success font-weight-bold">
-                                        <span><i class="fa fa-fw fa-arrow-up"></i></span><span>2.15%</span>
+                                        <span><i class="fa fa-fw fa-arrow-up"></i></span><span>5.86%</span>
                                     </div>
                                 </div>
                                 <div id="sparkline-revenue"></div>
@@ -46,9 +46,9 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="text-muted">Quiz</h5>
+                                    <h5 class="text-muted">Affiliate Revenue</h5>
                                     <div class="metric-value d-inline-block">
-                                        <h1 class="mb-1">20</h1>
+                                        <h1 class="mb-1">$12099</h1>
                                     </div>
                                     <div class="metric-label d-inline-block float-right text-success font-weight-bold">
                                         <span><i class="fa fa-fw fa-arrow-up"></i></span><span>5.86%</span>
@@ -60,7 +60,7 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="text-muted">Total Assesment</h5>
+                                    <h5 class="text-muted">Refunds</h5>
                                     <div class="metric-value d-inline-block">
                                         <h1 class="mb-1">0.00</h1>
                                     </div>
@@ -74,12 +74,12 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="text-muted">Average</h5>
+                                    <h5 class="text-muted">Avg. Revenue Per User</h5>
                                     <div class="metric-value d-inline-block">
-                                        <h1 class="mb-1">0</h1>
+                                        <h1 class="mb-1">$28000</h1>
                                     </div>
                                     <div class="metric-label d-inline-block float-right text-secondary font-weight-bold">
-                                        <span>N/A%</span>
+                                        <span>-2.00%</span>
                                     </div>
                                 </div>
                                 <div id="sparkline-revenue4"></div>
@@ -93,85 +93,87 @@
 
                                       <!-- recent orders  -->
                         <!-- ============================================================== -->
-
-                        <div class="col-md-12">
-                          <div class="card">
-                              <h5 class="card-header">LeaderBoard</h5>
-                              <div class="card-body p-5">
-                                  <div class="table-responsive">
-                                      <table class="table">
-                                          <thead class="bg-light">
-                                              <tr class="border-0">
-                                                  <th class="border-0">Ranking</th>
-                                                  <th class="border-0">Profile</th>
-                                                  <th class="border-0">Name</th>
-                                                  <th class="border-0">Point</th>
-                                                  <th class="border-0">Duration</th>
-                                                  <th class="border-00">Progress</th>
-                                              </tr>
-                                          </thead>
-                                          <tbody>
-                                              <tr>
-                                                  <td>1</td>
-                                                  <td>
-                                                      <div class="m-r-10"><img src="{{ asset('concept/images/product-pic.jpg') }}" alt="user" class="rounded" width="45"></div>
-                                                  </td>
-                                                  <td>Syahdan </td>
-                                                  <td>5000</td>
-                                                  <td>0.58.15</td>
-                                                  <td><div class="w3-light-grey w3-round">
-                                                    <div class="w3-container w3-blue w3-round" style="width:50%">75%</div>
-                                                  </div></td>
-                                              </tr>
-                                              <tr>
-                                                  <td>2</td>
-                                                  <td>
-                                                      <div class="m-r-10"><img src="{{ asset('concept/images/product-pic.jpg') }}" alt="user" class="rounded" width="45"></div>
-                                                  </td>
-                                                  <td>Amirul </td>
-                                                  <td>4500</td>
-                                                  <td>1.08.15</td>
-                                                  <td><div class="w3-light-grey w3-round">
-                                                    <div class="w3-container w3-blue w3-round" style="width:50%">50%</div>
-                                                  </div></td>
-                                              </tr>
-                                              <tr>
-                                                  <td>3</td>
-                                                  <td>
-                                                      <div class="m-r-10"><img src="{{ asset('concept/images/product-pic.jpg') }}" alt="user" class="rounded" width="45"></div>
-                                                  </td>
-                                                  <td>Umar</td>
-                                                  <td>3000</td>
-                                                  <td>1.38.15</td>
-                                                  <td><div class="w3-light-grey w3-round">
-                                                    <div class="w3-container w3-blue w3-round" style="width:50%">25%</div>
-                                                  </div></td>
-                                              </tr>
-                                              <tr>
-                                                  <td>4</td>
-                                                  <td>
-                                                      <div class="m-r-10"><img src="{{ asset('concept/images/product-pic.jpg') }}" alt="user" class="rounded" width="45"></div>
-                                                  </td>
-                                                  <td>Hafiz</td>
-                                                  <td>2500</td>
-                                                  <td>1.50.15</td>
-                                                  <td><div class="w3-light-grey w3-round">
-                                                    <div class="w3-container w3-blue w3-round" style="width:50%">15%</div>
-                                                  </div></td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="9"><a href="#" class="btn btn-outline-light float-right">View Details</a></td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </div>
-                              </div>
-                          </div>
-
+                        <div class="col-xl-9 col-lg-12 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <h5 class="card-header">Recent Orders</h5>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class="bg-light">
+                                                <tr class="border-0">
+                                                    <th class="border-0">#</th>
+                                                    <th class="border-0">Image</th>
+                                                    <th class="border-0">Product Name</th>
+                                                    <th class="border-0">Product Id</th>
+                                                    <th class="border-0">Quantity</th>
+                                                    <th class="border-0">Price</th>
+                                                    <th class="border-0">Order Time</th>
+                                                    <th class="border-0">Customer</th>
+                                                    <th class="border-0">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <div class="m-r-10"><img src="assets/images/product-pic.jpg" alt="user" class="rounded" width="45"></div>
+                                                    </td>
+                                                    <td>Product #1 </td>
+                                                    <td>id000001 </td>
+                                                    <td>20</td>
+                                                    <td>$80.00</td>
+                                                    <td>27-08-2018 01:22:12</td>
+                                                    <td>Patricia J. King </td>
+                                                    <td><span class="badge-dot badge-brand mr-1"></span>InTransit </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>
+                                                        <div class="m-r-10"><img src="assets/images/product-pic-2.jpg" alt="user" class="rounded" width="45"></div>
+                                                    </td>
+                                                    <td>Product #2 </td>
+                                                    <td>id000002 </td>
+                                                    <td>12</td>
+                                                    <td>$180.00</td>
+                                                    <td>25-08-2018 21:12:56</td>
+                                                    <td>Rachel J. Wicker </td>
+                                                    <td><span class="badge-dot badge-success mr-1"></span>Delivered </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <div class="m-r-10"><img src="assets/images/product-pic-3.jpg" alt="user" class="rounded" width="45"></div>
+                                                    </td>
+                                                    <td>Product #3 </td>
+                                                    <td>id000003 </td>
+                                                    <td>23</td>
+                                                    <td>$820.00</td>
+                                                    <td>24-08-2018 14:12:77</td>
+                                                    <td>Michael K. Ledford </td>
+                                                    <td><span class="badge-dot badge-success mr-1"></span>Delivered </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>
+                                                        <div class="m-r-10"><img src="assets/images/product-pic-4.jpg" alt="user" class="rounded" width="45"></div>
+                                                    </td>
+                                                    <td>Product #4 </td>
+                                                    <td>id000004 </td>
+                                                    <td>34</td>
+                                                    <td>$340.00</td>
+                                                    <td>23-08-2018 09:12:35</td>
+                                                    <td>Michael K. Ledford </td>
+                                                    <td><span class="badge-dot badge-success mr-1"></span>Delivered </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="9"><a href="#" class="btn btn-outline-light float-right">View Details</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!-- <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-12"> -->
-
-                        <!-- </div> -->
                         <!-- ============================================================== -->
                         <!-- end recent orders  -->
 
@@ -180,7 +182,7 @@
                         <!-- ============================================================== -->
                         <!-- customer acquistion  -->
                         <!-- ============================================================== -->
-                        <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <h5 class="card-header">Customer Acquisition</h5>
                                 <div class="card-body">
@@ -198,7 +200,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- ============================================================== -->
                         <!-- end customer acquistion  -->
                         <!-- ============================================================== -->
@@ -207,7 +209,7 @@
                         <!-- ============================================================== -->
                                           <!-- product category  -->
                         <!-- ============================================================== -->
-                        <!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <h5 class="card-header"> Product Category</h5>
                                 <div class="card-body">
@@ -227,12 +229,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- ============================================================== -->
                         <!-- end product category  -->
                                <!-- product sales  -->
                         <!-- ============================================================== -->
-                        <!-- <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="card">
                                 <div class="card-header">
                                     <!-- <div class="float-right">
@@ -243,21 +245,21 @@
                                                 <option value="3">Yearly</option>
                                             </select>
                                         </div> -->
-                                    <!-- <h5 class="mb-0"> Product Sales</h5>
+                                    <h5 class="mb-0"> Product Sales</h5>
                                 </div>
                                 <div class="card-body">
                                     <div class="ct-chart-product ct-golden-section"></div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- ============================================================== -->
                         <!-- end product sales  -->
                         <!-- ============================================================== -->
-                        <!-- <div class="col-xl-3 col-lg-12 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-3 col-lg-12 col-md-6 col-sm-12 col-12">
                             <!-- ============================================================== -->
                             <!-- top perfomimg  -->
                             <!-- ============================================================== -->
-                            <!-- <div class="card">
+                            <div class="card">
                                 <h5 class="card-header">Top Performing Campaigns</h5>
                                 <div class="card-body p-0">
                                     <div class="table-responsive">
@@ -309,18 +311,18 @@
                                         </table>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
                             <!-- ============================================================== -->
                             <!-- end top perfomimg  -->
                             <!-- ============================================================== -->
-                        <!-- </div> -->
+                        </div>
                     </div>
 
                     <div class="row">
                         <!-- ============================================================== -->
                         <!-- sales  -->
                         <!-- ============================================================== -->
-                        <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="card border-3 border-top border-top-primary">
                                 <div class="card-body">
                                     <h5 class="text-muted">Sales</h5>
@@ -332,14 +334,14 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- ============================================================== -->
                         <!-- end sales  -->
                         <!-- ============================================================== -->
                         <!-- ============================================================== -->
                         <!-- new customer  -->
                         <!-- ============================================================== -->
-                        <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="card border-3 border-top border-top-primary">
                                 <div class="card-body">
                                     <h5 class="text-muted">New Customer</h5>
@@ -351,14 +353,14 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- ============================================================== -->
                         <!-- end new customer  -->
                         <!-- ============================================================== -->
                         <!-- ============================================================== -->
                         <!-- visitor  -->
                         <!-- ============================================================== -->
-                        <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="card border-3 border-top border-top-primary">
                                 <div class="card-body">
                                     <h5 class="text-muted">Visitor</h5>
@@ -370,14 +372,14 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- ============================================================== -->
                         <!-- end visitor  -->
                         <!-- ============================================================== -->
                         <!-- ============================================================== -->
                         <!-- total orders  -->
                         <!-- ============================================================== -->
-                        <!-- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="card border-3 border-top border-top-primary">
                                 <div class="card-body">
                                     <h5 class="text-muted">Total Orders</h5>
@@ -389,7 +391,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- ============================================================== -->
                         <!-- end total orders  -->
                         <!-- ============================================================== -->
@@ -406,9 +408,9 @@
                         <!-- ============================================================== -->
                         <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
                             <div class="card">
-                                <h5 class="card-header">Total Pass/Fail Quiz</h5>
+                                <h5 class="card-header">Revenue by Category</h5>
                                 <div class="card-body">
-                                    <div id="c3chart_category" style="height: 410px;"></div>
+                                    <div id="c3chart_category" style="height: 420px;"></div>
                                 </div>
                             </div>
                         </div>
@@ -416,14 +418,14 @@
                         <!-- end category revenue  -->
                         <!-- ============================================================== -->
 
-                        <div class="col-xl-7 col-lg-9 col-md-12 col-sm-15 col-15">
+                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
                             <div class="card">
-                                <h5 class="card-header">Total Score Quiz</h5>
+                                <h5 class="card-header"> Total Revenue</h5>
                                 <div class="card-body">
                                     <div id="morris_totalrevenue"></div>
                                 </div>
                                 <div class="card-footer">
-                                    <p class="display-7 font-weight-bold"><span class="text-primary d-inline-block">5000</span><span class="text-success float-right">+9.45%</span></p>
+                                    <p class="display-7 font-weight-bold"><span class="text-primary d-inline-block">$26,000</span><span class="text-success float-right">+9.45%</span></p>
                                 </div>
                             </div>
                         </div>
@@ -433,7 +435,7 @@
                             <!-- ============================================================== -->
                             <!-- social source  -->
                             <!-- ============================================================== -->
-                            <!-- <div class="card">
+                            <div class="card">
                                 <h5 class="card-header"> Sales By Social Source</h5>
                                 <div class="card-body p-0">
                                     <ul class="social-sales list-group list-group-flush">
@@ -452,7 +454,7 @@
                                 <div class="card-footer text-center">
                                     <a href="#" class="btn-primary-link">View Details</a>
                                 </div>
-                            </div> -->
+                            </div>
                             <!-- ============================================================== -->
                             <!-- end social source  -->
                             <!-- ============================================================== -->
@@ -461,7 +463,7 @@
                             <!-- ============================================================== -->
                             <!-- sales traffice source  -->
                             <!-- ============================================================== -->
-                            <!-- <div class="card">
+                            <div class="card">
                                 <h5 class="card-header"> Sales By Traffic Source</h5>
                                 <div class="card-body p-0">
                                     <ul class="traffic-sales list-group list-group-flush">
@@ -484,7 +486,7 @@
                                 <div class="card-footer text-center">
                                     <a href="#" class="btn-primary-link">View Details</a>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                         <!-- ============================================================== -->
                         <!-- end sales traffice source  -->
@@ -492,7 +494,7 @@
                         <!-- ============================================================== -->
                         <!-- sales traffic country source  -->
                         <!-- ============================================================== -->
-                        <!-- <div class="col-xl-3 col-lg-12 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-3 col-lg-12 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <h5 class="card-header">Sales By Country Traffic Source</h5>
                                 <div class="card-body p-0">
@@ -514,7 +516,7 @@
                                     <a href="#" class="btn-primary-link">View Details</a>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- ============================================================== -->
                         <!-- end sales traffice country source  -->
                         <!-- ============================================================== -->
