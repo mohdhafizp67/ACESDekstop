@@ -22,6 +22,14 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'alamat',
+        'poskod',
+        'negeri',
+        'ic_number',
+        'is_admin',
+        'is_active',
+        'is_student',
+        'is_ecerdb_personnel',
     ];
 
     /**
