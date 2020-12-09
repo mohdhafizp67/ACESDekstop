@@ -49,11 +49,16 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ]);
+      return Validator::make($data, [
+          'name' => ['required', 'string', 'max:255'],
+          'ic_number' => ['required', 'string', 'max:12', 'min:12','unique:users'],
+          'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+          'phone' => ['required', 'string', 'max:11', 'min:10'],
+          'address' => ['required', 'string'],
+          'postcode' => ['required', 'string', 'max:5', 'min:5'],
+          'state' => ['required', 'string'],
+          'password' => ['required', 'string', 'min:8', 'confirmed'],
+      ]);
     }
 
     /**
@@ -66,8 +71,15 @@ class RegisterController extends Controller
     {
         return User::create([
             'name' => $data['name'],
+            'ic_number' => $data['ic_number'],
             'email' => $data['email'],
+            'phone' => $data['phone'],
+            'alamat' => $data['address'],
+            'poskod' => $data['postcode'],
+            'negeri' => $data['state'],
             'password' => Hash::make($data['password']),
+            'is_active' => 1,
+            'is_student' => 1,
         ]);
     }
 }
