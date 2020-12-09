@@ -8,6 +8,6 @@ class LeaderboardController extends Controller
 {
   public function viewLeaderboard()
   {
-      return view('leaderboard');
+      return view('activities.leaderboard');
   }
 }
