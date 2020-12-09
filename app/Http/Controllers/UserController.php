@@ -42,16 +42,21 @@ class UserController extends Controller
 }
 
   public function updateprofil(Request $request,$id){
-    // dd(request()->all());
     $this->validator(request()->all())->validate();
-    // dd(request()->all());
     $user = User::find($id);
     $this->update($id);
     return redirect()->route('home');
   }
 
+
+  public function feedback()
+  {
+
+    return view('others.feedback');
+
   public function viewChangePassword()
   {
       return view('user.change-password');
+
   }
 }

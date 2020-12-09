@@ -194,7 +194,7 @@
                                       Others
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i>  Feedback</a>
+                                    <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>  Feedback</a>
                                   </li>
                                   <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>

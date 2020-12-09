@@ -25,6 +25,14 @@ Route::get('/profile/edit', [App\Http\Controllers\UserController::class, 'editPr
 
 Route::post('/profile/update/id={id}', [App\Http\Controllers\UserController::class, 'updateprofil'])->name('user.update');
 
+
+
+Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('leaderboard');
+
+
+Route::get('/feedback', [App\Http\Controllers\UserController::class, 'feedback'])->name('others.feedback');
+
 Route::get('/profile/change-password', [App\Http\Controllers\UserController::class, 'viewChangePassword'])->name('user.change-password');
 
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('activities.leaderboard');
+
