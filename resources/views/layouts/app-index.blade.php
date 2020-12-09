@@ -142,7 +142,7 @@
                                           <span class="status"></span><span class="ml-2">Student</span>
                                       </div>
                                       <a class="dropdown-item" href="{{route('user.profile.edit')}}"><i class="fas fa-user mr-2"></i>Profile</a>
-                                      <a class="dropdown-item" href="#"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
+                                      <a class="dropdown-item" href="{{ route('user.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
                                       <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                       <i class="fas fa-power-off mr-2"></i>Logout</a>
                                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -188,7 +188,10 @@
                                     <a class="nav-link" href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>Games</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>  Leaderboard</a>
+                                    <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>  Leaderboard</a>
+                                  </li>
+                                  <li class="nav-divider">
+                                      Others
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>  Feedback</a>

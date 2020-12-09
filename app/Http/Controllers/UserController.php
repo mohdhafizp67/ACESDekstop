@@ -48,9 +48,15 @@ class UserController extends Controller
     return redirect()->route('home');
   }
 
+
   public function feedback()
   {
 
     return view('others.feedback');
+
+  public function viewChangePassword()
+  {
+      return view('user.change-password');
+
   }
 }
