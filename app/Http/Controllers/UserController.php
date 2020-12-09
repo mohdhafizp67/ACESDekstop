@@ -49,4 +49,9 @@ class UserController extends Controller
     $this->update($id);
     return redirect()->route('home');
   }
+
+  public function viewChangePassword()
+  {
+      return view('user.change-password');
+  }
 }
