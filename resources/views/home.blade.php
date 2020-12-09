@@ -93,6 +93,7 @@
 
                                       <!-- recent orders  -->
                         <!-- ============================================================== -->
+
                         <div class="col-md-12">
                           <div class="card">
                               <h5 class="card-header">LeaderBoard</h5>
@@ -166,6 +167,7 @@
                                   </div>
                               </div>
                           </div>
+
                         </div>
                         <!-- <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-12"> -->
 

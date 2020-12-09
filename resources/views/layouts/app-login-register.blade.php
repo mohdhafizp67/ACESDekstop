@@ -15,8 +15,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <script src="{{ asset('concept/vendor/jquery/jquery-3.3.1.min.js ') }}"></script>
-    <script src="{{ asset('concept/vendor/bootstrap/js/bootstrap.bundle.js ') }}"></script>
+    <script src="{{ asset('concept/vendor/jquery/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ asset('concept/vendor/bootstrap/js/bootstrap.bundle.js') }}"></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

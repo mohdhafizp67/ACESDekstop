@@ -17,9 +17,11 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 
 
     <link rel="stylesheet" href="{{ asset('concept/vendor/bootstrap/css/bootstrap.min.css') }}">
@@ -33,6 +35,10 @@
     <link rel="stylesheet" href="{{ asset('concept/vendor/charts/c3charts/c3.css') }}">
     <link rel="stylesheet" href="{{ asset('concept/vendor/fonts/flag-icon-css/flag-icon.min.css') }} ">
 
+    <!-- Icon Size -->
+    <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+
 </head>
 <body>
     <div id="app">
@@ -43,18 +49,18 @@
               <!-- ============================================================== -->
               <div class="dashboard-header">
                   <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                      <a class="navbar-brand" href="index.html">Concept</a>
+                      <a class="navbar-brand" href="{{ route('home') }}">ACES</a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse " id="navbarSupportedContent">
                           <ul class="navbar-nav ml-auto navbar-right-top">
-                              <li class="nav-item">
+                              <!-- <li class="nav-item">
                                   <div id="custom-search" class="top-search-bar">
                                       <input class="form-control" type="text" placeholder="Search..">
                                   </div>
-                              </li>
-                              <li class="nav-item dropdown notification">
+                              </li> -->
+                              <!-- <li class="nav-item dropdown notification">
                                   <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
                                   <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
                                       <li>
@@ -63,7 +69,7 @@
                                               <div class="list-group">
                                                   <a href="#" class="list-group-item list-group-item-action active">
                                                       <div class="notification-info">
-                                                          <div class="notification-list-user-img"><img src="assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
                                                           <div class="notification-list-user-block"><span class="notification-list-user-name">Jeremy Rakestraw</span>accepted your invitation to join the team.
                                                               <div class="notification-date">2 min ago</div>
                                                           </div>
@@ -71,7 +77,7 @@
                                                   </a>
                                                   <a href="#" class="list-group-item list-group-item-action">
                                                       <div class="notification-info">
-                                                          <div class="notification-list-user-img"><img src="assets/images/avatar-3.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
                                                           <div class="notification-list-user-block"><span class="notification-list-user-name">John Abraham </span>is now following you
                                                               <div class="notification-date">2 days ago</div>
                                                           </div>
@@ -79,7 +85,7 @@
                                                   </a>
                                                   <a href="#" class="list-group-item list-group-item-action">
                                                       <div class="notification-info">
-                                                          <div class="notification-list-user-img"><img src="assets/images/avatar-4.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
                                                           <div class="notification-list-user-block"><span class="notification-list-user-name">Monaan Pechi</span> is watching your main repository
                                                               <div class="notification-date">2 min ago</div>
                                                           </div>
@@ -87,7 +93,7 @@
                                                   </a>
                                                   <a href="#" class="list-group-item list-group-item-action">
                                                       <div class="notification-info">
-                                                          <div class="notification-list-user-img"><img src="assets/images/avatar-5.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
                                                           <div class="notification-list-user-block"><span class="notification-list-user-name">Jessica Caruso</span>accepted your invitation to join the team.
                                                               <div class="notification-date">2 min ago</div>
                                                           </div>
@@ -100,31 +106,31 @@
                                           <div class="list-footer"> <a href="#">View all notifications</a></div>
                                       </li>
                                   </ul>
-                              </li>
-                              <li class="nav-item dropdown connection">
+                              </li> -->
+                              <!-- <li class="nav-item dropdown connection">
                                   <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
                                   <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
                                       <li class="connection-list">
                                           <div class="row">
                                               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="assets/images/github.png" alt="" > <span>Github</span></a>
+                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Github</span></a>
                                               </div>
                                               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="assets/images/dribbble.png" alt="" > <span>Dribbble</span></a>
+                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Dribbble</span></a>
                                               </div>
                                               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="assets/images/dropbox.png" alt="" > <span>Dropbox</span></a>
+                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Dropbox</span></a>
                                               </div>
                                           </div>
                                           <div class="row">
                                               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="assets/images/bitbucket.png" alt=""> <span>Bitbucket</span></a>
+                                                  <a href="#" class="connection-item"><img src="#" alt=""> <span>Bitbucket</span></a>
                                               </div>
                                               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="assets/images/mail_chimp.png" alt="" ><span>Mail chimp</span></a>
+                                                  <a href="#" class="connection-item"><img src="#" alt="" ><span>Mail chimp</span></a>
                                               </div>
                                               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="assets/images/slack.png" alt="" > <span>Slack</span></a>
+                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Slack</span></a>
                                               </div>
                                           </div>
                                       </li>
@@ -132,17 +138,21 @@
                                           <div class="conntection-footer"><a href="#">More</a></div>
                                       </li>
                                   </ul>
-                              </li>
+                              </li> -->
                               <li class="nav-item dropdown nav-user">
-                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 230%;"></i></a>
                                   <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                       <div class="nav-user-info">
-                                          <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
-                                          <span class="status"></span><span class="ml-2">Available</span>
+                                          <h5 class="mb-0 text-white nav-user-name">Muhammad Shahid</h5>
+                                          <span class="status"></span><span class="ml-2">Student</span>
                                       </div>
-                                      <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                                      <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
-                                      <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                                      <a class="dropdown-item" href="{{route('user.profile.edit')}}"><i class="fas fa-user mr-2"></i>Profile</a>
+                                      <a class="dropdown-item" href="{{ route('user.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
+                                      <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                      <i class="fas fa-power-off mr-2"></i>Logout</a>
+                                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                      @csrf
+                                      </form>
                                   </div>
                               </li>
                           </ul>
@@ -165,10 +175,34 @@
                           <div class="collapse navbar-collapse" id="navbarNav">
                               <ul class="navbar-nav flex-column">
                                   <li class="nav-divider">
-                                      Menu
+                                      Main Menu
                                   </li>
                                   <li class="nav-item ">
-                                      <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
+                                    <a class="nav-link" href="{{ route('home') }}"><i class="fa fa-fw fa-user-circle"></i>Dashboard</a>
+                                  </li>
+                                  <li class="nav-divider">
+                                      Activities
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i>Lessons</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Quizes</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>Games</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>  Leaderboard</a>
+                                  </li>
+                                  <li class="nav-divider">
+                                      Others
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>  Feedback</a>
+                                  </li>
+                                  <!-- <li class="nav-item ">
+                                      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
                                       <div id="submenu-1" class="collapse submenu" style="">
                                           <ul class="nav flex-column">
                                               <li class="nav-item">
@@ -267,8 +301,8 @@
                                               </li>
                                           </ul>
                                       </div>
-                                  </li>
-                                  <li class="nav-item ">
+                                  </li> -->
+                                  <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms"></i>Forms</a>
                                       <div id="submenu-4" class="collapse submenu" style="">
                                           <ul class="nav flex-column">
@@ -354,8 +388,8 @@
                                               </li>
                                           </ul>
                                       </div>
-                                  </li>
-                                  <li class="nav-item">
+                                  </li> -->
+                                  <!-- <li class="nav-item">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fas fa-fw fa-inbox"></i>Apps <span class="badge badge-secondary">New</span></a>
                                       <div id="submenu-7" class="collapse submenu" style="">
                                           <ul class="nav flex-column">
@@ -411,8 +445,8 @@
                                               </li>
                                           </ul>
                                       </div>
-                                  </li>
-                                  <li class="nav-item">
+                                  </li> -->
+                                  <!-- <li class="nav-item">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"><i class="fas fa-f fa-folder"></i>Menu Level</a>
                                       <div id="submenu-10" class="collapse submenu" style="">
                                           <ul class="nav flex-column">
@@ -437,7 +471,7 @@
                                               </li>
                                           </ul>
                                       </div>
-                                  </li>
+                                  </li> -->
                               </ul>
                           </div>
                       </nav>
@@ -458,7 +492,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                             Copyright © 2018 Concept. All rights reserved. Dashboard by <a href="https://colorlib.com/wp/">Colorlib</a>.
+                             Copyright © 2020 Artanis Cloud. All rights reserved. Dashboard by Warga Artanis.
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="text-md-right footer-links d-none d-sm-block">
@@ -482,17 +516,17 @@
     </div>
 </body>
 
-  <script src="{{ asset('concept/vendor/jquery/jquery-3.3.1.min.js ') }}"></script>
-  <script src="{{ asset('concept/vendor/bootstrap/js/bootstrap.bundle.js ') }}"></script>
+  <script src="{{ asset('concept/vendor/jquery/jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ asset('concept/vendor/bootstrap/js/bootstrap.bundle.js') }}"></script>
 
   <!-- slimscroll js -->
-  <script src="{{ asset('concept/vendor/slimscroll/jquery.slimscroll.js  ') }}"></script>
+  <script src="{{ asset('concept/vendor/slimscroll/jquery.slimscroll.js') }}"></script>
   <!-- main js -->
   <script src="{{ asset('concept/libs/js/main-js.js  ') }}"></script>
   <!-- chart chartist js -->
   <script src="{{ asset('concept/vendor/charts/chartist-bundle/chartist.min.js') }}"></script>
   <!-- sparkline js -->
-  <script src="{{ asset('concept/vendor/charts/sparkline/jquery.sparkline.js ') }}"></script>
+  <script src="{{ asset('concept/vendor/charts/sparkline/jquery.sparkline.js') }}"></script>
   <!-- morris js -->
   <script src="{{ asset('concept/vendor/charts/morris-bundle/raphael.min.js') }}"></script>
   <script src="{{ asset('concept/vendor/charts/morris-bundle/morris.js') }}"></script>
