@@ -184,7 +184,7 @@
                                     <a class="nav-link" href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>Games</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>  Leaderboard</a>
+                                    <a class="nav-link" href="{{ route('leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>  Leaderboard</a>
                                   </li>
                                   <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
@@ -477,7 +477,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                             Copyright © 2018 Concept. All rights reserved. Dashboard by <a href="https://colorlib.com/wp/">Colorlib</a>.
+                             Copyright © 2020 Artanis Cloud. All rights reserved. Dashboard by Warga Artanis.
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="text-md-right footer-links d-none d-sm-block">
