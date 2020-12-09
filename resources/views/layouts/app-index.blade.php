@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="{{ asset('concept/vendor/charts/c3charts/c3.css') }}">
     <link rel="stylesheet" href="{{ asset('concept/vendor/fonts/flag-icon-css/flag-icon.min.css') }} ">
 
+    <!-- Icon Size -->
+    <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+
 </head>
 <body>
     <div id="app">
@@ -40,18 +44,18 @@
               <!-- ============================================================== -->
               <div class="dashboard-header">
                   <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                      <a class="navbar-brand" href="index.html">Concept</a>
+                      <a class="navbar-brand" href="{{ route('home') }}">ACES</a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse " id="navbarSupportedContent">
                           <ul class="navbar-nav ml-auto navbar-right-top">
-                              <li class="nav-item">
+                              <!-- <li class="nav-item">
                                   <div id="custom-search" class="top-search-bar">
                                       <input class="form-control" type="text" placeholder="Search..">
                                   </div>
-                              </li>
-                              <li class="nav-item dropdown notification">
+                              </li> -->
+                              <!-- <li class="nav-item dropdown notification">
                                   <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
                                   <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
                                       <li>
@@ -97,8 +101,8 @@
                                           <div class="list-footer"> <a href="#">View all notifications</a></div>
                                       </li>
                                   </ul>
-                              </li>
-                              <li class="nav-item dropdown connection">
+                              </li> -->
+                              <!-- <li class="nav-item dropdown connection">
                                   <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
                                   <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
                                       <li class="connection-list">
@@ -129,16 +133,16 @@
                                           <div class="conntection-footer"><a href="#">More</a></div>
                                       </li>
                                   </ul>
-                              </li>
+                              </li> -->
                               <li class="nav-item dropdown nav-user">
-                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="#" alt="" class="user-avatar-md rounded-circle"></a>
+                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 230%;"></i></a>
                                   <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                       <div class="nav-user-info">
-                                          <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
-                                          <span class="status"></span><span class="ml-2">Available</span>
+                                          <h5 class="mb-0 text-white nav-user-name">Muhammad Shahid</h5>
+                                          <span class="status"></span><span class="ml-2">Student</span>
                                       </div>
-                                      <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
-                                      <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                      <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Profile</a>
+                                      <a class="dropdown-item" href="#"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
                                       <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
                                   </div>
                               </li>
@@ -162,10 +166,28 @@
                           <div class="collapse navbar-collapse" id="navbarNav">
                               <ul class="navbar-nav flex-column">
                                   <li class="nav-divider">
-                                      Menu
+                                      Main Menu
                                   </li>
                                   <li class="nav-item ">
-                                      <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
+                                    <a class="nav-link" href="{{ route('home') }}"><i class="fa fa-fw fa-user-circle"></i>Dashboard</a>
+                                  </li>
+                                  <li class="nav-divider">
+                                      Activities
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i>Lessons</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Quizes</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>Games</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>  Leaderboard</a>
+                                  </li>
+                                  <!-- <li class="nav-item ">
+                                      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
                                       <div id="submenu-1" class="collapse submenu" style="">
                                           <ul class="nav flex-column">
                                               <li class="nav-item">
@@ -264,8 +286,8 @@
                                               </li>
                                           </ul>
                                       </div>
-                                  </li>
-                                  <li class="nav-item ">
+                                  </li> -->
+                                  <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms"></i>Forms</a>
                                       <div id="submenu-4" class="collapse submenu" style="">
                                           <ul class="nav flex-column">
@@ -351,8 +373,8 @@
                                               </li>
                                           </ul>
                                       </div>
-                                  </li>
-                                  <li class="nav-item">
+                                  </li> -->
+                                  <!-- <li class="nav-item">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fas fa-fw fa-inbox"></i>Apps <span class="badge badge-secondary">New</span></a>
                                       <div id="submenu-7" class="collapse submenu" style="">
                                           <ul class="nav flex-column">
@@ -408,8 +430,8 @@
                                               </li>
                                           </ul>
                                       </div>
-                                  </li>
-                                  <li class="nav-item">
+                                  </li> -->
+                                  <!-- <li class="nav-item">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"><i class="fas fa-f fa-folder"></i>Menu Level</a>
                                       <div id="submenu-10" class="collapse submenu" style="">
                                           <ul class="nav flex-column">
@@ -434,7 +456,7 @@
                                               </li>
                                           </ul>
                                       </div>
-                                  </li>
+                                  </li> -->
                               </ul>
                           </div>
                       </nav>
