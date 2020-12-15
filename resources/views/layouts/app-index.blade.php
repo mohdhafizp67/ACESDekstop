@@ -19,6 +19,7 @@
     <!-- Styles -->
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/animation.css') }}" rel="stylesheet">   <!-- Adan Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -185,7 +186,7 @@
                                       Activities
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i>Lessons</a>
+                                    <a class="nav-link" href="{{ route('lesson.courses') }}"><i class="fa fa-book" aria-hidden="true"></i>Lessons</a>
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Quizes</a>

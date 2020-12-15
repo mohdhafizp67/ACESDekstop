@@ -1,0 +1,99 @@
+@-webkit-keyframes bounce {
+  0% {
+    top: 0;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    top: 15px;
+    animation-timing-function: ease-in;
+  }
+  34% {
+    top: 0;
+    animation-timing-function: ease-out;
+  }
+  51% {
+    top: 8px;
+    animation-timing-function: ease-in;
+  }
+  68% {
+    top: 0px;
+    animation-timing-function: ease-out;
+  }
+  85% {
+    top: 3px;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-moz-keyframes bounce {
+  0% {
+    top: 0;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    top: 15px;
+    animation-timing-function: ease-in;
+  }
+  34% {
+    top: 0;
+    animation-timing-function: ease-out;
+  }
+  51% {
+    top: 8px;
+    animation-timing-function: ease-in;
+  }
+  68% {
+    top: 0px;
+    animation-timing-function: ease-out;
+  }
+  85% {
+    top: 3px;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes bounce {
+  0% {
+    top: 0;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    top: 15px;
+    animation-timing-function: ease-in;
+  }
+  34% {
+    top: 0;
+    animation-timing-function: ease-out;
+  }
+  51% {
+    top: 8px;
+    animation-timing-function: ease-in;
+  }
+  68% {
+    top: 0px;
+     }
+  85% {
+    top: 3px;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    top: 0;
+  }
+}
+#container { position:relative; }
+.boxer {
+  position: relative;
+  float:left;
+  background:#f00;
+
+  margin-right:5px;
+}
+.boxer.animated {
+  -moz-animation: bounce 1s;
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
+}
