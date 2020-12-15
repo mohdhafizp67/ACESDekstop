@@ -43,13 +43,13 @@
 </head>
 <body>
     <div id="app">
-        <main class="py-4">
+        <main class="">
           <div class="dashboard-main-wrapper">
               <!-- ============================================================== -->
               <!-- navbar -->
               <!-- ============================================================== -->
               <div class="dashboard-header">
-                  <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                  <nav class="navbar navbar-expand-lg fixed-top" style="background-color:#171717";>
                       <a class="navbar-brand" href="{{ route('home') }}">ACES</a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
@@ -175,32 +175,42 @@
                           </button>
                           <div class="collapse navbar-collapse" id="navbarNav">
                               <ul class="navbar-nav flex-column">
-                                  <li class="nav-divider">
-                                      Main Menu
-                                  </li>
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('home') }}"><i class="fa fa-fw fa-user-circle"></i>Dashboard</a>
-                                  </li>
+                                <li class="nav-divider">
+                                  <img class="logo-img" src="{{ asset('concept/images/aces-removebg-preview.png') }}" alt="logo">
+                                </li>
                                   <li class="nav-divider">
                                       Activities
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i>Lessons</a>
+                                    <a class="nav-link" href="{{ route('home') }}"><i class="fas fa-user-circle"aria-hidden="true"></i> </i>Profil</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Quizes</a>
+                                    <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i> </i>Mesej</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>Games</a>
+                                    <a class="nav-link" href="#"><i class="fas fa-star" aria-hidden="true"></i> </i>Skor</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>  Leaderboard</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>Liga Permainan</a>
                                   </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fas fa-gift"  aria-hidden="true"></i></i>Ganjaran</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Kuiz</a>
+                                  </li>
+
                                   <li class="nav-divider">
                                       Others
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>  Feedback</a>
+                                    <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>Maklum Balas</a>
                                   </li>
                                   <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
@@ -489,7 +499,7 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <div class="footer">
+            <div class="footer" style="background-color:#171717";>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">

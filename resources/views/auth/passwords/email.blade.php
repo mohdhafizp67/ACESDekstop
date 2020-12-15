@@ -6,7 +6,7 @@
         <div class="col-md-8">
           <div class="splash-container">
               <div class="card">
-                  <div class="card-header text-center"><img class="logo-img" src="{{ asset('concept/images/logo.png') }}" alt="logo"><span class="splash-description">Please enter your user information.</span></div>
+                  <div class="card-header text-center"><img class="logo-img" src="https://media-exp1.licdn.com/dms/image/C510BAQEHhJ30BRNxmw/company-logo_200_200/0?e=2159024400&v=beta&t=_oOdHa2dyPnS_HhnYNAtas49fYh2VBeDb0YMQFo1WpU" alt="logo"><span class="splash-description">Please enter your user information.</span></div>
                   <div class="card-body">
                       <form>
                           <p>Don't worry, we'll send you an email to reset your password.</p>
