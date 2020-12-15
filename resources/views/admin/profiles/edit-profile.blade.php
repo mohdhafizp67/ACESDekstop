@@ -4,12 +4,34 @@
            <div class="dashboard-ecommerce">
                <div class="container-fluid dashboard-content ">
                      <div class="card" style="padding: 10px;">
+                       @if ($message = Session::get('success'))
+                       <div id=alert>
+                           <div class="alert alert-card  alert-success" role="alert">
+                               <strong>Operation Successful! </strong>
+                               {{$message}}
+                               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                               </button>
+                           </div>
+                       </div>
+                       @elseif ($message = Session::get('error'))
+                       <div id="alert">
+                         <div class="alert alert-card  alert-danger" role="alert">
+                             <strong>Error! </strong>
+                             {{$message}}
+                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                             </button>
+                         </div>
+                       </div>
+                       @endif
+
                        <div style="padding: 5px;"></div>
                          <h2 class="card-header" style="text-align: center;"><i class="fas fa-edit"></i>Edit Profile</h2>
                          <div class="card-body p-0">
                            <div style="padding: 10px;"></div>
 
-                           <form action="{{route('user.update', $user->id)}}" method="POST">
+                           <form action="{{route('admin.profiles.edit-profile.updating')}}" method="POST">
                              @csrf
                              <div class="row">
                                <div class="col-md-2">
@@ -81,7 +103,7 @@
                                </div>
                                <div class="col-md-4">
                                  <div class="form-group">
-                                    <label>Negeri</label>
+                                    <label>State</label>
                                     <select class="custom-select  bg-light @error('state') is-invalid @enderror" name="state" value="{{ $user->state }}"  required>
                                           <option value="" selected disabled hidden>Choose State</option>
                                           <option value="Johor" {{ $user->state == "Johor" ? 'selected' : '' }}>Johor</option>
@@ -113,13 +135,34 @@
 
                                </div>
                                <div class="col-md-8">
-                                 <button class="btn btn-block btn-primary" type="submit">Update Profile</button>
+                                 <!-- <button class="btn btn-block btn-primary" type="submit">Update Profile</button> -->
+                                 <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Update Profile</a>
                                </div>
                                <div class="col-md-2">
 
                                </div>
                              </div>
-                             <!-- <div style="padding: 10px;"></div> -->
+
+                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                 <div class="modal-dialog" role="document">
+                                     <div class="modal-content">
+                                         <div class="modal-header">
+                                             <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                                             <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                                         <span aria-hidden="true">&times;</span>
+                                                     </a>
+                                         </div>
+                                         <div class="modal-body">
+                                             <p>Do you want to update your profile?</p>
+                                         </div>
+                                         <div class="modal-footer">
+                                             <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
+                                             <!-- <a href="#" class="btn btn-primary">Yes</a> -->
+                                             <button type="submit" name="button" class="btn btn-primary">Update Profile</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
 
 
                       </form>

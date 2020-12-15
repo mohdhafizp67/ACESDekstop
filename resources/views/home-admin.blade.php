@@ -1,4 +1,4 @@
-@extends('layouts.app-index-admin')
+@extends('layouts.app-index-admin-dashboard')
 
 @section('content')
 

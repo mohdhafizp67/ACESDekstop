@@ -6,26 +6,26 @@
             <div class="container-fluid dashboard-content ">
                   <div class="card" style="padding: 10px;">
                     @if ($message = Session::get('success'))
-            <div id=alert>
-                <div class="alert alert-card  alert-success" role="alert">
-                    <strong>Operation Successful! </strong>
-                    {{$message}}
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-            @elseif ($message = Session::get('error'))
-            <div id="alert">
-              <div class="alert alert-card  alert-danger" role="alert">
-                  <strong>Error! </strong>
-                  {{$message}}
-                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-            </div>
-            @endif
+                    <div id=alert>
+                        <div class="alert alert-card  alert-success" role="alert">
+                            <strong>Operation Successful! </strong>
+                            {{$message}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    @elseif ($message = Session::get('error'))
+                    <div id="alert">
+                      <div class="alert alert-card  alert-danger" role="alert">
+                          <strong>Error! </strong>
+                          {{$message}}
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                    </div>
+                    @endif
                     <div style="padding: 5px;"></div>
                       <h2 class="card-header" style="text-align: center;"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</h2>
                       <div class="card-body p-0">
