@@ -10,13 +10,13 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h2 class="pageheader-title">ACES Academy Student Dashboard</h2>
+                            <h2 class="pageheader-title">ACES Dashboard</h2>
 
                             <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Student Dashboard</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Admin Dashboard</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -29,62 +29,58 @@
                 <div class="ecommerce-widget">
 
                     <div class="row">
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="text-muted">Lessons</h5>
-                                    <div class="metric-value d-inline-block">
-                                        <h1 class="mb-1">10</h1>
-                                    </div>
-                                    <div class="metric-label d-inline-block float-right text-success font-weight-bold">
-                                        <span><i class="fa fa-fw fa-arrow-up"></i></span><span>2.15%</span>
-                                    </div>
-                                </div>
-                                <div id="sparkline-revenue"></div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="text-muted">Quiz</h5>
-                                    <div class="metric-value d-inline-block">
-                                        <h1 class="mb-1">20</h1>
-                                    </div>
-                                    <div class="metric-label d-inline-block float-right text-success font-weight-bold">
-                                        <span><i class="fa fa-fw fa-arrow-up"></i></span><span>5.86%</span>
-                                    </div>
-                                </div>
-                                <div id="sparkline-revenue2"></div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="text-muted">Total Assesment</h5>
-                                    <div class="metric-value d-inline-block">
-                                        <h1 class="mb-1">0.00</h1>
-                                    </div>
-                                    <div class="metric-label d-inline-block float-right text-primary font-weight-bold">
-                                        <span>N/A</span>
+                      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                               <div class="card border-3 border-top" style="border-radius: 25px";>
+                                   <div class="card-body border-radius" style="background-color: #fff";>
+                                       <h5 class="text-muted">Pelajar Baru</h5>
+                                       <div class="metric-value d-inline-block">
+                                           <h1 class="mb-1">200</h1>
+                                       </div>
+                                       <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                           <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5.86%</span>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                    <div class="card border-3 border-top" style="border-radius: 25px";>
+                                        <div class="card-body border-radius" style="background-color: #fff";>
+                                            <h5 class="text-muted">Jumlah Pelajar</h5>
+                                            <div class="metric-value d-inline-block">
+                                                <h1 class="mb-1">1500</h1>
+                                            </div>
+                                            <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                                <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">10%</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div id="sparkline-revenue3"></div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="text-muted">Average</h5>
-                                    <div class="metric-value d-inline-block">
-                                        <h1 class="mb-1">0</h1>
+                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                        <div class="card border-3 border-top" style="border-radius: 25px";>
+                                            <div class="card-body border-radius" style="background-color: #fff";>
+                                                <h5 class="text-muted">Kuiz</h5>
+                                                <div class="metric-value d-inline-block">
+                                                    <h1 class="mb-1">200</h1>
+                                                </div>
+                                                <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                                    <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5%</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="metric-label d-inline-block float-right text-secondary font-weight-bold">
-                                        <span>N/A%</span>
-                                    </div>
-                                </div>
-                                <div id="sparkline-revenue4"></div>
-                            </div>
-                        </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                              <div class="card border-3 border-top" style="border-radius: 25px";>
+                                                  <div class="card-body border-radius" style="background-color: #fff";>
+                                                      <h5 class="text-muted">Jumlah</h5>
+                                                      <div class="metric-value d-inline-block">
+                                                          <h1 class="mb-1">%</h1>
+                                                      </div>
+                                                      <div class="metric-label d-inline-block float-right text-danger font-weight-bold">
+                                                          <span class="icon-circle-small icon-box-xs text-danger bg-danger-light bg-danger-light "><i class="fa fa-fw fa-arrow-down"></i></span><span class="ml-1">4%</span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
                     </div>
                     <div class="row">
                         <!-- ============================================================== -->
@@ -94,80 +90,93 @@
                                       <!-- recent orders  -->
                         <!-- ============================================================== -->
 
-                        <div class="col-md-12">
-                          <div class="card">
-                              <h5 class="card-header">LeaderBoard</h5>
-                              <div class="card-body p-5">
-                                  <div class="table-responsive">
-                                      <table class="table">
-                                          <thead class="bg-light">
-                                              <tr class="border-0">
-                                                  <th class="border-0">Ranking</th>
-                                                  <th class="border-0">Profile</th>
-                                                  <th class="border-0">Name</th>
-                                                  <th class="border-0">Point</th>
-                                                  <th class="border-0">Duration</th>
-                                                  <th class="border-00">Progress</th>
-                                              </tr>
-                                          </thead>
-                                          <tbody>
-                                              <tr>
-                                                  <td>1</td>
-                                                  <td>
-                                                      <div class="m-r-10"><img src="{{ asset('concept/images/product-pic.jpg') }}" alt="user" class="rounded" width="45"></div>
-                                                  </td>
-                                                  <td>Syahdan </td>
-                                                  <td>5000</td>
-                                                  <td>0.58.15</td>
-                                                  <td><div class="w3-light-grey w3-round">
-                                                    <div class="w3-container w3-blue w3-round" style="width:50%">75%</div>
-                                                  </div></td>
-                                              </tr>
-                                              <tr>
-                                                  <td>2</td>
-                                                  <td>
-                                                      <div class="m-r-10"><img src="{{ asset('concept/images/product-pic.jpg') }}" alt="user" class="rounded" width="45"></div>
-                                                  </td>
-                                                  <td>Amirul </td>
-                                                  <td>4500</td>
-                                                  <td>1.08.15</td>
-                                                  <td><div class="w3-light-grey w3-round">
-                                                    <div class="w3-container w3-blue w3-round" style="width:50%">50%</div>
-                                                  </div></td>
-                                              </tr>
-                                              <tr>
-                                                  <td>3</td>
-                                                  <td>
-                                                      <div class="m-r-10"><img src="{{ asset('concept/images/product-pic.jpg') }}" alt="user" class="rounded" width="45"></div>
-                                                  </td>
-                                                  <td>Umar</td>
-                                                  <td>3000</td>
-                                                  <td>1.38.15</td>
-                                                  <td><div class="w3-light-grey w3-round">
-                                                    <div class="w3-container w3-blue w3-round" style="width:50%">25%</div>
-                                                  </div></td>
-                                              </tr>
-                                              <tr>
-                                                  <td>4</td>
-                                                  <td>
-                                                      <div class="m-r-10"><img src="{{ asset('concept/images/product-pic.jpg') }}" alt="user" class="rounded" width="45"></div>
-                                                  </td>
-                                                  <td>Hafiz</td>
-                                                  <td>2500</td>
-                                                  <td>1.50.15</td>
-                                                  <td><div class="w3-light-grey w3-round">
-                                                    <div class="w3-container w3-blue w3-round" style="width:50%">15%</div>
-                                                  </div></td>
-                                              </tr>
-                                              <tr>
-                                                  <td colspan="9"><a href="#" class="btn btn-outline-light float-right">View Details</a></td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
+                        <div class="container-fluid dashboard-content ">
+                              <div class="card" style="border-radius: 25px";>
+                                <div style="padding: 10px;"></div>
+                                  <h2 class="card-header"><i class="fa fa-trophy" aria-hidden="true"></i> Carta Johan</h2>
+
+                                  <div class="card-body">
+                                      <div class="table-responsive">
+                                          <table class="table">
+                                              <thead class="bg-light">
+                                                  <tr class="border-0">
+                                                      <th class="border-0">Kedudukan</th>
+                                                      <th class="border-0">Gambar</th>
+                                                      <th class="border-0">Nama Pelajar</th>
+                                                      <th class="border-0">Skor</th>
+                                                      <th class="border-0">Kemajuan</th>
+                                                      <th class="border-0">Gred</th>
+
+
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr>
+                                                      <td>1</td>
+                                                      <td>
+                                                          <div class="m-r-10"><img src="https://publichealth.uga.edu/wp-content/uploads/2020/01/Thomas-Cameron_Student_Profile.jpg" alt="user" class="rounded" width="45" height="45"></div>
+                                                      </td>
+                                                      <td>Adam Malik</td>
+                                                      <td>99</td>
+                                                      <td><div class="w3-light-grey w3-round">
+                                                        <div class="w3-container w3-blue w3-round" style="width:50%">75%</div>
+                                                      </div></td>
+                                                      <td>A</td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>2</td>
+                                                      <td>
+                                                          <div class="m-r-10"><img src="https://www2.physics.ox.ac.uk/sites/default/files/images/Stan1.jpg" alt="user" class="rounded" width="45" height="45"></div>
+                                                      </td>
+                                                      <td>James Alexx</td>
+                                                      <td>99</td>
+                                                      <td><div class="w3-light-grey w3-round">
+                                                        <div class="w3-container w3-blue w3-round" style="width:50%">75%</div>
+                                                      </div></td>
+                                                      <td>A</td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>3</td>
+                                                      <td>
+                                                          <div class="m-r-10"><img src="https://www.law.uchicago.edu/files/styles/extra_large/public/2018-03/theisen_tarra.jpg?itok=5iSSWAci" alt="user" class="rounded" width="45" height="45"></div>
+                                                      </td>
+                                                      <td>Suzy Anderson</td>
+                                                      <td>98</td>
+                                                      <td><div class="w3-light-grey w3-round">
+                                                        <div class="w3-container w3-blue w3-round" style="width:50%">75%</div>
+                                                      </div></td>
+                                                      <td>A</td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>4</td>
+                                                      <td>
+                                                          <div class="m-r-10"><img src="https://www.coa.edu/live/image/gid/7/width/500/height/500/crop/1/src_region/0,0,600,600/7837_Profile-2.rev.1572210489.jpg" alt="user" class="rounded" width="45" height="45"></div>
+                                                      </td>
+                                                      <td>Yoshiro Wakata</td>
+                                                      <td>97</td>
+                                                      <td><div class="w3-light-grey w3-round">
+                                                        <div class="w3-container w3-blue w3-round" style="width:50%">75%</div>
+                                                      </div></td>
+                                                      <td>B</td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td>5</td>
+                                                      <td>
+                                                          <div class="m-r-10"><img src="https://minervaschools-production-cms-uploads.s3.amazonaws.com/images/20150916_MNRV_220.2e16d0ba.fill-724x452.jpg?could_not_match_s3_bucket_and_object" alt="user" class="rounded" width="45" height="45"></div>
+                                                      </td>
+                                                      <td>John Reese</td>
+                                                      <td>97</td>
+                                                      <td><div class="w3-light-grey w3-round">
+                                                        <div class="w3-container w3-blue w3-round" style="width:50%">75%</div>
+                                                      </div></td>
+                                                      <td>B</td>
+                                                  </tr>
+
+                                              </tbody>
+                                          </table>
+                                      </div>
                                   </div>
                               </div>
-                          </div>
-
                         </div>
                         <!-- <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-12"> -->
 
@@ -404,30 +413,63 @@
                         <!-- ============================================================== -->
                         <!-- category revenue  -->
                         <!-- ============================================================== -->
-                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                            <div class="card">
-                                <h5 class="card-header">Total Pass/Fail Quiz</h5>
-                                <div class="card-body">
-                                    <div id="c3chart_category" style="height: 410px;"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                          <div class="card" style="border-radius: 25px";>
+                              <h5 class="card-header">Pelajar Aktif/Tidak Aktif </h5>
+                              <div class="card-body">
+                                  <div id="c3chart_donut"></div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12">
+                         <div class="card" style="border-radius: 25px";>
+                             <h5 class="card-header">Jumlah Pelajar</h5>
+                             <div class="card-body">
+                                 <div id="c3chart_spline"></div>
+                             </div>
+                         </div>
+                     </div>
                         <!-- ============================================================== -->
                         <!-- end category revenue  -->
                         <!-- ============================================================== -->
 
-                        <div class="col-xl-7 col-lg-9 col-md-12 col-sm-15 col-15">
-                            <div class="card">
-                                <h5 class="card-header">Total Score Quiz</h5>
-                                <div class="card-body">
-                                    <div id="morris_totalrevenue"></div>
-                                </div>
-                                <div class="card-footer">
-                                    <p class="display-7 font-weight-bold"><span class="text-primary d-inline-block">5000</span><span class="text-success float-right">+9.45%</span></p>
-                                </div>
+
+                    </div>
+                    <div class="row">
+                        <!-- ============================================================== -->
+                        <!-- total revenue  -->
+                        <!-- ============================================================== -->
+
+
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- category revenue  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <h5 class="card-header">Line Charts</h5>
+                            <div class="card-body">
+                                <div id="chartjs_line"></div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                       <div class="card">
+                           <h5 class="card-header">Horizontal Chart Bar</h5>
+                           <div class="card-body">
+                               <div id="ct-chart-horizontal"></div>
+                           </div>
+                       </div>
+                   </div>
+                        <!-- ============================================================== -->
+                        <!-- end category revenue  -->
+                        <!-- ============================================================== -->
+
+
+                    </div>
+                    <div class="row">
                     <div class="row">
                         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
                             <!-- ============================================================== -->
@@ -456,6 +498,7 @@
                             <!-- ============================================================== -->
                             <!-- end social source  -->
                             <!-- ============================================================== -->
+
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                             <!-- ============================================================== -->
