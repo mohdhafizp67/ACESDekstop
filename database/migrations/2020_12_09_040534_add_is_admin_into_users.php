@@ -15,9 +15,10 @@ class AddIsAdminIntoUsers extends Migration
     {
       Schema::table('users', function (Blueprint $table) {
         $table->string('ic_number')->unique();
-        $table->string('alamat')->nullable();
-        $table->string('poskod')->nullable();
-        $table->string('negeri')->nullable();
+        $table->string('phone')->nullable();
+        $table->string('address')->nullable();
+        $table->string('postcode')->nullable();
+        $table->string('state')->nullable();
         $table->boolean('is_admin')->default(false);
         $table->boolean('is_active')->default(true);
         $table->boolean('is_student')->default(false);
@@ -35,9 +36,10 @@ class AddIsAdminIntoUsers extends Migration
     {
       Schema::table('users', function (Blueprint $table) {
         $table->dropColumn('ic_number');
-        $table->dropColumn('alamat');
-        $table->dropColumn('poskod');
-        $table->dropColumn('negeri');
+        $table->dropColumn('phone');
+        $table->dropColumn('address');
+        $table->dropColumn('postcode');
+        $table->dropColumn('state');
         $table->dropColumn('is_admin');
         $table->dropColumn('is_active');
         $table->dropColumn('is_student');

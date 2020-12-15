@@ -189,11 +189,13 @@
                                    class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
                                    placeholder="Password">
                             <div class="input-group-append">
+                              <a onclick="visiblePass()">
+
                                 <div class="input-group-text">
-                                  <a onclick="visiblePass()">
                                     <span id="icon_eye_pass" class="fa fa-eye" ></span>
-                                  </a>
                                 </div>
+                              </a>
+
                             </div>
                             @if($errors->has('password'))
                                 <div class="invalid-feedback">
@@ -210,11 +212,13 @@
                                  class="form-control {{ $errors->has('password_confirmation') ? 'is-invalid' : '' }}"
                                  placeholder="Re-type Password">
                           <div class="input-group-append">
+                            <a onclick="visiblePassConfirm()">
+
                               <div class="input-group-text">
-                                <a onclick="visiblePassConfirm()">
                                   <span id="icon_eye_confirm" class="fa fa-eye" ></span>
-                                </a>
                               </div>
+                            </a>
+                              
                           </div>
                           @if($errors->has('password_confirmation'))
                               <div class="invalid-feedback">
