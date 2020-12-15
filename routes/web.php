@@ -29,10 +29,10 @@ Route::post('/profile/update/id={id}', [App\Http\Controllers\UserController::cla
 
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('leaderboard');
 
+Route::get('/courses', [App\Http\Controllers\LessonController::class, 'courses'])->name('lesson.courses');
 
 Route::get('/feedback', [App\Http\Controllers\UserController::class, 'feedback'])->name('others.feedback');
 
 Route::get('/profile/change-password', [App\Http\Controllers\UserController::class, 'viewChangePassword'])->name('user.change-password');
 
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('activities.leaderboard');
-
