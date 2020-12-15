@@ -43,13 +43,13 @@
 </head>
 <body>
     <div id="app">
-        <main class="">
+        <main class="py-0">
           <div class="dashboard-main-wrapper">
               <!-- ============================================================== -->
               <!-- navbar -->
               <!-- ============================================================== -->
               <div class="dashboard-header">
-                  <nav class="navbar navbar-expand-lg fixed-top" style="background-color:#171717";>
+                  <nav class="navbar navbar-expand-lg fixed-top" style="background-color:#060026";>
                       <a class="navbar-brand" href="{{ route('home') }}">ACES</a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
@@ -499,7 +499,7 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <div class="footer" style="background-color:#171717";>
+            <div class="footer" style="background-color:#060026";>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">

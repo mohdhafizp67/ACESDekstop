@@ -1,2 +1,8 @@
 .checked {
   color: orange;
+}
+
+.border-radius {
+  border: 2px solid #060026;
+  border-radius: 25px;
+}
