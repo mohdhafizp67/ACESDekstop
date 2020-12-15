@@ -25,10 +25,7 @@ Route::get('/profile/edit', [App\Http\Controllers\UserController::class, 'editPr
 
 Route::post('/profile/update/id={id}', [App\Http\Controllers\UserController::class, 'updateprofil'])->name('user.update');
 
-
-
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('leaderboard');
-
 
 Route::get('/feedback', [App\Http\Controllers\UserController::class, 'feedback'])->name('others.feedback');
 
@@ -36,3 +33,14 @@ Route::get('/profile/change-password', [App\Http\Controllers\UserController::cla
 
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('activities.leaderboard');
 
+
+Route::middleware('admin')->group(function () {
+  Route::get('/home-admin', [App\Http\Controllers\AdminController::class, 'index'])->name('home-admin');
+
+  Route::get('/admin/profile/edit-profile', [App\Http\Controllers\AdminController::class, 'viewEditProfile'])->name('admin.profiles.edit-profile');
+
+  Route::get('/admin/profile/change-password', [App\Http\Controllers\AdminController::class, 'viewChangePassword'])->name('admin.profiles.change-password');
+
+  Route::post('/admin/profile/change-password/updating', [App\Http\Controllers\AdminController::class, 'updatingPassword'])->name('admin.profiles.change-password.updating');
+
+});

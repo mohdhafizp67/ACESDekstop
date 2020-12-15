@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -27,12 +28,33 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
-
+    public function redirectTo()
+   {
+     if(Auth::user()->is_admin == 1){
+       $this->redirectTo = '/home-admin';
+       return $this->redirectTo;
+     }elseif (Auth::user()->is_ecerdb_personnel == 1) {
+       $this->redirectTo = '/home-admin';
+       return $this->redirectTo;
+     }elseif (Auth::user()->is_student == 1) {
+       $this->redirectTo = '/home';
+       return $this->redirectTo;
+     }else {
+       $this->redirectTo = '/';
+       return $this->redirectTo;
+     }
+   }
     /**
      * Create a new controller instance.
      *
      * @return void
      */
+
+     public function username()
+     {
+         return 'ic_number';
+     }
+
     public function __construct()
     {
         $this->middleware('guest')->except('logout');

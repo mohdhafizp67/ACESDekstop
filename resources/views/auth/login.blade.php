@@ -28,7 +28,7 @@
 
                             <div class="form-group row">
                                 <div class="col-md">
-                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="E-mail" required autocomplete="email" autofocus>
+                                    <input id="ic_number" type="text" class="form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" name="ic_number" value="{{ old('ic_number') }}" placeholder="IC Number" required autocomplete="ic_number" autofocus>
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group row">
+                            <!-- <div class="form-group row">
                                 <div class="col-md">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
@@ -60,11 +60,12 @@
                                         </label>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="form-group row mb-0">
-                                <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-block btn-primary">
                                         {{ __('Login') }}
                                     </button>
 
@@ -89,4 +90,15 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+function onlyNumberKey(evt) {
+
+      // Only ASCII charactar in that range allowed
+      var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+      if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+          return false;
+      return true;
+  }
+</script>
 @endsection
