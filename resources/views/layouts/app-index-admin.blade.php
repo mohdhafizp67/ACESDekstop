@@ -19,7 +19,6 @@
     <!-- Styles -->
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/animation.css') }}" rel="stylesheet">   <!-- Adan Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -51,7 +50,7 @@
               <!-- ============================================================== -->
               <div class="dashboard-header">
                   <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                      <a class="navbar-brand" href="{{ route('home') }}">ACES</a>
+                      <a class="navbar-brand" href="{{ route('home-admin') }}">ACES</a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
@@ -145,11 +144,14 @@
                                   <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 230%;"></i></a>
                                   <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                       <div class="nav-user-info">
-                                          <h5 class="mb-0 text-white nav-user-name">Muhammad Shahid</h5>
-                                          <span class="status"></span><span class="ml-2">Student</span>
+                                          <!-- <h4 class="mb-0 text-white nav-user-name">{{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}}</h4> -->
+                                          <h6 class="mb-0 text-white nav-user-name">{{Auth::user()->name}}</h6>
+                                          <div style="padding: 5px;"></div>
+                                          <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i> Admin</h6>
+                                          <!-- <span><i class="fa fa-certificate" aria-hidden="true"></i> Admin </span> -->
                                       </div>
-                                      <a class="dropdown-item" href="{{route('user.profile.edit')}}"><i class="fas fa-user mr-2"></i>Profile</a>
-                                      <a class="dropdown-item" href="{{ route('user.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
+                                      <a class="dropdown-item" href="{{route('admin.profiles.edit-profile')}}"><i class="fas fa-user mr-2"></i>Profile</a>
+                                      <a class="dropdown-item" href="{{ route('admin.profiles.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
                                       <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                       <i class="fas fa-power-off mr-2"></i>Logout</a>
                                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -180,28 +182,32 @@
                                       Main Menu
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('home') }}"><i class="fa fa-fw fa-user-circle"></i>Dashboard</a>
+                                    <a class="nav-link" href="{{ route('home-admin') }}"><i class="fa fa-home" aria-hidden="true"></i>Admin Dashboard</a>
                                   </li>
                                   <li class="nav-divider">
                                       Activities
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('lesson.courses') }}"><i class="fa fa-book" aria-hidden="true"></i>Lessons</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Student Progress</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Quizes</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>Student Statistic</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>Games</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-university" aria-hidden="true"></i>Question Bank</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>  Leaderboard</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Leader Board</a>
                                   </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>Announcement</a>
+                                  </li>
+
                                   <li class="nav-divider">
                                       Others
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>  Feedback</a>
+                                    <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i>  Feedback</a>
                                   </li>
                                   <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
