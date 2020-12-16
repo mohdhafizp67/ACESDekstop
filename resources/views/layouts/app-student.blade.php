@@ -200,7 +200,7 @@
                                     <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
+                                    <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Kuiz</a>
