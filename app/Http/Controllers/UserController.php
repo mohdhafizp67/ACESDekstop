@@ -61,4 +61,10 @@ class UserController extends Controller
       return view('user.change-password');
 
   }
+  public function statistik()
+  {
+
+    return view('user.student.statistik');
+
+  }
 }
