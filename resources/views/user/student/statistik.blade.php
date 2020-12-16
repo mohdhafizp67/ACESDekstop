@@ -31,8 +31,8 @@
             <div class="row">
               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                        <div class="card border-3 border-top" style="border-radius: 25px";>
-                           <div class="card-body border-radius" style="background-color: #0CFFFD";>
-                               <h5 class="text-muted">Pelajaran</h5>
+                           <div class="card-body border-radius" style="background-color: #007F7E";>
+                               <h3 class="text-statistik">Pelajaran</h3>
 
                                  <div class="w3-light-grey w3-round">
                                    <div class="w3-container w3-red w3-round" style="width:50%">75%</div>
@@ -46,8 +46,8 @@
                    </div>
                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="card border-3 border-top" style="border-radius: 25px";>
-                                <div class="card-body border-radius" style="background-color: #79FFC1";>
-                                    <h5 class="text-muted">Kemajuan Kuiz</h5>
+                                <div class="card-body border-radius" style="background-color: #2A7CB2";>
+                                    <h3 class="text-statistik">Kemajuan Kuiz</h3>
                                     <div class="w3-light-grey w3-round">
                                       <div class="w3-container w3-red w3-round" style="width:50%">75%</div>
                                     </div>
@@ -59,8 +59,8 @@
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                 <div class="card border-3 border-top" style="border-radius: 25px";>
-                                    <div class="card-body border-radius" style="background-color: #F9F871";>
-                                        <h5 class="text-muted">Permainan</h5>
+                                    <div class="card-body border-radius" style="background-color: #A364A2";>
+                                        <h3 class="text-statistik">Permainan</h3>
                                         <div class="w3-light-grey w3-round">
                                           <div class="w3-container w3-red w3-round" style="width:50%">75%</div>
                                         </div>
@@ -72,8 +72,8 @@
                             </div>
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                       <div class="card border-3 border-top" style="border-radius: 25px";>
-                                          <div class="card-body border-radius" style="background-color: #FFE7D4";>
-                                              <h5 class="text-muted">Jumlah</h5>
+                                          <div class="card-body border-radius" style="background-color: #C15A7E";>
+                                              <h3 class="text-statistik">Jumlah</h3>
                                               <div class="w3-light-grey w3-round">
                                                 <div class="w3-container w3-red w3-round" style="width:50%">75%</div>
                                               </div>
@@ -328,28 +328,98 @@
                 <!-- category revenue  -->
                 <!-- ============================================================== -->
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                  <div class="card" style="border-radius: 25px";>
-                      <h5 class="card-header">Pelajar Aktif/Tidak Aktif </h5>
-                      <div class="card-body">
-                          <div id="c3chart_donut"></div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12">
-                 <div class="card" style="border-radius: 25px";>
-                     <h5 class="card-header">Jumlah Pelajar</h5>
-                     <div class="card-body">
-                         <div id="c3chart_spline"></div>
+                         <div class="card" style="border-radius: 25px";>
+                             <h5 class="card-header">Pelajaran</h5>
+                             <div class="card-body">
+                                 <div id="c3chart_pie"></div>
+                             </div>
+                         </div>
                      </div>
-                 </div>
-             </div>
+
+                     <div class="col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12">
+                              <div class="card">
+                                  <h5 class="card-header">Bar Charts</h5>
+                                  <div class="card-body">
+                                      <canvas id="chartjs_bar"></canvas>
+                                  </div>
+                              </div>
+                          </div>
                 <!-- ============================================================== -->
                 <!-- end category revenue  -->
                 <!-- ============================================================== -->
 
 
             </div>
+
+            <div class="row">
+                <!-- ============================================================== -->
+                <!-- total revenue  -->
+                <!-- ============================================================== -->
+
+
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- category revenue  -->
+                <!-- ============================================================== -->
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="card">
+                                            <h5 class="card-header">Stacked Bar Chart</h5>
+                                            <div class="card-body">
+                                                <div class="ct-chart-scatter-bar ct-golden-section"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                                            <div class="card">
+                                                                <h5 class="card-header">Kemajuan Pelajar</h5>
+                                                                <div class="card-body">
+
+                                                                  <div class="bg-style">
+
+                                                                    <div class="wrapper">
+                                                                      <div class="row pt-4 pb-4">
+                                                                        <div class="col-6 col-sm-3">
+                                                                          <div class="counter" data-cp-percentage="75" data-cp-color="#00bfeb">
+                                                                          </div><br>
+                                                                          <h4>Pelajaran</h4>
+
+                                                                        </div>
+                                                                        <div class="col-6 col-sm-3">
+                                                                          <div class="counter" data-cp-percentage="65" data-cp-color="#EA4C89"></div><br>
+                                                                          <h4>Kuiz</h4>
+
+                                                                        </div>
+                                                                        <div class="col-6 col-sm-3">
+                                                                          <div class="counter" data-cp-percentage="35" data-cp-color="#FF675B"></div><br>
+
+                                                                          <h4>Permainan</h4>
+
+                                                                        </div>
+                                                                        <div class="col-6 col-sm-3">
+                                                                          <div class="counter" data-cp-percentage="44" data-cp-color="#FF9900"></div><br>
+                                                                          <h4>Level</h4>
+
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <button class="btn-update">Jumlah</button>
+                                                                  </div>
+                                                                  <!-- <p class="p-3">
+                                                                    HTML and JS Circular Progress bar, developed with canvas and some nice easing- animation. Feel free to use. <br />You could mention this codepen
+                                                                  </p> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                <!-- ============================================================== -->
+                <!-- end category revenue  -->
+                <!-- ============================================================== -->
+
+
+            </div>
+
 
             <div class="row">
             <div class="row">
@@ -447,5 +517,128 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+
+var circleProgress = (function(selector) {
+  var wrapper = document.querySelectorAll(selector);
+  Array.prototype.forEach.call(wrapper, function(wrapper, i) {
+    var wrapperWidth,
+      wrapperHeight,
+      percent,
+      innerHTML,
+      context,
+      lineWidth,
+      centerX,
+      centerY,
+      radius,
+      newPercent,
+      speed,
+      from,
+      to,
+      duration,
+      start,
+      strokeStyle,
+      text;
+
+    var getValues = function() {
+      wrapperWidth = parseInt(window.getComputedStyle(wrapper).width);
+      wrapperHeight = wrapperWidth;
+      percent = wrapper.getAttribute('data-cp-percentage');
+      innerHTML = '<span class="percentage"><strong>' + percent + '</strong> %</span><canvas class="circleProgressCanvas" width="' + (wrapperWidth * 2) + '" height="' + wrapperHeight * 2 + '"></canvas>';
+      wrapper.innerHTML = innerHTML;
+      text = wrapper.querySelector(".percentage");
+      canvas = wrapper.querySelector(".circleProgressCanvas");
+      wrapper.style.height = canvas.style.width = canvas.style.height = wrapperWidth + "px";
+      context = canvas.getContext('2d');
+      centerX = canvas.width / 2;
+      centerY = canvas.height / 2;
+      newPercent = 0;
+      speed = 1;
+      from = 0;
+      to = percent;
+      duration = 1000;
+      lineWidth = 25;
+      radius = canvas.width / 2 - lineWidth;
+      strokeStyle = wrapper.getAttribute('data-cp-color');
+      start = new Date().getTime();
+    };
+
+    function animate() {
+      requestAnimationFrame(animate);
+      var time = new Date().getTime() - start;
+      if (time <= duration) {
+        var x = easeInOutQuart(time, from, to - from, duration);
+        newPercent = x;
+        text.innerHTML = Math.round(newPercent) + " %";
+        drawArc();
+      }
+    }
+
+    function drawArc() {
+      var circleStart = 1.5 * Math.PI;
+      var circleEnd = circleStart + (newPercent / 50) * Math.PI;
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.beginPath();
+      context.arc(centerX, centerY, radius, circleStart, 4 * Math.PI, false);
+      context.lineWidth = lineWidth;
+      context.strokeStyle = "#ddd";
+      context.stroke();
+      context.beginPath();
+      context.arc(centerX, centerY, radius, circleStart, circleEnd, false);
+      context.lineWidth = lineWidth;
+      context.strokeStyle = strokeStyle;
+      context.stroke();
+
+    }
+    var update = function() {
+      getValues();
+      animate();
+    }
+    update();
+
+    var btnUpdate = document.querySelectorAll(".btn-update")[0];
+    btnUpdate.addEventListener("click", function() {
+      wrapper.setAttribute("data-cp-percentage", Math.round(getRandom(5, 95)));
+      update();
+    });
+    wrapper.addEventListener("click", function() {
+      update();
+    });
+
+    var resizeTimer;
+    window.addEventListener("resize", function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function() {
+        clearTimeout(resizeTimer);
+        start = new Date().getTime();
+        update();
+      }, 250);
+    });
+  });
+
+  //
+  // http://easings.net/#easeInOutQuart
+  //  t: current time
+  //  b: beginning value
+  //  c: change in value
+  //  d: duration
+  //
+  function easeInOutQuart(t, b, c, d) {
+    if ((t /= d / 2) < 1) return c / 2 * t * t * t * t + b;
+    return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
+  }
+
+});
+
+circleProgress('.counter');
+
+// Gibt eine Zufallszahl zwischen min (inklusive) und max (exklusive) zurück
+function getRandom(min, max) {
+  return Math.random() * (max - min) + min;
+}
+});
+</script>
 
 @endsection
