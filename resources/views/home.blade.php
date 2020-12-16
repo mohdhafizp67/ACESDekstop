@@ -70,15 +70,13 @@ img.emoji {
 <link rel='stylesheet' id='powerpack-frontend-css'  href='http://ezran.my/ACES/wp-content/plugins/powerpack-lite-for-elementor/assets/css/frontend.css?ver=2.2.1' type='text/css' media='all' />
 <link rel='stylesheet' id='elementskit-css-widgetarea-control-editor-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/modules/controls/assets/css/widgetarea-editor.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='elementor-global-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/global.css?ver=1604548018' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-post-1062-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/post-1062.css?ver=1607937473' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-1062-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/post-1062.css?ver=1608088508' type='text/css' media='all' />
 <link rel='stylesheet' id='ekit-widget-styles-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='ekit-widget-styles-pro-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles-pro.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='ekit-responsive-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='oe-widgets-style-css'  href='http://ezran.my/ACES/wp-content/plugins/ocean-extra/assets/css/widgets.css?ver=5.5.3' type='text/css' media='all' />
 <link rel='stylesheet' id='oceanwp-custom-css'  href='http://ezran.my/ACES/wp-content/uploads/oceanwp/custom-style.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Condensed%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-shared-0-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.12.0' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-fa-brands-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.12.0' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAlata%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Condensed%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.5.3' type='text/css' media='all' />
 <script type='text/javascript' id='jquery-core-js-extra'>
 /* <![CDATA[ */
 var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
@@ -189,27 +187,39 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 						<div data-elementor-type="wp-page" data-elementor-id="1062" class="elementor elementor-1062" data-elementor-settings="[]">
 						<div class="elementor-inner">
 							<div class="elementor-section-wrap">
-							<section class="elementor-section elementor-top-section elementor-element elementor-element-12d05a9 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="12d05a9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-d4c4c11 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d4c4c11" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2bcc1cb" data-id="2bcc1cb" data-element_type="column">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a2ee8c" data-id="8a2ee8c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-179eb6d elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="179eb6d" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-e62ed2d elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="e62ed2d" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6c1dc79" data-id="6c1dc79" data-element_type="column">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9472513" data-id="9472513" data-element_type="column">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-9ee9387 elementor-widget elementor-widget-text-editor" data-id="9ee9387" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-c5c5d7d elementor-widget elementor-widget-spacer" data-id="c5c5d7d" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>ACES <span style="color: #0000ff;">IR 4.0</span></p></div>
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-9ee9387 elementor-widget elementor-widget-text-editor" data-id="9ee9387" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>ACES <span style="color: #b000b1;">IR 4.0</span></p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-72314d4 elementor-widget elementor-widget-text-editor" data-id="72314d4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><em>Maklumat Terperinci &gt;</em></p></div>
 				</div>
 				</div>
 						</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a3d155b" data-id="a3d155b" data-element_type="column">
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ce46cd7" data-id="ce46cd7" data-element_type="column">
 			<div class="elementor-column-wrap">
 							<div class="elementor-widget-wrap">
 								</div>
@@ -218,56 +228,10 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 								</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-5714344 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="5714344" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-a8928ba elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a8928ba" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d657f20" data-id="d657f20" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-9cd0e26 elementor-widget elementor-widget-text-editor" data-id="9cd0e26" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Bina pasukan <span style="color: #0000ff;">Anda</span></p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0979891" data-id="0979891" data-element_type="column">
-			<div class="elementor-column-wrap">
-							<div class="elementor-widget-wrap">
-								</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-a49b3d4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a49b3d4" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-94efc9c" data-id="94efc9c" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-72314d4 elementor-widget elementor-widget-text-editor" data-id="72314d4" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><em>Maklumat Terperinci</em></p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b614d10" data-id="b614d10" data-element_type="column">
-			<div class="elementor-column-wrap">
-							<div class="elementor-widget-wrap">
-								</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-1de0603 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="1de0603" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-0432142" data-id="0432142" data-element_type="column">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-13ea686" data-id="13ea686" data-element_type="column">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
 						<div class="elementor-element elementor-element-245e1ca elementor-widget elementor-widget-image" data-id="245e1ca" data-element_type="widget" data-widget_type="image.default">
@@ -279,7 +243,7 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 						</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f2cbb9d" data-id="f2cbb9d" data-element_type="column">
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e102947" data-id="e102947" data-element_type="column">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
 						<div class="elementor-element elementor-element-afd7c6c elementor-widget elementor-widget-heading" data-id="afd7c6c" data-element_type="widget" data-widget_type="heading.default">
@@ -289,7 +253,7 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 						</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e3e029d" data-id="e3e029d" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-eb35d8a" data-id="eb35d8a" data-element_type="column">
 			<div class="elementor-column-wrap">
 							<div class="elementor-widget-wrap">
 								</div>
@@ -298,135 +262,23 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 								</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-c9a5dab elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c9a5dab" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4ac7e00" data-id="4ac7e00" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-f09afa1 elementor-widget elementor-widget-html" data-id="f09afa1" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-element elementor-element-7b80ef0 elementor-widget elementor-widget-ekit-nav-menu" data-id="7b80ef0" data-element_type="widget" data-widget_type="ekit-nav-menu.default">
 				<div class="elementor-widget-container">
-			<style>
-body {font-family: Roboto;}
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #FBFBFB00;
-  background-color: #FBFBFB00;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 20px;
-  color: #fff;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #FBFBFB00;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #FBFBFB00;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-</style>
-</head>
-<body>
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">Informasi</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Statistik</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Pasukan</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Pencapaian</button>
-</div>
-
-<div id="London" class="tabcontent">
-  <h3></h3>
-  <p></p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3></h3>
-  <p></p>
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3></h3>
-  <p></p>
-</div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>		</div>
-				</div>
-						</div>
+			<div class="ekit-wid-con ekit_menu_responsive_tablet" data-hamburger-icon="" data-hamburger-icon-type="icon" data-responsive-breakpoint="1024"><div id="ekit-megamenu-aces-menu" class="elementskit-menu-container elementskit-menu-offcanvas-elements elementskit-navbar-nav-default elementskit_none ekit-nav-menu-one-page-no"><ul id="main-menu" class="elementskit-navbar-nav elementskit-menu-po-left submenu-click-on-icon"><li id="menu-item-1115" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1115 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#" class="ekit-menu-nav-link">Informasi</a></li>
+<li id="menu-item-1116" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1116 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="{{route('user.student.statistik')}}" class="ekit-menu-nav-link">Statistik</a></li>
+<li id="menu-item-1117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1117 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="#" class="ekit-menu-nav-link">Pencapaian</a></li>
+</ul>
+				<div class="elementskit-nav-identity-panel">
+					<div class="elementskit-site-title">
+						<a class="elementskit-nav-logo" href="http://ezran.my/ACES" target="_self" rel="">
+							<img src="http://ezran.my/ACES/wp-content/plugins/elementor/assets/images/placeholder.png" alt="">
+						</a>
 					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-45eeb58" data-id="45eeb58" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-4596d19 elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="4596d19" data-element_type="widget" data-widget_type="social-icons.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-social-icons-wrapper elementor-grid">
-							<div class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-7e6815e" target="_blank">
-						<span class="elementor-screen-only">Facebook</span>
-						<i class="fab fa-facebook"></i>					</a>
+					<button class="elementskit-menu-close elementskit-menu-toggler" type="button">X</button>
 				</div>
-							<div class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-6ad3dea" target="_blank">
-						<span class="elementor-screen-only">Twitter</span>
-						<i class="fab fa-twitter"></i>					</a>
+			</div></div>		</div>
 				</div>
-							<div class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-2ae0467" target="_blank">
-						<span class="elementor-screen-only">Youtube</span>
-						<i class="fab fa-youtube"></i>					</a>
-				</div>
-							<div class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-6a2fb72" target="_blank">
-						<span class="elementor-screen-only">Whatsapp</span>
-						<i class="fab fa-whatsapp"></i>					</a>
-				</div>
-					</div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<div class="elementor-element elementor-element-67fbaea elementor-widget elementor-widget-spacer" data-id="67fbaea" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-element elementor-element-36516b3 elementor-widget elementor-widget-spacer" data-id="36516b3" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-spacer">
 			<div class="elementor-spacer-inner"></div>
@@ -439,34 +291,62 @@ function openCity(evt, cityName) {
 								</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-e303884 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="e303884" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-60ec1fd elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="60ec1fd" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-83748e4" data-id="83748e4" data-element_type="column">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-06cf584" data-id="06cf584" data-element_type="column">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-23cd508 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="23cd508" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-0bbe558 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="0bbe558" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f8c320a" data-id="f8c320a" data-element_type="column">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2106e98" data-id="2106e98" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-ba2ca75 elementor-widget elementor-widget-heading" data-id="ba2ca75" data-element_type="widget" data-widget_type="heading.default">
+						<div class="elementor-element elementor-element-e673255 elementor-widget elementor-widget-heading" data-id="e673255" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">Notis</h2>		</div>
 				</div>
-				<div class="elementor-element elementor-element-ac69cd6 elementor-widget elementor-widget-image-carousel" data-id="ac69cd6" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
-			<div class="elementor-image-carousel swiper-wrapper">
-				<div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="http://ezran.my/ACES/wp-content/uploads/2020/12/WhatsApp-Image-2020-12-14-at-3.50.50-PM-1.jpeg" alt="WhatsApp Image 2020-12-14 at 3.50.50 PM" /></figure></div>			</div>
+						</div>
 					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-3c8faa7 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3c8faa7" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-d5441fd" data-id="d5441fd" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b0d16be elementor-widget elementor-widget-image" data-id="b0d16be" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img src="http://ezran.my/ACES/wp-content/uploads/elementor/thumbs/Journey-4.0-IR-scaled-ozlg0l8uhoxjr4y7nuhk12r046e1phtdsejgug32cg.jpg" title="Journey-4.0-IR" alt="Journey-4.0-IR" />											</div>
 				</div>
 				</div>
 						</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-88541e5" data-id="88541e5" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-78cd675" data-id="78cd675" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-d699f16" data-id="d699f16" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-fb2833e elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="fb2833e" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1e858cd" data-id="1e858cd" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
 						<div class="elementor-element elementor-element-2d3e3ef elementor-widget elementor-widget-heading" data-id="2d3e3ef" data-element_type="widget" data-widget_type="heading.default">
@@ -474,6 +354,18 @@ function openCity(evt, cityName) {
 			<h2 class="elementor-heading-title elementor-size-default">Mesej</h2>		</div>
 				</div>
 						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-973ee14 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default" data-id="973ee14" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7c0e2f5" data-id="7c0e2f5" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
 					</div>
 		</div>
 								</div>
