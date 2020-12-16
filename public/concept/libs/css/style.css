@@ -1001,6 +1001,10 @@ Borders
     color: #000 !important;
 }
 
+.text-statistik {
+    color: #fff !important;
+}
+
 .rating-color {
     color: #ffa811;
 }

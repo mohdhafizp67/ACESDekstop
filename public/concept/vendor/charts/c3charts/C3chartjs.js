@@ -272,14 +272,14 @@
                 bindto: "#c3chart_pie",
                 data: {
                     columns: [
-                        ['data1', 80],
-                        ['data2', 20]
+                        ['Lengkap', 6],
+                        ['Tidak Lengkap', 4]
                     ],
                     type: 'pie',
 
                     colors: {
                          data1: '#5969ff',
-                        data2: '#ff407b'
+                         data2: '#ff407b'
 
 
                     }
@@ -287,14 +287,14 @@
                 pie: {
                     label: {
                         format: function(value, ratio, id) {
-                            return d3.format('$')(value);
+                            return d3.format('')(value);
                         }
                     }
                 }
             });
         }
 
-        
+
 
         if ($('#c3chart_donut').length) {
             var chart = c3.generate({

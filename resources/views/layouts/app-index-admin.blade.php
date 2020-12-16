@@ -17,8 +17,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
@@ -29,18 +27,6 @@
     <link rel="stylesheet" href="{{ asset('concept/libs/css/style.css') }}">
     <link rel="stylesheet" href=" {{ asset('concept/vendor/fonts/fontawesome/css/fontawesome-all.css') }}">
 
-<<<<<<< Updated upstream
-=======
-    <link rel="stylesheet" href="{{ asset('concept/vendor/charts/chartist-bundle/chartist.css') }}" >
-    <link rel="stylesheet" href="{{ asset('concept/vendor/charts/morris-bundle/morris.css') }}">
-    <link rel="stylesheet" href="{{ asset('concept/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('concept/vendor/charts/c3charts/c3.css') }}">
-    <link rel="stylesheet" href="{{ asset('concept/vendor/fonts/flag-icon-css/flag-icon.min.css') }} ">
-    <!-- Icon Size -->
-    <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"> -->
-
->>>>>>> Stashed changes
 </head>
 <body>
     <div id="app">
@@ -183,33 +169,38 @@
                                   <img class="logo-img" src="{{ asset('concept/images/aces-removebg-preview.png') }}" alt="logo">
                                 </li>
                                   <li class="nav-divider">
-                                      Aktiviti
-                                  </li>
-                                  <lxi class="nav-item ">
-                                    <a class="nav-link" href="{{ route('home') }}"><i class="fas fa-user-circle"aria-hidden="true"></i> </i>Profil</a>
+                                      Main Menu
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
+                                    <a class="nav-link" href="{{ route('home-admin') }}"><i class="fa fa-home" aria-hidden="true"></i>Admin Dashboard</a>
+                                  </li>
+                                  <li class="nav-divider">
+                                      Activities
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-book" aria-hidden="true"></i>Tambah Pelajaran</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Student Progress</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Tambah Kuiz</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>Student Statistic</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-university" aria-hidden="true"></i>Question Bank</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Leader Board</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>Announcement</a>
                                   </li>
 
                                   <li class="nav-divider">
-                                      Lain-lain
+                                      Others
                                   </li>
                                   <li class="nav-item ">
-<<<<<<< Updated upstream
                                     <a class="nav-link" href="{{ route('admin.others.user-list') }}"><i class="fa fa-users" aria-hidden="true"></i>  User List</a>
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i>  Feedback</a>
-=======
-                                    <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>Baca Maklum Balas</a>
->>>>>>> Stashed changes
                                   </li>
                                   <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
@@ -532,23 +523,7 @@
   <script src="{{ asset('concept/vendor/slimscroll/jquery.slimscroll.js') }}"></script>
   <!-- main js -->
   <script src="{{ asset('concept/libs/js/main-js.js  ') }}"></script>
-  <!-- chart chartist js -->
-  <script src="{{ asset('concept/vendor/charts/chartist-bundle/chartist.min.js') }}"></script>
-  <script src="{{ asset('concept/vendor/charts/chartist-bundle/Chartistjs.js') }}"></script>
-  <!-- sparkline js -->
-  <script src="{{ asset('concept/vendor/charts/sparkline/jquery.sparkline.js') }}"></script>
-  <!-- morris js -->
-  <script src="{{ asset('concept/vendor/charts/morris-bundle/raphael.min.js') }}"></script>
-  <script src="{{ asset('concept/vendor/charts/morris-bundle/morris.js') }}"></script>
 
-
-  <!-- chart c3 js -->
-  <script src="{{ asset('concept/vendor/charts/c3charts/c3.min.js') }}"></script>
-  <script src="{{ asset('concept/vendor/charts/c3charts/d3-5.4.0.min.js') }}"></script>
-  <script src="{{ asset('concept/vendor/charts/c3charts/C3chartjs.js') }}"></script>
-  <script src="{{ asset('concept/libs/js/dashboard-ecommerce.js') }}"></script>
-
-<<<<<<< Updated upstream
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
@@ -599,9 +574,4 @@
           // } ).draw();
         });
     </script>
-=======
-  <!-- chart js -->
-  <script src="{{ asset('concept/vendor/charts/charts-bundle/chartjs.js') }}"></script>
->>>>>>> Stashed changes
-
 </html>
