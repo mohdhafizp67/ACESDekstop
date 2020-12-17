@@ -185,7 +185,7 @@
                                     <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Quizes</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>Games</a>
+                                    <a class="nav-link" href="{{route('user.game.demo')}}"><i class="fa fa-gamepad" aria-hidden="true"></i>Games</a>
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>  Leaderboard</a>

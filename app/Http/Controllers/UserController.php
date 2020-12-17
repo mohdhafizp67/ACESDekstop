@@ -67,4 +67,11 @@ class UserController extends Controller
     return view('user.student.statistik');
 
   }
+
+  public function gameDemo()
+  {
+
+    return view('game.demo.game');
+
+  }
 }

@@ -33,6 +33,9 @@ Route::get('/courses', [App\Http\Controllers\LessonController::class, 'courses']
 //student
 Route::get('/statistik', [App\Http\Controllers\UserController::class, 'statistik'])->name('user.student.statistik');
 
+Route::get('/demo', [App\Http\Controllers\UserController::class, 'gameDemo'])->name('user.game.demo');
+
+
 Route::get('/feedback', [App\Http\Controllers\UserController::class, 'feedback'])->name('others.feedback');
 
 Route::get('/profile/change-password', [App\Http\Controllers\UserController::class, 'viewChangePassword'])->name('user.change-password');
