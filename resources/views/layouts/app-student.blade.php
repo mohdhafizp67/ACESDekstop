@@ -193,7 +193,7 @@
                                     <a class="nav-link" href="#"><i class="fas fa-star" aria-hidden="true"></i> </i>Skor</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>Liga Permainan</a>
+                                    <a class="nav-link" href="{{route('user.game.demo')}}"><i class="fa fa-gamepad" aria-hidden="true"></i>Liga Permainan</a>
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fas fa-gift"  aria-hidden="true"></i></i>Ganjaran</a>
