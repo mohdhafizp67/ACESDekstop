@@ -52,6 +52,18 @@ Route::middleware('admin')->group(function () {
   Route::post('/admin/profile/change-password/updating', [App\Http\Controllers\AdminController::class, 'updatingPassword'])->name('admin.profiles.change-password.updating');
 
   //Activities
+  Route::get('/admin/activities/question-banks/list', [App\Http\Controllers\AdminController::class, 'viewQuestionBank'])->name('admin.activities.question-banks.list');
+
+  Route::get('/admin/activities/question-banks/add', [App\Http\Controllers\AdminController::class, 'addQuestionBank'])->name('admin.activities.question-banks.add');
+
+  Route::post('/admin/activities/question-banks/add/save', [App\Http\Controllers\AdminController::class, 'saveQuestionBank'])->name('admin.activities.question-banks.add.save');
+
+  Route::get('/admin/activities/question-banks/edit/{id}', [App\Http\Controllers\AdminController::class, 'editQuestionBank'])->name('admin.activities.question-banks.edit');
+
+  Route::post('/admin/activities/question-banks/edit/updating', [App\Http\Controllers\AdminController::class, 'updateQuestionBank'])->name('admin.activities.question-banks.edit.updating');
+
+  Route::post('/admin/activities/question-banks/remove', [App\Http\Controllers\AdminController::class, 'removeQuestionBank'])->name('admin.activities.question-banks.remove');
+
 
 
   //Others
@@ -59,7 +71,6 @@ Route::middleware('admin')->group(function () {
 
   Route::post('/admin/others/user-list/disable', [App\Http\Controllers\AdminController::class, 'disableStatus'])->name('admin.others.user-list.disable');
 
-    Route::post('/admin/others/user-list/activate', [App\Http\Controllers\AdminController::class, 'activateStatus'])->name('admin.others.user-list.activate');
+  Route::post('/admin/others/user-list/activate', [App\Http\Controllers\AdminController::class, 'activateStatus'])->name('admin.others.user-list.activate');
 
 });
-

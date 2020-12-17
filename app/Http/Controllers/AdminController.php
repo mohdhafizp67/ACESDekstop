@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use Auth;
 use App\Models\User;
+use App\Models\QuestionBank;
+use App\Models\AnswerBank;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -86,6 +88,101 @@ class AdminController extends Controller
       $user->save();
 
       return redirect()->route('admin.profiles.change-password')->with("success","Password has been changed");
+  }
+
+  public function viewQuestionBank()
+  {
+      $question_list = QuestionBank::where('status','1')->get();
+      return view('admin.activities.question-banks.list',compact('question_list'));
+  }
+
+  public function addQuestionBank()
+  {
+      return view('admin.activities.question-banks.add');
+  }
+
+  public function saveQuestionBank(Request $request)
+  {
+      event($question_id = $this->createQuestion($request->all()));
+
+      event($answer_true_id = $this->createAnswerTrue($request->all(), $question_id));
+
+      event($answer_false_id = $this->createAnswerFalse($request->all(), $question_id));
+
+      return redirect()->route('admin.activities.question-banks.list')->with("success","New question has been saved");
+  }
+
+  public function createQuestion(array $data){
+    $status = "1";
+
+    return QuestionBank::Create([
+      'chapter' => $data['chapter'],
+      'question' => $data['question'],
+      'status' => $status,
+      ]);
+  }
+
+  public function createAnswerTrue(array $data, $question_id){
+    $status = "True";
+
+    return AnswerBank::Create([
+      'question_id' => $question_id->id,
+      'answer' => $data['answer'],
+      'status' => $status,
+      ]);
+  }
+
+  public function createAnswerFalse(array $data, $question_id){
+
+    $status = "False";
+
+    foreach ($data['option'] as $key => $value) {
+      $submit = AnswerBank::Create([
+        'question_id' => $question_id->id,
+        'answer' => $data['option'][$key],
+        'status' => $status,
+      ]);
+    }
+  }
+
+  public function editQuestionBank($id)
+  {
+      $question = QuestionBank::findOrFail($id);
+      $answer = AnswerBank::where('question_id', $id)->where('status', "True")->get();
+      $option = AnswerBank::where('question_id', $id)->where('status', "False")->get();
+
+      return view('admin.activities.question-banks.edit', compact('question','answer','option'));
+  }
+
+  public function updateQuestionBank(Request $request){
+    // dd($request->all());
+    // dd($request['option'][0]);
+
+
+    $question = QuestionBank::findOrFail($request->question_id);
+    $question->chapter = $request->chapter;
+    $question->question = $request->question;
+    $question->save();
+
+    $answer = AnswerBank::findOrFail($request->answer_id);
+    $answer->answer = $request->answer;
+    $answer->save();
+
+    foreach ($request['option'] as $key => $value){
+      $option = AnswerBank::findOrFail($request['option_id'][$key]);
+      $option->answer = $request['option'][$key];
+      $option->save();
+    }
+
+    return redirect()->route('admin.activities.question-banks.list')->with("success","Question has been updated");
+  }
+
+  public function removeQuestionBank(Request $request)
+  {
+      $question = QuestionBank::findOrFail($request->question_id);
+      $question->status = "0";
+      $question->save();
+      return redirect()->route('admin.activities.question-banks.list')->with("success","Question has been deleted");
   }
 
   public function viewUserList()
