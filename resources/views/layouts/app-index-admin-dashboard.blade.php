@@ -179,6 +179,9 @@
                           </button>
                           <div class="collapse navbar-collapse" id="navbarNav">
                               <ul class="navbar-nav flex-column">
+                                <li class="nav-divider">
+                                  <img class="logo-img" src="{{ asset('concept/images/aces-removebg-preview.png') }}" alt="logo">
+                                </li>
                                   <li class="nav-divider">
                                       Main Menu
                                   </li>
@@ -186,32 +189,34 @@
                                     <a class="nav-link" href="{{ route('home-admin') }}"><i class="fa fa-home" aria-hidden="true"></i>Admin Dashboard</a>
                                   </li>
                                   <li class="nav-divider">
-                                      Activities
+                                      Aktiviti
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Student Progress</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Kemajuan Pelajar</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>Student Statistic</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>Statistik Pelajar</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('admin.activities.question-banks.list') }}"><i class="fa fa-university" aria-hidden="true"></i>Question Bank</a>
+
+                                    <a class="nav-link" href="{{ route('admin.activities.question-banks.list') }}"><i class="fa fa-university" aria-hidden="true"></i>Soalan Bank</a>
+
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Leader Board</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>Announcement</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>Pengumuman</a>
                                   </li>
 
                                   <li class="nav-divider">
                                       Others
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('admin.others.user-list') }}"><i class="fa fa-users" aria-hidden="true"></i>  User List</a>
+                                    <a class="nav-link" href="{{ route('admin.others.user-list') }}"><i class="fa fa-users" aria-hidden="true"></i> Senarai Pengguna</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i>  Feedback</a>
+                                    <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i>Maklum balas</a>
                                   </li>
                                   <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
