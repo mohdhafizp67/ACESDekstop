@@ -1,4 +1,502 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Scripts -->
+    <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link rel="stylesheet" href="{{ asset('concept/vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link href="{{ asset('concept/vendor/fonts/circular-std/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('concept/libs/css/style.css') }}">
+    <link rel="stylesheet" href=" {{ asset('concept/vendor/fonts/fontawesome/css/fontawesome-all.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('concept/vendor/charts/chartist-bundle/chartist.css') }}" >
+    <link rel="stylesheet" href="{{ asset('concept/vendor/charts/morris-bundle/morris.css') }}">
+    <link rel="stylesheet" href="{{ asset('concept/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('concept/vendor/charts/c3charts/c3.css') }}">
+    <link rel="stylesheet" href="{{ asset('concept/vendor/fonts/flag-icon-css/flag-icon.min.css') }} ">
+
+    <!-- Icon Size -->
+    <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+
+</head>
+<body>
+    <div id="app">
+        <main class="py-0">
+          <div class="dashboard-main-wrapper">
+              <!-- ============================================================== -->
+              <!-- navbar -->
+              <!-- ============================================================== -->
+              <div class="dashboard-header">
+                  <nav class="navbar navbar-expand-lg fixed-top" style="background-color:#fff";>
+                      <a class="navbar-brand" href="{{ route('home') }}">ACES</a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                          <ul class="navbar-nav ml-auto navbar-right-top">
+                              <!-- <li class="nav-item">
+                                  <div id="custom-search" class="top-search-bar">
+                                      <input class="form-control" type="text" placeholder="Search..">
+                                  </div>
+                              </li> -->
+                              <!-- <li class="nav-item dropdown notification">
+                                  <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
+                                  <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+                                      <li>
+                                          <div class="notification-title"> Notification</div>
+                                          <div class="notification-list">
+                                              <div class="list-group">
+                                                  <a href="#" class="list-group-item list-group-item-action active">
+                                                      <div class="notification-info">
+                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
+                                                          <div class="notification-list-user-block"><span class="notification-list-user-name">Jeremy Rakestraw</span>accepted your invitation to join the team.
+                                                              <div class="notification-date">2 min ago</div>
+                                                          </div>
+                                                      </div>
+                                                  </a>
+                                                  <a href="#" class="list-group-item list-group-item-action">
+                                                      <div class="notification-info">
+                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
+                                                          <div class="notification-list-user-block"><span class="notification-list-user-name">John Abraham </span>is now following you
+                                                              <div class="notification-date">2 days ago</div>
+                                                          </div>
+                                                      </div>
+                                                  </a>
+                                                  <a href="#" class="list-group-item list-group-item-action">
+                                                      <div class="notification-info">
+                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
+                                                          <div class="notification-list-user-block"><span class="notification-list-user-name">Monaan Pechi</span> is watching your main repository
+                                                              <div class="notification-date">2 min ago</div>
+                                                          </div>
+                                                      </div>
+                                                  </a>
+                                                  <a href="#" class="list-group-item list-group-item-action">
+                                                      <div class="notification-info">
+                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
+                                                          <div class="notification-list-user-block"><span class="notification-list-user-name">Jessica Caruso</span>accepted your invitation to join the team.
+                                                              <div class="notification-date">2 min ago</div>
+                                                          </div>
+                                                      </div>
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="list-footer"> <a href="#">View all notifications</a></div>
+                                      </li>
+                                  </ul>
+                              </li> -->
+                              <!-- <li class="nav-item dropdown connection">
+                                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+                                  <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
+                                      <li class="connection-list">
+                                          <div class="row">
+                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Github</span></a>
+                                              </div>
+                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Dribbble</span></a>
+                                              </div>
+                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Dropbox</span></a>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                                  <a href="#" class="connection-item"><img src="#" alt=""> <span>Bitbucket</span></a>
+                                              </div>
+                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                                  <a href="#" class="connection-item"><img src="#" alt="" ><span>Mail chimp</span></a>
+                                              </div>
+                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Slack</span></a>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <div class="conntection-footer"><a href="#">More</a></div>
+                                      </li>
+                                  </ul>
+                              </li> -->
+                              <li class="nav-item dropdown nav-user">
+                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 230%;"></i></a>
+                                  <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                                      <div class="nav-user-info">
+                                          <h5 class="mb-0 text-white nav-user-name">Muhammad Shahid</h5>
+                                          <span class="status"></span><span class="ml-2">Student</span>
+                                      </div>
+                                      <a class="dropdown-item" href="{{route('user.profile.edit')}}"><i class="fas fa-user mr-2"></i>Profile</a>
+                                      <a class="dropdown-item" href="{{ route('user.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
+                                      <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                      <i class="fas fa-power-off mr-2"></i>Logout</a>
+                                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                      @csrf
+                                      </form>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </nav>
+              </div>
+
+
+              <!-- ============================================================== -->
+              <!-- end navbar -->
+              <!-- ============================================================== -->
+              <!-- ============================================================== -->
+              <!-- left sidebar -->
+              <!-- ============================================================== -->
+              <div class="nav-left-sidebar" style="background-color: #232121";>
+                  <div class="menu-list">
+                      <nav class="navbar navbar-expand-lg navbar-light">
+                          <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav flex-column">
+                                <li class="nav-divider">
+                                  <img class="logo-img" src="{{ asset('concept/images/aces-removebg-preview.png') }}" alt="logo">
+                                </li>
+                                  <li class="nav-divider">
+                                      Activities
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('home') }}"><i class="fas fa-user-circle"aria-hidden="true"></i> </i>Profil</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i> </i>Mesej</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fas fa-star" aria-hidden="true"></i> </i>Skor</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>Liga Permainan</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fas fa-gift"  aria-hidden="true"></i></i>Ganjaran</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Kuiz</a>
+                                  </li>
+
+                                  <li class="nav-divider">
+                                      Others
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>Maklum Balas</a>
+                                  </li>
+                                  <!-- <li class="nav-item ">
+                                      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
+                                      <div id="submenu-1" class="collapse submenu" style="">
+                                          <ul class="nav flex-column">
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-2" aria-controls="submenu-1-2">E-Commerce</a>
+                                                  <div id="submenu-1-2" class="collapse submenu" style="">
+                                                      <ul class="nav flex-column">
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" href="index.html">E Commerce Dashboard</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" href="ecommerce-product.html">Product List</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" href="ecommerce-product-single.html">Product Single</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" href="ecommerce-product-checkout.html">Product Checkout</a>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="dashboard-finance.html">Finance</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="dashboard-sales.html">Sales</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-1" aria-controls="submenu-1-1">Infulencer</a>
+                                                  <div id="submenu-1-1" class="collapse submenu" style="">
+                                                      <ul class="nav flex-column">
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" href="dashboard-influencer.html">Influencer</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" href="influencer-finder.html">Influencer Finder</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" href="influencer-profile.html">Influencer Profile</a>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>UI Elements</a>
+                                      <div id="submenu-2" class="collapse submenu" style="">
+                                          <ul class="nav flex-column">
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/cards.html">Cards <span class="badge badge-secondary">New</span></a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/general.html">General</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/carousel.html">Carousel</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/listgroup.html">List Group</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/typography.html">Typography</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/accordions.html">Accordions</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/tabs.html">Tabs</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fa-chart-pie"></i>Chart</a>
+                                      <div id="submenu-3" class="collapse submenu" style="">
+                                          <ul class="nav flex-column">
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/chart-c3.html">C3 Charts</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/chart-chartist.html">Chartist Charts</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/chart-charts.html">Chart</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/chart-morris.html">Morris</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/chart-sparkline.html">Sparkline</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/chart-gauge.html">Guage</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </li> -->
+                                  <!-- <li class="nav-item ">
+                                      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms"></i>Forms</a>
+                                      <div id="submenu-4" class="collapse submenu" style="">
+                                          <ul class="nav flex-column">
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/form-elements.html">Form Elements</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/form-validation.html">Parsely Validations</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/multiselect.html">Multiselect</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/datepicker.html">Date Picker</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/bootstrap-select.html">Bootstrap Select</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fas fa-fw fa-table"></i>Tables</a>
+                                      <div id="submenu-5" class="collapse submenu" style="">
+                                          <ul class="nav flex-column">
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/general-table.html">General Tables</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/data-tables.html">Data Tables</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </li>
+                                  <li class="nav-divider">
+                                      Features
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-fw fa-file"></i> Pages </a>
+                                      <div id="submenu-6" class="collapse submenu" style="">
+                                          <ul class="nav flex-column">
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/blank-page.html">Blank Page</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/blank-page-header.html">Blank Page Header</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/login.html">Login</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/404-page.html">404 page</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/sign-up.html">Sign up Page</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/forgot-password.html">Forgot Password</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/pricing.html">Pricing Tables</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/timeline.html">Timeline</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/calendar.html">Calendar</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/sortable-nestable-lists.html">Sortable/Nestable List</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/widgets.html">Widgets</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/media-object.html">Media Objects</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/cropper-image.html">Cropper</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/color-picker.html">Color Picker</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </li> -->
+                                  <!-- <li class="nav-item">
+                                      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fas fa-fw fa-inbox"></i>Apps <span class="badge badge-secondary">New</span></a>
+                                      <div id="submenu-7" class="collapse submenu" style="">
+                                          <ul class="nav flex-column">
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/inbox.html">Inbox</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/email-details.html">Email Detail</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/email-compose.html">Email Compose</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/message-chat.html">Message Chat</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-8"><i class="fas fa-fw fa-columns"></i>Icons</a>
+                                      <div id="submenu-8" class="collapse submenu" style="">
+                                          <ul class="nav flex-column">
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/icon-fontawesome.html">FontAwesome Icons</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/icon-material.html">Material Icons</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/icon-simple-lineicon.html">Simpleline Icon</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/icon-themify.html">Themify Icon</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/icon-flag.html">Flag Icons</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/icon-weather.html">Weather Icon</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-9" aria-controls="submenu-9"><i class="fas fa-fw fa-map-marker-alt"></i>Maps</a>
+                                      <div id="submenu-9" class="collapse submenu" style="">
+                                          <ul class="nav flex-column">
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/map-google.html">Google Maps</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="pages/map-vector.html">Vector Maps</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </li> -->
+                                  <!-- <li class="nav-item">
+                                      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"><i class="fas fa-f fa-folder"></i>Menu Level</a>
+                                      <div id="submenu-10" class="collapse submenu" style="">
+                                          <ul class="nav flex-column">
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="#">Level 1</a>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-11" aria-controls="submenu-11">Level 2</a>
+                                                  <div id="submenu-11" class="collapse submenu" style="">
+                                                      <ul class="nav flex-column">
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" href="#">Level 1</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-link" href="#">Level 2</a>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+                                              </li>
+                                              <li class="nav-item">
+                                                  <a class="nav-link" href="#">Level 3</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </li> -->
+                              </ul>
+                          </div>
+                      </nav>
+                  </div>
+              </div>
+              <!-- ============================================================== -->
+              <!-- end left sidebar -->
+              <!-- ============================================================== -->
+              <!-- ============================================================== -->
+              <!-- wrapper  -->
+              <!-- ============================================================== -->
+              <div class="dashboard-wrapper">
 
 <!DOCTYPE html>
 <html class="html" lang="en-US">
@@ -6,7 +504,7 @@
 	<meta charset="UTF-8">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>ACES Dashboard Student &#8211; ACES</title>
+	<title>Header &#8211; ACES</title>
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="ACES &raquo; Feed" href="http://ezran.my/ACES/feed/" />
 <link rel="alternate" type="application/rss+xml" title="ACES &raquo; Comments Feed" href="http://ezran.my/ACES/comments/feed/" />
@@ -67,7 +565,7 @@ img.emoji {
 <link rel='stylesheet' id='powerpack-frontend-css'  href='http://ezran.my/ACES/wp-content/plugins/powerpack-lite-for-elementor/assets/css/frontend.css?ver=2.2.1' type='text/css' media='all' />
 <link rel='stylesheet' id='elementskit-css-widgetarea-control-editor-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/modules/controls/assets/css/widgetarea-editor.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='elementor-global-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/global.css?ver=1604548018' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-post-1062-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/post-1062.css?ver=1608177458' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-1147-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/post-1147.css?ver=1608179378' type='text/css' media='all' />
 <link rel='stylesheet' id='ekit-widget-styles-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='ekit-widget-styles-pro-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles-pro.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='ekit-responsive-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=2.0.9.1' type='text/css' media='all' />
@@ -80,13 +578,13 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
-<link rel="https://api.w.org/" href="http://ezran.my/ACES/wp-json/" /><link rel="alternate" type="application/json" href="http://ezran.my/ACES/wp-json/wp/v2/pages/1062" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ezran.my/ACES/xmlrpc.php?rsd" />
+<link rel="https://api.w.org/" href="http://ezran.my/ACES/wp-json/" /><link rel="alternate" type="application/json" href="http://ezran.my/ACES/wp-json/wp/v2/pages/1147" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ezran.my/ACES/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ezran.my/ACES/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 5.5.3" />
-<link rel="canonical" href="http://ezran.my/ACES/aces-dashboard-student/" />
-<link rel='shortlink' href='http://ezran.my/ACES/?p=1062' />
-<link rel="alternate" type="application/json+oembed" href="http://ezran.my/ACES/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fezran.my%2FACES%2Faces-dashboard-student%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://ezran.my/ACES/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fezran.my%2FACES%2Faces-dashboard-student%2F&#038;format=xml" />
+<link rel="canonical" href="http://ezran.my/ACES/header/" />
+<link rel='shortlink' href='http://ezran.my/ACES/?p=1147' />
+<link rel="alternate" type="application/json+oembed" href="http://ezran.my/ACES/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fezran.my%2FACES%2Fheader%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://ezran.my/ACES/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fezran.my%2FACES%2Fheader%2F&#038;format=xml" />
                 <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
                 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>                <style type="text/css">
                     <!--
@@ -165,13 +663,7 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 <style type="text/css">/** Mega Menu CSS: fs **/</style>
 </head>
 
-<div class="dashboard-ecommerce">
-    <div class="container-fluid dashboard-content ">
-
-
-
-
-<body class="page-template page-template-elementor_header_footer page page-id-1062 wp-embed-responsive wpb-elementor-addons oceanwp-theme dropdown-mobile no-header-border default-breakpoint has-sidebar content-right-sidebar page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-11 elementor-page elementor-page-1062" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+<body class="page-template page-template-elementor_header_footer page page-id-1147 wp-embed-responsive wpb-elementor-addons oceanwp-theme dropdown-mobile no-header-border default-breakpoint has-sidebar content-right-sidebar page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-11 elementor-page elementor-page-1147" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
 
 
@@ -187,29 +679,29 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 
 			<main id="main" class="site-main clr"  role="main">
 
-						<div data-elementor-type="wp-page" data-elementor-id="1062" class="elementor elementor-1062" data-elementor-settings="[]">
+						<div data-elementor-type="wp-page" data-elementor-id="1147" class="elementor elementor-1147" data-elementor-settings="[]">
 						<div class="elementor-inner">
 							<div class="elementor-section-wrap">
-							<section class="elementor-section elementor-top-section elementor-element elementor-element-d4c4c11 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="d4c4c11" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-53fb0ec elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="53fb0ec" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8a2ee8c" data-id="8a2ee8c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b525bcc" data-id="b525bcc" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-e62ed2d elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="e62ed2d" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-628a2d0 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="628a2d0" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9472513" data-id="9472513" data-element_type="column">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ee1a927" data-id="ee1a927" data-element_type="column">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-c5c5d7d elementor-widget elementor-widget-spacer" data-id="c5c5d7d" data-element_type="widget" data-widget_type="spacer.default">
+						<div class="elementor-element elementor-element-313c6d7 elementor-widget elementor-widget-spacer" data-id="313c6d7" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-spacer">
 			<div class="elementor-spacer-inner"></div>
 		</div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-9ee9387 elementor-widget elementor-widget-text-editor" data-id="9ee9387" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-a4e244f elementor-widget elementor-widget-text-editor" data-id="a4e244f" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><p>ACES <span style="color: #b000b1;">IR 4.0</span></p></div>
 				</div>
@@ -217,7 +709,7 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 						</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ce46cd7" data-id="ce46cd7" data-element_type="column">
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-20962d5" data-id="20962d5" data-element_type="column">
 			<div class="elementor-column-wrap">
 							<div class="elementor-widget-wrap">
 								</div>
@@ -226,13 +718,13 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 								</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-a8928ba elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a8928ba" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-8d7aa30 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="8d7aa30" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
-					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-13ea686" data-id="13ea686" data-element_type="column">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f906c8a" data-id="f906c8a" data-element_type="column">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-245e1ca elementor-widget elementor-widget-image" data-id="245e1ca" data-element_type="widget" data-widget_type="image.default">
+						<div class="elementor-element elementor-element-c16cc36 elementor-widget elementor-widget-image" data-id="c16cc36" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-image">
 										<img width="150" height="150" src="http://ezran.my/ACES/wp-content/uploads/2020/11/cropped-Avatar-Round-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" srcset="http://ezran.my/ACES/wp-content/uploads/2020/11/cropped-Avatar-Round-150x150.png 150w, http://ezran.my/ACES/wp-content/uploads/2020/11/cropped-Avatar-Round-300x300.png 300w, http://ezran.my/ACES/wp-content/uploads/2020/11/cropped-Avatar-Round-100x100.png 100w, http://ezran.my/ACES/wp-content/uploads/2020/11/cropped-Avatar-Round.png 512w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
@@ -241,32 +733,42 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 						</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e102947" data-id="e102947" data-element_type="column">
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4ffb7ce" data-id="4ffb7ce" data-element_type="column">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-afd7c6c elementor-widget elementor-widget-heading" data-id="afd7c6c" data-element_type="widget" data-widget_type="heading.default">
+						<div class="elementor-element elementor-element-7b3e19e elementor-widget elementor-widget-heading" data-id="7b3e19e" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">Username</h2>		</div>
 				</div>
 						</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-eb35d8a" data-id="eb35d8a" data-element_type="column">
+
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-19bfe85" data-id="19bfe85" data-element_type="column">
 			<div class="elementor-column-wrap">
 							<div class="elementor-widget-wrap">
 								</div>
 					</div>
 		</div>
+
 								</div>
 					</div>
 		</section>
-				<div class="elementor-element elementor-element-36516b3 elementor-widget elementor-widget-spacer" data-id="36516b3" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-element elementor-element-7c0f822 elementor-widget elementor-widget-spacer" data-id="7c0f822" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-spacer">
 			<div class="elementor-spacer-inner"></div>
 		</div>
 				</div>
 				</div>
+        <div class="page-breadcrumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{route('home')}}" class="breadcrumb-link">Dashboard</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Statistik</li>
+                </ol>
+            </nav>
+        </div>
 						</div>
 					</div>
 		</div>
@@ -294,10 +796,6 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 
 <a id="scroll-top" class="scroll-top-right" href="#"><span class="fa fa-angle-up" aria-label="Scroll to the top of the page"></span></a>
 
-
-
-
-</div>
 
 
 
@@ -344,10 +842,67 @@ var megamenu = {"timeout":"300","interval":"100"};
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.0.13' id='share-link-js'></script>
 <script type='text/javascript' id='elementor-frontend-js-before'>
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.13","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"http:\/\/ezran.my\/ACES\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1062,"title":"ACES%20Dashboard%20Student%20%E2%80%93%20ACES","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.13","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"http:\/\/ezran.my\/ACES\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1147,"title":"Header%20%E2%80%93%20ACES","excerpt":"","featuredImage":false}};
 </script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.0.13' id='elementor-frontend-js'></script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=2.0.9.1' id='elementskit-elementor-js'></script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/modules/controls/assets/js/widgetarea-editor.js?ver=2.0.9.1' id='elementskit-js-widgetarea-control-editor-js'></script>
 </body>
+</html>
+
+            @yield('content')
+
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <div class="footer" style="background-color:#232121";>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                             Copyright © 2020 Artanis Cloud. All rights reserved. Dashboard by Warga Artanis.
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="javascript: void(0);">About</a>
+                                <a href="javascript: void(0);">Support</a>
+                                <a href="javascript: void(0);">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- end wrapper  -->
+        <!-- ============================================================== -->
+      </div>
+        </main>
+    </div>
+</body>
+
+  <script src="{{ asset('concept/vendor/jquery/jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ asset('concept/vendor/bootstrap/js/bootstrap.bundle.js') }}"></script>
+
+  <!-- slimscroll js -->
+  <script src="{{ asset('concept/vendor/slimscroll/jquery.slimscroll.js') }}"></script>
+  <!-- main js -->
+  <script src="{{ asset('concept/libs/js/main-js.js  ') }}"></script>
+  <!-- chart chartist js -->
+  <script src="{{ asset('concept/vendor/charts/chartist-bundle/chartist.min.js') }}"></script>
+  <!-- sparkline js -->
+  <script src="{{ asset('concept/vendor/charts/sparkline/jquery.sparkline.js') }}"></script>
+  <!-- morris js -->
+  <script src="{{ asset('concept/vendor/charts/morris-bundle/raphael.min.js') }}"></script>
+  <script src="{{ asset('concept/vendor/charts/morris-bundle/morris.js') }}"></script>
+  <!-- chart c3 js -->
+  <script src="{{ asset('concept/vendor/charts/c3charts/c3.min.js') }}"></script>
+  <script src="{{ asset('concept/vendor/charts/c3charts/d3-5.4.0.min.js') }}"></script>
+  <script src="{{ asset('concept/vendor/charts/c3charts/C3chartjs.js') }}"></script>
+  <script src="{{ asset('concept/libs/js/dashboard-ecommerce.js') }}"></script>
+
 </html>

@@ -1,4 +1,4 @@
-@extends('layouts.app-index')
+@extends('layouts.app-studentheader')
 @section('content')
            <!--Page Body part -->
            <div class="page-body p-4 text-dark">

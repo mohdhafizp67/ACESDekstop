@@ -1,4 +1,4 @@
-@extends('layouts.app-student')
+@extends('layouts.app-studentheader')
 
 @section('content')
 
@@ -9,7 +9,7 @@
         <!-- ============================================================== -->
         <!-- pageheader  -->
         <!-- ============================================================== -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div class="page-header">
                     <h2 class="pageheader-title">ACES Dashboard</h2>
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-
+ -->
 
 
         <!-- ============================================================== -->
@@ -334,23 +334,51 @@
                 <!-- ============================================================== -->
                 <!-- category revenue  -->
                 <!-- ============================================================== -->
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                         <div class="card" style="border-radius: 25px";>
-                             <h5 class="card-header">Pelajaran</h5>
-                             <div class="card-body">
-                                 <div id="c3chart_pie"></div>
-                             </div>
-                         </div>
-                     </div>
+                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="card">
+                                            <h5 class="card-header">Kemajuan Pelajar</h5>
+                                            <div class="card-body">
 
-                     <div class="col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12">
-                              <div class="card">
-                                  <h5 class="card-header">Bar Charts</h5>
-                                  <div class="card-body">
-                                      <canvas id="chartjs_bar"></canvas>
-                                  </div>
-                              </div>
-                          </div>
+                                              <div class="bg-style">
+
+                                                <div class="wrapper">
+                                                  <div class="row pt-4 pb-4">
+                                                    <div class="col-6 col-sm-3">
+                                                      <div class="counter" data-cp-percentage="75" data-cp-color="#00bfeb">
+                                                      </div><br>
+                                                      <h4>Pelajaran</h4>
+
+                                                    </div>
+                                                    <div class="col-6 col-sm-3">
+                                                      <div class="counter" data-cp-percentage="65" data-cp-color="#EA4C89"></div><br>
+                                                      <h4>Kuiz</h4>
+
+                                                    </div>
+                                                    <div class="col-6 col-sm-3">
+                                                      <div class="counter" data-cp-percentage="35" data-cp-color="#FF675B"></div><br>
+
+                                                      <h4>Permainan</h4>
+
+                                                    </div>
+                                                    <div class="col-6 col-sm-3">
+                                                      <div class="counter" data-cp-percentage="44" data-cp-color="#FF9900"></div><br>
+                                                      <h4>Level</h4>
+
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <button class="btn-update">Semak Semula</button>
+                                              </div>
+                                              <!-- <p class="p-3">
+                                                HTML and JS Circular Progress bar, developed with canvas and some nice easing- animation. Feel free to use. <br />You could mention this codepen
+                                              </p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
                 <!-- ============================================================== -->
                 <!-- end category revenue  -->
                 <!-- ============================================================== -->
@@ -368,7 +396,17 @@
                 <!-- ============================================================== -->
                 <!-- category revenue  -->
                 <!-- ============================================================== -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                         <div class="card" style="border-radius: 25px";>
+                             <h5 class="card-header">Pelajaran</h5>
+                             <div class="card-body">
+                                 <div id="c3chart_pie"></div>
+                             </div>
+                         </div>
+                     </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                                         <div class="card">
                                             <h5 class="card-header">Stacked Bar Chart</h5>
                                             <div class="card-body">
@@ -377,47 +415,14 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                                            <div class="card">
-                                                                <h5 class="card-header">Kemajuan Pelajar</h5>
-                                                                <div class="card-body">
-
-                                                                  <div class="bg-style">
-
-                                                                    <div class="wrapper">
-                                                                      <div class="row pt-4 pb-4">
-                                                                        <div class="col-6 col-sm-3">
-                                                                          <div class="counter" data-cp-percentage="75" data-cp-color="#00bfeb">
-                                                                          </div><br>
-                                                                          <h4>Pelajaran</h4>
-
-                                                                        </div>
-                                                                        <div class="col-6 col-sm-3">
-                                                                          <div class="counter" data-cp-percentage="65" data-cp-color="#EA4C89"></div><br>
-                                                                          <h4>Kuiz</h4>
-
-                                                                        </div>
-                                                                        <div class="col-6 col-sm-3">
-                                                                          <div class="counter" data-cp-percentage="35" data-cp-color="#FF675B"></div><br>
-
-                                                                          <h4>Permainan</h4>
-
-                                                                        </div>
-                                                                        <div class="col-6 col-sm-3">
-                                                                          <div class="counter" data-cp-percentage="44" data-cp-color="#FF9900"></div><br>
-                                                                          <h4>Level</h4>
-
-                                                                        </div>
-                                                                      </div>
-                                                                    </div>
-                                                                    <button class="btn-update">Jumlah</button>
-                                                                  </div>
-                                                                  <!-- <p class="p-3">
-                                                                    HTML and JS Circular Progress bar, developed with canvas and some nice easing- animation. Feel free to use. <br />You could mention this codepen
-                                                                  </p> -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                                             <div class="card">
+                                                 <h5 class="card-header">Bar Charts</h5>
+                                                 <div class="card-body">
+                                                     <canvas id="chartjs_bar"></canvas>
+                                                 </div>
+                                             </div>
+                                         </div>
 
 
                 <!-- ============================================================== -->
