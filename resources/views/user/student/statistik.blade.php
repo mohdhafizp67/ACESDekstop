@@ -2,6 +2,8 @@
 
 @section('content')
 
+
+
 <div class="dashboard-ecommerce">
     <div class="container-fluid dashboard-content ">
         <!-- ============================================================== -->
@@ -23,9 +25,14 @@
                 </div>
             </div>
         </div>
+
+
+
         <!-- ============================================================== -->
         <!-- end pageheader  -->
         <!-- ============================================================== -->
+
+
         <div class="ecommerce-widget">
 
             <div class="row">
