@@ -69,7 +69,11 @@ Route::middleware('admin')->group(function () {
 
 
   //Others
-  Route::get('/admin/others/user-list', [App\Http\Controllers\AdminController::class, 'viewUserList'])->name('admin.others.user-list');
+  Route::get('/admin/others/user-list/list', [App\Http\Controllers\AdminController::class, 'viewUserList'])->name('admin.others.user-list.list');
+
+  Route::get('/admin/others/user-list/edit/{id}', [App\Http\Controllers\AdminController::class, 'editUserList'])->name('admin.others.user-list.edit');
+
+  Route::post('/admin/others/user-list/edit/updating', [App\Http\Controllers\AdminController::class, 'updateUserList'])->name('admin.others.user-list.edit.updating');
 
   Route::post('/admin/others/user-list/disable', [App\Http\Controllers\AdminController::class, 'disableStatus'])->name('admin.others.user-list.disable');
 

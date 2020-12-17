@@ -4,35 +4,36 @@
 
         <div class="dashboard-ecommerce">
             <div class="container-fluid dashboard-content ">
+              @if ($message = Session::get('success'))
+              <div id=alert>
+                  <div class="alert alert-card  alert-success" role="alert">
+                      <strong>Operasi Berjaya! </strong>
+                      {{$message}}
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+              </div>
+              @elseif ($message = Session::get('error'))
+              <div id="alert">
+                <div class="alert alert-card  alert-danger" role="alert">
+                    <strong>Ralat! </strong>
+                    {{$message}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+              </div>
+              @endif
                   <div class="card" style="padding: 10px;">
 
-                    @if ($message = Session::get('success'))
-                    <div id=alert>
-                        <div class="alert alert-card  alert-success" role="alert">
-                            <strong>Operation Successful! </strong>
-                            {{$message}}
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    </div>
-                    @elseif ($message = Session::get('error'))
-                    <div id="alert">
-                      <div class="alert alert-card  alert-danger" role="alert">
-                          <strong>Error! </strong>
-                          {{$message}}
-                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                          </button>
-                      </div>
-                    </div>
-                    @endif
+
 
                     <div style="padding: 5px;"></div>
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-university" aria-hidden="true"></i>&nbsp Question Bank</h2>
+                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-university" aria-hidden="true"></i>&nbsp Bank Soalan</h2>
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
-                        <a href="{{route('admin.activities.question-banks.add')}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Add New Question</a>
+                        <a href="{{route('admin.activities.question-banks.add')}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Tambah Soalan Baru</a>
 
                         <hr>
 
@@ -40,9 +41,9 @@
                           <table id="table_data" class="table table-striped table-bordered second" style="width:100%">
                             <thead style="text-align: center;">
                               <tr>
-                                <th>Question</th>
-                                <th>Chapter</th>
-                                <th>Action</th>
+                                <th>Soalan</th>
+                                <th>Bab</th>
+                                <th>Tindakan</th>
                               </tr>
                             </thead>
                             <tbody style="text-align: center;">
@@ -68,20 +69,20 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
                                         <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </a>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Do you want to remove this question?</p>
+                                        <p>Anda pasti mahu memadam soalan ini?</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
+                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
                                         <!-- <a href="#" class="btn btn-primary">Yes</a> -->
                                         <form class="" action="{{route('admin.activities.question-banks.remove')}}" method="post">
                                         @csrf
-                                          <button type="submit" name="button" class="btn btn-primary">Remove Question</button>
+                                          <button type="submit" name="button" class="btn btn-primary">Padam Soalan</button>
                                           <input type="hidden" id="question_id" name="question_id">
                                         </form>
                                     </div>
@@ -96,5 +97,15 @@
         function pass_id_delete(id){
          $(".modal-footer #question_id").val( id );
        }
+        </script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+        <script type="text/javascript">
+        $("document").ready(function(){
+          setTimeout(function(){
+             $("div.alert").remove();
+          }, 5000 ); // 5 secs
+
+        });
         </script>
 @endsection

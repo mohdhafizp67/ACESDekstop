@@ -39,7 +39,7 @@ class AdminController extends Controller
     $user->state = request()->state;
     $user->save();
 
-    return redirect()->route('admin.profiles.edit-profile')->with("success","Profile has been updated");
+    return redirect()->route('admin.profiles.edit-profile')->with("success","Profil pengguna telah dikemaskini");
   }
 
   protected function validator(array $data)
@@ -65,15 +65,15 @@ class AdminController extends Controller
     $user = User::findOrFail($user_id);
 
     if(!(Hash::check($request->get('password'), Auth::user()->password))){
-      return redirect()->back()->with("error","Current password are incorrect!");
+      return redirect()->back()->with("error","Kata laluan semasa tidak betul");
     }
 
     if(strcmp($request->get('password'),$request->get('new_password'))== 0){
-      return redirect()->back()->with("error","Current Password cannot be the same as New Password");
+      return redirect()->back()->with("error","Kata laluan semasa tidak boleh sama dengan kata laluan baru");
     }
 
     if(strcmp($request->get('new_password'),$request->get('password_confirmation'))== 1){
-      return redirect()->back()->with("error","New Password not same as Confirmation Password");
+      return redirect()->back()->with("error","Kata laluan baru tidak sama dengan kata laluan pengesahan");
     }
 
     $validatedData = $request->validate([
@@ -87,7 +87,7 @@ class AdminController extends Controller
 
       $user->save();
 
-      return redirect()->route('admin.profiles.change-password')->with("success","Password has been changed");
+      return redirect()->route('admin.profiles.change-password')->with("success","Kata laluan berjaya dikemaskini");
   }
 
   public function viewQuestionBank()
@@ -109,7 +109,7 @@ class AdminController extends Controller
 
       event($answer_false_id = $this->createAnswerFalse($request->all(), $question_id));
 
-      return redirect()->route('admin.activities.question-banks.list')->with("success","New question has been saved");
+      return redirect()->route('admin.activities.question-banks.list')->with("success","Soalan anda telah disimpan");
   }
 
   public function createQuestion(array $data){
@@ -174,7 +174,7 @@ class AdminController extends Controller
       $option->save();
     }
 
-    return redirect()->route('admin.activities.question-banks.list')->with("success","Question has been updated");
+    return redirect()->route('admin.activities.question-banks.list')->with("success","Soalan telah dikemaskini");
   }
 
   public function removeQuestionBank(Request $request)
@@ -182,13 +182,52 @@ class AdminController extends Controller
       $question = QuestionBank::findOrFail($request->question_id);
       $question->status = "0";
       $question->save();
-      return redirect()->route('admin.activities.question-banks.list')->with("success","Question has been deleted");
+      return redirect()->route('admin.activities.question-banks.list')->with("success","Soalan telah dipadam");
   }
 
   public function viewUserList()
   {
       $user_list = User::get();
-      return view('admin.others.user-list', compact('user_list'));
+      return view('admin.others.user-list.list', compact('user_list'));
+  }
+
+  public function editUserList($id)
+  {
+      $user = User::get();
+      $user = User::findOrFail($id);
+      // dd($user);
+      return view('admin.others.user-list.edit', compact('user'));
+  }
+
+  public function updateUserList(Request $request){
+    $user = User::findOrFail($request->user_id);
+    $user->name = $request->name;
+    $user->ic_number = $request->ic_number;
+    $user->email = $request->email;
+    $user->phone = $request->phone;
+    $user->address = $request->address;
+    $user->postcode = $request->postcode;
+    $user->state = $request->state;
+
+    //updating role
+    if($request->role == "Admin" ){
+      $user->is_admin = 1;
+      $user->is_ecerdb_personnel = 0;
+      $user->is_student = 0;
+    }elseif ($request->role == "ECERDB") {
+      $user->is_admin = 0;
+      $user->is_ecerdb_personnel = 1;
+      $user->is_student = 0;
+    }else {
+      $user->is_admin = 0;
+      $user->is_ecerdb_personnel = 0;
+      $user->is_student = 1;
+    }
+
+    $user->save();
+
+    return redirect()->route('admin.others.user-list.list')->with("success","Maklumat pengguna telah dikemaskini");
+
   }
 
   public function disableStatus(Request $request)
@@ -197,7 +236,7 @@ class AdminController extends Controller
     $user->is_active = 0;
     $user->save();
 
-    return redirect()->route('admin.others.user-list')->with("success","User has been disabled");
+    return redirect()->route('admin.others.user-list.list')->with("success","Pengguna telah dinyahaktif");
   }
 
   public function activateStatus(Request $request)
@@ -206,7 +245,7 @@ class AdminController extends Controller
     $user->is_active = 1;
     $user->save();
 
-    return redirect()->route('admin.others.user-list')->with("success","User has been activated");
+    return redirect()->route('admin.others.user-list.list')->with("success","Pengguna telah diaktifkan");
   }
 
 }

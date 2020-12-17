@@ -29,11 +29,11 @@
                      <div class="card" style="padding: 10px;">
 
                        <div style="padding: 5px;"></div>
-                         <h2 class="card-header" style="text-align: center;"><i class="fas fa-edit"></i>Kemaskini Profil Pengguna</h2>
+                         <h2 class="card-header" style="text-align: center;"><i class="fa fa-users" aria-hidden="true"></i>Kemaskini Maklumat Pengguna</h2>
                          <div class="card-body p-0">
                            <div style="padding: 10px;"></div>
 
-                           <form action="{{route('admin.profiles.edit-profile.updating')}}" method="POST">
+                           <form action="{{route('admin.others.user-list.edit.updating')}}" method="POST">
                              @csrf
                              <div class="row">
                                <div class="col-md-2">
@@ -106,8 +106,9 @@
                                <div class="col-md-4">
                                  <div class="form-group">
                                     <label>Negeri</label>
+                                    <!-- <input type="text" name="negeri" class="form-control bg-light" value="{{$user->state}}" required> -->
                                     <select class="custom-select  bg-light @error('state') is-invalid @enderror" name="state" value="{{ $user->state }}"  required>
-                                          <option value="" selected disabled hidden>Choose State</option>
+                                          <option value="" selected required hidden>Choose State</option>
                                           <option value="Johor" {{ $user->state == "Johor" ? 'selected' : '' }}>Johor</option>
                                           <option value="Kedah" {{ $user->state == "Kedah" ? 'selected' : '' }}>Kedah</option>
                                           <option value="Kelantan" {{ $user->state == "Kelantan" ? 'selected' : '' }}>Kelantan</option>
@@ -132,13 +133,49 @@
                                </div>
                              </div>
 
+                             <hr>
+
+                             <div class="row">
+                               <div class="col-md-2">
+
+                               </div>
+                               <div class="col-md-4">
+                                 <div class="form-group">
+                                    <label>Status Pengguna</label>
+                                    <input type="text" name="phone" class="form-control bg-light" value="{{ $user->is_active ? 'Aktif' : 'Tidak Aktif' }}" disabled>
+                                 </div>
+                               </div>
+                               <div class="col-md-4">
+                                 <div class="form-group">
+                                   <label>Peranan Pengguna</label>
+                                   <select class="custom-select  bg-light @error('role') is-invalid @enderror" name="role" required>
+                                         <option value="" selected required hidden>Choose State</option>
+
+                                         <option value="Admin" {{ $user->is_admin == 1 ? 'selected' : '' }}>Admin</option>
+
+                                         <option value="ECERDB" {{ $user->is_ecerdb_personnel == 1 ? 'selected' : '' }}>ECERDB Personnel</option>
+
+                                         <option value="Pelajar" {{ $user->is_student == 1 ? 'selected' : '' }}>Pelajar</option>
+
+                                     </select>
+                                 </div>
+                               </div>
+                               <div class="col-md-2">
+
+                               </div>
+                             </div>
+
+                             <hr>
+                             <div style="padding: 5px;"></div>
+                             <input type="hidden" name="user_id" value="{{$user->id}}">
+
                              <div class="row">
                                <div class="col-md-2">
 
                                </div>
                                <div class="col-md-8">
                                  <!-- <button class="btn btn-block btn-primary" type="submit">Update Profile</button> -->
-                                 <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Kemaskini Profil</a>
+                                 <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Kemaskini Maklumat Pengguna</a>
                                </div>
                                <div class="col-md-2">
 
@@ -155,12 +192,12 @@
                                                      </a>
                                          </div>
                                          <div class="modal-body">
-                                             <p>Anda pasti mahu mengemaskini profil?</p>
+                                             <p>Anda pasti mahu mengemaskini maklumat pengguna ini?</p>
                                          </div>
                                          <div class="modal-footer">
                                              <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
                                              <!-- <a href="#" class="btn btn-primary">Yes</a> -->
-                                             <button type="submit" name="button" class="btn btn-primary">Kemaskini Profil</button>
+                                             <button type="submit" name="button" class="btn btn-primary">Kemaskini Maklumat Pengguna</button>
                                          </div>
                                      </div>
                                  </div>
