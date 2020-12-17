@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
 
     <link rel="stylesheet" href="{{ asset('concept/vendor/bootstrap/css/bootstrap.min.css') }}">
     <link href="{{ asset('concept/vendor/fonts/circular-std/style.css') }}" rel="stylesheet">
@@ -197,7 +198,9 @@
                                     <a class="nav-link" href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>Statistik Pelajar</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-university" aria-hidden="true"></i>Soalan Bank</a>
+
+                                    <a class="nav-link" href="{{ route('admin.activities.question-banks.list') }}"><i class="fa fa-university" aria-hidden="true"></i>Soalan Bank</a>
+
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
@@ -597,11 +600,7 @@
               //     }
               // },
             });
-            table.on( 'order.dt search.dt', function () {
-            table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
-                cell.innerHTML = i+1;
-            } );
-          } ).draw();
+            
         });
     </script>
 

@@ -15,8 +15,8 @@ class CreateAnswerBanksTable extends Migration
     {
         Schema::create('answer_banks', function (Blueprint $table) {
             $table->id();
-            $table->string('answer');
-            $table->string('status');
+            $table->string('answer')->nullable();
+            $table->string('status')->nullable();
             $table->bigInteger('question_id')->unsigned()->nullable();
             $table->foreign('question_id')->references('id')->on('question_banks');
             $table->timestamps();

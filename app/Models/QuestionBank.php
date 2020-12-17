@@ -10,7 +10,8 @@ class QuestionBank extends Model
     // use HasFactory;
     protected $fillable = [
       'chapter',
-      'question'
+      'question',
+      'status'
     ];
 
     public function answer(){
