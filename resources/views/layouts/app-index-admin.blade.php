@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="{{ asset('concept/libs/css/style.css') }}">
     <link rel="stylesheet" href=" {{ asset('concept/vendor/fonts/fontawesome/css/fontawesome-all.css') }}">
 
+
 </head>
 <body>
     <div id="app">
