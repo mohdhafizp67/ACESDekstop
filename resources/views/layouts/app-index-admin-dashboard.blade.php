@@ -141,28 +141,60 @@
                                       </li>
                                   </ul>
                               </li> -->
+                              <!-- <div style="border-left:1px solid #000;height:65px"></div> -->
                               <li class="nav-item dropdown nav-user">
-                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 230%;"></i></a>
+                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true" style="font-size: 180%;"></i></a>
                                   <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                       <div class="nav-user-info">
                                           <!-- <h4 class="mb-0 text-white nav-user-name">{{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}}</h4> -->
                                           <h6 class="mb-0 text-white nav-user-name">{{Auth::user()->name}}</h6>
                                           <div style="padding: 5px;"></div>
-                                          <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i> Admin</h6>
+                                          <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i>Admin Sistem</h6>
                                           <!-- <span><i class="fa fa-certificate" aria-hidden="true"></i> Admin </span> -->
                                       </div>
-                                      <a class="dropdown-item" href="{{route('admin.profiles.edit-profile')}}"><i class="fas fa-user mr-2"></i>Profile</a>
-                                      <a class="dropdown-item" href="{{ route('admin.profiles.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
-                                      <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                      <a class="dropdown-item" href="{{route('admin.profiles.edit-profile')}}"><i class="fas fa-user mr-2"></i>Profil Pengguna</a>
+                                      <a class="dropdown-item" href="{{ route('admin.profiles.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Tukar Kata Laluan</a>
+                                      <a class="dropdown-item"  href="#" class="btn btn-block btn-danger" data-toggle="modal" data-target="#logOutModal"><i class="fas fa-power-off mr-2"></i>Log Keluar</a>
+                                      <!-- <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                       <i class="fas fa-power-off mr-2"></i>Logout</a>
                                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                       @csrf
-                                      </form>
+                                      </form> -->
                                   </div>
                               </li>
+
+                              <li class="nav-item dropdown connection">
+                                  <!-- <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a> -->
+                                  <a href="#" class="btn btn-block btn-danger" data-toggle="modal" data-target="#logOutModal" style="font-size: 200%;"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+
+                              </li>
+
                           </ul>
                       </div>
                   </nav>
+                  <div class="modal fade" id="logOutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                  <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                          </a>
+                              </div>
+                              <div class="modal-body">
+                                  <p>Anda mahu log keluar?</p>
+                              </div>
+                              <div class="modal-footer">
+                                  <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                  <!-- <a href="#" class="btn btn-primary">Yes</a> -->
+                                  <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                  @csrf
+                                  <button type="submit" name="button" class="btn btn-primary">Log Keluar</button>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
               <!-- ============================================================== -->
               <!-- end navbar -->
@@ -183,10 +215,10 @@
                                   <img class="logo-img" src="{{ asset('concept/images/aces-removebg-preview.png') }}" alt="logo">
                                 </li>
                                   <li class="nav-divider">
-                                      Main Menu
+                                      Menu Utama
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('home-admin') }}"><i class="fa fa-home" aria-hidden="true"></i>Admin Dashboard</a>
+                                    <a class="nav-link" href="{{ route('home-admin') }}"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a>
                                   </li>
                                   <li class="nav-divider">
                                       Aktiviti
@@ -199,7 +231,7 @@
                                   </li>
                                   <li class="nav-item ">
 
-                                    <a class="nav-link" href="{{ route('admin.activities.question-banks.list') }}"><i class="fa fa-university" aria-hidden="true"></i>Soalan Bank</a>
+                                    <a class="nav-link" href="{{ route('admin.activities.question-banks.list') }}"><i class="fa fa-university" aria-hidden="true"></i>Bank Soalan</a>
 
                                   </li>
                                   <li class="nav-item ">
@@ -210,14 +242,14 @@
                                   </li>
 
                                   <li class="nav-divider">
-                                      Others
+                                      Lain-lain
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('admin.others.user-list') }}"><i class="fa fa-users" aria-hidden="true"></i> Senarai Pengguna</a>
+                                    <a class="nav-link" href="{{ route('admin.others.user-list.list') }}"><i class="fa fa-users" aria-hidden="true"></i> Senarai Pengguna</a>
                                   </li>
-                                  <li class="nav-item ">
+                                  <!-- <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i>Maklum balas</a>
-                                  </li>
+                                  </li> -->
                                   <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
                                       <div id="submenu-1" class="collapse submenu" style="">
@@ -553,6 +585,8 @@
   <script src="{{ asset('concept/vendor/charts/c3charts/C3chartjs.js') }}"></script>
   <script src="{{ asset('concept/libs/js/dashboard-ecommerce.js') }}"></script>
 
+
+
   <!-- <script src="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"></script> -->
 
   <!-- <script src="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css"></script> -->
@@ -576,31 +610,31 @@
                   'excel', 'pdf', 'print'
               ],
               "scrollX": true,
-              // "language": {
-              //     "lengthMenu": "Memaparkan _MENU_ rekod per halaman",
-              //     "zeroRecords": "Tiada rekod.",
-              //     "info": "Memaparkan halaman _PAGE_ dari _PAGES_",
-              //     "infoEmpty": "Tidak ada rekod yang tersedia",
-              //     "infoFiltered": "(Ditapis dari _MAX_ jumlah rekod)",
-              //     "search": "Carian",
-              //     "previous": "Sebelum",
-              //     "paginate": {
-              //         "first":      "Pertama",
-              //         "last":       "Terakhir",
-              //         "next":       "Seterusnya",
-              //         "previous":   "Sebelumnya"
-              //     },
-              //     "searchPanes": {
-              //         "clearMessage": 'Padam Tapisan',
-              //         "title":{
-              //             _: 'Tapisan Dipilih - %d',
-              //             0: 'Tiada Tapisan Dipilih',
-              //             1: 'Satu Tapisan Dipilih',
-              //         }
-              //     }
-              // },
+              "language": {
+                  "lengthMenu": "Memaparkan _MENU_ rekod per halaman",
+                  "zeroRecords": "Tiada rekod.",
+                  "info": "Memaparkan halaman _PAGE_ dari _PAGES_",
+                  "infoEmpty": "Tidak ada rekod yang tersedia",
+                  "infoFiltered": "(Ditapis dari _MAX_ jumlah rekod)",
+                  "search": "Carian",
+                  "previous": "Sebelum",
+                  "paginate": {
+                      "first":      "Pertama",
+                      "last":       "Terakhir",
+                      "next":       "Seterusnya",
+                      "previous":   "Sebelumnya"
+                  },
+                  "searchPanes": {
+                      "clearMessage": 'Padam Tapisan',
+                      "title":{
+                          _: 'Tapisan Dipilih - %d',
+                          0: 'Tiada Tapisan Dipilih',
+                          1: 'Satu Tapisan Dipilih',
+                      }
+                  }
+              },
             });
-            
+
         });
     </script>
 

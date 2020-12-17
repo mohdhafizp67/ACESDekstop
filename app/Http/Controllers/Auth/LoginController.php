@@ -30,13 +30,13 @@ class LoginController extends Controller
     protected $redirectTo = RouteServiceProvider::HOME;
     public function redirectTo()
    {
-     if(Auth::user()->is_admin == 1){
+     if(Auth::user()->is_admin == 1 && Auth::user()->is_active == 1){
        $this->redirectTo = '/home-admin';
        return $this->redirectTo;
-     }elseif (Auth::user()->is_ecerdb_personnel == 1) {
+     }elseif (Auth::user()->is_ecerdb_personnel == 1 && Auth::user()->is_active == 1) {
        $this->redirectTo = '/home-admin';
        return $this->redirectTo;
-     }elseif (Auth::user()->is_student == 1) {
+     }elseif (Auth::user()->is_student == 1 && Auth::user()->is_active == 1) {
        $this->redirectTo = '/home';
        return $this->redirectTo;
      }else {

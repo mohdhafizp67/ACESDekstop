@@ -29,7 +29,7 @@
                     @endif
 
                     <div style="padding: 5px;"></div>
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-university" aria-hidden="true"></i>&nbsp Add New Question</h2>
+                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-university" aria-hidden="true"></i>&nbsp Tambah Soalan Baru</h2>
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
 
@@ -41,8 +41,8 @@
                             </div>
                             <div class="col-md-8">
                               <div class="form-group">
-                                 <label>Chapter</label>
-                                 <input type="text" name="chapter" class="form-control bg-light" placeholder="Input Chapter" required>
+                                 <label>Bab</label>
+                                 <input type="text" name="chapter" class="form-control bg-light" required>
                               </div>
                             </div>
                             <div class="col-md-2">
@@ -56,7 +56,7 @@
                           </div>
                           <div class="col-md-8">
                             <div class="form-group">
-                               <label>Question</label>
+                               <label>Soalan</label>
                                <textarea name="question" rows="3" class="form-control bg-light" required></textarea>
                             </div>
                           </div>
@@ -71,14 +71,14 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Answer</label>
-                               <input type="text" name="answer" class="form-control bg-light" placeholder="Input Answer" required>
+                               <label>Jawapan</label>
+                               <input type="text" name="answer" class="form-control bg-light" required>
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Option 1</label>
-                               <input type="text" name="option[]" class="form-control bg-light" placeholder="Input Option 1" required>
+                               <label>Pilihan 1</label>
+                               <input type="text" name="option[]" class="form-control bg-light" required>
                             </div>
                           </div>
                           <div class="col-md-2">
@@ -92,14 +92,14 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Option 2</label>
-                               <input type="text" name="option[]" class="form-control bg-light" placeholder="Input Option 2" required>
+                               <label>Pilihan 2</label>
+                               <input type="text" name="option[]" class="form-control bg-light" required>
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Option 3</label>
-                               <input type="text" name="option[]" class="form-control bg-light" placeholder="Input Option 3" required>
+                               <label>Pilihan 3</label>
+                               <input type="text" name="option[]" class="form-control bg-light" required>
                             </div>
                           </div>
                           <div class="col-md-2">
@@ -113,7 +113,7 @@
                           </div>
                           <div class="col-md-8">
                             <!-- <button class="btn btn-block btn-primary" type="submit">Change Password</button> -->
-                            <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Save Question</a>
+                            <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Simpan Soalan</a>
                           </div>
                           <div class="col-md-2">
 
@@ -124,18 +124,18 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
                                         <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </a>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Do you want to save this question?</p>
+                                        <p>Anda pasti mahu menyimpan soalan ini?</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
+                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
                                         <!-- <a href="#" class="btn btn-primary">Yes</a> -->
-                                        <button type="submit" name="button" class="btn btn-primary">Save Question</button>
+                                        <button type="submit" name="button" class="btn btn-primary">Simpan Soalan</button>
                                     </div>
                                 </div>
                             </div>
