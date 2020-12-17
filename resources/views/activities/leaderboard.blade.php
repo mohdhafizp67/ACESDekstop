@@ -1,4 +1,4 @@
-@extends('layouts.app-index')
+@extends('layouts.app-studentheader')
 
 @section('content')
 
@@ -7,7 +7,7 @@
                   <div class="card">
                     <div style="padding: 10px;"></div>
                       <h2 class="card-header"><i class="fa fa-trophy" aria-hidden="true"></i> Leaderboard</h2>
-                      
+
                       <div class="card-body p-0">
                           <div class="table-responsive">
                               <table class="table">
