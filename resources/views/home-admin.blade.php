@@ -28,60 +28,60 @@
                 <!-- ============================================================== -->
                 <div class="ecommerce-widget">
 
-                    <div class="row">
-                      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                               <div class="card border-3 border-top" style="border-radius: 25px";>
-                                   <div class="card-body border-radius" style="background-color: #fff";>
-                                       <h5 class="text-muted">Pelajar Baru</h5>
-                                       <div class="metric-value d-inline-block">
-                                           <h1 class="mb-1">200</h1>
-                                       </div>
-                                       <!-- <div class="metric-label d-inline-block float-right text-success font-weight-bold">
-                                           <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5.86%</span>
-                                       </div> -->
-                                   </div>
-                               </div>
-                           </div>
-                           <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                    <div class="card border-3 border-top" style="border-radius: 25px";>
-                                        <div class="card-body border-radius" style="background-color: #fff";>
-                                            <h5 class="text-muted">Jumlah Pelajar</h5>
-                                            <div class="metric-value d-inline-block">
-                                                <h1 class="mb-1">1500</h1>
-                                            </div>
-                                            <!-- <div class="metric-label d-inline-block float-right text-success font-weight-bold">
-                                                <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">10%</span>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                        <div class="card border-3 border-top" style="border-radius: 25px";>
-                                            <div class="card-body border-radius" style="background-color: #fff";>
-                                                <h5 class="text-muted">Kuiz</h5>
-                                                <div class="metric-value d-inline-block">
-                                                    <h1 class="mb-1">200</h1>
-                                                </div>
-                                                <!-- <div class="metric-label d-inline-block float-right text-success font-weight-bold">
-                                                    <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5%</span>
-                                                </div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                                              <div class="card border-3 border-top" style="border-radius: 25px";>
-                                                  <div class="card-body border-radius" style="background-color: #fff";>
-                                                      <h5 class="text-muted">Jumlah</h5>
-                                                      <div class="metric-value d-inline-block">
-                                                          <h1 class="mb-1">500</h1>
-                                                      </div>
-                                                      <!-- <div class="metric-label d-inline-block float-right text-danger font-weight-bold">
-                                                          <span class="icon-circle-small icon-box-xs text-danger bg-danger-light bg-danger-light "><i class="fa fa-fw fa-arrow-down"></i></span><span class="ml-1">4%</span>
-                                                      </div> -->
-                                                  </div>
-                                              </div>
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                             <div class="card border-3 border-top" style="border-radius: 25px";>
+                                 <div class="card-body border-radius" style="background-color: #fff";>
+                                     <h5 class="text-muted">Pelajar Baru</h5>
+                                     <div class="metric-value d-inline-block">
+                                         <h1 class="mb-1">200</h1>
+                                     </div>
+                                     <!-- <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                         <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5.86%</span>
+                                     </div> -->
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                  <div class="card border-3 border-top" style="border-radius: 25px";>
+                                      <div class="card-body border-radius" style="background-color: #fff";>
+                                          <h5 class="text-muted">Jumlah Pelajar</h5>
+                                          <div class="metric-value d-inline-block">
+                                              <h1 class="mb-1">1500</h1>
                                           </div>
-                    </div>
+                                          <!-- <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                              <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">10%</span>
+                                          </div> -->
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                      <div class="card border-3 border-top" style="border-radius: 25px";>
+                                          <div class="card-body border-radius" style="background-color: #fff";>
+                                              <h5 class="text-muted">Kuiz</h5>
+                                              <div class="metric-value d-inline-block">
+                                                  <h1 class="mb-1">200</h1>
+                                              </div>
+                                              <!-- <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                                  <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5%</span>
+                                              </div> -->
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                                            <div class="card border-3 border-top" style="border-radius: 25px";>
+                                                <div class="card-body border-radius" style="background-color: #fff";>
+                                                    <h5 class="text-muted">Jumlah</h5>
+                                                    <div class="metric-value d-inline-block">
+                                                        <h1 class="mb-1">500</h1>
+                                                    </div>
+                                                    <!-- <div class="metric-label d-inline-block float-right text-danger font-weight-bold">
+                                                        <span class="icon-circle-small icon-box-xs text-danger bg-danger-light bg-danger-light "><i class="fa fa-fw fa-arrow-down"></i></span><span class="ml-1">4%</span>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                  </div>
                     <div class="row">
                         <!-- ============================================================== -->
 
@@ -436,7 +436,7 @@
 
 
                     </div>
-                    <div class="row">
+                    <!-- <div class="row"> -->
                         <!-- ============================================================== -->
                         <!-- total revenue  -->
                         <!-- ============================================================== -->
@@ -446,7 +446,7 @@
                         <!-- ============================================================== -->
                         <!-- category revenue  -->
                         <!-- ============================================================== -->
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <!-- <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="card">
                             <h5 class="card-header">Line Charts</h5>
                             <div class="card-body">
@@ -463,12 +463,12 @@
                            </div>
                        </div>
                    </div>
-                        <!-- ============================================================== -->
+                        <!- ============================================================== -->
                         <!-- end category revenue  -->
                         <!-- ============================================================== -->
 
 
-                    </div>
+                    <!-- </div> --> -->
                     <div class="row">
                     <div class="row">
                         <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">

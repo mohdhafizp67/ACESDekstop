@@ -13,7 +13,7 @@
 <link rel="manifest" href="/ACES/superpwa-manifest.json">
 <meta name="theme-color" content="#2fbf92">
 <!-- / SuperPWA.com -->
-<title>Register Page &#8211; ACES</title>
+<title>Login Page ACES &#8211; ACES</title>
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="ACES &raquo; Feed" href="http://ezran.my/ACES/feed/" />
 <link rel="alternate" type="application/rss+xml" title="ACES &raquo; Comments Feed" href="http://ezran.my/ACES/comments/feed/" />
@@ -74,7 +74,7 @@ img.emoji {
 <link rel='stylesheet' id='powerpack-frontend-css'  href='http://ezran.my/ACES/wp-content/plugins/powerpack-lite-for-elementor/assets/css/frontend.css?ver=2.2.1' type='text/css' media='all' />
 <link rel='stylesheet' id='elementskit-css-widgetarea-control-editor-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/modules/controls/assets/css/widgetarea-editor.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='elementor-global-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/global.css?ver=1604548018' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-post-1164-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/post-1164.css?ver=1608284627' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-1152-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/post-1152.css?ver=1608276738' type='text/css' media='all' />
 <link rel='stylesheet' id='ekit-widget-styles-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='ekit-widget-styles-pro-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles-pro.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='ekit-responsive-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=2.0.9.1' type='text/css' media='all' />
@@ -84,19 +84,20 @@ img.emoji {
 <link rel='stylesheet' id='elementor-icons-shared-0-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.12.0' type='text/css' media='all' />
 <link rel='stylesheet' id='elementor-icons-fa-regular-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.12.0' type='text/css' media='all' />
 <link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.12.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-brands-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.12.0' type='text/css' media='all' />
 <script type='text/javascript' id='jquery-core-js-extra'>
 /* <![CDATA[ */
 var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
-<link rel="https://api.w.org/" href="http://ezran.my/ACES/wp-json/" /><link rel="alternate" type="application/json" href="http://ezran.my/ACES/wp-json/wp/v2/pages/1164" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ezran.my/ACES/xmlrpc.php?rsd" />
+<link rel="https://api.w.org/" href="http://ezran.my/ACES/wp-json/" /><link rel="alternate" type="application/json" href="http://ezran.my/ACES/wp-json/wp/v2/pages/1152" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ezran.my/ACES/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ezran.my/ACES/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 5.5.3" />
-<link rel="canonical" href="http://ezran.my/ACES/register-page/" />
-<link rel='shortlink' href='http://ezran.my/ACES/?p=1164' />
-<link rel="alternate" type="application/json+oembed" href="http://ezran.my/ACES/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fezran.my%2FACES%2Fregister-page%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://ezran.my/ACES/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fezran.my%2FACES%2Fregister-page%2F&#038;format=xml" />
+<link rel="canonical" href="http://ezran.my/ACES/login-page-aces/" />
+<link rel='shortlink' href='http://ezran.my/ACES/?p=1152' />
+<link rel="alternate" type="application/json+oembed" href="http://ezran.my/ACES/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fezran.my%2FACES%2Flogin-page-aces%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://ezran.my/ACES/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fezran.my%2FACES%2Flogin-page-aces%2F&#038;format=xml" />
                 <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
                 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>                <style type="text/css">
                     <!--
@@ -175,7 +176,7 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 <style type="text/css">/** Mega Menu CSS: fs **/</style>
 </head>
 
-<body class="page-template page-template-elementor_header_footer page page-id-1164 wp-embed-responsive wpb-elementor-addons oceanwp-theme dropdown-mobile no-header-border default-breakpoint has-sidebar content-right-sidebar page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-11 elementor-page elementor-page-1164" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+<body class="page-template page-template-elementor_header_footer page page-id-1152 wp-embed-responsive wpb-elementor-addons oceanwp-theme dropdown-mobile no-header-border default-breakpoint has-sidebar content-right-sidebar page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-11 elementor-page elementor-page-1152" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
 
 
@@ -191,34 +192,34 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 
 			<main id="main" class="site-main clr"  role="main">
 
-						<div data-elementor-type="wp-page" data-elementor-id="1164" class="elementor elementor-1164" data-elementor-settings="[]">
+						<div data-elementor-type="wp-page" data-elementor-id="1152" class="elementor elementor-1152" data-elementor-settings="[]">
 						<div class="elementor-inner">
 							<div class="elementor-section-wrap">
-							<section class="elementor-section elementor-top-section elementor-element elementor-element-7c564df elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="7c564df" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-ba97b48 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="ba97b48" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-48ab2e0" data-id="48ab2e0" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-dd5364f" data-id="dd5364f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-fb983d9 elementor-widget elementor-widget-spacer" data-id="fb983d9" data-element_type="widget" data-widget_type="spacer.default">
+						<div class="elementor-element elementor-element-22c001b elementor-widget elementor-widget-spacer" data-id="22c001b" data-element_type="widget" data-widget_type="spacer.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-spacer">
 			<div class="elementor-spacer-inner"></div>
 		</div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-f89f2e9 elementor-widget elementor-widget-image" data-id="f89f2e9" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-67488a5 elementor-widget elementor-widget-image" data-id="67488a5" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-image">
 										<img width="150" height="150" src="http://ezran.my/ACES/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-04-at-10.56.03-AM-150x150.jpeg" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" srcset="http://ezran.my/ACES/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-04-at-10.56.03-AM-150x150.jpeg 150w, http://ezran.my/ACES/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-04-at-10.56.03-AM-300x300.jpeg 300w, http://ezran.my/ACES/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-04-at-10.56.03-AM-100x100.jpeg 100w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-60fabac elementor-widget elementor-widget-text-editor" data-id="60fabac" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-b85d20a elementor-widget elementor-widget-text-editor" data-id="b85d20a" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><p>Pusat Kecemerlangan Teknologi Pintar Asia (ACES) di bawah Majlis Pembangunan Wilayah Ekonomi Pantai Timur (ECERDC) merancang untuk mengembangkan aplikasi berdasarkan karya sebagai alat untuk menyebabkan kesedaran dan juga berfungsi sebagai pengenalan kepada industri 4.0 (IR 4.0) kepada pelajar Tingkatan 5 yang terpilih.</p></div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-2e8bdd6 pp-icon-list-traditional pp-icon-left elementor-widget elementor-widget-pp-icon-list" data-id="2e8bdd6" data-element_type="widget" data-widget_type="pp-icon-list.default">
+				<div class="elementor-element elementor-element-7e6a64d pp-icon-list-traditional pp-icon-left elementor-widget elementor-widget-pp-icon-list" data-id="7e6a64d" data-element_type="widget" data-widget_type="pp-icon-list.default">
 				<div class="elementor-widget-container">
 					<div class="pp-list-container">
 			<ul class="pp-list-items">
@@ -241,267 +242,224 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 						</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-42b7301" data-id="42b7301" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9e6aebf" data-id="9e6aebf" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="elementor-column-wrap elementor-element-populated">
 					<div class="elementor-background-overlay"></div>
 							<div class="elementor-widget-wrap">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-9c58c77 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9c58c77" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
-<br><br>
-              <div class="container">
-                  <div class="row justify-content-center">
-                      <div class="col-md-12">
-                        <form class="splash-container" method="POST" action="{{ route('register') }}">
-                          @csrf
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="mb-1">Registrations Form</h3>
-                                    <p>Please enter your user information.</p>
-                                </div>
-                                <div class="card-body">
-                                  <div class="input-group mb-3">
-                                      <input
-                                      type="text"
-                                      name="name"
-                                      class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"
-                                      value="{{ old('name') }}"
-                                      placeholder="Full Name"
-                                      oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"
-                                      autofocus
-                                      >
-                                      <div class="input-group-append">
-                                          <div class="input-group-text">
-                                              <span class="fas fa-user"></span>
-                                          </div>
-                                      </div>
-                                      @if($errors->has('name'))
-                                          <div class="invalid-feedback">
-                                              <strong>{{ $errors }}</strong>
-                                          </div>
-                                      @endif
-                                  </div>
-
-                                {{-- Kad Pengenalan field --}}
-                                <div class="input-group mb-3">
-                                    <input type="text"
-                                           name="ic_number"
-                                           class="form-control {{ $errors->has('ic_number') ? 'is-invalid' : '' }}"
-                                           value="{{ old('ic_number') }}"
-                                           placeholder="IC-Number"
-                                           minlength="12"
-                                           maxlength="12"
-                                           onkeypress="return onlyNumberKey(event)"
-                                           autofocus
-                                           >
-                                    <div class="input-group-append">
-                                        <div class="input-group-text">
-                                            <span class="far fa-id-card"></span>
-                                        </div>
-                                    </div>
-                                    @if($errors->has('ic_number'))
-                                        <div class="invalid-feedback">
-                                            <strong>{{ $errors->first('ic_number') }}</strong>
-                                        </div>
-                                    @endif
-                                </div>
-
-                                {{-- Email field --}}
-                                <div class="input-group mb-3">
-                                    <input
-                                    type="email"
-                                    name="email"
-                                    class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}"
-                                    value="{{ old('email') }}"
-                                    placeholder="Email"
-                                    >
-                                    <div class="input-group-append">
-                                        <div class="input-group-text">
-                                            <span class="fas fa-envelope"></span>
-                                        </div>
-                                    </div>
-                                    @if($errors->has('email'))
-                                        <div class="invalid-feedback">
-                                            <strong>{{ $errors->first('email') }}</strong>
-                                        </div>
-                                    @endif
-                                </div>
-
-                                {{-- Phone field --}}
-                                <div class="input-group mb-3">
-                                    <input
-                                    type="text"
-                                    name="phone"
-                                    class="form-control {{ $errors->has('phone') ? 'is-invalid' : '' }}"
-                                    value="{{ old('phone') }}"
-                                    onkeypress="return onlyNumberKey(event)"
-                                    minlength="10"
-                                    maxlength="11"
-                                    placeholder="Phone Number"
-                                    >
-                                    <div class="input-group-append">
-                                        <div class="input-group-text">
-                                            <span class="fas fa-phone"></span>
-                                        </div>
-                                    </div>
-                                    @if($errors->has('phone'))
-                                        <div class="invalid-feedback">
-                                            <strong>{{ $errors->first('phone') }}</strong>
-                                        </div>
-                                    @endif
-                                </div>
-
-                                {{-- Address field --}}
-                                <div class="input-group mb-3">
-                                    <textarea
-                                    name="address"
-                                    rows="3"
-                                    cols="50"
-                                    oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"
-                                    class="form-control {{ $errors->has('address') ? 'is-invalid' : '' }}"
-                                    placeholder="Address"
-                                    >{{ old('address') }}</textarea>
-                                    <div class="input-group-append">
-                                        <div class="input-group-text">
-                                            <span class="fas fa-map-marker"></span>
-                                        </div>
-                                    </div>
-                                    @if($errors->has('address'))
-                                        <div class="invalid-feedback">
-                                            <strong>{{ $errors->first('address') }}</strong>
-                                        </div>
-                                    @endif
-                                </div>
-
-                                {{-- Postcode field --}}
-                                <div class="input-group mb-3">
-                                    <input type="text"
-                                    name="postcode"
-                                    class="form-control {{ $errors->has('postcode') ? 'is-invalid' : '' }}"
-                                    minlength="5"
-                                    maxlength="5"
-                                    value="{{ old('postcode') }}"
-                                    onkeypress="return onlyNumberKey(event)"
-                                    placeholder="Postcode"
-                                    >
-                                    <div class="input-group-append">
-                                        <div class="input-group-text">
-                                            <span class="fas fa-map-signs"></span>
-                                        </div>
-                                    </div>
-                                    @if($errors->has('postcode'))
-                                        <div class="invalid-feedback">
-                                            <strong>{{ $errors->first('postcode') }}</strong>
-                                        </div>
-                                    @endif
-                                </div>
-
-                                {{-- State field --}}
-                                <div class="input-group mb-3">
-                                 <select class="custom-select  bg-light @error('state') is-invalid @enderror" name="state" value="{{ old('state') }}"  >
-                                       <option value="" selected disabled hidden>Choose State</option>
-                                       <option value="Johor" {{ old('state') == "Johor" ? 'selected' : '' }}>Johor</option>
-                                       <option value="Kedah" {{ old('state') == "Kedah" ? 'selected' : '' }}>Kedah</option>
-                                       <option value="Kelantan" {{ old('state') == "Kelantan" ? 'selected' : '' }}>Kelantan</option>
-                                       <option value="Melaka" {{ old('state') == "Melaka" ? 'selected' : '' }}>Melaka</option>
-                                       <option value="Negeri Sembilan" {{ old('state') == "Negeri Sembilan" ? 'selected' : '' }}>Negeri Sembilan</option>
-                                       <option value="Pahang" {{ old('state') == "Pahang" ? 'selected' : '' }}>Pahang</option>
-                                       <option value="Pulau Pinang" {{ old('state') == "Pulau Pinang" ? 'selected' : '' }}>Pulau Pinang</option>
-                                       <option value="Perak" {{ old('state') == "Perak" ? 'selected' : '' }}>Perak</option>
-                                       <option value="Perlis" {{ old('state') == "Perlis" ? 'selected' : '' }}>Perlis</option>
-                                       <option value="Sabah" {{ old('state') == "Sabah" ? 'selected' : '' }}>Sabah</option>
-                                       <option value="Sarawak" {{ old('state') == "Sarawak" ? 'selected' : '' }}>Sarawak</option>
-                                       <option value="Selangor" {{ old('state') == "Selangor" ? 'selected' : '' }}>Selangor</option>
-                                       <option value="Terengganu" {{ old('state') == "Terengganu" ? 'selected' : '' }}>Terengganu</option>
-                                       <option value="WP Kuala Lumpur" {{ old('state') == "WP Kuala Lumpur" ? 'selected' : '' }}>WP Kuala Lumpur</option>
-                                       <option value="WP Putrajaya" {{ old('state') == "WP Putrajaya" ? 'selected' : '' }}>WP Putrajaya</option>
-                                       <option value="WP Labuan" {{ old('state') == "WP Labuan" ? 'selected' : '' }}>WP Labuan</option>
-                                   </select>
-                                    <div class="input-group-append">
-                                        <div class="input-group-text">
-                                            <span class="fas fa-flag"></span>
-                                        </div>
-                                    </div>
-                                    @if($errors->has('state'))
-                                        <div class="invalid-feedback">
-                                            <strong>{{ $errors->first('state') }}</strong>
-                                        </div>
-                                    @endif
-                                </div>
-                                    {{-- Password field --}}
-
-                                      <div class="input-group mb-3">
-                                          <input type="password"
-                                                 id="password"
-                                                 name="password"
-                                                 class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
-                                                 placeholder="Password">
-                                          <div class="input-group-append">
-                                            <a onclick="visiblePass()">
-
-                                              <div class="input-group-text">
-                                                  <span id="icon_eye_pass" class="fa fa-eye" ></span>
-                                              </div>
-                                            </a>
-
-                                          </div>
-                                          @if($errors->has('password'))
-                                              <div class="invalid-feedback">
-                                                  <strong>{{ $errors->first('password') }}</strong>
-                                              </div>
-                                          @endif
-                                      </div>
-
-                                    {{-- Confirm password field --}}
-                                    <div class="input-group mb-3">
-                                        <input type="password"
-                                               id="password_confirmation"
-                                               name="password_confirmation"
-                                               class="form-control {{ $errors->has('password_confirmation') ? 'is-invalid' : '' }}"
-                                               placeholder="Re-type Password">
-                                        <div class="input-group-append">
-                                          <a onclick="visiblePassConfirm()">
-
-                                            <div class="input-group-text">
-                                                <span id="icon_eye_confirm" class="fa fa-eye" ></span>
-                                            </div>
-                                          </a>
-
-                                        </div>
-                                        @if($errors->has('password_confirmation'))
-                                            <div class="invalid-feedback">
-                                                <strong>{{ $errors->first('password_confirmation') }}</strong>
-                                            </div>
-                                        @endif
-                                    </div>
-
-                                    <div class="form-group pt-2">
-                                        <button class="btn btn-block btn-primary" type="submit">Register My Account</button>
-                                    </div>
-                                    <!-- <div class="form-group">
-                                        <label class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="checkbox"><span class="custom-control-label">By creating an account, you agree the <a href="#">terms and conditions</a></span>
-                                        </label>
-                                    </div> -->
-                                    <!-- <div class="form-group row pt-0">
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-2">
-                                            <button class="btn btn-block btn-social btn-facebook " type="button">Facebook</button>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                            <button class="btn  btn-block btn-social btn-twitter" type="button">Twitter</button>
-                                        </div>
-                                    </div> -->
-                                </div>
-                                <div class="card-footer bg-white">
-                                    <p>Already member? <a href="{{route('login')}}" class="text-secondary">Login Here.</a></p>
-                                </div>
-                            </div>
-                        </form>
-                      </div>
-                  </div>
-              </div>
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-34a6fdf elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="34a6fdf" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c082c56" data-id="c082c56" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c2c225c" data-id="c2c225c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-8033376 elementor-widget elementor-widget-text-editor" data-id="8033376" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Tidak mempunyai akaun</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d4bbf44" data-id="d4bbf44" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f460e16 elementor-align-right elementor-widget elementor-widget-button" data-id="f460e16" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="{{route('register')}}" class="elementor-button-link elementor-button elementor-size-xs" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Cipta Akaun</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
 		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-c595341 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c595341" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-79487c9" data-id="79487c9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-c0613cf elementor-widget elementor-widget-text-editor" data-id="c0613cf" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Pengenalan kepada <strong>ACES IR 4.0</strong></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-eb50baa" data-id="eb50baa" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-f746027 elementor-widget elementor-widget-spacer" data-id="f746027" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
 
 
+		<div class="container">
+      <h1 class="u-text u-text-1"><font color="white">Log Masuk ke ACES IR 4.0</font></h1>
+				<div class="row justify-content-center">
+						<div class="col-md-8">
+							<div class="">
+									<div class="card" >
 
+												<div class="card-body" >
+													<!-- <form method="POST" action="{{ route('login') }}">
+															@csrf
+																<div class="form-group">
+																		<input class="form-control form-control-lg" id="username" type="text" placeholder="Username" autocomplete="off">
+																</div>
+																<div class="form-group">
+																		<input class="form-control form-control-lg" id="password" type="password" placeholder="Password">
+																</div>
+																<div class="form-group">
+																		<label class="custom-control custom-checkbox">
+																				<input class="custom-control-input" type="checkbox"><span class="custom-control-label">Remember Me</span>
+																		</label>
+																</div>
+																<button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+														</form> -->
+														<form method="POST" action="{{ route('login') }}">
+																@csrf
+
+																<div class="form-group row">
+																		<div class="col-md-12">
+																				<input id="ic_number" type="text" class="form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" name="ic_number" value="{{ old('ic_number') }}" placeholder="Kad Pengenalan" required autocomplete="ic_number" autofocus style="background-color: #fff";">
+
+																				@error('email')
+																						<span class="invalid-feedback" role="alert">
+																								<strong>{{ $message }}</strong>
+																						</span>
+																				@enderror
+																		</div>
+																</div>
+
+																<div class="form-group row">
+																		<div class="col-md">
+																				<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Kata Kunci" required autocomplete="current-password">
+
+																				@error('password')
+																						<span class="invalid-feedback" role="alert">
+																								<strong>{{ $message }}</strong>
+																						</span>
+																				@enderror
+																		</div>
+																</div>
+
+																<!-- <div class="form-group row">
+																		<div class="col-md">
+																				<div class="form-check">
+																						<input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+																						<label class="form-check-label" for="remember">
+																								{{ __('Remember Me') }}
+																						</label>
+																				</div>
+																		</div>
+																</div> -->
+
+																<div class="form-group row mb-0">
+
+																		<div class="col-md-12">
+																				<button type="submit" class="btn btn-block btn-primary">
+																						{{ __('Login') }}
+																				</button>
+
+																				<!-- @if (Route::has('password.request'))
+																						<a class="btn btn-link" href="{{ route('password.request') }}">
+																								{{ __('Forgot Your Password?') }}
+																						</a>
+																				@endif -->
+																		</div>
+																</div>
+														</form>
+												</div>
+												<!-- <div class="card-footer">
+														<div class="card-footer-item card-footer-item-bordered">
+																<a href="{{route('register')}}" class="footer-link">Create An Account</a></div>
+														<div class="card-footer-item card-footer-item-bordered">
+																<a href="{{route('password.request')}}" class="footer-link">Forgot Password</a>
+														</div>
+												</div> -->
+									</div>
+							</div>
+						</div>
+				</div>
+		</div>
+
+				<div class="elementor-element elementor-element-da63593 elementor-widget elementor-widget-spacer" data-id="da63593" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-1df03da elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1df03da" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a1895ac" data-id="a1895ac" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7e87598" data-id="7e87598" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b60eced elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="b60eced" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-12ba27b" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-15d8476" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<i class="fab fa-twitter"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-f75b1be" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<i class="fab fa-youtube"></i>					</a>
+				</div>
+							<div class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-c7e0380" target="_blank">
+						<span class="elementor-screen-only">Whatsapp</span>
+						<i class="fab fa-whatsapp"></i>					</a>
+				</div>
+					</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
 						</div>
 					</div>
 		</div>
@@ -529,41 +487,7 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 
 <a id="scroll-top" class="scroll-top-right" href="#"><span class="fa fa-angle-up" aria-label="Scroll to the top of the page"></span></a>
 
-<script type="text/javascript">
-    //input text ONLY
-    function onlyNumberKey(evt) {
 
-      // Only ASCII charactar in that range allowed
-      var ASCIICode = (evt.which) ? evt.which : evt.keyCode
-      if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
-          return false;
-      return true;
-    }
-    //visible Password
-    function visiblePass() {
-      var x = document.getElementById("password");
-      if (x.type === "password") {
-        x.type = "text";
-        document.getElementById("icon_eye_pass").style.color = "#007bff";
-      } else {
-        x.type = "password";
-        document.getElementById("icon_eye_pass").style.color = "grey";
-
-      }
-    }
-
-    function visiblePassConfirm() {
-      var x = document.getElementById("password_confirmation");
-      if (x.type === "password") {
-        x.type = "text";
-        document.getElementById("icon_eye_confirm").style.color = "#007bff";
-      } else {
-        x.type = "password";
-        document.getElementById("icon_eye_confirm").style.color = "grey";
-
-      }
-    }
-</script>
 
 
 <script type='text/javascript' id='superpwa-register-sw-js-extra'>
@@ -615,12 +539,22 @@ var megamenu = {"timeout":"300","interval":"100"};
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.0.13' id='share-link-js'></script>
 <script type='text/javascript' id='elementor-frontend-js-before'>
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.13","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"http:\/\/ezran.my\/ACES\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1164,"title":"Register%20Page%20%E2%80%93%20ACES","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.13","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"http:\/\/ezran.my\/ACES\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1152,"title":"Login%20Page%20ACES%20%E2%80%93%20ACES","excerpt":"","featuredImage":false}};
 </script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.0.13' id='elementor-frontend-js'></script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=2.0.9.1' id='elementskit-elementor-js'></script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/modules/controls/assets/js/widgetarea-editor.js?ver=2.0.9.1' id='elementskit-js-widgetarea-control-editor-js'></script>
-</body>
+
+<script type="text/javascript">
+function onlyNumberKey(evt) {
+
+      // Only ASCII charactar in that range allowed
+      var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+      if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+          return false;
+      return true;
+  }
+</script>
 </html>
 
 

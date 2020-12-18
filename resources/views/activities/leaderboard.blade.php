@@ -8,7 +8,7 @@
                     <div style="padding: 10px;"></div>
                       <h2 class="card-header"><i class="fa fa-trophy" aria-hidden="true"></i> Leaderboard</h2>
 
-                      <div class="card-body p-0">
+                      <div class="card-body p-5">
                           <div class="table-responsive">
                               <table class="table">
                                   <thead class="bg-light">
