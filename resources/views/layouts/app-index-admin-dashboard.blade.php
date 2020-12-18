@@ -231,7 +231,7 @@
                                   </li>
                                   <li class="nav-item ">
 
-                                    <a class="nav-link" href="{{ route('admin.activities.question-banks.list') }}"><i class="fa fa-university" aria-hidden="true"></i>Bank Soalan</a>
+                                    <a class="nav-link" href="{{ route('admin.activities.question-banks.list') }}"><i class="fa fa-question-circle" aria-hidden="true"></i> Kuiz</a>
 
                                   </li>
                                   <li class="nav-item ">
