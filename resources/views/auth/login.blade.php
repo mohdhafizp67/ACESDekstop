@@ -1,8 +1,6 @@
 @extends('layouts.app-login-register')
 
 @section('content')
-
-
 <!DOCTYPE html>
 <html class="html" lang="en-US">
 <head>
