@@ -2,6 +2,27 @@
 
 @section('content')
 <div class="container">
+  @if ($message = Session::get('success'))
+            <div id=alert>
+                <div class="alert alert-card  alert-success" role="alert">
+                    <strong>Success! </strong>
+                    {{$message}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            @elseif ($message = Session::get('error'))
+            <div id="alert">
+              <div class="alert alert-card  alert-danger" role="alert">
+                  <strong>Error! </strong>
+                  {{$message}}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+            </div>
+            @endif
     <div class="row justify-content-center">
         <div class="col-md-8">
           <div class="splash-container">
