@@ -1,6 +1,8 @@
 @extends('layouts.app-login-register')
 
 @section('content')
+
+
 <!DOCTYPE html>
 <html class="html" lang="en-US">
 <head>
@@ -344,7 +346,7 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 
 																<div class="form-group row">
 																		<div class="col-md-12">
-																				<input id="ic_number" type="text" class="form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" name="ic_number" value="{{ old('ic_number') }}" placeholder="Kad Pengenalan" required autocomplete="ic_number" autofocus>
+																				<input id="ic_number" type="text" class="form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" name="ic_number" value="{{ old('ic_number') }}" placeholder="Kad Pengenalan" required autocomplete="ic_number" autofocus style="background-color: #fff";">
 
 																				@error('email')
 																						<span class="invalid-feedback" role="alert">

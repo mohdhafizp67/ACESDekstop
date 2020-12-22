@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Quiz extends Model
 {
+
     // use HasFactory;
     protected $table = 'quizes';
     protected $fillable = [
@@ -14,14 +15,17 @@ class Quiz extends Model
       'number_of_question',
       'percentage_to_pass',
       'status',
+
       'lesson_id'
     ];
 
     public function lesson(){
+
         return $this->belongsTo('\App\Models\Lesson', 'lesson_id');
     }
 
     public function question(){
       return $this->hasMany('App\Models\QuestionBank');
+
     }
 }

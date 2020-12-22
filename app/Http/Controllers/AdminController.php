@@ -5,6 +5,8 @@ use Auth;
 use App\Models\User;
 use App\Models\QuestionBank;
 use App\Models\AnswerBank;
+use App\Models\Audit;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -151,6 +153,32 @@ class AdminController extends Controller
     $user->save();
 
     return redirect()->route('admin.others.user-list.list')->with("success","Pengguna telah diaktifkan");
+  }
+
+  public function viewAuditList()
+  {
+      $data = Audit::get();
+      return view('admin.others.audit-trail.audit-trail-log', compact('data'));
+  }
+
+  public function viewAuditListFilter(Request $request)
+  {
+      $tarikh_mula = date($request->tarikh_mula);
+      $tarikh_akhir = date($request->tarikh_akhir);
+
+      // $data = Audit::whereBetween('created_at', [$tarikh_mula.' 00:00:00',$tarikh_akhir.' 23:59:59'])
+      //             ->where('event', 'Log Masuk')
+      //             ->orWhere('event', 'Log Keluar')
+      //             ->orderBy('created_at', 'desc')
+      //             ->get();
+
+
+      $data = Audit:: where('updated_at', '>', $tarikh_mula.' 00:00:00')
+                  ->where('updated_at', '<', $tarikh_akhir.' 23:59:59')
+                  ->orderBy('updated_at', 'asc')
+                  ->get();
+
+      return view('admin.others.audit-trail.audit-trail-log-filter', compact('data'));
   }
 
 }
