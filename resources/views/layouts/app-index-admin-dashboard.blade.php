@@ -231,7 +231,12 @@
                                   </li>
                                   <li class="nav-item ">
 
-                                    <a class="nav-link" href="{{ route('admin.activities.question-banks.list') }}"><i class="fa fa-question-circle" aria-hidden="true"></i> Kuiz</a>
+                                    <a class="nav-link" href="{{route('admin.activities.lesson.add')}}"><i class="fa fa-book" aria-hidden="true"></i> Pelajaran</a>
+
+                                  </li>
+                                  <li class="nav-item ">
+
+                                    <a class="nav-link" href="{{ route('admin.activities.quiz.list') }}"><i class="fa fa-question-circle" aria-hidden="true"></i> Kuiz</a>
 
                                   </li>
                                   <li class="nav-item ">

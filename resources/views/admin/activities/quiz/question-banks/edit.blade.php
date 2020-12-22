@@ -41,8 +41,8 @@
                             </div>
                             <div class="col-md-8">
                               <div class="form-group">
-                                 <label>Bab</label>
-                                 <input type="text" name="chapter" class="form-control bg-light" value="{{$question->chapter}}" required>
+                                 <label>Pelajaran</label>
+                                 <input type="text" name="subject" class="form-control bg-light" value="{{$question->lesson->lesson_type}} | {{$question->lesson->lesson_subject}}" disabled>
                               </div>
                             </div>
                             <div class="col-md-2">
@@ -113,6 +113,7 @@
                         <input type="hidden" name="option_id[]" value="{{$data->id}}">
                         @endforeach
 
+                        <input type="hidden" name="lesson_id" value="{{$question->lesson_id}}" readonly>
 
                         <div class="row">
                           <div class="col-md-2">

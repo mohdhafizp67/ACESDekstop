@@ -16,15 +16,17 @@ class CreateQuizesTable extends Migration
         Schema::create('quizes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('quiz_type')->nullable();
-            $table->string('quiz_level')->nullable();
+            $table->string('time')->nullable();
+            $table->string('number_of_question')->nullable();
+            $table->string('percentage_to_pass')->nullable();
+            $table->string('status')->nullable();
             $table->unsignedBigInteger('lesson_id');
             $table->foreign('lesson_id')->references('id')->on('lessons');
         });
     }
 
     /**
-     * Reverse the migrations.
+     * Reverse the migrations.s
      *
      * @return void
      */
