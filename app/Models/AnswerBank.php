@@ -13,7 +13,7 @@ class AnswerBank extends Model
     'status'
   ];
 
-  public function permohonan(){
+  public function question(){
       return $this->belongsTo('\App\Models\QuestionBank', 'question_id');
-    }
+  }
 }

@@ -41,8 +41,9 @@
                             </div>
                             <div class="col-md-8">
                               <div class="form-group">
-                                 <label>Bab</label>
-                                 <input type="text" name="chapter" class="form-control bg-light" required>
+                                 <label>Pelajaran</label>
+                                 <input type="text" name="chapter" class="form-control bg-light" value="{{$lesson->lesson_type}} | {{$lesson->lesson_subject}}" disabled>
+
                               </div>
                             </div>
                             <div class="col-md-2">
@@ -71,13 +72,13 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Jawapan</label>
+                               <label>Pilihan 1  &nbsp&nbsp&nbsp&nbsp[Jawapan]</label>
                                <input type="text" name="answer" class="form-control bg-light" required>
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Pilihan 1</label>
+                               <label>Pilihan 2</label>
                                <input type="text" name="option[]" class="form-control bg-light" required>
                             </div>
                           </div>
@@ -92,13 +93,13 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Pilihan 2</label>
+                               <label>Pilihan 3</label>
                                <input type="text" name="option[]" class="form-control bg-light" required>
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Pilihan 3</label>
+                               <label>Pilihan 4</label>
                                <input type="text" name="option[]" class="form-control bg-light" required>
                             </div>
                           </div>
@@ -106,7 +107,7 @@
 
                           </div>
                         </div>
-
+                        <input type="hidden" name="lesson_id" value="{{$lesson->id}}" readonly>
                         <div class="row">
                           <div class="col-md-2">
 

@@ -30,6 +30,10 @@ Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, '
 //Lessons
 Route::get('/courses', [App\Http\Controllers\LessonController::class, 'courses'])->name('lesson.courses');
 
+//Quiz
+Route::get('/quiz/start', [App\Http\Controllers\QuizController::class, 'startQuiz'])->name('quiz.start-quiz');
+
+
 //student
 Route::get('/statistik', [App\Http\Controllers\UserController::class, 'statistik'])->name('user.student.statistik');
 
@@ -57,17 +61,33 @@ Route::middleware('admin')->group(function () {
   Route::post('/admin/profile/change-password/updating', [App\Http\Controllers\AdminController::class, 'updatingPassword'])->name('admin.profiles.change-password.updating');
 
   //Activities
-  Route::get('/admin/activities/question-banks/list', [App\Http\Controllers\AdminController::class, 'viewQuestionBank'])->name('admin.activities.question-banks.list');
+  Route::get('/admin/activities/lesson/add-new-lesson', [App\Http\Controllers\LessonController::class, 'addLesson'])->name('admin.activities.lesson.add');
 
-  Route::get('/admin/activities/question-banks/add', [App\Http\Controllers\AdminController::class, 'addQuestionBank'])->name('admin.activities.question-banks.add');
+  Route::post('/admin/activities/lesson/add-new-lesson/save', [App\Http\Controllers\LessonController::class, 'saveLesson'])->name('admin.activities.lesson.add.save');
 
-  Route::post('/admin/activities/question-banks/add/save', [App\Http\Controllers\AdminController::class, 'saveQuestionBank'])->name('admin.activities.question-banks.add.save');
+  Route::get('/admin/activities/quiz/list', [App\Http\Controllers\QuizController::class, 'viewQuizList'])->name('admin.activities.quiz.list');
 
-  Route::get('/admin/activities/question-banks/edit/{id}', [App\Http\Controllers\AdminController::class, 'editQuestionBank'])->name('admin.activities.question-banks.edit');
+  Route::get('/admin/activities/quiz/add-new-quiz', [App\Http\Controllers\QuizController::class, 'addQuiz'])->name('admin.activities.quiz.add');
 
-  Route::post('/admin/activities/question-banks/edit/updating', [App\Http\Controllers\AdminController::class, 'updateQuestionBank'])->name('admin.activities.question-banks.edit.updating');
+  Route::post('/admin/activities/quiz/add-new-quiz/save', [App\Http\Controllers\QuizController::class, 'saveQuiz'])->name('admin.activities.quiz.add.save');
 
-  Route::post('/admin/activities/question-banks/remove', [App\Http\Controllers\AdminController::class, 'removeQuestionBank'])->name('admin.activities.question-banks.remove');
+  Route::get('/admin/activities/quiz/edit-quiz/{id}', [App\Http\Controllers\QuizController::class, 'editQuiz'])->name('admin.activities.quiz.edit');
+
+  Route::post('/admin/activities/quiz/edit-quiz/updating/{id}', [App\Http\Controllers\QuizController::class, 'updatingQuiz'])->name('admin.activities.quiz.edit.updating');
+
+  Route::post('/admin/activities/quiz/remove', [App\Http\Controllers\QuizController::class, 'removeQuiz'])->name('admin.activities.quiz.remove');
+
+  Route::get('/admin/activities/quiz/question-banks/list/{id}', [App\Http\Controllers\QuizController::class, 'viewQuestionBank'])->name('admin.activities.quiz.question-banks.list');
+
+  Route::get('/admin/activities/quiz/question-banks/add-new-question/{id}', [App\Http\Controllers\QuizController::class, 'addQuestionBank'])->name('admin.activities.quiz.question-banks.add');
+
+  Route::post('/admin/activities/quiz/question-banks/add/save', [App\Http\Controllers\QuizController::class, 'saveQuestionBank'])->name('admin.activities.question-banks.add.save');
+
+  Route::get('/admin/activities/quiz/question-banks/edit/{id}', [App\Http\Controllers\QuizController::class, 'editQuestionBank'])->name('admin.activities.question-banks.edit');
+
+  Route::post('/admin/activities/quiz/question-banks/edit/updating', [App\Http\Controllers\QuizController::class, 'updateQuestionBank'])->name('admin.activities.question-banks.edit.updating');
+
+  Route::post('/admin/activities/quiz/question-banks/remove', [App\Http\Controllers\QuizController::class, 'removeQuestionBank'])->name('admin.activities.question-banks.remove');
 
 
 

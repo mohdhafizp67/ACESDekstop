@@ -15,10 +15,11 @@ class CreateQuestionBanksTable extends Migration
     {
         Schema::create('question_banks', function (Blueprint $table) {
             $table->id();
-            $table->string('chapter')->nullable();
+            $table->timestamps();
             $table->string('question')->unique();
             $table->string('status')->nullable();
-            $table->timestamps();
+            $table->unsignedBigInteger('lesson_id');
+            $table->foreign('lesson_id')->references('id')->on('lessons');
         });
     }
 

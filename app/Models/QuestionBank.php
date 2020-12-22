@@ -9,12 +9,16 @@ class QuestionBank extends Model
 {
     // use HasFactory;
     protected $fillable = [
-      'chapter',
       'question',
-      'status'
+      'status',
+      'lesson_id'
     ];
 
     public function answer(){
       return $this->hasMany('App\Models\AnswerBank');
+    }
+
+    public function lesson(){
+        return $this->belongsTo('\App\Models\Lesson', 'lesson_id');
     }
 }

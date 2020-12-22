@@ -7,22 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Lesson extends Model
 {
-    use HasFactory;
-    protected $table = 'lessons';
-
+    // use HasFactory;
     protected $fillable = [
       'lesson_type',
-      'lesson_subject',
-      'lesson_id',
-
-      //kiv
-      'chapter',
-      'question',
-      'status'
+      'lesson_subject'
     ];
 
-    public function lesson(){
-      return $this->belongsTo('App\Models\Lesson', 'id', 'lesson_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+    public function quiz(){
+      return $this->hasMany('App\Models\Quiz');
+    }
+
+    public function question(){
+      return $this->hasMany('App\Models\QuestionBank');
     }
 
 }

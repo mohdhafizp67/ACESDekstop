@@ -33,7 +33,7 @@
                       <h2 class="card-header" style="text-align: center;"><i class="fa fa-university" aria-hidden="true"></i>&nbsp Bank Soalan</h2>
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
-                        <a href="{{route('admin.activities.question-banks.add')}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Tambah Soalan Baru</a>
+                        <a href="{{route('admin.activities.quiz.question-banks.add', $lesson_id)}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Tambah Soalan Baru</a>
 
                         <hr>
 
@@ -41,23 +41,21 @@
                           <table id="table_data" class="table table-striped table-bordered second" style="width:100%">
                             <thead style="text-align: center;">
                               <tr>
+                                <th>Pelajaran</th>
                                 <th>Soalan</th>
-                                <th>Bab</th>
                                 <th>Tindakan</th>
                               </tr>
                             </thead>
                             <tbody style="text-align: center;">
                           @foreach($question_list as $data)
                           <tr>
+                            <td>{{ $data->lesson->lesson_type }} | {{ $data->lesson->lesson_subject }}</td>
                             <td>{{ $data->question }}</td>
-                            <td>{{ $data->chapter }}</td>
 
 
                             <td>
                               <a href="{{route('admin.activities.question-banks.edit', $data->id)}}" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                               <a href="#" class="btn btn-danger" onclick="pass_id_delete({{ $data->id  }})" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash" aria-hidden="true"></i></a>
-
-                              <!-- <a href="{{route('admin.activities.question-banks.remove', $data->id)}}" class="btn btn-danger" ><i class="fa fa-trash" aria-hidden="true"></i></a> -->
                             </td>
 
                           </tr>
