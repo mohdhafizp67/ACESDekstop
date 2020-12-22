@@ -20,4 +20,5 @@ class Lesson extends Model
     public function question(){
       return $this->hasMany('App\Models\QuestionBank');
     }
+
 }
