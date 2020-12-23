@@ -2,558 +2,127 @@
 
 @section('content')
 <!DOCTYPE html>
-<html class="html" lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Log Masuk ACES IR 4.0​">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Page-1.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.2.5, nicepage.com">
 
-	<!-- Manifest added by SuperPWA - Progressive Web Apps Plugin For WordPress -->
-<link rel="manifest" href="/ACES/superpwa-manifest.json">
-<meta name="theme-color" content="#2fbf92">
-<!-- / SuperPWA.com -->
-<title>Login Page ACES &#8211; ACES</title>
-<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="ACES &raquo; Feed" href="http://ezran.my/ACES/feed/" />
-<link rel="alternate" type="application/rss+xml" title="ACES &raquo; Comments Feed" href="http://ezran.my/ACES/comments/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/ezran.my\/ACES\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.3"}};
-			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i">
+
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "index.html"
+}</script>
+    <meta property="og:title" content="Page 1">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+		<link rel="stylesheet" href="{{ asset('css/Login.css') }} ">
+
+<style media="screen">
+.u-section-1 {
+ background-image: url("{{asset('concept/images/login/ps4.jpg')}}");
+ background-position: 50% 50%;
 }
 </style>
-	<link rel='stylesheet' id='gtranslate-style-css'  href='http://ezran.my/ACES/wp-content/plugins/gtranslate/gtranslate-style24.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-css'  href='http://ezran.my/ACES/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-theme-css'  href='http://ezran.my/ACES/wp-includes/css/dist/block-library/theme.min.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='wpb-ea-bootstrap-grid-css'  href='http://ezran.my/ACES/wp-content/plugins/wpb-elementor-addons/inc/../assets/css/grid.min.css?ver=4.0.0' type='text/css' media='' />
-<link rel='stylesheet' id='wpb-ea-owl-carousel-css'  href='http://ezran.my/ACES/wp-content/plugins/wpb-elementor-addons/inc/../assets/css/owl.carousel.css?ver=2.3.4' type='text/css' media='' />
-<link rel='stylesheet' id='fancybox-css'  href='http://ezran.my/ACES/wp-content/plugins/wpb-elementor-addons/inc/../assets/css/jquery.fancybox.min.css?ver=3.0.47' type='text/css' media='' />
-<link rel='stylesheet' id='wpb-lineicons-css-css'  href='http://ezran.my/ACES/wp-content/plugins/wpb-elementor-addons/inc/../assets/icons/lineicons/lineicons.min.css?ver=1.0' type='text/css' media='' />
-<link rel='stylesheet' id='wpb_ea_main_css-css'  href='http://ezran.my/ACES/wp-content/plugins/wpb-elementor-addons/inc/../assets/css/main.css?ver=1.0' type='text/css' media='' />
-<style id='wpb_ea_main_css-inline-css' type='text/css'>
+  </head>
+  <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body">
+    <section class="u-clearfix u-image u-section-1" id="sec-01a8" data-image-width="3840" data-image-height="2400">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-justify u-custom-font u-text u-text-body-alt-color u-text-default u-title u-text-1">Log Masuk ACES IR 4.0 </h1>
+        <div class="u-container-style u-custom-color-4 u-group u-opacity u-opacity-45 u-group-1">
+          <div class="u-container-layout u-valign-top u-container-layout-1">
+            <div class="u-form u-form-1">
+              <form method="POST" action="{{ route('login') }}" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 25px;" source="custom" name="form">
+                @csrf
+                <div class="u-form-group u-form-name">
+                  <label for="name-6797" class="u-label u-text-body-alt-color u-label-1">Kad Pengenalan</label>
+                  <input type="text" id="ic_number" placeholder="Kad Pengenalan" name="ic_number" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1 form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" name="ic_number" value="{{ old('ic_number') }}" required autocomplete="ic_number" autofocus>
 
-        .wpb-ea-team-member .social-buttons,
-        .wpb-ea-service-box-image .wpb-ea-service-box-btn:hover {
-            background: #3878ff;
-        }
-        .wpb-ea-service-box-icon .wpb-ea-service-box-btn:hover {
-            color: #3878ff;
-        }
-        .wpb-ea-service-box-image .wpb-ea-service-box-btn:hover {
-            border-color: #3878ff;
-        }
+                  @error('email')
+                      <span class="invalid-feedback" role="alert">
+                          <strong>{{ $message }}</strong>
+                      </span>
+                  @enderror
+                </div>
+                <div class="u-form-email u-form-group">
+                  <label for="email-6797" class="u-label u-text-body-alt-color u-label-2">Kata Kunci</label>
+                  <input id="password" type="password" placeholder="Kata Kunci" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-2 form-control @error('password') is-invalid @enderror" required autocomplete="current-password">
 
-</style>
-<link rel='stylesheet' id='dashicons-css'  href='http://ezran.my/ACES/wp-includes/css/dashicons.min.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css'  href='http://ezran.my/ACES/wp-content/themes/oceanwp/assets/fonts/fontawesome/css/all.min.css?ver=5.11.2' type='text/css' media='all' />
-<link rel='stylesheet' id='simple-line-icons-css'  href='http://ezran.my/ACES/wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css?ver=2.4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='magnific-popup-css'  href='http://ezran.my/ACES/wp-content/themes/oceanwp/assets/css/third/magnific-popup.min.css?ver=1.0.0' type='text/css' media='all' />
-<link rel='stylesheet' id='slick-css'  href='http://ezran.my/ACES/wp-content/themes/oceanwp/assets/css/third/slick.min.css?ver=1.6.0' type='text/css' media='all' />
-<link rel='stylesheet' id='oceanwp-style-css'  href='http://ezran.my/ACES/wp-content/themes/oceanwp/assets/css/style.min.css?ver=1.9.0' type='text/css' media='all' />
-<link rel='stylesheet' id='wpdreams-asl-basic-css'  href='http://ezran.my/ACES/wp-content/plugins/ajax-search-lite/css/style.basic.css?ver=4.8.4' type='text/css' media='all' />
-<link rel='stylesheet' id='wpdreams-ajaxsearchlite-css'  href='http://ezran.my/ACES/wp-content/plugins/ajax-search-lite/css/style-curvy-black.css?ver=4.8.4' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-ekiticons-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/modules/controls/assets/css/ekiticons.css?ver=5.9.0' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.9.1' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-animations-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.0.13' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-frontend-legacy-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.0.13' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.0.13' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-post-11-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/post-11.css?ver=1604546378' type='text/css' media='all' />
-<link rel='stylesheet' id='powerpack-frontend-css'  href='http://ezran.my/ACES/wp-content/plugins/powerpack-lite-for-elementor/assets/css/frontend.css?ver=2.2.1' type='text/css' media='all' />
-<link rel='stylesheet' id='elementskit-css-widgetarea-control-editor-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/modules/controls/assets/css/widgetarea-editor.css?ver=2.0.9.1' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-global-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/global.css?ver=1604548018' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-post-1152-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/post-1152.css?ver=1608276738' type='text/css' media='all' />
-<link rel='stylesheet' id='ekit-widget-styles-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=2.0.9.1' type='text/css' media='all' />
-<link rel='stylesheet' id='ekit-widget-styles-pro-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles-pro.css?ver=2.0.9.1' type='text/css' media='all' />
-<link rel='stylesheet' id='ekit-responsive-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=2.0.9.1' type='text/css' media='all' />
-<link rel='stylesheet' id='oe-widgets-style-css'  href='http://ezran.my/ACES/wp-content/plugins/ocean-extra/assets/css/widgets.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='oceanwp-custom-css'  href='http://ezran.my/ACES/wp-content/uploads/oceanwp/custom-style.css?ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.5.3' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-shared-0-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.12.0' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-fa-regular-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.12.0' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.12.0' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-fa-brands-css'  href='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.12.0' type='text/css' media='all' />
-<script type='text/javascript' id='jquery-core-js-extra'>
-/* <![CDATA[ */
-var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
-<link rel="https://api.w.org/" href="http://ezran.my/ACES/wp-json/" /><link rel="alternate" type="application/json" href="http://ezran.my/ACES/wp-json/wp/v2/pages/1152" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ezran.my/ACES/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ezran.my/ACES/wp-includes/wlwmanifest.xml" />
-<meta name="generator" content="WordPress 5.5.3" />
-<link rel="canonical" href="http://ezran.my/ACES/login-page-aces/" />
-<link rel='shortlink' href='http://ezran.my/ACES/?p=1152' />
-<link rel="alternate" type="application/json+oembed" href="http://ezran.my/ACES/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fezran.my%2FACES%2Flogin-page-aces%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://ezran.my/ACES/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fezran.my%2FACES%2Flogin-page-aces%2F&#038;format=xml" />
-                <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-                <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>                <style type="text/css">
-                    <!--
-
-            @font-face {
-                font-family: 'aslsicons2';
-                src: url('//ezran.my/ACES/wp-content/plugins/ajax-search-lite/css/fonts/icons2.eot');
-                src: url('//ezran.my/ACES/wp-content/plugins/ajax-search-lite/css/fonts/icons2.eot?#iefix') format('embedded-opentype'),
-                     url('//ezran.my/ACES/wp-content/plugins/ajax-search-lite/css/fonts/icons2.woff2') format('woff2'),
-                     url('//ezran.my/ACES/wp-content/plugins/ajax-search-lite/css/fonts/icons2.woff') format('woff'),
-                     url('//ezran.my/ACES/wp-content/plugins/ajax-search-lite/css/fonts/icons2.ttf') format('truetype'),
-                     url('//ezran.my/ACES/wp-content/plugins/ajax-search-lite/css/fonts/icons2.svg#icons') format('svg');
-                font-weight: normal;
-                font-style: normal;
-            }
-            div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label {
-                font-size: 0px !important;
-                color: rgba(0, 0, 0, 0);
-            }
-            div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label:after {
-                font-size: 11px !important;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
-            }
-            div[id*='ajaxsearchlite'].wpdreams_asl_container {
-                width: 100%;
-                margin: 0px 0px 0px 0px;
-            }
-            div[id*='ajaxsearchliteres'].wpdreams_asl_results div.resdrg span.highlighted {
-                font-weight: bold;
-                color: rgba(217, 49, 43, 1);
-                background-color: rgba(238, 238, 238, 1);
-            }
-            div[id*='ajaxsearchliteres'].wpdreams_asl_results .results div.asl_image {
-                width: 70px;
-                height: 70px;
-            }
-            div.asl_r .results {
-                max-height: none;
-            }
-
-                .asl_m .probox svg {
-                    fill: rgba(0, 0, 0, 1) !important;
-                }
-                .asl_m .probox .innericon {
-                    background-color: rgba(255, 255, 255, 1) !important;
-                    background-image: none !important;
-                    -webkit-background-image: none !important;
-                    -ms-background-image: none !important;
-                }
-
-                div.asl_r.asl_w.vertical .results .item::after {
-                    display: block;
-                    position: absolute;
-                    bottom: 0;
-                    content: '';
-                    height: 1px;
-                    width: 100%;
-                    background: #D8D8D8;
-                }
-                div.asl_r.asl_w.vertical .results .item.asp_last_item::after {
-                    display: none;
-                }
-                                    -->
-                </style>
-                            <script type="text/javascript">
-                if ( typeof _ASL !== "undefined" && _ASL !== null && typeof _ASL.initialize !== "undefined" )
-                    _ASL.initialize();
-            </script>
-            <link rel="icon" href="http://ezran.my/ACES/wp-content/uploads/2020/11/cropped-WhatsApp-Image-2020-11-04-at-10.56.03-AM-32x32.jpeg" sizes="32x32" />
-<link rel="icon" href="http://ezran.my/ACES/wp-content/uploads/2020/11/cropped-WhatsApp-Image-2020-11-04-at-10.56.03-AM-192x192.jpeg" sizes="192x192" />
-<link rel="apple-touch-icon" href="http://ezran.my/ACES/wp-content/uploads/2020/11/cropped-WhatsApp-Image-2020-11-04-at-10.56.03-AM-180x180.jpeg" />
-<meta name="msapplication-TileImage" content="http://ezran.my/ACES/wp-content/uploads/2020/11/cropped-WhatsApp-Image-2020-11-04-at-10.56.03-AM-270x270.jpeg" />
-<style type="text/css">/** Mega Menu CSS: fs **/</style>
-</head>
-
-<body class="page-template page-template-elementor_header_footer page page-id-1152 wp-embed-responsive wpb-elementor-addons oceanwp-theme dropdown-mobile no-header-border default-breakpoint has-sidebar content-right-sidebar page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-11 elementor-page elementor-page-1152" itemscope="itemscope" itemtype="https://schema.org/WebPage">
-
-
-
-	<div id="outer-wrap" class="site clr">
-
-		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
-
-
-		<div id="wrap" class="clr">
+                  @error('password')
+                      <span class="invalid-feedback" role="alert">
+                          <strong>{{ $message }}</strong>
+                      </span>
+                  @enderror
+                </div>
+                <div class="u-align-center u-form-group u-form-submit">
+                  <!-- <a href="#" class="u-btn u-btn-submit u-button-style u-custom-color-1 u-hover-custom-color-3 u-btn-1">Submit</a> -->
+                  <button type="submit" class="u-btn u-btn-submit u-button-style u-custom-color-1 u-hover-custom-color-3 u-btn-1">
+                      {{ __('Login') }}
+                  </button>
+                  <input type="submit" value="submit" class="u-form-control-hidden">
+                </div>
+                <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
+                <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
+                <input type="hidden" value="" name="recaptchaResponse">
+              </form>
+            </div>
+          </div>
+        </div>
+        <a href="https://nicepage.com/templates" class="u-btn u-btn-round u-button-style u-hover-palette-4-base u-palette-3-base u-radius-50 u-btn-2"><span class="u-icon u-icon-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><g><g><g><circle cx="256" cy="378.5" r="25"></circle><path d="M256,0C114.516,0,0,114.497,0,256c0,141.484,114.497,256,256,256c141.484,0,256-114.497,256-256     C512,114.516,397.503,0,256,0z M256,472c-119.377,0-216-96.607-216-216c0-119.377,96.607-216,216-216     c119.377,0,216,96.607,216,216C472,375.377,375.393,472,256,472z"></path><path d="M256,128.5c-44.112,0-80,35.888-80,80c0,11.046,8.954,20,20,20s20-8.954,20-20c0-22.056,17.944-40,40-40     c22.056,0,40,17.944,40,40c0,22.056-17.944,40-40,40c-11.046,0-20,8.954-20,20v50c0,11.046,8.954,20,20,20     c11.046,0,20-8.954,20-20v-32.531c34.466-8.903,60-40.26,60-77.469C336,164.388,300.112,128.5,256,128.5z"></path>
+</g>
+</g>
+</g></svg><img></span>&nbsp;bantuan
+        </a>
+        <a href="https://nicepage.com/templates" class="u-btn u-btn-round u-button-style u-hover-palette-4-base u-palette-3-base u-radius-50 u-btn-3"><span class="u-icon u-icon-2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512.001 512.001" x="0px" y="0px" style="width: 1em; height: 1em;"><g><g><path d="M447.229,67.855h-43.181v-43.18C404.049,11.103,392.944,0,379.379,0H64.771C51.2,0,40.097,11.103,40.097,24.675V419.47    c0,13.571,11.103,24.675,24.675,24.675h43.181v43.181c0,13.571,11.098,24.675,24.675,24.675h209.729    c13.565,0,32.762-7.612,42.638-16.908l68.929-64.882c9.888-9.296,17.969-28.012,17.969-41.583l0.012-296.096    C471.904,78.959,460.8,67.855,447.229,67.855z M107.951,92.531v333.108h-43.18c-3.343,0-6.168-2.825-6.168-6.168V24.675    c0-3.343,2.825-6.168,6.168-6.168H379.38c3.337,0,6.168,2.825,6.168,6.168v43.181H132.626    C119.049,67.856,107.951,78.959,107.951,92.531z M441.24,416.737l-68.929,64.877c-1.412,1.327-3.251,2.628-5.281,3.867v-56.758    c0-4.238,1.709-8.051,4.528-10.888c2.844-2.819,6.656-4.533,10.894-4.533h61.718C443.213,414.602,442.233,415.799,441.24,416.737z     M453.385,388.626c0,1.832-0.334,3.954-0.839,6.168h-70.095c-18.721,0.037-33.89,15.206-33.928,33.928v64.024    c-2.202,0.445-4.324,0.746-6.168,0.746H132.626v0.001c-3.35,0-6.168-2.825-6.168-6.168V92.53c0-3.343,2.819-6.168,6.168-6.168    h314.602c3.343,0,6.168,2.825,6.168,6.168L453.385,388.626z"></path>
+</g>
+</g><g><g><path d="M379.379,154.216H200.488c-5.114,0-9.253,4.139-9.253,9.253c0,5.114,4.14,9.253,9.253,9.253h178.891    c5.108,0,9.253-4.139,9.253-9.253S384.487,154.216,379.379,154.216z"></path>
+</g>
+</g><g><g><path d="M379.379,277.59H200.488c-5.114,0-9.253,4.139-9.253,9.253c0,5.114,4.14,9.253,9.253,9.253h178.891    c5.108,0,9.253-4.139,9.253-9.253C388.632,281.728,384.487,277.59,379.379,277.59z"></path>
+</g>
+</g><g><g><path d="M299.187,339.277h-98.698c-5.114,0-9.253,4.139-9.253,9.253s4.139,9.253,9.253,9.253h98.698    c5.108,0,9.247-4.139,9.247-9.253S304.295,339.277,299.187,339.277z"></path>
+</g>
+</g><g><g><path d="M379.379,215.903H200.488c-5.114,0-9.253,4.139-9.253,9.253s4.14,9.253,9.253,9.253h178.891    c5.108,0,9.253-4.139,9.253-9.253S384.487,215.903,379.379,215.903z"></path>
+</g>
+</g></svg><img></span>&nbsp;Syarat
+        </a>
+        <a href="https://nicepage.com/templates" class="u-btn u-btn-round u-button-style u-hover-palette-4-base u-palette-3-base u-radius-50 u-btn-4"><span class="u-icon u-icon-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 471.7 471.7" x="0px" y="0px" style="width: 1em; height: 1em;"><g><g><path d="M360.8,200.6v-74.7c0.2-33.8-13.3-66.3-37.4-90C300.1,12.7,269.6,0,237.3,0c-0.5,0-1.1,0-1.6,0    c-68.9,0.1-124.9,56.5-124.9,125.9v74.7c-26,3.1-45,24.9-45,51.3v167.8c0,28.5,22.8,52,51.3,52h237.5c28.5,0,51.3-23.5,51.3-52    V251.9C405.8,225.6,386.8,203.7,360.8,200.6z M130.7,125.9h0.1c0-58.4,47.1-106.2,105-106.2h0.1c27.5-0.1,53.9,10.8,73.4,30.2    c20.3,20.1,31.6,47.5,31.4,76v74.8h-22v-74.8c0.2-22.7-8.8-44.5-24.9-60.5c-15.2-15.2-35.8-23.8-57.3-23.8h-0.6    c-46,0-83.2,37.8-83.2,84.2v74.9h-22V125.9z M298.8,125.9v74.8h-126v-74.8c0-35.4,28.2-64.2,63.2-64.2h0.6    c16.2,0,31.8,6.5,43.3,18C292.1,91.9,299,108.6,298.8,125.9z M386.8,420L386.8,420c0,17.5-14.2,31.7-31.7,31.7H117.5    c-17.5,0-31.7-14.2-31.7-31.7V252.4c0-17.5,14.2-31.7,31.7-31.7h237.6c17.5,0,31.7,14.2,31.7,31.7V420z"></path>
+</g>
+</g><g><g><path d="M270.4,330c-4.4-15.5-18.5-26.1-34.6-26.1c-19.9,0-36.1,16.1-36.1,36.1c0,16.1,10.6,30.2,26.1,34.6v28c0,5.5,4.5,10,10,10    s10-4.5,10-10v-28C264.9,369.1,276,349.1,270.4,330z M235.8,356c-8.9,0-16.1-7.2-16.1-16.1c0-8.9,7.2-16.1,16.1-16.1    c8.9,0,16.1,7.2,16.1,16.1C251.9,348.8,244.7,356,235.8,356z"></path>
+</g>
+</g></svg><img></span>&nbsp;keselamatan
+        </a>
+      </div>
+    </section>
 
 
 
 
-			<main id="main" class="site-main clr"  role="main">
+  </body>
 
-						<div data-elementor-type="wp-page" data-elementor-id="1152" class="elementor elementor-1152" data-elementor-settings="[]">
-						<div class="elementor-inner">
-							<div class="elementor-section-wrap">
-							<section class="elementor-section elementor-top-section elementor-element elementor-element-ba97b48 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="ba97b48" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-dd5364f" data-id="dd5364f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-22c001b elementor-widget elementor-widget-spacer" data-id="22c001b" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-67488a5 elementor-widget elementor-widget-image" data-id="67488a5" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-image">
-										<img width="150" height="150" src="http://ezran.my/ACES/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-04-at-10.56.03-AM-150x150.jpeg" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" srcset="http://ezran.my/ACES/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-04-at-10.56.03-AM-150x150.jpeg 150w, http://ezran.my/ACES/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-04-at-10.56.03-AM-300x300.jpeg 300w, http://ezran.my/ACES/wp-content/uploads/2020/11/WhatsApp-Image-2020-11-04-at-10.56.03-AM-100x100.jpeg 100w" sizes="(max-width: 150px) 100vw, 150px" />											</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-b85d20a elementor-widget elementor-widget-text-editor" data-id="b85d20a" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Pusat Kecemerlangan Teknologi Pintar Asia (ACES) di bawah Majlis Pembangunan Wilayah Ekonomi Pantai Timur (ECERDC) merancang untuk mengembangkan aplikasi berdasarkan karya sebagai alat untuk menyebabkan kesedaran dan juga berfungsi sebagai pengenalan kepada industri 4.0 (IR 4.0) kepada pelajar Tingkatan 5 yang terpilih.</p></div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-7e6a64d pp-icon-list-traditional pp-icon-left elementor-widget elementor-widget-pp-icon-list" data-id="7e6a64d" data-element_type="widget" data-widget_type="pp-icon-list.default">
-				<div class="elementor-widget-container">
-					<div class="pp-list-container">
-			<ul class="pp-list-items">
-																					<li class="pp-icon-list-item">
-										<span class="pp-icon-wrapper">
-				<span class="pp-icon-list-icon pp-icon "><i aria-hidden="true" class="far fa-question-circle"></i></span>			</span>
-			<span class="pp-icon-list-text">Pertolongan</span>						</li>
-																											<li class="pp-icon-list-item">
-										<span class="pp-icon-wrapper">
-				<span class="pp-icon-list-icon pp-icon "><i aria-hidden="true" class="fas fa-book"></i></span>			</span>
-			<span class="pp-icon-list-text">Syarat</span>						</li>
-																											<li class="pp-icon-list-item">
-										<span class="pp-icon-wrapper">
-				<span class="pp-icon-list-icon pp-icon "><i aria-hidden="true" class="fas fa-lock-open"></i></span>			</span>
-			<span class="pp-icon-list-text">Kerahsiaan</span>						</li>
-													</ul>
-		</div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9e6aebf" data-id="9e6aebf" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-			<div class="elementor-column-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-							<div class="elementor-widget-wrap">
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-34a6fdf elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="34a6fdf" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c082c56" data-id="c082c56" data-element_type="column">
-			<div class="elementor-column-wrap">
-							<div class="elementor-widget-wrap">
-								</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c2c225c" data-id="c2c225c" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-8033376 elementor-widget elementor-widget-text-editor" data-id="8033376" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Tidak mempunyai akaun</p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d4bbf44" data-id="d4bbf44" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-f460e16 elementor-align-right elementor-widget elementor-widget-button" data-id="f460e16" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a href="{{route('register')}}" class="elementor-button-link elementor-button elementor-size-xs" role="button">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Cipta Akaun</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-c595341 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c595341" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-79487c9" data-id="79487c9" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-c0613cf elementor-widget elementor-widget-text-editor" data-id="c0613cf" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>Pengenalan kepada <strong>ACES IR 4.0</strong></p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-eb50baa" data-id="eb50baa" data-element_type="column">
-			<div class="elementor-column-wrap">
-							<div class="elementor-widget-wrap">
-								</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<div class="elementor-element elementor-element-f746027 elementor-widget elementor-widget-spacer" data-id="f746027" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-				</div>
-				</div>
+  <script type="text/javascript">
+  function onlyNumberKey(evt) {
 
-
-		<div class="container">
-      <h1 class="u-text u-text-1"><font color="white">Log Masuk ke ACES IR 4.0</font></h1>
-				<div class="row justify-content-center">
-						<div class="col-md-8">
-							<div class="">
-									<div class="card" >
-
-												<div class="card-body" >
-													<!-- <form method="POST" action="{{ route('login') }}">
-															@csrf
-																<div class="form-group">
-																		<input class="form-control form-control-lg" id="username" type="text" placeholder="Username" autocomplete="off">
-																</div>
-																<div class="form-group">
-																		<input class="form-control form-control-lg" id="password" type="password" placeholder="Password">
-																</div>
-																<div class="form-group">
-																		<label class="custom-control custom-checkbox">
-																				<input class="custom-control-input" type="checkbox"><span class="custom-control-label">Remember Me</span>
-																		</label>
-																</div>
-																<button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
-														</form> -->
-														<form method="POST" action="{{ route('login') }}">
-																@csrf
-
-																<div class="form-group row">
-																		<div class="col-md-12">
-																				<input id="ic_number" type="text" class="form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" name="ic_number" value="{{ old('ic_number') }}" placeholder="Kad Pengenalan" required autocomplete="ic_number" autofocus>
-
-																				@error('email')
-																						<span class="invalid-feedback" role="alert">
-																								<strong>{{ $message }}</strong>
-																						</span>
-																				@enderror
-																		</div>
-																</div>
-
-																<div class="form-group row">
-																		<div class="col-md">
-																				<input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Kata Kunci" required autocomplete="current-password">
-
-																				@error('password')
-																						<span class="invalid-feedback" role="alert">
-																								<strong>{{ $message }}</strong>
-																						</span>
-																				@enderror
-																		</div>
-																</div>
-
-																<!-- <div class="form-group row">
-																		<div class="col-md">
-																				<div class="form-check">
-																						<input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-																						<label class="form-check-label" for="remember">
-																								{{ __('Remember Me') }}
-																						</label>
-																				</div>
-																		</div>
-																</div> -->
-
-																<div class="form-group row mb-0">
-
-																		<div class="col-md-12">
-																				<button type="submit" class="btn btn-block btn-primary">
-																						{{ __('Login') }}
-																				</button>
-
-																				<!-- @if (Route::has('password.request'))
-																						<a class="btn btn-link" href="{{ route('password.request') }}">
-																								{{ __('Forgot Your Password?') }}
-																						</a>
-																				@endif -->
-																		</div>
-																</div>
-														</form>
-												</div>
-												<!-- <div class="card-footer">
-														<div class="card-footer-item card-footer-item-bordered">
-																<a href="{{route('register')}}" class="footer-link">Create An Account</a></div>
-														<div class="card-footer-item card-footer-item-bordered">
-																<a href="{{route('password.request')}}" class="footer-link">Forgot Password</a>
-														</div>
-												</div> -->
-									</div>
-							</div>
-						</div>
-				</div>
-		</div>
-
-				<div class="elementor-element elementor-element-da63593 elementor-widget elementor-widget-spacer" data-id="da63593" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-				</div>
-				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-1df03da elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1df03da" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a1895ac" data-id="a1895ac" data-element_type="column">
-			<div class="elementor-column-wrap">
-							<div class="elementor-widget-wrap">
-								</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7e87598" data-id="7e87598" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-b60eced elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="b60eced" data-element_type="widget" data-widget_type="social-icons.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-social-icons-wrapper elementor-grid">
-							<div class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-12ba27b" target="_blank">
-						<span class="elementor-screen-only">Facebook</span>
-						<i class="fab fa-facebook"></i>					</a>
-				</div>
-							<div class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-15d8476" target="_blank">
-						<span class="elementor-screen-only">Twitter</span>
-						<i class="fab fa-twitter"></i>					</a>
-				</div>
-							<div class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-f75b1be" target="_blank">
-						<span class="elementor-screen-only">Youtube</span>
-						<i class="fab fa-youtube"></i>					</a>
-				</div>
-							<div class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-c7e0380" target="_blank">
-						<span class="elementor-screen-only">Whatsapp</span>
-						<i class="fab fa-whatsapp"></i>					</a>
-				</div>
-					</div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-						</div>
-						</div>
-					</div>
-
-	</main><!-- #main -->
-
-
-
-
-
-
-
-</div><!-- #wrap -->
-
-
-</div><!-- #outer-wrap -->
-
-
-
-<a id="scroll-top" class="scroll-top-right" href="#"><span class="fa fa-angle-up" aria-label="Scroll to the top of the page"></span></a>
-
-
-
-
-<script type='text/javascript' id='superpwa-register-sw-js-extra'>
-/* <![CDATA[ */
-var superpwa_sw = {"url":"\/ACES\/superpwa-sw.js"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/super-progressive-web-apps/public/js/register-sw.js' id='superpwa-register-sw-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/powerpack-lite-for-elementor/assets/lib/magnific-popup/jquery.magnific-popup.min.js?ver=2.2.1' id='magnific-popup-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js?ver=1.9.0' id='oceanwp-lightbox-js'></script>
-<script type='text/javascript' id='oceanwp-main-js-extra'>
-/* <![CDATA[ */
-var oceanwpLocalize = {"isRTL":"","menuSearchStyle":"drop_down","sidrSource":null,"sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select","ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/themes/oceanwp/assets/js/main.min.js?ver=1.9.0' id='oceanwp-main-js'></script>
-<script type='text/javascript' id='wpdreams-ajaxsearchlite-js-extra'>
-/* <![CDATA[ */
-var ajaxsearchlite = {"ajaxurl":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php","backend_ajaxurl":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php","js_scope":"jQuery"};
-var ASL = {"ajaxurl":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php","backend_ajaxurl":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php","js_scope":"jQuery","detect_ajax":"0","scrollbar":"1","js_retain_popstate":"0","version":"4741","fix_duplicates":"1","analytics":{"method":0,"tracking_id":"","string":"?ajax_search={asl_term}","event":{"focus":{"active":1,"action":"focus","category":"ASL","label":"Input focus","value":"1"},"search_start":{"active":0,"action":"search_start","category":"ASL","label":"Phrase: {phrase}","value":"1"},"search_end":{"active":1,"action":"search_end","category":"ASL","label":"{phrase} | {results_count}","value":"1"},"magnifier":{"active":1,"action":"magnifier","category":"ASL","label":"Magnifier clicked","value":"1"},"return":{"active":1,"action":"return","category":"ASL","label":"Return button pressed","value":"1"},"facet_change":{"active":0,"action":"facet_change","category":"ASL","label":"{option_label} | {option_value}","value":"1"},"result_click":{"active":1,"action":"result_click","category":"ASL","label":"{result_title} | {result_url}","value":"1"}}}};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/ajax-search-lite/js/min/jquery.ajaxsearchlite.min.js?ver=4.8.4' id='wpdreams-ajaxsearchlite-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=2.0.9.1' id='elementskit-framework-js-frontend-js'></script>
-<script type='text/javascript' id='elementskit-framework-js-frontend-js-after'>
-		var elementskit = {
-            resturl: 'http://ezran.my/ACES/wp-json/elementskit/v1/',
-        }
-
-
-</script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=2.0.9.1' id='ekit-widget-scripts-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-includes/js/hoverIntent.min.js?ver=1.8.1' id='hoverIntent-js'></script>
-<script type='text/javascript' id='megamenu-js-extra'>
-/* <![CDATA[ */
-var megamenu = {"timeout":"300","interval":"100"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=2.9.1' id='megamenu-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-includes/js/wp-embed.min.js?ver=5.5.3' id='wp-embed-js'></script>
-<!--[if lt IE 9]>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/themes/oceanwp/assets/js/third/html5.min.js?ver=1.9.0' id='html5shiv-js'></script>
-<![endif]-->
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.0.13' id='elementor-frontend-modules-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4' id='jquery-ui-position-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1' id='elementor-dialog-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.0.13' id='share-link-js'></script>
-<script type='text/javascript' id='elementor-frontend-js-before'>
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.13","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"http:\/\/ezran.my\/ACES\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1152,"title":"Login%20Page%20ACES%20%E2%80%93%20ACES","excerpt":"","featuredImage":false}};
-</script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.0.13' id='elementor-frontend-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=2.0.9.1' id='elementskit-elementor-js'></script>
-<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/modules/controls/assets/js/widgetarea-editor.js?ver=2.0.9.1' id='elementskit-js-widgetarea-control-editor-js'></script>
-
-<script type="text/javascript">
-function onlyNumberKey(evt) {
-
-      // Only ASCII charactar in that range allowed
-      var ASCIICode = (evt.which) ? evt.which : evt.keyCode
-      if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
-          return false;
-      return true;
-  }
-</script>
+        // Only ASCII charactar in that range allowed
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+            return false;
+        return true;
+    }
+  </script>
 </html>
-
-
 @endsection
