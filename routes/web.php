@@ -31,8 +31,9 @@ Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, '
 Route::get('/courses', [App\Http\Controllers\LessonController::class, 'courses'])->name('lesson.courses');
 
 //Quiz
-Route::get('/quiz/start', [App\Http\Controllers\QuizController::class, 'startQuiz'])->name('quiz.start-quiz');
+Route::get('/quiz/choose-quiz', [App\Http\Controllers\QuizController::class, 'chooseQuiz'])->name('quiz.choose-quiz');
 
+Route::post('/quiz/start', [App\Http\Controllers\QuizController::class, 'startQuiz'])->name('quiz.start-quiz');
 
 //student
 Route::get('/statistik', [App\Http\Controllers\UserController::class, 'statistik'])->name('user.student.statistik');

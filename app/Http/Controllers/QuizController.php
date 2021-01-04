@@ -31,7 +31,6 @@ class QuizController extends Controller
     // dd($request->all());
       event($lesson_id = $this->createQuiz($request->all()));
       return redirect()->route('admin.activities.quiz.list')->with("success","Tetapan quiz baru telah disimpan");
-
   }
 
   public function createQuiz(array $data){
@@ -165,8 +164,30 @@ class QuizController extends Controller
       return redirect()->route('admin.activities.quiz.question-banks.list', $question->lesson_id)->with("success","Soalan telah dipadam");
   }
 
-  public function startQuiz()
+  public function chooseQuiz()
   {
-      return view('quiz.start-quiz');
+      $quiz_list = Quiz::where('status', '1')->get();
+      return view('quiz.choose-quiz', compact('quiz_list'));
+  }
+
+  public function startQuiz(Request $request)
+  {
+      $quiz = Quiz::findOrFail($request->quiz_id);
+      $question = QuestionBank::where('lesson_id', $quiz->lesson->id)->get();
+      $question = $question->random($quiz->number_of_question);
+      $question = $question->shuffle();
+      foreach ($question as $key => $value) {
+        $answer[] = AnswerBank::where('question_id', $value->id)->get();
+      }
+
+      // foreach ($answer as $key => $value) {
+      //   $answer[] = $answer[$key][$key]->shuffle();
+      // }
+      // $answer = $answer->shuffle()->all();
+
+      // dd($answer[0][0]->answer);
+      // dd($answer);
+
+      return view('quiz.start-quiz', compact('quiz', 'question','answer'));
   }
 }

@@ -16,26 +16,218 @@
 
                 <div class="pills-regular">
                     <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="home" aria-selected="true">Tab#1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="profile" aria-selected="false">Tab#2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="contact" aria-selected="false">Tab#3</a>
-                        </li>
+
+                        @foreach($question as $data)
+                          @if ($loop->first)
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="true">Soalan &nbsp&nbsp{{$loop->iteration}}</a>
+                            </li>
+                          @else
+                              @if($loop->iteration > 9)
+                              <li class="nav-item">
+                                  <a class="nav-link" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false">Soalan {{$loop->iteration}}</a>
+                              </li>
+                              @else
+                              <li class="nav-item">
+                                  <a class="nav-link" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false">Soalan &nbsp&nbsp{{$loop->iteration}}</a>
+                              </li>
+                              @endif
+                          @endif
+                        @endforeach
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <p>Phasellus non ante gravida, ultricies neque a, fermentum leo. Etiam ornare enim arcu, at venenatis odio mollis quis. Mauris fermentum elementum ligula in efficitur. Aliquam id congue lorem. Proin consectetur feugiat enim ut luctus. Aliquam pellentesque ut tellus ultricies bibendum. In hac habitasse platea dictumst. Pellentesque sed justo aliquet, posuere sem nec, elementum ante. Vestibulum dui tortor, consectetur quis sagittis vitae, dapibus ut magna. Cras ante dui, tincidunt et turpis vel, suscipit viverra eros. Ut auctor augue feugiat hendrerit feugiat.</p>
+                      @foreach($question as $data)
+
+
+                        @if ($loop->first)
+                        <div class="tab-pane fade show active" id="pills-{{$loop->iteration}}" role="tabpanel" aria-labelledby="pills-{{$loop->iteration}}-tab">
+
+                          <div class="row">
+                            <div class="col-md-2">
+
+                            </div>
+                            <div class="col-md-8">
+                              <h3>Soalan {{$loop->iteration}}</h3>
+
+                            </div>
+                            <div class="col-md-2">
+
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-2">
+
+                            </div>
+                            <div class="col-md-8">
+
+                              <div class="form-group">
+                                 <label>{{$data->question}}</label>
+                              </div>
+                            </div>
+                            <div class="col-md-2">
+
+                            </div>
+                          </div>
+
+                          @foreach($answer as $ans)
+                            @for($i=0;$i<count($ans);$i++)
+                            @if($ans[$i]->question_id == $data->id)
+
+                            <div class="row">
+                              <div class="col-md-2">
+                              </div>
+                              <div class="col-md-4">
+                                @if($i == 0)
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="answer_{{$loop->iteration}}"  class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                                </label>
+                                <br>
+                                @elseif($i == 1)
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="answer_{{$loop->iteration}}" class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                                </label>
+                              </div>
+                              <div class="col-md-4">
+                                @elseif($i == 2)
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="answer_{{$loop->iteration}}" class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                                </label>
+                                <br>
+                                @elseif($i == 3)
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="answer_{{$loop->iteration}}" class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                                </label>
+                                @endif
+
+                              </div>
+                              <div class="col-md-2">
+                              </div>
+                            </div>
+                            @endif
+
+                            @endfor
+                          @endforeach
+
                         </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            <p>Nullam et tellus ac ligula condimentum sodales. Aenean tincidunt viverra suscipit. Maecenas id molestie est, a commodo nisi. Quisque fringilla turpis nec elit eleifend vestibulum. Aliquam sed purus in odio ullamcorper congue consectetur in neque. Aenean sem ex, tempor et auctor sed, congue id neque. </p>
-                        </div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                            <p>Vivamus pellentesque vestibulum lectus vitae auctor. Maecenas eu sodales arcu. Fusce lobortis, libero ac cursus feugiat, nibh ex ultricies tortor, id dictum massa nisl ac nisi. Fusce a eros pellentesque, ultricies urna nec, consectetur dolor. Nam dapibus scelerisque risus, a commodo mi tempus eu.</p>
-                        </div>
+
+
+                        @else
+
+                          <div class="tab-pane fade" id="pills-{{$loop->iteration}}" role="tabpanel" aria-labelledby="pills-{{$loop->iteration}}-tab">
+                            <div class="row">
+                              <div class="col-md-2">
+
+                              </div>
+                              <div class="col-md-8">
+                                <h3>Soalan {{$loop->iteration}}</h3>
+
+                              </div>
+                              <div class="col-md-2">
+
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col-md-2">
+
+                              </div>
+                              <div class="col-md-8">
+
+                                <div class="form-group">
+                                   <label>{{$data->question}}</label>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+
+                              </div>
+                            </div>
+                            @foreach($answer as $ans)
+                              @for($i=0;$i<count($ans);$i++)
+                              @if($ans[$i]->question_id == $data->id)
+
+                              <div class="row">
+                                <div class="col-md-2">
+
+                                </div>
+                                <div class="col-md-4">
+                                  @if($i == 0)
+                                  <label class="custom-control custom-radio custom-control-inline">
+                                      <input type="radio" name="answer_{{$loop->iteration}}"  class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                                  </label>
+                                  <br>
+                                  @elseif($i == 1)
+                                  <label class="custom-control custom-radio custom-control-inline">
+                                      <input type="radio" name="answer_{{$loop->iteration}}" class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                                  </label>
+                                </div>
+                                <div class="col-md-4">
+                                  @elseif($i == 2)
+                                  <label class="custom-control custom-radio custom-control-inline">
+                                      <input type="radio" name="answer_{{$loop->iteration}}" class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                                  </label>
+                                  <br>
+                                  @elseif($i == 3)
+                                  <label class="custom-control custom-radio custom-control-inline">
+                                      <input type="radio" name="answer_{{$loop->iteration}}" class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                                  </label>
+                                  @endif
+
+                                </div>
+                                <div class="col-md-2">
+
+                                </div>
+                              </div>
+                              @endif
+
+                              @endfor
+                            @endforeach
+
+                            @if ($loop->last)
+                            <div class="row">
+                              <div class="col-md-10">
+
+                              </div>
+                              <div class="col-md">
+
+                                <button type="button" name="button">Hantar Quiz</button>
+                              </div>
+                            </div>
+                            @endif
+                            <!-- <div class="row">
+                              <div class="col-md-2">
+
+                              </div>
+                              <div class="col-md-4">
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="answer_{{$loop->iteration}}"  class="custom-control-input"><span class="custom-control-label">Option 1</span>
+                                </label>
+                                <br>
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="answer_{{$loop->iteration}}" class="custom-control-input"><span class="custom-control-label">Option 2</span>
+                                </label>
+
+
+                              </div>
+                              <div class="col-md-4">
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="answer_{{$loop->iteration}}" class="custom-control-input"><span class="custom-control-label">Option 3</span>
+                                </label>
+                                <br>
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" name="answer_{{$loop->iteration}}" class="custom-control-input"><span class="custom-control-label">Option 4</span>
+                                </label>
+                              </div>
+                              <div class="col-md-2">
+
+                              </div>
+                            </div> -->
+                          </div>
+
+                        @endif
+                      @endforeach
+
+
                     </div>
                 </div>
               </div>

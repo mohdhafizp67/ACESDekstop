@@ -34,6 +34,8 @@
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
                         <a href="{{route('admin.activities.quiz.question-banks.add', $lesson_id)}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Tambah Soalan Baru</a>
+                        &nbsp&nbsp&nbsp&nbsp
+                        <a href="{{route('admin.activities.quiz.list')}}" class="btn btn-primary"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> &nbsp Kembali ke Senarai Kuiz</a>
 
                         <hr>
 
