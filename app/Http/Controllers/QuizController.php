@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 
 use App\Models\User;
 use App\Models\Quiz;
@@ -208,26 +209,31 @@ class QuizController extends Controller
       for($x = 0; $x < count($answer_bank); $x ++){
         if($quiz_answer[$i] == $answer_bank[$x]->id)
           if($answer_bank[$x]->status == "True"){
-            $mark ++;
+            $mark ++; // total true answer
           }
       }
     }
 
     // dd($mark);
-
-    $percentage = ($mark / $quiz->number_of_question) * 100;
-    $answered_question = count($quiz_answer);
+    $answered_question = count($quiz_answer); //total question answered
+    $percentage = ($mark / $quiz->number_of_question) * 100; //percentage
 
     if($percentage > $quiz->percentage_to_pass){
       $status = "Pass";
-      return redirect()->route('quiz.choose-quiz')->with("success","Tahniah");
     }else {
       $status = "Fail";
-      return redirect()->route('quiz.choose-quiz')->with("success","Maaf anda gagal");
     }
 
     //save data into student db
+    $student_id = Auth::user()->id;
 
-
+    return redirect()->route('quiz.result-quiz');
   }
+
+  public function resultQuiz()
+  {
+      return view('quiz.result-quiz');
+  }
+
+
 }

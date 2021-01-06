@@ -37,6 +37,8 @@ Route::post('/quiz/start', [App\Http\Controllers\QuizController::class, 'startQu
 
 Route::post('/quiz/submit-result', [App\Http\Controllers\QuizController::class, 'submitQuiz'])->name('quiz.submit-result');
 
+Route::get('/quiz/result-quiz', [App\Http\Controllers\QuizController::class, 'resultQuiz'])->name('quiz.result-quiz');
+
 //student
 Route::get('/statistik', [App\Http\Controllers\UserController::class, 'statistik'])->name('user.student.statistik');
 
