@@ -1,10 +1,61 @@
-@extends('layouts.app-studentheader')
+@extends('layouts.app-student')
 
 @section('content')
 
 
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Pencapaian, Statistik, Informasi, Notis, mesej​">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Page-1.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.2.5, nicepage.com">
+
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Alegreya+Sans+SC:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i">
+
+
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"url": "index.html"
+}</script>
+    <meta property="og:title" content="Page 1">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+		<link rel="stylesheet" href="{{ asset('css/HeaderStudent.css') }} ">
+
+  </head>
+
 
 <div class="dashboard-ecommerce">
+
+  <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body">
+    <section class="u-clearfix u-image u-shading u-section-1" id="sec-ccb0" data-image-width="1600" data-image-height="900">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-1">ACES <span class="u-text-custom-color-3">
+            <span class="u-text-custom-color-1">IR 4.0</span>
+          </span>
+        </p>
+        <p class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-2">Maklimat Terperinci</p>
+        <img src="{{asset('concept/images/StudentDashboard/profile.jpg')}}" alt="" class="u-image u-image-circle u-image-1" data-image-width="905" data-image-height="1280">
+        <p class="u-text u-text-default u-text-3">{{Auth::user()->name}}</p>
+        <!-- <h1 class="u-custom-font u-text u-text-default u-title u-text-4">Pencapaian</h1>
+        <h1 class="u-custom-font u-text u-text-default u-title u-text-5"><a href="{{route('user.student.statistik')}}">Statistik</a></h1>
+        <h1 class="u-custom-font u-text u-text-default u-title u-text-6">Informasi</h1> -->
+      </div>
+    </section>
     <div class="container-fluid dashboard-content ">
         <!-- ============================================================== -->
         <!-- pageheader  -->
@@ -33,9 +84,10 @@
         <!-- ============================================================== -->
 
 
+
         <div class="ecommerce-widget">
 
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                        <div class="card border-3 border-top" style="border-radius: 25px";>
                            <div class="card-body border-radius" style="background-color: #007F7E";>
@@ -45,9 +97,7 @@
                                    <div class="w3-container w3-red w3-round" style="width:50%">75%</div>
                                  </div>
 
-                               <!-- <div class="metric-label d-inline-block float-right text-success font-weight-bold">
-                                   <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5.86%</span>
-                               </div> -->
+
                            </div>
                        </div>
                    </div>
@@ -58,9 +108,7 @@
                                     <div class="w3-light-grey w3-round">
                                       <div class="w3-container w3-red w3-round" style="width:50%">75%</div>
                                     </div>
-                                    <!-- <div class="metric-label d-inline-block float-right text-success font-weight-bold">
-                                        <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">10%</span>
-                                    </div> -->
+
                                 </div>
                             </div>
                         </div>
@@ -71,9 +119,7 @@
                                         <div class="w3-light-grey w3-round">
                                           <div class="w3-container w3-red w3-round" style="width:50%">75%</div>
                                         </div>
-                                        <!-- <div class="metric-label d-inline-block float-right text-success font-weight-bold">
-                                            <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5%</span>
-                                        </div> -->
+
                                     </div>
                                 </div>
                             </div>
@@ -84,13 +130,11 @@
                                               <div class="w3-light-grey w3-round">
                                                 <div class="w3-container w3-red w3-round" style="width:50%">75%</div>
                                               </div>
-                                              <!-- <div class="metric-label d-inline-block float-right text-danger font-weight-bold">
-                                                  <span class="icon-circle-small icon-box-xs text-danger bg-danger-light bg-danger-light "><i class="fa fa-fw fa-arrow-down"></i></span><span class="ml-1">4%</span>
-                                              </div> -->
+
                                           </div>
                                       </div>
                                   </div>
-            </div>
+            </div> -->
             <div class="row">
                 <!-- ============================================================== -->
 
@@ -397,7 +441,7 @@
                 <!-- category revenue  -->
                 <!-- ============================================================== -->
 
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                          <div class="card" style="border-radius: 25px";>
                              <h5 class="card-header">Pelajaran</h5>
                              <div class="card-body">
@@ -422,7 +466,7 @@
                                                      <canvas id="chartjs_bar"></canvas>
                                                  </div>
                                              </div>
-                                         </div>
+                                         </div> -->
 
 
                 <!-- ============================================================== -->
@@ -529,6 +573,10 @@
         </div>
     </div>
 </div>
+
+
+</body>
+
 
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function() {
@@ -652,5 +700,5 @@ function getRandom(min, max) {
 }
 });
 </script>
-
+</html>
 @endsection

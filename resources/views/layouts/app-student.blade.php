@@ -49,12 +49,12 @@
               <!-- navbar -->
               <!-- ============================================================== -->
               <div class="dashboard-header">
-                  <nav class="navbar navbar-expand-lg fixed-top" style="background-color:#fff";>
+                  <nav class="navbar  fixed-top" style="background-color:#fff";>
                       <a class="navbar-brand" href="{{ route('home') }}">ACES</a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
-                      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                      <!-- <div class="collapse navbar-collapse " id="navbarSupportedContent">
                           <ul class="navbar-nav ml-auto navbar-right-top">
                               <!-- <li class="nav-item">
                                   <div id="custom-search" class="top-search-bar">
@@ -140,7 +140,7 @@
                                       </li>
                                   </ul>
                               </li> -->
-                              <li class="nav-item dropdown nav-user">
+                              <!-- <li class="nav-item dropdown nav-user">
                                   <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 230%;"></i></a>
                                   <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                       <div class="nav-user-info">
@@ -155,7 +155,7 @@
                                       @csrf
                                       </form>
                                   </div>
-                              </li>
+                              </li> -->
                           </ul>
                       </div>
                   </nav>
@@ -177,14 +177,32 @@
                           </button>
                           <div class="collapse navbar-collapse" id="navbarNav">
                               <ul class="navbar-nav flex-column">
-                                <li class="nav-divider">
-                                  <img class="logo-img" src="{{ asset('concept/images/aces-removebg-preview.png') }}" alt="logo">
+                                <li class="nav-divider" align="center";>
+                                  <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;">
                                 </li>
+                                <li class="nav-divider">
+                                  <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/PlayButton.png') }}" alt="logo" style="width: 100%;">
+                                </li>
+
+                                <li class="nav-item dropdown nav-user">
+                                    <a class="mb-0 text-white nav-user-name" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}}</a>
+                                    <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+
+                                        <a class="dropdown-item" href="{{route('user.profile.edit')}}"><i class="fas fa-user mr-2"></i>Profile</a>
+                                        <a class="dropdown-item" href="{{ route('user.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
+                                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        <i class="fas fa-power-off mr-2"></i>Logout</a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                        </form>
+                                    </div>
+                                </li>
+
                                   <li class="nav-divider">
-                                      Activities
+                                      <font color="white">Activities</font>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('home') }}"><i class="fas fa-user-circle"aria-hidden="true"></i> </i>Profil</a>
+                                    <a class="nav-link" href="{{ route('user.student.profile') }}"><i class="fas fa-user-circle"aria-hidden="true"></i> </i>Profil</a>
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i> </i>Mesej</a>
@@ -209,7 +227,7 @@
                                   </li>
 
                                   <li class="nav-divider">
-                                      Others
+                                      <font color="white">Others</font>
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>Maklum Balas</a>
