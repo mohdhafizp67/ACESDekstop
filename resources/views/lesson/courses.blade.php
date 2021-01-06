@@ -1,4 +1,4 @@
-@extends('layouts.app-studentheader')
+@extends('layouts.app-student')
 @section('content')
 <!DOCTYPE html>
 <html style="font-size: 16px;">

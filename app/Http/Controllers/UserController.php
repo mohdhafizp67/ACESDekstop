@@ -61,12 +61,21 @@ class UserController extends Controller
       return view('user.change-password');
 
   }
+
+  public function profil()
+  {
+
+    return view('user.student.profile');
+
+  }
+
   public function statistik()
   {
 
     return view('user.student.statistik');
 
   }
+
 
   public function gameDemo()
   {

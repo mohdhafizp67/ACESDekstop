@@ -37,6 +37,10 @@ Route::get('/quiz/start', [App\Http\Controllers\QuizController::class, 'startQui
 //student
 Route::get('/statistik', [App\Http\Controllers\UserController::class, 'statistik'])->name('user.student.statistik');
 
+Route::get('/profile', [App\Http\Controllers\UserController::class, 'profil'])->name('user.student.profile');
+
+
+
 Route::get('/demo', [App\Http\Controllers\UserController::class, 'gameDemo'])->name('user.game.demo');
 
 
