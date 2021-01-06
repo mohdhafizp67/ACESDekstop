@@ -205,7 +205,7 @@
                                     <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{route('quiz.start-quiz')}}"><i class="fa fa-question-circle" aria-hidden="true"></i>Kuiz</a>
+                                    <a class="nav-link" href="{{route('quiz.choose-quiz')}}"><i class="fa fa-question-circle" aria-hidden="true"></i>Kuiz</a>
                                   </li>
 
                                   <li class="nav-divider">

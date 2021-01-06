@@ -34,7 +34,6 @@
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
                         <a href="{{route('admin.activities.quiz.add')}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Tambah Kuiz Baru</a> &nbsp &nbsp
-                        <!-- <a href="#" class="btn btn-primary"><i class="fa fa-university" aria-hidden="true"></i> &nbsp Bank Soalan</a> -->
                         <hr>
 
                         <div class="table-responsive">
