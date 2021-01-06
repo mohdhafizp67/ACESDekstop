@@ -190,4 +190,44 @@ class QuizController extends Controller
 
       return view('quiz.start-quiz', compact('quiz', 'question','answer'));
   }
+
+  public function submitQuiz(Request $request){
+    // dd($request->all());
+    foreach ($request->answer as $data) {
+      $quiz_answer[] = $data;
+    }
+
+    $mark = 0;
+    $answer_bank = AnswerBank::get();
+    $quiz = Quiz::findOrFail($request->quiz_id);
+    // dd($answer_bank[5]->id);
+    // dd($request->answer[1]);
+    // dd($quiz);
+
+    for($i = 0; $i < count($quiz_answer); $i ++){
+      for($x = 0; $x < count($answer_bank); $x ++){
+        if($quiz_answer[$i] == $answer_bank[$x]->id)
+          if($answer_bank[$x]->status == "True"){
+            $mark ++;
+          }
+      }
+    }
+
+    // dd($mark);
+
+    $percentage = ($mark / $quiz->number_of_question) * 100;
+    $answered_question = count($quiz_answer);
+
+    if($percentage > $quiz->percentage_to_pass){
+      $status = "Pass";
+      return redirect()->route('quiz.choose-quiz')->with("success","Tahniah");
+    }else {
+      $status = "Fail";
+      return redirect()->route('quiz.choose-quiz')->with("success","Maaf anda gagal");
+    }
+
+    //save data into student db
+
+
+  }
 }
