@@ -341,13 +341,45 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
+  //display timer
   var fiveMinutes = 60 * {{$quiz->time}},
       display = document.querySelector('#time');
   startTimer(fiveMinutes, display);
+
+  //timer for auto submit form/quiz
   var setTimer = ({{$quiz->time}} * 60) * 1000;
+  // var setTimer = 5000;
   window.setTimeout(function() { document.submit_quiz.submit(); }, setTimer);
 };
+
+
+// window.onbeforeunload = function() { return "Your examination will be lost."; };
+// window.onbeforeunload = function() {
+//         return "Dude, are you sure you want to leave? Think of the kittens!";
+//     }
 </script>
+
+<!-- disable back button during quiz -->
+<script>
+    window.location.hash = "no-back-button";
+
+    window.location.hash = "Again-No-back-button";
+
+    window.onhashchange = function(){
+        window.location.hash = "no-back-button";
+    }
+</script>
+
+<!-- disable F5 button for refresh -->
+<script type="text/javascript">
+function disableF5(e) { if ((e.which || e.keyCode) == 116 || (e.which || e.keyCode) == 82) e.preventDefault(); };
+
+$(document).ready(function(){
+     $(document).on("keydown", disableF5);
+});
+</script>
+
+
 
 
 

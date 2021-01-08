@@ -1,4 +1,4 @@
-@extends('layouts.app-studentheader')
+@extends('layouts.app-student')
 
 @section('content')
 
@@ -51,7 +51,7 @@
                     <label>Status :</label>
                   </div>
                   <div class="col-md-3">
-                    <label> Lulus </label>
+                    <label> Lulus  </label>
                   </div>
                   <div class="col-md-2">
 
@@ -81,6 +81,16 @@
 function pass_quiz_id(id){
  $(".modal-footer #quiz_id").val( id );
 }
+</script>
+
+<script>
+    window.location.hash = "no-back-button";
+
+    window.location.hash = "Again-No-back-button";
+
+    window.onhashchange = function(){
+        window.location.hash = "no-back-button";
+    }
 </script>
 
 @endsection
