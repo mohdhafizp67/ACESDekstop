@@ -174,19 +174,23 @@ class QuizController extends Controller
   public function startQuiz(Request $request)
   {
       $quiz = Quiz::findOrFail($request->quiz_id);
-      $question = QuestionBank::where('lesson_id', $quiz->lesson->id)->get();
-      $question = $question->random($quiz->number_of_question);
-      $question = $question->shuffle();
+      $question = QuestionBank::where('lesson_id', $quiz->lesson->id)->get()->random($quiz->number_of_question)->shuffle();
+      // $question = $question->random($quiz->number_of_question);
+      // $question = $question->shuffle();
       foreach ($question as $key => $value) {
-        $answer[] = AnswerBank::where('question_id', $value->id)->get();
+        $answer[] = AnswerBank::where('question_id', $value->id)->get()->shuffle();
       }
+
+      foreach ($answer as $answers) {
+        $answers->shuffle()->all();
+      }
+      // dd($answers);
 
       // foreach ($answer as $key => $value) {
       //   $answer[] = $answer[$key][$key]->shuffle();
       // }
       // $answer = $answer->shuffle()->all();
 
-      // dd($answer[0][0]->answer);
       // dd($answer);
 
       return view('quiz.start-quiz', compact('quiz', 'question','answer'));
@@ -194,38 +198,48 @@ class QuizController extends Controller
 
   public function submitQuiz(Request $request){
     // dd($request->all());
-    foreach ($request->answer as $data) {
-      $quiz_answer[] = $data;
-    }
-
-    $mark = 0;
-    $answer_bank = AnswerBank::get();
-    $quiz = Quiz::findOrFail($request->quiz_id);
-    // dd($answer_bank[5]->id);
-    // dd($request->answer[1]);
-    // dd($quiz);
-
-    for($i = 0; $i < count($quiz_answer); $i ++){
-      for($x = 0; $x < count($answer_bank); $x ++){
-        if($quiz_answer[$i] == $answer_bank[$x]->id)
-          if($answer_bank[$x]->status == "True"){
-            $mark ++; // total true answer
-          }
+    if($request->has('answer')){
+      foreach ($request->answer as $data) {
+        $quiz_answer[] = $data;
       }
-    }
 
-    // dd($mark);
-    $answered_question = count($quiz_answer); //total question answered
-    $percentage = ($mark / $quiz->number_of_question) * 100; //percentage
+      $mark = 0;
+      $answer_bank = AnswerBank::get();
+      $quiz = Quiz::findOrFail($request->quiz_id);
+      // dd($answer_bank[5]->id);
+      // dd($request->answer[1]);
+      // dd($quiz);
 
-    if($percentage > $quiz->percentage_to_pass){
-      $status = "Pass";
+      for($i = 0; $i < count($quiz_answer); $i ++){
+        for($x = 0; $x < count($answer_bank); $x ++){
+          if($quiz_answer[$i] == $answer_bank[$x]->id)
+            if($answer_bank[$x]->status == "True"){
+              $mark ++; // total true answer
+            }
+        }
+      }
+
+      // dd($mark);
+      $answered_question = count($quiz_answer); //total question answered
+      $percentage = ($mark / $quiz->number_of_question) * 100; //percentage
+
+      if($percentage > $quiz->percentage_to_pass){
+        $status = "Pass";
+      }else {
+        $status = "Fail";
+      }
+
+      //save data into student db
+      $student_id = Auth::user()->id;
     }else {
+
+      $mark = 0;
+      $answered_question = 0;
+      $percentage = 0;
       $status = "Fail";
+
     }
 
-    //save data into student db
-    $student_id = Auth::user()->id;
 
     return redirect()->route('quiz.result-quiz');
   }
