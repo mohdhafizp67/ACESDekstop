@@ -18,6 +18,7 @@ class CreateQuestionBanksTable extends Migration
             $table->timestamps();
             $table->string('question')->unique();
             $table->string('status')->nullable();
+            $table->string('language')->nullable();
             $table->unsignedBigInteger('lesson_id');
             $table->foreign('lesson_id')->references('id')->on('lessons');
         });

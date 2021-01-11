@@ -25,6 +25,7 @@ class QuestionSeeder extends Seeder
           'id' => '1',
           'question' => 'IR 4.0 merujuk kepada',
           'status' => '1',
+          'language' => 'bm',
           'lesson_id' => '1',
         ]
       );
@@ -33,6 +34,7 @@ class QuestionSeeder extends Seeder
         [
           'answer' => 'Internet Revolution 4.0',
           'status' => 'False',
+          'language' => 'bm',
           'question_id' => '1',
         ]
       );
@@ -41,6 +43,7 @@ class QuestionSeeder extends Seeder
         [
           'answer' => 'Instagram Revolution 4.0',
           'status' => 'False',
+          'language' => 'bm',
           'question_id' => '1',
         ]
       );
@@ -49,6 +52,7 @@ class QuestionSeeder extends Seeder
         [
           'answer' => 'Industrial Revolution 4.0',
           'status' => 'True',
+          'language' => 'bm',
           'question_id' => '1',
         ]
       );
@@ -57,6 +61,7 @@ class QuestionSeeder extends Seeder
         [
           'answer' => 'Industries Revolution 4.0',
           'status' => 'False',
+          'language' => 'bm',
           'question_id' => '1',
         ]
       );
