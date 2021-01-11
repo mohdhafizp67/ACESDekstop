@@ -18,10 +18,40 @@
 
                   </div>
                   <div class="col-md-3">
+                    <label>Pelajaran :</label>
+                  </div>
+                  <div class="col-md-3">
+                    <label>{{$student_quiz->quiz->lesson->lesson_type}} | {{$student_quiz->quiz->lesson->lesson_subject}}</label>
+                  </div>
+                  <div class="col-md-2">
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-2">
+
+                  </div>
+                  <div class="col-md-3">
                     <label>Markah :</label>
                   </div>
                   <div class="col-md-3">
-                    <label> 5/10 (50%) </label>
+                    <label> {{$student_quiz->result}} / {{$student_quiz->quiz->number_of_question}}</label>
+                  </div>
+                  <div class="col-md-2">
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-2">
+
+                  </div>
+                  <div class="col-md-3">
+                    <label>Peratusan :</label>
+                  </div>
+                  <div class="col-md-3">
+                    <label> {{$student_quiz->percentage}} %</label>
                   </div>
                   <div class="col-md-2">
 
@@ -36,7 +66,7 @@
                     <label>Soalan yang telah dijawab :</label>
                   </div>
                   <div class="col-md-3">
-                    <label> 10 </label>
+                    <label> {{$student_quiz->answered_question}} </label>
                   </div>
                   <div class="col-md-2">
 
@@ -51,7 +81,7 @@
                     <label>Status :</label>
                   </div>
                   <div class="col-md-3">
-                    <label> Lulus  </label>
+                    <label> {{$student_quiz->result_status}}  </label>
                   </div>
                   <div class="col-md-2">
 

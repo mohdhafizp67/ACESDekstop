@@ -16,7 +16,10 @@ class CreateStudentsQuizesTable extends Migration
         Schema::create('students_quizes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->boolean('student_result')->default(0);
+            $table->string('result')->nullable();
+            $table->string('answered_question')->nullable();
+            $table->string('percentage')->nullable();
+            $table->string('result_status')->nullable();
             $table->unsignedBigInteger('student_id');
             $table->unsignedBigInteger('quiz_id');
             $table->foreign('student_id')->references('id')->on('students');

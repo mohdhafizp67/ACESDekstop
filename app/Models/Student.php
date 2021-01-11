@@ -37,6 +37,6 @@ class Student extends Model
     }
 
     public function user(){
-      return $this->belongsTo('App\Models\User', 'id', 'user_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+      return $this->belongsTo('App\Models\User', 'user_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
     }
 }
