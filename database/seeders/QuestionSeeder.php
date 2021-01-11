@@ -25,8 +25,10 @@ class QuestionSeeder extends Seeder
           'id' => '1',               //bil soalan
           'question' => 'IR 4.0 merujuk kepada',
           'status' => '1',
+
           'language' => 'bm',             // biar
           'lesson_id' => '1',         //lesson
+
         ]
       );
 
@@ -35,7 +37,9 @@ class QuestionSeeder extends Seeder
           'answer' => 'Internet Revolution 4.0',
           'status' => 'False',
           'language' => 'bm',
+
           'question_id' => '1', // ikut id soalan
+
         ]
       );
 

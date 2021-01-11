@@ -53,9 +53,9 @@
                             </div>
                             <div class="col-md-4">
                               <div class="form-group">
-                                 <label>Masa Diperuntukkan</label>
-                                 <!-- <input type="time" name="time" class="form-control bg-light" required> -->
-                                <select class="custom-select  bg-light @error('state') is-invalid @enderror" name="time" value="{{ old('time') }}"  >
+                                 <label>Masa Diperuntukkan (Minit)</label>
+                                 <input type="input" name="time" class="form-control bg-light" onkeypress="return onlyNumberKey(event)" maxlength="3" required>
+                                <!-- <select class="custom-select  bg-light @error('state') is-invalid @enderror" name="time" value="{{ old('time') }}"  >
                                       <option value="" selected disabled hidden>Pilih masa yang diperuntukkan</option>
                                       <option value="10" {{ old('time') == 10 ? 'selected' : '' }}>10 Minit</option>
                                       <option value="20" {{ old('time') == 20 ? 'selected' : '' }}>20 Minit</option>
@@ -63,7 +63,7 @@
                                       <option value="40" {{ old('time') == 40 ? 'selected' : '' }}>40 Minit</option>
                                       <option value="50" {{ old('time') == 50 ? 'selected' : '' }}>50 Minit</option>
                                       <option value="60" {{ old('time') == 60 ? 'selected' : '' }}>60 Minit</option>
-                                </select>
+                                </select> -->
                               </div>
                             </div>
                             <div class="col-md-2">
@@ -80,8 +80,8 @@
                           <div class="col-md-4">
                             <div class="form-group">
                                <label>Jumlah Soalan</label>
-                               <input type="text" name="number_of_question" maxlength="2" minlength="2" class="form-control bg-light" onkeypress="return onlyNumberKey(event)" required>
-                               <small>Jumlah soalan tidak kurang dari 10 dan tidak melebihi 99</small>
+                               <input type="text" name="number_of_question" maxlength="3" class="form-control bg-light" onkeypress="return onlyNumberKey(event)" required>
+                               <!-- <small>Jumlah soalan tidak kurang dari 10 dan tidak melebihi 99</small> -->
                             </div>
                           </div>
                           <div class="col-md-4">

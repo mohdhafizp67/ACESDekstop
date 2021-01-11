@@ -11,7 +11,9 @@ class QuestionBank extends Model
     protected $fillable = [
       'question',
       'status',
+      'language',
       'lesson_id'
+
     ];
 
     public function answer(){

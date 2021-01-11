@@ -11,6 +11,8 @@ class AnswerBank extends Model
     'question_id',
     'answer',
     'status'
+    'language',
+    
   ];
 
   public function question(){
