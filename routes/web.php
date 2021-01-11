@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::middleware('student')->group(function () {
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/profile/edit', [App\Http\Controllers\UserController::class, 'editProfile'])->name('user.profile.edit');
@@ -56,6 +58,8 @@ Route::get('/profile/change-password', [App\Http\Controllers\UserController::cla
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('activities.leaderboard');
 
 
+
+});
 
 Route::middleware('admin')->group(function () {
   Route::get('/home-admin', [App\Http\Controllers\AdminController::class, 'index'])->name('home-admin');
@@ -114,6 +118,5 @@ Route::middleware('admin')->group(function () {
   Route::get('/admin/others/audit/list', [App\Http\Controllers\AdminController::class, 'viewAuditList'])->name('admin.others.audit-trail.audit-trail-log');
 
   Route::post('/admin/others/audit/list/filter', [App\Http\Controllers\AdminController::class, 'viewAuditListFilter'])->name('admin.others.audit-trail.audit-trail-log.filter');
-
 
 });

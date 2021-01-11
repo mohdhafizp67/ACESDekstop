@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Auth;
 
 class Student
 {
@@ -21,7 +22,7 @@ class Student
       }
 
       if (Auth::user()->is_admin == 1 ||  Auth::user()->is_ecerdb_personnel == 1) {
-        return redirect()->route('home');
+        return redirect()->route('home-admin');
       }
 
       if (Auth::user()->is_student == 1) {
