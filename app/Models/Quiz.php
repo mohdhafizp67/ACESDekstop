@@ -26,6 +26,9 @@ class Quiz extends Model
 
     public function question(){
       return $this->hasMany('App\Models\QuestionBank');
+    }
 
+    public function student_quiz(){
+      return $this->hasMany('App\Models\Student_Quiz');
     }
 }
