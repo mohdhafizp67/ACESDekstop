@@ -98,6 +98,14 @@ class LessonSeeder extends Seeder
         ]
       );
 
+      DB::table('lessons')-> insert(
+        [
+        'id' => '11',
+        'lesson_type' => 'IR 4.0',
+        'lesson_subject' => 'Pillar',
+        ]
+      );
+
 
 
 
