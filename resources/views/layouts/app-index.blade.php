@@ -179,7 +179,7 @@
                                       Activities
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('lesson.courses') }}"><i class="fa fa-book" aria-hidden="true"></i>Lessons</a>
+                                    <a class="nav-link" href="{{ route('lesson.courses-latest') }}"><i class="fa fa-book" aria-hidden="true"></i>Lessons</a>
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Quizes</a>

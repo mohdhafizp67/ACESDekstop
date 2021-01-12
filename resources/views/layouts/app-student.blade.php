@@ -180,7 +180,7 @@
                                 <li class="nav-divider" align="center";>
                                   <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;">
                                 </li>
-                                
+
 
                                 <li class="nav-item dropdown nav-user">
                                     <a class="mb-0 text-white nav-user-name" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}}</a>
@@ -199,12 +199,9 @@
                                   <li class="nav-divider">
                                       <font color="white">Activities</font>
                                   </li>
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
-                                  </li>
+
                                   <li class="nav-item ">
 
-                                    <a class="nav-link" href="{{route('quiz.start-quiz')}}"><i class="fa fa-question-circle" aria-hidden="true"></i>Kuiz</a>
 
                                     <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
 

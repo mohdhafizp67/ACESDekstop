@@ -13,7 +13,7 @@ class LessonController extends Controller
 {
   public function courses()
   {
-      return view('lesson.courses-latest');
+      return view('lesson.courses');
   }
 
   public function listlesson()
