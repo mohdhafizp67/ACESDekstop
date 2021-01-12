@@ -16,7 +16,7 @@ class AddIsAdminIntoUsers extends Migration
       Schema::table('users', function (Blueprint $table) {
         $table->string('ic_number')->unique();
         $table->string('phone')->nullable();
-        $table->string('address')->nullable();
+        $table->text('address')->nullable();
         $table->string('postcode')->nullable();
         $table->string('state')->nullable();
         $table->boolean('is_admin')->default(false);

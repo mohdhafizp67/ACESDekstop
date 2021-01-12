@@ -78,6 +78,10 @@ Route::middleware('admin')->group(function () {
   Route::post('/admin/profile/change-password/updating', [App\Http\Controllers\AdminController::class, 'updatingPassword'])->name('admin.profiles.change-password.updating');
 
   //Activities
+  Route::get('/admin/activities/lesson/list', [App\Http\Controllers\LessonController::class, 'listlesson'])->name('admin.activities.lesson.list');
+
+  Route::post('/admin/activities/lesson/list/update-link', [App\Http\Controllers\LessonController::class, 'updateLink'])->name('admin.activities.lesson.list.update');
+
   Route::get('/admin/activities/lesson/add-new-lesson', [App\Http\Controllers\LessonController::class, 'addLesson'])->name('admin.activities.lesson.add');
 
   Route::post('/admin/activities/lesson/add-new-lesson/save', [App\Http\Controllers\LessonController::class, 'saveLesson'])->name('admin.activities.lesson.add.save');
