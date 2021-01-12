@@ -1,4 +1,4 @@
-@extends('layouts.app-index')
+@extends('layouts.app-student')
 
 @section('content')
 
@@ -106,5 +106,9 @@
                       </div>
                   </div>
             </div>
+            
         </div>
+
+
+
 @endsection
