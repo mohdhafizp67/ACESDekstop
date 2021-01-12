@@ -13,10 +13,17 @@ class Message extends Model
 
     protected $fillable = [
       'message',
-      'student_id',
+      // 'student_id',
     ];
 
-    public function student(){
-      return $this->belongsTo('App\Models\Student', 'id', 'student_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+    // public function student(){
+    //   return $this->belongsTo('App\Models\Student', 'id', 'student_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+    // }
+    public function user(){
+      return $this->belongsTo('App\Models\User');
     }
+
+    // public function student(){
+    //   return $this->belongsTo('App\Models\Student');
+    // }
 }

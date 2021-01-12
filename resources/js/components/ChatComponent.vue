@@ -56,16 +56,16 @@
         created() {
             this.fetchMessages();
             Echo.join('chat')
-                .here(user=>{
+                .here( user => {
                       this.users = user;
                 })
-                .joining(user=>{
+                .joining( user => {
                       this.users.push(user);
                 })
-                .leaving(user=>{
+                .leaving( user => {
                       this.users = this.users.filter(u => u.id != user.id);
                 })
-                .listen('MessageSent', (event)=>{
+                .listen('MessageSent', (event) => {
                     this.messages.push(event.message);
                 })
                 .listenForWhisper('typing', user => {
@@ -79,6 +79,10 @@
                        this.activeUser = false;
                     }, 2000);
                 });
+                // .listenForWhisper('typing', response => {
+                //     console.log('typing');
+                //     console.log(response);
+                // });
         },
         methods: {
             fetchMessages() {

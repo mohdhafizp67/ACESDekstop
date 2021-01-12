@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Message;
+use App\Events\MessageSent;
+use Carbon\Carbon;
+
 class ChatController extends Controller
 {
     public function __construct()
@@ -18,7 +22,7 @@ class ChatController extends Controller
 
     public function fetchMessages()
     {
-        $message = Message::with('user')->get();
+        $message = Message::with('user')->whereBetween('created_at', [Carbon::now()->startOfWeek(), Carbon::now()->endOfWeek()])->get();
         return $message;
     }
 

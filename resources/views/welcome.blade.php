@@ -168,7 +168,9 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 <body class="home page-template page-template-elementor_header_footer page page-id-12 wp-embed-responsive wpb-elementor-addons oceanwp-theme dropdown-mobile no-header-border default-breakpoint has-sidebar content-right-sidebar page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-11 elementor-page elementor-page-12" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
 
+	<div id="app">
 
+	</div>
 	<div id="outer-wrap" class="site clr">
 
 		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
@@ -397,4 +399,6 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=2.0.9.1' id='elementskit-elementor-js'></script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/modules/controls/assets/js/widgetarea-editor.js?ver=2.0.9.1' id='elementskit-js-widgetarea-control-editor-js'></script>
 </body>
+<script src="js/app.js" charset="utf-8"></script>
+
 </html>

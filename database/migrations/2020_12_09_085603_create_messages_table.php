@@ -17,8 +17,8 @@ class CreateMessagesTable extends Migration
             $table->id();
             $table->timestamps();
             $table->longText('message')->nullable();
-            $table->unsignedBigInteger('student_id');
-            $table->foreign('student_id')->references('id')->on('students');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
