@@ -17,6 +17,7 @@ class CreateAnswerBanksTable extends Migration
             $table->id();
             $table->string('answer')->nullable();
             $table->string('status')->nullable();
+            $table->string('language')->nullable();
             $table->bigInteger('question_id')->unsigned()->nullable();
             $table->foreign('question_id')->references('id')->on('question_banks');
             $table->timestamps();

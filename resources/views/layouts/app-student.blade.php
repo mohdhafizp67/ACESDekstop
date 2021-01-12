@@ -203,20 +203,22 @@
                                     <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
                                   </li>
                                   <li class="nav-item ">
+
                                     <a class="nav-link" href="{{route('quiz.start-quiz')}}"><i class="fa fa-question-circle" aria-hidden="true"></i>Kuiz</a>
+
+                                    <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
+
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fas fa-star" aria-hidden="true"></i> </i>Skor</a>
+                                    <a class="nav-link" href="{{route('quiz.choose-quiz')}}"><i class="fa fa-question-circle" aria-hidden="true"></i>Kuiz</a>
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="{{route('user.game.demo')}}"><i class="fa fa-gamepad" aria-hidden="true"></i>Liga Permainan</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fas fa-gift"  aria-hidden="true"></i></i>Ganjaran</a>
-                                  </li>
-                                  <li class="nav-item ">
                                     <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
                                   </li>
+
 
 
                                   <li class="nav-divider">

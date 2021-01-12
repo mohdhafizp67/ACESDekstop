@@ -2,6 +2,14 @@
 
 @section('content')
 
+
+<style media="screen">
+  label{
+    color: #2e2f39 !important;
+  }
+</style>
+
+
 <div class="dashboard-ecommerce">
     <div class="container-fluid dashboard-content ">
         <div class="ecommerce-widget">
@@ -11,7 +19,24 @@
               <h2 class="card-header" style="text-align: center;"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Mula menjawab kuiz</h2>
               <div class="card-body p-0">
                 <div style="padding: 10px;"></div>
-                <form action="{{route('quiz.submit-result')}}" method="post">
+
+
+                <div class="row">
+                  <div class="col-md-4">
+
+                  </div>
+                  <div class="col-md-4">
+                    <div style="background-color: white !important; color: red !important; font-align: center !important;">&nbsp&nbsp&nbsp Masa menjawab quiz akan tamat dalam <span id="time"></span> minit!</div>
+                  </div>
+                  <div class="col-md-4">
+
+                  </div>
+                </div>
+
+                <div style="padding: 10px;"></div>
+
+                <form id="submit_quiz" name="submit_quiz" action="{{route('quiz.submit-result')}}" method="post">
+
                   @csrf
                   <input type="hidden" name="quiz_id" value="{{$quiz->id}}">
                 <div class="pills-regular">
@@ -109,7 +134,19 @@
                             @endfor
                           @endforeach
 
-                          <button class="btn btn-primary btnNext" type="button" >Seterusnya</button>
+
+                          <div class="row">
+                            <div class="col-md-9">
+
+                            </div>
+                            <div class="col-md">
+
+                              <button class="btn btn-primary btnNext" type="button" >Seterusnya</button>
+
+                            </div>
+                          </div>
+
+
                         </div>
 
 
@@ -187,20 +224,29 @@
 
 
                             @if ($loop->last)
-                            <!-- <div class="row">
-                              <div class="col-md-10">
+
+                            <div class="row">
+                              <div class="col-md-9">
 
                               </div>
                               <div class="col-md">
+                                <button class="btn btn-primary btnPrevious" type="button" >Sebelumnya</button>
+                                <button class="btn btn-success" type="button" data-toggle="modal" data-target="#exampleModal">Hantar Quiz</button>
+                              </div>
+                            </div>
+
+                            @else
+
+                            <div class="row">
+                              <div class="col-md-9">
 
                               </div>
-                            </div> -->
-                            <button class="btn btn-primary btnPrevious" type="button" >Sebelumnya</button>&nbsp&nbsp
-                            <!-- <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Hantar Quiz</a> -->
-                            <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#exampleModal">Hantar Quiz</button>
-                            @else
-                            <button class="btn btn-primary btnNext" type="button" >Seterusnya</button>
-                            <button class="btn btn-primary btnPrevious" type="button" >Sebelumnya</button>
+                              <div class="col-md">
+                                <button class="btn btn-primary btnNext" type="button" >Seterusnya</button>
+                                <button class="btn btn-primary btnPrevious" type="button" >Sebelumnya</button>
+                              </div>
+                            </div>
+
                             @endif
 
 
@@ -282,6 +328,70 @@ $('.btnPrevious').click(function() {
   $('.nav-pills .active').parent().prev('li').find('a').trigger('click');
 });
 </script>
+
+
+
+<!-- quiz display timer -->
+<script type="text/javascript">
+function startTimer(duration, display) {
+  var timer = duration, minutes, seconds;
+  setInterval(function () {
+      minutes = parseInt(timer / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = minutes + ":" + seconds;
+
+      if (--timer < 0) {
+          timer = duration;
+      }
+  }, 1000);
+}
+
+window.onload = function () {
+  //display timer
+  var fiveMinutes = 60 * {{$quiz->time}},
+      display = document.querySelector('#time');
+  startTimer(fiveMinutes, display);
+
+  //timer for auto submit form/quiz
+  var setTimer = ({{$quiz->time}} * 60) * 1000;
+  // var setTimer = 5000;
+  window.setTimeout(function() { document.submit_quiz.submit(); }, setTimer);
+};
+
+
+// window.onbeforeunload = function() { return "Your examination will be lost."; };
+// window.onbeforeunload = function() {
+//         return "Dude, are you sure you want to leave? Think of the kittens!";
+//     }
+</script>
+
+<!-- disable back button during quiz -->
+<script>
+    window.location.hash = "no-back-button";
+
+    window.location.hash = "Again-No-back-button";
+
+    window.onhashchange = function(){
+        window.location.hash = "no-back-button";
+    }
+</script>
+
+<!-- disable F5 button for refresh -->
+<script type="text/javascript">
+function disableF5(e) { if ((e.which || e.keyCode) == 116 || (e.which || e.keyCode) == 82) e.preventDefault(); };
+
+$(document).ready(function(){
+     $(document).on("keydown", disableF5);
+});
+</script>
+
+
+
+
 
 
 
