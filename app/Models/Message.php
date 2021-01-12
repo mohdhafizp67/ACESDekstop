@@ -12,7 +12,7 @@ class Message extends Model
     protected $table = 'messages';
 
     protected $fillable = [
-      'messages_details',
+      'message',
       'student_id',
     ];
 
