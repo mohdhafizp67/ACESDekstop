@@ -14,7 +14,7 @@
 .u-section-1 .u-image-2 {
   min-height: 841px;
   /* background-image: url("concept/images/lesson/introbg.jpg"); */
-  /* background-image: url("C:/laragon/www/ACES/public/concept/images/lesson/introbg.jpg"); */
+  /* background-image: url("{{ asset('concept/images/lesson/introbg.jpg') }}"); */
   background-position: 0% 50%;
 }
 

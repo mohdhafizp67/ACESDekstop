@@ -8,6 +8,6 @@ class LessonController extends Controller
 {
   public function courses()
   {
-      return view('lesson.courses');
+      return view('lesson.courses-latest');
   }
 }
