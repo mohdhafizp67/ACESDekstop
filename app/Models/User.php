@@ -56,4 +56,8 @@ class User extends Authenticatable implements Auditable
     public function student(){
       return $this->hasOne('App\Models\Student');
     }
+
+    public function messages(){
+      return $this->hasMany('App\Models\Message');
+    }
 }

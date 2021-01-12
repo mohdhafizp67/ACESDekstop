@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Events\WebsocketDemoEvent;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    broadcast(new WebsocketDemoEvent('test'));
     return view('welcome');
 });
 
@@ -60,6 +62,7 @@ Route::get('/profile/change-password', [App\Http\Controllers\UserController::cla
 
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('activities.leaderboard');
 
+Route::get('/chat', [App\Http\Controllers\ChatController::class, 'index'])->name('activities.chat');
 
 
 });
@@ -126,4 +129,10 @@ Route::middleware('admin')->group(function () {
 
   Route::post('/admin/others/audit/list/filter', [App\Http\Controllers\AdminController::class, 'viewAuditListFilter'])->name('admin.others.audit-trail.audit-trail-log.filter');
 
+  Route::get('/admin/chat', [App\Http\Controllers\ChatController::class, 'index'])->name('admin.others.chat');
 });
+
+// outside of middleware
+Route::get('/messages', [App\Http\Controllers\ChatController::class, 'fetchMessages'])->name('chat/messages');
+
+Route::post('/message', [App\Http\Controllers\ChatController::class, 'sendMessages'])->name('chat/sendMessages');

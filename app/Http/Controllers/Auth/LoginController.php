@@ -66,14 +66,16 @@ class LoginController extends Controller
          }
 
           $user_active = User::where('ic_number',$request->ic_number)->first();
-          if($user_active->is_active == 0)
-          {
-            return redirect('/login')->with('error','Akaun anda telah dinyahaktifkan oleh admin.');
-          }
+          if($user_active){
+            if($user_active->is_active == 0)
+            {
+              return redirect('/login')->with('error','Akaun anda telah dinyahaktifkan oleh admin.');
+            }
 
-         if ($this->attemptLogin($request)) {
-             return $this->sendLoginResponse($request);
-         }
+           if ($this->attemptLogin($request)) {
+               return $this->sendLoginResponse($request);
+           }
+          }
 
          // If the login attempt was unsuccessful we will increment the number of attempts
          // to login and redirect the user back to the login form. Of course, when this
