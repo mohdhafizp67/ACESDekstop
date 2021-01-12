@@ -37,7 +37,7 @@
 
   </head>
   <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body">
-    <section class="u-clearfix u-image u-shading u-section-1" id="sec-ccb0" data-image-width="1600" data-image-height="1000">
+    <section class="u-clearfix u-image u-shading u-section-1" id="sec-ccb0" data-image-width="1200" data-image-height="1000">
       <div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-1">ACES <span class="u-text-custom-color-3">
             <span class="u-text-custom-color-1">IR 4.0</span>

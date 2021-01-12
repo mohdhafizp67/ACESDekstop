@@ -1,3 +1,7 @@
+@extends('layouts.app-login-register')
+
+@section('content')
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -29,7 +33,7 @@
     <link rel="stylesheet" href="{{ asset('css/Login.css') }} ">
     <meta property="og:url" content="index.html">
   </head>
-  <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body u-image" style="background-position: 50% 50%; background-image: url(&quot;images/WhatsAppImage2020-12-23at4.30.00PM.jpeg&quot;);">
+  <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body u-image" style="background-position: 50% 50%;">
     <section class="u-clearfix u-grey-5 u-section-1" id="sec-dbfb">
       <div class="u-black u-container-style u-group u-group-1">
         <div class="u-container-layout u-container-layout-1">
@@ -50,16 +54,16 @@
             <form action="{{ route('login') }}" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form">
               @csrf
               <div class="u-form-group u-form-name u-form-group-1">
-                <label for="name-3b9a" class="u-form-control-hidden u-label u-text-body-alt-color">Name</label>
+                <label for="name-3b9a" class="u-form-control-hidden u-label u-text-body-alt-color">Kad Pengenalan</label>
                 <input type="text" placeholder="Kad Pengenalan" id="ic_number" name="ic_number" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" value="{{ old('ic_number') }}" required autocomplete="ic_number" autofocus>
-                @error('email')
+                @error('ic_number')
                            <span class="invalid-feedback" role="alert">
                                <strong>{{ $message }}</strong>
                            </span>
                  @enderror
               </div>
               <div class="u-form-email u-form-group u-form-group-2">
-                <label for="email-3b9a" class="u-form-control-hidden u-label u-text-body-alt-color">Email</label>
+                <label for="email-3b9a" class="u-form-control-hidden u-label u-text-body-alt-color">Password</label>
                 <input type="password" placeholder="Kata Laluan" id="password" name="password" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control @error('password') is-invalid @enderror" required autocomplete="current-password">
                 @error('password')
                           <span class="invalid-feedback" role="alert">
@@ -71,10 +75,10 @@
 
                 <button type="submit" class="u-btn u-btn-submit u-button-style u-grey-80 u-btn-5">
                                     {{ __('TANDA TANGAN MASUK') }}
-
+                                  </button>
               </div>
-              <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-              <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+              <!-- <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+              <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div> -->
               <!-- <input type="hidden" value="" name="recaptchaResponse"> -->
             </form>
           </div>
@@ -95,3 +99,4 @@
     }
   </script>
 </html>
+@endsection
