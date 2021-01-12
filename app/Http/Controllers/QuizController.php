@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Auth;
 
 use App\Models\User;
+use App\Models\Student;
+use App\Models\Student_Quiz;
 use App\Models\Quiz;
 use App\Models\Lesson;
 use App\Models\QuestionBank;
@@ -172,6 +174,7 @@ class QuizController extends Controller
   }
 
   public function startQuiz(Request $request)
+
   {
       $quiz = Quiz::findOrFail($request->quiz_id);
       $question = QuestionBank::where('lesson_id', $quiz->lesson->id)->get()->random($quiz->number_of_question)->shuffle();
@@ -198,6 +201,8 @@ class QuizController extends Controller
 
   public function submitQuiz(Request $request){
     // dd($request->all());
+
+
     if($request->has('answer')){
       foreach ($request->answer as $data) {
         $quiz_answer[] = $data;
@@ -223,7 +228,7 @@ class QuizController extends Controller
       $answered_question = count($quiz_answer); //total question answered
       $percentage = ($mark / $quiz->number_of_question) * 100; //percentage
 
-      if($percentage > $quiz->percentage_to_pass){
+      if($percentage > $quiz->percentage_to_pass || $percentage == $quiz->percentage_to_pass){
         $status = "Pass";
       }else {
         $status = "Fail";
@@ -240,13 +245,29 @@ class QuizController extends Controller
 
     }
 
+    //add list into data
 
-    return redirect()->route('quiz.result-quiz');
+    $student_id = Auth::user()->student->id;
+
+
+    $student_quiz = Student_Quiz::Create([
+
+      'result' => $mark,
+      'answered_question' => $answered_question,
+      'percentage' => $percentage,
+      'result_status' => $status,
+      'quiz_id' => $request->quiz_id,
+      'student_id' => $student_id,
+      ]);
+
+    return redirect()->route('quiz.result-quiz', $student_quiz->id);
   }
 
-  public function resultQuiz()
+  public function resultQuiz($id)
   {
-      return view('quiz.result-quiz');
+      $student_quiz = Student_Quiz::findOrFail($id);
+      return view('quiz.result-quiz', compact('student_quiz'));
+
   }
 
 

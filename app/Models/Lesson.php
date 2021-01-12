@@ -10,7 +10,8 @@ class Lesson extends Model
     // use HasFactory;
     protected $fillable = [
       'lesson_type',
-      'lesson_subject'
+      'lesson_subject',
+      'video_link'
     ];
 
     public function quiz(){

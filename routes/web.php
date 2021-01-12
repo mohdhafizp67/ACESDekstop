@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Events\WebsocketDemoEvent;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    broadcast(new WebsocketDemoEvent('test'));
     return view('welcome');
 });
 
@@ -35,11 +37,14 @@ Route::get('/courses', [App\Http\Controllers\LessonController::class, 'courses']
 //Quiz
 Route::get('/quiz/choose-quiz', [App\Http\Controllers\QuizController::class, 'chooseQuiz'])->name('quiz.choose-quiz');
 
+
+
 Route::post('/quiz/start', [App\Http\Controllers\QuizController::class, 'startQuiz'])->name('quiz.start-quiz');
 
 Route::post('/quiz/submit-result', [App\Http\Controllers\QuizController::class, 'submitQuiz'])->name('quiz.submit-result');
 
-Route::get('/quiz/result-quiz', [App\Http\Controllers\QuizController::class, 'resultQuiz'])->name('quiz.result-quiz');
+Route::get('/quiz/result-quiz/{id}', [App\Http\Controllers\QuizController::class, 'resultQuiz'])->name('quiz.result-quiz');
+
 
 //student
 Route::get('/statistik', [App\Http\Controllers\UserController::class, 'statistik'])->name('user.student.statistik');
@@ -57,6 +62,7 @@ Route::get('/profile/change-password', [App\Http\Controllers\UserController::cla
 
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('activities.leaderboard');
 
+Route::get('/chat', [App\Http\Controllers\ChatController::class, 'index'])->name('activities.chat');
 
 
 });
@@ -74,6 +80,10 @@ Route::middleware('admin')->group(function () {
   Route::post('/admin/profile/change-password/updating', [App\Http\Controllers\AdminController::class, 'updatingPassword'])->name('admin.profiles.change-password.updating');
 
   //Activities
+  Route::get('/admin/activities/lesson/list', [App\Http\Controllers\LessonController::class, 'listlesson'])->name('admin.activities.lesson.list');
+
+  Route::post('/admin/activities/lesson/list/update-link', [App\Http\Controllers\LessonController::class, 'updateLink'])->name('admin.activities.lesson.list.update');
+
   Route::get('/admin/activities/lesson/add-new-lesson', [App\Http\Controllers\LessonController::class, 'addLesson'])->name('admin.activities.lesson.add');
 
   Route::post('/admin/activities/lesson/add-new-lesson/save', [App\Http\Controllers\LessonController::class, 'saveLesson'])->name('admin.activities.lesson.add.save');
@@ -119,4 +129,10 @@ Route::middleware('admin')->group(function () {
 
   Route::post('/admin/others/audit/list/filter', [App\Http\Controllers\AdminController::class, 'viewAuditListFilter'])->name('admin.others.audit-trail.audit-trail-log.filter');
 
+  Route::get('/admin/chat', [App\Http\Controllers\ChatController::class, 'index'])->name('admin.others.chat');
 });
+
+// outside of middleware
+Route::get('/messages', [App\Http\Controllers\ChatController::class, 'fetchMessages'])->name('chat/messages');
+
+Route::post('/message', [App\Http\Controllers\ChatController::class, 'sendMessages'])->name('chat/sendMessages');

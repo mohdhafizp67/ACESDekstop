@@ -32,11 +32,15 @@ class Student extends Model
       return $this->hasMany('App\Models\Leaderboard', 'id', 'leaderboard_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
     }
 
-    public function message_id(){
-      return $this->hasMany('App\Models\Message', 'id', 'message_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
-    }
+    // public function message_id(){
+    //   return $this->hasMany('App\Models\Message', 'id', 'message_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+    // }
 
     public function user(){
-      return $this->belongsTo('App\Models\User', 'id', 'user_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+      return $this->belongsTo('App\Models\User', 'user_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+    }
+
+    public function messages(){
+      return $this->hasMany('App\Models\Message');
     }
 }

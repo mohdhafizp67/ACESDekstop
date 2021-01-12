@@ -31,6 +31,7 @@ class User extends Authenticatable implements Auditable
         'is_active',
         'is_student',
         'is_ecerdb_personnel',
+        'profile_picture'
     ];
 
     /**
@@ -51,4 +52,12 @@ class User extends Authenticatable implements Auditable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function student(){
+      return $this->hasOne('App\Models\Student');
+    }
+
+    public function messages(){
+      return $this->hasMany('App\Models\Message');
+    }
 }

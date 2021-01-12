@@ -22,7 +22,7 @@ class LessonSeeder extends Seeder
         [
         'id' => '1',
         'lesson_type' => 'IR 4.0',
-        'lesson_subject' => 'Introduction',
+        'lesson_subject' => 'Pengenalan',
         ]
       );
 
@@ -30,7 +30,7 @@ class LessonSeeder extends Seeder
         [
         'id' => '2',
         'lesson_type' => 'IR 4.0',
-        'lesson_subject' => 'Virtual Reality',
+        'lesson_subject' => 'Pillar',
         ]
       );
 
@@ -38,7 +38,7 @@ class LessonSeeder extends Seeder
         [
         'id' => '3',
         'lesson_type' => 'IR 4.0',
-        'lesson_subject' => 'Internet of Things',
+        'lesson_subject' => 'Virtual Reality',
         ]
       );
 
@@ -46,7 +46,7 @@ class LessonSeeder extends Seeder
         [
         'id' => '4',
         'lesson_type' => 'IR 4.0',
-        'lesson_subject' => 'Big Data',
+        'lesson_subject' => 'Internet of Things',
         ]
       );
 
@@ -54,7 +54,7 @@ class LessonSeeder extends Seeder
         [
         'id' => '5',
         'lesson_type' => 'IR 4.0',
-        'lesson_subject' => 'Cyber Security',
+        'lesson_subject' => 'Big Data',
         ]
       );
 
@@ -62,7 +62,7 @@ class LessonSeeder extends Seeder
         [
         'id' => '6',
         'lesson_type' => 'IR 4.0',
-        'lesson_subject' => 'Cloud Computing',
+        'lesson_subject' => 'Cyber Security',
         ]
       );
 
@@ -70,7 +70,7 @@ class LessonSeeder extends Seeder
         [
         'id' => '7',
         'lesson_type' => 'IR 4.0',
-        'lesson_subject' => 'Additive Manufacturing',
+        'lesson_subject' => 'Cloud Computing',
         ]
       );
 
@@ -78,7 +78,7 @@ class LessonSeeder extends Seeder
         [
         'id' => '8',
         'lesson_type' => 'IR 4.0',
-        'lesson_subject' => 'Advanced Simulation',
+        'lesson_subject' => 'Additive Manufacturing',
         ]
       );
 
@@ -86,7 +86,7 @@ class LessonSeeder extends Seeder
         [
         'id' => '9',
         'lesson_type' => 'IR 4.0',
-        'lesson_subject' => 'Universal Integration',
+        'lesson_subject' => 'Advanced Simulation',
         ]
       );
 
@@ -94,7 +94,7 @@ class LessonSeeder extends Seeder
         [
         'id' => '10',
         'lesson_type' => 'IR 4.0',
-        'lesson_subject' => 'Autonomous Robot',
+        'lesson_subject' => 'Universal Integration',
         ]
       );
 
@@ -102,9 +102,11 @@ class LessonSeeder extends Seeder
         [
         'id' => '11',
         'lesson_type' => 'IR 4.0',
-        'lesson_subject' => 'Pillar',
+        'lesson_subject' => 'Autonomous Robot',
         ]
       );
+
+
 
 
 

@@ -1,4 +1,6 @@
+
 @extends('layouts.app-student')
+
 
 @section('content')
 
