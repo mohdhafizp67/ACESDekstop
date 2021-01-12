@@ -174,6 +174,7 @@ class QuizController extends Controller
   }
 
   public function startQuiz(Request $request)
+
   {
       $quiz = Quiz::findOrFail($request->quiz_id);
       $question = QuestionBank::where('lesson_id', $quiz->lesson->id)->get()->random($quiz->number_of_question)->shuffle();
@@ -266,6 +267,7 @@ class QuizController extends Controller
   {
       $student_quiz = Student_Quiz::findOrFail($id);
       return view('quiz.result-quiz', compact('student_quiz'));
+
   }
 
 

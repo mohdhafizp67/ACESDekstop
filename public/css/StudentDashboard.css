@@ -32311,45 +32311,45 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-section-1 .u-text-1 {
   font-size: 4.5rem;
-  margin: 22px 718px 0 -36px;
+  margin: 22px 718px 0 15px;
 }
 
 .u-section-1 .u-text-2 {
   font-size: 1.25rem;
   font-style: italic;
-  margin: -14px 823px 0 -36px;
+  margin: -14px 823px 0 15px;
 }
 
 .u-section-1 .u-image-1 {
   width: 110px;
   height: 110px;
-  margin: 72px auto 0 -68px;
+  margin: 72px auto 0 15px;
 }
 
 .u-section-1 .u-text-3 {
   font-size: 1.5rem;
-  margin: -28px auto 0 42px;
+  margin: -28px auto 0 135px;
 }
 
 .u-section-1 .u-text-4 {
   font-weight: 400;
   font-family: "Alegreya Sans SC";
   font-size: 1.5rem;
-  margin: 24px 321px 0 auto;
+  margin: 24px 380px 0 auto;
 }
 
 .u-section-1 .u-text-5 {
   font-weight: 400;
   font-family: "Alegreya Sans SC";
   font-size: 1.5rem;
-  margin: -26px 519px 0 auto;
+  margin: -26px 575px 0 auto;
 }
 
 .u-section-1 .u-text-6 {
   font-weight: 400;
   font-family: "Alegreya Sans SC";
   font-size: 1.5rem;
-  margin: -26px auto 23px 344px;
+  margin: -26px auto 23px 245px;
 }
 
 @media (max-width: 1199px) {
@@ -32489,7 +32489,7 @@ a.u-link.u-text-hover-grey-90:hover {
   font-weight: 400;
   font-family: "Alegreya Sans SC";
   font-size: 3rem;
-  margin: 19px auto 0 -64px;
+  margin: 19px auto 0 15px;
 }
 
 .u-section-2 .u-text-2 {
@@ -32500,13 +32500,13 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-section-2 .u-group-1 {
-  width: 592px;
+  width: 530px;
   min-height: 492px;
   height: auto;
   background-image: linear-gradient(to right, #00065d, #9a2dad);
   animation-duration: 1000ms;
   box-shadow: 0 2px 8px 0 rgba(128,128,128,1);
-  margin: 12px auto 0 -64px;
+  margin: 12px auto 0 15px;
 }
 
 .u-section-2 .u-container-layout-1 {
@@ -32520,11 +32520,11 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-section-2 .u-group-2 {
-  width: 639px;
+  width: 530px;
   min-height: 492px;
   height: auto;
   box-shadow: 0 2px 8px 0 rgba(128,128,128,1);
-  margin: -492px -66px 50px auto;
+  margin: -492px 40px 50px auto;
 }
 
 .u-section-2 .u-container-layout-2 {
@@ -32534,7 +32534,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-section-2 .u-image-2 {
   width: 625px;
   height: 414px;
-  margin: 48px -23px -30px;
+  margin: 48px -135px -30px;
 }
 
 @media (max-width: 1199px) {

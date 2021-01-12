@@ -17424,7 +17424,7 @@ a.pswp__share--download:hover {
   position: relative;
 }
 .u-table table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
   text-align: left;
 }
@@ -31986,7 +31986,7 @@ a.u-link.u-text-hover-grey-90:hover {
         h1.u-title
         {
         font-weight: 400;
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         line-height: 1.1;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -32310,23 +32310,23 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-section-1 .u-text-1 {
   text-shadow: 0 2px 8px rgba(0,0,0,1);
   font-weight: 700;
-  font-size: 3.75rem;
-  margin: 108px 856px 0 -62px;
+  font-size: 2.75rem;
+  margin: 60px 775px 0px 20px;
 }
 
 .u-section-1 .u-image-1 {
-  width: 112px;
-  height: 112px;
+  width: 90px;
+  height: 90px;
   background-image: url(http://aces.test/concept/images/cartajohan/FaceIcon.png);
   background-position: 50% 50%;
-  margin: -112px 0 0 auto;
+  margin: -80px 120px 0 auto;
 }
 
 .u-section-1 .u-group-1 {
   width: 800px;
   min-height: 103px;
   background-image: none;
-  margin: 44px auto 0;
+  margin: 44px 120px 0;
 }
 
 .u-section-1 .u-container-layout-1 {
@@ -32347,7 +32347,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-section-1 .u-text-3 {
-  margin: -87px -166px 0 365px;
+  margin: -75px -166px 0 365px;
 }
 
 .u-section-1 .u-table-1 {
@@ -32504,37 +32504,37 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-section-1 .u-image-3 {
   width: 89px;
   height: 89px;
-  margin: -634px auto 0 250px;
+  margin: -634px auto 0 220px;
 }
 
 .u-section-1 .u-image-4 {
   width: 89px;
   height: 89px;
-  margin: 18px auto 0 250px;
+  margin: 18px auto 0 220px;
 }
 
 .u-section-1 .u-image-5 {
   width: 89px;
   height: 89px;
-  margin: 18px auto 0 250px;
+  margin: 18px auto 0 220px;
 }
 
 .u-section-1 .u-image-6 {
   width: 89px;
   height: 89px;
-  margin: 18px auto 0 250px;
+  margin: 18px auto 0 220px;
 }
 
 .u-section-1 .u-image-7 {
   width: 89px;
   height: 89px;
-  margin: 18px auto 0 250px;
+  margin: 18px auto 0 220px;
 }
 
 .u-section-1 .u-image-8 {
   width: 89px;
   height: 89px;
-  margin: 18px auto 60px 250px;
+  margin: 18px auto 60px 220px;
 }
 
 @media (max-width: 1199px) {

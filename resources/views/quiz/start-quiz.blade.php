@@ -1,11 +1,14 @@
 @extends('layouts.app-student')
 
 @section('content')
+
+
 <style media="screen">
   label{
     color: #2e2f39 !important;
   }
 </style>
+
 
 <div class="dashboard-ecommerce">
     <div class="container-fluid dashboard-content ">
@@ -16,6 +19,7 @@
               <h2 class="card-header" style="text-align: center;"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Mula menjawab kuiz</h2>
               <div class="card-body p-0">
                 <div style="padding: 10px;"></div>
+
 
                 <div class="row">
                   <div class="col-md-4">
@@ -32,6 +36,7 @@
                 <div style="padding: 10px;"></div>
 
                 <form id="submit_quiz" name="submit_quiz" action="{{route('quiz.submit-result')}}" method="post">
+
                   @csrf
                   <input type="hidden" name="quiz_id" value="{{$quiz->id}}">
                 <div class="pills-regular">
@@ -129,6 +134,7 @@
                             @endfor
                           @endforeach
 
+
                           <div class="row">
                             <div class="col-md-9">
 
@@ -139,6 +145,7 @@
 
                             </div>
                           </div>
+
 
                         </div>
 
@@ -217,6 +224,7 @@
 
 
                             @if ($loop->last)
+
                             <div class="row">
                               <div class="col-md-9">
 
@@ -238,6 +246,7 @@
                                 <button class="btn btn-primary btnPrevious" type="button" >Sebelumnya</button>
                               </div>
                             </div>
+
                             @endif
 
 
@@ -321,6 +330,7 @@ $('.btnPrevious').click(function() {
 </script>
 
 
+
 <!-- quiz display timer -->
 <script type="text/javascript">
 function startTimer(duration, display) {
@@ -378,6 +388,7 @@ $(document).ready(function(){
      $(document).on("keydown", disableF5);
 });
 </script>
+
 
 
 
