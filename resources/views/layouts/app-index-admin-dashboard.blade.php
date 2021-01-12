@@ -214,24 +214,24 @@
                                 <li class="nav-divider">
                                   <img class="logo-img" src="{{ asset('concept/images/aces-removebg-preview.png') }}" alt="logo">
                                 </li>
-                                  <li class="nav-divider">
+                                  <!-- <li class="nav-divider">
                                       Menu Utama
-                                  </li>
+                                  </li> -->
                                   <li class="nav-item ">
                                     <a class="nav-link" href="{{ route('home-admin') }}"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a>
                                   </li>
-                                  <li class="nav-divider">
+                                  <!-- <li class="nav-divider">
                                       Aktiviti
-                                  </li>
-                                  <li class="nav-item ">
+                                  </li> -->
+                                  <!-- <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Kemajuan Pelajar</a>
-                                  </li>
-                                  <li class="nav-item ">
+                                  </li> -->
+                                  <!-- <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>Statistik Pelajar</a>
-                                  </li>
+                                  </li> -->
                                   <li class="nav-item ">
 
-                                    <a class="nav-link" href="{{route('admin.activities.lesson.add')}}"><i class="fa fa-book" aria-hidden="true"></i> Pelajaran</a>
+                                    <a class="nav-link" href="{{route('admin.activities.lesson.list')}}"><i class="fa fa-book" aria-hidden="true"></i> Pelajaran</a>
 
                                   </li>
                                   <li class="nav-item ">
@@ -242,15 +242,16 @@
                                   <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
                                   </li>
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>Pengumuman</a>
-                                  </li>
 
-                                  <li class="nav-divider">
+
+                                  <!-- <li class="nav-divider">
                                       Lain-lain
-                                  </li>
+                                  </li> -->
                                   <li class="nav-item ">
                                     <a class="nav-link" href="{{ route('admin.others.user-list.list') }}"><i class="fa fa-users" aria-hidden="true"></i> Senarai Pengguna</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>Pengumuman</a>
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="{{ route('admin.others.audit-trail.audit-trail-log') }}"><i class="fas fa-signal" aria-hidden="true"></i> Log Audit Trail </a>

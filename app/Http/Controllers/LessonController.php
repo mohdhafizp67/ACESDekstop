@@ -16,6 +16,21 @@ class LessonController extends Controller
       return view('lesson.courses-latest');
   }
 
+  public function listlesson()
+  {
+      $lesson_list = Lesson::get();
+      // dd($lesson_list);
+      return view('admin.activities.lesson.list', compact('lesson_list'));
+  }
+
+  public function updateLink(Request $request){
+    $lesson = Lesson::findorfail($request->lesson_id);
+    $lesson->video_link = $request->link;
+    $lesson->save();
+
+    return redirect()->route('admin.activities.lesson.list')->with("success","Pautan video telah dikemaskini!");
+  }
+
   public function addLesson()
   {
       return view('admin.activities.lesson.add');

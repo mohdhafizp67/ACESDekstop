@@ -16,7 +16,7 @@ class CreateQuestionBanksTable extends Migration
         Schema::create('question_banks', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('question')->unique();
+            $table->text('question')->nullable();
             $table->string('status')->nullable();
             $table->string('language')->nullable();
             $table->unsignedBigInteger('lesson_id');
