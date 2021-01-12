@@ -1,6 +1,4 @@
-@extends('layouts.app-login-register')
 
-@section('content')
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -9,11 +7,11 @@
     <meta name="keywords" content="maklum balas pengguna​">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Page 1</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Page-1.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <title>Pendaftaran ACES IR 4.0</title>
+    <link rel="stylesheet" href="{{ asset('css/Register.css') }} " media="screen">
+<link rel="stylesheet" href="{{ asset('css/Register.css') }} " media="screen">
+    <script class="u-script" type="text/javascript" src="{{ asset('css/register/jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ asset('css/register/nicepage.js') }}" defer=""></script>
     <meta name="generator" content="Nicepage 3.3.3, nicepage.com">
 
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
@@ -45,13 +43,13 @@
                 <a href="https://nicepage.com" class="u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-3 u-radius-50 u-btn-1">pertolongan</a>
                 <a href="https://nicepage.com" class="u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-3 u-radius-50 u-btn-2">syarat</a>
                 <a href="https://nicepage.com" class="u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-3 u-radius-50 u-btn-3">kerahsiaan</a>
-                <img src="{{asset('concept/images/register/aces.png')}}" alt="" class="u-align-right-md u-align-right-sm u-align-right-xs u-image u-image-default u-image-2" data-image-width="758" data-image-height="1875">
+                <!-- <img src="{{asset('concept/images/register/aces.png')}}" alt="" class="u-align-right-md u-align-right-sm u-align-right-xs u-image u-image-default u-image-2" data-image-width="758" data-image-height="1875"> -->
               </div>
             </div>
             <div class="u-container-style u-image u-layout-cell u-size-45 u-image-3" data-image-width="1080" data-image-height="607">
               <div class="u-container-layout u-container-layout-2">
-                <p class="u-text u-text-body-alt-color u-text-2">Pendaftaran</p>
-                <h1 class="u-heading-font u-text u-text-body-alt-color u-title u-text-3">ACES IR 4.0</h1>
+                <p class="u-text u-text-body-alt-color u-text-1">Pendaftaran ACES IR 4.0</p>
+
                 <div class="u-form u-form-1">
                   <form action="{{ route('register') }}" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form">
                     @csrf
@@ -230,4 +228,3 @@
 	</script>
 
 </html>
-@endsection

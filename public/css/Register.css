@@ -32634,7 +32634,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 @media (max-width: 575px) {
   .u-section-1 {
-    min-height: 1988px;
+    /* min-height: 1988px; */
   }
 
   .u-section-1 .u-layout-cell-1 {
@@ -32642,7 +32642,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-section-1 .u-image-1 {
-    width: 217px;
+    width: 250px;
     height: 120px;
     margin-top: 141px;
   }

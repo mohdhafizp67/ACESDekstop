@@ -43,7 +43,7 @@
 </head>
 <body>
     <div id="app">
-        <main class="py-0">
+        <main class="">
           <div class="dashboard-main-wrapper">
               <!-- ============================================================== -->
               <!-- navbar -->
@@ -180,9 +180,7 @@
                                 <li class="nav-divider" align="center";>
                                   <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;">
                                 </li>
-                                <li class="nav-divider">
-                                  <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/PlayButton.png') }}" alt="logo" style="width: 100%;">
-                                </li>
+                                
 
                                 <li class="nav-item dropdown nav-user">
                                     <a class="mb-0 text-white nav-user-name" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}}</a>
@@ -202,10 +200,10 @@
                                       <font color="white">Activities</font>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('user.student.profile') }}"><i class="fas fa-user-circle"aria-hidden="true"></i> </i>Profil</a>
+                                    <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i> </i>Mesej</a>
+                                    <a class="nav-link" href="{{route('quiz.start-quiz')}}"><i class="fa fa-question-circle" aria-hidden="true"></i>Kuiz</a>
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fas fa-star" aria-hidden="true"></i> </i>Skor</a>
@@ -219,18 +217,16 @@
                                   <li class="nav-item ">
                                     <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
                                   </li>
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
-                                  </li>
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="{{route('quiz.start-quiz')}}"><i class="fa fa-question-circle" aria-hidden="true"></i>Kuiz</a>
-                                  </li>
+
 
                                   <li class="nav-divider">
                                       <font color="white">Others</font>
                                   </li>
                                   <li class="nav-item ">
                                     <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>Maklum Balas</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('user.student.profile') }}"><i class="fas fa-user-circle"aria-hidden="true"></i> </i>Profil</a>
                                   </li>
                                   <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
