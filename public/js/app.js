@@ -1987,7 +1987,10 @@ __webpack_require__.r(__webpack_exports__);
       _this.typingTimer = setTimeout(function () {
         _this.activeUser = false;
       }, 2000);
-    });
+    }); // .listenForWhisper('typing', response => {
+    //     console.log('typing');
+    //     console.log(response);
+    // });
   },
   methods: {
     fetchMessages: function fetchMessages() {
@@ -56251,6 +56254,9 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   wsPort: 6001,
   forceTLS: false,
   disableStats: true
+});
+window.Echo.channel('TestChannel').listen('WebsocketDemoEvent', function (e) {
+  console.log(e);
 });
 
 /***/ }),

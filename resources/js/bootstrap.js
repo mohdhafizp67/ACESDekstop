@@ -41,3 +41,8 @@ window.Echo = new Echo({
     forceTLS: false,
     disableStats: true,
 });
+
+window.Echo.channel('TestChannel')
+.listen('WebsocketDemoEvent', (e)=>{
+  console.log(e);
+})
