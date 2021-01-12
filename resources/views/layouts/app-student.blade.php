@@ -202,7 +202,6 @@
 
                                   <li class="nav-item ">
 
-                                    
 
                                     <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
 

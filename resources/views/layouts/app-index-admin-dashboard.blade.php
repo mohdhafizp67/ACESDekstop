@@ -149,7 +149,11 @@
                                           <!-- <h4 class="mb-0 text-white nav-user-name">{{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}}</h4> -->
                                           <h6 class="mb-0 text-white nav-user-name">{{Auth::user()->name}}</h6>
                                           <div style="padding: 5px;"></div>
+                                          @if(Auth::user()->is_admin == 1)
                                           <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i>Admin Sistem</h6>
+                                          @else
+                                          <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i>ECERDB Personnel</h6>
+                                          @endif
                                           <!-- <span><i class="fa fa-certificate" aria-hidden="true"></i> Admin </span> -->
                                       </div>
                                       <a class="dropdown-item" href="{{route('admin.profiles.edit-profile')}}"><i class="fas fa-user mr-2"></i>Profil Pengguna</a>
@@ -239,9 +243,9 @@
                                     <a class="nav-link" href="{{ route('admin.activities.quiz.list') }}"><i class="fa fa-question-circle" aria-hidden="true"></i> Kuiz</a>
 
                                   </li>
-                                  <li class="nav-item ">
+                                  <!-- <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
-                                  </li>
+                                  </li> -->
 
 
                                   <!-- <li class="nav-divider">
