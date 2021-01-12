@@ -1,4 +1,4 @@
-@extends('layouts.app-index')
+@extends('layouts.app-student')
 @section('content')
            <!--Page Body part -->
            <div class="dashboard-ecommerce">
