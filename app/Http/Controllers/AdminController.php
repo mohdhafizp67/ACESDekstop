@@ -27,7 +27,10 @@ class AdminController extends Controller
   }
 
   public function updatingProfile(){
+    // dd(request()->all());
     $this->validator(request()->all())->validate();
+
+
 
     $user_id = Auth::user()->id;
     $user = User::findOrFail($user_id);
@@ -39,6 +42,15 @@ class AdminController extends Controller
     $user->address = request()->address;
     $user->postcode = request()->postcode;
     $user->state = request()->state;
+
+    //upload profile picture
+    $gambar_profile = "";
+
+    if ($files = request()->file('gambar_profile') != null) {
+          $gambar_profile = request()->file('gambar_profile')->store('public/uploads/user_pictures');
+          $user->profile_picture = $gambar_profile;
+    }
+
     $user->save();
 
     return redirect()->route('admin.profiles.edit-profile')->with("success","Profil pengguna telah dikemaskini");
