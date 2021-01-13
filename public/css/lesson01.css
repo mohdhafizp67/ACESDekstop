@@ -60,7 +60,7 @@
   height: 131px;
   width: 131px;
   background-image: none;
-  margin: 15px 0 0 auto;
+  margin: 15px 115px 0 auto;
 }
 .u-icon-3:hover {
   -ms-transform: scale(1.2); /* IE 9 */
@@ -112,7 +112,7 @@
   height: 131px;
   width: 131px;
   background-image: none;
-  margin: 32px auto 0 -12px;
+  margin: 32px auto 0 5px;
 }
 .u-icon-7:hover {
   -ms-transform: scale(1.2); /* IE 9 */
@@ -136,7 +136,7 @@
   height: 131px;
   width: 131px;
   background-image: none;
-  margin: -117px 26px 0 auto;
+  margin: -117px 115px 0 auto;
 }
 .u-icon-9:hover {
   -ms-transform: scale(1.2); /* IE 9 */

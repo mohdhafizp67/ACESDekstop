@@ -12,7 +12,7 @@
           <div class="card" style="padding: 10px; background-color: #9966ff !important;">
 
             <div style="padding: 5px;"></div>
-              <h2 class="card-header" style="text-align: center;"><i class="fa fa-question-circle mr-2" aria-hidden="true"></i>Pilih Quiz</h2>
+              <h2 class="card-header" style="text-align: center; color: #000;"><i class="fa fa-question-circle mr-2" aria-hidden="true"></i>Pilih Quiz</h2>
               <div class="card-body p-0">
                 <div style="padding: 10px;"></div>
 

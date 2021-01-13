@@ -1,12 +1,15 @@
 
-
 <!DOCTYPE html>
 <html class="html" lang="en-US">
 <head>
 	<meta charset="UTF-8">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>ACES &#8211; Learning Management System</title>
+	<!-- Manifest added by SuperPWA - Progressive Web Apps Plugin For WordPress -->
+<link rel="manifest" href="/ACES/superpwa-manifest.json">
+<meta name="theme-color" content="#2fbf92">
+<!-- / SuperPWA.com -->
+<title>ACES &#8211; Learning Management System</title>
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="ACES &raquo; Feed" href="http://ezran.my/ACES/feed/" />
 <link rel="alternate" type="application/rss+xml" title="ACES &raquo; Comments Feed" href="http://ezran.my/ACES/comments/feed/" />
@@ -67,7 +70,7 @@ img.emoji {
 <link rel='stylesheet' id='powerpack-frontend-css'  href='http://ezran.my/ACES/wp-content/plugins/powerpack-lite-for-elementor/assets/css/frontend.css?ver=2.2.1' type='text/css' media='all' />
 <link rel='stylesheet' id='elementskit-css-widgetarea-control-editor-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/modules/controls/assets/css/widgetarea-editor.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='elementor-global-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/global.css?ver=1604548018' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-post-12-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/post-12.css?ver=1607939517' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-12-css'  href='http://ezran.my/ACES/wp-content/uploads/elementor/css/post-12.css?ver=1610524892' type='text/css' media='all' />
 <link rel='stylesheet' id='ekit-widget-styles-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='ekit-widget-styles-pro-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles-pro.css?ver=2.0.9.1' type='text/css' media='all' />
 <link rel='stylesheet' id='ekit-responsive-css'  href='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=2.0.9.1' type='text/css' media='all' />
@@ -168,9 +171,7 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 <body class="home page-template page-template-elementor_header_footer page page-id-12 wp-embed-responsive wpb-elementor-addons oceanwp-theme dropdown-mobile no-header-border default-breakpoint has-sidebar content-right-sidebar page-header-disabled has-breadcrumbs elementor-default elementor-template-full-width elementor-kit-11 elementor-page elementor-page-12" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
 
-	<div id="app">
 
-	</div>
 	<div id="outer-wrap" class="site clr">
 
 		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
@@ -221,7 +222,7 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 		</section>
 				<div class="elementor-element elementor-element-6c0295a elementor-widget elementor-widget-heading" data-id="6c0295a" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">ACES IR 4.0</h2>		</div>
+			<h2 class="elementor-heading-title elementor-size-default">ACES I 4.0</h2>		</div>
 				</div>
 				<div class="elementor-element elementor-element-ce1b8bf elementor-widget elementor-widget-text-editor" data-id="ce1b8bf" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
@@ -234,7 +235,7 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-cc318ec" data-id="cc318ec" data-element_type="column">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-88306b5 elementor-align-justify elementor-mobile-align-left elementor-widget elementor-widget-button" data-id="88306b5" data-element_type="widget" data-widget_type="button.default">
+						<div class="elementor-element elementor-element-88306b5 elementor-align-justify elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="88306b5" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
 			<a href="{{route('register')}}" class="elementor-button-link elementor-button elementor-size-sm" role="button">
@@ -257,7 +258,7 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-33e9813" data-id="33e9813" data-element_type="column">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-e7eecdf elementor-align-justify elementor-mobile-align-left elementor-widget elementor-widget-button" data-id="e7eecdf" data-element_type="widget" data-widget_type="button.default">
+						<div class="elementor-element elementor-element-e7eecdf elementor-align-justify elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="e7eecdf" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
 			<a href="{{route('login')}}" class="elementor-button-link elementor-button elementor-size-sm" role="button">
@@ -280,28 +281,27 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 								</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-0952bf4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="0952bf4" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-04ad3fc elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="04ad3fc" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-eac5c24" data-id="eac5c24" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-fbc7c89" data-id="fbc7c89" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="elementor-column-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
 							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-a02d06d elementor-widget elementor-widget-heading" data-id="a02d06d" data-element_type="widget" data-widget_type="heading.default">
+						<div class="elementor-element elementor-element-fa79676 elementor-widget elementor-widget-text-editor" data-id="fa79676" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Introduction to Industrial Revolution 4.0
-</h2>		</div>
+					<div class="elementor-text-editor elementor-clearfix"><p>Introduction to Industrial Revolution 4.0</p></div>
+				</div>
 				</div>
 						</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-481f0d7" data-id="481f0d7" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d267425" data-id="d267425" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="elementor-column-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
 							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-ce4fdf5 elementor-widget elementor-widget-heading" data-id="ce4fdf5" data-element_type="widget" data-widget_type="heading.default">
+						<div class="elementor-element elementor-element-f020c68 elementor-widget elementor-widget-text-editor" data-id="f020c68" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Impact on Industrial Revolution 4.0</h2>		</div>
+					<div class="elementor-text-editor elementor-clearfix"><p>Impact on Industrial Revolution 4.0</p></div>
+				</div>
 				</div>
 						</div>
 					</div>
@@ -317,7 +317,7 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 							<div class="elementor-widget-wrap">
 						<div class="elementor-element elementor-element-682f317 elementor-widget elementor-widget-heading" data-id="682f317" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">© 2020 East Coast Economic Region Development Council All Rights Reserved.</h2>		</div>
+			<h2 class="elementor-heading-title elementor-size-default">© 2021 East Coast Economic Region Development Council All Rights Reserved.</h2>		</div>
 				</div>
 						</div>
 					</div>
@@ -349,6 +349,12 @@ var pp = {"ajax_url":"http:\/\/ezran.my\/ACES\/wp-admin\/admin-ajax.php"};
 
 
 
+<script type='text/javascript' id='superpwa-register-sw-js-extra'>
+/* <![CDATA[ */
+var superpwa_sw = {"url":"\/ACES\/superpwa-sw.js"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/super-progressive-web-apps/public/js/register-sw.js' id='superpwa-register-sw-js'></script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/powerpack-lite-for-elementor/assets/lib/magnific-popup/jquery.magnific-popup.min.js?ver=2.2.1' id='magnific-popup-js'></script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js?ver=1.9.0' id='oceanwp-lightbox-js'></script>
@@ -399,6 +405,4 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=2.0.9.1' id='elementskit-elementor-js'></script>
 <script type='text/javascript' src='http://ezran.my/ACES/wp-content/plugins/elementskit-lite/modules/controls/assets/js/widgetarea-editor.js?ver=2.0.9.1' id='elementskit-js-widgetarea-control-editor-js'></script>
 </body>
-<script src="js/app.js" charset="utf-8"></script>
-
 </html>
