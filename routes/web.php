@@ -34,6 +34,8 @@ Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, '
 //Lessons
 Route::get('/courses', [App\Http\Controllers\LessonController::class, 'courses'])->name('lesson.courses');
 
+Route::get('/courses-latest', [App\Http\Controllers\LessonController::class, 'courseslatest'])->name('lesson.courses-latest');
+
 //Quiz
 Route::get('/quiz/choose-quiz', [App\Http\Controllers\QuizController::class, 'chooseQuiz'])->name('quiz.choose-quiz');
 

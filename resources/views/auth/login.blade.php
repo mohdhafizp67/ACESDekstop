@@ -23,19 +23,21 @@
 				Kerahsiaan
 			</button><br><br>
 		</div>
-		<div class="col-md-8" style="background-image: url(http://aces.test/concept/images/login/robot.jpeg); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+		<div class="col-md-8" style="background-image: url({{asset('concept/images/login/robot.jpeg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 			<div class="row">
-				<div class="col-md-5"  >
+				<div class="col-md-6"  >
 
 				</div><br><br>
-        <div class="col-md-4" style="padding-bottom: 0px;">
-          <h5 class="text-center" style="padding-top: 55px;margin-left: 10%;color: #fff;">
+
+        <div class="col-md-3" style="padding-bottom: 0px;text-align-last: left;">
+          <h5 class="text-center" style="padding-top: 32%;margin-left: 30%;color: #fff;">
             Tiada Akaun?
           </h5>
         </div>
-				<div class="col-md-3" style="padding-top: 50px;margin-left: -18%;">
+				<div class="col-md-3" style="padding-top: 11%;text-align-last: right;">
 
-					<button type="button" class="btn btn-success">
+
+					<button type="button" class="btn btn-success" style="margin-top: -40%;margin-left: -25%;">
 						<a href="{{route('register')}}">CIPTA AKAUN</a>
 					</button>
 				</div>
@@ -60,7 +62,7 @@
 				<div class="form-group">
 
 					<label for="exampleInputPassword1" style="color: #fff">
-						Password
+						Kata Laluan
 					</label>
 					<input type="password" placeholder="Kata Laluan" id="password" name="password" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control @error('password') is-invalid @enderror" required autocomplete="current-password"/>
           @error('password')
