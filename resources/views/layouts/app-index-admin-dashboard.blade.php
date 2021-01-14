@@ -267,9 +267,9 @@
                                   <li class="nav-item ">
                                     <a class="nav-link" href="{{ route('admin.others.user-list.list') }}"><i class="fa fa-users" aria-hidden="true"></i> Senarai Pengguna</a>
                                   </li>
-                                  <li class="nav-item ">
+                                  <!-- <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>Pengumuman</a>
-                                  </li>
+                                  </li> -->
                                   <li class="nav-item ">
                                     <a class="nav-link" href="{{ route('admin.others.audit-trail.audit-trail-log') }}"><i class="fas fa-signal" aria-hidden="true"></i> Log Audit Trail </a>
                                   </li>
