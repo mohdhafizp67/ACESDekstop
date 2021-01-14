@@ -41,11 +41,48 @@ class UserController extends Controller
     ]);
 }
 
-  public function updateprofil(Request $request,$id){
-    $this->validator(request()->all())->validate();
-    $user = User::find($id);
-    $this->update($id);
-    return redirect()->route('home');
+  public function updateprofil(Request $request){
+    // dd($request->all());
+
+
+    $this->validatorProfile(request()->all())->validate();
+
+
+
+    $user_id = Auth::user()->id;
+    $user = User::findOrFail($user_id);
+
+    $user->name = request()->name;
+    $user->ic_number = request()->ic_number;
+    $user->email = request()->email;
+    $user->phone = request()->phone;
+    $user->address = request()->address;
+    $user->postcode = request()->postcode;
+    $user->state = request()->state;
+
+    //upload profile picture
+    $gambar_profile = "";
+
+    if ($files = request()->file('gambar_profile') != null) {
+          $gambar_profile = request()->file('gambar_profile')->store('public/uploads/user_pictures');
+          $user->profile_picture = $gambar_profile;
+    }
+
+    $user->save();
+    return redirect()->route('user.profile.edit')->with("success","Profil pengguna telah dikemaskini");
+  }
+
+  protected function validatorProfile(array $data)
+  {
+      return Validator::make($data, [
+        'name' =>['required', 'string'],
+        'ic_number' =>['required', 'string'],
+        'email' =>['required', 'email'],
+        'phone' =>['required', 'string'],
+        'address' => ['required', 'string'],
+        'postcode' =>['required'],
+        'state' =>['required', 'string'],
+      ]);
   }
 
 

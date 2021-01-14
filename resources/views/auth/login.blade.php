@@ -28,12 +28,14 @@
 				<div class="col-md-6"  >
 
 				</div><br><br>
+
         <div class="col-md-3" style="padding-bottom: 0px;text-align-last: left;">
           <h5 class="text-center" style="padding-top: 32%;margin-left: 30%;color: #fff;">
             Tiada Akaun?
           </h5>
         </div>
 				<div class="col-md-3" style="padding-top: 11%;text-align-last: right;">
+
 
 					<button type="button" class="btn btn-success" style="margin-top: -40%;margin-left: -25%;">
 						<a href="{{route('register')}}">CIPTA AKAUN</a>

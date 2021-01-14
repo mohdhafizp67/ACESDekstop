@@ -33,7 +33,7 @@
                          <div class="card-body p-0">
                            <div style="padding: 10px;"></div>
 
-                           <form action="{{route('admin.profiles.edit-profile.updating')}}" method="POST">
+                           <form action="{{route('admin.profiles.edit-profile.updating')}}" method="POST" enctype="multipart/form-data">
                              @csrf
                              <div class="row">
                                <div class="col-md-2">
@@ -132,6 +132,33 @@
                                </div>
                              </div>
 
+                             <hr>
+
+                             <div class="row">
+                               <div class="col-md-2">
+
+                               </div>
+                               <div class="col-md">
+                                 <div class="form-group">
+                                     <label >Muatnaik Gambar Profil</label>
+                                     <div class="custom-file">
+                                         <input type="file" class="custom-file-input" id="gambar_profile" onchange="return fileValidation('gambar_profile')" name="gambar_profile">
+                                         <label class="custom-file-label bg-light" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Muatnaik fail</label>
+                                     </div>
+                                     <small id="saiz_data" class="form-text text-secondary">Muat naik gambar tidak melebihi 50MB</small>
+
+                                     @error('gambar_profile')
+                                     <div class="alert alert-danger">
+                                       <strong>{{ $message }}</strong>
+                                     </div>
+                                     @enderror
+                                 </div>
+                               </div>
+                               <div class="col-md-2">
+
+                               </div>
+                             </div>
+
                              <div class="row">
                                <div class="col-md-2">
 
@@ -174,6 +201,9 @@
 
        </div>
        <div style="padding: 100px;"></div>
+
+       <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
        <script type="text/javascript">
        //input text ONLY
        function onlyNumberKey(evt) {
@@ -184,6 +214,39 @@
              return false;
          return true;
        }
+
+       //upload file validation
+       function fileValidation(name){
+         var fileInput = document.getElementById(name);
+         var filePath = fileInput.value;
+         var allowedExtensions = /(\.jpeg|\.jpg|\.png)$/i;
+         if(!allowedExtensions.exec(filePath)){
+             alert('Sila muatnaik gambar dalam format .jpeg , .jpg dan .png sahaja.');
+             fileInput.value = '';
+             return false;
+         }
+       }
+
+       //display upload file name in input
+       $('#gambar_profile').on('change',function(){
+               //get the file name
+               var fileName = $(this).val();
+               //replace the "Choose a file" label
+               $(this).next('.custom-file-label').html(fileName);
+           })
+
+       //validatio file size
+       $('#gambar_profile').on('change', function() {
+             var numb = $(this)[0].files[0].size/51200 /51200 ;
+             numb = numb.toFixed(2);
+             if(numb > 2){
+             alert('Ralat! Gambar anda melebihi 50MB. Saiz fail anda adalah: ' + numb +' MB');
+             document.getElementById("attachment_permohonan").value = "";
+             var fileName = "";
+             $(this).next('.custom-file-label').html(fileName);
+             return false;
+             }
+           });
        </script>
 
        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>

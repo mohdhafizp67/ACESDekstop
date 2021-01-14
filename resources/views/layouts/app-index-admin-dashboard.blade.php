@@ -143,13 +143,25 @@
                               </li> -->
                               <!-- <div style="border-left:1px solid #000;height:65px"></div> -->
                               <li class="nav-item dropdown nav-user">
-                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true" style="font-size: 180%;"></i></a>
+                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <!-- <i class="fa fa-cog" aria-hidden="true" style="font-size: 180%;"></i> -->
+                                    @if(Auth::user()->profile_picture != null)
+                                    <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px; ">
+                                    @else
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px; ">
+                                    @endif
+                                  </a>
+
                                   <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                       <div class="nav-user-info">
                                           <!-- <h4 class="mb-0 text-white nav-user-name">{{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}}</h4> -->
                                           <h6 class="mb-0 text-white nav-user-name">{{Auth::user()->name}}</h6>
                                           <div style="padding: 5px;"></div>
+                                          @if(Auth::user()->is_admin == 1)
                                           <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i>Admin Sistem</h6>
+                                          @else
+                                          <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i>ECERDB Personnel</h6>
+                                          @endif
                                           <!-- <span><i class="fa fa-certificate" aria-hidden="true"></i> Admin </span> -->
                                       </div>
                                       <a class="dropdown-item" href="{{route('admin.profiles.edit-profile')}}"><i class="fas fa-user mr-2"></i>Profil Pengguna</a>
@@ -239,9 +251,14 @@
                                     <a class="nav-link" href="{{ route('admin.activities.quiz.list') }}"><i class="fa fa-question-circle" aria-hidden="true"></i> Kuiz</a>
 
                                   </li>
-                                  <li class="nav-item ">
+                                  <!-- <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
+
+                                  </li> -->
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('admin.others.announcement.list') }}"><i class="fa fa-bullhorn" aria-hidden="true"></i>Pengumuman</a>
                                   </li>
+
 
 
                                   <!-- <li class="nav-divider">
