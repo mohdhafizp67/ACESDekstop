@@ -2,113 +2,112 @@
 
 @section('content')
 
-        <div class="dashboard-ecommerce">
-            <div class="container-fluid dashboard-content ">
-                  <div class="card">
-                    <div style="padding: 5px;"></div>
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</h2>
-                      <div class="card-body p-0">
-                        <div style="padding: 10px;"></div>
-                        <div class="row">
-                          <div class="col-md-2">
 
-                          </div>
-                          <div class="col-md-8">
-                            <div class="input-group mb-3">
-                                <input type="password"
-                                       id="password"
-                                       name="password"
-                                       class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
-                                       placeholder="Current Password">
-                                <div class="input-group-append">
-                                    <div class="input-group-text">
-                                      <a onclick="visiblePass()">
-                                        <span id="icon_eye_pass" class="fa fa-eye" ></span>
-                                      </a>
-                                    </div>
-                                </div>
-                                @if($errors->has('password'))
-                                    <div class="invalid-feedback">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </div>
-                                @endif
-                            </div>
-                          </div>
-                          <div class="col-md-2">
 
-                          </div>
-                        </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                        <div class="row">
-                          <div class="col-md-2">
+    <title>Bootstrap 4, from LayoutIt!</title>
 
-                          </div>
-                          <div class="col-md-4">
-                            <div class="input-group mb-3">
-                                <input type="password"
-                                       id="password"
-                                       name="password"
-                                       class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
-                                       placeholder="New Password">
-                                <div class="input-group-append">
-                                    <div class="input-group-text">
-                                      <a onclick="visiblePass()">
-                                        <span id="icon_eye_pass" class="fa fa-eye" ></span>
-                                      </a>
-                                    </div>
-                                </div>
-                                @if($errors->has('password'))
-                                    <div class="invalid-feedback">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </div>
-                                @endif
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="input-group mb-3">
-                                <input type="password"
-                                       id="password"
-                                       name="password"
-                                       class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
-                                       placeholder="Confirm New Password">
-                                <div class="input-group-append">
-                                    <div class="input-group-text">
-                                      <a onclick="visiblePass()">
-                                        <span id="icon_eye_pass" class="fa fa-eye" ></span>
-                                      </a>
-                                    </div>
-                                </div>
-                                @if($errors->has('password'))
-                                    <div class="invalid-feedback">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </div>
-                                @endif
-                            </div>
-                          </div>
-                          <div class="col-md-2">
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
 
-                          </div>
-                        </div>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/kemaskiniprofil.css') }} ">
 
-                        <div class="row">
-                          <div class="col-md-2">
+  </head>
+  <body>
 
-                          </div>
-                          <div class="col-md-8">
-                            <button class="btn btn-block btn-primary" type="submit">Change Password</button>
-                          </div>
-                          <div class="col-md-2">
+    <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12" style="padding-top: 10%; padding-bottom: 15%; background-image: url({{asset('concept/images/permainan/drone1.jpg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+      <h2 style="color: #fff; text-align: justify; font-weight: bold; padding-bottom: 5%;">
+        Tukar Kata Laluan
+      </h2>
 
-                          </div>
-                        </div>
-                        <div style="padding: 10px;"></div>
-
-                      </div>
-                  </div>
+        <div class="input-group mb-3">
+            <input type="password"
+                   id="password"
+                   name="password"
+                   class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
+                   placeholder="Current Password">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                  <a onclick="visiblePass()">
+                    <span id="icon_eye_pass" class="fa fa-eye" ></span>
+                  </a>
+                </div>
             </div>
-            
+            @if($errors->has('password'))
+                <div class="invalid-feedback">
+                    <strong>{{ $errors->first('password') }}</strong>
+                </div>
+            @endif
         </div>
 
+        <div class="row">
 
+          <div class="col-md-6">
+            <div class="input-group mb-3">
+                <input type="password"
+                       id="password"
+                       name="password"
+                       class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
+                       placeholder="New Password">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                      <a onclick="visiblePass()">
+                        <span id="icon_eye_pass" class="fa fa-eye" ></span>
+                      </a>
+                    </div>
+                </div>
+                @if($errors->has('password'))
+                    <div class="invalid-feedback">
+                        <strong>{{ $errors->first('password') }}</strong>
+                    </div>
+                @endif
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group mb-3">
+                <input type="password"
+                       id="password"
+                       name="password"
+                       class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
+                       placeholder="Confirm New Password">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                      <a onclick="visiblePass()">
+                        <span id="icon_eye_pass" class="fa fa-eye" ></span>
+                      </a>
+                    </div>
+                </div>
+                @if($errors->has('password'))
+                    <div class="invalid-feedback">
+                        <strong>{{ $errors->first('password') }}</strong>
+                    </div>
+                @endif
+            </div>
+          </div>
 
+        </div>
+
+        <div class="u-align-center u-form-group u-form-submit" style="padding-top: 5%;">
+          <button class="btn btn-success" type="submit">Tukar Kata Laluan</button>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
 @endsection
