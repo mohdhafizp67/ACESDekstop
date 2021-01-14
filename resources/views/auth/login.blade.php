@@ -9,8 +9,8 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-4" style="background-color: #000;">
-			<center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 100px;"/></center>
-			<p class="text-center" style="color: #fff; padding-bottom: 50px;">
+			<center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 25%; padding-bottom: 15%;"/></center>
+			<p class="text-center" style="color: #fff; padding-bottom: 25%; padding-top: 10%;">
 				Pusat Kecemerlangan Teknologi Pintar Asia (ACES) di bawah Majlis Pembangunan Wilayah Ekonomi Pantai Timur (ECERDC) merancang untuk mengembangkan aplikasi berdasarkan  karya sebagai alat untuk untuk menyebarkan kesedaran dan juga berfungsi sebagai pengenalan kepada industri 4.0 (I4.0) kepada pelajar Tingkatan 5 yang terpilih.
 			</p>
 			<button type="button" class="btn btn-success" style="border-radius: 50px;">
@@ -24,20 +24,20 @@
 			</button><br><br>
 		</div>
 		<div class="col-md-8" style="background-image: url({{asset('concept/images/login/robot.jpeg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
-			<div class="row">
+			<div class="row" style="padding-bottom: 15%; padding-top: 5%;">
 				<div class="col-md-6"  >
 
 				</div><br><br>
 
         <div class="col-md-3" style="padding-bottom: 0px;text-align-last: left;">
-          <h5 class="text-center" style="padding-top: 32%;margin-left: 30%;color: #fff;">
+          <!-- <h5 class="text-center" style="padding-top: 8%;margin-left: 26%;color: #fff;">
             Tiada Akaun?
-          </h5>
+          </h5> -->
         </div>
-				<div class="col-md-3" style="padding-top: 11%;text-align-last: right;">
+				<div class="col-md-3" style="padding-top: 5%;margin-left: -5%;text-align-last: right;">
 
 
-					<button type="button" class="btn btn-success" style="margin-top: -40%;margin-left: -25%;">
+					<button type="button" class="btn btn-success" style="margin-top: -30%;margin-left: -25%;">
 						<a href="{{route('register')}}">CIPTA AKAUN</a>
 					</button>
 				</div>
