@@ -55,7 +55,9 @@ Route::get('/profile', [App\Http\Controllers\UserController::class, 'profil'])->
 
 
 
-Route::get('/demo', [App\Http\Controllers\UserController::class, 'gameDemo'])->name('user.game.demo');
+Route::get('/game/menu', [App\Http\Controllers\UserController::class, 'gameDemo'])->name('user.game.demo');
+
+Route::get('/game/demo', [App\Http\Controllers\UserController::class, 'gameDemoDrone'])->name('user.game.drone');
 
 
 Route::get('/feedback', [App\Http\Controllers\UserController::class, 'feedback'])->name('others.feedback');
