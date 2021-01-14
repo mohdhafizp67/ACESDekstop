@@ -1,75 +1,82 @@
 @extends('layouts.app-student')
 @section('content')
-           <!--Page Body part -->
-           <!DOCTYPE html>
-<html style="font-size: 16px;">
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="maklum balas pengguna​">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Page 1</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Page-1.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 3.3.3, nicepage.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i">
+    <title>Bootstrap 4, from LayoutIt!</title>
 
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
 
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "",
-		"url": "index.html"
-}</script>
-    <meta property="og:title" content="Page 1">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="index.html">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/feedback.css') }} ">
 
-    <meta property="og:url" content="index.html">
   </head>
-  <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body">
-    <section class="u-clearfix u-image u-section-1" id="sec-3c4f" data-image-width="1080" data-image-height="607">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-custom-font u-text u-text-body-alt-color u-title u-text-1">
-          <span style="font-size: 3rem;">maklum balas pengguna</span>
-        </h1>
-        <div class="u-form u-form-1">
-          <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form">
-            <div class="u-form-email u-form-group">
-              <label for="email-3b9a" class="u-label u-text-body-alt-color">Nama</label>
-              <input type="email" placeholder="" id="email-3b9a" name="text" class="u-input u-input-rectangle u-white">
-            </div>
-            <div class="u-form-group u-form-name">
-              <label for="name-3b9a" class="u-label u-text-body-alt-color">Emel</label>
-              <input type="text" placeholder="Emel" id="name-3b9a" name="email" class="u-input u-input-rectangle u-white" required="">
-            </div>
-            <div class="u-form-group u-form-group-3">
-              <label for="text-719d" class="u-label u-text-body-alt-color">Subjek</label>
-              <input type="text" placeholder="Subjek" id="text-719d" name="text-1" class="u-input u-input-rectangle u-white">
-            </div>
-            <div class="u-form-group u-form-message">
-              <label for="message-3b9a" class="u-label u-text-body-alt-color">Maklum Balas</label>
-              <textarea placeholder="Mesej" rows="4" cols="50" id="message-3b9a" name="message" class="u-input u-input-rectangle u-white" autofocus="autofocus"></textarea>
-            </div>
-            <div class="u-align-center u-form-group u-form-submit">
-              <a href="#" class="u-btn u-btn-submit u-button-style u-custom-color-1 u-hover-custom-color-3 u-btn-1">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
-            </div>
-            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-            <input type="hidden" value="" name="recaptchaResponse">
-          </form>
-        </div>
-      </div>
-    </section>
+  <body>
 
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" style="padding-top: 8%; padding-bottom: 9%; background-image: url({{asset('concept/images/permainan/drone1.jpg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+      <h2 style="color: #fff; text-align: justify; font-weight: bold;">
+				Maklum Balas
+			</h2>
+			<form role="form" style="padding: 15px; text-align: justify;" action="#" method="POST" >
+        <div class="form-group">
+
+					<label for="exampleInputEmail1" style="color: #fff;font-weight: bold;">
+						Nama Penuh
+					</label>
+					<input placeholder="Nama"ctype="text" class="form-control" id="" autocomplete="off" >
+				</div>
+				<div class="form-group">
+
+					<label for="exampleInputEmail1" style="color: #fff;font-weight: bold;">
+						Emel
+					</label>
+					<input  placeholder="Emel"type="email" class="form-control" id="" autocomplete="off" >
+				</div>
+				<div class="form-group">
+
+					<label for="exampleInputPassword1" style="color: #fff;font-weight: bold;">
+						Kata Laluan
+					</label>
+					<input placeholder="Kata Laluan" type="password" class="form-control" id="" autocomplete="off">
+				</div>
+
+        <div class="form-group">
+
+          <label for="exampleInputEmail1" style="color: #fff;font-weight: bold;">
+            Mesej
+          </label>
+          <textarea placeholder="Mesej" rows="4" cols="50" name="address" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"></textarea>
+        </div>
+
+				<div class="form-group">
+
+					<label for="exampleInputFile" style="color: #fff;font-weight: bold;">
+						File input
+					</label>
+					<input type="file" class="form-control-file" id="">
+				</div>
+
+        <div class="u-align-center u-form-group u-form-submit">
+            <button class="btn btn-success" type="submit">HANTAR</button>
+        </div>
+			</form>
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
+
 @endsection
