@@ -62,6 +62,8 @@ Route::get('/game/demo', [App\Http\Controllers\UserController::class, 'gameDemoD
 
 Route::get('/feedback', [App\Http\Controllers\UserController::class, 'feedback'])->name('others.feedback');
 
+Route::post('/feedback/save', [App\Http\Controllers\UserController::class, 'feedbackSave'])->name('others.feedback.save');
+
 Route::get('/profile/change-password', [App\Http\Controllers\UserController::class, 'viewChangePassword'])->name('user.change-password');
 
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('activities.leaderboard');

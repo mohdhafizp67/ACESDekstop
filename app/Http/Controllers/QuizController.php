@@ -229,9 +229,9 @@ class QuizController extends Controller
       $percentage = ($mark / $quiz->number_of_question) * 100; //percentage
 
       if($percentage > $quiz->percentage_to_pass || $percentage == $quiz->percentage_to_pass){
-        $status = "Pass";
+        $status = "Lulus";
       }else {
-        $status = "Fail";
+        $status = "Gagal";
       }
 
       //save data into student db
@@ -241,7 +241,7 @@ class QuizController extends Controller
       $mark = 0;
       $answered_question = 0;
       $percentage = 0;
-      $status = "Fail";
+      $status = "Gagal";
 
     }
 

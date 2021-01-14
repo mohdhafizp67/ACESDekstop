@@ -88,9 +88,12 @@ class UserController extends Controller
 
   public function feedback()
   {
-
     return view('others.feedback');
+  }
 
+  public function feedbackSave(Request $request)
+  {
+    return redirect()->route('others.feedback')->with("success","Maklum balas telah dihantar.");
   }
 
   public function viewChangePassword()
