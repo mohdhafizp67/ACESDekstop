@@ -123,4 +123,11 @@ class UserController extends Controller
     return view('game.demo.game');
 
   }
+
+  public function gameDemoDrone()
+  {
+
+    return view('game.demo.drone');
+
+  }
 }

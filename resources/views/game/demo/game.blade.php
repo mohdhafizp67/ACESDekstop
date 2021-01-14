@@ -35,7 +35,7 @@
 			<div class="row" style="padding-bottom: 5%;">
 				<div class="col-md-3 text-block" style="padding-bottom: 5%;">
 					<img alt="Bootstrap Image Preview" src="{{asset('concept/images/permainan/Picture1.png')}}" style="border: solid 7px; border-color: #960202; background-image: linear-gradient(to right top, #ff9b00, #ff8300, #ff6900, #ff4800, #ff0000);">
-          <h4 style="color: #fff;">Pengenalan</h4>
+          <h4 style="color: #fff;"><a href="{{route('user.game.drone')}}">Pengenalan</a></h4>
 				</div>
 				<div class="col-md-3" style="padding-bottom: 5%;">
 					<img alt="Bootstrap Image Preview" src="{{asset('concept/images/permainan/Picture2.png')}}" style="border: solid 7px; border-color: #960202; background-image: linear-gradient(to right top, #ff9b00, #ff8300, #ff6900, #ff4800, #ff0000);">
