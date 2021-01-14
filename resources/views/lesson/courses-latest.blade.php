@@ -14,6 +14,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/videopelajaran.css') }} ">
 
   </head>
   <body>
@@ -21,13 +22,18 @@
     <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
+
 			<div class="row">
 				<div class="col-md-8" style="padding-top: 10%;background-color: slategray;">
-					<h1>
-						Realiti Maya
+					<h1 style="margin-left: -70%; padding-bottom: 5%;">
+						Pelajaran
 					</h1>
 
+
           <iframe width="100%" height="50%" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=0&rel=0" frameborder="0" allowfullscreen></iframe>
+          <h1>
+						Realiti Maya
+					</h1>
 				</div>
 				<div class="col-md-4" style="padding-top: 5%; padding-bottom: 10%;background-color: slategray;">
 					<div class="carousel slide" id="carousel-200650">
@@ -41,7 +47,7 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<center><img class="d-block wvr-100" alt="Carousel Bootstrap First" src="{{asset('concept/images/videopelajaran/VRCollege.png')}}" style="width: 70%; height:30%;"></center>
+								<center><img class="d-block wvr-100" alt="Carousel Bootstrap First" src="{{asset('concept/images/videopelajaran/vrcollege.png')}}" style="width: 70%; height:30%;"></center>
 								<!-- <div class="carousel-caption">
 									<h4>
 										First Thumbnail label
@@ -52,7 +58,7 @@
 								</div> -->
 							</div>
 							<div class="carousel-item">
-								<center><img class="d-block wvr-100" alt="Carousel Bootstrap First" src="{{asset('concept/images/videopelajaran/VRKerjaya.png')}}" style="width: 70%; height:50%;"></center>
+								<center><img class="d-block wvr-100" alt="Carousel Bootstrap First" src="{{asset('concept/images/videopelajaran/vrkerjaya.png')}}" style="width: 70%; height:50%;"></center>
 								<!-- <div class="carousel-caption">
 									<h4>
 										Second Thumbnail label
@@ -63,7 +69,7 @@
 								</div> -->
 							</div>
 							<div class="carousel-item">
-								<center><img class="d-block wvr-100" alt="Carousel Bootstrap First" src="{{asset('concept/images/videopelajaran/VRCourses.png')}}" style="width: 70%; height:50%;"></center>
+								<center><img class="d-block wvr-100" alt="Carousel Bootstrap First" src="{{asset('concept/images/videopelajaran/vrcourses.png')}}" style="width: 70%; height:50%;"></center>
 								<!-- <div class="carousel-caption">
 									<h4>
 										Third Thumbnail label

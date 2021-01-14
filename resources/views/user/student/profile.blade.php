@@ -2,125 +2,261 @@
 
 @section('content')
 
-
 <!DOCTYPE html>
-<html style="font-size: 16px;">
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="maklum balas pengguna​">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Profil</title>
-    <link rel="stylesheet" href="{{ asset('css/profile.css') }} " media="screen">
-<link rel="stylesheet" href="{{ asset('css/profile.css') }} " media="screen">
-    <script class="u-script" type="text/javascript" src="{{ asset('css/profil/jquery.js') }} " defer=""></script>
-    <script class="u-script" type="text/javascript" src="{{ asset('css/profil/nicepage.js') }} " defer=""></script>
-    <meta name="generator" content="Nicepage 3.3.3, nicepage.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <title>Bootstrap 4, from LayoutIt!</title>
 
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
 
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "",
-		"url": "index.html"
-}</script>
-    <meta property="og:title" content="Page 1">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="index.html">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/profile.css') }} ">
-    <meta property="og:url" content="index.html">
+
   </head>
-  <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body u-image" style="background-position: 50% 50%; background-image: url(&quot;images/WhatsAppImage2020-12-23at4.30.00PM.jpeg&quot;);">
-    <section class="u-clearfix u-white u-section-1" id="sec-8a33">
-      <div class="u-container-style u-expanded-width u-group u-image u-image-1" data-image-width="1080" data-image-height="607">
-        <div class="u-container-layout u-container-layout-1">
-          <h1 class="u-heading-font u-text u-text-body-alt-color u-text-default u-title u-text-1">ACES IR 4.0</h1>
-          <img src="{{asset('concept/images/profile/FaceIcon.png')}}" alt="" class="u-image u-image-circle u-preserve-proportions u-image-2" data-image-width="320" data-image-height="320">
-          <p class="u-text u-text-body-alt-color u-text-default u-text-2">{{Auth::user()->name}}</p>
-          <p class="u-text u-text-body-alt-color u-text-default u-text-3">KEMASKINI PROFIL</p>
-          <p class="u-text u-text-body-alt-color u-text-default u-text-4">TUKAR KATA LALUAN</p>
-          <p class="u-text u-text-body-alt-color u-text-default u-text-5"><a href="{{route('user.student.statistik')}}">STATISTIK</a></p>
-          <p class="u-text u-text-body-alt-color u-text-default u-text-6">PENCAPAIAN</p>
-        </div>
-      </div><br><br>
-      <div class="u-container-layout u-container-layout-1">
-        <div class="page">
-  <div class="timeline">
-    <div class="timeline__group">
-      <span class="timeline__year time" aria-hidden="true">Februari</span>
-      <div class="timeline__cards">
-        <div class="timeline__card card">
-          <header class="card__header">
-            <time class="time" datetime="2008-02-02">
-              <span class="time__day">15</span>
-              <span class="time__month">Feb</span>
-            </time>
-          </header>
-          <div class="card__content">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-        </div>
-        <div class="timeline__card card">
-          <header class="card__header">
-            <time class="time" datetime="2008-09-01">
-              <span class="time__day">25</span>
-              <span class="time__month">Feb</span>
-            </time>
-            <h3 class="card__title r-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h3>
-          </header>
-          <div class="card__content">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-        </div>
+  <body>
+
+    <div class="container-fluid" >
+	<div class="row">
+		<div class="col-md-12" style="background-image: url({{asset('concept/images/profile/bg.jpeg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover; padding-top: 5%;">
+			<div class="row">
+				<div class="col-md-8">
+					<h1 style="margin-left: -80%; padding-bottom: 10%; color: #fff;">
+						Profil
+					</h1>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<p style="color: #fff;"><img alt="Bootstrap Image Preview" src="{{asset('concept/images/profile/FaceIcon.png')}}" style="width: 15%; margin-left: -50%; padding-bottom: 10%;">{{Auth::user()->name}}</p>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+			<div class="row" style="padding-bottom: 0%;">
+				<div class="col-md-3">
+					<h3 style="color: #fff; font-size: 20px;">
+						<a href="{{route('user.profile.edit')}}">Kemaskini Profil</a>
+					</h3>
+				</div>
+				<div class="col-md-3">
+					<h3 style="color: #fff; font-size: 20px;">
+						<a href="{{ route('user.change-password') }}">Tukar Kata Laluan</a>
+					</h3>
+				</div>
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+
+      <section class="timeline">
+  <ol>
+    <li>
+      <div>
+        <time style="color: #D50000">February</time>Introduction
       </div>
-    </div>
-    <div class="timeline__group">
-      <span class="timeline__year time" aria-hidden="true">Mac</span>
-      <div class="timeline__cards">
-        <div class="timeline__card card">
-          <header class="card__header">
-            <time class="time" datetime="2008-07-14">
-              <span class="time__day">14</span>
-              <span class="time__month">Mac</span>
-            </time>
-          </header>
-          <div class="card__content">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-        </div>
+    </li>
+    <li>
+      <div>
+        <time>February</time>Advanced Simulation
       </div>
-    </div>
-    <div class="timeline__group">
-      <span class="timeline__year time" aria-hidden="true">April</span>
-      <div class="timeline__cards">
-        <div class="timeline__card card">
-          <header class="card__header">
-            <time class="time" datetime="2008-08-18">
-              <span class="time__day">28</span>
-              <span class="time__month">April</span>
-            </time>
-          </header>
-          <div class="card__content">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-        </div>
+    </li>
+    <li>
+      <div>
+        <time>February</time>Augmented Reality
       </div>
-    </div>
+    </li>
+    <li>
+      <div>
+        <time>March</time>Universal Integration
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>March</time>Autonomous Robot
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>March</time>Cloud Computing
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>March</time>Addictive Manufacturing
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>March</time>Cyber Security
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>March</time>Big Data
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1943</time>Internet of Things
+      </div>
+    </li>
+    <li></li>
+  </ol>
+
+  <div class="arrows">
+    <button class="arrow arrow__prev disabled" disabled>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
+    </button>
+    <button class="arrow arrow__next">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
+    </button>
   </div>
+</section>
+
+		</div>
+	</div>
 </div>
 
-      </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 
+    <script>
+    (function() {
 
-    </section>
+// VARIABLES
+const timeline = document.querySelector(".timeline ol"),
+  elH = document.querySelectorAll(".timeline li > div"),
+  arrows = document.querySelectorAll(".timeline .arrows .arrow"),
+  arrowPrev = document.querySelector(".timeline .arrows .arrow__prev"),
+  arrowNext = document.querySelector(".timeline .arrows .arrow__next"),
+  firstItem = document.querySelector(".timeline li:first-child"),
+  lastItem = document.querySelector(".timeline li:last-child"),
+  xScrolling = 280,
+  disabledClass = "disabled";
 
+// START
+window.addEventListener("load", init);
 
+function init() {
+  setEqualHeights(elH);
+  animateTl(xScrolling, arrows, timeline);
+  setSwipeFn(timeline, arrowPrev, arrowNext);
+  setKeyboardFn(arrowPrev, arrowNext);
+}
 
+// SET EQUAL HEIGHTS
+function setEqualHeights(el) {
+  let counter = 0;
+  for (let i = 0; i < el.length; i++) {
+    const singleHeight = el[i].offsetHeight;
 
+    if (counter < singleHeight) {
+      counter = singleHeight;
+    }
+  }
+
+  for (let i = 0; i < el.length; i++) {
+    el[i].style.height = `${counter}px`;
+  }
+}
+
+// CHECK IF AN ELEMENT IS IN VIEWPORT
+// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// SET STATE OF PREV/NEXT ARROWS
+function setBtnState(el, flag = true) {
+  if (flag) {
+    el.classList.add(disabledClass);
+  } else {
+    if (el.classList.contains(disabledClass)) {
+      el.classList.remove(disabledClass);
+    }
+    el.disabled = false;
+  }
+}
+
+// ANIMATE TIMELINE
+function animateTl(scrolling, el, tl) {
+  let counter = 0;
+  for (let i = 0; i < el.length; i++) {
+    el[i].addEventListener("click", function() {
+      if (!arrowPrev.disabled) {
+        arrowPrev.disabled = true;
+      }
+      if (!arrowNext.disabled) {
+        arrowNext.disabled = true;
+      }
+      const sign = (this.classList.contains("arrow__prev")) ? "" : "-";
+      if (counter === 0) {
+        tl.style.transform = `translateX(-${scrolling}px)`;
+      } else {
+        const tlStyle = getComputedStyle(tl);
+        // add more browser prefixes if needed here
+        const tlTransform = tlStyle.getPropertyValue("-webkit-transform") || tlStyle.getPropertyValue("transform");
+        const values = parseInt(tlTransform.split(",")[4]) + parseInt(`${sign}${scrolling}`);
+        tl.style.transform = `translateX(${values}px)`;
+      }
+
+      setTimeout(() => {
+        isElementInViewport(firstItem) ? setBtnState(arrowPrev) : setBtnState(arrowPrev, false);
+        isElementInViewport(lastItem) ? setBtnState(arrowNext) : setBtnState(arrowNext, false);
+      }, 1100);
+
+      counter++;
+    });
+  }
+}
+
+// ADD SWIPE SUPPORT FOR TOUCH DEVICES
+function setSwipeFn(tl, prev, next) {
+  const hammer = new Hammer(tl);
+  hammer.on("swipeleft", () => next.click());
+  hammer.on("swiperight", () => prev.click());
+}
+
+// ADD BASIC KEYBOARD FUNCTIONALITY
+function setKeyboardFn(prev, next) {
+  document.addEventListener("keydown", (e) => {
+    if ((e.which === 37) || (e.which === 39)) {
+      const timelineOfTop = timeline.offsetTop;
+      const y = window.pageYOffset;
+      if (timelineOfTop !== y) {
+        window.scrollTo(0, timelineOfTop);
+      }
+      if (e.which === 37) {
+        prev.click();
+      } else if (e.which === 39) {
+        next.click();
+      }
+    }
+  });
+}
+
+})();
+    </script>
   </body>
 </html>
 

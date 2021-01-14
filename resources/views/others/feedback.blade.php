@@ -1,39 +1,24 @@
 @extends('layouts.app-student')
 @section('content')
-           <!--Page Body part -->
-           <!DOCTYPE html>
-<html style="font-size: 16px;">
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="maklum balas pengguna​">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Page 1</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Page-1.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 3.3.3, nicepage.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i">
+    <title>Bootstrap 4, from LayoutIt!</title>
 
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
 
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "",
-		"url": "index.html"
-}</script>
-    <meta property="og:title" content="Page 1">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="index.html">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/feedback.css') }} ">
 
-    <meta property="og:url" content="index.html">
   </head>
+
   <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body">
     <section class="u-clearfix u-image u-section-1" id="sec-3c4f" data-image-width="1080" data-image-height="607">
       <div class="u-clearfix u-sheet u-sheet-1">
@@ -90,12 +75,31 @@
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
             <input type="hidden" value="" name="recaptchaResponse">
           </form>
-        </div>
-      </div>
-    </section>
 
+        </div>
+
+				<div class="form-group">
+
+					<label for="exampleInputFile" style="color: #fff;font-weight: bold;">
+						File input
+					</label>
+					<input type="file" class="form-control-file" id="">
+				</div>
+
+        <div class="u-align-center u-form-group u-form-submit">
+            <button class="btn btn-success" type="submit">HANTAR</button>
+        </div>
+			</form>
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 
 <script type="text/javascript">
@@ -106,4 +110,5 @@ $("document").ready(function(){
 
 });
 </script>
+
 @endsection
