@@ -18,43 +18,64 @@
     <link rel="stylesheet" href="{{ asset('css/feedback.css') }} ">
 
   </head>
-  <body>
 
-    <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12" style="padding-top: 8%; padding-bottom: 9%; background-image: url({{asset('concept/images/permainan/drone1.jpg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
-      <h2 style="color: #fff; text-align: justify; font-weight: bold;">
-				Maklum Balas
-			</h2>
-			<form role="form" style="padding: 15px; text-align: justify;" action="#" method="POST" >
-        <div class="form-group">
+  <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body">
+    <section class="u-clearfix u-image u-section-1" id="sec-3c4f" data-image-width="1080" data-image-height="607">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-custom-font u-text u-text-body-alt-color u-title u-text-1">
+          <span style="font-size: 3rem;">maklum balas pengguna</span>
+        </h1>
+        <div class="u-form u-form-1">
+          @if ($message = Session::get('success'))
+          <div id=alert>
+              <div class="alert alert-card  alert-success" role="alert">
+                  <strong>Operasi Berjaya! </strong>
+                  {{$message}}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+          </div>
+          @elseif ($message = Session::get('error'))
+          <div id="alert">
+            <div class="alert alert-card  alert-danger" role="alert">
+                <strong>Ralat! </strong>
+                {{$message}}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+          </div>
+          @endif
 
-					<label for="exampleInputEmail1" style="color: #fff;font-weight: bold;">
-						Nama Penuh
-					</label>
-					<input placeholder="Nama"ctype="text" class="form-control" id="" autocomplete="off" >
-				</div>
-				<div class="form-group">
+          <form action="{{route('others.feedback.save')}}" method="POST"  style="padding: 10px" source="custom" name="form">
+            @csrf
+            <div class="u-form-email u-form-group">
+              <label for="email-3b9a" class="u-label u-text-body-alt-color">Nama</label>
+              <input type="email" placeholder="" value="{{Auth::user()->name}}" id="email-3b9a" name="text" class="u-input u-input-rectangle u-white" disabled>
+            </div>
+            <div class="u-form-group u-form-name">
+              <label for="name-3b9a" class="u-label u-text-body-alt-color">Emel</label>
+              <input type="text" placeholder="Emel" id="name-3b9a" name="email" value="{{Auth::user()->email}}" class="u-input u-input-rectangle u-white" disabled>
+            </div>
+            <div class="u-form-group u-form-group-3">
+              <label for="text-719d" class="u-label u-text-body-alt-color">Subjek</label>
+              <input type="text" placeholder="Subjek" id="text-719d" name="text-1" class="u-input u-input-rectangle u-white" required>
+            </div>
+            <div class="u-form-group u-form-message">
+              <label for="message-3b9a" class="u-label u-text-body-alt-color">Maklum Balas</label>
+              <textarea placeholder="Mesej" rows="4" cols="50" id="message-3b9a" name="message" class="u-input u-input-rectangle u-white" autofocus="autofocus" required></textarea>
+            </div>
+            <div class="u-align-center u-form-group u-form-submit">
+              <!-- <a href="#" class="u-btn u-btn-submit u-button-style u-custom-color-1 u-hover-custom-color-3 u-btn-1">Hantar</a> -->
+              <button type="submit" class="u-btn u-btn-submit u-button-style u-custom-color-1 u-hover-custom-color-3 u-btn-1" name="button">Hantar Maklum Balas</button>
+              <!-- <input type="submit" value="submit" class="u-form-control-hidden"> -->
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+          </form>
 
-					<label for="exampleInputEmail1" style="color: #fff;font-weight: bold;">
-						Emel
-					</label>
-					<input  placeholder="Emel"type="email" class="form-control" id="" autocomplete="off" >
-				</div>
-				<div class="form-group">
-
-					<label for="exampleInputPassword1" style="color: #fff;font-weight: bold;">
-						Kata Laluan
-					</label>
-					<input placeholder="Kata Laluan" type="password" class="form-control" id="" autocomplete="off">
-				</div>
-
-        <div class="form-group">
-
-          <label for="exampleInputEmail1" style="color: #fff;font-weight: bold;">
-            Mesej
-          </label>
-          <textarea placeholder="Mesej" rows="4" cols="50" name="address" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"></textarea>
         </div>
 
 				<div class="form-group">
@@ -78,5 +99,16 @@
     <script src="js/scripts.js"></script>
   </body>
 </html>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+<script type="text/javascript">
+$("document").ready(function(){
+  setTimeout(function(){
+     $("div.alert").remove();
+  }, 5000 ); // 5 secs
+
+});
+</script>
 
 @endsection
