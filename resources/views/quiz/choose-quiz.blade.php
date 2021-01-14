@@ -7,7 +7,7 @@
 
 
 <div class="dashboard-ecommerce">
-    <div class="container-fluid dashboard-content ">
+    <div class="container-fluid dashboard-content " style="padding-top: 15%;padding-bottom: 17%;">
         <div class="ecommerce-widget">
           <div class="card" style="padding: 10px; background-color: #9966ff !important;">
 

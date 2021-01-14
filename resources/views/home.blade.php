@@ -62,7 +62,7 @@
               <br>
               @endforeach
     			</p>
-          <img alt="Bootstrap Image Preview" src="{{asset('concept/images/StudentDashboard/ps4.jpg')}}" style="width: 50%; height: auto; background-position: 50% 50%;background-repeat: no-repeat;background-size: cover; padding-bottom: 10%; margin-top: 15%;">
+          <img alt="Bootstrap Image Preview" src="{{asset('concept/images/StudentDashboard/ps4.jpg')}}" style="width: 100%; height: 85%; background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
 				</div>
 			</div>
 		</div>
@@ -72,7 +72,7 @@
 			</h3>
 			<div class="row">
 				<div class="col-md-12" style="background-image: linear-gradient(to right top, #031f48, #232d74, #54349c, #9030bd, #d300d3); border: solid 10px; border-color: #1E1E21">
-					<img alt="Bootstrap Image Preview" src="{{asset('concept/images/StudentDashboard/mesej.png')}}" style="width: 100%; height: 100%; background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
+					<img alt="Bootstrap Image Preview" src="{{asset('concept/images/StudentDashboard/drone.png')}}" style="width: 100%; height: 100%; background-position: 50% 50%;background-repeat: no-repeat;background-size: cover; padding-top: 3%; padding-bottom:9%;">
 				</div>
 			</div>
 		</div>
