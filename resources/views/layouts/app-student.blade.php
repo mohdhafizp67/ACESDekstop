@@ -51,113 +51,30 @@
               <div class="dashboard-header">
                   <nav class="navbar  fixed-top" style="background-color:#fff";>
                       <a class="navbar-brand" href="{{ route('home') }}">ACES</a>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <!-- <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                          <ul class="navbar-nav ml-auto navbar-right-top">
-                              <!-- <li class="nav-item">
-                                  <div id="custom-search" class="top-search-bar">
-                                      <input class="form-control" type="text" placeholder="Search..">
-                                  </div>
-                              </li> -->
-                              <!-- <li class="nav-item dropdown notification">
-                                  <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
-                                  <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
-                                      <li>
-                                          <div class="notification-title"> Notification</div>
-                                          <div class="notification-list">
-                                              <div class="list-group">
-                                                  <a href="#" class="list-group-item list-group-item-action active">
-                                                      <div class="notification-info">
-                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
-                                                          <div class="notification-list-user-block"><span class="notification-list-user-name">Jeremy Rakestraw</span>accepted your invitation to join the team.
-                                                              <div class="notification-date">2 min ago</div>
-                                                          </div>
-                                                      </div>
-                                                  </a>
-                                                  <a href="#" class="list-group-item list-group-item-action">
-                                                      <div class="notification-info">
-                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
-                                                          <div class="notification-list-user-block"><span class="notification-list-user-name">John Abraham </span>is now following you
-                                                              <div class="notification-date">2 days ago</div>
-                                                          </div>
-                                                      </div>
-                                                  </a>
-                                                  <a href="#" class="list-group-item list-group-item-action">
-                                                      <div class="notification-info">
-                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
-                                                          <div class="notification-list-user-block"><span class="notification-list-user-name">Monaan Pechi</span> is watching your main repository
-                                                              <div class="notification-date">2 min ago</div>
-                                                          </div>
-                                                      </div>
-                                                  </a>
-                                                  <a href="#" class="list-group-item list-group-item-action">
-                                                      <div class="notification-info">
-                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
-                                                          <div class="notification-list-user-block"><span class="notification-list-user-name">Jessica Caruso</span>accepted your invitation to join the team.
-                                                              <div class="notification-date">2 min ago</div>
-                                                          </div>
-                                                      </div>
-                                                  </a>
-                                              </div>
-                                          </div>
-                                      </li>
-                                      <li>
-                                          <div class="list-footer"> <a href="#">View all notifications</a></div>
-                                      </li>
-                                  </ul>
-                              </li> -->
-                              <!-- <li class="nav-item dropdown connection">
-                                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
-                                  <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
-                                      <li class="connection-list">
-                                          <div class="row">
-                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Github</span></a>
-                                              </div>
-                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Dribbble</span></a>
-                                              </div>
-                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Dropbox</span></a>
-                                              </div>
-                                          </div>
-                                          <div class="row">
-                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="#" alt=""> <span>Bitbucket</span></a>
-                                              </div>
-                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="#" alt="" ><span>Mail chimp</span></a>
-                                              </div>
-                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Slack</span></a>
-                                              </div>
-                                          </div>
-                                      </li>
-                                      <li>
-                                          <div class="conntection-footer"><a href="#">More</a></div>
-                                      </li>
-                                  </ul>
-                              </li> -->
-                              <!-- <li class="nav-item dropdown nav-user">
-                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 230%;"></i></a>
-                                  <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
-                                      <div class="nav-user-info">
-                                          <h5 class="mb-0 text-white nav-user-name">Muhammad Shahid</h5>
-                                          <span class="status"></span><span class="ml-2">Student</span>
-                                      </div>
-                                      <a class="dropdown-item" href="{{route('user.profile.edit')}}"><i class="fas fa-user mr-2"></i>Profile</a>
-                                      <a class="dropdown-item" href="{{ route('user.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
-                                      <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                      <i class="fas fa-power-off mr-2"></i>Logout</a>
-                                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                      @csrf
-                                      </form>
-                                  </div>
-                              </li> -->
-                          </ul>
-                      </div>
+
+
+
+                          <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @if(Auth::user()->profile_picture != null)
+                            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px; ">
+                            @else
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px; ">
+                            @endif
+                          </a>
+
+                          <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                              <div class="nav-user-info">
+                                  <h6 class="mb-0 text-white nav-user-name">{{Auth::user()->name}}</h6>
+                                  <div style="padding: 5px;"></div>
+                                  <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i> &nbsp Pelajar</h6>
+                              </div>
+                              <a class="dropdown-item" href="{{route('user.student.profile')}}"><i class="fas fa-user mr-2"></i>Profil Pelajar</a>
+                              <a class="dropdown-item" href="{{ route('user.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Tukar Kata Laluan</a>
+                              <a class="dropdown-item"  href="#" class="btn btn-block btn-danger" data-toggle="modal" data-target="#logOutModal"><i class="fas fa-power-off mr-2"></i>Log Keluar</a>
+
+                          </div>
+                      
+
                   </nav>
               </div>
 
@@ -183,7 +100,9 @@
 
 
                                 <li class="nav-item dropdown nav-user">
-                                    <a class="mb-0 text-white nav-user-name" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}}</a>
+                                    <!-- <a class="mb-0 text-white nav-user-name" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}}</a> -->
+                                    <span style="color: white !important; font-size: 16px !important;">{{Auth::user()->name}}</span>
+
                                     <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
 
                                         <!-- <a class="dropdown-item" href="{{route('user.profile.edit')}}"><i class="fas fa-user mr-2"></i>Profile</a>
@@ -194,6 +113,12 @@
                                         @csrf
                                         </form>
                                     </div>
+                                </li>
+                                <li class="nav-divider">
+                                    <font color="white">Main Menu</font>
+                                </li>
+                                <li class="nav-item ">
+                                  <a class="nav-link" href="{{route('home')}}"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a>
                                 </li>
 
                                   <li class="nav-divider">
@@ -226,7 +151,11 @@
                                     <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>Maklum Balas</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('user.student.profile') }}"><i class="fas fa-user-circle"aria-hidden="true"></i> </i>Profil</a>
+                                    <a class="nav-link" href="{{ route('user.student.profile') }}"><i class="fas fa-user-circle"aria-hidden="true"></i>Profil Pelajar</a>
+                                  </li>
+
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i> Log Keluar</a>
                                   </li>
                                   <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
@@ -511,6 +440,29 @@
               <!-- wrapper  -->
               <!-- ============================================================== -->
               <div class="dashboard-wrapper">
+                <div class="modal fade" id="logOutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </a>
+                            </div>
+                            <div class="modal-body">
+                                <p>Anda pasti log keluar?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                <!-- <a href="#" class="btn btn-primary">Yes</a> -->
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <button type="submit" name="button" class="btn btn-primary">Log Keluar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             @yield('content')
 
             <!-- ============================================================== -->
