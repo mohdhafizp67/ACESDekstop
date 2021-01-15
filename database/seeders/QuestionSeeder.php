@@ -1,4 +1,4 @@
-<?php
+,<?php
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
@@ -25,7 +25,6 @@ class QuestionSeeder extends Seeder
           'id' => '1',               //bil soalan
           'question' => 'IR 4.0 merujuk kepada',
           'status' => '1',
-
           'language' => 'bm',             // biar
           'lesson_id' => '1',         //lesson
 
@@ -37,7 +36,6 @@ class QuestionSeeder extends Seeder
           'answer' => 'Internet Revolution 4.0',
           'status' => 'False',
           'language' => 'bm',
-
           'question_id' => '1', // ikut id soalan
 
         ]
@@ -984,7 +982,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah maksud VR?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1030,7 +1028,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Contoh peranti  VR ”non-immersive” adalah',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1077,7 +1075,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Seorang pelajar mengimbas item di dunia nyata dan telefon tersebut memberi info tentang perkara tersebut',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1123,7 +1121,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Seseorang yang menggunakan filter Snapchat',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1170,7 +1168,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Seorang pelatih kecergasan menggunakan treadmill, dan memaparkan trek di depan mereka ',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1217,7 +1215,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Seorang guru kelas reka bentuk meminta pelajarnya menggunakan aplikasi untuk melihat kelengkapan dan warna cat yang berbeza yang akan menjadikan bilik darjah kelihatan seperti di dalam aplikasi tersebut.',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1263,7 +1261,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Alat VR mana yang paling mahal?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1309,7 +1307,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Perkhidmatan streaming video yang  manakah yang mempunyai aplikasi Gear VR untuk menonton semua rancangan dan filem kegemaran anda?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1355,7 +1353,7 @@ class QuestionSeeder extends Seeder
           'question' => 'VR mungkin berguna untuk pelajar berkeperluan khas kerana: ',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1401,7 +1399,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Antara berikut, yang manakah BUKAN kekangan VR?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1448,7 +1446,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah 3 jenis VR?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1495,7 +1493,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah dimaksudkan dengan AR?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1541,7 +1539,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Definisi mana yang paling sesuai dengan "Augmented Reality"?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1588,7 +1586,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Permainan berdasarkan francais animasi mana yang mendorong augmented reality (AR) ke arus perdana dalam beberapa tahun terakhir?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1635,7 +1633,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Antara berikut, yang manakah TIDAK disenaraikan manfaat augmented reality (AR) dalam Pendidikan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1681,7 +1679,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Augmented reality (AR) menyediakan ciri-ciri yang mempunyai ...',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1728,7 +1726,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Augmented reality (AR) dapat mengubah konsep abstrak menjadi pengalaman yang realistik dengan menjadikan abstrak muncul sebagai objek sebenar di dunia pengguna dan membolehkan mereka berinteraksi dengan mereka secara semula jadi. Jenis pelajar mana yang paling banyak mendapat manfaat daripada penggunaan augmented reality?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1775,7 +1773,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah 4 kesukaran menggunakan augmented reality (AR) dalam pendidikan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1821,7 +1819,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Kumpulan yang merupakan orang pertama yang mula menggunakan Augmented Reality ialah?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1868,7 +1866,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Bagaimana kita akan berinteraksi dengan teknologi pada masa akan datang?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '2',         //lesson
+          'lesson_id' => '3',         //lesson
         ]
       );
 
@@ -1918,7 +1916,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apa kah yang dimaksudkan dengan IPB',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -1965,7 +1963,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Pernyataan apa yang paling sesuai dengan Internet Pelbagai Benda?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2013,7 +2011,7 @@ class QuestionSeeder extends Seeder
           'question' => 'IPB didefinisikan sebagai rangkaian perkara yang berkaitan dengan internet dengan _________ dan dapat berhubung antara satu sama lain dan mengumpulkan atau bertukar data.',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2060,7 +2058,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Pilih satu (1) kelebihan IPB : ',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2107,7 +2105,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah cabaran besar IPB?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2153,7 +2151,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah faedah menggunakan IPB?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2201,7 +2199,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Satu penggunaan IPB adalah:',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2247,7 +2245,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Yang manakah bukan produk IPB?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2294,7 +2292,7 @@ class QuestionSeeder extends Seeder
           'question' => 'IPB dibina berdasarkan:',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2341,7 +2339,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Manakah antara berikut yang tidak dapat diuruskan dengan menggunakan Internet Pelbagai Benda?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2388,7 +2386,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Antara berikut, yang manakah merupakan kelemahan penggunaan IPB?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2435,7 +2433,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Peranti yang menerima maklumat dari banyak sudut dalam rangkaian dan menghantarnya ke rangkaian lain.',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2482,7 +2480,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Automasi komunikasi antara peranti,tanpa campur tangan manusia.',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2529,7 +2527,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Peranti yang mengesan atau mengukur peristiwa atau harta benda fizikal.',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2576,7 +2574,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Sehelai pakaian atau aksesori yang boleh dipakai yang mempunyai keupayaan elektronik yang maju.',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2623,7 +2621,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Platform Internet Pelbagai Benda : ',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2670,7 +2668,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Peranti apa yang digunakan sebagai contoh ancaman pusat kawalan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2717,7 +2715,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Peranti IPB mesti sentiasa dikemas kini. Kenapa?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2764,7 +2762,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Jenis peranti apa yang menunjukkan peringatan di papan pemuka kenderaan, yang mungkin juga memberi tahu info pengeluar kereta?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2812,7 +2810,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Yang mana merupakan komponen IPB',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '3',         //lesson
+          'lesson_id' => '4',         //lesson
         ]
       );
 
@@ -2861,7 +2859,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Data besar adalah sejumlah besar data yang bergerak pantas dan bebas ............',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -2908,7 +2906,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Yang mana merupakan bukan ciri ciri data besar',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -2955,7 +2953,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah definisi sebenar data besar',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3002,7 +3000,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Antara berikut, yang manakah contoh data besar?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3049,7 +3047,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Pelbagai adalah ciri data besar. Apa kah jenis format yang berasal dari Pelbagai?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3096,7 +3094,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah yang dimaksudkan dengan "Velocity"?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3143,7 +3141,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Pelbagai datang dari format berstruktur atau tidak berstruktur. Apakah perbezaan antara mereka?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3189,7 +3187,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Manakah antara berikut yang TIDAK akan menggunakan analisis data besar?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3236,7 +3234,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Bagaimana YouTube dikira sebagai data besar?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3283,7 +3281,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Isipadu adalah salah satu ciri data besar. Apa yang dimaksudkan dengan Isipadu?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3330,7 +3328,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah kelebihan menggunakan data besar dalam pendidikan dalam kehidupan nyata?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3377,7 +3375,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Data Besar adalah penting kerana semua perkara berikut kecuali_________________.',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3424,7 +3422,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah empat “V” yang menentukan Data besar?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3472,7 +3470,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apa contoh alat perisian yang membolehkan kita memproses Data besar?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3520,7 +3518,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Tinggi, umur, kelajuan, panjang adalah semua contoh jenis data:',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3567,7 +3565,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah maksud SaaS?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3614,7 +3612,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Untuk apakah Amazon / Lazada / Shopee menggunakan Big Data?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3661,7 +3659,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Ketepatan adalah salah satu ciri data besar. Apa yang dimaksudkan dengan ketepatan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3709,7 +3707,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Data Tidak Berstruktur terdapat dalam bentuk',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3756,7 +3754,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Data Berstruktur terdapat dalam bentuk',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '4',         //lesson
+          'lesson_id' => '5',         //lesson
         ]
       );
 
@@ -3805,7 +3803,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Cybersecurity adalah perlindungan sistem komputer, rangkaian, dan data dari ____________.',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -3852,7 +3850,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Jenis maklumat peribadi apa yang dihantar melalui Internet?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -3899,7 +3897,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Manakah antara berikut yang tidak benar mengenai keselamatan siber?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -3946,7 +3944,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Dalam keselamatan siber, apa yang dimaksud dengan "CIA"?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -3994,7 +3992,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apa yang dilakukan penggodam ransomware apabila mereka mendapat akses ke sistem pengguna?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4041,7 +4039,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Sebilangan besar serangan siber berlaku kerana yang berikut: ',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4089,7 +4087,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Manakah antara berikut yang bukan kaedah untuk mencegah serangan siber?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4136,7 +4134,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Manakah antara berikut yang menawarkan kaedah TERBAIK untuk meningkatkan keselamatan akaun dalam talian anda?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4183,7 +4181,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Serangan siber yang automatik di mana pelbagai kombinasi nama pengguna dan kata laluan diguna sehingga penyerang menemui akaun yang betul',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4230,7 +4228,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apa nama yang diberikan untuk usaha mendapatkan maklumat sensitif seperti nama pengguna dan kata laluan, dengan menyamar sebagai entiti yang boleh dipercayai dalam komunikasi elektronik (Membuat laman web palsu)?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4279,7 +4277,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apa nama yang diberikan untuk serangan siber di mana pelaku berusaha menjadikan server tidak tersedia untuk pengguna dengan mengganggu perkhidmatannya untuk sementara waktu, biasanya dilakukan dengan membanjiri mesin yang disasarkan dalam usaha untuk membebankannya?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4327,7 +4325,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah nama yang diberikan kepada perisian berbahaya yang mengancam untuk menerbitkan data mangsa atau terus menyekat aksesnya kecuali wang tebusan dibayar?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4374,7 +4372,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apa nama yang diberikan untuk gangguan menggunakan bentuk hubungan elektronik?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4422,7 +4420,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Antara berikut yang manakah BUKAN jenis Serangan Keselamatan Siber?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4470,7 +4468,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Manakah antara berikut yang BUKAN merupakan ciri kata laluan selamat?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4518,7 +4516,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Manakah antara berikut yang TIDAK mengancam keselamatan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4566,7 +4564,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Manakah antara berikut yang BUKAN strategi pertahanan terhadap ancaman keselamatan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4614,7 +4612,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Semasa Trish bermain permainan dalam talian, muncul pop-up, yang mendorongnya untuk mengklik lampu berkedip untuk menerima lebih banyak mata untuk permainannya. Apa yang patut dia lakukan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4662,7 +4660,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Program atau kod berbahaya yang merosakkan atau memusnahkan data dengan melampirkan ke program atau fail di komputer mangsa biasanya disebarkan oleh tindakan manusia, seperti berkongsi fail yang dijangkiti',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4710,7 +4708,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apa sangka "S" dalam HTTPS?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '5',         //lesson
+          'lesson_id' => '6',         //lesson
         ]
       );
 
@@ -4760,7 +4758,7 @@ class QuestionSeeder extends Seeder
           'question' => '_____________ ialah pembangunan dan penggunaan teknologi komputer berasaskan internet',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -4808,7 +4806,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Manakah antara yang merupakan kelebihan penyimpanan awan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -4856,7 +4854,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Teknologi awan telah meningkatkan pandangan terhadap pendidikan kecuali?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -4904,7 +4902,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah kelemahan pengkomputeran awan dalam sistem pendidikan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -4952,7 +4950,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah yang dimaksudkan dengan pengkomputeran awan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5000,7 +4998,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Manakah di antara ini yang tidak bermanfaat untuk pengkomputeran awan',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5048,7 +5046,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah proses menggunakan pelayan pihak ketiga untuk menyimpan data dan menjalankan aplikasi dalam talian?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5096,7 +5094,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Kemudahan yang menempatkan banyak kumpulan pelayan dipanggil _____.',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5145,7 +5143,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah kelemahan pengkomputeran awan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5193,7 +5191,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah kemungkinan risiko pengkomputeran awan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5241,7 +5239,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah jenis perkhidmatan awan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5289,7 +5287,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah kegunaan pengkomputeran awan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5337,7 +5335,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Semua ini adalah jenis perkhidmatan awan kecuali',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5385,7 +5383,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah aspek keselamatan yang disediakan oleh perkhidmatan cloud?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5433,7 +5431,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Ini adalah faedah pengkomputeran awan dalam sistem pendidikan kecuali',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5481,7 +5479,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Pemprosesan data masa nyata dalam fungsi awan tidak membantu',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5529,7 +5527,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Yang manakah antara contoh penyimpanan awan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5577,7 +5575,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Yang manakah BUKAN contoh pengkomputeran awan?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5625,7 +5623,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Manakah antara kelebihan penyimpanan fizikal?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5673,7 +5671,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Antara berikut, yang manakah BUKAN kelebihan berpotensi Cloud Computing?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '6',         //lesson
+          'lesson_id' => '7',         //lesson
         ]
       );
 
@@ -5723,7 +5721,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah yang di maksudkan dengan pembuatan tambahan (additive manufacturing)?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '7',         //lesson
+          'lesson_id' => '8',         //lesson
         ]
       );
 
@@ -5771,7 +5769,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Pembuatan bahan tambahan juga disebut sebagai',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '7',         //lesson
+          'lesson_id' => '8',         //lesson
         ]
       );
 
@@ -5819,7 +5817,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah bahan yang kita gunakan untuk membuat objek 3D?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '7',         //lesson
+          'lesson_id' => '8',         //lesson
         ]
       );
 
@@ -5867,7 +5865,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah perkara terpenting yang harus anda pertimbangkan semasa membuat sesuatu dalam bentuk 3D?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '7',         //lesson
+          'lesson_id' => '8',         //lesson
         ]
       );
 
@@ -5915,7 +5913,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah maksud 3D?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '7',         //lesson
+          'lesson_id' => '8',         //lesson
         ]
       );
 
@@ -5963,7 +5961,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Paksi yang menentukan sesuatu objek itu adalah 3D ialah',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '7',         //lesson
+          'lesson_id' => '8',         //lesson
         ]
       );
 
@@ -6011,7 +6009,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah 3 paksi dalam percetakan 3D?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '7',         //lesson
+          'lesson_id' => '8',         //lesson
         ]
       );
 
@@ -6059,7 +6057,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah satu perbezaan besar antara reka bentuk 2D (melukis di atas kertas) dan 3D?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '7',         //lesson
+          'lesson_id' => '8',         //lesson
         ]
       );
 
@@ -6107,7 +6105,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Apakah dua jenis filamen utama?',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '7',         //lesson
+          'lesson_id' => '8',         //lesson
         ]
       );
 
@@ -6155,7 +6153,7 @@ class QuestionSeeder extends Seeder
           'question' => 'Salah satu penggunaan percetakan 3D yang paling biasa di industri adalah dengan membuat:',
           'status' => '1',
           'language' => 'bm',             // biar
-          'lesson_id' => '7',         //lesson
+          'lesson_id' => '8',         //lesson
         ]
       );
 
@@ -6194,6 +6192,4339 @@ class QuestionSeeder extends Seeder
           'question_id' => '130',
         ]
       );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '131',               //bil soalan
+          'question' => 'Apakah maksud CAD?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '8',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Computer Aligned Design',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '131', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Computer Abled Design',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '131',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Computer Aided Design',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '131',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Computer Archived Design',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '131',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '132',               //bil soalan
+          'question' => 'Percetakan 3D adalah proses?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '8',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sama',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '132', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Menolak',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '132',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Bahan tambah ',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '132',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mencairkan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '132',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '133',               //bil soalan
+          'question' => 'Manakah antara berikut merupakan aplikasi percuma yang boleh anda gunakan untuk membuat fail untuk percetakan 3D?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '8',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Solid Works',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '133', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '3Dcad',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '133',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'TinkerCad',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '133',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'AutoCad',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '133',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '134',               //bil soalan
+          'question' => 'Model pertama, atau awal sesuatu dari mana bentuk lain dikembangkan atau disalin disebut:',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '8',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Politip',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '134', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '“Practice run”',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '134',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Prototaip',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '134',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Protozip',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '134',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '135',               //bil soalan
+          'question' => 'Para penyelidik sedang meneliti kemungkinan menggunakan pencetakan 3D untuk membuat:',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '8',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Tayar kereta',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '135', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pokok',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '135',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Organ manusia',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '135',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Rambut manusia',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '135',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '136',               //bil soalan
+          'question' => 'Jenis fail apa yang diperlukan untuk mencetak 3D?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '8',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'SLS',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '136', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'SLA',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '136',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'STL',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '136',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'DXL',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '136',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '137',               //bil soalan
+          'question' => 'Apakah kegunaan percetakan 3D?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '8',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Senibina',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '137', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Makanan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '137',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Semua perkara di atas',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '137',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Perubatan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '137',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '138',               //bil soalan
+          'question' => 'Filamen biasanya diperbuat daripada',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '8',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kayu',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '138', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Besi',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '138',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Plastik',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '138',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kartun',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '138',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '139',               //bil soalan
+          'question' => 'Percetakan 3D  menggunakan',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '8',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pencetak sahaja',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '139', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Perisian sahaja',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '139',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pencetak dan perisian 3D',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '139',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pencetak biasa',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '139',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '140',               //bil soalan
+          'question' => 'Salah satu kelebihan pencetak 3D ialah',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '8',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mahal',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '140', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Memerlukan banyak orang ',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '140',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mengurangkan masa',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '140',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Menambah masa',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '140',
+        ]
+      );                                                      // bawah
+
+
+
+
+//Advanced Simulation
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '141',               //bil soalan
+          'question' => 'Simulasi komputer adalah program yang _______ sesuatu yang dapat dilihat atau dialami dalam kehidupan sebenar',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Membezakan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '141', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Meramalkan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '141',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Meniru',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '141',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mengubah',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '141',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '142',               //bil soalan
+          'question' => '____________ membaca teks di skrin untuk mereka yang mempunyai masalah penglihatan',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Monitor pembaca',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '142', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pembaca paparan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '142',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pembaca skrin',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '142',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'e-Pembaca',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '142',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '143',               //bil soalan
+          'question' => '______menterjemahkan teks di skrin menjadi corak titik.',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Breil',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '143', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Brallie',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '143',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Braille',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '143',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Breille',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '143',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '144',               //bil soalan
+          'question' => 'Yang manakah bukan kelebihan simulasi?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Simulasi dapat dipercepat sehingga tingkah laku dapat dipelajari dengan mudah dalam jangka masa yang panjang',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '144', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Situasi yang kritikal dapat disiasat tanpa risiko',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '144',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Memahami secara mendalam adalah penting. Tanpa ini simulasi tidak dapat dibuat',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '144',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Simulasi boleh digunakan dalam situasi di mana eksperimen sebenar sukar dilakukan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '144',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '145',               //bil soalan
+          'question' => 'Senario berikut, yang manakah TIDAK akan menggunakan simulasi?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mengkaji kesan laut di persisiran pantai',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '145', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mengkaji aerodinamik kereta',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '145',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mengawasi jadual liga bola sepak semasa',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '145',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mengkaji kesan karbon monoksida terhadap alam sekitar',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '145',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '146',               //bil soalan
+          'question' => 'Yang manakah merupakan kelebihan simulasi?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mahal dari segi kos',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '146', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Berisiko tinggi',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '146',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Dapat mengelakkan bahaya dan kehilangan nyawa',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '146',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Penyelenggaraan yang tinggi',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '146',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '147',               //bil soalan
+          'question' => '________ mengubah teks yang anda taipkan menjadi ucapan menggunakan suara yang disimulasikan.',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Penjana gambar',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '147', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Video',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '147',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Penjana ucapan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '147',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Orang',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '147',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '148',               //bil soalan
+          'question' => 'Apakah pandangan dari kokpit yang diganti dalam simulator penerbangan?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Gambar',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '148', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Permainan Video',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '148',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Gambar yang dihasilkan komputer',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '148',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Video kehidupan sebenar',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '148',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '149',               //bil soalan
+          'question' => 'Di antara yang berikut, situasi yang TIDAK akan anda gunakan untuk perisian simulasi penerbangan ialah',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Latihan penerbangan dalam keadaan cuaca berbahaya',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '149', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Permainan Video',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '149',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk mencuba susunan tempat duduk yang berbeza',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '149',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk melatih juruterbang baru',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '149',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '150',               //bil soalan
+          'question' => 'Siapakah yang paling berkemungkinan untuk menggunakan perisian simulasi computer?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Polis untuk menangkap penjenayah',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '150', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Seorang guru yang memberi pelajaran Bahasa Inggeris',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '150',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pereka jambatan menguji reka bentuk yang berbeza',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '150',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Bayi yang belajar berjalan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '150',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '151',               //bil soalan
+          'question' => '________ adalah animasi yang menggambarkan proses pembinaan bangunan.',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Simulator penerbangan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '151', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Realiti Maya',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '151',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Simulator pembinaan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '151',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Realiti berperantara',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '151',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '152',               //bil soalan
+          'question' => 'Siapakah simulationist?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Seorang pakar yang membuat program perisian yang membolehkan pengguna melakukan tugas tertentu pada pelbagai peranti, seperti komputer atau peranti mudah alih. Mereka bertanggung jawab untuk keseluruhan pengembangan, pengujian, dan penyelenggaraan perisian',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '152', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Seorang pakar yang menganalisis dan menilai keperluan data pengguna. Mereka mengembangkan dan meningkatkan sumber data yang digunakan untuk menyimpan dan mengambil maklumat kritikal',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '152',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Seorang pakar dalam pengetahuan, kemahiran dan aspek sikap menggunakan metodologi simulasi untuk mencapai objektif pembelajaran',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '152',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Seorang pakar yang bertanggungjawab merancang, mengembangkan, dan menguji komponen komputer, seperti papan litar, penghala, dan peranti memori',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '152',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '153',               //bil soalan
+          'question' => 'Menggunakan simulasi untuk membuat ramalan tingkah laku masa depan sistem boleh menjadi sukar. Kenapa?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Seorang pakar kadang-kadang terlupa melakukan kerja',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '153', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sistem yang sedia ada terlalu susah',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '153',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sesetengah daripada parameter, proses dan peristiwa pengendalian  kurang difahami',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '153',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Membazirkan masa dan tidak penting',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '153',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '154',               //bil soalan
+          'question' => 'Perisian apa yang digunakan untuk simulasi?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Anylogic',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '154', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Matlab',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '154',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kesemua di atas',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '154',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Simscale',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '154',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '155',               //bil soalan
+          'question' => 'Yang manakah BUKAN simulasi?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Permainan komputer lumba kereta',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '155', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Terowong angin maya',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '155',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '“Spreadsheet” yang mencatat masa dan kedudukan pusingan dalam perlumbaan kereta',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '155',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Program komputer yang bertujuan untuk membuat model terbang pesawat',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '155',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '156',               //bil soalan
+          'question' => 'Apakah Model Simulasi??',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Contoh program komputer yang dijalankan oleh satu atau banyak bebenang',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '156', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Proses mencipta objek dan watak untuk permainan, animasi, filem, projek kejuruteraan, projek realiti dan reka bentuk maya dan augmented',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '156',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Proses membuat dan menganalisis prototaip digital model fizikal untuk meramalkan prestasinya di dunia nyata',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '156',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Proses untuk membuat objek fizikal dari model digital tiga dimensi, biasanya dengan meletakkan banyak lapisan bahan berturut-turut',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '156',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '157',               //bil soalan
+          'question' => 'Antara berikut yang manakah jenis alat simulasi?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Alat untuk mensimulasikan pergerakan air',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '157', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Simulasi evolusi galaksi',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '157',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Semua perkara di atas',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '157',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Simulasi komputer dalam bidang perubatan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '157',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '158',               //bil soalan
+          'question' => 'Pilih sebab yang betul untuk menggunakan simulasi',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Penyelesaian yang dioptimumkan diperoleh',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '158', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Hasil tepat diperoleh',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '158',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Dapat menjalankan eksperimen tanpa mengganggu sistem sebenar',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '158',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Semua perkara di atas',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '158',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '159',               //bil soalan
+          'question' => 'Model simulasi dapat digunakan untuk mendapatkan perkiraan karakteristik operasi dalam waktu yang lebih singkat dibandingkan dengan sistem yang sebenarnya menggunakan simulasi yang disebut:',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Minit',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '159', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Detik',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '159',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pemampatan masa',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '159',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Tiada perkara di atas',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '159',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '160',               //bil soalan
+          'question' => 'Simulasi boleh digunakan untuk?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '9',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk mendapatkan hasil masalah dengan segera',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '160', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk menentukan apa yang perlu dilakukan untuk mengatasi masalah',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '160',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mengkaji penyelesaian alternatif untuk masalah',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '160',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Semua perkara di atas',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '160',
+        ]
+      );                                                      // bawah
+
+
+
+
+//Universal Integration
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '161',               //bil soalan
+          'question' => 'Apakah yang dimaksudkan dengan integrasi sistem',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Satu sistem menjadi pelbagai program',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '161', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pelbagai sistem menjadi pelbagai program',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '161',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pelbagai sistem menjadi satu program',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '161',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Dua sistem menjadi satu program',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '161',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '162',               //bil soalan
+          'question' => 'Apakah kepentingan penyatuan sistem?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Meningkatkan keselamatan sistem',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '162', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Data masa nyata',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '162',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Masa depan yang bersepadu',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '162',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Lebih mudah untuk pentadbir',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '162',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '163',               //bil soalan
+          'question' => 'Apakah cabaran dan masalah integrasi sistem?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Perubahan persekitaran yang berubah-ubah',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '163', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Dapat menyokong data masa nyata',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '163',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Tidak dapat menguruskan data besar',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '163',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pengurusan konfigurasi yang padu',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '163',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '164',               //bil soalan
+          'question' => 'Manakah antara berikut BUKAN merupakan kelebihan integrasi Universal?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Melaksanakan amalan terbaik global',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '164', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Peningkatan kecekapan proses',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '164',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kos tinggi yang tinggi',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '164',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Meningkatkan kualiti dan penyeragaman',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '164',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '165',               //bil soalan
+          'question' => 'Manakah antara berikut BUKAN kebaikan integrasi kepada Penghantar semasa proses penghantaran?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pemprosesan lebih cepat',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '165', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Lebih tepat',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '165',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Potongan harga yang lebih besar',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '165',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kurang menghabiskan masa penghantaran',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '165',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '166',               //bil soalan
+          'question' => 'Antara berikut, yang manakah penyataan SALAH?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Profil boleh disalin dari satu sistem ke sistem yang lain',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '166', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Lebih daripada satu profil boleh dibuat dan digunakan pada sistem',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '166',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Profil tidak dapat diedit atau diubah setelah dibuat',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '166',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mengubah dari satu profil ke profil yang lain semudah mengklik kotak pilihan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '166',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '167',               //bil soalan
+          'question' => 'Apakah objektif integrasi dalam perniagaan?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk tujuan pemasaran',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '167', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Meningkatkan tenaga pekerja',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '167',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Memberikan perkhidmatan bersepadu dan diperkemas kepada pelanggan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '167',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk meningkatkan penjualan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '167',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '168',               //bil soalan
+          'question' => 'Apa itu Silo?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sistem operasi disimpan dan dapat diakses oleh persekitaran',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '168', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sistem operasi tidak dijaga dan diasingkan dari persekitaran',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '168',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sistem operasi disimpan dan diasingkan dari persekitaran',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '168',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sistem operasi tidak disimpan dan boleh diakses oleh persekitaran',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '168',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '169',               //bil soalan
+          'question' => 'Bilakah pengawal logik yang boleh diprogramkan pertama dicipta?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '1980',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '169', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '1968',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '169',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '1969',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '169',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '1952',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '169',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '170',               //bil soalan
+          'question' => 'Mengapa anda harus memilih platform integrasi universal untuk menyokong keperluan integrasi perniagaan anda?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pertumbuhan syarikat  dan dapat menaik taraf dengan mudah',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '170', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Meningkatkan kepantasan dan ketepatan proses perniagaan anda',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '170',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Semua perkara di atas',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '170',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Membuat pelanggan gembira dan kembali semula',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '170',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '171',               //bil soalan
+          'question' => 'Seseorang yang bekerja sebagai system integrasi adalah',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mengurus dan memantau semua sistem dan infrastruktur yang terpasang',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '171', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Orang yang menguruskan operasi sistem komputer atau perkhidmatan komunikasi elektronik tertentu',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '171',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Individu atau perniagaan yang menyatukan pelbagai elemen seperti perkakasan, perisian, rangkaian dan penyimpanan dari pelbagai vendor untuk membuat sistem untuk pelanggan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '171',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pakar menyelesaikan masalah perkakasan dan mencari penyelesaiannya',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '171',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '172',               //bil soalan
+          'question' => 'Kaedah penyatuan Sistem dibahagikan kepada beberapa kategori berikut:',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Integrasi mendatar',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '172', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Integrasi dari titik ke titik',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '172',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Semua perkara di atas',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '172',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Integrasi bintang',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '172',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '173',               //bil soalan
+          'question' => 'Customer Relationship Management (CRM) adalah satu bentuk penyatuan sistem. Apa itu CRM?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Konfigurasi rangkaian teknologi dan organisasi yang dirancang untuk memberikan perkhidmatan yang memenuhi keperluan, kehendak, atau aspirasi pelanggan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '173', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kumpulan bahagian (atau subsistem) yang teratur yang sangat bersepadu untuk mencapai tujuan keseluruhan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '173',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Teknologi untuk mengurus semua hubungan dan interaksi syarikat anda dengan pelanggan dan bakal pelanggan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '173',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sistem sokongan untuk konkrit yang baru diletakkan termasuk acuan atau sarung yang menghubungi konkrit serta anggota sokongan, perkakasan, dan penyangga yang diperlukan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '173',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '174',               //bil soalan
+          'question' => 'Enterprise Resource Planning (ERP) direka untuk menguruskan semua proses perniagaan dan mengautomasikan pelbagai fungsi  yang tidak perlu dijalankan secara manual. Apakah objektif utama ERP?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk meningkatkan produktiviti',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '174', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Teknologi yang stabil untuk kegunaan seharian',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '174',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Biasanya untuk menurunkan kos daripada meningkatkan pendapatan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '174',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Antara muka yang lebih baik',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '174',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '175',               //bil soalan
+          'question' => 'Apa yang dilakukan oleh penyepadu Sistem?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Menulis kod pengaturcaraan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '175', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Memproses adegan jenayah dengan melakukan pengecaman tempat kejadian, dokumentasi tempat kejadian dan pengumpulan bukti',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '175',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mengaktifkan integrasi data antara berbagai sistem pelanggan yang ada sebagaimana yang telah ditentukan oleh skop projek',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '175',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mereka dapat menangkap dan menahan individu yang dituduh melanggar undang-undang',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '175',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '176',               //bil soalan
+          'question' => 'Apakah Ujian Integrasi Sistem (SIT)?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Proses menilai sistem atau komponennya dengan tujuan untuk mengetahui sama ada memenuhi syarat yang ditentukan atau tidak',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '176', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Teknik pengujian yang dilakukan untuk menentukan sama ada sistem perisian telah memenuhi spesifikasi keperluan atau tidak',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '176',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sejenis ujian perisian yang dilakukan dalam persekitaran perkakasan dan perisian bersepadu untuk mengesahkan tingkah laku sistem yang lengkap',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '176',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Tiada perkara di atas',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '176',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '177',               //bil soalan
+          'question' => 'Mengapa kita memerlukan Ujian Integrasi Sistem?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Membantu mengesan ralat lebih awal',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '177', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => ' Untuk membetulkan aliran data',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '177',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Semua perkara di atas',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '177',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk memanfaatkan penggunaan memori',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '177',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '178',               //bil soalan
+          'question' => 'Ujian tambahan adalah kaedah pengujian integrasi. Terdapat dua jenis ujian tambahan: ',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pendekatan kanan-kiri, pendekatan Kiri-kanan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '178', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pendekatan atas-bawah, Pendekatan kiri kanan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '178',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pendekatan atas-bawah, Pendekatan bawah-atas',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '178',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pendekatan bawah-atas, Pendekatan kiri-kanan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '178',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '179',               //bil soalan
+          'question' => 'Apakah Ujian Integrasi Perisian Perkakasan?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk mengesahkan bahawa produk anda berfungsi seperti yang dirancang',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '179', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Merujuk kepada bahagian fizikal komputer dan peranti yang berkaitan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '179',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Proses menguji Komponen Perisian Komputer (CSC) untuk fungsi tahap tinggi pada persekitaran perkakasan yang disasar',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '179',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Tiada perkara di atas',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '179',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '180',               //bil soalan
+          'question' => 'Apakah matlamat Ujian Integrasi Perisian Perkakasan?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '10',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk membetulkan prestasi perisian mengikut keperluan yang ditentukan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '180', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk memastikan bahawa kesalahan baru tidak dijumpa',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '180',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk menguji tingkah laku perisian baru yang diintegrasikan pada komponen perkakasan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '180',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Semua perkara di atas',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '180',
+        ]
+      );                                                      // bawah
+
+
+
+
+//Autonomous Robot
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '181',               //bil soalan
+          'question' => 'Sains dan teknologi di sebalik reka bentuk, pembuatan dan penggunaan robot',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sains Komputer',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '181', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Proses Reka Bentuk Kejuruteraan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '181',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Robotik',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '181',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pembuatan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '181',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '182',               //bil soalan
+          'question' => 'Robot autonomi adalah yang:',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mempunyai mekanisme untuk melakukan pelbagai operasi',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '182', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Memerlukan pengendali manusia untuk menjalankan tugasnya',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '182',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Menggunakan kecerdasan atau programnya sendiri untuk menangani situasi',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '182',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Bergerak secara rawak',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '182',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '183',               //bil soalan
+          'question' => 'Komponen yang memberi robot keupayaan untuk berinteraksi dengan persekitarannya ialah :',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sensor',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '183', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Penggerak',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '183',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Manipulator',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '183',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Suis',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '183',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '184',               //bil soalan
+          'question' => 'Mengumpulkan input dari persekitaran dan memberikan maklumat kepada robot untuk bertindak balas',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Manipulator',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '184', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Camera',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '184',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sensor',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '184',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Papan induk',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '184',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '185',               //bil soalan
+          'question' => 'Subsistem robotik yang menyelaraskan dan mengawal semua komponen lain. Ia merupakan otak robot',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sensor',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '185', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Bahagian Mekanikal',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '185',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mikrokontroler Cortex',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '185',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Komputer',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '185',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '186',               //bil soalan
+          'question' => 'Jurutera jenis apa yang bertanggungjawab membina, menyelenggara, atau mencipta sistem robotik (sub)?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Jurutera Perisian',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '186', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Jurutera Elektrik',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '186',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Jurutera Mekanikal',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '186',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Jurutera Aeronautika',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '186',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '187',               //bil soalan
+          'question' => 'Manakah yang merupakan kelebihan robot autonomi?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Meningkatkan ralat',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '187', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Meningkatkan risiko keselamatan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '187',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Meningkatkan kecekapan dan produktiviti',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '187',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Penurunan kualiti barang',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '187',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '188',               //bil soalan
+          'question' => 'Yang manakah di antara ini BUKAN kelebihan robot autonomi?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Keselamatan di tempat kerja',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '188', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Peningkatan produktiviti',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '188',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Potensi kehilangan pekerjaan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '188',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mengurangkan kadar kesalahan dan risiko',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '188',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '189',               //bil soalan
+          'question' => 'Apa jenis robot yang digunakan untuk penerokaan angkasa?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Toyota',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '189', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'NASA',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '189',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Rover',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '189',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Roomba',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '189',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '190',               //bil soalan
+          'question' => 'Apakah tiga bahagian utama robot?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'sensor cahaya, input, sistem kawalan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '190', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Robotik, output, sistem kawalan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '190',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Input, sistem kawalan, output',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '190',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kamera, lampu, sistem kawalan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '190',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '191',               //bil soalan
+          'question' => 'Robot yang digunakan untuk pergi ke tempat yang terlalu berbahaya bagi manusia adalah ______.',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Robot pembersihan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '191', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Robot perubatan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '191',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Robot tentera',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '191',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Robot industri',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '191',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '192',               //bil soalan
+          'question' => 'Robot ini biasanya besar. Beberapa kilang menggunakannya untuk membina atau menolong produknya. Apakah mereka?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Robot pembersihan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '192', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Robot perubatan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '192',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Robot industri',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '192',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Robot tentera',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '192',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '193',               //bil soalan
+          'question' => 'Apakah definisi Robot?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mesin yang menyerupai manusia',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '193', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mana-mana mesin yang boleh mengikut arahan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '193',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mesin yang mampu melakukan serangkaian tindakan yang kompleks secara automatik, terutama yang dapat diprogramkan oleh komputer',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '193',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mesin yang boleh berfikir sendiri, terutamanya jika proses pemikiran itu logik',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '193',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '194',               //bil soalan
+          'question' => 'Bagaimana robot membuat keputusan?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mereka tidak membuat keputusan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '194', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mereka berfikir dan berfikir sehingga mereka membuat keputusan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '194',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mereka mengikuti arahan yang ditulis dalam program komputer',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '194',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kawalan oleh manusia',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '194',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '195',               //bil soalan
+          'question' => 'Di manakah robot pertama kali digunakan?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Di makmal',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '195', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Di ruang angkasa',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '195',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Industri automotif',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '195',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Industri perubatan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '195',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '196',               //bil soalan
+          'question' => 'Robot pertama hanya dapat melakukan berapa banyak tugas dalam satu masa?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Dua',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '196', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Empat',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '196',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Satu',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '196',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pelbagai tugas sekaligus',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '196',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '197',               //bil soalan
+          'question' => 'Antara berikut, yang manakah bukan salah satu tugas 3 "D" robot?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Dirty',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '197', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Dangerous',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '197',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Deadly',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '197',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Dull',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '197',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '198',               //bil soalan
+          'question' => '_______adalah robot yang dianggap memiliki kecerdasan buatan',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Manual',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '198', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Peka',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '198',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pintar',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '198',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Berurutan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '198',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '199',               //bil soalan
+          'question' => 'Ini adalah robot yang tidak akan berfungsi kecuali dikendalikan oleh manusia',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pintar',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '199', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Peka',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '199',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Manual',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '199',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Berurutan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '199',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '200',               //bil soalan
+          'question' => 'Robot pertama yang dikendalikan secara digital dan boleh diprogramkan dicipta oleh George Devol pada tahun ______.',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '11',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '1977',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '200', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2000',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '200',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '1954',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '200',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '1957',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '200',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '201',               //bil soalan
+          'question' => 'Berikut merangkumi tiang industri 4.0, kecuali',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Internet Pelbagai Benda (IPB)',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '201', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Data besar',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '201',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Media sosial',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '201',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kecerdasan buatan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '201',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '202',               //bil soalan
+          'question' => 'Yang manakah bukan IR 4.0',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pengkomputeran awan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '202', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Data besar',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '202',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Microsoft Officel',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '202',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Internet Pelbagai Benda',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '202',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '203',               //bil soalan
+          'question' => 'Pilih jawapan yang tepat mengenai tiang industri 4.0',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Simulasi',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '203', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Robot autonomi',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '203',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Semua di atas',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '203',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Internet Pelbagai Benda',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '203',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '204',               //bil soalan
+          'question' => 'Pernyataan berikut yang manakah menerangkan Awan?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Ini hanya perkataan Inggeris untuk "Cloud"',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '204', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Ini adalah istilah dari bahasa belia dan menerangkan tentang kecurian',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '204',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Menjelaskan persekitaran maya luaran untuk menyediakan simpanan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '204',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Rekod Frekuensi Pengenalan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '204',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '205',               //bil soalan
+          'question' => 'Berapakah bilangan tiang IR 4.0?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Tujuh',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '205', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sepuluh',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '205',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sembilan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '205',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sebelas',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '205',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '206',               //bil soalan
+          'question' => 'Berikut adalah alat / perisian / aplikasi yang ada untuk Industri 4.0 kecuali',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Cockpit',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '206', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '3D visualization',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '206',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Google Chrome',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '206',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Condition Monitoring',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '206',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '207',               //bil soalan
+          'question' => 'Apakah 6 prinsip reka bentuk Industri 4.0?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Interoperabiliti, keupayaan masa nyata, visualisasi, orientasi perkhidmatan, desentralisasi, keputusan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '207', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Interoperabiliti, keupayaan masa nyata, data, orientasi perkhidmatan, desentralisasi, modulariti',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '207',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Interoperabiliti, keupayaan masa nyata, visualisasi, orientasi perkhidmatan, desentralisasi, modulariti',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '207',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Interoperabiliti, keupayaan masa nyata, visualisasi, ramalan, desentralisasi, modulariti',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '207',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '208',               //bil soalan
+          'question' => '5 langkah untuk menjadikan data besar menjadi data pintar. Sila pilih yang betul',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Data> Pengetahuan> Maklumat> Kebijaksanaan> Keputusan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '208', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Data> Maklumat>> Keputusan> Kebijaksanaan> Pengetahuan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '208',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Data> Maklumat> Pengetahuan> Kebijaksanaan> Keputusan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '208',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Data> Maklumat> Kebijaksanaan> Pengetahuan> Keputusan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '208',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '209',               //bil soalan
+          'question' => 'Salah satu penyelesaian yang dibangunkan untuk menyampaikan maklumat untuk industri 4.0 ialah',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'AutoPiQ',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '209', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Availability Manager',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '209',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Cockpit',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '209',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Condition Monitoring',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '209',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '210',               //bil soalan
+          'question' => 'Apakah maksud Keupayaan Masa Nyata?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Proses mengatur dan merancang bagaimana membahagikan masa anda antara aktiviti tertentu',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '210', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Batasan masa permulaan dan akhir projek',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '210',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Keupayaan untuk mengumpulkan dan menganalisis data dan memberikan pandangan dengan segera',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '210',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kawasan geografi di mana masa standard yang sama digunakan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '210',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '211',               //bil soalan
+          'question' => 'Apakah itu Interoperabiliti?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Tindakan berfungsi atau fakta aktif atau berlaku',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '211', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Prosedur atau cara penyelidik mengukur tingkah laku atau kualiti',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '211',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Keupayaan sistem siber-fizikal, manusia dan Kilang Pintar untuk berhubung dan berkomunikasi antara satu sama lain melalui Internet Perkhidmatan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '211',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pentadbiran amalan perniagaan untuk mewujudkan tahap kecekapan setinggi mungkin dalam organisasi',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '211',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '212',               //bil soalan
+          'question' => 'Apakah maksud Virtualisasi?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pemeriksaan mata yang memeriksa seberapa baik anda melihat perincian huruf atau simbol dari jarak tertentu',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '212', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sesuatu seperti gambar, rajah, atau sekeping filem yang digunakan untuk menunjukkan atau menjelaskan sesuatu',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '212',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Salinan maya Smart Factory yang dibuat dengan menghubungkan data sensor dengan model kilang maya dan model simulasi',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '212',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Penglihatan peripheral yang dapat dilihat di mata manusia',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '212',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '213',               //bil soalan
+          'question' => 'Apakah yang dimaksudkan dengan Desentralisasi?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Untuk menumpukan perhatian dengan meletakkan kuasa dan autoriti di pusat atau organisasi dalam satu agensi',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '213', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Keputusan yang tidak diambil secara bebas di peringkat tempatan, tetapi secara holistik di peringkat yang lebih pusat',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '213',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Keupayaan sistem siber-fizikal dalam Smart Factory untuk membuat keputusan sendiri',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '213',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Melambatkan komunikasi antara peranti',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '213',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '214',               //bil soalan
+          'question' => 'Apakah yang dimaksudkan dengan Orientasi Perkhidmatan?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sistem yang menyediakan keperluan awam seperti pengangkutan, komunikasi, atau utiliti seperti elektrik dan air',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '214', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'untuk menentukan perspektif, kedudukan, rancangan, dan pola yang perlu dilaksanakan oleh penyedia perkhidmatan untuk memenuhi hasil perniagaan organisasi',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '214',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Penawaran perkhidmatan sistem siber-fizikal, manusia dan Kilang Pintar melalui Internet Perkhidmatan',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '214',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Mengurus kerja dalaman perniagaan  sehingga berjalan dengan cekap mungkin',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '214',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '215',               //bil soalan
+          'question' => 'Apakah yang dimaksudkan dengan Modulariti?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Setiap satu set bahagian standard atau unit bebas yang dapat digunakan untuk membina struktur yang lebih kompleks, seperti barang perabot atau bangunan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '215', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Satu set atau lebih modul untuk membentuk sesuatu aplikasi',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '215',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Penyesuaian fleksibel kilang pintar untuk mengubah keperluan modul individu',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '215',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Baki nombor yang telah  dibahagikan dengan dua nombor yang berbeza',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '215',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '216',               //bil soalan
+          'question' => 'Bilakah Industri 4.0 bermula?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2007',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '216', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2020',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '216',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2013',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '216',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2016',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '216',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '217',               //bil soalan
+          'question' => 'Apakah sumber tenaga pertama?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Air',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '217', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Arang batu',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '217',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Matahari',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '217',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Angin',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '217',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '218',               //bil soalan
+          'question' => 'Pada tahun bilakah istilah Industri 4.0 pertama kali diperkenalkan?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2013',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '218', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2017',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '218',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2011',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '218',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2018',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '218',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '219',               //bil soalan
+          'question' => 'RFID bermaksud?',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Real Fun Is Done',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '219', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Radio For Immediate Danger',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '219',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Radio Frequency IDentification',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '219',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Radio Formula IDentification',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '219',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '220',               //bil soalan
+          'question' => 'Realiti berperantara mengggambarkan ',
+          'status' => '1',
+          'language' => 'bm',             // biar
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Simulasi komputer',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '220', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Realiti maya',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '220',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Berbantukan komputer',
+          'status' => 'True',
+          'language' => 'bm',
+          'question_id' => '220',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kehidupan dalam permainan',
+          'status' => 'False',
+          'language' => 'bm',
+          'question_id' => '220',
+        ]
+      );                                                      // bawah
+
+
+
+
+
+
+
 
 
 
