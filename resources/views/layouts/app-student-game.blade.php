@@ -23,20 +23,12 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
+
 
     <link rel="stylesheet" href="{{ asset('concept/vendor/bootstrap/css/bootstrap.min.css') }}">
     <link href="{{ asset('concept/vendor/fonts/circular-std/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('concept/libs/css/style.css') }}">
     <link rel="stylesheet" href=" {{ asset('concept/vendor/fonts/fontawesome/css/fontawesome-all.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('concept/vendor/charts/chartist-bundle/chartist.css') }}" >
-    <link rel="stylesheet" href="{{ asset('concept/vendor/charts/morris-bundle/morris.css') }}">
-    <link rel="stylesheet" href="{{ asset('concept/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('concept/vendor/charts/c3charts/c3.css') }}">
-    <link rel="stylesheet" href="{{ asset('concept/vendor/fonts/flag-icon-css/flag-icon.min.css') }} ">
-
     <!-- Icon Size -->
     <!-- <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"> -->
@@ -44,18 +36,18 @@
 </head>
 <body>
     <div id="app">
-        <main class="py-4">
+        <main class="">
           <div class="dashboard-main-wrapper">
               <!-- ============================================================== -->
               <!-- navbar -->
               <!-- ============================================================== -->
               <div class="dashboard-header">
-                  <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                      <a class="navbar-brand" href="{{ route('home-admin') }}">ACES</a>
+                  <nav class="navbar  fixed-top" style="background-color:#fff";>
+                      <a class="navbar-brand" href="{{ route('home') }}">ACES</a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                       </button>
-                      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                      <!-- <div class="collapse navbar-collapse " id="navbarSupportedContent">
                           <ul class="navbar-nav ml-auto navbar-right-top">
                               <!-- <li class="nav-item">
                                   <div id="custom-search" class="top-search-bar">
@@ -141,80 +133,35 @@
                                       </li>
                                   </ul>
                               </li> -->
-                              <!-- <div style="border-left:1px solid #000;height:65px"></div> -->
-                              <li class="nav-item dropdown nav-user">
-                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <!-- <i class="fa fa-cog" aria-hidden="true" style="font-size: 180%;"></i> -->
-                                    @if(Auth::user()->profile_picture != null)
-                                    <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px; ">
-                                    @else
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px; ">
-                                    @endif
-                                  </a>
-
+                              <!-- <li class="nav-item dropdown nav-user">
+                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 230%;"></i></a>
                                   <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                       <div class="nav-user-info">
-                                          <!-- <h4 class="mb-0 text-white nav-user-name">{{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}}</h4> -->
-                                          <h6 class="mb-0 text-white nav-user-name">{{Auth::user()->name}}</h6>
-                                          <div style="padding: 5px;"></div>
-                                          @if(Auth::user()->is_admin == 1)
-                                          <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i>Admin Sistem</h6>
-                                          @else
-                                          <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i>ECERDB Personnel</h6>
-                                          @endif
-                                          <!-- <span><i class="fa fa-certificate" aria-hidden="true"></i> Admin </span> -->
+                                          <h5 class="mb-0 text-white nav-user-name">Muhammad Shahid</h5>
+                                          <span class="status"></span><span class="ml-2">Student</span>
                                       </div>
-                                      <a class="dropdown-item" href="{{route('admin.profiles.edit-profile')}}"><i class="fas fa-user mr-2"></i>Profil Pengguna</a>
-                                      <a class="dropdown-item" href="{{ route('admin.profiles.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Tukar Kata Laluan</a>
-                                      <a class="dropdown-item"  href="#" class="btn btn-block btn-danger" data-toggle="modal" data-target="#logOutModal"><i class="fas fa-power-off mr-2"></i>Log Keluar</a>
-                                      <!-- <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                      <a class="dropdown-item" href="{{route('user.profile.edit')}}"><i class="fas fa-user mr-2"></i>Profile</a>
+                                      <a class="dropdown-item" href="{{ route('user.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
+                                      <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                       <i class="fas fa-power-off mr-2"></i>Logout</a>
                                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                       @csrf
-                                      </form> -->
+                                      </form>
                                   </div>
-                              </li>
-
-                              <li class="nav-item dropdown connection">
-                                  <!-- <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a> -->
-                                  <a href="#" class="btn btn-block btn-danger" data-toggle="modal" data-target="#logOutModal" style="font-size: 200%;"><i class="fa fa-power-off" aria-hidden="true"></i></a>
-
-                              </li>
-
+                              </li> -->
                           </ul>
                       </div>
                   </nav>
-                  <div class="modal fade" id="logOutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered" role="document">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
-                                  <a href="#" class="close" data-dismiss="modal" aria-label="Close">
-                                              <span aria-hidden="true">&times;</span>
-                                          </a>
-                              </div>
-                              <div class="modal-body">
-                                  <p>Anda mahu log keluar?</p>
-                              </div>
-                              <div class="modal-footer">
-                                  <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
-                                  <!-- <a href="#" class="btn btn-primary">Yes</a> -->
-                                  <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                                  @csrf
-                                  <button type="submit" name="button" class="btn btn-primary">Log Keluar</button>
-                                  </form>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
               </div>
+
+
               <!-- ============================================================== -->
               <!-- end navbar -->
               <!-- ============================================================== -->
               <!-- ============================================================== -->
               <!-- left sidebar -->
               <!-- ============================================================== -->
-              <div class="nav-left-sidebar sidebar-dark">
+              <div class="nav-left-sidebar" style="background-color: #232121";>
                   <div class="menu-list">
                       <nav class="navbar navbar-expand-lg navbar-light">
                           <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
@@ -223,61 +170,56 @@
                           </button>
                           <div class="collapse navbar-collapse" id="navbarNav">
                               <ul class="navbar-nav flex-column">
-                                <li class="nav-divider">
-                                  <img class="logo-img" src="{{ asset('concept/images/aces-removebg-preview.png') }}" alt="logo">
+                                <li class="nav-divider" align="center";>
+                                  <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;">
                                 </li>
-                                  <!-- <li class="nav-divider">
-                                      Menu Utama
-                                  </li> -->
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('home-admin') }}"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a>
-                                  </li>
-                                  <!-- <li class="nav-divider">
-                                      Aktiviti
-                                  </li> -->
-                                  <!-- <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Kemajuan Pelajar</a>
-                                  </li> -->
-                                  <!-- <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>Statistik Pelajar</a>
-                                  </li> -->
-                                  <li class="nav-item ">
-
-                                    <a class="nav-link" href="{{route('admin.activities.lesson.list')}}"><i class="fa fa-book" aria-hidden="true"></i> Pelajaran</a>
-
-                                  </li>
-                                  <li class="nav-item ">
-
-                                    <a class="nav-link" href="{{ route('admin.activities.quiz.list') }}"><i class="fa fa-question-circle" aria-hidden="true"></i> Kuiz</a>
-
-                                  </li>
-                                  <!-- <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
-
-                                  </li> -->
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('admin.others.announcement.list') }}"><i class="fa fa-bullhorn" aria-hidden="true"></i>Pengumuman</a>
-                                  </li>
 
 
+                                <li class="nav-item dropdown nav-user">
+                                    <a class="mb-0 text-white nav-user-name" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}}</a>
+                                    <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
 
-                                  <!-- <li class="nav-divider">
-                                      Lain-lain
-                                  </li> -->
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('admin.others.user-list.list') }}"><i class="fa fa-users" aria-hidden="true"></i> Senarai Pengguna</a>
+                                        <a class="dropdown-item" href="{{route('user.profile.edit')}}"><i class="fas fa-user mr-2"></i>Profile</a>
+                                        <a class="dropdown-item" href="{{ route('user.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
+                                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        <i class="fas fa-power-off mr-2"></i>Logout</a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                        </form>
+                                    </div>
+                                </li>
+
+                                  <li class="nav-divider">
+                                      <font color="white">Activities</font>
                                   </li>
 
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('admin.others.announcement.list') }}"><i class="fa fa-bullhorn" aria-hidden="true"></i>Pengumuman</a>
+
+
+                                    <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
+
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{route('quiz.choose-quiz')}}"><i class="fa fa-question-circle" aria-hidden="true"></i>Kuiz</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{route('user.game.demo')}}"><i class="fa fa-gamepad" aria-hidden="true"></i>Liga Permainan</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
                                   </li>
 
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('admin.others.audit-trail.audit-trail-log') }}"><i class="fas fa-signal" aria-hidden="true"></i> Log Audit Trail </a>
+
+
+                                  <li class="nav-divider">
+                                      <font color="white">Others</font>
                                   </li>
-                                  <!-- <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i>Maklum balas</a>
-                                  </li> -->
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>Maklum Balas</a>
+                                  </li>
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('user.student.profile') }}"><i class="fas fa-user-circle"aria-hidden="true"></i> </i>Profil</a>
+                                  </li>
                                   <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
                                       <div id="submenu-1" class="collapse submenu" style="">
@@ -561,11 +503,12 @@
               <!-- wrapper  -->
               <!-- ============================================================== -->
               <div class="dashboard-wrapper">
-                @yield('content')
+            @yield('content')
+
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <div class="footer">
+            <div class="footer" style="background-color:#232121";>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -581,6 +524,8 @@
                     </div>
                 </div>
             </div>
+
+
             <!-- ============================================================== -->
             <!-- end footer -->
             <!-- ============================================================== -->
@@ -598,72 +543,5 @@
 
   <!-- slimscroll js -->
   <script src="{{ asset('concept/vendor/slimscroll/jquery.slimscroll.js') }}"></script>
-  <!-- main js -->
-  <script src="{{ asset('concept/libs/js/main-js.js  ') }}"></script>
-  <!-- chart chartist js -->
-  <script src="{{ asset('concept/vendor/charts/chartist-bundle/chartist.min.js') }}"></script>
-  <!-- sparkline js -->
-  <script src="{{ asset('concept/vendor/charts/sparkline/jquery.sparkline.js') }}"></script>
-  <!-- morris js -->
-  <script src="{{ asset('concept/vendor/charts/morris-bundle/raphael.min.js') }}"></script>
-  <script src="{{ asset('concept/vendor/charts/morris-bundle/morris.js') }}"></script>
-  <!-- chart c3 js -->
-  <script src="{{ asset('concept/vendor/charts/c3charts/c3.min.js') }}"></script>
-  <script src="{{ asset('concept/vendor/charts/c3charts/d3-5.4.0.min.js') }}"></script>
-  <script src="{{ asset('concept/vendor/charts/c3charts/C3chartjs.js') }}"></script>
-  <script src="{{ asset('concept/libs/js/dashboard-ecommerce.js') }}"></script>
-
-
-
-  <!-- <script src="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"></script> -->
-
-  <!-- <script src="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css"></script> -->
-
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.flash.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js"></script>
-
-  <script>
-        $(function () {
-            var table = $('#table_data').DataTable({
-              "responsive" : true,
-              "dom": 'Bfrtip',
-              "buttons": [
-                  'excel', 'pdf', 'print'
-              ],
-              "scrollX": true,
-              "language": {
-                  "lengthMenu": "Memaparkan _MENU_ rekod per halaman",
-                  "zeroRecords": "Tiada rekod.",
-                  "info": "Memaparkan halaman _PAGE_ dari _PAGES_",
-                  "infoEmpty": "Tidak ada rekod yang tersedia",
-                  "infoFiltered": "(Ditapis dari _MAX_ jumlah rekod)",
-                  "search": "Carian",
-                  "previous": "Sebelum",
-                  "paginate": {
-                      "first":      "Pertama",
-                      "last":       "Terakhir",
-                      "next":       "Seterusnya",
-                      "previous":   "Sebelumnya"
-                  },
-                  "searchPanes": {
-                      "clearMessage": 'Padam Tapisan',
-                      "title":{
-                          _: 'Tapisan Dipilih - %d',
-                          0: 'Tiada Tapisan Dipilih',
-                          1: 'Satu Tapisan Dipilih',
-                      }
-                  }
-              },
-            });
-
-        });
-    </script>
 
 </html>

@@ -16,6 +16,11 @@ class LessonController extends Controller
       return view('lesson.courses');
   }
 
+  public function courseslatest()
+  {
+      return view('lesson.courses-latest');
+  }
+
   public function listlesson()
   {
       $lesson_list = Lesson::get();
