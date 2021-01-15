@@ -27,12 +27,14 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/profile/edit', [App\Http\Controllers\UserController::class, 'editProfile'])->name('user.profile.edit');
 
-Route::post('/profile/update/id={id}', [App\Http\Controllers\UserController::class, 'updateprofil'])->name('user.update');
+Route::post('/profile/update', [App\Http\Controllers\UserController::class, 'updateprofil'])->name('user.update');
 
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('leaderboard');
 
 //Lessons
 Route::get('/courses', [App\Http\Controllers\LessonController::class, 'courses'])->name('lesson.courses');
+
+Route::get('/courses-latest', [App\Http\Controllers\LessonController::class, 'courseslatest'])->name('lesson.courses-latest');
 
 //Quiz
 Route::get('/quiz/choose-quiz', [App\Http\Controllers\QuizController::class, 'chooseQuiz'])->name('quiz.choose-quiz');
@@ -53,10 +55,14 @@ Route::get('/profile', [App\Http\Controllers\UserController::class, 'profil'])->
 
 
 
-Route::get('/demo', [App\Http\Controllers\UserController::class, 'gameDemo'])->name('user.game.demo');
+Route::get('/game/menu', [App\Http\Controllers\UserController::class, 'gameDemo'])->name('user.game.demo');
+
+Route::get('/game/demo', [App\Http\Controllers\UserController::class, 'gameDemoDrone'])->name('user.game.drone');
 
 
 Route::get('/feedback', [App\Http\Controllers\UserController::class, 'feedback'])->name('others.feedback');
+
+Route::post('/feedback/save', [App\Http\Controllers\UserController::class, 'feedbackSave'])->name('others.feedback.save');
 
 Route::get('/profile/change-password', [App\Http\Controllers\UserController::class, 'viewChangePassword'])->name('user.change-password');
 

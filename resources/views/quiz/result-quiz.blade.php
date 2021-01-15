@@ -88,15 +88,14 @@
                   </div>
                 </div>
 
+                <div style="padding: 10px;"></div>
+
                 <div class="row">
                   <div class="col-md-2">
 
                   </div>
-                  <div class="col-md-4">
-
-                  </div>
-                  <div class="col-md-4">
-
+                  <div class="col-md">
+                    <a href="{{route('quiz.choose-quiz')}}" class="btn btn-block btn-secondary">Kembali Ke Senarai Quiz</a>
                   </div>
                   <div class="col-md-2">
 
