@@ -39,21 +39,21 @@
                             <div class="col-md-2">
 
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-8">
                               <div class="form-group">
-                                 <label>Mesej</label>
+                                 <label for="message" style="color:black;font-size:15px;">Mesej:</label>
                                  <!-- <input type="text" name="chapter" class="form-control bg-light" required> -->
 
                                  <textarea id="message" name="message" style="width:100%"></textarea>
 
                               </div>
                             </div>
-                            <div class="col-md-4">
+                            <!-- <div class="col-md-4">
 
-                            </div>
-                            <div class="col-md-2">
+                            </div> -->
+                            <!-- <div class="col-md-2">
 
-                            </div>
+                            </div> -->
                           </div>
 
 
