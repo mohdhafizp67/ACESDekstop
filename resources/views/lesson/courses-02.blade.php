@@ -1,4 +1,4 @@
-@extends('layouts.app-index')
+@extends('layouts.app-student')
 @section('content')
 <style media="screen">
 .infographic-title {

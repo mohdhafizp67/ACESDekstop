@@ -1,114 +1,374 @@
 @extends('layouts.app-student')
 
 @section('content')
+
 <!DOCTYPE html>
-<html style="font-size: 16px;">
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="maklum balas pengguna​">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Page 1</title>
-    <link rel="stylesheet" href="{{ asset('css/cartajohan.css') }}" media="screen">
-<link rel="stylesheet" href="{{ asset('css/cartajohan.css') }}" media="screen">
-    <script class="u-script" type="text/javascript" src="{{ asset('css/cartajohan/jquery.js') }}" defer=""></script>
-    <script class="u-script" type="text/javascript" src="{{ asset('css/cartajohan/nicepage.js') }}" defer=""></script>
-    <meta name="generator" content="Nicepage 3.3.3, nicepage.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <title>Carta Juara</title>
 
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
 
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "",
-		"url": "index.html"
-}</script>
-    <meta property="og:title" content="Page 1">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#478ac9">
-    <link rel="canonical" href="index.html">
-    <link rel="stylesheet" href="{{ asset('css/cartajohan.css') }} ">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="{{ asset('css/cartajohan.css') }} ">
 
-    <meta property="og:url" content="index.html">
   </head>
-  <body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body">
-    <section class="u-border-2 u-border-grey-75 u-clearfix u-image u-shading u-section-1" id="sec-3980" data-image-width="1600" data-image-height="900">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-heading-font u-text u-title u-text-1">Carta Johan</h1>
-        <div alt="" class="u-image u-image-circle u-preserve-proportions u-image-1" data-image-width="320" data-image-height="320"></div>
-        <div class="u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-palette-2-base u-radius-25 u-shape-round u-group-1">
-          <div class="u-container-layout u-container-layout-1">
-            <p class="u-text u-text-2">Skor Anda</p>
-            <div alt="" class="u-image u-image-circle u-preserve-proportions u-image-2" data-image-width="320" data-image-height="320"></div>
-            <h1 class="u-heading-font u-text u-title u-text-3">1000 mata</h1>
-          </div>
-        </div>
-        <div class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-table u-table-responsive u-table-1">
-          <table class="u-table-entity">
-            <colgroup>
-              <col width="12.1%">
-              <col width="19.1%">
-              <col width="28.8%">
-              <col width="20%">
-              <col width="20%">
-            </colgroup>
-            <tbody class="u-table-body">
-              <tr style="height: 100px;">
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-1">1.</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-2"></td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-3">Wan</td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-4">Level 11</td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-5">3450 mata</td>
-              </tr>
-              <tr style="height: 107px;">
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-6">2.</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-7"></td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-8">Amirul Amsyar</td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-9">Level 11</td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-10">3200 mata</td>
-              </tr>
-              <tr style="height: 107px;">
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-11">3.</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-12"></td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-13">Lukman</td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-14">Level 10</td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-15">2750 mata</td>
-              </tr>
-              <tr style="height: 107px;">
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-16">4</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-17"></td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-18">NoorShahid</td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-19">Level 8</td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-20">2250 mata</td>
-              </tr>
-              <tr style="height: 107px;">
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-21">5</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-22"></td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-23">Muhd Syahdan</td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-24">Level 7</td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-grey-75 u-table-cell u-table-cell-25">2000 mata</td>
-              </tr>
-              <tr style="height: 107px;">
-                <td class="u-align-center u-border-1 u-border-palette-2-base u-palette-2-base u-table-cell u-table-cell-26">235.</td>
-                <td class="u-border-1 u-border-palette-2-base u-palette-2-base u-table-cell u-table-cell-27"></td>
-                <td class="u-align-center u-border-1 u-border-palette-2-base u-palette-2-base u-table-cell u-table-cell-28">{{Auth::user()->name}}</td>
-                <td class="u-align-center u-border-1 u-border-palette-2-base u-palette-2-base u-table-cell u-table-cell-29">Level 2</td>
-                <td class="u-align-center u-border-1 u-border-palette-2-base u-palette-2-base u-table-cell u-table-cell-30">1000 mata</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <img src="{{asset('concept/images/cartajohan/FaceIcon.png')}}" alt="" class="u-image u-image-circle u-preserve-proportions u-image-3" data-image-width="320" data-image-height="320">
-        <img src="{{asset('concept/images/cartajohan/FaceIcon.png')}}" alt="" class="u-image u-image-circle u-preserve-proportions u-image-4" data-image-width="320" data-image-height="320">
-        <img src="{{asset('concept/images/cartajohan/FaceIcon.png')}}" alt="" class="u-image u-image-circle u-preserve-proportions u-image-5" data-image-width="320" data-image-height="320">
-        <img src="{{asset('concept/images/cartajohan/FaceIcon.png')}}" alt="" class="u-image u-image-circle u-preserve-proportions u-image-6" data-image-width="320" data-image-height="320">
-        <img src="{{asset('concept/images/cartajohan/FaceIcon.png')}}" alt="" class="u-image u-image-circle u-preserve-proportions u-image-7" data-image-width="320" data-image-height="320">
-        <img src="{{asset('concept/images/cartajohan/FaceIcon.png')}}" alt="" class="u-image u-image-circle u-preserve-proportions u-image-8" data-image-width="320" data-image-height="320">
-      </div>
-    </section>
+  <body>
 
+    <div class="container-fluid" style="background-image: url({{asset('concept/images/StudentDashboard/HeaderBg.jpeg')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-top: 2%; padding-left: 1%; margin-left: 0%;">
+	<div class="row" style="padding-top: 5%;">
+		<div class="col-md-12">
+			<h3 style="text-align: justify; color: #fff; font-size: 35px; font-weight: bold; padding-bottom: 5%;">
+				Carta Juara
+			</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8" style="padding-bottom: 4%;">
+			<table class="table table-hover table-bordered table-sm table-carta">
+				<thead>
+					<tr>
+						<th style="color: #fff; font-size: 20px;">
+							Kedudukan
+						</th>
+						<th style="color: #fff; font-size: 20px;">
+							Gambar
+						</th>
+						<th style="color: #fff; font-size: 20px;">
+							Nama
+						</th>
+						<th style="color: #fff; font-size: 20px;">
+							Sekolah
+						</th>
+            <th style="color: #fff; font-size: 20px;">
+							Negeri
+						</th>
+            <th style="color: #fff; font-size: 20px;">
+							Mata
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="table-johan">
+						<td>
+							1
+						</td>
+						<td>
+							{{Auth::user()->profile_picture}}
+						</td>
+						<td>
+							{{Auth::user()->name}}
+						</td>
+						<td>
+							Sekolah
+						</td>
+            <td>
+							Negeri
+						</td>
+            <td>
+							Mata
+						</td>
+					</tr>
+          <tr class="table-johan">
+            <td>
+              2
+            </td>
+            <td>
+              {{Auth::user()->profile_picture}}
+            </td>
+            <td>
+              {{Auth::user()->name}}
+            </td>
+            <td>
+              Sekolah
+            </td>
+            <td>
+              Negeri
+            </td>
+            <td>
+              Mata
+            </td>
+          </tr>
+          <tr class="table-johan">
+            <td>
+              3
+            </td>
+            <td>
+              {{Auth::user()->profile_picture}}
+            </td>
+            <td>
+              {{Auth::user()->name}}
+            </td>
+            <td>
+              Sekolah
+            </td>
+            <td>
+              Negeri
+            </td>
+            <td>
+              Mata
+            </td>
+          </tr>
+          <tr class="table-johan">
+            <td>
+              4
+            </td>
+            <td>
+              {{Auth::user()->profile_picture}}
+            </td>
+            <td>
+              {{Auth::user()->name}}
+            </td>
+            <td>
+              Sekolah
+            </td>
+            <td>
+              Negeri
+            </td>
+            <td>
+              Mata
+            </td>
+          </tr>
+          <tr class="table-johan">
+            <td>
+              5
+            </td>
+            <td>
+              {{Auth::user()->profile_picture}}
+            </td>
+            <td>
+              {{Auth::user()->name}}
+            </td>
+            <td>
+              Sekolah
+            </td>
+            <td>
+              Negeri
+            </td>
+            <td>
+              Mata
+            </td>
+          </tr>
+          <tr class="table-johan">
+            <td>
+              6
+            </td>
+            <td>
+              {{Auth::user()->profile_picture}}
+            </td>
+            <td>
+              {{Auth::user()->name}}
+            </td>
+            <td>
+              Sekolah
+            </td>
+            <td>
+              Negeri
+            </td>
+            <td>
+              Mata
+            </td>
+          </tr>
+          <tr class="table-johan">
+            <td>
+              7
+            </td>
+            <td>
+              {{Auth::user()->profile_picture}}
+            </td>
+            <td>
+              {{Auth::user()->name}}
+            </td>
+            <td>
+              Sekolah
+            </td>
+            <td>
+              Negeri
+            </td>
+            <td>
+              Mata
+            </td>
+          </tr>
+          <tr class="table-johan">
+            <td>
+              8
+            </td>
+            <td>
+              {{Auth::user()->profile_picture}}
+            </td>
+            <td>
+              {{Auth::user()->name}}
+            </td>
+            <td>
+              Sekolah
+            </td>
+            <td>
+              Negeri
+            </td>
+            <td>
+              Mata
+            </td>
+          </tr>
+          <tr class="table-johan">
+            <td>
+              9
+            </td>
+            <td>
+              {{Auth::user()->profile_picture}}
+            </td>
+            <td>
+              {{Auth::user()->name}}
+            </td>
+            <td>
+              Sekolah
+            </td>
+            <td>
+              Negeri
+            </td>
+            <td>
+              Mata
+            </td>
+          </tr>
+
+          <tr class="table-user">
+            <td>
+              500
+            </td>
+            <td>
+              {{Auth::user()->profile_picture}}
+            </td>
+            <td>
+              {{Auth::user()->name}}
+            </td>
+            <td>
+              Sekolah
+            </td>
+            <td>
+              Negeri
+            </td>
+            <td>
+              Mata
+            </td>
+          </tr>
+
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
+	<!-- <div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+			<table class="table table-hover table-striped">
+				<thead>
+					<tr>
+						<th>
+							#
+						</th>
+						<th>
+							Product
+						</th>
+						<th>
+							Payment Taken
+						</th>
+						<th>
+							Status
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Default
+						</td>
+					</tr>
+					<tr class="table-active">
+						<td>
+							1
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							01/04/2012
+						</td>
+						<td>
+							Approved
+						</td>
+					</tr>
+					<tr class="table-success">
+						<td>
+							2
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							02/04/2012
+						</td>
+						<td>
+							Declined
+						</td>
+					</tr>
+					<tr class="table-warning">
+						<td>
+							3
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							03/04/2012
+						</td>
+						<td>
+							Pending
+						</td>
+					</tr>
+					<tr class="table-danger">
+						<td>
+							4
+						</td>
+						<td>
+							TB - Monthly
+						</td>
+						<td>
+							04/04/2012
+						</td>
+						<td>
+							Call in to confirm
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div> -->
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
+
 @endsection

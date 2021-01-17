@@ -21,11 +21,11 @@
 
     <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12" style="background-image: url({{asset('concept/images/StudentDashboard/HeaderBg.jpeg')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover; padding-top: 2%; padding-left: 1%; margin-left: 0%;">
+		<div class="col-md-12" style="background-image: url({{asset('concept/images/StudentDashboard/HeaderBg.jpeg')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-top: 2%; padding-left: 1%; margin-left: 0%;">
 
-        <h1 style="text-align: justify; font-size: 35px; color: #fff;">
+        <h1 style="text-align: justify; font-size: 60px; color: #fff; font-weight:bold;">
   				ACES <font color="#CF00D8">I 4.0</font> <br>
-          <p style="text-align: justify;padding-bottom: 5%; font-size: 23px; color: #fff;">
+          <p style="text-align: justify;padding-bottom: 13%; font-size: 20px; color: #fff;">
     				Halaman Utama
     			</p>
   			</h1>
@@ -39,21 +39,31 @@
       @endif -->
 
       <div class="row" style="padding-bottom: 2%;">
-				<div class="col-md-4">
-          <p style="text-align: center; font-size: 20px;">
-    				<a href="https://aces.ecerdc.com.my/aces2/" class="btn btn-brand">Tentang ACES</a>
-    			</p>
+        <div class="col-md-2">
+
+        </div>
+				<div class="col-md">
+          <button type="button" class="btn btn-success" style="margin-top: -30%;margin-left: -25%; border-radius: 25px;">
+						<a href="https://aces.ecerdc.com.my/aces2/">Tentang ACES</a>
+					</button>
+
+
 				</div>
-				<div class="col-md-4">
-          <p style="text-align: center; font-size: 20px;">
-    				<a href="{{route('user.student.statistik')}}" class="btn btn-brand">Statistik</a>
-    			</p>
+				<div class="col-md">
+          <button type="button" class="btn btn-success" style="margin-top: -30%;margin-left: -25%; border-radius: 25px;">
+          <a href="{{route('user.student.statistik')}}">Statistik</a>
+          </button>
+
 				</div>
-				<div class="col-md-4">
-          <p  class="btn btn-brand">
-    				Pencapaian
-    			</p>
+				<div class="col-md">
+          <button type="button" class="btn btn-success" style="margin-top: -30%;margin-left: -25%; border-radius: 25px;">
+          <a href="#">Pencapaian</a>
+          </button>
+
 				</div>
+        <div class="col-md-2">
+
+        </div>
 			</div>
 
       <!-- <div class="row">
@@ -71,80 +81,57 @@
 
 		</div>
 	</div>
-	<div class="row">
-    <div class="col-md-2" style="background-image: linear-gradient(to right top, #031f48, #232d74, #54349c, #9030bd, #d300d3);">
+	<div class="row" style="background-image: linear-gradient(to right top, #031f48, #232d74, #54349c, #9030bd, #d300d3);">
+    <div class="col-md-1">
 
     </div>
-		<div class="col-md-4" style="background-color: #1E1E21">
-			<!-- <h3 style="text-align: justify; font-size: 30px; padding-top: 5%; color: #fff;">
-				Notis
-			</h3> -->
-			<!-- <div class="row">
-				<div class="col-md-12" style="background-image: linear-gradient(to right top, #031f48, #232d74, #54349c, #9030bd, #d300d3); border: solid 10px; border-color: #1E1E21">
-          <br>
-          <p style="color: #fff;text-align: center; font-size: 20px;">
+    <div class="col-md-4">
+      <div style="padding: 10px;"></div>
+      <div class="card">
+            <h5 class="card-header" style="font-Weight: bold;">Pengumuman</h5>
+            <div class="card-body list-group" style="overflow:auto;height:270px;width:103%;">
               @foreach($announcement as $data)
-              {{$data->user_message}}
-              <br>
-              @endforeach
-    			</p>
-          <img alt="Bootstrap Image Preview" src="{{asset('concept/images/StudentDashboard/ps4.jpg')}}" style="width: 100%; height: 85%; background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
-				</div>
-			</div> -->
 
-      <!-- <div class="card">
-          <div class="card-body" >
-              <h3 class="card-title border-bottom pb-2">Pengumuman</h3>
-              <p class="card-text">Vestibulumin augue posuere congue.</p>
-              <p class="card-text">Peneit amet, porta semper nisi. Simple card title bottom line</p>
-          </div>
-      </div> -->
-      <div style="padding: 10px;"></div>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">{{$data->user_message}}</p>
+                    <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+                @endforeach
 
-      <div class="card">
-            <h5 class="card-header">Pengumuman</h5>
-            <div class="card-body">
-                <div class="list-group" style="overflow:auto;height:325px;width:100%;border:1px solid #ccc">
-                  @foreach($announcement as $data)
-
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">List group item heading</h5>
-                            <small class="text-muted">3 days ago</small>
-                        </div>
-                        <p class="mb-1">{{$data->user_message}}</p>
-                        <small class="text-muted">Donec id elit non mi porta.</small>
-                    </a>
-                    @endforeach
-
-                </div>
             </div>
         </div>
-		</div>
-    <div class="col-md-4" style="background-color: #1E1E21">
+    </div>
+    <div class="col-md-2">
 
+    </div>
+    <div class="col-md-4">
       <div style="padding: 10px;"></div>
-
       <div class="card">
-            <h5 class="card-header">Pengumuman</h5>
-            <div class="card-body">
-                <div class="list-group" style="overflow:auto;height:325px;width:100%;border:1px solid #ccc">
-                  @foreach($announcement as $data)
+            <h5 class="card-header" style="font-Weight: bold;">Mesej</h5>
+            <div class="card-body list-group" style="overflow:auto;height:270px;width:103%;">
+              @foreach($announcement as $data)
 
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">List group item heading</h5>
-                            <small class="text-muted">3 days ago</small>
-                        </div>
-                        <p class="mb-1">{{$data->user_message}}</p>
-                        <small class="text-muted">Donec id elit non mi porta.</small>
-                    </a>
-                    @endforeach
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">{{$data->user_message}}</p>
+                    <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+                @endforeach
 
-                </div>
             </div>
         </div>
-		</div>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+
 		<!-- <div class="col-md-6" style="background-color: #1E1E21">
 			<h3 style="text-align: justify; font-size: 30px; padding-top: 5%; color: #fff;">
 				Mesej

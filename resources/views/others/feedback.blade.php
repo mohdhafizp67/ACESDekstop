@@ -78,13 +78,6 @@
 
         </div>
 
-				<div class="form-group">
-
-					<label for="exampleInputFile" style="color: #fff;font-weight: bold;">
-						File input
-					</label>
-					<input type="file" class="form-control-file" id="">
-				</div>
 
         <div class="u-align-center u-form-group u-form-submit">
             <button class="btn btn-success" type="submit">HANTAR</button>
