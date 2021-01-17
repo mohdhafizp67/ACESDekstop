@@ -13,15 +13,15 @@
 			<p class="text-center" style="color: #fff; padding-bottom: 25%; padding-top: 10%;">
 				Pusat Kecemerlangan Teknologi Pintar Asia (ACES) di bawah Majlis Pembangunan Wilayah Ekonomi Pantai Timur (ECERDC) merancang untuk mengembangkan aplikasi berdasarkan  karya sebagai alat untuk untuk menyebarkan kesedaran dan juga berfungsi sebagai pengenalan kepada industri 4.0 (I4.0) kepada pelajar Tingkatan 5 yang terpilih.
 			</p>
-			<button type="button" class="btn btn-success" style="border-radius: 50px;">
+			<p style="color: #fff;">
 				Pertolongan
-			</button><br><br>
-			<button type="button" class="btn btn-success" style="border-radius: 50px;">
+			</p><br>
+			<p style="color: #fff;">
 				Syarat
-			</button><br><br>
-			<button type="button" class="btn btn-success" style="border-radius: 50px;">
+			</p><br>
+			<p style="color: #fff;">
 				Kerahsiaan
-			</button><br><br>
+			</p><br>
 		</div>
 		<div class="col-md-8" style="background-image: url({{asset('concept/images/login/robot.jpeg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 			<div class="row" style="padding-bottom: 15%; padding-top: 5%;">
@@ -42,43 +42,63 @@
 					</button>
 				</div>
 			</div>
-			<h4 style="color: #fff;">
+			<h4 style="color: #fff; font-size: 35px;text-align: center;">
 				Log Masuk Ke IR 4.0
 			</h4>
-			<form action="{{ route('login') }}" method="POST" style="padding: 10px" source="custom" name="form">
-        @csrf
-				<div class="form-group">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-2">
 
-					<label for="exampleInputEmail1" style="color: #fff">
-						Kad Pengenalan
-					</label>
-					<input type="text" placeholder="Kad Pengenalan" id="ic_number" name="ic_number" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" value="{{ old('ic_number') }}" required autocomplete="ic_number" autofocus/>
-          @error('ic_number')
-                     <span class="invalid-feedback" role="alert">
-                         <strong>{{ $message }}</strong>
-                     </span>
-           @enderror
-				</div>
-				<div class="form-group">
+          </div>
+          <div class="col-md-8">
+            <form action="{{ route('login') }}" method="POST" style="padding: 10px" source="custom" name="form">
+              @csrf
+      				<div class="form-group">
 
-					<label for="exampleInputPassword1" style="color: #fff">
-						Kata Laluan
-					</label>
-					<input type="password" placeholder="Kata Laluan" id="password" name="password" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control @error('password') is-invalid @enderror" required autocomplete="current-password"/>
-          @error('password')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-          @enderror
-				</div>
+      					<label for="exampleInputEmail1" style="color: #fff">
+      						Kad Pengenalan
+      					</label>
+      					<input type="text" placeholder="Kad Pengenalan" id="ic_number" name="ic_number" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" value="{{ old('ic_number') }}" required autocomplete="ic_number" autofocus/>
+                @error('ic_number')
+                           <span class="invalid-feedback" role="alert">
+                               <strong>{{ $message }}</strong>
+                           </span>
+                 @enderror
+      				</div>
+      				<div class="form-group">
+
+      					<label for="exampleInputPassword1" style="color: #fff">
+      						Kata Laluan
+      					</label>
+      					<input type="password" placeholder="Kata Laluan" id="password" name="password" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control @error('password') is-invalid @enderror" required autocomplete="current-password"/>
+                @error('password')
+                          <span class="invalid-feedback" role="alert">
+                              <strong>{{ $message }}</strong>
+                          </span>
+                @enderror
+      				</div>
 
 
-        <button type="submit" class="btn btn-success">
-                            {{ __('LOG MASUK') }}
-                          </button>
+              <button type="submit" class="btn btn-success"  style="text-align: center;">
+                                  {{ __('LOG MASUK') }}
+                                </button>
 
-				</button>
-			</form>
+      				</button>
+      			</form>
+          </div>
+          <div class="col-md-2">
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+
 		</div>
 	</div>
 </div>

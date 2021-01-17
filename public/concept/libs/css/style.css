@@ -156,7 +156,7 @@
    ========================================================================== */
 
 body {
-    font-family: 'Circular Std Book';
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -173,7 +173,7 @@ h5,
 h6 {
     color: #000000;
     margin: 0px 0px 15px 0px;
-    font-family: 'Circular Std Medium';
+    font-family: 'Oswald', sans-serif;
 }
 
 h1 {

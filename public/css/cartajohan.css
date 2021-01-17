@@ -32789,3 +32789,21 @@ a.u-link.u-text-hover-grey-90:hover {
 }.background {
  background-color: #000;
 }
+
+.table-carta,
+.table-carta > th,
+.table-carta > td {
+  background-color: #0D1C80;
+}
+
+.table-johan,
+.table-johan > th,
+.table-johan > td {
+  background-color: #FFB54D;
+}
+
+.table-user,
+.table-user > th,
+.table-user > td {
+  background-color: #D6316A;
+}
