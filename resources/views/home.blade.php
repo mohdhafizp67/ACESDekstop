@@ -2,7 +2,7 @@
 
 @section('content')
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #000;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -151,6 +151,7 @@
     </div>
     <div class="col-md-5">
       <div style="padding: 10px;"></div>
+
       <div class="card text-white bg-success mb-3" style=" background-color: #5e0080 !important;">
         <div class="card-header" style="background-color: #5e0080 !important; font-weight: bold; font-size: 120%;">Pengumuman</div>
         <div class="card-body list-group p-2" style="overflow:auto;height:300px;width:100%; ">
@@ -175,6 +176,7 @@
     </div>
     <div class="col-md-4">
       <div style="padding: 10px;"></div>
+
       <div class="card text-white bg-success mb-3" style="max-width: 18rem; background-color: #5e0080 !important;">
         <div class="card-header" style="background-color: #5e0080 !important; font-weight: bold; font-size: 120%;">Mesej</div>
         <div class="card-body list-group p-2" style="overflow:auto;height:300px;width:100%; ">
@@ -190,6 +192,7 @@
             </a>
             <div style="padding: 2px;"></div>
             @endforeach
+
 
         </div>
       </div>

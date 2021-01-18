@@ -10,15 +10,15 @@
 	<div class="row">
 		<div class="col-md-4" style="background-color: #000;">
 			<center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 35%;"/></center>
-			<p class="text-center" style="color: #fff; padding-bottom: 19%; padding-top: 20%;">
+			<p class="text-center" style="color: #fff; padding-bottom: 20%; padding-top: 20%; text-transform: uppercase;">
 				Pusat Kecemerlangan Teknologi Pintar Asia (ACES) di bawah Majlis Pembangunan Wilayah Ekonomi Pantai Timur (ECERDC) merancang untuk mengembangkan aplikasi berdasarkan  karya sebagai alat untuk untuk menyebarkan kesedaran dan juga berfungsi sebagai pengenalan kepada industri 4.0 (I4.0) kepada pelajar Tingkatan 5 yang terpilih.
 			</p>
 			<p style="color: #fff;">
 				Pertolongan
-			</p><br>
+			</p>
 			<p style="color: #fff;">
 				Syarat
-			</p><br>
+			</p>
 			<p style="color: #fff;">
 				Kerahsiaan
 			</p><br>
@@ -40,7 +40,7 @@
 					</button>
 				</div> -->
 			</div>
-			<h4 style="color: #fff; font-size: 35px; text-align: center">
+			<h4 style="color: #fff; font-size: 35px; text-align: center; text-transform: uppercase;">
 				Daftar Masuk
 			</h4>
       <div class="card-body">
