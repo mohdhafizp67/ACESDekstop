@@ -2,7 +2,7 @@
 
 @section('content')
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #000;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -89,7 +89,7 @@
       <div style="padding: 10px;"></div>
       <div class="card">
             <h5 class="card-header" style="font-Weight: bold;">Pengumuman</h5>
-            <div class="card-body list-group" style="overflow:auto;height:270px;width:103%;">
+            <div class="card-body list-group" style="overflow:auto;height:270px;width:100%;">
               @foreach($announcement as $data)
 
                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -112,7 +112,7 @@
       <div style="padding: 10px;"></div>
       <div class="card">
             <h5 class="card-header" style="font-Weight: bold;">Mesej</h5>
-            <div class="card-body list-group" style="overflow:auto;height:270px;width:103%;">
+            <div class="card-body list-group" style="overflow:auto;height:270px;width:100%;">
               @foreach($announcement as $data)
 
                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">

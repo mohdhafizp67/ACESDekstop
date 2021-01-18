@@ -15,10 +15,10 @@
 			</p>
 			<p style="color: #fff;">
 				Pertolongan
-			</p><br>
+			</p>
 			<p style="color: #fff;">
 				Syarat
-			</p><br>
+			</p>
 			<p style="color: #fff;">
 				Kerahsiaan
 			</p><br>
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 			<h4 style="color: #fff; font-size: 35px;text-align: center;">
-				Log Masuk Ke IR 4.0
+				Log Masuk Ke I 4.0
 			</h4>
       <div class="card-body">
         <div class="row">
