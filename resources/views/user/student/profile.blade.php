@@ -24,7 +24,7 @@
     <div class="container-fluid" >
       <div class="row" style="background-image: url({{asset('concept/images/profile/bg.jpeg')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-top: 5%;">
         <div class="col-md-12">
-          <h1 style="margin-left: -80%; padding-bottom: 7%; color: #fff;">
+          <h1 style="margin-left: -80%; padding-bottom: 9%; color: #fff;">
 						Profil
 					</h1>
         </div>
@@ -39,17 +39,21 @@
           </button>
         </div>
         <div class="col-md-3">
-
+          <button type="button" class="btn btn-success" style="margin-top: 0%;margin-left: 0%; border-radius: 25px;">
+            <a href="#">Statistik</a>
+          </button>
         </div>
         <div class="col-md-3">
-
+          <button type="button" class="btn btn-success" style="margin-top: 0%;margin-left: 0%; border-radius: 25px;">
+            <a href="#">Pencapaian</a>
+          </button>
         </div>
       </div>
 
 	<div class="row">
-		<div class="col-md-4" style="background-image: url({{asset('concept/images/permainan/Picture2.png')}}); background-position: 100% 40%;background-repeat: no-repeat;background-size: cover; padding-top: 2%; padding-left: 1%; margin-left: 0%;">
-      <h3 style="padding-bottom: 5%; font-weight: bold; color: #fff;">Pelajaran</h3>
-      <p style="padding-bottom: 13%; color: #fff;">Lorem Ipsum</p>
+		<div class="col-md-4">
+      <h3 style="padding-bottom: 5%; font-weight: bold; color: #000;">Pelajaran</h3>
+      <p style="padding-bottom: 13%; color: #000;">Lorem Ipsum</p>
       <div class="progress blue" style="margin-bottom: 15%;">
                     <span class="progress-left">
                         <span class="progress-bar"></span>
@@ -62,9 +66,9 @@
 
 
 		</div>
-    <div class="col-md-4" style="background-image: url({{asset('concept/images/permainan/Picture9.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover; padding-top: 2%; padding-left: 1%; margin-left: 0%;">
-      <h3 style="padding-bottom: 5%; font-weight: bold; color: #fff;">Kuiz</h3>
-      <p style="padding-bottom: 13%; color: #fff;">Lorem Ipsum</p>
+    <div class="col-md-4">
+      <h3 style="padding-bottom: 5%; font-weight: bold; color: #000;">Kuiz</h3>
+      <p style="padding-bottom: 13%; color: #000;">Lorem Ipsum</p>
       <div class="progress blue">
                     <span class="progress-left">
                         <span class="progress-bar"></span>
@@ -76,9 +80,9 @@
                 </div>
 
 		</div>
-    <div class="col-md-4" style="background-image: url({{asset('concept/images/permainan/Picture11.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover; padding-top: 2%; padding-left: 1%; margin-left: 0%;">
-      <h3 style="padding-bottom: 5%; font-weight: bold; color: #fff;">Permainan</h3>
-      <p style="padding-bottom: 13%; color: #fff;">Lorem Ipsum</p>
+    <div class="col-md-4">
+      <h3 style="padding-bottom: 5%; font-weight: bold; color: #000;">Permainan</h3>
+      <p style="padding-bottom: 13%; color: #000;">Lorem Ipsum</p>
       <div class="progress blue">
                     <span class="progress-left">
                         <span class="progress-bar"></span>

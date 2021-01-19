@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap 4, from LayoutIt!</title>
+    <title>Kemaskini Profil</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
@@ -21,13 +21,21 @@
   </head>
   <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-image: url({{asset('concept/images/permainan/drone1.jpg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 	<div class="row">
-		<div class="col-md-12" style="padding-top: 8%; padding-bottom: 8%; background-image: url({{asset('concept/images/permainan/drone1.jpg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
-      <h2 style="color: #fff; text-align: justify; font-weight: bold;">
+		<div class="col-md-12" style="padding-top: 5%; padding-bottom: 0%;">
+      <h2 style="color: #fff; text-align: justify; font-weight: bold; font-size: 35px;">
 				Kemaskini Profil
 			</h2>
-			<form role="form" style="padding: 15px; text-align: justify;" action="{{route('user.update', $user->id)}}" method="POST">
+
+		</div>
+	</div>
+  <div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
+      <form role="form" style="padding: 15px; text-align: justify;" action="{{route('user.update', $user->id)}}" method="POST">
         @csrf
         <div class="form-group">
 
@@ -60,29 +68,56 @@
 					<input type="text" name=alamat class="form-control bg-light" placeholder="Input Address" value="{{$user->alamat}}">
 				</div>
 
-        <div class="form-group">
+        <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
 
-          <label for="exampleInputPassword1" style="color: #fff;font-weight: bold;">
-            Poskod
-          </label>
-          <input type="text" name=poskod class="form-control bg-light" placeholder="Input Postcode" value="{{$user->poskod}}">
+            <label for="exampleInputPassword1" style="color: #fff;font-weight: bold;">
+              Poskod
+            </label>
+            <input type="text" name=poskod class="form-control bg-light" placeholder="Input Postcode" value="{{$user->poskod}}">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+
+            <label for="exampleInputPassword1" style="color: #fff;font-weight: bold;">
+              Negeri
+            </label>
+            <input type="text" name=negeri class="form-control bg-light" placeholder="Input State" value="{{$user->negeri}}">
+          </div>
+        </div>
         </div>
 
-        <div class="form-group">
 
-          <label for="exampleInputPassword1" style="color: #fff;font-weight: bold;">
-            Negeri
-          </label>
-          <input type="text" name=negeri class="form-control bg-light" placeholder="Input State" value="{{$user->negeri}}">
-        </div>
+
+
+          <div class="form-group">
+              <label style="color: #fff;font-weight: bold;">Muatnaik Gambar Profil</label>
+              <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="gambar_profile" onchange="return fileValidation('gambar_profile')" name="gambar_profile" placeholder="Muatnaik Gambar">
+                  <label class="custom-file-label bg-light" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Muatnaik fail</label>
+              </div>
+              <small id="saiz_data" class="form-text text-secondary">Muat naik gambar tidak melebihi 50MB</small>
+
+              @error('gambar_profile')
+              <div class="alert alert-danger">
+                <strong>{{ $message }}</strong>
+              </div>
+              @enderror
+          </div>
+
 
 
         <div class="u-align-center u-form-group u-form-submit">
           <button class="btn btn-success" type="submit">HANTAR</button>
         </div>
 			</form>
-		</div>
-	</div>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+  </div>
 </div>
 
     <script src="js/jquery.min.js"></script>

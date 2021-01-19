@@ -16,9 +16,14 @@ class LessonController extends Controller
       return view('lesson.courses');
   }
 
-  public function courseslatest()
+  public function vrlessons()
   {
-      return view('lesson.courses-latest');
+      return view('lesson.vrlessons');
+  }
+
+  public function lokasivr()
+  {
+      return view('lesson.lokasivr');
   }
 
   public function listlesson()

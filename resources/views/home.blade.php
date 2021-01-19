@@ -21,18 +21,18 @@
 
     <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12" style="background-image: url({{asset('concept/images/StudentDashboard/HeaderBg.jpeg')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-top: 2%; padding-left: 1%; margin-left: 0%;">
+		<div class="col-md-12" style="background-image: url({{asset('concept/images/mascot.jpg')}}); background-position: center top;background-repeat: no-repeat;background-size: cover; padding-top: 4.5%; padding-left: 1%; margin-left: 0%;">
 
-        <h1 style="text-align: justify; font-size: 60px; color: #fff; font-weight:bold;">
+        <h1 style="text-align: justify; font-size: 60px; color: #fff; font-weight:bold; padding-top: 5%;">
   				ACES <font color="#ff0000">i 4.0</font> <br>
-          <p style="text-align: justify;padding-bottom: 13%; font-size: 25px; color: #fff;">
+          <p style="text-align: justify;padding-bottom: 15%; font-size: 20px; color: #fff;">
     				HALAMAN UTAMA
     			</p>
   			</h1>
 
         <div style="position: absolute;  top: 70px;  right: 1px;">
           <a href="https://aces.ecerdc.com.my/aces2/">
-            <button type="button" class="btn btn-danger" style="margin-top: -30%;margin-left: -25%; border-radius: 5px; font-size: 20px;">
+            <button type="button" class="btn btn-danger" style="margin-top: 0%;margin-left: -25%; border-radius: 5px; font-size: 15px;">
               TENTANG ACES
             </button>
           </a>
