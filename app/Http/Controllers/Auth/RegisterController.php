@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use App\Models\Student;
+use App\Models\Districts;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -48,6 +49,14 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+
+     public function showRegistrationForm()
+     {
+         $districts=Districts:: get();
+         // dd($districts);
+         return view('auth.register', compact('districts'));
+     }
+
     protected function validator(array $data)
     {
       return Validator::make($data, [
