@@ -102,63 +102,65 @@
                                 </li>
 
 
-                                <li class="nav-item dropdown nav-user">
-                                    <!-- <a class="mb-0 text-white nav-user-name" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}}</a> -->
+                                <!-- <li class="nav-item dropdown nav-user">
                                     <span style="color: white !important; font-size: 16px !important;">{{Auth::user()->name}}</span>
 
                                     <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
 
-                                        <!-- <a class="dropdown-item" href="{{route('user.profile.edit')}}"><i class="fas fa-user mr-2"></i>Profile</a>
-                                        <a class="dropdown-item" href="{{ route('user.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a> -->
+
                                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                         <i class="fas fa-power-off mr-2"></i>Logout</a>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                         </form>
                                     </div>
+                                </li> -->
+                                <div style="padding: 15px;"></div>
+
+                                <li class="nav-divider" style="text-align: center !important; font-size: 120%">
+                                    <font color="red">{{Auth::user()->name}}</font>
                                 </li>
-                                <li class="nav-divider">
-                                    <font color="white">Main Menu</font>
+
+                                <li class="nav-item ">
+                                  <a class="nav-link" href="{{route('home')}}"><i class="fa fa-home" aria-hidden="true"></i>HALAMAN UTAMA</a>
                                 </li>
                                 <li class="nav-item ">
-                                  <a class="nav-link" href="{{route('home')}}"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a>
+                                  <a class="nav-link" href="{{ route('user.student.profile') }}"><i class="fas fa-user-circle"aria-hidden="true"></i>PROFIL PELAJAR</a>
                                 </li>
 
                                   <li class="nav-divider">
-                                      <font color="white">Activities</font>
+                                      <font color="white">AKTIVITI</font>
                                   </li>
 
                                   <li class="nav-item ">
 
 
 
-                                    <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>Pelajaran</a>
+                                    <a class="nav-link" href="{{route('lesson.courses')}}"><i class="fa fa-book" aria-hidden="true"></i>PELAJARAN</a>
 
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{route('quiz.choose-quiz')}}"><i class="fa fa-question-circle" aria-hidden="true"></i>Kuiz</a>
+                                    <a class="nav-link" href="{{route('quiz.choose-quiz')}}"><i class="fa fa-question-circle" aria-hidden="true"></i>KUIZ</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{route('user.game.demo')}}"><i class="fa fa-gamepad" aria-hidden="true"></i>Liga Permainan</a>
+                                    <a class="nav-link" href="{{route('user.game.demo')}}"><i class="fa fa-gamepad" aria-hidden="true"></i>PERMAINAN</a>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Juara</a>
+                                    <a class="nav-link" href="{{ route('activities.leaderboard') }}"><i class="fa fa-trophy" aria-hidden="true"></i>CARTA JUARA</a>
                                   </li>
 
 
 
                                   <li class="nav-divider">
-                                      <font color="white">Others</font>
+                                      <font color="white">LAIN-LAIN</font>
                                   </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>Maklum Balas</a>
-                                  </li>
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('user.student.profile') }}"><i class="fas fa-user-circle"aria-hidden="true"></i>Profil Pelajar</a>
+                                    <a class="nav-link" href="{{route('others.feedback')}}"><i class="fas fa-comments" aria-hidden="true"></i>MAKLUM BALAS</a>
                                   </li>
 
+
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i> Log Keluar</a>
+                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i>LOG KELUAR</a>
                                   </li>
                                   <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
@@ -475,13 +477,13 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                             Copyright © 2020 Artanis Cloud. All rights reserved. Dashboard by Warga Artanis.
+                          Hakcipta Terpelihara 2021 © Artanis Cloud Sdn Bhd
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="text-md-right footer-links d-none d-sm-block">
-                                <a href="javascript: void(0);">About</a>
-                                <a href="javascript: void(0);">Support</a>
-                                <a href="javascript: void(0);">Contact Us</a>
+                                <a href="javascript: void(0);">Tentang Aces</a>
+                                <a href="javascript: void(0);">Sokongan</a>
+                                <a href="javascript: void(0);">Hubungi Kami</a>
                             </div>
                         </div>
                     </div>

@@ -24,16 +24,16 @@
 		<div class="col-md-12" style="background-image: url({{asset('concept/images/StudentDashboard/HeaderBg.jpeg')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-top: 2%; padding-left: 1%; margin-left: 0%;">
 
         <h1 style="text-align: justify; font-size: 60px; color: #fff; font-weight:bold;">
-  				ACES <font color="#CF00D8">I 4.0</font> <br>
-          <p style="text-align: justify;padding-bottom: 13%; font-size: 30px; color: #fff;">
-    				Halaman Utama
+  				ACES <font color="#ff0000">i 4.0</font> <br>
+          <p style="text-align: justify;padding-bottom: 13%; font-size: 25px; color: #fff;">
+    				HALAMAN UTAMA
     			</p>
   			</h1>
 
         <div style="position: absolute;  top: 70px;  right: 1px;">
           <a href="https://aces.ecerdc.com.my/aces2/">
             <button type="button" class="btn btn-danger" style="margin-top: -30%;margin-left: -25%; border-radius: 5px; font-size: 20px;">
-              Tentang ACES
+              TENTANG ACES
             </button>
           </a>
         </div>
@@ -44,7 +44,7 @@
           </div>
           <div class="col-md-5">
             <div class="card text-white bg-success mb-3" style=" background-color: #5e0080 !important;">
-              <div class="card-header" style="background-color: #5e0080 !important; font-weight: bold; font-size: 130%;">Pengumuman</div>
+              <div class="card-header" style="background-color: #5e0080 !important; font-weight: bold; font-size: 130%;">PENGUMUMAN</div>
               <div class="card-body list-group p-2" style="overflow:auto;height:300px;width:100%; ">
                 @foreach($announcement as $data)
 
@@ -69,7 +69,7 @@
           </div>
           <div class="col-md-4">
             <div class="card text-white bg-success mb-3" style=" background-color: #5e0080 !important;">
-              <div class="card-header" style="background-color: #5e0080 !important; font-weight: bold; font-size: 130%;">Mesej</div>
+              <div class="card-header" style="background-color: #5e0080 !important; font-weight: bold; font-size: 130%;">MESEJ</div>
               <div class="card-body list-group p-2" style="overflow:auto;height:300px;width:100%; ">
                 @foreach($announcement as $data)
 
@@ -93,7 +93,7 @@
 
           </div>
         </div>
-        <div style="padding: 20px;"></div>
+        <div style="padding: 0px;"></div>
       <!-- @if(Auth::user()->profile_picture == null)
       <p style="color: #fff;"><img alt="Bootstrap Image Preview" src="{{asset('concept/images/videopelajaran/FaceIcon.png')}}" style="width: 10%; margin-left: -72%; padding-bottom: 5%;">{{Auth::user()->name}}</p>
       @else
