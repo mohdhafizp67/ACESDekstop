@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,353 +17,349 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-      <link rel="stylesheet" href="{{ asset('css/cartajohan.css') }} ">
+    <link rel="stylesheet" href="{{ asset('css/cartajohan.css') }} ">
 
   </head>
+
   <body>
 
-    <div class="container-fluid" style="background-image: url({{asset('concept/images/StudentDashboard/HeaderBg.jpeg')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-top: 2%; padding-left: 1%; margin-left: 0%;">
-	<div class="row" style="padding-top: 5%;">
-		<div class="col-md-12">
-			<h3 style="text-align: justify; color: #fff; font-size: 35px; font-weight: bold; padding-bottom: 5%;">
+    <div class="container-fluid" style="background-image: url({{asset('concept/images/profile/bg.jpeg')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+	<div class="row" style="padding-top: 3%;" >
+		<div class="col-md-8">
+			<h3 style="font-size: 30px; text-align: justify; color: #fff;">
 				Carta Juara
 			</h3>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-2">
+		<div class="col-md-4">
 		</div>
-		<div class="col-md-8" style="padding-bottom: 4%;">
-			<table class="table table-hover table-bordered table-sm table-carta">
-				<thead>
-					<tr>
-						<th style="color: #fff; font-size: 20px;">
-							Kedudukan
-						</th>
-						<th style="color: #fff; font-size: 20px;">
-							Gambar
-						</th>
-						<th style="color: #fff; font-size: 20px;">
-							Nama
-						</th>
-						<th style="color: #fff; font-size: 20px;">
-							Sekolah
-						</th>
-            <th style="color: #fff; font-size: 20px;">
-							Negeri
-						</th>
-            <th style="color: #fff; font-size: 20px;">
-							Mata
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="table-johan">
-						<td>
-							1
-						</td>
-						<td>
-							{{Auth::user()->profile_picture}}
-						</td>
-						<td>
-							{{Auth::user()->name}}
-						</td>
-						<td>
-							Sekolah
-						</td>
+	</div>
+  <div class="row">
+    <div class="col-md-12" style="text-align: justify">
+      @if(Auth::user()->profile_picture != null)
+      <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:50px; width:50px;">
+      @else
+      <img src="{{asset('concept/images/cartajohan/FaceIcon.png')}}"  class="profile-avatar" style="height:50px; width:50px;">
+      @endif
+      <h3 style="font-size: 20px; text-align: justify; color: #fff;">
+        {{Auth::user()->name}}
+      </h3>
+    </div>
+  </div>
+	<div class="row">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10" style="padding-bottom: 2%;">
+      <table class="table table-sm table-bordered table-head">
+        <thead>
+          <tr>
+            <th style="color: #fff;">
+              Kedudukan
+            </th>
+            <th style="color: #fff;">
+              Sekolah
+            </th>
+            <th style="color: #fff;">
+              Negeri
+            </th>
+            <th style="color: #fff;">
+              Mata
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-first">
             <td>
-							Negeri
-						</td>
+              199
+            </td>
             <td>
-							Mata
-						</td>
-					</tr>
-          <tr class="table-johan">
+              SMK Kuantan
+            </td>
+            <td>
+              Pahang
+            </td>
+            <td>
+              1000
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+
+	</div>
+	<div class="row" style="padding-bottom: 2%;">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10" style="overflow-y:auto;height:350px;width:100%;">
+      <table class="table table-sm table-bordered">
+        <thead class="table-head">
+          <tr>
+            <th style="color: #fff;">
+              Kedudukan
+            </th>
+            <th style="color: #fff;">
+              Pelajar
+            </th>
+            <th style="color: #fff;">
+              Sekolah
+            </th>
+            <th style="color: #fff;">
+              Negeri
+            </th>
+            <th style="color: #fff;">
+              Mata
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-first">
+            <td>
+              1
+            </td>
+            <td>
+              @if(Auth::user()->profile_picture != null)
+              <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
+              @else
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              @endif <br>
+              <!-- {{Auth::user()->name}} -->
+              Mohd Amirul
+            </td>
+            <td>
+              SMK Kelantan
+            </td>
+            <td>
+              Kelantan
+            </td>
+            <td>
+              3000
+            </td>
+          </tr>
+          <tr class="table-second">
             <td>
               2
             </td>
             <td>
-              {{Auth::user()->profile_picture}}
+              @if(Auth::user()->profile_picture != null)
+              <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
+              @else
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              @endif <br>
+              <!-- {{Auth::user()->name}} -->
+              Khairul Anwar
             </td>
             <td>
-              {{Auth::user()->name}}
+              SMK Pahang
             </td>
             <td>
-              Sekolah
+              Pahang
             </td>
             <td>
-              Negeri
-            </td>
-            <td>
-              Mata
+              2900
             </td>
           </tr>
-          <tr class="table-johan">
+          <tr class="table-first">
             <td>
               3
             </td>
             <td>
-              {{Auth::user()->profile_picture}}
+              @if(Auth::user()->profile_picture != null)
+              <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
+              @else
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              @endif <br>
+              <!-- {{Auth::user()->name}} -->
+              Siti Syazwani
             </td>
             <td>
-              {{Auth::user()->name}}
+              SMK Pahang
             </td>
             <td>
-              Sekolah
+              Pahang
             </td>
             <td>
-              Negeri
-            </td>
-            <td>
-              Mata
+              2800
             </td>
           </tr>
-          <tr class="table-johan">
+          <tr class="table-second">
             <td>
               4
             </td>
             <td>
-              {{Auth::user()->profile_picture}}
+              @if(Auth::user()->profile_picture != null)
+              <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
+              @else
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              @endif <br>
+              <!-- {{Auth::user()->name}} -->
+              Muhammad Zaki
             </td>
             <td>
-              {{Auth::user()->name}}
+              SMK Pahang
             </td>
             <td>
-              Sekolah
+              Pahang
             </td>
             <td>
-              Negeri
-            </td>
-            <td>
-              Mata
+              2700
             </td>
           </tr>
-          <tr class="table-johan">
+          <tr class="table-first">
             <td>
               5
             </td>
             <td>
-              {{Auth::user()->profile_picture}}
+              @if(Auth::user()->profile_picture != null)
+              <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
+              @else
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              @endif <br>
+              <!-- {{Auth::user()->name}} -->
+              Nur Syaza
             </td>
             <td>
-              {{Auth::user()->name}}
+              SMK Pahang
             </td>
             <td>
-              Sekolah
+              Pahang
             </td>
             <td>
-              Negeri
-            </td>
-            <td>
-              Mata
+              2500
             </td>
           </tr>
-          <tr class="table-johan">
+          <tr class="table-second">
             <td>
               6
             </td>
             <td>
-              {{Auth::user()->profile_picture}}
+              @if(Auth::user()->profile_picture != null)
+              <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
+              @else
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              @endif <br>
+              <!-- {{Auth::user()->name}} -->
+              Nur Haikal
             </td>
             <td>
-              {{Auth::user()->name}}
+              SMK Pahang
             </td>
             <td>
-              Sekolah
+              Pahang
             </td>
             <td>
-              Negeri
-            </td>
-            <td>
-              Mata
+              2100
             </td>
           </tr>
-          <tr class="table-johan">
+
+          <tr class="table-first">
             <td>
               7
             </td>
             <td>
-              {{Auth::user()->profile_picture}}
+              @if(Auth::user()->profile_picture != null)
+              <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
+              @else
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              @endif <br>
+              <!-- {{Auth::user()->name}} -->
+              Muhammad Zainol
             </td>
             <td>
-              {{Auth::user()->name}}
+              SMK Pahang
             </td>
             <td>
-              Sekolah
+              Pahang
             </td>
             <td>
-              Negeri
-            </td>
-            <td>
-              Mata
+              2000
             </td>
           </tr>
-          <tr class="table-johan">
+
+          <tr class="table-second">
             <td>
               8
             </td>
             <td>
-              {{Auth::user()->profile_picture}}
+              @if(Auth::user()->profile_picture != null)
+              <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
+              @else
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              @endif <br>
+              <!-- {{Auth::user()->name}} -->
+              Nur Qaisarah
             </td>
             <td>
-              {{Auth::user()->name}}
+              SMK Pahang
             </td>
             <td>
-              Sekolah
+              Pahang
             </td>
             <td>
-              Negeri
-            </td>
-            <td>
-              Mata
+              1700
             </td>
           </tr>
-          <tr class="table-johan">
+
+          <tr class="table-first">
             <td>
               9
             </td>
             <td>
-              {{Auth::user()->profile_picture}}
+              @if(Auth::user()->profile_picture != null)
+              <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
+              @else
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              @endif <br>
+              <!-- {{Auth::user()->name}} -->
+              Sit Zulaikha
             </td>
             <td>
-              {{Auth::user()->name}}
+              SMK Pahang
             </td>
             <td>
-              Sekolah
+              Pahang
             </td>
             <td>
-              Negeri
-            </td>
-            <td>
-              Mata
+              1500
             </td>
           </tr>
 
-          <tr class="table-user">
+          <tr class="table-second">
             <td>
-              500
+              10
             </td>
             <td>
-              {{Auth::user()->profile_picture}}
+              @if(Auth::user()->profile_picture != null)
+              <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
+              @else
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              @endif <br>
+              <!-- {{Auth::user()->name}} -->
+              Naqiurudin
             </td>
             <td>
-              {{Auth::user()->name}}
+              SMK Pahang
             </td>
             <td>
-              Sekolah
+              Pahang
             </td>
             <td>
-              Negeri
-            </td>
-            <td>
-              Mata
+              1200
             </td>
           </tr>
 
-				</tbody>
-			</table>
-		</div>
-		<div class="col-md-2">
-		</div>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+
 	</div>
-	<!-- <div class="row">
-		<div class="col-md-2">
-		</div>
-		<div class="col-md-8">
-			<table class="table table-hover table-striped">
-				<thead>
-					<tr>
-						<th>
-							#
-						</th>
-						<th>
-							Product
-						</th>
-						<th>
-							Payment Taken
-						</th>
-						<th>
-							Status
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							1
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							01/04/2012
-						</td>
-						<td>
-							Default
-						</td>
-					</tr>
-					<tr class="table-active">
-						<td>
-							1
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							01/04/2012
-						</td>
-						<td>
-							Approved
-						</td>
-					</tr>
-					<tr class="table-success">
-						<td>
-							2
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							02/04/2012
-						</td>
-						<td>
-							Declined
-						</td>
-					</tr>
-					<tr class="table-warning">
-						<td>
-							3
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							03/04/2012
-						</td>
-						<td>
-							Pending
-						</td>
-					</tr>
-					<tr class="table-danger">
-						<td>
-							4
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							04/04/2012
-						</td>
-						<td>
-							Call in to confirm
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="col-md-2">
-		</div>
-	</div> -->
 </div>
 
     <script src="js/jquery.min.js"></script>

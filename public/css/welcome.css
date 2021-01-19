@@ -342,7 +342,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #292b2c;
-  background-color: #fff;
+  background-color: #000000;
   text-transform: uppercase;
 }
 
@@ -356,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin-top: 0;
+  margin-top: 2%;
   margin-bottom: 1rem;
 }
 
@@ -9327,5 +9327,12 @@ video {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.5rem;
+  opacity: 0.5;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #232121;
+  color: white;
 }

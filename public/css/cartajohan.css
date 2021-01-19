@@ -32807,3 +32807,21 @@ a.u-link.u-text-hover-grey-90:hover {
 .table-user > td {
   background-color: #D6316A;
 }
+
+.table-head {
+  background-color: #2E2E2E;
+}
+
+.table-first {
+  background-color: #3BF6CD;
+}
+.table-second {
+  background-color: #3CDAFB;
+}
+
+/* .scroll
+{
+  width: 5px;
+  height: 10 px;
+  overflow-y:scroll;
+} */

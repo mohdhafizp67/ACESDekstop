@@ -29,10 +29,10 @@
 			<div class="row">
 				<div class="col-md-4">
 				</div>
-				<div class="col-md-4" style="padding-top: 7%;">
+				<div class="col-md-4" style="padding-top: 4%;">
 					<img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;">
 					<p style="padding-top: 10%; padding-bottom: 5%; color: #fff;">
-						Pusat Kecemerlangan Teknologi Pintar Asia (ACES) di bawah Majlis Pembangunan Wilayah Ekonomi Pantai Timur (ECERDC) merancang untuk mengembangkan aplikasi berdasarkan  karya sebagai alat untuk untuk menyebarkan kesedaran dan juga berfungsi sebagai pengenalan kepada industri 4.0 (I4.0) kepada pelajar Tingkatan 5 yang terpilih.
+						Aces I 4.0 merupakan satu inisiatif yang mengguna pakai sistem elearning dan gamifikasi untuk memberi ilmu pengetahuan secara interaktif kepada pelajar pelajar tingkatan 5 di bawah kelolaan ecerdc.
 					</p>
 				</div>
 				<div class="col-md-4">
@@ -62,12 +62,17 @@
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-3">
-					<img alt="Bootstrap Image Preview" src="{{ asset('concept/images/aces.png') }}">
+					<img alt="Bootstrap Image Preview" src="{{ asset('concept/images/aceswhite.png') }}" style="width: 24%; height: auto;">
 				</div>
 			</div>
 		</div>
 	</div>
+  <footer>
+    <p>COPYRIGHT © 2021 ARTANIS CLOUD. ALL RIGHTS RESERVED.<br>
+  </footer>
 </div>
+
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

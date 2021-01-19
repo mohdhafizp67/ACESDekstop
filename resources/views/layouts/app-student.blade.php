@@ -47,13 +47,13 @@
 <body>
     <div id="app">
         <main class="">
-          <div class="dashboard-main-wrapper">
+          <div class="dashboard">
               <!-- ============================================================== -->
               <!-- navbar -->
               <!-- ============================================================== -->
               <div class="dashboard-header">
-                  <nav class="navbar  fixed-top" style="background-color:#fff";>
-                      <a class="navbar-brand" href="{{ route('home') }}">ACES</a>
+                  <nav class="navbar  fixed-top">
+                      <a class="navbar"></a>
 
 
 
@@ -88,7 +88,7 @@
               <!-- ============================================================== -->
               <!-- left sidebar -->
               <!-- ============================================================== -->
-              <div class="nav-left-sidebar" style="background-color: #232121";>
+              <div class="nav-left-sidebar" style="background-color: #232121; margin-top: -5%">
                   <div class="menu-list">
                       <nav class="navbar navbar-expand-lg navbar-light">
                           <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
@@ -117,7 +117,7 @@
                                 </li> -->
                                 <div style="padding: 15px;"></div>
 
-                                <li class="nav-divider" style="text-align: center !important; font-size: 120%">
+                                <li class="nav-divider" style="text-align: center !important; font-size: 110%">
                                     <font color="red">{{Auth::user()->name}}</font>
                                 </li>
 
