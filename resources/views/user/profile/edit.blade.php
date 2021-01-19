@@ -35,7 +35,7 @@
 
     </div>
     <div class="col-md-8">
-      <form role="form" style="padding: 15px; text-align: justify;" action="{{route('user.update', $user->id)}}" method="POST">
+      <form role="form" style="padding: 15px; text-align: justify;" action="{{route('user.update', $user->id)}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
 
@@ -59,6 +59,14 @@
 					</label>
 				  <input type="email" name=email class="form-control bg-light" placeholder="Input Email" value="{{$user->email}}">
 				</div>
+
+        <div class="form-group">
+
+          <label for="exampleInputEmail1" style="color: #fff;font-weight: bold;">
+            Nombor Telefon
+          </label>
+          <input type="text" name=phone class="form-control bg-light" placeholder="Input Phone No" value="{{$user->phone}}">
+        </div>
 
 				<div class="form-group">
 
@@ -92,7 +100,7 @@
 
 
 
-          <div class="form-group">
+          <!-- <div class="form-group">
               <label style="color: #fff;font-weight: bold;">Muatnaik Gambar Profil</label>
               <div class="custom-file">
                   <input type="file" class="custom-file-input" id="gambar_profile" onchange="return fileValidation('gambar_profile')" name="gambar_profile" placeholder="Muatnaik Gambar">
@@ -105,8 +113,24 @@
                 <strong>{{ $message }}</strong>
               </div>
               @enderror
-          </div>
+          </div> -->
 
+
+        <div class="form-group">
+          <label for="exampleInputPassword1" style="color: #fff;font-weight: bold;">
+            Muatnaik Gambar Profil
+          </label>
+
+          <div class="form-group">
+              <div class="input-group">
+                <div class="custom-file">
+                         <input type="file" id="img" name="gambar" accept="gambar/*" style="width:100%" </input>
+                          <label class="" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02"</label>
+                      </div>
+
+              </div>
+          </div>
+        </div>
 
 
         <div class="u-align-center u-form-group u-form-submit">

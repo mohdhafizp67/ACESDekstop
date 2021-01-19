@@ -186,10 +186,6 @@
                                   </li>
 
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('admin.others.announcement.list') }}"><i class="fa fa-bullhorn" aria-hidden="true"></i>Pengumuman</a>
-                                  </li>
-
-                                  <li class="nav-item ">
                                     <a class="nav-link" href="{{ route('admin.others.audit-trail.audit-trail-log') }}"><i class="fas fa-signal" aria-hidden="true"></i> Log Audit Trail </a>
                                   </li>
                                   <!-- <li class="nav-item ">
