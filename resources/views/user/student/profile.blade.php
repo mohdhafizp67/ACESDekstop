@@ -35,9 +35,9 @@
 						Profil
 					</h1>
         </div>
-        <div class="col-md-12" style="text-align: justify; padding-bottom: 5%; margin-left: 1%;">
+        <div class="col-md-12" style="text-align: justify; padding-bottom: 5%; margin-left: 5%;">
           @if(Auth::user()->profile_picture != null)
-          <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:100px; width:40px; ">
+          <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:100px; width:100px; border-radius: 25px;">
           @else
           <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:auto; width:10%; ">
           @endif

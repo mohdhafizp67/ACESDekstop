@@ -59,9 +59,9 @@
 
                           <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-top: 3%;">
                             @if(Auth::user()->profile_picture != null)
-                            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px; ">
+                            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:60px; width:60px; border-radius: 25px;">
                             @else
-                            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:50px; width:50px; border-radius: 25px;">
+                            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:60px; width:60px; border-radius: 25px;">
                             @endif
                           </a>
 
