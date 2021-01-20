@@ -10,7 +10,7 @@
 	<div class="row">
 		<div class="col-md-4" style="background-color: #000;">
 			<center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 25%; padding-bottom: 15%;"/></center>
-			<p class="text-center" style="color: #fff; padding-bottom: 25%; padding-top: 10%;">
+			<p class="text-center" style="color: #fff; padding-bottom: 30%; padding-top: 22%;">
 				Aces I 4.0 merupakan satu inisiatif yang mengguna pakai sistem elearning dan gamifikasi untuk memberi ilmu pengetahuan secara interaktif kepada pelajar pelajar tingkatan 5 di bawah kelolaan ecerdc.
 			</p>
 			<p style="color: #fff;">
@@ -23,8 +23,8 @@
 				Kerahsiaan
 			</p><br>
 		</div>
-		<div class="col-md-8" style="background-image: url({{asset('concept/images/login/robot.jpeg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
-			<div class="row" style="padding-bottom: 15%; padding-top: 5%;">
+		<div class="col-md-8" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+			<div class="row" style="padding-bottom: 15%; padding-top: 10%;">
 				<div class="col-md-6"  >
 
 				</div><br><br>

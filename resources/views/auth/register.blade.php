@@ -23,7 +23,7 @@
 				Kerahsiaan
 			</p><br>
 		</div>
-		<div class="col-md-8" style="background-image: url({{asset('concept/images/login/robot.jpeg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+		<div class="col-md-8" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 			<div class="row">
 				<div class="col-md-6"  >
 
