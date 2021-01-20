@@ -7,6 +7,7 @@ use Auth;
 use App\Models\Student;
 use App\Models\Announcement;
 
+
 class HomeController extends Controller
 {
     /**
@@ -39,4 +40,6 @@ class HomeController extends Controller
       }
 
     }
+
+
 }
