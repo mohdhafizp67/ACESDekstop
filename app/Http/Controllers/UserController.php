@@ -59,7 +59,7 @@ class UserController extends Controller
     $user->phone = request()->phone;
     $user->address = request()->alamat;
     $user->postcode = request()->poskod;
-    $user->state = request()->negeri  ;
+    $user->state = request()->negeri ;
 
     //upload profile picture
     // $upload = $request->file('gambar')->store('public/uploads');
