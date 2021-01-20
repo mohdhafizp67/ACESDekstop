@@ -38,6 +38,12 @@ Route::get('/vrlessons', [App\Http\Controllers\LessonController::class, 'vrlesso
 
 Route::get('/lokasivr', [App\Http\Controllers\LessonController::class, 'lokasivr'])->name('lesson.lokasivr');
 
+// Game
+Route::get('/karakter', [App\Http\Controllers\LessonController::class, 'karakter'])->name('lesson.karakter');
+
+Route::get('/videogame', [App\Http\Controllers\LessonController::class, 'videogame'])->name('lesson.videogame');
+
+
 //Quiz
 Route::get('/quiz/choose-quiz', [App\Http\Controllers\QuizController::class, 'chooseQuiz'])->name('quiz.choose-quiz');
 

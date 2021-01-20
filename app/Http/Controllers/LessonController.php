@@ -26,6 +26,19 @@ class LessonController extends Controller
       return view('lesson.lokasivr');
   }
 
+  // Game
+
+  public function karakter()
+  {
+      return view('lesson.karakter');
+  }
+  public function videogame()
+  {
+      return view('lesson.videogame');
+  }
+
+  // Game
+
   public function listlesson()
   {
       $lesson_list = Lesson::get();

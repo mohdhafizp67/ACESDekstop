@@ -1645,7 +1645,7 @@ Left Navigation Sidebar
 .nav-left-sidebar {
     position: fixed;
     width: 250px;
-    height: 100%;
+    height: 105%;
     top: 60px;
     overflow: auto;
     background-color: #fff;

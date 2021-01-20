@@ -2,7 +2,7 @@
 
 @section('content')
 <!DOCTYPE html>
-<html lang="en" style="background-color: #000;">
+<html lang="en" style="background-color: #232121;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,18 +21,18 @@
 
     <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12" style="background-image: url({{asset('concept/images/mascot.jpg')}}); background-position: center top;background-repeat: no-repeat;background-size: cover; padding-top: 4.5%; padding-left: 1%; margin-left: 0%;">
+		<div class="col-md-12" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: center top;background-repeat: no-repeat;background-size: cover; padding-top: 4.5%; padding-left: 1%; margin-left: 0%;">
 
-        <h1 style="text-align: justify; font-size: 60px; color: #fff; font-weight:bold; padding-top: 5%;">
+        <h1 style="text-align: justify; font-size: 80px; color: #fff; font-weight:bold; padding-top: 5%;">
   				ACES <font color="#ff0000">i 4.0</font> <br>
-          <p style="text-align: justify;padding-bottom: 15%; font-size: 20px; color: #fff;">
+          <p style="text-align: justify;padding-bottom: 11%; font-size: 20px; color: #fff;">
     				HALAMAN UTAMA
     			</p>
   			</h1>
 
         <div style="position: absolute;  top: 70px;  right: 1px;">
           <a href="https://aces.ecerdc.com.my/aces2/">
-            <button type="button" class="btn btn-danger" style="margin-top: 0%;margin-left: -25%; border-radius: 5px; font-size: 15px;">
+            <button type="button" class="btn btn-danger" style="margin-top: 30%;margin-left: -25%; border-radius: 5px; font-size: 15px;">
               TENTANG ACES
             </button>
           </a>
@@ -43,8 +43,8 @@
 
           </div>
           <div class="col-md-5">
-            <div class="card text-white bg-success mb-3" style=" background-color: #5e0080 !important;">
-              <div class="card-header" style="background-color: #5e0080 !important; font-weight: bold; font-size: 130%;">PENGUMUMAN</div>
+            <div class="card text-white bg-success mb-3" style=" background-color: #555457 !important;">
+              <div class="card-header" style="background-color: #232121 !important; font-weight: bold; font-size: 200%;">PENGUMUMAN</div>
               <div class="card-body list-group p-2" style="overflow:auto;height:300px;width:100%; ">
                 @foreach($announcement as $data)
 
@@ -60,7 +60,7 @@
                   @endforeach
 
               </div>
-              <div class="card-footer" style="background-color: #5e0080 !important;">
+              <div class="card-footer" style="background-color: #555457 !important;">
               </div>
             </div>
           </div>
@@ -68,8 +68,8 @@
 
           </div>
           <div class="col-md-4">
-            <div class="card text-white bg-success mb-3" style=" background-color: #5e0080 !important;">
-              <div class="card-header" style="background-color: #5e0080 !important; font-weight: bold; font-size: 130%;">MESEJ</div>
+            <div class="card text-white bg-success mb-3" style=" background-color: #555457 !important;">
+              <div class="card-header" style="background-color: #232121 !important; font-weight: bold; font-size: 200%;">MESEJ</div>
               <div class="card-body list-group p-2" style="overflow:auto;height:300px;width:100%; ">
                 @foreach($announcement as $data)
 
@@ -85,7 +85,7 @@
                   @endforeach
 
               </div>
-              <div class="card-footer" style="background-color: #5e0080 !important;">
+              <div class="card-footer" style="background-color: #555457 !important;">
               </div>
             </div>
           </div>

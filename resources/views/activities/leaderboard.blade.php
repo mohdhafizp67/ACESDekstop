@@ -4,7 +4,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #232121;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,46 +23,55 @@
 
   <body>
 
-    <div class="container-fluid" style="background-image: url({{asset('concept/images/profile/bg.jpeg')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+    <div class="container-fluid" style="background-image: url({{asset('concept/images/mascot3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 	<div class="row" style="padding-top: 3%;" >
 		<div class="col-md-8">
-			<h3 style="font-size: 30px; text-align: justify; color: #fff;">
+			<h3 style="font-size: 30px; font-weight: bold;text-align: justify; color: #fff;">
 				Carta Juara
 			</h3>
 		</div>
 		<div class="col-md-4">
 		</div>
 	</div>
-  <div class="row">
-    <div class="col-md-12" style="text-align: justify">
+  <div class="row" style="padding-bottom: 5%;">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-2">
       @if(Auth::user()->profile_picture != null)
-      <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:50px; width:50px;">
+      <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:100px; width:100px;">
       @else
-      <img src="{{asset('concept/images/cartajohan/FaceIcon.png')}}"  class="profile-avatar" style="height:50px; width:50px;">
+      <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:100px; width:100px;">
       @endif
-      <h3 style="font-size: 20px; text-align: justify; color: #fff;">
+    </div>
+    <div class="col-md-4">
+      <h3 style="font-size: 25px; text-align: justify; color: #fff;">
         {{Auth::user()->name}}
       </h3>
+    </div>
+    <div class="col-md-5">
+
+
     </div>
   </div>
 	<div class="row">
     <div class="col-md-1">
 
     </div>
-    <div class="col-md-10" style="padding-bottom: 2%;">
+    <div class="col-md-10" style="padding-bottom: 4%;">
       <table class="table table-sm table-bordered table-head">
         <thead>
           <tr>
-            <th style="color: #fff;">
+            <th style="color: #fff; font-size: 20px;">
               Kedudukan
             </th>
-            <th style="color: #fff;">
+            <th style="color: #fff; font-size: 20px;">
               Sekolah
             </th>
-            <th style="color: #fff;">
+            <th style="color: #fff; font-size: 20px;">
               Negeri
             </th>
-            <th style="color: #fff;">
+            <th style="color: #fff; font-size: 20px;">
               Mata
             </th>
           </tr>
@@ -99,16 +108,16 @@
       <table class="table table-sm table-bordered">
         <thead class="table-head">
           <tr>
-            <th style="color: #fff;">
+            <th style="color: #fff; font-size: 20px;">
               Kedudukan
             </th>
-            <th style="color: #fff;">
+            <th style="color: #fff; font-size: 20px;">
               Pelajar
             </th>
-            <th style="color: #fff;">
+            <th style="color: #fff; font-size: 20px;">
               Sekolah
             </th>
-            <th style="color: #fff;">
+            <th style="color: #fff; font-size: 20px;">
               Negeri
             </th>
             <th style="color: #fff;">
@@ -125,7 +134,7 @@
               @if(Auth::user()->profile_picture != null)
               <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
               @else
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
               @endif <br>
               <!-- {{Auth::user()->name}} -->
               Mohd Amirul
@@ -148,7 +157,7 @@
               @if(Auth::user()->profile_picture != null)
               <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
               @else
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
               @endif <br>
               <!-- {{Auth::user()->name}} -->
               Khairul Anwar
@@ -171,7 +180,7 @@
               @if(Auth::user()->profile_picture != null)
               <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
               @else
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
               @endif <br>
               <!-- {{Auth::user()->name}} -->
               Siti Syazwani
@@ -194,7 +203,7 @@
               @if(Auth::user()->profile_picture != null)
               <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
               @else
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
               @endif <br>
               <!-- {{Auth::user()->name}} -->
               Muhammad Zaki
@@ -217,7 +226,7 @@
               @if(Auth::user()->profile_picture != null)
               <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
               @else
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
               @endif <br>
               <!-- {{Auth::user()->name}} -->
               Nur Syaza
@@ -240,7 +249,7 @@
               @if(Auth::user()->profile_picture != null)
               <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
               @else
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
               @endif <br>
               <!-- {{Auth::user()->name}} -->
               Nur Haikal
@@ -264,7 +273,7 @@
               @if(Auth::user()->profile_picture != null)
               <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
               @else
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
               @endif <br>
               <!-- {{Auth::user()->name}} -->
               Muhammad Zainol
@@ -288,7 +297,7 @@
               @if(Auth::user()->profile_picture != null)
               <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
               @else
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
               @endif <br>
               <!-- {{Auth::user()->name}} -->
               Nur Qaisarah
@@ -312,7 +321,7 @@
               @if(Auth::user()->profile_picture != null)
               <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
               @else
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
               @endif <br>
               <!-- {{Auth::user()->name}} -->
               Sit Zulaikha
@@ -336,7 +345,7 @@
               @if(Auth::user()->profile_picture != null)
               <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
               @else
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px;">
+              <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
               @endif <br>
               <!-- {{Auth::user()->name}} -->
               Naqiurudin
