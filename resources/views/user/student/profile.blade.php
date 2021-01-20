@@ -29,7 +29,7 @@
   <body>
 
     <div class="container-fluid" >
-      <div class="row" style="background-image: url({{asset('concept/images/mascot3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-top: 5%;">
+      <div class="row" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-top: 5%;">
         <div class="col-md-12">
           <h1 style="margin-left: -80%; color: #fff;">
 						Profil
