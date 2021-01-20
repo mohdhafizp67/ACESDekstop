@@ -21,6 +21,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//ajax routes
+Route::get('/register/ajax/get-district/{data}', [App\Http\Controllers\ApiController::class, 'ajaxDistrict'])->name('register.ajax.district');
+
 Route::middleware('student')->group(function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

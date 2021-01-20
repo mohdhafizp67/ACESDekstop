@@ -13,7 +13,6 @@ use App\Models\AnswerBank;
 use App\Models\Announcement;
 
 
-
 class AnnouncementController extends Controller
 {
   public function viewAnnouncementList()

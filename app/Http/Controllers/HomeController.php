@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Models\Student;
 use App\Models\Announcement;
+use App\Models\User;
+
+
 
 class HomeController extends Controller
 {
@@ -28,7 +31,7 @@ class HomeController extends Controller
     {
       $student = Student::where('user_id', Auth::user()->id)->first();
       $announcement = Announcement::get();
-      // dd($announcement);
+
       if($student){
         return view('home', compact('announcement'));
       }else {
@@ -39,4 +42,6 @@ class HomeController extends Controller
       }
 
     }
+
+
 }
