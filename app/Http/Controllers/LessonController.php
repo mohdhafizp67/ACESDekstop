@@ -16,6 +16,10 @@ class LessonController extends Controller
       return view('lesson.courses');
   }
 
+  public function intro()
+  {
+      return view('lesson.intro');
+  }
   public function vrlessons()
   {
       return view('lesson.vrlessons');

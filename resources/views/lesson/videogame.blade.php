@@ -2,7 +2,8 @@
 
 @section('content')
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/mascot4.jpg')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
+<div class="container-fluid" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
+
 	<div class="row">
 		<div class="col-md-12">
 			<h3 style="padding-top: 10%; padding-bottom: 5%; font-size: 35px; font-weight: bold; color: #000;">
@@ -25,7 +26,8 @@
 
     </div>
     <div class="col-md-2">
-      <button class="btn btn-success" type="submit">SKIP</button>
+      <a href="http://localhost/PlatformIntro/webgl/" class="btn btn-success" type="submit">SKIP</a>
+
     </div>
   </div>
 </div>

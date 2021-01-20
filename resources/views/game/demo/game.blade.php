@@ -220,7 +220,9 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar3
   border-color: #960202;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar3 h1 {
+
 color: #D64541;
+
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar4 .picto {
   height: 300px;
@@ -234,7 +236,9 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar4
 }
 
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar4 h1 {
+
 color: #D64541;
+
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar5 .picto {
   height: 300px;
@@ -247,7 +251,9 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar5
   border-color: #960202;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar5 h1 {
+
 color: #D64541;
+
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar6 .picto {
   height: 300px;
@@ -260,7 +266,9 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar6
   border-color: #960202;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar6 h1 {
+
 color: #D64541;
+
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar7 .picto {
   height: 300px;
@@ -273,7 +281,9 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar7
   border-color: #960202;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar7 h1 {
+
 color: #D64541;
+
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar8 .picto {
   height: 300px;
@@ -286,7 +296,9 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar8
   border-color: #960202;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar8 h1 {
+
 color: #D64541;
+
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar9 .picto {
   height: 300px;
@@ -299,7 +311,9 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar9
   border-color: #960202;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar9 h1 {
+
 color: #D64541;
+
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar10 .picto {
   height: 300px;
@@ -312,7 +326,9 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar1
   border-color: #960202;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar10 h1 {
+
 color: #D64541;
+
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar11 .picto {
   height: 300px;
@@ -325,6 +341,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar1
   border-color: #960202;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar11 h1 {
+
 color: #D64541;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
@@ -340,6 +357,7 @@ opacity: 1;
         animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Litar1 {
+
 color: white;
 border-right: solid 4px #D64541;
 background-color: #D64541
@@ -412,6 +430,7 @@ max-width: 2px;
 z-index: 0;
 }
 body #scene #right-zone {
+
 background: #232121;
 height: 100%;
 flex-grow: 3;
@@ -423,6 +442,7 @@ flex-grow: 3;
     <div class="container-fluid" style="background-image: url({{asset('concept/images/mascot.jpg')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
 	<div class="row">
 		<div class="col-md-12" style="padding-top: 10%;">
+
 			<h3 style="color: red;font-size: 35px;font-weight: bold; margin-left: 50px;">
 				Permainan
 			</h3>
@@ -445,6 +465,7 @@ flex-grow: 3;
 
          </div>
        </li>
+
        <li class="item" style="background-color: white !important; border: 1px solid white;">
          <input type="radio" id="radio_A Litar2 is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." name="basic_carousel" value="A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."/>
          <label class="label_Litar2" for="radio_A Litar2 is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.">Litar 2</label>
@@ -453,6 +474,7 @@ flex-grow: 3;
 
          </div>
        </li>
+
        <li class="item" style="background-color: white !important; border: 1px solid white;">
          <input type="radio" id="radio_The Litar3 tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus." name="basic_carousel" value="The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."/>
          <label class="label_Litar3" for="radio_The Litar3 tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.">Litar 3</label>
@@ -461,6 +483,7 @@ flex-grow: 3;
 
          </div>
        </li>
+
        <li class="item" style="background-color: white !important; border: 1px solid white;">
          <input type="radio" id="radio_The Litar4 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
          <label class="label_Litar4" for="radio_The Litar4 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 4</label>
@@ -469,6 +492,7 @@ flex-grow: 3;
 
          </div>
        </li>
+
        <li class="item" style="background-color: white !important; border: 1px solid white;">
          <input type="radio" id="radio_The Litar5 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
          <label class="label_Litar5" for="radio_The Litar5 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 5</label>
@@ -477,6 +501,7 @@ flex-grow: 3;
 
          </div>
        </li>
+
        <li class="item" style="background-color: white !important; border: 1px solid white;">
          <input type="radio" id="radio_The Litar6 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
          <label class="label_Litar6" for="radio_The Litar6 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 6</label>
@@ -485,6 +510,7 @@ flex-grow: 3;
 
          </div>
        </li>
+
        <li class="item" style="background-color: white !important; border: 1px solid white;">
          <input type="radio" id="radio_The Litar7 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
          <label class="label_Litar7" for="radio_The Litar7 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 7</label>
@@ -493,6 +519,7 @@ flex-grow: 3;
 
          </div>
        </li>
+
        <li class="item" style="background-color: white !important; border: 1px solid white;">
          <input type="radio" id="radio_The Litar8 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
          <label class="label_Litar8" for="radio_The Litar8 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 8</label>
@@ -501,6 +528,7 @@ flex-grow: 3;
 
          </div>
        </li>
+
        <li class="item" style="background-color: white !important; border: 1px solid white;">
          <input type="radio" id="radio_The Litar9 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
          <label class="label_Litar9" for="radio_The Litar9 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 9</label>
@@ -509,6 +537,7 @@ flex-grow: 3;
 
          </div>
        </li>
+
        <li class="item" style="background-color: white !important; border: 1px solid white;">
          <input type="radio" id="radio_The Litar10 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
          <label class="label_Litar10" for="radio_The Litar10 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 10</label>

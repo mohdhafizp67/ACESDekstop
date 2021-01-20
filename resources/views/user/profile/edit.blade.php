@@ -24,7 +24,8 @@
     <div class="container-fluid" style="background-image: url({{asset('concept/images/permainan/drone1.jpg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 	<div class="row">
 		<div class="col-md-12" style="padding-top: 5%; padding-bottom: 0%;">
-      <h2 style="color: #fff; text-align: center; font-weight: bold; font-size: 35px;">
+      <h2 style="color: #fff; text-align: justify; font-weight: bold; font-size: 35px; padding-top: 3%;">
+
 				Kemaskini Profil
 			</h2>
 
