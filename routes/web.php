@@ -39,6 +39,8 @@ Route::get('/courses', [App\Http\Controllers\LessonController::class, 'courses']
 
 Route::get('/vrlessons', [App\Http\Controllers\LessonController::class, 'vrlessons'])->name('lesson.vrlessons');
 
+Route::get('/intro', [App\Http\Controllers\LessonController::class, 'intro'])->name('lesson.intro');
+
 Route::get('/lokasivr', [App\Http\Controllers\LessonController::class, 'lokasivr'])->name('lesson.lokasivr');
 
 // Game

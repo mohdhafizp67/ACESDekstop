@@ -40,7 +40,8 @@
       <!-- <iframe width="100%" height="90%" src="https://www.youtube.com/embed/TGJLXfSJDXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       <!-- <iframe width="100%" height="90%" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=0&rel=0" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe> -->
       <!-- <iframe width="100%" height="90%" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=0&rel=0;&cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-      <iframe width="100%" height="80%" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <iframe width="100%" height="80%" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      <iframe width="100%" height="90%" src="https://www.youtube.com/embed/FbiiODMZgxo?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 		</div>
 		<div class="col-md-4" style="padding-bottom: 0%; padding-top: 0%;">
@@ -56,13 +57,13 @@
               <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                   <div class="modal-header">
-                  <h5 class="modal-title" id="lokasi">LOKASI KURSUS KEMAHIRAN VR</h5>
+                  <h5 class="modal-title" id="lokasi">PENGENALAN IR 4.0</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
                   </div>
                   <div class="modal-body">
-                  <img alt="Bootstrap Image Preview" src="{{asset('concept/images/pelajaran/lokasi.jpg')}}" style="width: 100%; height: auto;">
+                  <img alt="Bootstrap Image Preview" src="{{asset('concept/images/videopelajaran/introduction.jpg')}}" style="width: 100%; height: auto;">
                   </div>
 
               </div>

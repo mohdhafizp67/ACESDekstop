@@ -42,7 +42,7 @@
         <a href="{{route('lesson.vrlessons')}}"><img src="{{asset('concept/images/pelajaran/vr.jpg')}}" alt="" class="u-image u-image-circle u-image-2" data-image-width="1080" data-image-height="1072"></a>
         <img src="{{asset('concept/images/pelajaran/iot.jpg')}}" alt="" class="u-image u-image-circle u-image-3" data-image-width="1080" data-image-height="1076">
         <img src="{{asset('concept/images/pelajaran/addictive.jpg')}}" alt="" class="u-image u-image-circle u-image-4" data-image-width="1080" data-image-height="1060">
-        <img src="{{asset('concept/images/pelajaran/intro.jpg')}}" alt="" class="u-image u-image-circle u-image-5" data-image-width="1080" data-image-height="1063" style="margin-left: 6%;margin-top: -13%;">
+        <a href="{{route('lesson.intro')}}"><img src="{{asset('concept/images/pelajaran/intro.jpg')}}" alt="" class="u-image u-image-circle u-image-5" data-image-width="1080" data-image-height="1063" style="margin-left: 6%;margin-top: -13%;"></a>
         <img src="{{asset('concept/images/pelajaran/auto.jpg')}}" alt="" class="u-image u-image-circle u-image-6" data-image-width="1080" data-image-height="1072">
         <img src="{{asset('concept/images/pelajaran/cloud.jpg')}}" alt="" class="u-image u-image-circle u-image-7" data-image-width="1080" data-image-height="1074" style="margin-right: 12%;">
         <img src="{{asset('concept/images/pelajaran/universal.jpg')}}" alt="" class="u-image u-image-circle u-image-8" data-image-width="1080" data-image-height="1067">

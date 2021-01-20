@@ -7,19 +7,6 @@
   label{
     color: #2e2f39 !important;
   }
-  .button {
-  background-color: #fff; /* Green */
-  border-color: : solid 5px #000;
-  color: black;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-.button5 {border-radius: 80%;}
 </style>
 
 
@@ -45,17 +32,77 @@
 
     </div>
   </div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-1">
+          <img alt="" src="{{ asset('concept/images/startkuiz/1.png') }}" style="width: 120%; height: auto;">
+				</div>
+				<div class="col-md-1">
+          <img alt="" src="{{ asset('concept/images/startkuiz/2.png') }}" style="width: 120%; height: auto;">
+				</div>
+				<div class="col-md-1">
+          <img alt="" src="{{ asset('concept/images/startkuiz/3.png') }}" style="width: 120%; height: auto;">
+				</div>
+				<div class="col-md-1">
+          <img alt="" src="{{ asset('concept/images/startkuiz/4.png') }}" style="width: 120%; height: auto;">
+				</div>
+				<div class="col-md-1">
+          <img alt="" src="{{ asset('concept/images/startkuiz/5.png') }}" style="width: 120%; height: auto;">
+				</div>
+				<div class="col-md-1">
+          <img alt="" src="{{ asset('concept/images/startkuiz/6.png') }}" style="width: 120%; height: auto;">
+				</div>
+				<div class="col-md-1">
+          <img alt="" src="{{ asset('concept/images/startkuiz/7.png') }}" style="width: 120%; height: auto;">
+				</div>
+				<div class="col-md-1">
+          <img alt="" src="{{ asset('concept/images/startkuiz/8.png') }}" style="width: 120%; height: auto;">
+				</div>
+				<div class="col-md-1">
+          <img alt="" src="{{ asset('concept/images/startkuiz/9.png') }}" style="width: 120%; height: auto;">
+				</div>
+				<div class="col-md-1">
+          <img alt="" src="{{ asset('concept/images/startkuiz/10.png') }}" style="width: 120%; height: auto;">
+				</div>
+				<div class="col-md-1">
 
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div class="dashboard-ecommerce">
     <div class="container-fluid dashboard-content ">
         <div class="ecommerce-widget">
-          <div class="card" style="padding: 10px; background-color: #232121 !important;">
+          <div class="card" style="padding: 10px; background-color: #9966ff !important;">
 
             <div style="padding: 5px;"></div>
-              <!-- <h2 class="card-header" style="text-align: center;"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Mula menjawab kuiz</h2> -->
+              <h2 class="card-header" style="text-align: center;"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Mula menjawab kuiz</h2>
               <div class="card-body p-0">
+                <div style="padding: 10px;"></div>
+
+
+                <div class="row">
+                  <div class="col-md-4">
+
+                  </div>
+                  <div class="col-md-4">
+                    <div style="background-color: white !important; color: red !important; font-align: center !important;">&nbsp&nbsp&nbsp Masa menjawab quiz akan tamat dalam <span id="time"></span> minit!</div>
+                  </div>
+                  <div class="col-md-4">
+
+                  </div>
+                </div>
+
+                <div style="padding: 10px;"></div>
 
                 <form id="submit_quiz" name="submit_quiz" action="{{route('quiz.submit-result')}}" method="post">
 
@@ -67,17 +114,16 @@
                         @foreach($question as $data)
                           @if ($loop->first)
                             <li class="nav-item">
-
-                              <a class="button button5" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false"> {{$loop->iteration}}</a>
+                                <a class="nav-link active" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="true">Soalan &nbsp&nbsp{{$loop->iteration}}</a>
                             </li>
                           @else
                               @if($loop->iteration > 9)
                               <li class="nav-item">
-                                  <a class="button button5" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false"> {{$loop->iteration}}</a>
+                                  <a class="nav-link" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false">Soalan {{$loop->iteration}}</a>
                               </li>
                               @else
                               <li class="nav-item">
-                                <a class="button button5" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false"> {{$loop->iteration}}</a>
+                                  <a class="nav-link" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false">Soalan &nbsp&nbsp{{$loop->iteration}}</a>
                               </li>
                               @endif
                           @endif
@@ -253,7 +299,7 @@
 
                               </div>
                               <div class="col-md">
-                                <button class="btn btn-primary btnPrevious" type="button" >Sebelumnya</button><br>
+                                <button class="btn btn-primary btnPrevious" type="button" >Sebelumnya</button>
                                 <button class="btn btn-success" type="button" data-toggle="modal" data-target="#exampleModal">Hantar Quiz</button>
                               </div>
                             </div>
@@ -265,7 +311,7 @@
 
                               </div>
                               <div class="col-md">
-                                <button class="btn btn-primary btnNext" type="button" >Seterusnya</button><br>
+                                <button class="btn btn-primary btnNext" type="button" >Seterusnya</button>
                                 <button class="btn btn-primary btnPrevious" type="button" >Sebelumnya</button>
                               </div>
                             </div>
