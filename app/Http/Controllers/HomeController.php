@@ -9,6 +9,7 @@ use App\Models\Announcement;
 use App\Models\User;
 
 
+
 class HomeController extends Controller
 {
     /**
@@ -41,4 +42,6 @@ class HomeController extends Controller
       }
 
     }
+
+
 }

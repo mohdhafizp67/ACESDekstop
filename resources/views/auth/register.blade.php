@@ -149,7 +149,7 @@
                     <label for="exampleInputEmail1" style="color: #fff">
                       Negeri
                     </label>
-                    <select name="state" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('state') }}">
+                    <select id="state" name="state" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('state') }}">
                       <option value="" selected disabled hidden>Pilih Negeri</option>
                       <option value="Johor" {{ old('state') == "Johor" ? 'selected' : '' }}>Johor</option>
                       <option disabled value="Kedah" {{ old('state') == "Kedah" ? 'selected' : '' }}>Kedah</option>
@@ -182,11 +182,8 @@
                 <label for="exampleInputEmail1" style="color: #fff">
                   Daerah
                 </label>
-                <select name="state" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('state') }}">
+                <select id="district" name="district" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('district') }}">
                   <option value="" selected disabled hidden>Pilih Daerah</option>
-                  @foreach($districts as $data)
-                  <option value="">{{$data->daerah}}</option>
-                  @endforeach
                 </select>
                 @if($errors->has('state'))
                     <div class="invalid-feedback">
@@ -294,6 +291,45 @@
 
       }
     }
+
+    //ajax for daerah
+</script>
+
+<script type="text/javascript">
+$('#state').change(function(){
+  //fetch data from jenis_dokumen
+  var negeri = $(this).val();
+  //clear jenis_data selection
+  $("#district").empty();
+  //initialize selection
+  $("#district").append('<option value="" selected disabled hidden>Pilih Daerah</option>');
+  //ajax
+
+  if(negeri){
+    $.ajax({
+      type:"get",
+       url:"/register/ajax/get-district/"+negeri,
+
+      success: function(respond){
+        //console.log(respond);
+        var data = JSON.parse(respond);
+        data.forEach(function(data)
+        {
+          // console.log(data.daerah);
+          $("#district").append('<option value="'+data.daerah+'" >'+data.daerah+'</option>');
+        });
+            // $.each(JSON.parse(respond),function(key,value){
+            //     $("#jenis_data").append('<option value="'+value+'">'+value+'</option>');
+            // });
+      },
+      error: function(XMLHttpRequest, textStatus, errorThrown) {
+          console.log("Status: " + textStatus);
+          console.log("Error: " + errorThrown);
+      }
+    })
+
+  }
+});
 </script>
 
 

@@ -52,7 +52,7 @@ class RegisterController extends Controller
 
      public function showRegistrationForm()
      {
-         $districts=Districts:: get();
+         $districts = Districts:: get();
          // dd($districts);
          return view('auth.register', compact('districts'));
      }
