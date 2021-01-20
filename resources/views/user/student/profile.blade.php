@@ -52,16 +52,16 @@
           	<a href="{{ route('user.change-password') }}">Tukar Kata Laluan</a>
           </button>
         </div>
-        <div class="col-md-3">
+        <!-- <div class="col-md-3">
           <button type="button" class="btn btn-success" style="margin-top: 0%;margin-left: 0%; ">
             <a href="#">Statistik</a>
           </button>
-        </div>
-        <div class="col-md-3">
+        </div> -->
+        <!-- <div class="col-md-3">
           <button type="button" class="btn btn-success" style="margin-top: 0%;margin-left: 0%;">
             <a href="#">Pencapaian</a>
           </button>
-        </div>
+        </div> -->
       </div>
 
 	<div class="row" style="padding: 5%; padding-bottom: 0%; background-color: #4C6367;">
