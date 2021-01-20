@@ -42,6 +42,7 @@
       <!-- <iframe width="100%" height="90%" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=0&rel=0;&cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       <iframe width="100%" height="80%" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
 		</div>
 		<div class="col-md-4" style="padding-bottom: 0%; padding-top: 0%;">
       <div class="row">
@@ -49,6 +50,7 @@
           <!-- <button  data-toggle="modal" data-target="#lokasi"> -->
             <img src="{{asset('concept/images/videopelajaran/2.png')}}" alt="John" style="width:100%; align-self: center; height:100%;"  data-toggle="modal" data-target="#lokasi">
             <!-- <h3 style="align-self: center; text-transform: uppercase;">Lokasi VR</h3> -->
+
 
           <!-- </button> -->
 
@@ -103,6 +105,7 @@
           <!-- <button  data-toggle="modal" data-target="#skil"> -->
             <img src="{{asset('concept/images/videopelajaran/1.png')}}" alt="John" style="width:100%; align-self: center; height:100%;"  data-toggle="modal" data-target="#skil">
             <!-- <h3 style="align-self: center; text-transform: uppercase;">Pengetahuan VR</h3> -->
+
 
           <!-- </button> -->
 

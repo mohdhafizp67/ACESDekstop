@@ -25,6 +25,7 @@
 	<div class="row">
 		<div class="col-md-12" style="padding-top: 5%; padding-bottom: 0%;">
       <h2 style="color: #fff; text-align: justify; font-weight: bold; font-size: 35px; padding-top: 3%;">
+
 				Kemaskini Profil
 			</h2>
 
@@ -73,7 +74,7 @@
 					<label for="exampleInputPassword1" style="color: #fff;font-weight: bold;">
 						Alamat
 					</label>
-					<input type="text" name=alamat class="form-control bg-light" placeholder="Input Address" value="{{$user->alamat}}">
+					<input type="text" name=alamat class="form-control bg-light" placeholder="Input Address" value="{{$user->address}}">
 				</div>
 
         <div class="row">
@@ -83,7 +84,7 @@
             <label for="exampleInputPassword1" style="color: #fff;font-weight: bold;">
               Poskod
             </label>
-            <input type="text" name=poskod class="form-control bg-light" placeholder="Input Postcode" value="{{$user->poskod}}">
+            <input type="text" name=poskod class="form-control bg-light" placeholder="Input Postcode" value="{{$user->postcode}}">
           </div>
         </div>
         <div class="col-md-6">
@@ -92,7 +93,7 @@
             <label for="exampleInputPassword1" style="color: #fff;font-weight: bold;">
               Negeri
             </label>
-            <input type="text" name=negeri class="form-control bg-light" placeholder="Input State" value="{{$user->negeri}}">
+            <input type="text" name=negeri class="form-control bg-light" placeholder="Input State" value="{{$user->state}}">
           </div>
         </div>
         </div>
@@ -124,7 +125,7 @@
           <div class="form-group">
               <div class="input-group">
                 <div class="custom-file">
-                         <input type="file" id="img" name="gambar" accept="gambar/*" style="width:100%" </input>
+                         <input type="file" id="img" name="" accept="gambar" style="width:100%" </input>
                           <label class="" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02"</label>
                       </div>
 

@@ -27,6 +27,7 @@
   <div class="row">
     <div class="col-md-12" style="padding-top: 10%; padding-bottom: 15%; background-image: url({{asset('concept/images/permainan/drone1.jpg')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
       <h2 style="color: #fff; text-align: justify; font-weight: bold; padding-bottom: 22%;">
+
         Tukar Kata Laluan
       </h2>
 
@@ -118,16 +119,13 @@
         </div>
       </div>
 
-      <div class="row">
 
-
-
-
-      </div>
 
         <div class="u-align-center u-form-group u-form-submit" style="padding-top: 5%;">
           <button class="btn btn-success" type="submit">Tukar Kata Laluan</button>
         </div>
+
+        <div style="padding: 40px;"></div>
 
     </div>
   </div>
