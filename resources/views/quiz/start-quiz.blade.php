@@ -30,7 +30,7 @@
 				KUIZ
 			</h3>
 			<h3 style="font-size: 20px; padding-bottom: 2%;">
-				Pengenalan IR 4.0
+				Pengenalan I 4.0
 			</h3>
 		</div>
 	</div>
@@ -249,11 +249,11 @@
                             @if ($loop->last)
 
                             <div class="row">
-                              <div class="col-md-9">
+                              <div class="col-md-7">
 
                               </div>
                               <div class="col-md">
-                                <button class="btn btn-primary btnPrevious" type="button" >Sebelumnya</button><br>
+                                <button class="btn btn-primary btnPrevious" type="button" >Sebelumnya</button>
                                 <button class="btn btn-success" type="button" data-toggle="modal" data-target="#exampleModal">Hantar Quiz</button>
                               </div>
                             </div>
@@ -261,11 +261,11 @@
                             @else
 
                             <div class="row">
-                              <div class="col-md-9">
+                              <div class="col-md-7">
 
                               </div>
                               <div class="col-md">
-                                <button class="btn btn-primary btnNext" type="button" >Seterusnya</button><br>
+                                <button class="btn btn-primary btnNext" type="button" >Seterusnya</button>
                                 <button class="btn btn-primary btnPrevious" type="button" >Sebelumnya</button>
                               </div>
                             </div>
@@ -326,7 +326,7 @@
                                 <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
                                 <form action="{{route('quiz.start-quiz')}}" method="post">
                                 @csrf
-                                <button type="submit" name="button" class="btn btn-primary">Hantar Quiz</button>
+                                <button type="submit" name="button" class="btn btn-primary">Hantar Kuiz</button>
                               </form>
                             </div>
                         </div>
