@@ -1312,7 +1312,7 @@ button.close {
 
 .side-bar {
   /* background: linear-gradient(-154deg, #639, #33214b) !important; */
-  background: linear-gradient(-154deg, #003E61, #003473) !important;
+  background: linear-gradient(-154deg, #130E29, #130E29) !important;
   height: 100vh !important;
   width: 17rem !important;
   visibility: hidden;
@@ -1358,9 +1358,9 @@ button.close {
 
 .side-bar .side-menu-item a,
 .side-bar .side-sub-menu-item a {
-  font-size: 1rem !important;
+  font-size: 13px !important;
   display: block;
-  color: #605E66 !important;
+  color: #f8f9fa  !important;
   transition: all ease 0.3s;
   position: relative !important;
   text-align: justify;
@@ -1379,6 +1379,7 @@ button.close {
 
 .side-bar .side-menu-item a:hover {
   padding-left: 2rem !important;
+  color: #ffc107  !important;
 }
 
 .side-bar .side-sub-menu {

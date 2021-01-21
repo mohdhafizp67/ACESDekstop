@@ -35,58 +35,57 @@
         <div class="side-bar side-bar-lg-active" data-theme="purple">
             <!-- Brand details -->
             <div class="side-menu-brand d-flex flex-column justify-content-center align-items-center clear mt-3">
-                <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 100%;padding-top: 20%;">
+                <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 100%;padding-top: 15%;">
                 <!-- <a href="{{ route('home') }}" class="brand-name mt-2 ml-2 font-weight-bold" style="text-align: center; font-size: 20px !important;">Permohonan Data Geospatial</a> -->
             </div>
             @if(Auth::user())
             <!-- Side bar menu -->
-            <div class="the_menu mt-5">
+            <div class="the_menu mt-2">
                 <!-- Heading -->
                 <div class="side-menu-heading d-flex">
-                    <h6 class=" font-weight-bold pb-2 mx-3"> {{ucwords(strtolower((Auth::user()->name)))}} </h6>
-                    <a  class="font-weight-bold ml-auto px-3"
+                    <h6 class=" font-weight-bold pb-2 mx-3" style="color: yellow;"> {{ucwords(strtolower((Auth::user()->name)))}} </h6>
+                    <!-- <a  class="font-weight-bold ml-auto px-3"
                         href="{{ route('logout') }}"
                         onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"
                     >
                         <i class="fas fa-sign-out-alt"></i>
-                    </a>
+                    </a> -->
                 </div>
 
                 <!-- Menu item -->
                 <div id="accordion">
                     <ul class="side-menu p-0 m-0 mt-3">
 
-                        <li class="side-menu-item px-3"><a href="{{route('home')}}" class="w-100 py-2"><i class="fa fa-home" aria-hidden="true"></i>HALAMAN UTAMA</a></li>
+                        <li class="side-menu-item px-3"><a href="{{route('home')}}" class="w-100 py-2"><i class="fa fa-home" aria-hidden="true"></i>&nbsp&nbsp HALAMAN UTAMA</a></li>
                         <!-- Sub menu parent -->
-                        <li class="side-menu-item px-3"><a href="{{ route('user.student.profile') }}" class="w-100 py-2"><i class="fas fa-user-circle"aria-hidden="true"></i>PROFIL PELAJAR</a></li>
+                        <li class="side-menu-item px-3"><a href="{{ route('user.student.profile') }}" class="w-100 py-2"><i class="fas fa-user-circle"aria-hidden="true"></i>&nbsp&nbsp PROFIL PELAJAR</a></li>
 
-                        <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%; text-decoration: underline">
-                            <font color="white">AKTIVITI</font>
+                        <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%;">
+                            <font color="#77D8BE">AKTIVITI</font>
                         </li>
 
                         <!-- Sub menu parent -->
-                        <li class="side-menu-item px-3"><a href="{{route('lesson.courses')}}" class="w-100 py-2" ><i class="fa fa-book" aria-hidden="true"></i>PELAJARAN</a></li>
+                        <li class="side-menu-item px-3"><a href="{{route('lesson.courses')}}" class="w-100 py-2" ><i class="fa fa-book" aria-hidden="true"></i>&nbsp&nbsp PELAJARAN</a></li>
                         <!-- Sub menu parent -->
-                        <li class="side-menu-item px-3"><a href="{{route('quiz.choose-quiz')}}" class="w-100 py-2" ><i class="fa fa-question-circle" aria-hidden="true"></i>KUIZ</a></li>
+                        <li class="side-menu-item px-3"><a href="{{route('quiz.choose-quiz')}}" class="w-100 py-2" ><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp&nbsp KUIZ</a></li>
 
 
                         <!-- Sub menu parent -->
-                        <li class="side-menu-item px-3"><a href="{{route('user.game.demo')}}" class="w-100 py-2" ><i class="fa fa-gamepad" aria-hidden="true"></i>PERMAINAN</a></li>
+                        <li class="side-menu-item px-3"><a href="{{route('user.game.demo')}}" class="w-100 py-2" ><i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp&nbsp PERMAINAN</a></li>
 
-                        <li class="side-menu-item px-3"><a href="{{ route('activities.leaderboard') }}" class="w-100 py-2" ><i class="fa fa-trophy" aria-hidden="true"></i>CARTA JUARA</a></li>
+                        <li class="side-menu-item px-3"><a href="{{ route('activities.leaderboard') }}" class="w-100 py-2" ><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp&nbsp CARTA JUARA</a></li>
 
-                        <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%; text-decoration: underline">
-                            <font color="white">LAIN-LAIN</font>
+                        <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%;">
+                            <font color="#77D8BE">LAIN-LAIN</font>
                         </li>
 
 
                         <!-- Sub menu parent -->
-                        <li class="side-menu-item px-3"><a href="{{route('others.feedback')}}" class="w-100 py-2"><i class="fas fa-comments" aria-hidden="true"></i>MAKLUM BALAS</a></li>
+                        <li class="side-menu-item px-3"><a href="{{route('others.feedback')}}" class="w-100 py-2"><i class="fas fa-comments" aria-hidden="true"></i>&nbsp&nbsp MAKLUM BALAS</a></li>
 
-                        <li class="nav-item ">
-                          <a class="nav-link" href="#" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i>LOG KELUAR</a>
-                        </li>
+                        <li class="side-menu-item px-1"><a href="#" class="btn btn-danger"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp&nbsp LOG KELUAR</a></a></li>
+
 
                         <!-- <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4" >Senarai Permohonan </a></li> -->
 
@@ -143,17 +142,17 @@
             @endif
             <!-- The navbar -->
             <nav class="navbar fixed-top py-3" style="background-color: #ccc0!important;">
-                <p class="navbar-brand mb-0 pb-0">
+                <p class="navbar-brand mb-0 pb-0" style="border: black solid ;">
                     <span></span>
                     <span></span>
-                    <span></span>
+                    <!-- <span></span> -->
 
 
                 </p>
 
 
 
-                <a href="{{ url()->previous() }}" class="btn btn-outline-primary m-2" style="font-size:150%"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Kembali</a>
+                <!-- <a href="{{ url()->previous() }}" class="btn btn-outline-primary m-2" style="font-size:150%"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Kembali</a> -->
 
 
 
