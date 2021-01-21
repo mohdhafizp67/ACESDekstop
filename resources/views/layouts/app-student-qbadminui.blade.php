@@ -105,7 +105,7 @@
         </div>
 
         <!-- Main section -->
-        <main class="bg-light main-full-body" style="background-color: #ccc!important;">
+        <main class="bg-light main-full-body" style="background-color: #ccc0!important;">
 
             <!-- Theme changer -->
             <!-- <div class="theme-option p-4">
@@ -142,7 +142,7 @@
             </div>
             @endif
             <!-- The navbar -->
-            <nav class="navbar navbar-expand navbar-light bg-light py-3" style="background-color: #ccc!important;">
+            <nav class="navbar fixed-top py-3" style="background-color: #ccc0!important;">
                 <p class="navbar-brand mb-0 pb-0">
                     <span></span>
                     <span></span>
