@@ -1,4 +1,4 @@
-@extends('layouts.app-student')
+@extends('layouts.app-student-qbadminui')
 
 @section('content')
 
@@ -42,15 +42,25 @@
           <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:auto; width:10%; ">
           @endif
         </div>
+        <div class="col-md-3">
+          <!-- <button type="button" class="btn btn-success" style="margin-top: 0%;margin-left: 0%;">
+          <a href="{{route('user.profile.edit')}}">Kemaskini Profil</a>
+          </button> -->
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-success" style="margin-top: 0%;margin-left: 0%; ">
+          	<a href="{{ route('user.change-password') }}">Tukar Kata Laluan</a>
+          </button>
+        </div>
         <div class="col-md-3" style="padding-bottom: 2%;">
           <button type="button" class="btn btn-success" style="margin-top: 0%;margin-left: 0%;">
           <a href="{{route('user.profile.edit')}}">Kemaskini Profil</a>
           </button>
         </div>
         <div class="col-md-3">
-          <button type="button" class="btn btn-success" style="margin-top: 0%;margin-left: 0%; ">
+          <!-- <button type="button" class="btn btn-success" style="margin-top: 0%;margin-left: 0%; ">
           	<a href="{{ route('user.change-password') }}">Tukar Kata Laluan</a>
-          </button>
+          </button> -->
         </div>
         <!-- <div class="col-md-3">
           <button type="button" class="btn btn-success" style="margin-top: 0%;margin-left: 0%; ">

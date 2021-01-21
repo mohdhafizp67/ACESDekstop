@@ -1,8 +1,8 @@
-@extends('layouts.app-student')
+@extends('layouts.app-student-qbadminui')
 
 @section('content')
 <!DOCTYPE html>
-<html lang="en" style="background-color: #232121;">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,22 +21,22 @@
 
     <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: center top;background-repeat: no-repeat;background-size: cover; padding-top: 4.5%; padding-left: 1%; margin-left: 0%;">
+		<div class="col-md-12" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: center top;background-repeat: no-repeat;background-size: cover; padding-top: 0%; padding-left: 1%; margin-left: 0%;">
 
-        <h1 style="text-align: justify; font-size: 80px; color: #fff; font-weight:bold; padding-top: 5%;">
+        <h1 style="text-align: justify; font-size: 450%; color: #fff; font-weight:bold; padding-top: 2%;">
   				ACES <font color="#ff0000">i 4.0</font> <br>
-          <p style="text-align: justify;padding-bottom: 11%; font-size: 20px; color: #fff;">
+          <p style="text-align: justify;padding-bottom: 11%; font-size: 30%; color: #fff;">
     				HALAMAN UTAMA
     			</p>
   			</h1>
 
-        <div style="position: absolute;  top: 70px;  right: 1px;">
+        <!-- <div style="position: absolute;  top: 70px;  right: 1px;">
           <a href="https://aces.ecerdc.com.my/aces2/">
             <button type="button" class="btn btn-danger" style="margin-top: 30%;margin-left: -25%; border-radius: 5px; font-size: 15px;">
               TENTANG ACES
             </button>
           </a>
-        </div>
+        </div> -->
 
         <div class="row">
           <div class="col-md-1">
@@ -44,17 +44,17 @@
           </div>
           <div class="col-md-5">
             <div class="card text-white bg-success mb-3" style=" background-color: #555457 !important;">
-              <div class="card-header" style="background-color: #232121 !important; font-weight: bold; font-size: 200%;">PENGUMUMAN</div>
+              <div class="card-header" style="background-color: #232121 !important; font-weight: bold; font-size: 150%;">PENGUMUMAN</div>
               <div class="card-body list-group p-2" style="overflow:auto;height:300px;width:100%; ">
                 @foreach($announcement as $data)
 
                   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                       <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">List group item heading</h5>
+                          <h5 class="mb-1" style="font-size: 90%">List group item heading</h5>
                           <small class="text-muted">3 days ago</small>
                       </div>
                       <p class="mb-1">{{$data->user_message}}</p>
-                      <small class="text-muted">Donec id elit non mi porta.</small>
+                      <!-- <small class="text-muted">Donec id elit non mi porta.</small> -->
                   </a>
                   <div style="padding: 2px;"></div>
                   @endforeach
@@ -64,22 +64,22 @@
               </div>
             </div>
           </div>
-          <div class="col-md-1">
+          <div class="col-md-0">
 
           </div>
-          <div class="col-md-4">
+          <div class="col-md-5">
             <div class="card text-white bg-success mb-3" style=" background-color: #555457 !important;">
-              <div class="card-header" style="background-color: #232121 !important; font-weight: bold; font-size: 200%;">MESEJ</div>
+              <div class="card-header" style="background-color: #232121 !important; font-weight: bold; font-size: 150%;">MESEJ</div>
               <div class="card-body list-group p-2" style="overflow:auto;height:300px;width:100%; ">
                 @foreach($announcement as $data)
 
                   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                       <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">List group item heading</h5>
+                          <h5 class="mb-1" style="font-size: 90%;">List group item heading</h5>
                           <small class="text-muted">3 days ago</small>
                       </div>
                       <p class="mb-1">{{$data->user_message}}</p>
-                      <small class="text-muted">Donec id elit non mi porta.</small>
+                      <!-- <small class="text-muted">Donec id elit non mi porta.</small> -->
                   </a>
                   <div style="padding: 2px;"></div>
                   @endforeach

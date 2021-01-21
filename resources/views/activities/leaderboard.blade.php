@@ -1,4 +1,4 @@
-@extends('layouts.app-student')
+@extends('llayouts.app-student-qbadminui')
 
 @section('content')
 
