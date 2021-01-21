@@ -185,7 +185,7 @@
 
                           @if(Auth::user()->gambar_profile == null)
 
-                          <img src="{{ asset('https://icon-library.com/images/default-profile-icon/default-profile-icon-24.jpg') }}" alt="profile" class="profile-avatar" style="height:40px; width:40px;">
+                          <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}" alt="profile" class="profile-avatar" style="height:40px; width:40px;">
                           @else
                           <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->gambar_profile)) }}"  class="profile-avatar" style="height:40px; width:40px; ">
                           @endif
@@ -194,7 +194,7 @@
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-max-height">
                             <!-- Menu items -->
 
-                            <a href="#" class="dropdown-item disabled small"><i class="far fa-user mr-1"></i>{{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}} </a>
+                            <a href="#" class="dropdown-item disabled small text-secondary-light"><i class="far fa-user mr-1"></i>{{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}} </a>
                             <a href="{{route('user.student.profile')}}" class="dropdown-item text-secondary-light">PROFIL PELAJAR</a>
                             <a href="{{ route('user.change-password') }}" class="dropdown-item text-secondary-light">TUKAR KATA LALUAN</a>
 
@@ -216,8 +216,8 @@
     @yield('content')
 
     <!-- Footer section -->
-    <footer class="footer" style="padding-top: 2%">
-        <p style="padding: 1%; margin-top: 1%;">&copy; Hakcipta Terpelihara 2021. <a href="#" target="_Blank"><font color="black">ARTANIS CLOUD SDN BHD</font></a></p>
+    <footer class="footer" style="padding-top: 1%; background-color: #232121!important;">
+        <p style="margin-top: 1%; color: #fff;">&copy; Hakcipta Terpelihara 2021. <a href="#" target="_Blank"><font color="white">ARTANIS CLOUD SDN BHD</font></a></p>
     </footer>
   </div>
 
