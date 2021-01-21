@@ -308,7 +308,7 @@ $('#state').change(function(){
   if(negeri){
     $.ajax({
       type:"get",
-       url:"/ACES/register/ajax/get-district/"+negeri,
+       url:"/register/ajax/get-district/"+negeri,
 
       success: function(respond){
         //console.log(respond);

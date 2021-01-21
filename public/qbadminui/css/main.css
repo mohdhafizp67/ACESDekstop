@@ -1318,7 +1318,7 @@ button.close {
   visibility: hidden;
   position: fixed !important;
   left: -100rem;
-  top: 4rem;
+  top: 5rem;
   box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08);
   transition: all ease 0.5s;
   z-index: 99;
