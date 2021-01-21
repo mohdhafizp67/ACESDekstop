@@ -339,7 +339,7 @@ textarea {
 /* Text color */
 
 .text-secondary-light {
-  color: #6c757d !important;
+  color: #130E29 !important;
 }
 
 .card-icon-bg-primary {
@@ -1379,7 +1379,7 @@ button.close {
 
 .side-bar .side-menu-item a:hover {
   padding-left: 2rem !important;
-  color: #ffc107  !important;
+  color: #3EADB0  !important;
 }
 
 .side-bar .side-sub-menu {
@@ -1486,7 +1486,7 @@ button.close {
 
 .profile-avatar {
   width: 50%;
-  border: 2px solid #003473;
+  border: 2px solid #130E29;
   border-radius: 50%;
   margin-top: -0.2rem;
   margin-right: 1rem;

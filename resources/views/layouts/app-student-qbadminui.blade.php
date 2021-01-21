@@ -58,44 +58,27 @@
                     <ul class="side-menu p-0 m-0 mt-3">
 
                         <li class="side-menu-item px-3"><a href="{{route('home')}}" class="w-100 py-2"><i class="fa fa-home" aria-hidden="true"></i>&nbsp&nbsp HALAMAN UTAMA</a></li>
-                        <!-- Sub menu parent -->
                         <li class="side-menu-item px-3"><a href="{{ route('user.student.profile') }}" class="w-100 py-2"><i class="fas fa-user-circle"aria-hidden="true"></i>&nbsp&nbsp PROFIL PELAJAR</a></li>
 
                         <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%;">
                             <font color="#77D8BE">AKTIVITI</font>
                         </li>
-
-                        <!-- Sub menu parent -->
                         <li class="side-menu-item px-3"><a href="{{route('lesson.courses')}}" class="w-100 py-2" ><i class="fa fa-book" aria-hidden="true"></i>&nbsp&nbsp PELAJARAN</a></li>
-                        <!-- Sub menu parent -->
                         <li class="side-menu-item px-3"><a href="{{route('quiz.choose-quiz')}}" class="w-100 py-2" ><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp&nbsp KUIZ</a></li>
-
-
-                        <!-- Sub menu parent -->
                         <li class="side-menu-item px-3"><a href="{{route('user.game.demo')}}" class="w-100 py-2" ><i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp&nbsp PERMAINAN</a></li>
-
                         <li class="side-menu-item px-3"><a href="{{ route('activities.leaderboard') }}" class="w-100 py-2" ><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp&nbsp CARTA JUARA</a></li>
+
 
                         <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%;">
                             <font color="#77D8BE">LAIN-LAIN</font>
                         </li>
-
-
-                        <!-- Sub menu parent -->
                         <li class="side-menu-item px-3"><a href="{{route('others.feedback')}}" class="w-100 py-2"><i class="fas fa-comments" aria-hidden="true"></i>&nbsp&nbsp MAKLUM BALAS</a></li>
 
-                        <li class="side-menu-item px-1"><a href="#" class="btn btn-danger"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp&nbsp LOG KELUAR</a></a></li>
 
-
-                        <!-- <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4" >Senarai Permohonan </a></li> -->
-
-
-
-                        <!-- <li class="side-menu-item px-3"><a href="#" class="w-100 py-3 pl-4" >Manual Pengguna</a></li> -->
-
-
-
-
+                        <div style="padding: 5px;"></div>
+                        <li class="nav-divider">
+                            <button type="button" class="btn btn-outline-danger" name="button" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp&nbsp LOG KELUAR</button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -104,7 +87,31 @@
         </div>
 
         <!-- Main section -->
-        <main class="bg-light main-full-body" style="background-color: #ccc0!important;">
+        <main class="bg-light main-full-body" style="background-color: #130E29!important;">
+
+          <div class="modal fade" id="logOutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h6 class="modal-title" id="exampleModalLabel">PENGESAHAN</h6>
+                          <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </a>
+                      </div>
+                      <div class="modal-body">
+                          <p style="text-align: justify;">ADAKAH ANDA MAHU LOG KELUAR?</p>
+                      </div>
+                      <div class="modal-footer">
+                          <a href="#" class="btn btn-primary" data-dismiss="modal">BATAL</a>
+                          <!-- <a href="#" class="btn btn-primary">Yes</a> -->
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                          @csrf
+                          <button type="submit" name="button" class="btn btn-danger">LOG KELUAR</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
             <!-- Theme changer -->
             <!-- <div class="theme-option p-4">
@@ -185,7 +192,7 @@
 
                           @if(Auth::user()->gambar_profile == null)
 
-                          <img src="{{ asset('https://icon-library.com/images/default-profile-icon/default-profile-icon-24.jpg') }}" alt="profile" class="profile-avatar" style="height:40px; width:40px;">
+                          <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style="height:40px; width:40px;">
                           @else
                           <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->gambar_profile)) }}"  class="profile-avatar" style="height:40px; width:40px; ">
                           @endif
@@ -194,16 +201,21 @@
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-max-height">
                             <!-- Menu items -->
 
-                            <a href="#" class="dropdown-item disabled small"><i class="far fa-user mr-1"></i>{{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}} </a>
-                            <a href="{{route('user.student.profile')}}" class="dropdown-item text-secondary-light">PROFIL PELAJAR</a>
-                            <a href="{{ route('user.change-password') }}" class="dropdown-item text-secondary-light">TUKAR KATA LALUAN</a>
+                            <a href="#" class="dropdown-item disabled small"><i class="far fa-user mr-1"></i>nbsp {{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}} </a>
+                            <!-- <a href="#" class="dropdown-item disabled small"><i class="fa fa-certificate"></i>&nbsp Student </a> -->
+                            <hr style="padding-bottom: 0px;">
+
+
+                            <a href="{{route('user.student.profile')}}" class="dropdown-item text-secondary-light"><i class="fa fa-user-circle" aria-hidden="true"></i> PROFIL PELAJAR</a>
+                            <a href="{{ route('user.change-password') }}" class="dropdown-item text-secondary-light"><i class="fa fa-lock" aria-hidden="true"></i> TUKAR KATA LALUAN</a>
+                            <a href="#" class="dropdown-item text-secondary-light" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i> LOG KELUAR</a>
 
                             <!-- <a href="#" class="dropdown-item text-secondary-light">Billing history</a> -->
-                            <a  class="dropdown-item text-secondary-light"
+                            <!-- <a  class="dropdown-item text-secondary-light"
                                 href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"
-                            >Log Keluar</a>
+                            ><i class="fa fa-power-off" aria-hidden="true"></i> Log Keluar</a> -->
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
@@ -216,8 +228,8 @@
     @yield('content')
 
     <!-- Footer section -->
-    <footer class="footer" style="padding-top: 2%">
-        <p style="padding: 1%; margin-top: 1%;">&copy; Hakcipta Terpelihara 2021. <a href="#" target="_Blank"><font color="black">ARTANIS CLOUD SDN BHD</font></a></p>
+    <footer class="footer" style="padding-top: 0%; background-color: #130E29 !important;">
+        <p style="padding: 1%; margin-top: 0%; color: white;">&copy; Hakcipta Terpelihara 2021. <a href="#" target="_Blank"><font color="white">ARTANIS CLOUD SDN BHD</font></a></p>
     </footer>
   </div>
 
