@@ -1,7 +1,7 @@
 @extends('layouts.app-login-register')
 
 @section('content')
-<html>
+<html style="background-color: #232121;">
 <head>
   <link rel="stylesheet" href="{{ asset('css/Register.css') }} ">
 </head>
@@ -9,8 +9,8 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-4" style="background-color: #000;">
-			<center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 35%;"/></center>
-			<p class="text-center" style="color: #fff; padding-bottom: 35%; padding-top: 20%; text-transform: uppercase;">
+			<center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 25%;"/></center>
+			<p class="text-center" style="color: #fff; padding-bottom: 15%; padding-top: 20%; text-transform: uppercase; font-size: 100%;">
 				Aces I 4.0 merupakan satu inisiatif yang mengguna pakai sistem elearning dan gamifikasi untuk memberi ilmu pengetahuan secara interaktif kepada pelajar pelajar tingkatan 5 di bawah kelolaan ecerdc.
 			</p>
 			<p style="color: #fff;">
@@ -23,7 +23,7 @@
 				Kerahsiaan
 			</p><br>
 		</div>
-		<div class="col-md-8" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+		<div class="col-md-8" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: 60% 100%;background-repeat: no-repeat;background-size: cover;">
 			<div class="row">
 				<div class="col-md-6"  >
 
@@ -40,15 +40,15 @@
 					</button>
 				</div> -->
 			</div>
-			<h4 style="color: #fff; font-size: 35px; text-align: center; text-transform: uppercase;">
+			<h4 style="color: #fff; font-size: 250%; text-align: center; text-transform: uppercase; font-weight: bold;">
 				Daftar Masuk
 			</h4>
       <div class="card-body">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-1">
 
           </div>
-          <div class="col-md-8">
+          <div class="col-md-10">
             <form action="{{ route('register') }}" method="POST" style="padding: 10px" source="custom" name="form">
               @csrf
               <div class="row">
@@ -240,7 +240,7 @@
               </button>
             </form>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1">
 
           </div>
         </div>

@@ -1358,11 +1358,12 @@ button.close {
 
 .side-bar .side-menu-item a,
 .side-bar .side-sub-menu-item a {
-  font-size: 0.9rem !important;
+  font-size: 1rem !important;
   display: block;
-  color: #ffffff !important;
+  color: #605E66 !important;
   transition: all ease 0.3s;
   position: relative !important;
+  text-align: justify;
 }
 
 .side-bar .side-menu-item a::after {
@@ -1370,7 +1371,7 @@ button.close {
   width: 0.6rem;
   height: 0.6rem;
   border-radius: 50%;
-  border: 2px solid #ffffff;
+  /* border: 2px solid #ffffff; */
   position: absolute;
   top: 1.5rem;
   left: 0;

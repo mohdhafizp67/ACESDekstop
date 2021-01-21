@@ -1,5 +1,5 @@
 
-@extends('layouts.app-student')
+@extends('layouts.app-student-qbadminui')
 
 
 @section('content')
