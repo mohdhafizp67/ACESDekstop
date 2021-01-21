@@ -21,9 +21,11 @@
 
     <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: center top;background-repeat: no-repeat;background-size: cover; padding-top: 0%; padding-left: 1%; margin-left: 0%;">
+		<div class="col-md-12" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: 40% 100%;background-repeat: no-repeat;background-size: cover; padding-top: 0%; padding-left: 1%; margin-left: 0%;">
+
 
         <h1 style="text-align: justify; font-size: 450%; color: #fff; font-weight:bold; padding-top: 5%; padding-left: 9%;">
+
   				ACES <font color="#ff0000">i 4.0</font> <br>
           <p style="text-align: justify;padding-bottom: 1%; font-size: 40%; color: #fff;">
     				HALAMAN UTAMA

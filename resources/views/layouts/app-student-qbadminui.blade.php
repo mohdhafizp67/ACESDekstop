@@ -192,7 +192,9 @@
 
                           @if(Auth::user()->gambar_profile == null)
 
+
                           <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style="height:40px; width:40px;">
+
                           @else
                           <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->gambar_profile)) }}"  class="profile-avatar" style="height:40px; width:40px; ">
                           @endif
@@ -200,6 +202,7 @@
                         <!-- Dropdown Menu -->
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-max-height">
                             <!-- Menu items -->
+
 
                             <a href="#" class="dropdown-item disabled small"><i class="far fa-user mr-1"></i>nbsp {{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}} </a>
                             <!-- <a href="#" class="dropdown-item disabled small"><i class="fa fa-certificate"></i>&nbsp Student </a> -->
@@ -209,6 +212,7 @@
                             <a href="{{route('user.student.profile')}}" class="dropdown-item text-secondary-light"><i class="fa fa-user-circle" aria-hidden="true"></i> PROFIL PELAJAR</a>
                             <a href="{{ route('user.change-password') }}" class="dropdown-item text-secondary-light"><i class="fa fa-lock" aria-hidden="true"></i> TUKAR KATA LALUAN</a>
                             <a href="#" class="dropdown-item text-secondary-light" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i> LOG KELUAR</a>
+
 
                             <!-- <a href="#" class="dropdown-item text-secondary-light">Billing history</a> -->
                             <!-- <a  class="dropdown-item text-secondary-light"
@@ -228,8 +232,10 @@
     @yield('content')
 
     <!-- Footer section -->
+
     <footer class="footer" style="padding-top: 0%; background-color: #130E29 !important;">
         <p style="padding: 1%; margin-top: 0%; color: white;">&copy; Hakcipta Terpelihara 2021. <a href="#" target="_Blank"><font color="white">ARTANIS CLOUD SDN BHD</font></a></p>
+
     </footer>
   </div>
 
