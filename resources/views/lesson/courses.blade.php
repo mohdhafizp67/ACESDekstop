@@ -93,22 +93,25 @@
 
 
       .card:nth-of-type(1) .image-container {
-        background-image: url(http://aces.test/concept/images/pelajaran/intro.jpg);
+        background-image: url('/concept/images/pelajaran/intro.jpg');
       }
 
       .card:nth-of-type(2) .image-container {
-      background-image: url(http://aces.test/concept/images/pelajaran/intro.jpg)
+      background-image: url(http://aces.test/concept/images/pelajaran/pillar.jpg)
       }
 
       .card:nth-of-type(3) .image-container {
-      background-image: url(http://aces.test/concept/images/pelajaran/intro.jpg)
+      background-image: url(http://aces.test/concept/images/pelajaran/vr.jpg)
       }
       .card:nth-of-type(4) .image-container {
-      background-image: url(http://aces.test/concept/images/pelajaran/intro.jpg)
+      background-image: url(http://aces.test/concept/images/pelajaran/addictive.jpg)
       }
       .card:nth-of-type(5) .image-container {
-      background-image: url(http://aces.test/concept/images/pelajaran/intro.jpg)
+      background-image: url(http://aces.test/concept/images/pelajaran/data.jpg)
       }
+      /* .card:nth-of-type(6) .image-container {
+      background-image: url(http://aces.test/concept/images/pelajaran/data.jpg)
+      } */
 
 
 
@@ -152,6 +155,18 @@
       h2 a {
       color: #f5b916
       }
+
+      .blinking{
+      	animation:blinkingText 30.0s ease infinite;
+        /* animation: blink 2s ease infinite; */
+      }
+      @keyframes blinkingText{
+      	0%{		color: #ffffff;	}
+      	49%{	color: transparent;	}
+      	50%{	color: transparent;	}
+      	99%{	color:transparent;	}
+      	100%{	color: #ffffff;	}
+      }
       </style>
 
   </head>
@@ -159,29 +174,37 @@
 
 
     <h1>PELAJARAN</h1>
-
+    <h1 class="blinking" style="font-size: 150%;">Sila leret ke kiri atau kanan untuk melihat kursus lain</h1>
     <div class="container">
       <div class="card-carousel">
         <div class="card" id="1">
           <div class="image-container"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+          <p>1</p>
         </div>
         <div class="card" id="2">
           <div class="image-container"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+          <p>2</p>
         </div>
         <div class="card" id="3">
           <div class="image-container"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+          <p>3</p>
         </div>
         <div class="card" id="4">
           <div class="image-container"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+          <p>4</p>
         </div>
         <div class="card" id="5">
           <div class="image-container"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+          <p>5</p>
         </div>
+        <div class="card" id="6">
+          <div class="image-container"></div>
+          <p>6</p>
+        </div>
+        <!-- <div class="card" id="6">
+          <div class="image-container"></div>
+          <p>6</p>
+        </div> -->
       </div>
       <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
     </div>
