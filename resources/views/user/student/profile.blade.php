@@ -36,8 +36,8 @@
   </head>
   <body>
 
-    <div class="container-fluid" >
-      <div class="row" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-top: 5%;">
+    <div class="container-fluid" style="background-image: linear-gradient(to top, #231245, #261d52, #272960, #28346e, #28407b, #28417c, #27437e, #27447f, #273c75, #26336b, #252b61, #232357);" >
+      <div class="row" >
         <div class="col-md-12">
           <h1 style="color: #fff;font-size: 450%;text-align: justify; padding-top: 5%;">
 						Profil
@@ -82,7 +82,7 @@
         </div> -->
       </div>
 
-	<div class="row" style="padding: 5%; padding-bottom: 0%; background-color: #130E29;">
+	<div class="row" style="padding: 5%; padding-bottom: 0%;">
     <div class="col-md-12">
       <div class="row" style="padding-bottom: 5%;">
       <div class="card col-md-4">
@@ -95,7 +95,7 @@
                       <span class="progress-right">
                           <span class="progress-bar"></span>
                       </span>
-                      <div class="progress-value">90%</div>
+                      <div class="progress-value">5%</div>
                   </div>
                   <p style="padding-bottom: 5%; color: #000;">KEMAJUAN</p>
 
