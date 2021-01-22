@@ -80,11 +80,14 @@ margin-left: -17%;
         </div> -->
         <div class="row">
           <div class="col-md-3">
-            <div style="padding: 15px;">
-
+            <div style="padding: 15px;"></div>
+            <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style=" width:60%;">
+            <!-- <div class="progressbar">
+            <div class="second circle" data-percent="90">
+              <strong></strong>
+              <span>KUIZ</span>
             </div>
-                <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style="height:100px; width:100px%;">
-
+            </div> -->
           </div>
           <div class="col-md-3">
       		    <div class="progressbar">
