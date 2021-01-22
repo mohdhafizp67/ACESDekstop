@@ -15,28 +15,29 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <style media="screen">
 .circle {
-width: 200px;
+width: 120%;
 margin: 6px 6px 20px;
 display: inline-block;
 position: relative;
 text-align: center;
 line-height: 1.2;
+top: 20px;
 }
 
 .circle canvas {
 vertical-align: top;
-width: 200px !important;
+width: 50% !important;
 }
 
 .circle strong {
 position: absolute;
-top: 30px;
-left: 0;
+top: 45px;
+left: -23%;
 width: 100%;
 text-align: center;
 line-height: 40px;
@@ -53,7 +54,8 @@ font-weight: normal;
 .circle span {
 display: block;
 color: #aaa;
-margin-top: 12px;
+margin-top: 85%;
+margin-left: -17%;
 }
 </style>
   </head>
@@ -81,33 +83,31 @@ margin-top: 12px;
             <div style="padding: 15px;">
 
             </div>
-                <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style="height:100px; width:100px;">
+                <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style="height:100px; width:100px%;">
 
           </div>
           <div class="col-md-3">
-            <div class="col-sm-4">
-          		    <div class="progressbar">
-                          <div class="second circle" data-percent="77">
-                            <strong></strong>
-                            <span>animation <br> progress</span>
-                          </div>
-                          </div>
-              		</div>
+      		    <div class="progressbar">
+              <div class="second circle" data-percent="90">
+                <strong></strong>
+                <span>KUIZ</span>
+              </div>
+              </div>
           </div>
           <div class="col-md-3">
-            <div class="card text-white bg-success mb-3">
-              <div class="card-body" style="background-color: white !important; border: solid green 2px;">
-                <p class="card-text" style="color: black;">Some quick example text to build on the card title .</p>
-              </div>
-              <div class="card-footer">Header</div>
+            <div class="progressbar1">
+            <div class="second circle" data-percent="20">
+              <strong></strong>
+              <span>animation <br> progress</span>
+            </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card text-white bg-success mb-3">
-              <div class="card-body" style="background-color: white !important; border: solid green 2px;">
-                <p class="card-text" style="color: black;">Some quick example text to build on the card title .</p>
-              </div>
-              <div class="card-footer">Header</div>
+            <div class="progressbar2">
+            <div class="second circle" data-percent="70">
+              <strong></strong>
+              <span>animation <br> progress</span>
+            </div>
             </div>
           </div>
 
@@ -169,9 +169,69 @@ $(document).ready(function ($) {
                   // startAngle: -Math.PI / 2,
                   value: percent / 100,
                   size : 400,
-                  thickness: 15,
+                  thickness: 20,
+                  // fill: {
+                  //     color: '#5AAAE7'
+                  // }
+              }).on('circle-animation-progress', function (event, progress, stepValue) {
+                  $(this).find('strong').text((stepValue*100).toFixed(0) + "%");
+              }).stop();
+          }
+      });
+  }
+
+  animateElements();
+  $(window).scroll(animateElements);
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function ($) {
+  function animateElements() {
+      $('.progressbar1').each(function () {
+          var elementPos = $(this).offset().top;
+          var topOfWindow = $(window).scrollTop();
+          var percent = $(this).find('.circle').attr('data-percent');
+          var animate = $(this).data('animate');
+          if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+              $(this).data('animate', true);
+              $(this).find('.circle').circleProgress({
+                  // startAngle: -Math.PI / 2,
+                  value: percent / 100,
+                  size : 400,
+                  thickness: 20,
                   fill: {
-                      color: '#663399'
+                      gradient: ['#3aeabb', '#fdd250']
+                  }
+              }).on('circle-animation-progress', function (event, progress, stepValue) {
+                  $(this).find('strong').text((stepValue*100).toFixed(0) + "%");
+              }).stop();
+          }
+      });
+  }
+
+  animateElements();
+  $(window).scroll(animateElements);
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function ($) {
+  function animateElements() {
+      $('.progressbar2').each(function () {
+          var elementPos = $(this).offset().top;
+          var topOfWindow = $(window).scrollTop();
+          var percent = $(this).find('.circle').attr('data-percent');
+          var animate = $(this).data('animate');
+          if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+              $(this).data('animate', true);
+              $(this).find('.circle').circleProgress({
+                  // startAngle: -Math.PI / 2,
+                  value: percent / 100,
+                  size : 400,
+                  thickness: 20,
+                  fill: {
+                      gradient: ['#3aeabb', '#fdd250']
                   }
               }).on('circle-animation-progress', function (event, progress, stepValue) {
                   $(this).find('strong').text((stepValue*100).toFixed(0) + "%");
