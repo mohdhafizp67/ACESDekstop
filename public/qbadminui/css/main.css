@@ -1474,7 +1474,8 @@ button.close {
 
 .navbar-brand span {
   height: 5px;
-  background: #000000 !important;
+  background: #ffffff !important;
+  /* background-image: url({{asset('concept/images/galaxy/button_main.png')}}); */
   width: 30px;
   display: block;
   margin-bottom: 6px;

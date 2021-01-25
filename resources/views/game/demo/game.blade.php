@@ -1,572 +1,619 @@
 @extends('layouts.app-student-qbadminui')
+
+
 @section('content')
 
+
 <!DOCTYPE html>
-<html lang="en" style="background-color: #232121;">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PELAJARAN I 4.0</title>
 
-    <title>Liga Permainan</title>
+      <style>
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
+      @keyframes heartbeat {
+        0% {
+          transform: scale(0);
+        }
+        25% {
+          transform: scale(1.2);
+        }
+        50% {
+          transform: scale(1);
+        }
+        75% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="{{ asset('css/permainan.css') }} "> -->
-
-<style>
-@-webkit-keyframes slidein {
-0% {
-  top: -400px;
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-  top: 0px;
-}
-}
-@keyframes slidein {
-0% {
-  top: -400px;
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-  top: 0px;
-}
-}
-@-webkit-keyframes slideout {
-0% {
-  top: 0;
-  opacity: 1;
-}
-100% {
-  top: -400px;
-  opacity: 0;
-}
-}
-@keyframes slideout {
-0% {
-  top: 0;
-  opacity: 1;
-}
-100% {
-  top: -400px;
-  opacity: 0;
-}
-}
-/* body {
-background: #eee;
-font-family: "Tahoma";
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-user-select: none;
-} */
-body #scene {
-display: flex;
-align-items: center;
-justify-content: left;
-width: 900px;
-height: 400px;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-background-color: #4C6367;
-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-overflow: hidden;
-}
-body #scene #left-zone {
-background: #4C6367;
-height: 75%;
-flex-grow: 0;
-/* display: flex; */
-width: 350px;
-align-items: center;
-justify-content: left;
-}
-body #scene #left-zone .list {
-display: flex;
-list-style: none;
-align-content: stretch;
-flex-direction: column;
-flex-grow: 1;
-margin: 0;
-padding: 0;
-}
-body #scene #left-zone .list li.item input[type=radio] {
-display: none;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ label {
-display: block;
-opacity: 0.5;
-height: 50px;
-text-align: center;
-line-height: 50px;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ label:first-letter {
-text-transform: uppercase;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ label:hover {
-opacity: 0.75;
-cursor: pointer;
-}
-/* body #scene #left-zone .list li.item input[type=radio] ~ label.label_strawberry:before {
-content: " ";
-display: block;
-position: absolute;
-width: 50px;
-height: 50px;
-margin-left: 15px;
-background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/83067-200.png");
-background-position: center;
-background-size: 75% 75%;
-background-repeat: no-repeat;
-} */
-/* body #scene #left-zone .list li.item input[type=radio] ~ label.label_banana:before {
-content: " ";
-display: block;
-position: absolute;
-width: 50px;
-height: 50px;
-margin-left: 15px;
-background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/53209-200.png");
-background-position: center;
-background-size: 75% 75%;
-background-repeat: no-repeat;
-} */
-/* body #scene #left-zone .list li.item input[type=radio] ~ label.label_Litar3:before {
-content: " ";
-display: block;
-position: absolute;
-width: 50px;
-height: 50px;
-margin-left: 15px;
-background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/14333-200.png");
-background-position: center;
-background-size: 75% 75%;
-background-repeat: no-repeat;
-} */
-/* body #scene #left-zone .list li.item input[type=radio] ~ label.label_Litar4:before {
-content: " ";
-display: block;
-position: absolute;
-width: 50px;
-height: 50px;
-margin-left: 15px;
-background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
-background-position: center;
-background-size: 75% 75%;
-background-repeat: no-repeat;
-} */
-body #scene #left-zone .list li.item input[type=radio] ~ .content {
-position: absolute;
-left: 200px;
-top: -400px;
-width: 100%;
-height: 400px;
--webkit-animation-duration: 0.75s;
-        animation-duration: 0.75s;
--webkit-animation-name: slideout;
-        animation-name: slideout;
--webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar1 .picto {
-height: 300px;
-width: 300px;
-background-image: url(http://aces.test/concept/images/permainan/Picture1.png);
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-border: solid 5px;
-border-color: #960202;
-/* background-image: linear-gradient(to right top, #ff9b00, #ff8300, #ff6900, #ff4800, #ff0000); */
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar1 h1 {
-color: #D64541;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar2 .picto {
-height: 300px;
-width: 300px;
-background-image: url(http://aces.test/concept/images/permainan/Picture2.png);
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-border: solid 5px;
-border-color: #960202;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar2 h1 {
-color: #D64541;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar3 .picto {
-  height: 300px;
-  width: 300px;
-  background-image: url(http://aces.test/concept/images/permainan/Picture3.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: solid 5px;
-  border-color: #960202;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar3 h1 {
-
-color: #D64541;
-
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar4 .picto {
-  height: 300px;
-  width: 300px;
-  background-image: url(http://aces.test/concept/images/permainan/Picture4.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: solid 5px;
-  border-color: #960202;
-}
-
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar4 h1 {
-
-color: #D64541;
-
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar5 .picto {
-  height: 300px;
-  width: 300px;
-  background-image: url(http://aces.test/concept/images/permainan/Picture4.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: solid 5px;
-  border-color: #960202;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar5 h1 {
-
-color: #D64541;
-
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar6 .picto {
-  height: 300px;
-  width: 300px;
-  background-image: url(http://aces.test/concept/images/permainan/Picture5.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: solid 5px;
-  border-color: #960202;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar6 h1 {
-
-color: #D64541;
-
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar7 .picto {
-  height: 300px;
-  width: 300px;
-  background-image: url(http://aces.test/concept/images/permainan/Picture5.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: solid 5px;
-  border-color: #960202;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar7 h1 {
-
-color: #D64541;
-
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar8 .picto {
-  height: 300px;
-  width: 300px;
-  background-image: url(http://aces.test/concept/images/permainan/Picture6.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: solid 5px;
-  border-color: #960202;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar8 h1 {
-
-color: #D64541;
-
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar9 .picto {
-  height: 300px;
-  width: 300px;
-  background-image: url(http://aces.test/concept/images/permainan/Picture7.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: solid 5px;
-  border-color: #960202;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar9 h1 {
-
-color: #D64541;
-
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar10 .picto {
-  height: 300px;
-  width: 300px;
-  background-image: url(http://aces.test/concept/images/permainan/Picture8.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: solid 5px;
-  border-color: #960202;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar10 h1 {
-
-color: #D64541;
-
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar11 .picto {
-  height: 300px;
-  width: 300px;
-  background-image: url(http://aces.test/concept/images/permainan/Picture8.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: solid 5px;
-  border-color: #960202;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_Litar11 h1 {
-
-color: #D64541;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
-text-transform: uppercase;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content p {
-max-width: 50%;
-text-align: center;
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label {
-opacity: 1;
--webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Litar1 {
-
-color: white;
-border-right: solid 4px #D64541;
-background-color: #D64541
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Litar2 {
-  color: white;
-  border-right: solid 4px #D64541;
-  background-color: #D64541
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Litar3 {
-  color: white;
-  border-right: solid 4px #D64541;
-  background-color: #D64541
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Litar4 {
-  color: white;
-  border-right: solid 4px #D64541;
-  background-color: #D64541
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Litar5 {
-  color: white;
-  border-right: solid 4px #D64541;
-  background-color: #D64541
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Litar6 {
-  color: white;
-  border-right: solid 4px #D64541;
-  background-color: #D64541
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Litar7 {
-  color: white;
-  border-right: solid 4px #D64541;
-  background-color: #D64541
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Litar8 {
-  color: white;
-  border-right: solid 4px #D64541;
-  background-color: #D64541
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Litar9 {
-  color: white;
-  border-right: solid 4px #D64541;
-  background-color: #D64541
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Litar10 {
-  color: white;
-  border-right: solid 4px #D64541;
-  background-color: #D64541
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_Litar11 {
-  color: white;
-  border-right: solid 4px #D64541;
-  background-color: #D64541
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
--webkit-animation-duration: 0.75s;
-        animation-duration: 0.75s;
--webkit-animation-name: slidein;
-        animation-name: slidein;
--webkit-animation-fill-mode: forwards;
+      .slider-container {
+        position: relative;
+        margin: 0 auto;
+        width: 800px;
+        height: 600px;
+      }
+      .slider-container .bullet-container {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .slider-container .bullet-container .bullet {
+        margin-right: 14px;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: white;
+        opacity: 0.5;
+      }
+      .slider-container .bullet-container .bullet:last-child {
+        margin-right: 0px;
+      }
+      .slider-container .bullet-container .bullet.active {
+        opacity: 1;
+      }
+      .slider-container .slider-content {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 70%;
+        height: 60%;
+        transform: translate(-50%, -50%);
+      }
+      .slider-container .slider-content .slider-single {
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: z-index 0ms 250ms;
+      }
+      .slider-container .slider-content .slider-single .slider-single-image {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        /* box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2); */
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        transform: scale(0);
+        opacity: 0;
+      }
+      .slider-container .slider-content .slider-single .slider-single-download {
+        position: absolute;
+        display: block;
+        right: -22px;
+        bottom: 12px;
+        padding: 15px;
+        color: #333333;
+        background-color: #fdc84b;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "karla";
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        opacity: 0;
+      }
+      .slider-container .slider-content .slider-single .slider-single-download:hover, .slider-container .slider-content .slider-single .slider-single-download:focus {
+        outline: none;
+        text-decoration: none;
+      }
+      .slider-container .slider-content .slider-single .slider-single-title {
+        display: block;
+        float: left;
+        margin: 16px 0 0 20px;
+        font-size: 20px;
+        font-family: "karla";
+        font-weight: 400;
+        color: #ffffff;
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        opacity: 0;
+      }
+      .slider-container .slider-content .slider-single .slider-single-likes {
+        display: block;
+        float: right;
+        margin: 16px 20px 0 0;
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        opacity: 0;
+      }
+      .slider-container .slider-content .slider-single .slider-single-likes i {
+        font-size: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        color: #ff6060;
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        transform: scale(0);
+      }
+      .slider-container .slider-content .slider-single .slider-single-likes p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        color: #ffffff;
+      }
+      .slider-container .slider-content .slider-single .slider-single-likes:hover, .slider-container .slider-content .slider-single .slider-single-likes:focus {
+        outline: none;
+        text-decoration: none;
+      }
+      .slider-container .slider-content .slider-single.preactivede .slider-single-image {
+        transform: translateX(-50%) scale(0);
+      }
+      .slider-container .slider-content .slider-single.preactive {
+        z-index: 1;
+      }
+      .slider-container .slider-content .slider-single.preactive .slider-single-image {
+        opacity: 0.3;
+        transform: translateX(-25%) scale(0.8);
+      }
+      .slider-container .slider-content .slider-single.preactive .slider-single-download {
+        transform: translateX(-150px);
+      }
+      .slider-container .slider-content .slider-single.preactive .slider-single-title {
+        transform: translateX(-150px);
+      }
+      .slider-container .slider-content .slider-single.preactive .slider-single-likes {
+        transform: translateX(-150px);
+      }
+      .slider-container .slider-content .slider-single.proactive {
+        z-index: 1;
+      }
+      .slider-container .slider-content .slider-single.proactive .slider-single-image {
+        opacity: 0.3;
+        transform: translateX(25%) scale(0.8);
+      }
+      .slider-container .slider-content .slider-single.proactive .slider-single-download {
+        transform: translateX(150px);
+      }
+      .slider-container .slider-content .slider-single.proactive .slider-single-title {
+        transform: translateX(150px);
+      }
+      .slider-container .slider-content .slider-single.proactive .slider-single-likes {
+        transform: translateX(150px);
+      }
+      .slider-container .slider-content .slider-single.proactivede .slider-single-image {
+        transform: translateX(50%) scale(0);
+      }
+      .slider-container .slider-content .slider-single.active {
+        z-index: 2;
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-image {
+        opacity: 1;
+        transform: translateX(0%) scale(1);
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-download {
+        opacity: 1;
+        transition-delay: 100ms;
+        transform: translateX(0px);
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-title {
+        opacity: 1;
+        transition-delay: 200ms;
+        transform: translateX(0px);
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-likes {
+        opacity: 1;
+        transition-delay: 300ms;
+        transform: translateX(0px);
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-likes i {
+        animation-name: heartbeat;
+        animation-duration: 500ms;
+        animation-delay: 900ms;
+        animation-interation: 1;
         animation-fill-mode: forwards;
--webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-body #scene #middle-border {
-background-color: #eee;
-height: 75%;
-flex-grow: 1;
-max-width: 2px;
-z-index: 0;
-}
-body #scene #right-zone {
+      }
+      .slider-container .slider-left {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        right: 85%;
+        top: 50%;
+        color: #ffffff;
+        transform: translateY(-50%);
+        padding: 20px 15px;
+        border-top: 2px solid #fdc84b;
+        border-right: 2px solid #fdc84b;
+        border-bottom: 2px solid #fdc84b;
+        border-left: 2px solid #fdc84b;
+        margin-right: -2px;
+      }
+      .slider-container .slider-right {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        left: 85%;
+        top: 50%;
+        color: #ffffff;
+        transform: translateY(-50%);
+        padding: 20px 15px;
+        border-top: 2px solid #fdc84b;
+        border-right: 2px solid #fdc84b;
+        border-bottom: 2px solid #fdc84b;
+        border-left: 2px solid #fdc84b;
+        margin-left: -2px;
+      }
+      .slider-container .not-visible {
+        display: none !important;
+      }
 
-background: #232121;
-height: 100%;
-flex-grow: 3;
-}
-</style>
+			.blinking{
+      	animation:blinkingText 30.0s infinite;
+      }
+      @keyframes blinkingText{
+      	0%{		color: #ffffff;	}
+      	49%{	color: transparent;	}
+      	50%{	color: transparent;	}
+      	99%{	color:transparent;	}
+      	100%{	color: #ffffff;	}
+      }
+
+      </style>
+
   </head>
   <body>
 
-    <div class="container-fluid" style="background-image: url({{asset('concept/images/mascot.jpg')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">
-	<div class="row">
-		<div class="col-md-12" style="padding-top: 10%;">
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
-			<h3 style="color: red;font-size: 35px;font-weight: bold; margin-left: 50px;">
-				Permainan
-			</h3>
-		</div>
-		<!-- <div class="col-md-4">
-			<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg">
-		</div> -->
-	</div>
 
-  <div class="row">
-    <div class="col-md-12" style="padding-top: 50%;">
-      <div id="scene">
-   <div id="left-zone" style="overflow-y:auto;height: 400px;width:40%;">
-     <ul class="list">
-       <li class="item" style="background-color: white !important; border: 1px solid white;">
-         <input type="radio" id="radio_The garden Litar1 (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" name="basic_carousel" value="The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" checked="checked"/>
-         <label class="label_Litar1" for="radio_The garden Litar1 (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)">Pengenalan</label>
-         <div class="content content_Litar1"><span class="picto"></span>
-           <a href="{{route('lesson.karakter')}}"><h1>Pengenalan</h1></a>
 
-         </div>
-       </li>
+    <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">GAMES</h1>
+    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 5%; color: #fff;">Swipe left to see other circut</h1>
+    <div class="slider-container" style="margin-top: -15%;">
 
-       <li class="item" style="background-color: white !important; border: 1px solid white;">
-         <input type="radio" id="radio_A Litar2 is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." name="basic_carousel" value="A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."/>
-         <label class="label_Litar2" for="radio_A Litar2 is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.">Litar 2</label>
-         <div class="content content_Litar2"><span class="picto"></span>
-           <h1>Litar 2</h1>
+      <div class="slider-content">
 
-         </div>
-       </li>
+          <div class="slider-single">
+              <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture1.png') }}" alt="1" /></a>
+              <h1 class="slider-single-title">Introduction - Tutorial</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
 
-       <li class="item" style="background-color: white !important; border: 1px solid white;">
-         <input type="radio" id="radio_The Litar3 tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus." name="basic_carousel" value="The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."/>
-         <label class="label_Litar3" for="radio_The Litar3 tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.">Litar 3</label>
-         <div class="content content_Litar3"><span class="picto"></span>
-           <h1>Litar 3</h1>
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture2.png') }}" alt="2" />
+              <h1 class="slider-single-title">Circuit 01 - VR</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
 
-         </div>
-       </li>
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture3.png') }}" alt="3" />
+              <h1 class="slider-single-title">Circuit 02 - Addictive Manufacturing</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
 
-       <li class="item" style="background-color: white !important; border: 1px solid white;">
-         <input type="radio" id="radio_The Litar4 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-         <label class="label_Litar4" for="radio_The Litar4 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 4</label>
-         <div class="content content_Litar4"><span class="picto"></span>
-           <h1>Litar 4</h1>
 
-         </div>
-       </li>
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture4.png') }}" alt="4" />
+              <h1 class="slider-single-title">Circuit 03 - Internet of Things</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
 
-       <li class="item" style="background-color: white !important; border: 1px solid white;">
-         <input type="radio" id="radio_The Litar5 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-         <label class="label_Litar5" for="radio_The Litar5 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 5</label>
-         <div class="content content_Litar5"><span class="picto"></span>
-           <h1>Litar 5</h1>
 
-         </div>
-       </li>
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture5.png') }}" alt="5" />
+              <h1 class="slider-single-title">Circuit 04 - Big Data</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
 
-       <li class="item" style="background-color: white !important; border: 1px solid white;">
-         <input type="radio" id="radio_The Litar6 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-         <label class="label_Litar6" for="radio_The Litar6 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 6</label>
-         <div class="content content_Litar6"><span class="picto"></span>
-           <h1>Litar 6</h1>
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture6.png') }}" alt="6" />
+              <h1 class="slider-single-title">Circuit 05 - Cloud Computing</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
 
-         </div>
-       </li>
+            <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture7.png') }}" alt="6" />
+              <h1 class="slider-single-title">Circuit 06 - Cyber Security</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1</p>
+              </a> -->
+          </div>
 
-       <li class="item" style="background-color: white !important; border: 1px solid white;">
-         <input type="radio" id="radio_The Litar7 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-         <label class="label_Litar7" for="radio_The Litar7 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 7</label>
-         <div class="content content_Litar7"><span class="picto"></span>
-           <h1>Litar 7</h1>
+        <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture8.png') }}" alt="6" />
+              <h1 class="slider-single-title">Circuit 07 - Universal Integration</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>2</p>
+              </a> -->
+          </div>
 
-         </div>
-       </li>
+        <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture9.png') }}" alt="6" />
+              <h1 class="slider-single-title">Circuit 08 - Advanced Simulation</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>3</p> -->
+              </a>
+          </div>
 
-       <li class="item" style="background-color: white !important; border: 1px solid white;">
-         <input type="radio" id="radio_The Litar8 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-         <label class="label_Litar8" for="radio_The Litar8 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 8</label>
-         <div class="content content_Litar8"><span class="picto"></span>
-           <h1>Litar 8</h1>
+          <div class="slider-single">
+                <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture10.png') }}" alt="6" />
+                <h1 class="slider-single-title">Circuit 09 - Autonomous Robot</h1>
+                <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                    <i class="fa fa-heart"></i>
+                    <p>3</p> -->
+                </a>
+            </div>
 
-         </div>
-       </li>
+            <div class="slider-single">
+                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture11.png') }}" alt="6" />
+                  <h1 class="slider-single-title">Epilogue - Final</h1>
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>3</p> -->
+                  </a>
+              </div>
 
-       <li class="item" style="background-color: white !important; border: 1px solid white;">
-         <input type="radio" id="radio_The Litar9 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-         <label class="label_Litar9" for="radio_The Litar9 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 9</label>
-         <div class="content content_Litar9"><span class="picto"></span>
-           <h1>Litar 9</h1>
+      </div>
 
-         </div>
-       </li>
-
-       <li class="item" style="background-color: white !important; border: 1px solid white;">
-         <input type="radio" id="radio_The Litar10 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-         <label class="label_Litar10" for="radio_The Litar10 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 10</label>
-         <div class="content content_Litar10"><span class="picto"></span>
-           <h1>Litar 10</h1>
-
-         </div>
-       </li>
-       <li class="item" style="background-color: white !important; border: 1px solid white;">
-         <input type="radio" id="radio_The Litar11 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
-         <label class="label_Litar11" for="radio_The Litar11 (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Litar 11</label>
-         <div class="content content_Litar11"><span class="picto"></span>
-           <h1>Litar 11</h1>
-
-         </div>
-       </li>
-     </ul>
-   </div>
-   <div id="middle-border"></div>
-   <div id="right-zone"></div>
- </div>
-    </div>
   </div>
+
 </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <!-- <h2>Checkout <a target="_blank" href="https://codepen.io/WillyW/pen/jOrPLab">v2</a></h2> -->
+
   </body>
+
+
+
+  <script>
+
+  const repeat = false;
+  const noArrows = false;
+  const noBullets = false;
+
+
+  const container = document.querySelector('.slider-container');
+  var slide = document.querySelectorAll('.slider-single');
+  var slideTotal = slide.length - 1;
+  var slideCurrent = -1;
+
+  function initBullets() {
+      if (noBullets) {
+          return;
+      }
+      const bulletContainer = document.createElement('div');
+      bulletContainer.classList.add('bullet-container')
+      slide.forEach((elem, i) => {
+          const bullet = document.createElement('div');
+          bullet.classList.add('bullet')
+          bullet.id = `bullet-index-${i}`
+          bullet.addEventListener('click', () => {
+              goToIndexSlide(i);
+          })
+          bulletContainer.appendChild(bullet);
+          elem.classList.add('proactivede');
+      })
+      container.appendChild(bulletContainer);
+  }
+
+  function initArrows() {
+      if (noArrows) {
+          return;
+      }
+      const leftArrow = document.createElement('a')
+      const iLeft = document.createElement('i');
+      iLeft.classList.add('fa')
+      iLeft.classList.add('fa-arrow-left')
+      leftArrow.classList.add('slider-left')
+      leftArrow.appendChild(iLeft)
+      leftArrow.addEventListener('click', () => {
+          slideLeft();
+      })
+      const rightArrow = document.createElement('a')
+      const iRight = document.createElement('i');
+      iRight.classList.add('fa')
+      iRight.classList.add('fa-arrow-right')
+      rightArrow.classList.add('slider-right')
+      rightArrow.appendChild(iRight)
+      rightArrow.addEventListener('click', () => {
+          slideRight();
+      })
+      container.appendChild(leftArrow);
+      container.appendChild(rightArrow);
+  }
+
+  function slideInitial() {
+      initBullets();
+      initArrows();
+      setTimeout(function () {
+          slideRight();
+      }, 500);
+  }
+
+  function updateBullet() {
+      if (!noBullets) {
+          document.querySelector('.bullet-container').querySelectorAll('.bullet').forEach((elem, i) => {
+              elem.classList.remove('active');
+              if (i === slideCurrent) {
+                  elem.classList.add('active');
+              }
+          })
+      }
+      checkRepeat();
+  }
+
+  function checkRepeat() {
+      if (!repeat) {
+          if (slideCurrent === slide.length - 1) {
+              slide[0].classList.add('not-visible');
+              slide[slide.length - 1].classList.remove('not-visible');
+              if (!noArrows) {
+                  document.querySelector('.slider-right').classList.add('not-visible')
+                  document.querySelector('.slider-left').classList.remove('not-visible')
+              }
+          }
+          else if (slideCurrent === 0) {
+              slide[slide.length - 1].classList.add('not-visible');
+              slide[0].classList.remove('not-visible');
+              if (!noArrows) {
+                  document.querySelector('.slider-left').classList.add('not-visible')
+                  document.querySelector('.slider-right').classList.remove('not-visible')
+              }
+          } else {
+              slide[slide.length - 1].classList.remove('not-visible');
+              slide[0].classList.remove('not-visible');
+              if (!noArrows) {
+                  document.querySelector('.slider-left').classList.remove('not-visible')
+                  document.querySelector('.slider-right').classList.remove('not-visible')
+              }
+          }
+      }
+  }
+
+  function slideRight() {
+      if (slideCurrent < slideTotal) {
+          slideCurrent++;
+      } else {
+          slideCurrent = 0;
+      }
+
+      if (slideCurrent > 0) {
+          var preactiveSlide = slide[slideCurrent - 1];
+      } else {
+          var preactiveSlide = slide[slideTotal];
+      }
+      var activeSlide = slide[slideCurrent];
+      if (slideCurrent < slideTotal) {
+          var proactiveSlide = slide[slideCurrent + 1];
+      } else {
+          var proactiveSlide = slide[0];
+
+      }
+
+      slide.forEach((elem) => {
+          var thisSlide = elem;
+          if (thisSlide.classList.contains('preactivede')) {
+              thisSlide.classList.remove('preactivede');
+              thisSlide.classList.remove('preactive');
+              thisSlide.classList.remove('active');
+              thisSlide.classList.remove('proactive');
+              thisSlide.classList.add('proactivede');
+          }
+          if (thisSlide.classList.contains('preactive')) {
+              thisSlide.classList.remove('preactive');
+              thisSlide.classList.remove('active');
+              thisSlide.classList.remove('proactive');
+              thisSlide.classList.remove('proactivede');
+              thisSlide.classList.add('preactivede');
+          }
+      });
+      preactiveSlide.classList.remove('preactivede');
+      preactiveSlide.classList.remove('active');
+      preactiveSlide.classList.remove('proactive');
+      preactiveSlide.classList.remove('proactivede');
+      preactiveSlide.classList.add('preactive');
+
+      activeSlide.classList.remove('preactivede');
+      activeSlide.classList.remove('preactive');
+      activeSlide.classList.remove('proactive');
+      activeSlide.classList.remove('proactivede');
+      activeSlide.classList.add('active');
+
+      proactiveSlide.classList.remove('preactivede');
+      proactiveSlide.classList.remove('preactive');
+      proactiveSlide.classList.remove('active');
+      proactiveSlide.classList.remove('proactivede');
+      proactiveSlide.classList.add('proactive');
+
+      updateBullet();
+  }
+
+  function slideLeft() {
+      if (slideCurrent > 0) {
+          slideCurrent--;
+      } else {
+          slideCurrent = slideTotal;
+      }
+
+      if (slideCurrent < slideTotal) {
+          var proactiveSlide = slide[slideCurrent + 1];
+      } else {
+          var proactiveSlide = slide[0];
+      }
+      var activeSlide = slide[slideCurrent];
+      if (slideCurrent > 0) {
+          var preactiveSlide = slide[slideCurrent - 1];
+      } else {
+          var preactiveSlide = slide[slideTotal];
+      }
+      slide.forEach((elem) => {
+          var thisSlide = elem;
+          if (thisSlide.classList.contains('proactive')) {
+              thisSlide.classList.remove('preactivede');
+              thisSlide.classList.remove('preactive');
+              thisSlide.classList.remove('active');
+              thisSlide.classList.remove('proactive');
+              thisSlide.classList.add('proactivede');
+          }
+          if (thisSlide.classList.contains('proactivede')) {
+              thisSlide.classList.remove('preactive');
+              thisSlide.classList.remove('active');
+              thisSlide.classList.remove('proactive');
+              thisSlide.classList.remove('proactivede');
+              thisSlide.classList.add('preactivede');
+          }
+      });
+
+      preactiveSlide.classList.remove('preactivede');
+      preactiveSlide.classList.remove('active');
+      preactiveSlide.classList.remove('proactive');
+      preactiveSlide.classList.remove('proactivede');
+      preactiveSlide.classList.add('preactive');
+
+      activeSlide.classList.remove('preactivede');
+      activeSlide.classList.remove('preactive');
+      activeSlide.classList.remove('proactive');
+      activeSlide.classList.remove('proactivede');
+      activeSlide.classList.add('active');
+
+      proactiveSlide.classList.remove('preactivede');
+      proactiveSlide.classList.remove('preactive');
+      proactiveSlide.classList.remove('active');
+      proactiveSlide.classList.remove('proactivede');
+      proactiveSlide.classList.add('proactive');
+
+      updateBullet();
+  }
+
+  function goToIndexSlide(index) {
+      const sliding = (slideCurrent > index) ? () => slideRight() : () => slideLeft();
+      while (slideCurrent !== index) {
+          sliding();
+      }
+  }
+
+  slideInitial();
+  </script>
+
 </html>
+
 
 @endsection

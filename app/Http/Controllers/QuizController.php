@@ -17,6 +17,12 @@ use App\Models\AnswerBank;
 
 class QuizController extends Controller
 {
+
+  public function startexam()
+  {
+      return view('quiz.start-exam');
+  }
+
   public function viewQuizList()
   {
       $quiz_list = Quiz::where('status', '1')->get();
