@@ -7,148 +7,242 @@
     <meta charset="utf-8">
     <title>PELAJARAN I 4.0</title>
 
-      <style media="screen">
+      <style>
 
-      :root {
-        --crsl-bg: transparent;
-        --box-bg: #1e272e;
-        --box-shadow: #0000001c;
-        --box-shadow-border: #0000000f;
-        --box-border: #fff;
+      @keyframes heartbeat {
+        0% {
+          transform: scale(0);
+        }
+        25% {
+          transform: scale(1.2);
+        }
+        50% {
+          transform: scale(1);
+        }
+        75% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
       }
 
-      /* html, body {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        background: #2f3539;
-        background: -moz-radial-gradient(circle, #2f3539 0%, #1e272e 100%);
-        background: -webkit-radial-gradient(circle, #2f3539 0%, #1e272e 100%);
-        background: radial-gradient(circle, #2f3539 0%, #1e272e 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3539",endColorstr="#1e272e",GradientType=1);
-      } */
-      /* html *, body * {
-        font-family: "Source Sans Pro", sans-serif;
-      } */
-      /* html > p, body > p {
-        font-size: 0.95em;
-        font-weight: bold;
+      .slider-container {
+        position: relative;
+        margin: 0 auto;
+        width: 800px;
+        height: 600px;
+      }
+      .slider-container .bullet-container {
         position: absolute;
-        top: 7.5%;
+        bottom: 10px;
         width: 100%;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        text-align: center;
-        color: white;
-        user-select: none;
-      } */
-       /* html > .carousel, body > .carousel {
-        padding-top: 125px;
-      } */
-
-      .carousel {
-        position: relative;
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-      }
-      .carousel__prev, .carousel__next {
-        position: absolute;
-        bottom: -15%;
-        transition: transform 0.25s ease;
-      }
-      .carousel__prev i, .carousel__next i {
-        font-size: 60px;
-        color: var(--box-border);
-        cursor: pointer;
-      }
-      .carousel__prev:hover, .carousel__next:hover {
-        transform: scale(1.25);
-      }
-      .carousel__prev {
-        left: 40%;
-      }
-      .carousel__next {
-        right: 40%;
-      }
-      .carousel__body {
-        width: 100%;
-        padding: 20px 0 50px 0;
-        overflow: hidden;
-      }
-      .carousel__body .carousel__slider {
-        position: relative;
-        transition: transform 1s ease-in-out;
-        background: var(--crsl-bg);
-      }
-      .carousel__body .carousel__slider__item {
-        position: relative;
-        display: block;
-        float: left;
-        box-sizing: border-box;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-      .carousel__body .carousel__slider__item .item__3d-frame {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transition: transform 1s ease-in-out;
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-      }
-      .carousel__body .carousel__slider__item .item__3d-frame:after {
-        content: "";
-        position: absolute;
-        bottom: -15%;
-        width: 100%;
-        height: 40px;
-        background: var(--box-shadow);
-        box-shadow: 0px 0px 5px 5px var(--box-shadow);
-        transform: rotateX(90deg) translate3d(0px, -20px, 0px);
-        opacity: 0.85;
-      }
-      .carousel__body .carousel__slider__item .item__3d-frame__box {
         display: flex;
         align-items: center;
-        vertical-align: middle;
-        text-align: center;
+        justify-content: center;
+      }
+      .slider-container .bullet-container .bullet {
+        margin-right: 14px;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: white;
+        opacity: 0.5;
+      }
+      .slider-container .bullet-container .bullet:last-child {
+        margin-right: 0px;
+      }
+      .slider-container .bullet-container .bullet.active {
+        opacity: 1;
+      }
+      .slider-container .slider-content {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 70%;
+        height: 60%;
+        transform: translate(-50%, -50%);
+      }
+      .slider-container .slider-content .slider-single {
         position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
         width: 100%;
         height: 100%;
-        box-sizing: border-box;
-        border-color: var(--box-border);
-        background: var(--box-bg);
-        border-width: 3px;
-        border-style: solid;
+        transition: z-index 0ms 250ms;
       }
-      .carousel__body .carousel__slider__item .item__3d-frame__box h1 {
-        font-size: 7em;
-        width: 100%;
-        color: var(--box-border);
-      }
-      .carousel__body .carousel__slider__item .item__3d-frame__box--right, .carousel__body .carousel__slider__item .item__3d-frame__box--left {
-        top: 0;
-        width: 40px;
-        backface-visibility: hidden;
-      }
-      .carousel__body .carousel__slider__item .item__3d-frame__box--left {
+      .slider-container .slider-content .slider-single .slider-single-image {
+        position: relative;
         left: 0;
-        border-left-width: 5px;
-        transform: translate3d(1px, 0, -40px) rotateY(-90deg);
-        transform-origin: 0%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        /* box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2); */
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        transform: scale(0);
+        opacity: 0;
       }
-      .carousel__body .carousel__slider__item .item__3d-frame__box--right {
-        right: 0;
-        border-right-width: 5px;
-        transform: translate3d(-1px, 0, -40px) rotateY(90deg);
-        transform-origin: 100%;
+      .slider-container .slider-content .slider-single .slider-single-download {
+        position: absolute;
+        display: block;
+        right: -22px;
+        bottom: 12px;
+        padding: 15px;
+        color: #333333;
+        background-color: #fdc84b;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "karla";
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        opacity: 0;
+      }
+      .slider-container .slider-content .slider-single .slider-single-download:hover, .slider-container .slider-content .slider-single .slider-single-download:focus {
+        outline: none;
+        text-decoration: none;
+      }
+      .slider-container .slider-content .slider-single .slider-single-title {
+        display: block;
+        float: left;
+        margin: 16px 0 0 20px;
+        font-size: 20px;
+        font-family: "karla";
+        font-weight: 400;
+        color: #ffffff;
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        opacity: 0;
+      }
+      .slider-container .slider-content .slider-single .slider-single-likes {
+        display: block;
+        float: right;
+        margin: 16px 20px 0 0;
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        opacity: 0;
+      }
+      .slider-container .slider-content .slider-single .slider-single-likes i {
+        font-size: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        color: #ff6060;
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        transform: scale(0);
+      }
+      .slider-container .slider-content .slider-single .slider-single-likes p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        color: #ffffff;
+      }
+      .slider-container .slider-content .slider-single .slider-single-likes:hover, .slider-container .slider-content .slider-single .slider-single-likes:focus {
+        outline: none;
+        text-decoration: none;
+      }
+      .slider-container .slider-content .slider-single.preactivede .slider-single-image {
+        transform: translateX(-50%) scale(0);
+      }
+      .slider-container .slider-content .slider-single.preactive {
+        z-index: 1;
+      }
+      .slider-container .slider-content .slider-single.preactive .slider-single-image {
+        opacity: 0.3;
+        transform: translateX(-25%) scale(0.8);
+      }
+      .slider-container .slider-content .slider-single.preactive .slider-single-download {
+        transform: translateX(-150px);
+      }
+      .slider-container .slider-content .slider-single.preactive .slider-single-title {
+        transform: translateX(-150px);
+      }
+      .slider-container .slider-content .slider-single.preactive .slider-single-likes {
+        transform: translateX(-150px);
+      }
+      .slider-container .slider-content .slider-single.proactive {
+        z-index: 1;
+      }
+      .slider-container .slider-content .slider-single.proactive .slider-single-image {
+        opacity: 0.3;
+        transform: translateX(25%) scale(0.8);
+      }
+      .slider-container .slider-content .slider-single.proactive .slider-single-download {
+        transform: translateX(150px);
+      }
+      .slider-container .slider-content .slider-single.proactive .slider-single-title {
+        transform: translateX(150px);
+      }
+      .slider-container .slider-content .slider-single.proactive .slider-single-likes {
+        transform: translateX(150px);
+      }
+      .slider-container .slider-content .slider-single.proactivede .slider-single-image {
+        transform: translateX(50%) scale(0);
+      }
+      .slider-container .slider-content .slider-single.active {
+        z-index: 2;
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-image {
+        opacity: 1;
+        transform: translateX(0%) scale(1);
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-download {
+        opacity: 1;
+        transition-delay: 100ms;
+        transform: translateX(0px);
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-title {
+        opacity: 1;
+        transition-delay: 200ms;
+        transform: translateX(0px);
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-likes {
+        opacity: 1;
+        transition-delay: 300ms;
+        transform: translateX(0px);
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-likes i {
+        animation-name: heartbeat;
+        animation-duration: 500ms;
+        animation-delay: 900ms;
+        animation-interation: 1;
+        animation-fill-mode: forwards;
+      }
+      .slider-container .slider-left {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        right: 85%;
+        top: 50%;
+        color: #ffffff;
+        transform: translateY(-50%);
+        padding: 20px 15px;
+        border-top: 2px solid #fdc84b;
+        border-right: 2px solid #fdc84b;
+        border-bottom: 2px solid #fdc84b;
+        border-left: 2px solid #fdc84b;
+        margin-right: -2px;
+      }
+      .slider-container .slider-right {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        left: 85%;
+        top: 50%;
+        color: #ffffff;
+        transform: translateY(-50%);
+        padding: 20px 15px;
+        border-top: 2px solid #fdc84b;
+        border-right: 2px solid #fdc84b;
+        border-bottom: 2px solid #fdc84b;
+        border-left: 2px solid #fdc84b;
+        margin-left: -2px;
+      }
+      .slider-container .not-visible {
+        display: none !important;
       }
 
       .blinking{
-      	animation:blinkingText 30.0s ease infinite;
-        /* animation: blink 2s ease infinite; */
+      	animation:blinkingText 30.0s infinite;
       }
       @keyframes blinkingText{
       	0%{		color: #ffffff;	}
@@ -162,213 +256,335 @@
   </head>
   <body>
 
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
-    <h1 style="padding-top: 5%; text-align: center;">PELAJARAN</h1>
-    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 5%;">Sila leret ke kiri atau kanan untuk melihat kursus lain</h1>
-    <div class="container">
 
-      <div class="carousel">
-        <div class="carousel__body">
-          <div class="carousel__prev"><i class="far fa-angle-left"></i></div>
-          <div class="carousel__next"><i class="far fa-angle-right"></i></div>
-          <div class="carousel__slider">
-            <div class="carousel__slider__item">
-              <div class="item__3d-frame">
-                <div class="item__3d-frame__box item__3d-frame__box--front">
-                  <h1>1</h1>
-                </div>
-                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
-              </div>
-            </div>
-            <div class="carousel__slider__item">
-              <div class="item__3d-frame">
-                <div class="item__3d-frame__box item__3d-frame__box--front">
-                  <h1>2</h1>
-                </div>
-                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
-              </div>
-            </div>
-            <div class="carousel__slider__item">
-              <div class="item__3d-frame">
-                <div class="item__3d-frame__box item__3d-frame__box--front">
-                  <h1>3</h1>
-                </div>
-                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
-              </div>
-            </div>
-            <div class="carousel__slider__item">
-              <div class="item__3d-frame">
-                <div class="item__3d-frame__box item__3d-frame__box--front">
-                  <h1>4</h1>
-                </div>
-                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
-              </div>
-            </div>
-            <div class="carousel__slider__item">
-              <div class="item__3d-frame">
-                <div class="item__3d-frame__box item__3d-frame__box--front">
-                  <h1>5</h1>
-                </div>
-                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
-              </div>
-            </div>
-            <div class="carousel__slider__item">
-              <div class="item__3d-frame">
-                <div class="item__3d-frame__box item__3d-frame__box--front">
-                  <h1>6</h1>
-                </div>
-                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
-              </div>
-            </div>
-            <div class="carousel__slider__item">
-              <div class="item__3d-frame">
-                <div class="item__3d-frame__box item__3d-frame__box--front">
-                  <h1>7</h1>
-                </div>
-                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
-              </div>
-            </div>
-            <div class="carousel__slider__item">
-              <div class="item__3d-frame">
-                <div class="item__3d-frame__box item__3d-frame__box--front">
-                  <h1>8</h1>
-                </div>
-                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
-              </div>
-            </div>
-            <div class="carousel__slider__item">
-              <div class="item__3d-frame">
-                <div class="item__3d-frame__box item__3d-frame__box--front">
-                  <h1>9</h1>
-                </div>
-                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
-              </div>
-            </div>
-            <div class="carousel__slider__item">
-              <div class="item__3d-frame">
-                <div class="item__3d-frame__box item__3d-frame__box--front">
-                  <h1>10</h1>
-                </div>
-                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
-              </div>
-            </div>
-            <div class="carousel__slider__item">
-              <div class="item__3d-frame">
-                <div class="item__3d-frame__box item__3d-frame__box--front">
-                  <h1>11</h1>
-                </div>
-                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
-              </div>
-            </div>
+    <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">LESSONS IN I 4.0</h1>
+    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 5%; color: #fff;">Swipe left to see other courses</h1>
+    <div class="slider-container" style="margin-top: -15%;">
+
+      <div class="slider-content">
+
+          <div class="slider-single">
+              <a href="{{route('lesson.vrlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/vr.png') }}" alt="1" /></a>
+              <h1 class="slider-single-title">VR</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
           </div>
-        </div>
-      </div>
 
-    </div>
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/addictive.png') }}" alt="2" />
+              <h1 class="slider-single-title">Addictive Manufacturing</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/iot.png') }}" alt="3" />
+              <h1 class="slider-single-title">Internet of Things</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/bigdata.png') }}" alt="4" />
+              <h1 class="slider-single-title">Big Data</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/cloud.png') }}" alt="5" />
+              <h1 class="slider-single-title">Cloud Computing</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/cyber.png') }}" alt="6" />
+              <h1 class="slider-single-title">Cyber Security</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+            <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/universal.png') }}" alt="6" />
+              <h1 class="slider-single-title">Universal Integration</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1</p>
+              </a> -->
+          </div>
+
+        <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/advanced.png') }}" alt="6" />
+              <h1 class="slider-single-title">Advanced Simulation</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>2</p>
+              </a> -->
+          </div>
+
+        <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/autonomous.png') }}" alt="6" />
+              <h1 class="slider-single-title">Autonomous Robot</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>3</p> -->
+              </a>
+          </div>
+
+      </div>
+  </div>
+
+</div>
 
     <!-- <h2>Checkout <a target="_blank" href="https://codepen.io/WillyW/pen/jOrPLab">v2</a></h2> -->
 
   </body>
 
   <script>
-  (function() {
-    "use strict";
 
-    var carousel = document.getElementsByClassName('carousel')[0],
-        slider = carousel.getElementsByClassName('carousel__slider')[0],
-        items = carousel.getElementsByClassName('carousel__slider__item'),
-        prevBtn = carousel.getElementsByClassName('carousel__prev')[0],
-        nextBtn = carousel.getElementsByClassName('carousel__next')[0];
-
-    var width, height, totalWidth, margin = 20,
-        currIndex = 0,
-        interval, intervalTime = 4000;
-
-    function init() {
-        resize();
-        move(Math.floor(items.length / 2));
-        bindEvents();
-
-        timer();
-    }
-
-    function resize() {
-        width = Math.max(window.innerWidth * .25, 275),
-        height = window.innerHeight * .5,
-        totalWidth = width * items.length;
-
-        slider.style.width = totalWidth + "px";
-
-        for(var i = 0; i < items.length; i++) {
-            let item = items[i];
-            item.style.width = (width - (margin * 2)) + "px";
-            item.style.height = height + "px";
-        }
-    }
-
-    function move(index) {
-
-        if(index < 1) index = items.length;
-        if(index > items.length) index = 1;
-        currIndex = index;
-
-        for(var i = 0; i < items.length; i++) {
-            let item = items[i],
-                box = item.getElementsByClassName('item__3d-frame')[0];
-            if(i == (index - 1)) {
-                item.classList.add('carousel__slider__item--active');
-                box.style.transform = "perspective(1200px)";
-            } else {
-              item.classList.remove('carousel__slider__item--active');
-                box.style.transform = "perspective(1200px) rotateY(" + (i < (index - 1) ? 40 : -40) + "deg)";
-            }
-        }
-
-        slider.style.transform = "translate3d(" + ((index * -width) + (width / 2) + window.innerWidth / 2) + "px, 0, 0)";
-    }
-
-    function timer() {
-        clearInterval(interval);
-        interval = setInterval(() => {
-          move(++currIndex);
-        }, intervalTime);
-    }
-
-    function prev() {
-      move(--currIndex);
-      timer();
-    }
-
-    function next() {
-      move(++currIndex);
-      timer();
-    }
+  const repeat = false;
+  const noArrows = false;
+  const noBullets = false;
 
 
-    function bindEvents() {
-        window.onresize = resize;
-        prevBtn.addEventListener('click', () => { prev(); });
-        nextBtn.addEventListener('click', () => { next(); });
-    }
+  const container = document.querySelector('.slider-container');
+  var slide = document.querySelectorAll('.slider-single');
+  var slideTotal = slide.length - 1;
+  var slideCurrent = -1;
 
+  function initBullets() {
+      if (noBullets) {
+          return;
+      }
+      const bulletContainer = document.createElement('div');
+      bulletContainer.classList.add('bullet-container')
+      slide.forEach((elem, i) => {
+          const bullet = document.createElement('div');
+          bullet.classList.add('bullet')
+          bullet.id = `bullet-index-${i}`
+          bullet.addEventListener('click', () => {
+              goToIndexSlide(i);
+          })
+          bulletContainer.appendChild(bullet);
+          elem.classList.add('proactivede');
+      })
+      container.appendChild(bulletContainer);
+  }
 
+  function initArrows() {
+      if (noArrows) {
+          return;
+      }
+      const leftArrow = document.createElement('a')
+      const iLeft = document.createElement('i');
+      iLeft.classList.add('fa')
+      iLeft.classList.add('fa-arrow-left')
+      leftArrow.classList.add('slider-left')
+      leftArrow.appendChild(iLeft)
+      leftArrow.addEventListener('click', () => {
+          slideLeft();
+      })
+      const rightArrow = document.createElement('a')
+      const iRight = document.createElement('i');
+      iRight.classList.add('fa')
+      iRight.classList.add('fa-arrow-right')
+      rightArrow.classList.add('slider-right')
+      rightArrow.appendChild(iRight)
+      rightArrow.addEventListener('click', () => {
+          slideRight();
+      })
+      container.appendChild(leftArrow);
+      container.appendChild(rightArrow);
+  }
 
+  function slideInitial() {
+      initBullets();
+      initArrows();
+      setTimeout(function () {
+          slideRight();
+      }, 500);
+  }
 
+  function updateBullet() {
+      if (!noBullets) {
+          document.querySelector('.bullet-container').querySelectorAll('.bullet').forEach((elem, i) => {
+              elem.classList.remove('active');
+              if (i === slideCurrent) {
+                  elem.classList.add('active');
+              }
+          })
+      }
+      checkRepeat();
+  }
 
-    init();
+  function checkRepeat() {
+      if (!repeat) {
+          if (slideCurrent === slide.length - 1) {
+              slide[0].classList.add('not-visible');
+              slide[slide.length - 1].classList.remove('not-visible');
+              if (!noArrows) {
+                  document.querySelector('.slider-right').classList.add('not-visible')
+                  document.querySelector('.slider-left').classList.remove('not-visible')
+              }
+          }
+          else if (slideCurrent === 0) {
+              slide[slide.length - 1].classList.add('not-visible');
+              slide[0].classList.remove('not-visible');
+              if (!noArrows) {
+                  document.querySelector('.slider-left').classList.add('not-visible')
+                  document.querySelector('.slider-right').classList.remove('not-visible')
+              }
+          } else {
+              slide[slide.length - 1].classList.remove('not-visible');
+              slide[0].classList.remove('not-visible');
+              if (!noArrows) {
+                  document.querySelector('.slider-left').classList.remove('not-visible')
+                  document.querySelector('.slider-right').classList.remove('not-visible')
+              }
+          }
+      }
+  }
 
-  })();
+  function slideRight() {
+      if (slideCurrent < slideTotal) {
+          slideCurrent++;
+      } else {
+          slideCurrent = 0;
+      }
+
+      if (slideCurrent > 0) {
+          var preactiveSlide = slide[slideCurrent - 1];
+      } else {
+          var preactiveSlide = slide[slideTotal];
+      }
+      var activeSlide = slide[slideCurrent];
+      if (slideCurrent < slideTotal) {
+          var proactiveSlide = slide[slideCurrent + 1];
+      } else {
+          var proactiveSlide = slide[0];
+
+      }
+
+      slide.forEach((elem) => {
+          var thisSlide = elem;
+          if (thisSlide.classList.contains('preactivede')) {
+              thisSlide.classList.remove('preactivede');
+              thisSlide.classList.remove('preactive');
+              thisSlide.classList.remove('active');
+              thisSlide.classList.remove('proactive');
+              thisSlide.classList.add('proactivede');
+          }
+          if (thisSlide.classList.contains('preactive')) {
+              thisSlide.classList.remove('preactive');
+              thisSlide.classList.remove('active');
+              thisSlide.classList.remove('proactive');
+              thisSlide.classList.remove('proactivede');
+              thisSlide.classList.add('preactivede');
+          }
+      });
+      preactiveSlide.classList.remove('preactivede');
+      preactiveSlide.classList.remove('active');
+      preactiveSlide.classList.remove('proactive');
+      preactiveSlide.classList.remove('proactivede');
+      preactiveSlide.classList.add('preactive');
+
+      activeSlide.classList.remove('preactivede');
+      activeSlide.classList.remove('preactive');
+      activeSlide.classList.remove('proactive');
+      activeSlide.classList.remove('proactivede');
+      activeSlide.classList.add('active');
+
+      proactiveSlide.classList.remove('preactivede');
+      proactiveSlide.classList.remove('preactive');
+      proactiveSlide.classList.remove('active');
+      proactiveSlide.classList.remove('proactivede');
+      proactiveSlide.classList.add('proactive');
+
+      updateBullet();
+  }
+
+  function slideLeft() {
+      if (slideCurrent > 0) {
+          slideCurrent--;
+      } else {
+          slideCurrent = slideTotal;
+      }
+
+      if (slideCurrent < slideTotal) {
+          var proactiveSlide = slide[slideCurrent + 1];
+      } else {
+          var proactiveSlide = slide[0];
+      }
+      var activeSlide = slide[slideCurrent];
+      if (slideCurrent > 0) {
+          var preactiveSlide = slide[slideCurrent - 1];
+      } else {
+          var preactiveSlide = slide[slideTotal];
+      }
+      slide.forEach((elem) => {
+          var thisSlide = elem;
+          if (thisSlide.classList.contains('proactive')) {
+              thisSlide.classList.remove('preactivede');
+              thisSlide.classList.remove('preactive');
+              thisSlide.classList.remove('active');
+              thisSlide.classList.remove('proactive');
+              thisSlide.classList.add('proactivede');
+          }
+          if (thisSlide.classList.contains('proactivede')) {
+              thisSlide.classList.remove('preactive');
+              thisSlide.classList.remove('active');
+              thisSlide.classList.remove('proactive');
+              thisSlide.classList.remove('proactivede');
+              thisSlide.classList.add('preactivede');
+          }
+      });
+
+      preactiveSlide.classList.remove('preactivede');
+      preactiveSlide.classList.remove('active');
+      preactiveSlide.classList.remove('proactive');
+      preactiveSlide.classList.remove('proactivede');
+      preactiveSlide.classList.add('preactive');
+
+      activeSlide.classList.remove('preactivede');
+      activeSlide.classList.remove('preactive');
+      activeSlide.classList.remove('proactive');
+      activeSlide.classList.remove('proactivede');
+      activeSlide.classList.add('active');
+
+      proactiveSlide.classList.remove('preactivede');
+      proactiveSlide.classList.remove('preactive');
+      proactiveSlide.classList.remove('active');
+      proactiveSlide.classList.remove('proactivede');
+      proactiveSlide.classList.add('proactive');
+
+      updateBullet();
+  }
+
+  function goToIndexSlide(index) {
+      const sliding = (slideCurrent > index) ? () => slideRight() : () => slideLeft();
+      while (slideCurrent !== index) {
+          sliding();
+      }
+  }
+
+  slideInitial();
   </script>
 
 </html>

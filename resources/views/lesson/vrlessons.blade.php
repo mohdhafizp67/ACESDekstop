@@ -15,7 +15,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="{{ asset('css/pelajaran/vrlessons.css') }} "> -->
+    <link rel="stylesheet" href="{{ asset('css/pelajaran/vrlessons.css') }} ">
 
     <style>
     .modal-dialog {
@@ -127,17 +127,22 @@
       float: right;
     }
 
+    /* @font-face {
+        font-family: Azonix-1VB0;
+        src: url({{asset('concept/fonts/Azonix-1VB0.otf')}});
+    } */
+
     </style>
   </head>
   <body>
 
-    <div class="container-fluid"  style="background-image: linear-gradient(to top, #231245, #261d52, #272960, #28346e, #28407b, #28417c, #27437e, #27447f, #273c75, #26336b, #252b61, #232357);" >
+    <div class="container-fluid"  style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;" >
 	<div class="row">
     <div class="col-md-1">
 
     </div>
 		<div class="col-md-9">
-      <h1 style="padding-top: 5%; text-align: justify; padding-bottom: 5%; color: #fff; font-size: 250%;">Pelajaran</h1>
+      <h1 style="padding-bottom: 5%; text-align: center;color: #fff; font-size: 250%; font-weight: bold;">VR LESSONS</h1>
 		</div>
 		<div class="col-md-2">
 		</div>
@@ -146,12 +151,44 @@
     <div class="col-md-1">
 
     </div>
-		<div class="col-md-10 embed-responsive embed-responsive-21by9" style="padding-bottom: 5%; border-radius: 25px; border: solid 1px #000; overflow: hidden;">
+    <div class="col-md-10" style="background-image: url({{asset('concept/images/galaxy/panel.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
-      <iframe class="embed-responsive-item" width="100%" height="320px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+      <div class="slider">
+  		<input type="radio" name="testimonial" id="t-1">
+  		<input type="radio" name="testimonial" id="t-2">
+  		<input type="radio" name="testimonial" id="t-3" checked>
+  		<input type="radio" name="testimonial" id="t-4">
+  		<input type="radio" name="testimonial" id="t-5">
+  		<div class="testimonials">
+
+  			<label class="item" for="t-2">
+          <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  			</label>
+  			<label class="item" for="t-3">
+          <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  			</label>
+  			<label class="item" for="t-4">
+          <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  			</label>
+
+  		</div>
+  		<div class="dots">
+
+  			<label for="t-2"></label>
+  			<label for="t-3"></label>
+  			<label for="t-4"></label>
+  			
+  		</div>
+  	</div>
 
 
-		</div>
+    </div>
+
     <div class="col-md-1">
 
     </div>

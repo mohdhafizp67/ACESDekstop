@@ -1,186 +1,601 @@
-
 @extends('layouts.app-student-qbadminui')
 
 
 @section('content')
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/mascot3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-	<div class="row">
-		<div class="col-md-12" style="padding-bottom:10%;">
-			<h3 style="padding-top: 10%; font-size: 35px; font-weight: bold; color: #fff;">
-				KUIZ
-			</h3>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12" style="background-image: url({{asset('concept/images/kuiz/kuiz.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover; padding-top: 22%; padding-bottom: 20%;">
-			<div class="row">
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-					<p style="margin-top: -98%; margin-left: 38%; font-size: 15px; text-align: center; font-weight: bold;">
-						Addictive Manufacturing
-					</p>
-				</div>
-				<div class="col-md-2">
-				<a href="#" data-toggle="modal" data-target="#exampleModal" onclick="pass_quiz_id(1)">
-          	<p style="margin-top: -98%; margin-left: 22%; font-size: 15px; text-align: center; font-weight: bold; color:#fff;">
-						Introduction to IR 4.0
-					</p>
-        </a>
-				</div>
-				<div class="col-md-2">
-					<p style="margin-top: -101%; margin-left: 0%; font-size: 15px; text-align: center; font-weight: bold;">
-					 Advanced Simulation
-         </p>
-				</div>
-				<div class="col-md-2">
-					<p style="margin-top: -101%; margin-left: -36%; font-size: 15px; text-align: center; font-weight: bold; color:#fff;">
-						Cloud <br> Computing
-					</p>
-				</div>
-				<div class="col-md-2">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-					<p style="margin-top: -1%; margin-left: -265%; font-size: 30px; text-align: center; font-weight: bold;">
-						VR
-					</p>
-				</div>
-				<div class="col-md-2">
-					<p style="margin-top: -1%; margin-left: -306%; font-size: 15px; text-align: center; font-weight: bold;">
-						Autonomous <br> Robot
-					</p>
-				</div>
-				<div class="col-md-2">
-					<p style="margin-top: -1%; margin-left: -340%; font-size: 30px; text-align: center; font-weight: bold; color:#fff;">
-						VR
-					</p>
-				</div>
-				<div class="col-md-2">
-					<p style="margin-top: -1%; margin-left: -368%; font-size: 15px; text-align: center; font-weight: bold;">
-						Cyber <br> Security
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-					<p style="margin-top: 40%; margin-left: 67%; font-size: 15px; text-align: center; font-weight: bold;">
-						Internet of Things
-					</p>
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-					<p style="margin-top: 55%; margin-left: 10%; font-size: 15px; text-align: center; font-weight: bold;">
-						Universal <br>Integration
-					</p>
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-			</div>
-		</div>
-<!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
-                    <a href="#" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </a>
-                </div>
-                <div class="modal-body">
-                    <p>Anda pasti mahu memulakan quiz ini?</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
-                    <form action="{{route('quiz.start-quiz')}}" method="post">
-                    @csrf
-                    <button type="submit" name="button" class="btn btn-primary">Mula Quiz</button>
-                    <input type="hidden" id="quiz_id" name="quiz_id">
-                  </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
-	</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PELAJARAN I 4.0</title>
+
+      <style>
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(0);
+        }
+        25% {
+          transform: scale(1.2);
+        }
+        50% {
+          transform: scale(1);
+        }
+        75% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .slider-container {
+        position: relative;
+        margin: 0 auto;
+        width: 800px;
+        height: 600px;
+      }
+      .slider-container .bullet-container {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .slider-container .bullet-container .bullet {
+        margin-right: 14px;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: white;
+        opacity: 0.5;
+      }
+      .slider-container .bullet-container .bullet:last-child {
+        margin-right: 0px;
+      }
+      .slider-container .bullet-container .bullet.active {
+        opacity: 1;
+      }
+      .slider-container .slider-content {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 70%;
+        height: 60%;
+        transform: translate(-50%, -50%);
+      }
+      .slider-container .slider-content .slider-single {
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: z-index 0ms 250ms;
+      }
+      .slider-container .slider-content .slider-single .slider-single-image {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        /* box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2); */
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        transform: scale(0);
+        opacity: 0;
+      }
+      .slider-container .slider-content .slider-single .slider-single-download {
+        position: absolute;
+        display: block;
+        right: -22px;
+        bottom: 12px;
+        padding: 15px;
+        color: #333333;
+        background-color: #fdc84b;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "karla";
+        border-radius: 5px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        opacity: 0;
+      }
+      .slider-container .slider-content .slider-single .slider-single-download:hover, .slider-container .slider-content .slider-single .slider-single-download:focus {
+        outline: none;
+        text-decoration: none;
+      }
+      .slider-container .slider-content .slider-single .slider-single-title {
+        display: block;
+        float: left;
+        margin: 16px 0 0 20px;
+        font-size: 20px;
+        font-family: "karla";
+        font-weight: 400;
+        color: #ffffff;
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        opacity: 0;
+      }
+      .slider-container .slider-content .slider-single .slider-single-likes {
+        display: block;
+        float: right;
+        margin: 16px 20px 0 0;
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        opacity: 0;
+      }
+      .slider-container .slider-content .slider-single .slider-single-likes i {
+        font-size: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        color: #ff6060;
+        transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+        transform: scale(0);
+      }
+      .slider-container .slider-content .slider-single .slider-single-likes p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        color: #ffffff;
+      }
+      .slider-container .slider-content .slider-single .slider-single-likes:hover, .slider-container .slider-content .slider-single .slider-single-likes:focus {
+        outline: none;
+        text-decoration: none;
+      }
+      .slider-container .slider-content .slider-single.preactivede .slider-single-image {
+        transform: translateX(-50%) scale(0);
+      }
+      .slider-container .slider-content .slider-single.preactive {
+        z-index: 1;
+      }
+      .slider-container .slider-content .slider-single.preactive .slider-single-image {
+        opacity: 0.3;
+        transform: translateX(-25%) scale(0.8);
+      }
+      .slider-container .slider-content .slider-single.preactive .slider-single-download {
+        transform: translateX(-150px);
+      }
+      .slider-container .slider-content .slider-single.preactive .slider-single-title {
+        transform: translateX(-150px);
+      }
+      .slider-container .slider-content .slider-single.preactive .slider-single-likes {
+        transform: translateX(-150px);
+      }
+      .slider-container .slider-content .slider-single.proactive {
+        z-index: 1;
+      }
+      .slider-container .slider-content .slider-single.proactive .slider-single-image {
+        opacity: 0.3;
+        transform: translateX(25%) scale(0.8);
+      }
+      .slider-container .slider-content .slider-single.proactive .slider-single-download {
+        transform: translateX(150px);
+      }
+      .slider-container .slider-content .slider-single.proactive .slider-single-title {
+        transform: translateX(150px);
+      }
+      .slider-container .slider-content .slider-single.proactive .slider-single-likes {
+        transform: translateX(150px);
+      }
+      .slider-container .slider-content .slider-single.proactivede .slider-single-image {
+        transform: translateX(50%) scale(0);
+      }
+      .slider-container .slider-content .slider-single.active {
+        z-index: 2;
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-image {
+        opacity: 1;
+        transform: translateX(0%) scale(1);
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-download {
+        opacity: 1;
+        transition-delay: 100ms;
+        transform: translateX(0px);
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-title {
+        opacity: 1;
+        transition-delay: 200ms;
+        transform: translateX(0px);
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-likes {
+        opacity: 1;
+        transition-delay: 300ms;
+        transform: translateX(0px);
+      }
+      .slider-container .slider-content .slider-single.active .slider-single-likes i {
+        animation-name: heartbeat;
+        animation-duration: 500ms;
+        animation-delay: 900ms;
+        animation-interation: 1;
+        animation-fill-mode: forwards;
+      }
+      .slider-container .slider-left {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        right: 85%;
+        top: 50%;
+        color: #ffffff;
+        transform: translateY(-50%);
+        padding: 20px 15px;
+        border-top: 2px solid #fdc84b;
+        border-right: 2px solid #fdc84b;
+        border-bottom: 2px solid #fdc84b;
+        border-left: 2px solid #fdc84b;
+        margin-right: -2px;
+      }
+      .slider-container .slider-right {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        left: 85%;
+        top: 50%;
+        color: #ffffff;
+        transform: translateY(-50%);
+        padding: 20px 15px;
+        border-top: 2px solid #fdc84b;
+        border-right: 2px solid #fdc84b;
+        border-bottom: 2px solid #fdc84b;
+        border-left: 2px solid #fdc84b;
+        margin-left: -2px;
+      }
+      .slider-container .not-visible {
+        display: none !important;
+      }
+
+			.blinking{
+      	animation:blinkingText 30.0s infinite;
+      }
+      @keyframes blinkingText{
+      	0%{		color: #ffffff;	}
+      	49%{	color: transparent;	}
+      	50%{	color: transparent;	}
+      	99%{	color:transparent;	}
+      	100%{	color: #ffffff;	}
+      }
+
+      </style>
+
+  </head>
+  <body>
+
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+
+
+
+    <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">QUIZ</h1>
+    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 5%; color: #fff;">Swipe left to see other quiz</h1>
+    <div class="slider-container" style="margin-top: -15%;">
+
+      <div class="slider-content">
+
+          <div class="slider-single">
+              <a href="{{route('quiz.start-exam')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/vr.png') }}" alt="1" /></a>
+              <h1 class="slider-single-title">VR</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/addictive.png') }}" alt="2" />
+              <h1 class="slider-single-title">Addictive Manufacturing</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/iot.png') }}" alt="3" />
+              <h1 class="slider-single-title">Internet of Things</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/bigdata.png') }}" alt="4" />
+              <h1 class="slider-single-title">Big Data</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/cloud.png') }}" alt="5" />
+              <h1 class="slider-single-title">Cloud Computing</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/cyber.png') }}" alt="6" />
+              <h1 class="slider-single-title">Cyber Security</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+            <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/universal.png') }}" alt="6" />
+              <h1 class="slider-single-title">Universal Integration</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1</p>
+              </a> -->
+          </div>
+
+        <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/advanced.png') }}" alt="6" />
+              <h1 class="slider-single-title">Advanced Simulation</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>2</p>
+              </a> -->
+          </div>
+
+        <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/autonomous.png') }}" alt="6" />
+              <h1 class="slider-single-title">Autonomous Robot</h1>
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>3</p> -->
+              </a>
+          </div>
+
+      </div>
+
+  </div>
+
 </div>
 
-<!-- <div class="dashboard-ecommerce">
-    <div class="container-fluid dashboard-content " style="padding-top: 15%;padding-bottom: 17%;">
-        <div class="ecommerce-widget">
-          <div class="card" style="padding: 10px; background-color: #9966ff !important;">
+    <!-- <h2>Checkout <a target="_blank" href="https://codepen.io/WillyW/pen/jOrPLab">v2</a></h2> -->
 
-            <div style="padding: 5px;"></div>
-              <h2 class="card-header" style="text-align: center; color: #000;"><i class="fa fa-question-circle mr-2" aria-hidden="true"></i>Pilih Quiz</h2>
-              <div class="card-body p-0">
-                <div style="padding: 10px;"></div>
+  </body>
 
-                <div class="row">
-                  @foreach($quiz_list as $data)
 
-                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <a href="#" data-toggle="modal" data-target="#exampleModal" onclick="pass_quiz_id({{ $data->id  }})">
-                      <div class="card">
-                          <div class="card-body">
-                              <div class="d-inline-block">
-                                  <h5 class="text-muted">Quiz {{ $loop->iteration }} | {{ $data->lesson->lesson_type }}</h5>
-                                  <h2 class="mb-0">{{ $data->lesson->lesson_subject }} </h2>
-                              </div>
-                              <div class="float-right icon-circle-medium  icon-box-lg  bg-info-light mt-1">
-                                  <i class="fa fa-gamepad fa-fw fa-sm text-info"></i>
-                              </div>
-                          </div>
-                      </div>
-                    </a>
-                  </div>
-                  @endforeach
-                </div>
 
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
-                                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </a>
-                            </div>
-                            <div class="modal-body">
-                                <p>Anda pasti mahu memulakan quiz ini?</p>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
-                                <form action="{{route('quiz.start-quiz')}}" method="post">
-                                @csrf
-                                <button type="submit" name="button" class="btn btn-primary">Mula Quiz</button>
-                                <input type="hidden" id="quiz_id" name="quiz_id">
-                              </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <script>
 
-              </div>
-          </div>
-        </div>
-    </div>
-</div> -->
-<script type="text/javascript">
-function pass_quiz_id(id){
- $(".modal-footer #quiz_id").val( id );
-}
-</script>
+  const repeat = false;
+  const noArrows = false;
+  const noBullets = false;
+
+
+  const container = document.querySelector('.slider-container');
+  var slide = document.querySelectorAll('.slider-single');
+  var slideTotal = slide.length - 1;
+  var slideCurrent = -1;
+
+  function initBullets() {
+      if (noBullets) {
+          return;
+      }
+      const bulletContainer = document.createElement('div');
+      bulletContainer.classList.add('bullet-container')
+      slide.forEach((elem, i) => {
+          const bullet = document.createElement('div');
+          bullet.classList.add('bullet')
+          bullet.id = `bullet-index-${i}`
+          bullet.addEventListener('click', () => {
+              goToIndexSlide(i);
+          })
+          bulletContainer.appendChild(bullet);
+          elem.classList.add('proactivede');
+      })
+      container.appendChild(bulletContainer);
+  }
+
+  function initArrows() {
+      if (noArrows) {
+          return;
+      }
+      const leftArrow = document.createElement('a')
+      const iLeft = document.createElement('i');
+      iLeft.classList.add('fa')
+      iLeft.classList.add('fa-arrow-left')
+      leftArrow.classList.add('slider-left')
+      leftArrow.appendChild(iLeft)
+      leftArrow.addEventListener('click', () => {
+          slideLeft();
+      })
+      const rightArrow = document.createElement('a')
+      const iRight = document.createElement('i');
+      iRight.classList.add('fa')
+      iRight.classList.add('fa-arrow-right')
+      rightArrow.classList.add('slider-right')
+      rightArrow.appendChild(iRight)
+      rightArrow.addEventListener('click', () => {
+          slideRight();
+      })
+      container.appendChild(leftArrow);
+      container.appendChild(rightArrow);
+  }
+
+  function slideInitial() {
+      initBullets();
+      initArrows();
+      setTimeout(function () {
+          slideRight();
+      }, 500);
+  }
+
+  function updateBullet() {
+      if (!noBullets) {
+          document.querySelector('.bullet-container').querySelectorAll('.bullet').forEach((elem, i) => {
+              elem.classList.remove('active');
+              if (i === slideCurrent) {
+                  elem.classList.add('active');
+              }
+          })
+      }
+      checkRepeat();
+  }
+
+  function checkRepeat() {
+      if (!repeat) {
+          if (slideCurrent === slide.length - 1) {
+              slide[0].classList.add('not-visible');
+              slide[slide.length - 1].classList.remove('not-visible');
+              if (!noArrows) {
+                  document.querySelector('.slider-right').classList.add('not-visible')
+                  document.querySelector('.slider-left').classList.remove('not-visible')
+              }
+          }
+          else if (slideCurrent === 0) {
+              slide[slide.length - 1].classList.add('not-visible');
+              slide[0].classList.remove('not-visible');
+              if (!noArrows) {
+                  document.querySelector('.slider-left').classList.add('not-visible')
+                  document.querySelector('.slider-right').classList.remove('not-visible')
+              }
+          } else {
+              slide[slide.length - 1].classList.remove('not-visible');
+              slide[0].classList.remove('not-visible');
+              if (!noArrows) {
+                  document.querySelector('.slider-left').classList.remove('not-visible')
+                  document.querySelector('.slider-right').classList.remove('not-visible')
+              }
+          }
+      }
+  }
+
+  function slideRight() {
+      if (slideCurrent < slideTotal) {
+          slideCurrent++;
+      } else {
+          slideCurrent = 0;
+      }
+
+      if (slideCurrent > 0) {
+          var preactiveSlide = slide[slideCurrent - 1];
+      } else {
+          var preactiveSlide = slide[slideTotal];
+      }
+      var activeSlide = slide[slideCurrent];
+      if (slideCurrent < slideTotal) {
+          var proactiveSlide = slide[slideCurrent + 1];
+      } else {
+          var proactiveSlide = slide[0];
+
+      }
+
+      slide.forEach((elem) => {
+          var thisSlide = elem;
+          if (thisSlide.classList.contains('preactivede')) {
+              thisSlide.classList.remove('preactivede');
+              thisSlide.classList.remove('preactive');
+              thisSlide.classList.remove('active');
+              thisSlide.classList.remove('proactive');
+              thisSlide.classList.add('proactivede');
+          }
+          if (thisSlide.classList.contains('preactive')) {
+              thisSlide.classList.remove('preactive');
+              thisSlide.classList.remove('active');
+              thisSlide.classList.remove('proactive');
+              thisSlide.classList.remove('proactivede');
+              thisSlide.classList.add('preactivede');
+          }
+      });
+      preactiveSlide.classList.remove('preactivede');
+      preactiveSlide.classList.remove('active');
+      preactiveSlide.classList.remove('proactive');
+      preactiveSlide.classList.remove('proactivede');
+      preactiveSlide.classList.add('preactive');
+
+      activeSlide.classList.remove('preactivede');
+      activeSlide.classList.remove('preactive');
+      activeSlide.classList.remove('proactive');
+      activeSlide.classList.remove('proactivede');
+      activeSlide.classList.add('active');
+
+      proactiveSlide.classList.remove('preactivede');
+      proactiveSlide.classList.remove('preactive');
+      proactiveSlide.classList.remove('active');
+      proactiveSlide.classList.remove('proactivede');
+      proactiveSlide.classList.add('proactive');
+
+      updateBullet();
+  }
+
+  function slideLeft() {
+      if (slideCurrent > 0) {
+          slideCurrent--;
+      } else {
+          slideCurrent = slideTotal;
+      }
+
+      if (slideCurrent < slideTotal) {
+          var proactiveSlide = slide[slideCurrent + 1];
+      } else {
+          var proactiveSlide = slide[0];
+      }
+      var activeSlide = slide[slideCurrent];
+      if (slideCurrent > 0) {
+          var preactiveSlide = slide[slideCurrent - 1];
+      } else {
+          var preactiveSlide = slide[slideTotal];
+      }
+      slide.forEach((elem) => {
+          var thisSlide = elem;
+          if (thisSlide.classList.contains('proactive')) {
+              thisSlide.classList.remove('preactivede');
+              thisSlide.classList.remove('preactive');
+              thisSlide.classList.remove('active');
+              thisSlide.classList.remove('proactive');
+              thisSlide.classList.add('proactivede');
+          }
+          if (thisSlide.classList.contains('proactivede')) {
+              thisSlide.classList.remove('preactive');
+              thisSlide.classList.remove('active');
+              thisSlide.classList.remove('proactive');
+              thisSlide.classList.remove('proactivede');
+              thisSlide.classList.add('preactivede');
+          }
+      });
+
+      preactiveSlide.classList.remove('preactivede');
+      preactiveSlide.classList.remove('active');
+      preactiveSlide.classList.remove('proactive');
+      preactiveSlide.classList.remove('proactivede');
+      preactiveSlide.classList.add('preactive');
+
+      activeSlide.classList.remove('preactivede');
+      activeSlide.classList.remove('preactive');
+      activeSlide.classList.remove('proactive');
+      activeSlide.classList.remove('proactivede');
+      activeSlide.classList.add('active');
+
+      proactiveSlide.classList.remove('preactivede');
+      proactiveSlide.classList.remove('preactive');
+      proactiveSlide.classList.remove('active');
+      proactiveSlide.classList.remove('proactivede');
+      proactiveSlide.classList.add('proactive');
+
+      updateBullet();
+  }
+
+  function goToIndexSlide(index) {
+      const sliding = (slideCurrent > index) ? () => slideRight() : () => slideLeft();
+      while (slideCurrent !== index) {
+          sliding();
+      }
+  }
+
+  slideInitial();
+  </script>
+
+</html>
+
 
 @endsection
