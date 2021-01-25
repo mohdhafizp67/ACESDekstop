@@ -81,43 +81,44 @@ margin-left: -48%;
           </a>
         </div> -->
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/profile_frame.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
-                <div style="padding: 9%;"></div>
-                <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style=" width:60%;">
+                <div style="padding: 12%;"></div>
+                  <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style=" width:66%;">
+
 
           </div>
-          <div class="col-md-3">
-            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: solid #7EDDFF 1px;">
+          <div class="col-md-3" >
+            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <div class="card-body list-group">
                 <div class="progressbar1">
                 <div class="second circle" data-percent="90">
                   <strong></strong>
-                  <span>PELAJARAN</span>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important;">
-              <div class="card-body list-group">
-                <div class="progressbar1">
-                <div class="second circle" data-percent="0">
-                  <strong></strong>
-                  <span>KUIZ</span>
+                  <span>LESSON</span>
                 </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card text-white bg-success mb-3" style=" background-color: #183252 !important;">
+            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <div class="card-body list-group">
-                <div class="progressbar2">
-                <div class="second circle" data-percent="20">
+                <div class="progressbar1">
+                <div class="second circle" data-percent="73">
                   <strong></strong>
-                  <span>PERMAINAN</span>
+                  <span>QUIZ</span>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
+              <div class="card-body list-group">
+                <div class="progressbar1">
+                <div class="second circle" data-percent="45">
+                  <strong></strong>
+                  <span>GAME</span>
                 </div>
                 </div>
               </div>
@@ -128,10 +129,12 @@ margin-left: -48%;
         <div style="padding: 1%;"></div>
 
         <div class="row">
+          <div class="col-md-7">
+          </div>
           <div class="col-md-5">
-            <div class="card text-white bg-success mb-3" style=" background-color: #183252 !important;">
-              <div class="card-header" style="background-color: #130E29 !important; font-weight: bold; font-size: 100%; margin: 5px;">PENGUMUMAN</div>
-              <div class="card-body list-group p-2" style="overflow:auto;height:200px;width:100%; ">
+            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
+              <div class="card-header" style="background-color: transparent; border: transparent; font-weight: bold; font-size: 100%; margin: 3px;">ANNOUNCEMENT</div>
+              <div class="card-body list-group p-2" style="overflow:auto;height:200px;width:80%; margin: 0 auto; border: transparent;">
                 @foreach($announcement as $data)
 
                   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -146,13 +149,11 @@ margin-left: -48%;
                   @endforeach
 
               </div>
-              <div class="card-footer" style="background-color: #130E29 !important; margin: 5px;">
-              </div>
+              <!-- <div class="card-footer" style="background-color: #130E29 !important; margin: 5px;">
+              </div> -->
             </div>
           </div>
-          <div class="col-md-4">
-<div style="width:100%;height:0;padding-bottom:50%;position:relative;"><iframe src="https://giphy.com/embed/S5VcUkeCJEBAmzjhCe" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-          </div>
+
         </div>
 
 		</div>

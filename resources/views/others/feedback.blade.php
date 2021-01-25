@@ -21,14 +21,16 @@
 
     <div class="container-fluid">
     	<div class="row">
-    		<div class="col-md-12" style="background-image: url({{asset('concept/images/StudentDashboard/HeaderBg.jpeg')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-top: 2%; padding-left: 1%; margin-left: 0%;">
+    		<div class="col-md-12" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-repeat: no-repeat;background-size: cover;">
 
-          <div style="padding: 30px;"></div>
+          <!-- <div style="padding: 30px;"></div> -->
+
           <div class="row">
             <div class="col-md-2">
 
             </div>
             <div class="col-md" style="padding-top: 6%;">
+
               @if ($message = Session::get('success'))
               <div id=alert>
                   <div class="alert alert-card  alert-success" role="alert">
@@ -50,23 +52,26 @@
                 </div>
               </div>
               @endif
-              <div class="card border-dark mb-3" style="">
-                <div class="card-header">MAKLUM BALAS</div>
-                <form action="{{route('others.feedback.save')}}" method="POST"  style="padding: 10px" source="custom" name="form">
+
+
+              <div class="card border-dark" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
+                <div class="card-header" style="padding-bottom: 1px; border: transparent !important; padding-top: 4%; font-size: 160%; color: white;">MAKLUM BALAS</div>
+                <hr style="width: 70%; margin: 0 auto; ">
+                <form action="{{route('others.feedback.save')}}" method="POST">
                   @csrf
-                <div class="card-body text-dark">
+                <div class="card-body" style="padding-top: 8px;">
                   <div class="row">
                     <div class="col-md-1">
 
                     </div>
                     <div class="col-md-5">
-                      <div class="form-group">
+                      <div class="form-group" style="color: white !important;">
                         <label class="col-form-label">Nama</label>
                         <input id="name" type="text"name="name" value="{{Auth::user()->name}}" class="form-control" disabled>
                       </div>
                     </div>
                     <div class="col-md-5">
-                        <div class="form-group">
+                        <div class="form-group" style="color: white !important;">
                           <label class="col-form-label">Email</label>
                           <input id="email" type="text"name="email" value="{{Auth::user()->email}}" class="form-control" disabled>
                         </div>
@@ -81,7 +86,7 @@
 
                     </div>
                     <div class="col-md-10">
-                      <div class="form-group">
+                      <div class="form-group" style="color: white !important;">
                         <label class="col-form-label">Subjek</label>
                         <input id="subject" type="text"name="subject" class="form-control" required>
                       </div>
@@ -96,7 +101,7 @@
 
                     </div>
                     <div class="col-md-10">
-                      <div class="form-group">
+                      <div class="form-group" style="color: white !important;">
                         <label class="col-form-label">Maklum Balas</label>
                         <textarea class="form-control" id="feedback" name="feedback" rows="3" required></textarea>
                       </div>
@@ -111,12 +116,18 @@
 
                     </div>
                     <div class="col-md-10">
-                      <button type="submit" class="btn btn-success" name="button">HANTAR MAKLUM BALAS</button>
+                        <button type="submit" class="btn btn-success" name="button" style="background-color: transparent !important;">
+                          HANTAR MAKLUM BALAS
+                        </button>
+
+
                     </div>
                     <div class="col-md-1">
 
                     </div>
                   </div>
+                  <div style="padding: 10px;"></div>
+
                 </div>
               </form>
               </div>
@@ -125,7 +136,7 @@
 
             </div>
           </div>
-          <div style="padding: 75px;"></div>
+          <div style="padding: 1%;"></div>
     		</div>
     	</div>
     </div>
