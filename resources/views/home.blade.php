@@ -65,7 +65,7 @@ margin-left: -48%;
 
     <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12" style="background-image: linear-gradient(to top, #231245, #261d52, #272960, #28346e, #28407b, #28417c, #27437e, #27447f, #273c75, #26336b, #252b61, #232357);">
+		<div class="col-md-12" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
 
         <h1 style="text-align: center; font-size: 450%; color: #fff; font-weight:bold; padding-top: 0%; padding-left: 9%;">
@@ -99,8 +99,8 @@ margin-left: -48%;
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: solid #7EDDFF 1px;">
+          <div class="col-md-3" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important;">
               <div class="card-body list-group">
                 <div class="progressbar1">
                 <div class="second circle" data-percent="0">
