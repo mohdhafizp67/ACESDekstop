@@ -8,152 +8,142 @@
     <title>PELAJARAN I 4.0</title>
 
       <style media="screen">
-      * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+
+      :root {
+        --crsl-bg: transparent;
+        --box-bg: #1e272e;
+        --box-shadow: #0000001c;
+        --box-shadow-border: #0000000f;
+        --box-border: #fff;
       }
 
-      /* html {
-      font-family: system-ui;
-      background: #3d76d9;
+      /* html, body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: #2f3539;
+        background: -moz-radial-gradient(circle, #2f3539 0%, #1e272e 100%);
+        background: -webkit-radial-gradient(circle, #2f3539 0%, #1e272e 100%);
+        background: radial-gradient(circle, #2f3539 0%, #1e272e 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3539",endColorstr="#1e272e",GradientType=1);
+      } */
+      /* html *, body * {
+        font-family: "Source Sans Pro", sans-serif;
+      } */
+      /* html > p, body > p {
+        font-size: 0.95em;
+        font-weight: bold;
+        position: absolute;
+        top: 7.5%;
+        width: 100%;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        user-select: none;
+      } */
+       /* html > .carousel, body > .carousel {
+        padding-top: 125px;
       } */
 
-      .visuallyhidden {
-      position: absolute;
-      z-index: -1;
-      right: 0;
-      opacity: 0;
-
+      .carousel {
+        position: relative;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
       }
-
-      h1 {
-      color: white;
-      text-align: center;
-      margin-top: 1em;
+      .carousel__prev, .carousel__next {
+        position: absolute;
+        bottom: -15%;
+        transition: transform 0.25s ease;
       }
-
-      .container {
-      overflow: hidden;
-      padding: 20px;
-      margin-top: 2em;
-      /* background: rgba(0,0,0,.1) */
+      .carousel__prev i, .carousel__next i {
+        font-size: 60px;
+        color: var(--box-border);
+        cursor: pointer;
       }
-
-      .card-carousel {
-      --card-width: 80%;
-      --card-max-width: 280px;
-      --card-height: 350px;
-      --carousel-min-width: 600px;
-      z-index: 1;
-      position: relative;
-      margin: 0 auto;
-      width: 100%;
-      height: var(--card-height);
-      min-width: var(--carousel-min-width);
-      transition: filter .3s ease;
+      .carousel__prev:hover, .carousel__next:hover {
+        transform: scale(1.25);
       }
-
-      @media screen and (max-width: 640px) {
-      .card-carousel {
-        margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+      .carousel__prev {
+        left: 40%;
       }
+      .carousel__next {
+        right: 40%;
       }
-
-      .card-carousel.smooth-return {
-      transition: all .2s ease;
+      .carousel__body {
+        width: 100%;
+        padding: 20px 0 50px 0;
+        overflow: hidden;
       }
-
-      .card-carousel .card {
-      background: whitesmoke;
-      width: var(--card-width);
-      max-width: var(--card-max-width);
-      text-align: center;
-      padding: 1em;
-      min-width: 250px;
-      height: var(--card-height);
-      position: absolute;
-      margin: 0 auto;
-      color: rgba(0,0,0,.5);
-      transition: inherit;
-      -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-      -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-      box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-      border-radius: 1em;
-      filter: brightness(.9);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      .carousel__body .carousel__slider {
+        position: relative;
+        transition: transform 1s ease-in-out;
+        background: var(--crsl-bg);
       }
-
-      .card.highlight {
-      filter: brightness(1)
+      .carousel__body .carousel__slider__item {
+        position: relative;
+        display: block;
+        float: left;
+        box-sizing: border-box;
+        margin-left: 20px;
+        margin-right: 20px;
       }
-
-
-      .card:nth-of-type(1) .image-container {
-        background-image: url('/concept/images/pelajaran/intro.jpg');
+      .carousel__body .carousel__slider__item .item__3d-frame {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 1s ease-in-out;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
       }
-
-      .card:nth-of-type(2) .image-container {
-      background-image: url(http://aces.test/concept/images/pelajaran/pillar.jpg)
+      .carousel__body .carousel__slider__item .item__3d-frame:after {
+        content: "";
+        position: absolute;
+        bottom: -15%;
+        width: 100%;
+        height: 40px;
+        background: var(--box-shadow);
+        box-shadow: 0px 0px 5px 5px var(--box-shadow);
+        transform: rotateX(90deg) translate3d(0px, -20px, 0px);
+        opacity: 0.85;
       }
-
-      .card:nth-of-type(3) .image-container {
-      background-image: url(http://aces.test/concept/images/pelajaran/vr.jpg)
+      .carousel__body .carousel__slider__item .item__3d-frame__box {
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border-color: var(--box-border);
+        background: var(--box-bg);
+        border-width: 3px;
+        border-style: solid;
       }
-      .card:nth-of-type(4) .image-container {
-      background-image: url(http://aces.test/concept/images/pelajaran/addictive.jpg)
+      .carousel__body .carousel__slider__item .item__3d-frame__box h1 {
+        font-size: 7em;
+        width: 100%;
+        color: var(--box-border);
       }
-      .card:nth-of-type(5) .image-container {
-      background-image: url(http://aces.test/concept/images/pelajaran/data.jpg)
+      .carousel__body .carousel__slider__item .item__3d-frame__box--right, .carousel__body .carousel__slider__item .item__3d-frame__box--left {
+        top: 0;
+        width: 40px;
+        backface-visibility: hidden;
       }
-      /* .card:nth-of-type(6) .image-container {
-      background-image: url(http://aces.test/concept/images/pelajaran/data.jpg)
-      } */
-
-
-
-      .image-container {
-      width: 8em;
-      height: 8em;
-      position: relative;
-      background-size: cover;
-      margin-bottom: 2em;
-      border-radius: 100%;
-      padding: 1em;
-      -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
-      -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
-      box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
-
+      .carousel__body .carousel__slider__item .item__3d-frame__box--left {
+        left: 0;
+        border-left-width: 5px;
+        transform: translate3d(1px, 0, -40px) rotateY(-90deg);
+        transform-origin: 0%;
       }
-
-      .image-container::after {
-      content: "";
-      display: block;
-      width: 120%;
-      height: 120%;
-      /* border: solid 3px rgba(0,0,0,.1); */
-      border-radius: 100%;
-      position: absolute;
-      top: calc(-10% - 3px);
-      left: calc(-10% - 3px);
-      }
-
-      h2 {
-      padding: 1em;
-      margin-top: 1em;
-      background: rgba(0,0,0,.3);
-      text-align: center;
-      color: white;
-      border-radius: .2em;
-      display: inline-block;
-      transform: translateX(calc((100vw - 100%) / 2))
-      }
-
-      h2 a {
-      color: #f5b916
+      .carousel__body .carousel__slider__item .item__3d-frame__box--right {
+        right: 0;
+        border-right-width: 5px;
+        transform: translate3d(-1px, 0, -40px) rotateY(90deg);
+        transform-origin: 100%;
       }
 
       .blinking{
@@ -173,371 +163,214 @@
   <body>
 
 
-    <h1>PELAJARAN</h1>
-    <h1 class="blinking" style="font-size: 150%;">Sila leret ke kiri atau kanan untuk melihat kursus lain</h1>
+    <h1 style="padding-top: 5%; text-align: center;">PELAJARAN</h1>
+    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 5%;">Sila leret ke kiri atau kanan untuk melihat kursus lain</h1>
     <div class="container">
-      <div class="card-carousel">
-        <div class="card" id="1">
-          <div class="image-container"></div>
-          <p>1</p>
+
+      <div class="carousel">
+        <div class="carousel__body">
+          <div class="carousel__prev"><i class="far fa-angle-left"></i></div>
+          <div class="carousel__next"><i class="far fa-angle-right"></i></div>
+          <div class="carousel__slider">
+            <div class="carousel__slider__item">
+              <div class="item__3d-frame">
+                <div class="item__3d-frame__box item__3d-frame__box--front">
+                  <h1>1</h1>
+                </div>
+                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
+              </div>
+            </div>
+            <div class="carousel__slider__item">
+              <div class="item__3d-frame">
+                <div class="item__3d-frame__box item__3d-frame__box--front">
+                  <h1>2</h1>
+                </div>
+                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
+              </div>
+            </div>
+            <div class="carousel__slider__item">
+              <div class="item__3d-frame">
+                <div class="item__3d-frame__box item__3d-frame__box--front">
+                  <h1>3</h1>
+                </div>
+                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
+              </div>
+            </div>
+            <div class="carousel__slider__item">
+              <div class="item__3d-frame">
+                <div class="item__3d-frame__box item__3d-frame__box--front">
+                  <h1>4</h1>
+                </div>
+                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
+              </div>
+            </div>
+            <div class="carousel__slider__item">
+              <div class="item__3d-frame">
+                <div class="item__3d-frame__box item__3d-frame__box--front">
+                  <h1>5</h1>
+                </div>
+                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
+              </div>
+            </div>
+            <div class="carousel__slider__item">
+              <div class="item__3d-frame">
+                <div class="item__3d-frame__box item__3d-frame__box--front">
+                  <h1>6</h1>
+                </div>
+                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
+              </div>
+            </div>
+            <div class="carousel__slider__item">
+              <div class="item__3d-frame">
+                <div class="item__3d-frame__box item__3d-frame__box--front">
+                  <h1>7</h1>
+                </div>
+                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
+              </div>
+            </div>
+            <div class="carousel__slider__item">
+              <div class="item__3d-frame">
+                <div class="item__3d-frame__box item__3d-frame__box--front">
+                  <h1>8</h1>
+                </div>
+                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
+              </div>
+            </div>
+            <div class="carousel__slider__item">
+              <div class="item__3d-frame">
+                <div class="item__3d-frame__box item__3d-frame__box--front">
+                  <h1>9</h1>
+                </div>
+                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
+              </div>
+            </div>
+            <div class="carousel__slider__item">
+              <div class="item__3d-frame">
+                <div class="item__3d-frame__box item__3d-frame__box--front">
+                  <h1>10</h1>
+                </div>
+                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
+              </div>
+            </div>
+            <div class="carousel__slider__item">
+              <div class="item__3d-frame">
+                <div class="item__3d-frame__box item__3d-frame__box--front">
+                  <h1>11</h1>
+                </div>
+                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
+                <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card" id="2">
-          <div class="image-container"></div>
-          <p>2</p>
-        </div>
-        <div class="card" id="3">
-          <div class="image-container"></div>
-          <p>3</p>
-        </div>
-        <div class="card" id="4">
-          <div class="image-container"></div>
-          <p>4</p>
-        </div>
-        <div class="card" id="5">
-          <div class="image-container"></div>
-          <p>5</p>
-        </div>
-        <div class="card" id="6">
-          <div class="image-container"></div>
-          <p>6</p>
-        </div>
-        <!-- <div class="card" id="6">
-          <div class="image-container"></div>
-          <p>6</p>
-        </div> -->
       </div>
-      <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+
     </div>
 
     <!-- <h2>Checkout <a target="_blank" href="https://codepen.io/WillyW/pen/jOrPLab">v2</a></h2> -->
 
   </body>
 
-
   <script>
-  const cardsContainer = document.querySelector(".card-carousel");
-const cardsController = document.querySelector(".card-carousel + .card-controller")
+  (function() {
+    "use strict";
 
-class DraggingEvent {
-constructor(target = undefined) {
-  this.target = target;
-}
+    var carousel = document.getElementsByClassName('carousel')[0],
+        slider = carousel.getElementsByClassName('carousel__slider')[0],
+        items = carousel.getElementsByClassName('carousel__slider__item'),
+        prevBtn = carousel.getElementsByClassName('carousel__prev')[0],
+        nextBtn = carousel.getElementsByClassName('carousel__next')[0];
 
-event(callback) {
-  let handler;
+    var width, height, totalWidth, margin = 20,
+        currIndex = 0,
+        interval, intervalTime = 4000;
 
-  this.target.addEventListener("mousedown", e => {
-    e.preventDefault()
+    function init() {
+        resize();
+        move(Math.floor(items.length / 2));
+        bindEvents();
 
-    handler = callback(e)
-
-    window.addEventListener("mousemove", handler)
-
-    document.addEventListener("mouseleave", clearDraggingEvent)
-
-    window.addEventListener("mouseup", clearDraggingEvent)
-
-    function clearDraggingEvent() {
-      window.removeEventListener("mousemove", handler)
-      window.removeEventListener("mouseup", clearDraggingEvent)
-
-      document.removeEventListener("mouseleave", clearDraggingEvent)
-
-      handler(null)
-    }
-  })
-
-  this.target.addEventListener("touchstart", e => {
-    handler = callback(e)
-
-    window.addEventListener("touchmove", handler)
-
-    window.addEventListener("touchend", clearDraggingEvent)
-
-    document.body.addEventListener("mouseleave", clearDraggingEvent)
-
-    function clearDraggingEvent() {
-      window.removeEventListener("touchmove", handler)
-      window.removeEventListener("touchend", clearDraggingEvent)
-
-      handler(null)
-    }
-  })
-}
-
-// Get the distance that the user has dragged
-getDistance(callback) {
-  function distanceInit(e1) {
-    let startingX, startingY;
-
-    if ("touches" in e1) {
-      startingX = e1.touches[0].clientX
-      startingY = e1.touches[0].clientY
-    } else {
-      startingX = e1.clientX
-      startingY = e1.clientY
+        timer();
     }
 
+    function resize() {
+        width = Math.max(window.innerWidth * .25, 275),
+        height = window.innerHeight * .5,
+        totalWidth = width * items.length;
 
-    return function(e2) {
-      if (e2 === null) {
-        return callback(null)
-      } else {
+        slider.style.width = totalWidth + "px";
 
-        if ("touches" in e2) {
-          return callback({
-            x: e2.touches[0].clientX - startingX,
-            y: e2.touches[0].clientY - startingY
-          })
-        } else {
-          return callback({
-            x: e2.clientX - startingX,
-            y: e2.clientY - startingY
-          })
+        for(var i = 0; i < items.length; i++) {
+            let item = items[i];
+            item.style.width = (width - (margin * 2)) + "px";
+            item.style.height = height + "px";
         }
-      }
-    }
-  }
-
-  this.event(distanceInit)
-}
-}
-
-
-class CardCarousel extends DraggingEvent {
-constructor(container, controller = undefined) {
-  super(container)
-
-  // DOM elements
-  this.container = container
-  this.controllerElement = controller
-  this.cards = container.querySelectorAll(".card")
-
-  // Carousel data
-  this.centerIndex = (this.cards.length - 1) / 2;
-  this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
-  this.xScale = {};
-
-  // Resizing
-  window.addEventListener("resize", this.updateCardWidth.bind(this))
-
-  if (this.controllerElement) {
-    this.controllerElement.addEventListener("keydown", this.controller.bind(this))
-  }
-
-
-  // Initializers
-  this.build()
-
-  // Bind dragging event
-  super.getDistance(this.moveCards.bind(this))
-}
-
-updateCardWidth() {
-  this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
-
-  this.build()
-}
-
-build(fix = 0) {
-  for (let i = 0; i < this.cards.length; i++) {
-    const x = i - this.centerIndex;
-    const scale = this.calcScale(x)
-    const scale2 = this.calcScale2(x)
-    const zIndex = -(Math.abs(i - this.centerIndex))
-
-    const leftPos = this.calcPos(x, scale2)
-
-
-    this.xScale[x] = this.cards[i]
-
-    this.updateCards(this.cards[i], {
-      x: x,
-      scale: scale,
-      leftPos: leftPos,
-      zIndex: zIndex
-    })
-  }
-}
-
-
-controller(e) {
-  const temp = {...this.xScale};
-
-    if (e.keyCode === 39) {
-      // Left arrow
-      for (let x in this.xScale) {
-        const newX = (parseInt(x) - 1 < -this.centerIndex) ? this.centerIndex : parseInt(x) - 1;
-
-        temp[newX] = this.xScale[x]
-      }
     }
 
-    if (e.keyCode == 37) {
-      // Right arrow
-      for (let x in this.xScale) {
-        const newX = (parseInt(x) + 1 > this.centerIndex) ? -this.centerIndex : parseInt(x) + 1;
+    function move(index) {
 
-        temp[newX] = this.xScale[x]
-      }
+        if(index < 1) index = items.length;
+        if(index > items.length) index = 1;
+        currIndex = index;
+
+        for(var i = 0; i < items.length; i++) {
+            let item = items[i],
+                box = item.getElementsByClassName('item__3d-frame')[0];
+            if(i == (index - 1)) {
+                item.classList.add('carousel__slider__item--active');
+                box.style.transform = "perspective(1200px)";
+            } else {
+              item.classList.remove('carousel__slider__item--active');
+                box.style.transform = "perspective(1200px) rotateY(" + (i < (index - 1) ? 40 : -40) + "deg)";
+            }
+        }
+
+        slider.style.transform = "translate3d(" + ((index * -width) + (width / 2) + window.innerWidth / 2) + "px, 0, 0)";
     }
 
-    this.xScale = temp;
-
-    for (let x in temp) {
-      const scale = this.calcScale(x),
-            scale2 = this.calcScale2(x),
-            leftPos = this.calcPos(x, scale2),
-            zIndex = -Math.abs(x)
-
-      this.updateCards(this.xScale[x], {
-        x: x,
-        scale: scale,
-        leftPos: leftPos,
-        zIndex: zIndex
-      })
-    }
-}
-
-calcPos(x, scale) {
-  let formula;
-
-  if (x < 0) {
-    formula = (scale * 100 - this.cardWidth) / 2
-
-    return formula
-
-  } else if (x > 0) {
-    formula = 100 - (scale * 100 + this.cardWidth) / 2
-
-    return formula
-  } else {
-    formula = 100 - (scale * 100 + this.cardWidth) / 2
-
-    return formula
-  }
-}
-
-updateCards(card, data) {
-  if (data.x || data.x == 0) {
-    card.setAttribute("data-x", data.x)
-  }
-
-  if (data.scale || data.scale == 0) {
-    card.style.transform = `scale(${data.scale})`
-
-    if (data.scale == 0) {
-      card.style.opacity = data.scale
-    } else {
-      card.style.opacity = 1;
-    }
-  }
-
-  if (data.leftPos) {
-    card.style.left = `${data.leftPos}%`
-  }
-
-  if (data.zIndex || data.zIndex == 0) {
-    if (data.zIndex == 0) {
-      card.classList.add("highlight")
-    } else {
-      card.classList.remove("highlight")
+    function timer() {
+        clearInterval(interval);
+        interval = setInterval(() => {
+          move(++currIndex);
+        }, intervalTime);
     }
 
-    card.style.zIndex = data.zIndex
-  }
-}
-
-calcScale2(x) {
-  let formula;
-
-  if (x <= 0) {
-    formula = 1 - -1 / 5 * x
-
-    return formula
-  } else if (x > 0) {
-    formula = 1 - 1 / 5 * x
-
-    return formula
-  }
-}
-
-calcScale(x) {
-  const formula = 1 - 1 / 5 * Math.pow(x, 2)
-
-  if (formula <= 0) {
-    return 0
-  } else {
-    return formula
-  }
-}
-
-checkOrdering(card, x, xDist) {
-  const original = parseInt(card.dataset.x)
-  const rounded = Math.round(xDist)
-  let newX = x
-
-  if (x !== x + rounded) {
-    if (x + rounded > original) {
-      if (x + rounded > this.centerIndex) {
-
-        newX = ((x + rounded - 1) - this.centerIndex) - rounded + -this.centerIndex
-      }
-    } else if (x + rounded < original) {
-      if (x + rounded < -this.centerIndex) {
-
-        newX = ((x + rounded + 1) + this.centerIndex) - rounded + this.centerIndex
-      }
+    function prev() {
+      move(--currIndex);
+      timer();
     }
 
-    this.xScale[newX + rounded] = card;
-  }
-
-  const temp = -Math.abs(newX + rounded)
-
-  this.updateCards(card, {zIndex: temp})
-
-  return newX;
-}
-
-moveCards(data) {
-  let xDist;
-
-  if (data != null) {
-    this.container.classList.remove("smooth-return")
-    xDist = data.x / 250;
-  } else {
-
-
-    this.container.classList.add("smooth-return")
-    xDist = 0;
-
-    for (let x in this.xScale) {
-      this.updateCards(this.xScale[x], {
-        x: x,
-        zIndex: Math.abs(Math.abs(x) - this.centerIndex)
-      })
+    function next() {
+      move(++currIndex);
+      timer();
     }
-  }
-
-  for (let i = 0; i < this.cards.length; i++) {
-    const x = this.checkOrdering(this.cards[i], parseInt(this.cards[i].dataset.x), xDist),
-          scale = this.calcScale(x + xDist),
-          scale2 = this.calcScale2(x + xDist),
-          leftPos = this.calcPos(x + xDist, scale2)
 
 
-    this.updateCards(this.cards[i], {
-      scale: scale,
-      leftPos: leftPos
-    })
-  }
-}
-}
+    function bindEvents() {
+        window.onresize = resize;
+        prevBtn.addEventListener('click', () => { prev(); });
+        nextBtn.addEventListener('click', () => { next(); });
+    }
 
-const carousel = new CardCarousel(cardsContainer)
 
+
+
+
+    init();
+
+  })();
   </script>
+
 </html>
 
 @endsection
