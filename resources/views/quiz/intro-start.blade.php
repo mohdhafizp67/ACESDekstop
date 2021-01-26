@@ -40,7 +40,12 @@
 
   </div>
   <div class="col-md-4" style="text-align: center; padding: 3%;background-image: url({{asset('concept/images/galaxy/button.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
-    <button class="btn blinking" style="color: #fff; font-size: 100%;" onclick="pass_quiz_id(1)"> START </button>
+    <!-- <button class="btn blinking" style="color: #fff; font-size: 100%;" onclick="pass_quiz_id(1)"> START </button> -->
+    <form action="{{route('quiz.start-quiz')}}" method="post">
+    @csrf
+    <button type="submit" name="button" class="btn blinking">START</button>
+    <input type="hidden" id="quiz_id" name="quiz_id" value="{{$id}}">
+  </form>
   </div>
   <div class="col-md-4">
 
