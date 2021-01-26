@@ -6,7 +6,7 @@ Author's custom styles
 
 body {
   font-size: 0.8rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 a {
@@ -44,7 +44,7 @@ input::placeholder {
 html {
   font-size: 1em;
   line-height: 1.4;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: 'Quicksand', sans-serif !important;
 }
 
 ::-moz-selection {
