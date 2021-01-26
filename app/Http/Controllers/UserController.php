@@ -35,7 +35,7 @@ class UserController extends Controller
     return Validator::make($data, [
       'name' =>['nullable', 'string'],
       'email' =>['nullable', 'email'],
-      'alamat' => ['nullable', 'string'],
+      'addre' => ['nullable', 'string'],
       'poskod' =>['nullable', 'string'],
       'negeri' =>['nullable', 'string'],
       'ic_number' =>['nullable', 'string'],
@@ -46,7 +46,7 @@ class UserController extends Controller
     // dd($request->all());
 
 
-    $this->validatorProfile(request()->all())->validate();
+    // $this->validatorProfile(request()->all())->validate();
 
 
 
@@ -57,17 +57,17 @@ class UserController extends Controller
     $user->ic_number = request()->ic_number;
     $user->email = request()->email;
     $user->phone = request()->phone;
-    $user->address = request()->alamat;
-    $user->postcode = request()->poskod;
-    $user->state = request()->negeri ;
+    $user->address = request()->address;
+    $user->postcode = request()->postcode;
+    $user->state = request()->state;
 
     //upload profile picture
     // $upload = $request->file('gambar')->store('public/uploads');
     // $path = Storage::url($upload);
     // $gambar_profile = $path;
 
-    if ($files = request()->file('gambar') != null) {
-          $gambar_profile = request()->file('gambar')->store('public/uploads/user_pictures');
+    if ($files = request()->file('gambar_profile') != null) {
+          $gambar_profile = request()->file('gambar_profile')->store('public/uploads/user_pictures');
           $path = Storage::url($gambar_profile);
           $user->profile_picture = $path;
     }
