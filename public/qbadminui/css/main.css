@@ -551,7 +551,7 @@ label {
 .btn-outline-primary {
   color: #ffffff !important;
   background: #003e61 !important;
-  border-color: #003e61 !important;
+  border-color: #2d6c7f !important;
 }
 
 .primary-btn-hover-focus,
@@ -565,7 +565,7 @@ label {
 .btn-outline-primary,
 .btn-outline-primary:focus {
   background: unset !important;
-  color: #003e61 !important;
+  color: #fff !important;
 }
 
 .btn-primary:active,

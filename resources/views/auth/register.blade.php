@@ -1,261 +1,251 @@
 @extends('layouts.app-login-register')
 
 @section('content')
-<html style="background-color: #232121;">
+<html>
 <head>
   <link rel="stylesheet" href="{{ asset('css/Register.css') }} ">
 </head>
 <body>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-4" style="background-color: #000;">
-			<center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 25%;"/></center>
-			<p class="text-center" style="color: #fff; padding-bottom: 15%; padding-top: 20%; text-transform: uppercase; font-size: 100%;">
-				Aces I 4.0 merupakan satu inisiatif yang mengguna pakai sistem elearning dan gamifikasi untuk memberi ilmu pengetahuan secara interaktif kepada pelajar pelajar tingkatan 5 di bawah kelolaan ecerdc.
-			</p>
-			<p style="color: #fff;">
-				Pertolongan
-			</p>
-			<p style="color: #fff;">
-				Syarat
-			</p>
-			<p style="color: #fff;">
-				Kerahsiaan
-			</p><br>
-		</div>
-		<div class="col-md-8" style="background-image: url({{asset('concept/images/mascot4.png')}}); background-position: 60% 100%;background-repeat: no-repeat;background-size: cover;">
-			<div class="row">
-				<div class="col-md-6"  >
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
 
-				</div><br><br>
-        <!-- <div class="col-md-3" style="padding-bottom: 0px;text-align-last: left;">
-          <h5 class="text-center" style="padding-top: 32%;margin-left: 30%;color: #fff;">
-            Tiada Akaun?
-          </h5>
-        </div> -->
-				<!-- <div class="col-md-3" style="padding-top: 11%;text-align-last: right;">
+<div class="row">
+  <div class="col-md-4">
+    <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 25%;"/></center>
+    <p class="text-center" style="color: #fff; padding-bottom: 50%; padding-top: 20%; text-transform: uppercase; font-size: 100%;">
+    Aces I 4.0 is an initiative that adopts elearning and gamification systems to provide interactive knowledge to Form 5 students under ecerdc management.
+    </p>
+    <p style="color: #fff;">
+      HELP
+    </p>
+    <p style="color: #fff;">
+      TERM & CONDITIONS
+    </p>
+    <p style="color: #fff;">
+      PRIVACY
+    </p><br>
+  </div>
+  <div class="col-md-7" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
+    <h4 style="color: #fff; font-size: 200%; text-align: center; text-transform: uppercase; font-weight: bold; padding-top: 10%;">
+      REGISTRATION FORM
+    </h4>
 
-					<button type="button" class="btn btn-success" style="margin-top: -40%;margin-left: -25%;">
-						<a href="{{route('register')}}">CIPTA AKAUN</a>
-					</button>
-				</div> -->
-			</div>
-			<h4 style="color: #fff; font-size: 250%; text-align: center; text-transform: uppercase; font-weight: bold;">
-				Daftar Masuk
-			</h4>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-1">
+    <div class="card-body" style="margin-top: -5%;">
+      <div class="row">
 
-          </div>
-          <div class="col-md-10">
-            <form action="{{ route('register') }}" method="POST" style="padding: 10px" source="custom" name="form">
-              @csrf
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
+        <div class="col-md-12">
+          <form action="{{ route('register') }}" method="POST" style="padding: 10px" source="custom" name="form">
+            @csrf
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
 
-                    <label for="exampleInputEmail1" style="color: #fff">
-                      Nama Penuh
-                    </label>
-                    <input type="text" value="{{ old('name') }}" placeholder="Nama Penuh" name="name" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);" autofocus/>
-                    @if($errors->has('name'))
-                        <div class="invalid-feedback">
-                            <strong>{{ $errors }}</strong>
-                        </div>
-                    @endif
+                  <label for="exampleInputEmail1" style="color: #fff">
+                    FULL NAME
+                  </label>
+                  <input type="text" value="{{ old('name') }}" placeholder="Full Name" name="name" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);" autofocus/>
+                  @if($errors->has('name'))
+                      <div class="invalid-feedback">
+                          <strong>{{ $errors }}</strong>
+                      </div>
+                  @endif
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+
+                  <label for="exampleInputEmail1" style="color: #fff">
+                    IC Number
+                  </label>
+                  <input type="text" placeholder="IC Number" name="ic_number" value="{{ old('ic_number') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('ic_number') ? 'is-invalid' : '' }}" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" autofocus/>
+                  @if($errors->has('ic_number'))
+                      <div class="invalid-feedback">
+                          <strong>{{ $errors->first('ic_number') }}</strong>
+                      </div>
+                  @endif
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="form-group">
+
+              <label for="exampleInputEmail1" style="color: #fff">
+                EMAIL
+              </label>
+              <input type="email" placeholder="Email" name="email" value="{{ old('email') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('email') ? 'is-invalid' : '' }}"/>
+              @if($errors->has('email'))
+                  <div class="invalid-feedback">
+                      <strong>{{ $errors->first('email') }}</strong>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
+              @endif
+            </div>
 
-                    <label for="exampleInputEmail1" style="color: #fff">
-                      Kad Pengenalan
-                    </label>
-                    <input type="text" placeholder="Kad Pengenalan" name="ic_number" value="{{ old('ic_number') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('ic_number') ? 'is-invalid' : '' }}" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" autofocus/>
-                    @if($errors->has('ic_number'))
-                        <div class="invalid-feedback">
-                            <strong>{{ $errors->first('ic_number') }}</strong>
-                        </div>
-                    @endif
+            <div class="form-group">
+
+              <label for="exampleInputEmail1" style="color: #fff">
+                PHONE NUMBER
+              </label>
+              <input type="text" placeholder="Phone Number" name="phone" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('phone') ? 'is-invalid' : '' }}" value="{{ old('phone') }}" onkeypress="return onlyNumberKey(event)" minlength="10" maxlength="11"/>
+              @if($errors->has('address'))
+                  <div class="invalid-feedback">
+                      <strong>{{ $errors->first('address') }}</strong>
                   </div>
-                </div>
-              </div>
+              @endif
+            </div>
 
 
 
+            <div class="form-group">
 
-
-              <div class="form-group">
-
-                <label for="exampleInputEmail1" style="color: #fff">
-                  Emel
-                </label>
-                <input type="email" placeholder="Emel" name="email" value="{{ old('email') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('email') ? 'is-invalid' : '' }}"/>
-                @if($errors->has('email'))
-                    <div class="invalid-feedback">
-                        <strong>{{ $errors->first('email') }}</strong>
-                    </div>
-                @endif
-              </div>
-
-              <div class="form-group">
-
-                <label for="exampleInputEmail1" style="color: #fff">
-                  Nombor Telefon
-                </label>
-                <input type="text" placeholder="Nombor Telefon" name="phone" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('phone') ? 'is-invalid' : '' }}" value="{{ old('phone') }}" onkeypress="return onlyNumberKey(event)" minlength="10" maxlength="11"/>
-                @if($errors->has('address'))
-                    <div class="invalid-feedback">
-                        <strong>{{ $errors->first('address') }}</strong>
-                    </div>
-                @endif
-              </div>
-
-
-
-              <div class="form-group">
-
-                <label for="exampleInputEmail1" style="color: #fff">
-                  ALAMAT
-                </label>
-                <textarea placeholder="Alamat" rows="4" cols="50" name="address" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('address') ? 'is-invalid' : '' }}" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);">{{ old('address') }}</textarea>
-                @if($errors->has('phone'))
-                    <div class="invalid-feedback">
-                        <strong>{{ $errors->first('phone') }}</strong>
-                    </div>
-                @endif
-              </div>
-
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-
-                    <label for="exampleInputEmail1" style="color: #fff">
-                      Poskod
-                    </label>
-                    <input type="text" placeholder="Poskod" name="postcode" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('postcode') ? 'is-invalid' : '' }}" minlength="5" maxlength="5" value="{{ old('postcode') }}" onkeypress="return onlyNumberKey(event)"/>
-                    @if($errors->has('postcode'))
-                        <div class="invalid-feedback">
-                            <strong>{{ $errors->first('postcode') }}</strong>
-                        </div>
-                    @endif
+              <label for="exampleInputEmail1" style="color: #fff">
+                ADDRESS
+              </label>
+              <textarea placeholder="Address" rows="4" cols="30" name="address" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('address') ? 'is-invalid' : '' }}" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);">{{ old('address') }}</textarea>
+              @if($errors->has('phone'))
+                  <div class="invalid-feedback">
+                      <strong>{{ $errors->first('phone') }}</strong>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
+              @endif
+            </div>
 
-                    <label for="exampleInputEmail1" style="color: #fff">
-                      Negeri
-                    </label>
-                    <select id="state" name="state" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('state') }}">
-                      <option value="" selected disabled hidden>Pilih Negeri</option>
-                      <option value="Johor" {{ old('state') == "Johor" ? 'selected' : '' }}>Johor</option>
-                      <option disabled value="Kedah" {{ old('state') == "Kedah" ? 'selected' : '' }}>Kedah</option>
-                      <option value="Kelantan" {{ old('state') == "Kelantan" ? 'selected' : '' }}>Kelantan</option>
-                      <option disabled value="Melaka" {{ old('state') == "Melaka" ? 'selected' : '' }}>Melaka</option>
-                      <option disabled value="Negeri Sembilan" {{ old('state') == "Negeri Sembilan" ? 'selected' : '' }}>Negeri Sembilan</option>
-                      <option value="Pahang" {{ old('state') == "Pahang" ? 'selected' : '' }}>Pahang</option>
-                      <option disabled value="Pulau Pinang" {{ old('state') == "Pulau Pinang" ? 'selected' : '' }}>Pulau Pinang</option>
-                      <option disabled value="Perak" {{ old('state') == "Perak" ? 'selected' : '' }}>Perak</option>
-                      <option disabled value="Perlis" {{ old('state') == "Perlis" ? 'selected' : '' }}>Perlis</option>
-                      <option disabled value="Sabah" {{ old('state') == "Sabah" ? 'selected' : '' }}>Sabah</option>
-                      <option disabled value="Sarawak" {{ old('state') == "Sarawak" ? 'selected' : '' }}>Sarawak</option>
-                      <option disabled value="Selangor" {{ old('state') == "Selangor" ? 'selected' : '' }}>Selangor</option>
-                      <option value="Terengganu" {{ old('state') == "Terengganu" ? 'selected' : '' }}>Terengganu</option>
-                      <option disabled value="WP Kuala Lumpur" {{ old('state') == "WP Kuala Lumpur" ? 'selected' : '' }}>WP Kuala Lumpur</option>
-                      <option disabled value="WP Putrajaya" {{ old('state') == "WP Putrajaya" ? 'selected' : '' }}>WP Putrajaya</option>
-                      <option disabled value="WP Labuan" {{ old('state') == "WP Labuan" ? 'selected' : '' }}>WP Labuan</option>
-                    </select>
-                    @if($errors->has('state'))
-                        <div class="invalid-feedback">
-                            <strong>{{ $errors->first('state') }}</strong>
-                        </div>
-                    @endif
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+
+                  <label for="exampleInputEmail1" style="color: #fff">
+                    POSTCODE
+                  </label>
+                  <input type="text" placeholder="Postcode" name="postcode" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('postcode') ? 'is-invalid' : '' }}" minlength="5" maxlength="5" value="{{ old('postcode') }}" onkeypress="return onlyNumberKey(event)"/>
+                  @if($errors->has('postcode'))
+                      <div class="invalid-feedback">
+                          <strong>{{ $errors->first('postcode') }}</strong>
+                      </div>
+                  @endif
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+
+                  <label for="exampleInputEmail1" style="color: #fff">
+                    STATE
+                  </label>
+                  <select id="state" name="state" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('state') }}">
+                    <option value="" selected disabled hidden>Select State  </option>
+                    <option value="Johor" {{ old('state') == "Johor" ? 'selected' : '' }}>Johor</option>
+                    <option disabled value="Kedah" {{ old('state') == "Kedah" ? 'selected' : '' }}>Kedah</option>
+                    <option value="Kelantan" {{ old('state') == "Kelantan" ? 'selected' : '' }}>Kelantan</option>
+                    <option disabled value="Melaka" {{ old('state') == "Melaka" ? 'selected' : '' }}>Melaka</option>
+                    <option disabled value="Negeri Sembilan" {{ old('state') == "Negeri Sembilan" ? 'selected' : '' }}>Negeri Sembilan</option>
+                    <option value="Pahang" {{ old('state') == "Pahang" ? 'selected' : '' }}>Pahang</option>
+                    <option disabled value="Pulau Pinang" {{ old('state') == "Pulau Pinang" ? 'selected' : '' }}>Pulau Pinang</option>
+                    <option disabled value="Perak" {{ old('state') == "Perak" ? 'selected' : '' }}>Perak</option>
+                    <option disabled value="Perlis" {{ old('state') == "Perlis" ? 'selected' : '' }}>Perlis</option>
+                    <option disabled value="Sabah" {{ old('state') == "Sabah" ? 'selected' : '' }}>Sabah</option>
+                    <option disabled value="Sarawak" {{ old('state') == "Sarawak" ? 'selected' : '' }}>Sarawak</option>
+                    <option disabled value="Selangor" {{ old('state') == "Selangor" ? 'selected' : '' }}>Selangor</option>
+                    <option value="Terengganu" {{ old('state') == "Terengganu" ? 'selected' : '' }}>Terengganu</option>
+                    <option disabled value="WP Kuala Lumpur" {{ old('state') == "WP Kuala Lumpur" ? 'selected' : '' }}>WP Kuala Lumpur</option>
+                    <option disabled value="WP Putrajaya" {{ old('state') == "WP Putrajaya" ? 'selected' : '' }}>WP Putrajaya</option>
+                    <option disabled value="WP Labuan" {{ old('state') == "WP Labuan" ? 'selected' : '' }}>WP Labuan</option>
+                  </select>
+                  @if($errors->has('state'))
+                      <div class="invalid-feedback">
+                          <strong>{{ $errors->first('state') }}</strong>
+                      </div>
+                  @endif
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+
+              <label for="exampleInputEmail1" style="color: #fff">
+                DISTRICT
+              </label>
+              <select id="district" name="district" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('district') }}">
+                <option value="" selected disabled hidden>Select District</option>
+              </select>
+              @if($errors->has('state'))
+                  <div class="invalid-feedback">
+                      <strong>{{ $errors->first('state') }}</strong>
                   </div>
+              @endif
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+
+                  <label for="exampleInputPassword1" style="color: #fff">
+                    PASSWORD
+                  </label>
+                  <input type="password" placeholder="Password" id="password" name="password" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"/>
+                  @if($errors->has('password'))
+                      <div class="invalid-feedback">
+                          <strong>{{ $errors->first('password') }}</strong>
+                      </div>
+                  @endif
                 </div>
               </div>
+              <div class="col-md-6">
+                <div class="form-group">
 
-              <div class="form-group">
-
-                <label for="exampleInputEmail1" style="color: #fff">
-                  Daerah
-                </label>
-                <select id="district" name="district" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('district') }}">
-                  <option value="" selected disabled hidden>Pilih Daerah</option>
-                </select>
-                @if($errors->has('state'))
-                    <div class="invalid-feedback">
-                        <strong>{{ $errors->first('state') }}</strong>
-                    </div>
-                @endif
-              </div>
-
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-
-                    <label for="exampleInputPassword1" style="color: #fff">
-                      Kata Laluan
-                    </label>
-                    <input type="password" placeholder="Kata Laluan" id="password" name="password" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"/>
-                    @if($errors->has('password'))
-                        <div class="invalid-feedback">
-                            <strong>{{ $errors->first('password') }}</strong>
-                        </div>
-                    @endif
-                  </div>
+                  <label for="exampleInputPassword1" style="color: #fff">
+                    CONFIRM PASSWORD
+                  </label>
+                  <input type="password" placeholder="Confirm Password" id="password_confirmation" name="password_confirmation" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('password_confirmation') ? 'is-invalid' : '' }}"/>
+                  @if($errors->has('password'))
+                      <div class="invalid-feedback">
+                          <strong>{{ $errors->first('password') }}</strong>
+                      </div>
+                  @endif
                 </div>
-                <div class="col-md-6">
-                  <div class="form-group">
 
-                    <label for="exampleInputPassword1" style="color: #fff">
-                      Sahkan Kata Laluan
-                    </label>
-                    <input type="password" placeholder="Sahkan Kata Laluan" id="password_confirmation" name="password_confirmation" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('password_confirmation') ? 'is-invalid' : '' }}"/>
-                    @if($errors->has('password'))
-                        <div class="invalid-feedback">
-                            <strong>{{ $errors->first('password') }}</strong>
-                        </div>
-                    @endif
-                  </div>
-
-                </div>
               </div>
+            </div>
 
 
 
 
 
-              <div class="u-align-center u-form-group u-form-submit">
+            <div class="u-align-center u-form-group u-form-submit">
 
 
-                <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
-                    <button class="btn btn-success" type="submit">DAFTAR MASUK</button>
-                </div>
+              <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
+                  <button class="btn" type="submit" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">REGISTER</button>
               </div>
+            </div>
 
-              </button>
-            </form>
-          </div>
-          <div class="col-md-1">
-
-          </div>
+            </button>
+          </form>
         </div>
-
-
-
-
-
-
 
       </div>
 
-		</div>
-	</div>
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+  <div class="col-md-1">
+
+  </div>
 </div>
+
+
+</div>
+
+
 </body>
 <script type="text/javascript">
     //input text ONLY
@@ -302,7 +292,7 @@ $('#state').change(function(){
   //clear jenis_data selection
   $("#district").empty();
   //initialize selection
-  $("#district").append('<option value="" selected disabled hidden>Pilih Daerah</option>');
+  $("#district").append('<option value="" selected disabled hidden>Select District</option>');
   //ajax
 
   if(negeri){
