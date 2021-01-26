@@ -62,12 +62,12 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row" style="padding-bottom: 5%;">
   <div class="col-md-2">
 
   </div>
   <div class="col-md-8" style="overflow-y:auto;height:300px;width:100%;">
-    <table class="table" style="text-align: center;">
+    <table class="table" style="text-align: center; text-transform: uppercase;">
 
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
           <td style="color: #fff; font-size: 100%; text-align: end;">
@@ -246,11 +246,11 @@
 
   </div>
   <div class="col-md-10">
-    <table class="table" style="text-align: center;">
+    <table class="table" style="text-align: center; text-transform: uppercase;">
 
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff; font-size: 100%; text-align: end;">
-            1
+          <td style="color: #fff; font-size: 150%; text-align: end; color:#E9FF00">
+            100
           </td>
           <td style="text-align: end;">
             @if(Auth::user()->profile_picture != null)
@@ -259,18 +259,17 @@
             <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
             @endif <br>
           </td>
-          <td style="color: #fff; font-size: 100%;">
-            <!-- {{Auth::user()->name}} -->
-            Mohd Amirul
+          <td style="color: #fff; font-size: 150%; color:#E9FF00">
+            {{Auth::user()->name}}
           </td>
-          <td style="color: #fff; font-size: 100%;">
+          <td style="color: #fff; font-size: 150%; color:#E9FF00">
             SMK
           </td>
-          <td style="color: #fff; font-size: 100%;">
+          <td style="color: #fff; font-size: 150%; color:#E9FF00">
             Pahang
           </td>
-          <td style="color: #fff; font-size: 100%;">
-            3000
+          <td style="color: #fff; font-size: 150%; color:#E9FF00">
+            1000
           </td>
         </tr>
 

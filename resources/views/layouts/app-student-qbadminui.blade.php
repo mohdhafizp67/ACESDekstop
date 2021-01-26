@@ -60,7 +60,7 @@
 
 
                         <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('home')}}" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-home" aria-hidden="true"></i>&nbsp&nbsp DASHBOARD</a></li>
-                        <div style="padding: 5px;"></div>
+                        <!-- <div style="padding: 5px;"></div> -->
                         <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{ route('user.student.profile') }}" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-user-circle"aria-hidden="true"></i>&nbsp&nbsp PROFIL PELAJAR</a></li> -->
 
                         <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%;">
@@ -75,7 +75,7 @@
                         <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('user.game.demo')}}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp&nbsp GAME</a></li>
                         <div style="padding: 5px;"></div>
 
-                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{ route('activities.leaderboard') }}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-trophy" aria-hidden="true"></i>&nbsp&nbsp LEADER BOARD</a></li>
+                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{ route('activities.leaderboard') }}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-trophy" aria-hidden="true"></i>&nbsp&nbsp LEADERBOARD</a></li>
 
 
                         <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%;">
@@ -181,7 +181,7 @@
 
 
 
-                <!-- <a href="{{ url()->previous() }}" class="btn btn-outline-primary m-2" style="font-size:150%"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Kembali</a> -->
+                <a href="{{ url()->previous() }}" class="btn btn-outline-primary m-2" style="font-size:150%"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back</a>
 
 
 
@@ -231,9 +231,9 @@
                             <hr style="padding-bottom: 0px;">
 
 
-                            <a href="{{route('user.student.profile')}}" class="dropdown-item text-secondary-light"><i class="fa fa-user-circle" aria-hidden="true"></i> PROFIL PELAJAR</a>
-                            <a href="{{ route('user.change-password') }}" class="dropdown-item text-secondary-light"><i class="fa fa-lock" aria-hidden="true"></i> TUKAR KATA LALUAN</a>
-                            <a href="#" class="dropdown-item text-secondary-light" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i> LOG KELUAR</a>
+                            <a href="{{route('user.profile.edit')}}" class="dropdown-item text-secondary-light"><i class="fa fa-user-circle" aria-hidden="true"></i> UPDATE PROFILE</a>
+                            <a href="{{ route('user.change-password') }}" class="dropdown-item text-secondary-light"><i class="fa fa-lock" aria-hidden="true"></i> CHANGE PASSWORD</a>
+                            <a href="#" class="dropdown-item text-secondary-light" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i> LOG OUT</a>
 
 
                             <!-- <a href="#" class="dropdown-item text-secondary-light">Billing history</a> -->
