@@ -59,7 +59,7 @@
                 <hr style="width: 70%; margin: 0 auto; ">
                 <form action="{{route('others.feedback.save')}}" method="POST">
                   @csrf
-                <div class="card-body" style="padding-top: 8px;">
+                <div class="card-body" style="padding-top: 1px;">
                   <div class="row">
                     <div class="col-md-1">
 
