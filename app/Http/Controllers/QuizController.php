@@ -18,9 +18,9 @@ use App\Models\AnswerBank;
 class QuizController extends Controller
 {
 
-  public function startexam()
+  public function introquiz($id)
   {
-      return view('quiz.start-exam');
+      return view('quiz.intro-start', compact('id'));
   }
 
   public function viewQuizList()

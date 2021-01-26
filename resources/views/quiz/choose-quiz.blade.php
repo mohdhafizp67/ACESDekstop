@@ -271,7 +271,7 @@
       <div class="slider-content">
 
           <div class="slider-single">
-              <a href="{{route('quiz.start-exam')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/vr.png') }}" alt="1" /></a>
+              <a href="{{route('quiz.intro-start', 1)}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/vr.png') }}" alt="1" /></a>
               <h1 class="slider-single-title">VR</h1>
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>

@@ -52,9 +52,7 @@ Route::get('/videogame', [App\Http\Controllers\LessonController::class, 'videoga
 //Quiz
 Route::get('/quiz/choose-quiz', [App\Http\Controllers\QuizController::class, 'chooseQuiz'])->name('quiz.choose-quiz');
 
-Route::get('/quiz/startexam', [App\Http\Controllers\QuizController::class, 'startexam'])->name('quiz.start-exam');
-
-
+Route::get('/quiz/introquiz, {id}', [App\Http\Controllers\QuizController::class, 'introquiz'])->name('quiz.intro-start');
 
 Route::post('/quiz/start', [App\Http\Controllers\QuizController::class, 'startQuiz'])->name('quiz.start-quiz');
 
