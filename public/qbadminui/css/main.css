@@ -540,6 +540,7 @@ label {
 
 .btn {
   font-size: 14px !important;
+  color: #fff !important;
 }
 
 .primary-btn,
@@ -1213,7 +1214,9 @@ button.close {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #ffffff !important;
-  background-color: #003e61 !important;
+  /* font-size: 150%; */
+  background-color: #003e6100 !important;
+  border-radius: 100%;
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
