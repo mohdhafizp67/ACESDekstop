@@ -79,6 +79,8 @@ Route::post('/feedback/save', [App\Http\Controllers\UserController::class, 'feed
 
 Route::get('/profile/change-password', [App\Http\Controllers\UserController::class, 'viewChangePassword'])->name('user.change-password');
 
+Route::post('/profile/change-password/save', [App\Http\Controllers\UserController::class, 'saveChangePassword'])->name('user.change-password.save');
+
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('activities.leaderboard');
 
 Route::get('/chat', [App\Http\Controllers\ChatController::class, 'index'])->name('activities.chat');

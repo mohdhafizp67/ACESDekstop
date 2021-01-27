@@ -55,7 +55,7 @@
 
 
               <div class="card border-dark" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
-                <div class="card-header" style="padding-bottom: 1px; border: transparent !important; padding-top: 4%; font-size: 160%; color: white;">MAKLUM BALAS</div>
+                <div class="card-header" style="padding-bottom: 1px; border: transparent !important; padding-top: 4%; font-size: 160%; color: white;">FEED BACK</div>
                 <hr style="width: 70%; margin: 0 auto; ">
                 <form action="{{route('others.feedback.save')}}" method="POST">
                   @csrf
@@ -66,13 +66,13 @@
                     </div>
                     <div class="col-md-5">
                       <div class="form-group" style="color: white !important;">
-                        <label class="col-form-label">Nama</label>
+                        <label class="col-form-label">NAME</label>
                         <input id="name" type="text"name="name" value="{{Auth::user()->name}}" class="form-control" disabled>
                       </div>
                     </div>
                     <div class="col-md-5">
                         <div class="form-group" style="color: white !important;">
-                          <label class="col-form-label">Email</label>
+                          <label class="col-form-label">EMAIL</label>
                           <input id="email" type="text"name="email" value="{{Auth::user()->email}}" class="form-control" disabled>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="col-md-10">
                       <div class="form-group" style="color: white !important;">
-                        <label class="col-form-label">Subjek</label>
+                        <label class="col-form-label">SUBJECT</label>
                         <input id="subject" type="text"name="subject" class="form-control" required>
                       </div>
                     </div>
@@ -102,7 +102,7 @@
                     </div>
                     <div class="col-md-10">
                       <div class="form-group" style="color: white !important;">
-                        <label class="col-form-label">Maklum Balas</label>
+                        <label class="col-form-label">COMMENT</label>
                         <textarea class="form-control" id="feedback" name="feedback" rows="3" required></textarea>
                       </div>
                     </div>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="col-md-10">
                         <button type="submit" class="btn btn-success" name="button" style="background-color: transparent !important;">
-                          HANTAR MAKLUM BALAS
+                          SUBMIT
                         </button>
 
 
