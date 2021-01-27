@@ -38,7 +38,7 @@
       }
       .slider-container .bullet-container {
         position: absolute;
-        bottom: 10px;
+        bottom: 20%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -61,10 +61,11 @@
       .slider-container .slider-content {
         position: relative;
         left: 50%;
-        top: 50%;
+        top: 45%;
         width: 70%;
         height: 60%;
         transform: translate(-50%, -50%);
+        margin-top: -10%;
       }
       .slider-container .slider-content .slider-single {
         position: absolute;
@@ -230,7 +231,7 @@
         z-index: 3;
         display: block;
         left: 85%;
-        top: 50%;
+        top: 45%;
         color: #ffffff;
         transform: translateY(-50%);
         padding: 20px 15px;
@@ -265,14 +266,14 @@
 
 
     <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">GAMES</h1>
-    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 5%; color: #fff;">Swipe left to see other circut</h1>
-    <div class="slider-container" style="margin-top: -15%;">
+    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Swipe left to see other circut</h1>
+    <div class="slider-container">
 
       <div class="slider-content">
 
           <div class="slider-single">
-              <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture1.png') }}" alt="1" /></a>
-              <h1 class="slider-single-title">Introduction - Tutorial</h1>
+              <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Introduction.png') }}" alt="1" /></a>
+              <!-- <h1 class="slider-single-title">Introduction - Tutorial</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>1,247</p>
@@ -280,8 +281,8 @@
           </div>
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture2.png') }}" alt="2" />
-              <h1 class="slider-single-title">Circuit 01 - VR</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="2" />
+              <!-- <h1 class="slider-single-title">Circuit 01 - VR</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>1,247</p>
@@ -289,18 +290,8 @@
           </div>
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture3.png') }}" alt="3" />
-              <h1 class="slider-single-title">Circuit 02 - Addictive Manufacturing</h1>
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
-
-
-          <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture4.png') }}" alt="4" />
-              <h1 class="slider-single-title">Circuit 03 - Internet of Things</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2.png') }}" alt="3" />
+              <!-- <h1 class="slider-single-title">Circuit 02 - Addictive Manufacturing</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>1,247</p>
@@ -309,8 +300,18 @@
 
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture5.png') }}" alt="5" />
-              <h1 class="slider-single-title">Circuit 04 - Big Data</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3.png') }}" alt="4" />
+              <!-- <h1 class="slider-single-title">Circuit 03 - Internet of Things</h1> -->
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4.png') }}" alt="5" />
+              <!-- <h1 class="slider-single-title">Circuit 04 - Big Data</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>1,247</p>
@@ -318,8 +319,8 @@
           </div>
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture6.png') }}" alt="6" />
-              <h1 class="slider-single-title">Circuit 05 - Cloud Computing</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit5.png') }}" alt="6" />
+              <!-- <h1 class="slider-single-title">Circuit 05 - Cloud Computing</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>1,247</p>
@@ -327,8 +328,8 @@
           </div>
 
             <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture7.png') }}" alt="6" />
-              <h1 class="slider-single-title">Circuit 06 - Cyber Security</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit6.png') }}" alt="6" />
+              <!-- <h1 class="slider-single-title">Circuit 06 - Cyber Security</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>1</p>
@@ -336,8 +337,8 @@
           </div>
 
         <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture8.png') }}" alt="6" />
-              <h1 class="slider-single-title">Circuit 07 - Universal Integration</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit7.png') }}" alt="6" />
+              <!-- <h1 class="slider-single-title">Circuit 07 - Universal Integration</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>2</p>
@@ -345,8 +346,8 @@
           </div>
 
         <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture9.png') }}" alt="6" />
-              <h1 class="slider-single-title">Circuit 08 - Advanced Simulation</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit8.png') }}" alt="6" />
+              <!-- <h1 class="slider-single-title">Circuit 08 - Advanced Simulation</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>3</p> -->
@@ -354,22 +355,14 @@
           </div>
 
           <div class="slider-single">
-                <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture10.png') }}" alt="6" />
-                <h1 class="slider-single-title">Circuit 09 - Autonomous Robot</h1>
+                <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit9.png') }}" alt="6" />
+                <!-- <h1 class="slider-single-title">Circuit 09 - Autonomous Robot</h1> -->
                 <!-- <a class="slider-single-likes" href="javascript:void(0);">
                     <i class="fa fa-heart"></i>
                     <p>3</p> -->
                 </a>
             </div>
 
-            <div class="slider-single">
-                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Picture11.png') }}" alt="6" />
-                  <h1 class="slider-single-title">Epilogue - Final</h1>
-                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                      <i class="fa fa-heart"></i>
-                      <p>3</p> -->
-                  </a>
-              </div>
 
       </div>
 

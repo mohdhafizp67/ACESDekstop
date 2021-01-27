@@ -29,7 +29,7 @@
 
 <div class="row">
   <div class="col-md-12">
-    <h1 style="text-align: center; color: #fff; font-weight: bold;"> Quiz-lette </h1>
+    <h1 style="text-align: center; color: #fff; font-weight: bold;">START QUIZ</h1>
     <p style="padding-top: 10%; padding-bottom: 5%;text-align: center; color: #fff;">Asnwer all the quiz based on lessons</p>
   </div>
 

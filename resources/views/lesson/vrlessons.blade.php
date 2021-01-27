@@ -142,7 +142,7 @@
 
     </div>
 		<div class="col-md-9">
-      <h1 style="padding-bottom: 5%; text-align: center;color: #fff; font-size: 250%; font-weight: bold;">VR LESSONS</h1>
+      <h1 style="padding-top: 3%; text-align: center;color: #fff; font-size: 250%; font-weight: bold;">VR LESSONS</h1>
 		</div>
 		<div class="col-md-2">
 		</div>
@@ -156,33 +156,33 @@
       <!-- <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
       <div class="slider">
-  		<input type="radio" name="testimonial" id="t-1">
+  		<input type="radio" name="testimonial" id="t-1" checked>
   		<input type="radio" name="testimonial" id="t-2">
-  		<input type="radio" name="testimonial" id="t-3" checked>
+  		<input type="radio" name="testimonial" id="t-3">
   		<input type="radio" name="testimonial" id="t-4">
   		<input type="radio" name="testimonial" id="t-5">
   		<div class="testimonials">
 
+  			<label class="item" for="t-1">
+          <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  			</label>
   			<label class="item" for="t-2">
-          <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   			</label>
   			<label class="item" for="t-3">
-          <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  			</label>
-  			<label class="item" for="t-4">
-          <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   			</label>
 
   		</div>
   		<div class="dots">
 
+  			<label for="t-1"></label>
   			<label for="t-2"></label>
   			<label for="t-3"></label>
-  			<label for="t-4"></label>
-  			
+
   		</div>
   	</div>
 
@@ -202,28 +202,37 @@
     <div class="col-md-8">
       <div class="items">
       		<div class="item active">
-      			<img src="{{asset('concept/images/icon/institut.jpg')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
+      			<img src="{{asset('concept/images/icon/02U.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
 
 
       		</div>
       		<div class=" item next" >
-            <img src="{{asset('concept/images/icon/kemahiran.jpg')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
+            <img src="{{asset('concept/images/icon/03S.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
 
 
       		</div>
-      		<div class="item" >
-            <img src="{{asset('concept/images/icon/prospek.jpg')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
+      		<div class="item next" >
+            <img src="{{asset('concept/images/icon/01C.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
 
 
       		</div>
-      		<div class="item">
-            <img src="{{asset('concept/images/icon/institut.jpg')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#2">
+          <div class=" item next" >
+            <img src="{{asset('concept/images/icon/03S.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
+
+
+          </div>
+      		<div class="item prev">
+            <img src="{{asset('concept/images/icon/02U.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#2">
 
       		</div>
       		<div class="item prev">
-            <img src="{{asset('concept/images/icon/prospek.jpg')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
+            <img src="{{asset('concept/images/icon/01C.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
 
       		</div>
+          <div class="item prev">
+            <img src="{{asset('concept/images/icon/02U.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#2">
+
+          </div>
       		<div class="button-container">
       			<div class="button"><i class="fas fa-angle-left"></i></div>
       			<div class="button"><i class="fas fa-angle-right"></i></div>

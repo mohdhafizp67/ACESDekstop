@@ -35,7 +35,7 @@
       }
       .slider-container .bullet-container {
         position: absolute;
-        bottom: 10px;
+        bottom: 20%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -58,10 +58,11 @@
       .slider-container .slider-content {
         position: relative;
         left: 50%;
-        top: 50%;
+        top: 45%;
         width: 70%;
         height: 60%;
         transform: translate(-50%, -50%);
+        margin-top: -10%;
       }
       .slider-container .slider-content .slider-single {
         position: absolute;
@@ -212,7 +213,7 @@
         z-index: 3;
         display: block;
         right: 85%;
-        top: 50%;
+        top: 45%;
         color: #ffffff;
         transform: translateY(-50%);
         padding: 20px 15px;
@@ -260,14 +261,14 @@
 
 
     <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">LESSONS IN I 4.0</h1>
-    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 5%; color: #fff;">Swipe left to see other courses</h1>
-    <div class="slider-container" style="margin-top: -15%;">
+    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Swipe left to see other courses</h1>
+    <div class="slider-container">
 
       <div class="slider-content">
 
           <div class="slider-single">
-              <a href="{{route('lesson.vrlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/vr.png') }}" alt="1" /></a>
-              <h1 class="slider-single-title">VR</h1>
+              <a href="{{route('lesson.vrlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/01.png') }}" alt="1" /></a>
+              <!-- <h1 class="slider-single-title">VR</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>1,247</p>
@@ -275,8 +276,8 @@
           </div>
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/addictive.png') }}" alt="2" />
-              <h1 class="slider-single-title">Addictive Manufacturing</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/02VR.png') }}" alt="2" />
+              <!-- <h1 class="slider-single-title">Addictive Manufacturing</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>1,247</p>
@@ -284,18 +285,8 @@
           </div>
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/iot.png') }}" alt="3" />
-              <h1 class="slider-single-title">Internet of Things</h1>
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
-
-
-          <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/bigdata.png') }}" alt="4" />
-              <h1 class="slider-single-title">Big Data</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/03AM.png') }}" alt="3" />
+              <!-- <h1 class="slider-single-title">Internet of Things</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>1,247</p>
@@ -304,8 +295,18 @@
 
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/cloud.png') }}" alt="5" />
-              <h1 class="slider-single-title">Cloud Computing</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/04IOT.png') }}" alt="4" />
+              <!-- <h1 class="slider-single-title">Big Data</h1> -->
+              <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                  <i class="fa fa-heart"></i>
+                  <p>1,247</p>
+              </a> -->
+          </div>
+
+
+          <div class="slider-single">
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/05BD.png') }}" alt="5" />
+              <!-- <h1 class="slider-single-title">Cloud Computing</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>1,247</p>
@@ -313,8 +314,8 @@
           </div>
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/cyber.png') }}" alt="6" />
-              <h1 class="slider-single-title">Cyber Security</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/06CC.png') }}" alt="6" />
+              <!-- <h1 class="slider-single-title">Cyber Security</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>1,247</p>
@@ -322,8 +323,8 @@
           </div>
 
             <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/universal.png') }}" alt="6" />
-              <h1 class="slider-single-title">Universal Integration</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/07CS.png') }}" alt="7" />
+              <!-- <h1 class="slider-single-title">Universal Integration</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>1</p>
@@ -331,8 +332,8 @@
           </div>
 
         <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/advanced.png') }}" alt="6" />
-              <h1 class="slider-single-title">Advanced Simulation</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/08UI.png') }}" alt="8" />
+              <!-- <h1 class="slider-single-title">Advanced Simulation</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>2</p>
@@ -340,13 +341,22 @@
           </div>
 
         <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/autonomous.png') }}" alt="6" />
-              <h1 class="slider-single-title">Autonomous Robot</h1>
+              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/09AS.png') }}" alt="9" />
+              <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
                   <p>3</p> -->
               </a>
           </div>
+
+          <div class="slider-single">
+                <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/10AR.png') }}" alt="10" />
+                <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
+                <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                    <i class="fa fa-heart"></i>
+                    <p>3</p> -->
+                </a>
+            </div>
 
       </div>
   </div>
