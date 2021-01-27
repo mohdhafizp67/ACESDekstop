@@ -7,6 +7,8 @@ use Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Storage;
+use Illuminate\Support\Facades\Hash;
+
 
 class UserController extends Controller
 {
@@ -98,13 +100,44 @@ class UserController extends Controller
 
   public function feedbackSave(Request $request)
   {
-    return redirect()->route('others.feedback')->with("success","Maklum balas telah dihantar.");
+    return redirect()->route('others.feedback')->with("success","Your feed back has been submitted");
   }
 
   public function viewChangePassword()
   {
       return view('user.change-password');
 
+  }
+
+  public function saveChangePassword(Request $request){
+    // dd($request->all());
+    $user_id = Auth::user()->id;
+    $user = User::findOrFail($user_id);
+
+    if(!(Hash::check($request->get('password'), Auth::user()->password))){
+      return redirect()->back()->with("error","Current Password is Wrong");
+    }
+
+    if(strcmp($request->get('password'),$request->get('new_password'))== 0){
+      return redirect()->back()->with("error","New Password cannot be same as Current Password");
+    }
+
+    if(strcmp($request->get('new_password'),$request->get('password_confirmation'))== 1){
+      return redirect()->back()->with("error","New Password not same as Confirm Password");
+    }
+
+    $validatedData = $request->validate([
+            'password' => 'required',
+            'new_password' => 'required|string|min:6',
+      ]);
+
+      $hashed_random_password = Hash::make($request->get('new_password'));
+
+      $user->password = $hashed_random_password;
+
+      $user->save();
+
+      return redirect()->route('user.change-password')->with("success","Password has been changed");
   }
 
   public function profil()

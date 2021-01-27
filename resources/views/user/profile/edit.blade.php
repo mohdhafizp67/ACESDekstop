@@ -190,7 +190,7 @@
                     <div class="col-md-1">
 
                     </div>
-                    <div class="col-md">
+                    <div class="col text-center">
                         <button type="submit" class="btn btn-success" name="button" style="background-color: transparent !important;">
                           UPDATE PROFILE
                         </button>
