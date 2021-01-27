@@ -51,7 +51,7 @@
         LOGIN FORM
       </h4>
 
-      <div class="card-body">
+      <div class="card-body" style="padding: 10%;">
         <div class="row">
 
           <div class="col-md-12">
