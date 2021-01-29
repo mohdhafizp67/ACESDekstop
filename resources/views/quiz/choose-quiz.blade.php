@@ -34,7 +34,7 @@
         position: relative;
         margin: 0 auto;
         width: 800px;
-        height: 600px;
+        height: 550px;
 
       }
       .slider-container .bullet-container {
@@ -168,7 +168,7 @@
         z-index: 1;
       }
       .slider-container .slider-content .slider-single.proactive .slider-single-image {
-        opacity: 0.3;
+        opacity: 0.2;
         transform: translateX(25%) scale(0.8);
       }
       .slider-container .slider-content .slider-single.proactive .slider-single-download {
