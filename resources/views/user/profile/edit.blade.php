@@ -187,17 +187,17 @@
 
 
                   <div class="row">
-                    <div class="col-md-1">
+                    <div class="col-md-3">
 
                     </div>
-                    <div class="col text-center">
-                        <button type="submit" class="btn btn-success" name="button" style="background-color: transparent !important;">
+                    <div class="col-md-6" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;text-align: center;">
+                        <button type="submit" class="btn " name="button">
                           UPDATE PROFILE
                         </button>
 
 
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-3">
 
                     </div>
                   </div>

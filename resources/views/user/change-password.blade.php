@@ -29,7 +29,7 @@
             <div class="col-md-2">
 
             </div>
-            <div class="col-md" style="padding-top: 6%;">
+            <div class="col-md" style="padding-top: 6%;padding-bottom:4%;">
 
               @if ($message = Session::get('success'))
               <div id=alert>
@@ -127,7 +127,7 @@
                     <div class="col-md-1">
 
                     </div>
-                    <div class="col-md">
+                    <div class="col-md" style="padding-bottom: 5%;">
                       <div class="input-group mb-3">
                           <input type="password"
                                  id="password_confirmation"
@@ -166,15 +166,15 @@
 
 
                   <div class="row">
-                    <div class="col-md-1">
+                    <div class="col-md-3">
 
                     </div>
-                    <div class="col text-center">
-                        <button type="button" class="btn btn-success" name="button" data-toggle="modal" data-target="#exampleModal" style="background-color: transparent !important;">
+                    <div class="col-md-6 text-center" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+                        <button type="button" class="btn" name="button" data-toggle="modal" data-target="#exampleModal">
                             CHANGE PASSWORD
                         </button>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-3">
 
                     </div>
                   </div>

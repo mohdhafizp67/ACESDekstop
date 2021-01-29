@@ -70,7 +70,7 @@
     <table class="table" style="text-align: center; text-transform: uppercase;">
 
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff; font-size: 100%; text-align: end;">
+          <td style="color: #fff; font-size: 150%; text-align: end;font-weight: bold;">
             1
           </td>
           <td style="text-align: end;">
@@ -96,7 +96,7 @@
         </tr>
 
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff; font-size: 100%;">
+          <td style="color: #fff; font-size: 150%;text-align: end; font-weight: bold;">
             2
           </td>
           <td style="text-align: end;">
@@ -122,7 +122,7 @@
         </tr>
 
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff; font-size: 100%;">
+          <td style="color: #fff;font-size: 150%;text-align: end; font-weight: bold;">
             3
           </td>
           <td style="text-align: end;">
@@ -148,7 +148,7 @@
         </tr>
 
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff; font-size: 100%;">
+          <td style="color: #fff;font-size: 150%;text-align: end; font-weight: bold;">
             4
           </td>
           <td style="text-align: end;">
@@ -174,7 +174,7 @@
         </tr>
 
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff; font-size: 100%;">
+          <td style="color: #fff;font-size: 150%;text-align: end; font-weight: bold;">
             5
           </td>
           <td style="text-align: end;">
@@ -200,7 +200,7 @@
         </tr>
 
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff; font-size: 100%;">
+          <td style="color: #fff;font-size: 150%;text-align: end; font-weight: bold;">
             6
           </td>
           <td style="text-align: end;">
