@@ -9,7 +9,7 @@
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
 
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-5">
     <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 25%;"/></center>
     <p class="text-center" style="color: #fff; padding-bottom: 50%; padding-top: 20%; text-transform: uppercase; font-size: 100%;">
     Aces I 4.0 is an initiative that adopts elearning and gamification systems to provide interactive knowledge to Form 5 students under ecerdc management.
@@ -237,9 +237,9 @@
 
   </div>
 
-  <div class="col-md-1">
+  <!-- <div class="col-md-1">
 
-  </div>
+  </div> -->
 </div>
 
 
