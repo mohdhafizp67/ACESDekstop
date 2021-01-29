@@ -20,7 +20,7 @@
 <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <style media="screen">
 .circle {
-width: 120%;
+width: 100%;
 margin: 6px 6px 20px;
 display: inline-block;
 position: relative;
@@ -32,7 +32,6 @@ left: 23%;
 
 .circle canvas {
 vertical-align: top;
-width: 50% !important;
 }
 
 .circle strong {
@@ -84,7 +83,11 @@ margin-left: -48%;
           <div class="col-md-3" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/profile_frame.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
                 <div style="padding: 12%;"></div>
+                @if(Auth::user()->profile_picture == null)
                   <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style=" width:66%;">
+                @else
+                <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style=" width:66%; height:66% ">
+                @endif
 
 
           </div>
@@ -179,8 +182,8 @@ $(document).ready(function ($) {
               $(this).find('.circle').circleProgress({
                   // startAngle: -Math.PI / 2,
                   value: percent / 100,
-                  size : 400,
-                  thickness: 20,
+                  size : 100,
+                  thickness: 10,
                   // fill: {
                   //     color: '#5AAAE7'
                   // }
@@ -209,8 +212,8 @@ $(document).ready(function ($) {
               $(this).find('.circle').circleProgress({
                   // startAngle: -Math.PI / 2,
                   value: percent / 100,
-                  size : 400,
-                  thickness: 20,
+                  size : 100,
+                  thickness: 10,
                   fill: {
                       gradient: ['#3aeabb', '#fdd250']
                   }
@@ -239,8 +242,8 @@ $(document).ready(function ($) {
               $(this).find('.circle').circleProgress({
                   // startAngle: -Math.PI / 2,
                   value: percent / 100,
-                  size : 400,
-                  thickness: 20,
+                  size : 100,
+                  thickness: 10,
                   fill: {
                       gradient: ['#3aeabb', '#fdd250']
                   }
