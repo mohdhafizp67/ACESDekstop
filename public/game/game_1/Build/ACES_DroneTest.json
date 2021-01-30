@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "ACES Drone Tutorial",
+"productVersion": "0.1",
+"dataUrl": "ACES_DroneTest.data.unityweb",
+"wasmCodeUrl": "ACES_DroneTest.wasm.code.unityweb",
+"wasmFrameworkUrl": "ACES_DroneTest.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.18f1"
+}
