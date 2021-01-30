@@ -10,4 +10,12 @@ class GameController extends Controller
   {
     return view('game.tutorial.index');
   }
+
+  public function test()
+  {
+
+    return view('game.demo.gameUnity');
+
+  }
+
 }

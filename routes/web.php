@@ -74,6 +74,8 @@ Route::get('/game/demo', [App\Http\Controllers\UserController::class, 'gameDemoD
 
 Route::get('/game/tutorial', [App\Http\Controllers\GameController::class, 'tutorial'])->name('user.game.tutorial');
 
+Route::get('/game/test', [App\Http\Controllers\GameController::class, 'test'])->name('user.game.test');
+
 
 
 Route::get('/feedback', [App\Http\Controllers\UserController::class, 'feedback'])->name('others.feedback');
