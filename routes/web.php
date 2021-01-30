@@ -67,10 +67,13 @@ Route::get('/statistik', [App\Http\Controllers\UserController::class, 'statistik
 Route::get('/profile', [App\Http\Controllers\UserController::class, 'profil'])->name('user.student.profile');
 
 
-
+//game
 Route::get('/game/menu', [App\Http\Controllers\UserController::class, 'gameDemo'])->name('user.game.demo');
 
 Route::get('/game/demo', [App\Http\Controllers\UserController::class, 'gameDemoDrone'])->name('user.game.drone');
+
+Route::get('/game/tutorial', [App\Http\Controllers\GameController::class, 'tutorial'])->name('user.game.tutorial');
+
 
 
 Route::get('/feedback', [App\Http\Controllers\UserController::class, 'feedback'])->name('others.feedback');
