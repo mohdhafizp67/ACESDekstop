@@ -132,9 +132,19 @@ margin-left: -48%;
         <div style="padding: 1%;"></div>
 
         <div class="row">
-          <div class="col-md-7">
+          <div class="col-md-3">
           </div>
-          <div class="col-md-5">
+          <div class="col-md-3">
+            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-repeat: no-repeat;background-size: 60% 60%;">
+              <div class="card-body list-group">
+                <div style="padding: 35%;"></div>
+
+                <!-- <i class="fa fa-commenting-o" aria-hidden="true"></i> -->
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
             <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <div class="card-header" style="background-color: transparent; border: transparent; font-weight: bold; font-size: 100%; margin: 3px;">ANNOUNCEMENT</div>
               <div class="card-body list-group p-2" style="overflow:auto;height:200px;width:80%; margin: 0 auto; border: transparent;">
@@ -183,7 +193,7 @@ $(document).ready(function ($) {
                   // startAngle: -Math.PI / 2,
                   value: percent / 100,
                   size : 100,
-                  thickness: 10,
+                  thickness: 8,
                   // fill: {
                   //     color: '#5AAAE7'
                   // }
@@ -213,7 +223,7 @@ $(document).ready(function ($) {
                   // startAngle: -Math.PI / 2,
                   value: percent / 100,
                   size : 100,
-                  thickness: 10,
+                  thickness: 8,
                   fill: {
                       gradient: ['#3aeabb', '#fdd250']
                   }
@@ -243,7 +253,7 @@ $(document).ready(function ($) {
                   // startAngle: -Math.PI / 2,
                   value: percent / 100,
                   size : 100,
-                  thickness: 10,
+                  thickness: 8,
                   fill: {
                       gradient: ['#3aeabb', '#fdd250']
                   }
