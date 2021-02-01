@@ -139,7 +139,7 @@
                     <div class="col-md-5">
                         <div class="form-group" style="color: white !important;">
                           <label class="col-form-label">STATE</label>
-                          <select class="custom-select  bg-light @error('state') is-invalid @enderror" name="state" value="{{ Auth::user()->state }}"  required>
+                          <select class="custom-select  bg-light @error('state') is-invalid @enderror" id="state" name="state" value="{{ Auth::user()->state }}"  required>
                                 <option value="" selected disabled hidden>Choose State</option>
                                 <option value="Johor" {{ Auth::user()->state == "Johor" ? 'selected' : '' }}>Johor</option>
                                 <option value="Kedah" {{ Auth::user()->state == "Kedah" ? 'selected' : '' }}>Kedah</option>
@@ -159,6 +159,29 @@
                                 <option value="WP Labuan" {{ Auth::user()->state == "WP Labuan" ? 'selected' : '' }}>WP Labuan</option>
                             </select>
                         </div>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md">
+                      <div class="form-group" style="color: white !important;">
+                        <label class="col-form-label">DISTRICT</label>
+                        <select class="custom-select  bg-light @error('district') is-invalid @enderror" id="district" name="district" value="{{ Auth::user()->district }}"  required>
+                              <option value="" selected disabled hidden>Choose District</option>
+                              <!-- <option value="Johor" {{ Auth::user()->district == "Banggu" ? 'selected' : '' }}>Banggu</option> -->
+                              @foreach($district as $data)
+                                @if($data->negeri == Auth::user()->state)
+                                  <option value="{{$data->daerah}}" {{ Auth::user()->district == $data->daerah ? 'selected' : '' }}>{{$data->daerah}}</option>
+                                @endif
+                              @endforeach
+                          </select>
+                      </div>
                     </div>
                     <div class="col-md-1">
 
@@ -258,6 +281,42 @@
           return false;
           }
         });
+    </script>
+    <script type="text/javascript">
+    $('#state').change(function(){
+      //fetch data from jenis_dokumen
+      var negeri = $(this).val();
+      //clear jenis_data selection
+      $("#district").empty();
+      //initialize selection
+      $("#district").append('<option value="" selected disabled hidden>Select District</option>');
+      //ajax
+
+      if(negeri){
+        $.ajax({
+          type:"get",
+           url:"/register/ajax/get-district/"+negeri,
+
+          success: function(respond){
+            //console.log(respond);
+            var data = JSON.parse(respond);
+            data.forEach(function(data)
+            {
+              // console.log(data.daerah);
+              $("#district").append('<option value="'+data.daerah+'" >'+data.daerah+'</option>');
+            });
+                // $.each(JSON.parse(respond),function(key,value){
+                //     $("#jenis_data").append('<option value="'+value+'">'+value+'</option>');
+                // });
+          },
+          error: function(XMLHttpRequest, textStatus, errorThrown) {
+              console.log("Status: " + textStatus);
+              console.log("Error: " + errorThrown);
+          }
+        })
+
+      }
+    });
     </script>
 
     <script src="js/jquery.min.js"></script>
