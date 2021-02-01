@@ -35,7 +35,7 @@ window.Pusher = require('pusher-js');
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    // authEndpoint: 'http://161.35.227.188/ACES/broadcasting/auth',
+    authEndpoint: 'http://161.35.227.188/ACES/public/broadcasting/auth',
     key: process.env.MIX_PUSHER_APP_KEY,
     wsHost: window.location.hostname,
     wsPort: 6001,
