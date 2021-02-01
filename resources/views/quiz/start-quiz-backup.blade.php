@@ -4,38 +4,9 @@
 
 
 <style media="screen">
-
-    .label {
-    background-color: #4CAF50;
-    border: none;
-    color: black;
-    padding: 5% 15%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 100%;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 25px;
-    width: 100% !important;
-    height: auto;
+  label{
+    color: #ffffff !important;
   }
-
-  .label1 {
-    background-color: #ffffff00;
-    color: white;
-    border: 2px solid #007bff;
-  }
-
-  .label1:hover {
-    background-color: #1a7e8e;
-    color: white;
-  }
-  :checked + img {
-      opacity: 1;
-  }
-
 </style>
 
 
@@ -66,7 +37,7 @@
           @csrf
           <input type="hidden" name="quiz_id" value="{{$quiz->id}}">
         <div class="pills-regular">
-            <ul class="nav nav-pills m-1" id="pills-tab" role="tablist" style="padding-bottom: 1%; padding-left: 15%;">
+            <ul class="nav nav-pills m-1" id="pills-tab" role="tablist" style="padding-bottom: 5%;">
 
                 @foreach($question as $data)
                   @if ($loop->first)
@@ -112,7 +83,7 @@
                     </div>
                     <div class="col-md-8">
 
-                      <div class="form-group" style="color: #fff; font-size: 150%;">
+                      <div class="form-group">
                          <label>{{$data->question}}</label>
                       </div>
                     </div>
@@ -122,36 +93,57 @@
                   </div>
 
                   @foreach($answer as $ans)
-                  <div class="row" style="margin-left: 15%;">
-                    <!-- <div class="col-md-2">
-
-                    </div> -->
                     @for($i=0;$i<count($ans);$i++)
-                      @if($ans[$i]->question_id == $data->id)
+                    @if($ans[$i]->question_id == $data->id)
+
+
+                    <div class="row">
+                      <div class="col-md-2">
+
+                      </div>
                       <div class="col-md-4">
-                        <label class="label label1 custom-control custom-radio custom-control-inline">
-                            <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}"  class="custom-control-input"><span class="">{{$ans[$i]->answer}}</span>
+                        @if($i == 0)
+                        <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}"  class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                        </label>
+                      </div>
+                      <div class="col-md-4">
+                        @elseif($i == 1)
+                        <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}" class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
                         </label>
                       </div>
                       <div class="col-md-2">
 
                       </div>
-                      @endif
+                    </div>
 
-                      <div class="row">
-                      @if($i > 3)
-                      <div class="col-md-6">
-                        <label class="label label1 custom-control custom-radio custom-control-inline">
-                            <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}"  class="custom-control-input"><span class="">{{$ans[$i]->answer}}</span>
-                        </label>
+                    <div class="row">
+                      <div class="col-md-2">
                       </div>
-                    @endif
-                  </div>
-                    @endfor
-                    <!-- <div class="col-md-2">
+                      <div class="col-md-4">
 
-                    </div> -->
-                  </div>
+
+                      </div>
+                      <div class="col-md-4">
+                        @elseif($i == 2)
+                        <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}" class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                        </label>
+                        <br>
+                        @elseif($i == 3)
+                        <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}" class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                        </label>
+                        @endif
+
+                      </div>
+                      <div class="col-md-2">
+                      </div>
+                    </div>
+                    @endif
+
+                    @endfor
                   @endforeach
 
 
@@ -162,7 +154,7 @@
                     <div class="col-md-2">
 
                     </div>
-                    <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; padding: 1%;">
+                    <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center;">
                       <button class="btn btnNext" type="button" >NEXT</button>
                     </div>
                   </div>
@@ -193,7 +185,7 @@
                       </div>
                       <div class="col-md-8">
 
-                        <div class="form-group" style="color: #fff; font-size: 150%;">
+                        <div class="form-group">
                            <label>{{$data->question}}</label>
                         </div>
                       </div>
@@ -202,36 +194,44 @@
                       </div>
                     </div>
                     @foreach($answer as $ans)
-                    <div class="row" style="margin-left: 15%;">
-                      <!-- <div class="col-md-2">
-
-                      </div> -->
                       @for($i=0;$i<count($ans);$i++)
-                        @if($ans[$i]->question_id == $data->id)
-                        <div class="col-md-4">
-                          <label class="label label1 custom-control custom-radio custom-control-inline">
-                              <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}"  class="custom-control-input"><span class="">{{$ans[$i]->answer}}</span>
+                      @if($ans[$i]->question_id == $data->id)
+
+                      <div class="row">
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-md-8">
+                          @if($i == 0)
+                          <label class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}"  class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
                           </label>
+                          <br>
+                          @elseif($i == 1)
+                          <label class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}" class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                          </label>
+                        </div>
+                        <div class="col-md-4">
+                          @elseif($i == 2)
+                          <label class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}" class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                          </label>
+                          <br>
+                          @elseif($i == 3)
+                          <label class="custom-control custom-radio custom-control-inline">
+                              <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}" class="custom-control-input"><span class="custom-control-label">{{$ans[$i]->answer}}</span>
+                          </label>
+                          @endif
+
                         </div>
                         <div class="col-md-2">
 
                         </div>
-                        @endif
-
-                        <div class="row">
-                        @if($i > 3)
-                        <div class="col-md-6">
-                          <label class="label label1 custom-control custom-radio custom-control-inline">
-                              <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}"  class="custom-control-input"><span class="">{{$ans[$i]->answer}}</span>
-                          </label>
-                        </div>
+                      </div>
                       @endif
-                    </div>
-                      @endfor
-                      <!-- <div class="col-md-2">
 
-                      </div> -->
-                    </div>
+                      @endfor
                     @endforeach
 
 
@@ -242,26 +242,26 @@
                       <div class="col-md-8">
 
                       </div>
-                      <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; padding: 1%;">
+                      <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center;">
                         <button class="btn btnPrevious" type="button" >PREVIOUS</button>
 
                       </div>
-                      <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; padding: 1%;">
+                      <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center;">
                           <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal">SUBMIT</button>
                       </div>
                     </div>
 
                     @else
 
-                    <div class="row" style="margin-top: 3%;">
+                    <div class="row">
                       <div class="col-md-8">
 
                       </div>
-                      <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; padding: 1%;">
+                      <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center;">
 
                         <button class="btn btnPrevious" type="button" >PREVIOUS</button>
                       </div>
-                      <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; padding: 1%;">
+                      <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center;">
                         <button class="btn btnNext" type="button" >NEXT</button>
                       </div>
                     </div>
@@ -409,9 +409,9 @@ $(document).ready(function(){
 });
 </script>
 
-<script>
 
-</script>
+
+
 
 
 

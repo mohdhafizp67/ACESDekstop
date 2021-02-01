@@ -29,19 +29,19 @@
 
 <div class="row">
   <div class="col-md-12">
-    <h1 style="text-align: center; color: #fff; font-weight: bold;">START QUIZ</h1>
-    <p style="padding-top: 10%; padding-bottom: 5%;text-align: center; color: #fff;">Asnwer all the quiz based on lessons</p>
+    <h1 style="text-align: center; color: #fff; font-weight: bold;padding-top: 2%;">START QUIZ</h1>
+    <p style="padding-top: 5%; padding-bottom: 5%;text-align: center; color: #fff;font-size: 150%;">Asnwer all the quiz based on lessons</p>
   </div>
 
 
 </div>
-<div class="row" style="padding-bottom: 34%;">
+<div class="row" style="padding-bottom: 30%;">
   <div class="col-md-4">
 
   </div>
-  <div class="col-md-4" style="text-align: center; padding: 3%;background-image: url({{asset('concept/images/galaxy/button.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+  <div class="col-md-4" style="background-image: url({{asset('concept/images/galaxy/button.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
     <!-- <button class="btn blinking" style="color: #fff; font-size: 100%;" onclick="pass_quiz_id(1)"> START </button> -->
-    <form action="{{route('quiz.start-quiz')}}" method="post">
+    <form action="{{route('quiz.start-quiz')}}" method="post" style="margin: 12%;text-align: center;">
     @csrf
     <button type="submit" name="button" class="btn blinking">START</button>
     <input type="hidden" id="quiz_id" name="quiz_id" value="{{$id}}">

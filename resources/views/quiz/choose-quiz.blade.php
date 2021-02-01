@@ -34,7 +34,7 @@
         position: relative;
         margin: 0 auto;
         width: 800px;
-        height: 550px;
+        height: 525px;
 
       }
       .slider-container .bullet-container {
@@ -262,7 +262,7 @@
   </head>
   <body>
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding: 3%;">
 
 
 

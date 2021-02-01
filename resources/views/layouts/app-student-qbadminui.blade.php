@@ -104,7 +104,7 @@
         </div>
 
         <!-- Main section -->
-        <main class="bg-light main-full-body" style="background-color: #130E29!important;">
+        <main class="bg-light main-full-body">
 
           <div class="modal fade" id="logOutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
@@ -255,10 +255,10 @@
 
     <!-- Footer section -->
 
-    <footer class="footer" style="padding-top: 0%; background-color: #130E29 !important;">
+    <!-- <footer class="footer" style="padding-top: 0%; background-color: #130E29 !important;">
         <p style="padding: 1%; margin-top: 0%; color: white;">&copy; Hakcipta Terpelihara 2021. <a href="#" target="_Blank"><font color="white">ARTANIS CLOUD SDN BHD</font></a></p>
 
-    </footer>
+    </footer> -->
   </div>
 
 
