@@ -9,27 +9,62 @@
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
 
 <div class="row">
-  <div class="col-md-5">
-    <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 25%;"/></center>
-    <p class="text-center" style="color: #fff; padding-bottom: 50%; padding-top: 20%; text-transform: uppercase; font-size: 100%;">
-    Aces I 4.0 is an initiative that adopts elearning and gamification systems to provide interactive knowledge to Form 5 students under ecerdc management.
+
+  <div class="col-md-4">
+    <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 15%;"/></center>
+    <p class="text-center" style="color: #fff; padding-bottom: 10%; padding-top: 10%; text-transform: uppercase; font-size: 100%;">
+      ACES will be a regional hub providing wide-ranging Industry 4.0 solutions including advisory, consulting and training services for businesses in Malaysia, ASEAN and ASIA.
+
     </p>
-    <p style="color: #fff;">
-      HELP
-    </p>
-    <p style="color: #fff;">
-      TERM & CONDITIONS
-    </p>
-    <p style="color: #fff;">
-      PRIVACY
-    </p><br>
+    <div class="row">
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 5%;">
+        <button type="button" class="btn">
+          <a href="#">HELP</a>
+        </button>
+      </div>
+      <div class="col-md-2">
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 5%;">
+        <button type="button" class="btn">
+          <a href="#">TERM & CONDITIONS</a>
+        </button>
+      </div>
+      <div class="col-md-2">
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 5%;">
+        <button type="button" class="btn">
+          <a href="#">PRIVACY</a>
+        </button>
+      </div>
+      <div class="col-md-2">
+
+      </div>
+    </div>
+
   </div>
   <div class="col-md-7" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
-    <h4 style="color: #fff; font-size: 200%; text-align: center; text-transform: uppercase; font-weight: bold; padding-top: 10%;">
+    <h4 style="color: #fff; font-size: 200%; text-align: center; text-transform: uppercase; padding-top: 10%;">
       REGISTRATION FORM
     </h4>
 
-    <div class="card-body" style="padding: 10%;">
+    <div class="card-body" style="padding: 10%;margin-top: -10%;">
       <div class="row">
 
         <div class="col-md-12">
