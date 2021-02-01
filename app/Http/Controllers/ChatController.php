@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Message;
 use App\Events\MessageSent;
 use Carbon\Carbon;
+use App\Models\User;
 
 class ChatController extends Controller
 {
@@ -17,6 +18,7 @@ class ChatController extends Controller
 
     public function index()
     {
+        // dd(User::get());
         return view('chat.index');
     }
 

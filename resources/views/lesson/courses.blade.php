@@ -31,7 +31,7 @@
         position: relative;
         margin: 0 auto;
         width: 800px;
-        height: 550px;
+        height: 525px;
       }
       .slider-container .bullet-container {
         position: absolute;
@@ -257,7 +257,7 @@
   </head>
   <body>
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 3%;">
 
 
     <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">LESSONS IN I 4.0</h1>
