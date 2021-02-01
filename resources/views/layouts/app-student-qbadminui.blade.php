@@ -212,13 +212,13 @@
                         <!-- Icon -->
                         <a href="#" class="w-100 dropdown-toggle text-muted" data-toggle="dropdown">
 
-                          @if(Auth::user()->gambar_profile == null)
+                          @if(Auth::user()->profile_picture == null)
 
 
                           <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style="height:40px; width:40px;">
 
                           @else
-                          <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->gambar_profile)) }}"  class="profile-avatar" style="height:40px; width:40px; ">
+                          <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px; ">
                           @endif
                         </a>
                         <!-- Dropdown Menu -->

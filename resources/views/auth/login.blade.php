@@ -77,12 +77,16 @@
       </div>
 
     </div>
+
     <div class="col-md-7" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%; margin-bottom: 10%;">
+
       <h4 style="color: #fff; font-size: 200%; text-align: center; text-transform: uppercase; font-weight: bold; padding-top: 10%;">
         LOGIN FORM
       </h4>
 
+
       <div class="card-body" style="padding: 10%;margin-top: -10%;">
+
         <div class="row">
 
           <div class="col-md-12">
@@ -128,9 +132,9 @@
       </div>
 
     </div>
-    <div class="col-md-1">
+    <!-- <div class="col-md-1">
 
-    </div>
+    </div> -->
   </div>
 
 </div>

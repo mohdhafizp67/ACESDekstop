@@ -282,7 +282,9 @@
           </div>
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/kuiz/01VR.png') }}" alt="2" />
+            <a href="{{route('quiz.intro-start', 2)}}"><img class="slider-single-image" src="{{ asset('concept/images/kuiz/01VR.png') }}" alt="2" /></a>
+
+
               <!-- <h1 class="slider-single-title">Addictive Manufacturing</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
@@ -291,7 +293,9 @@
           </div>
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/kuiz/02AM.png') }}" alt="3" />
+            <a href="{{route('quiz.intro-start', 3)}}"><img class="slider-single-image" src="{{ asset('concept/images/kuiz/02AM.png') }}" alt="3" /></a>
+
+
               <!-- <h1 class="slider-single-title">Internet of Things</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
@@ -301,7 +305,9 @@
 
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/kuiz/03IOT.png') }}" alt="4" />
+            <a href="{{route('quiz.intro-start', 4)}}"><img class="slider-single-image" src="{{ asset('concept/images/kuiz/03IOT.png') }}" alt="4" /></a>
+
+
               <!-- <h1 class="slider-single-title">Big Data</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
@@ -311,7 +317,9 @@
 
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/kuiz/04BD.png') }}" alt="5" />
+            <a href="{{route('quiz.intro-start', 5)}}"><img class="slider-single-image" src="{{ asset('concept/images/kuiz/04BD.png') }}" alt="5" /></a>
+
+
               <!-- <h1 class="slider-single-title">Cloud Computing</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
@@ -320,7 +328,10 @@
           </div>
 
           <div class="slider-single">
+            <a href="{{route('quiz.intro-start', 6)}}">
               <img class="slider-single-image" src="{{ asset('concept/images/kuiz/05CC.png') }}" alt="6" />
+            </a>
+
               <!-- <h1 class="slider-single-title">Cyber Security</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
@@ -329,7 +340,10 @@
           </div>
 
             <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/kuiz/06CS.png') }}" alt="7" />
+              <a href="{{route('quiz.intro-start', 7)}}">
+                <img class="slider-single-image" src="{{ asset('concept/images/kuiz/06CS.png') }}" alt="7" />
+
+              </a>
               <!-- <h1 class="slider-single-title">Universal Integration</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
@@ -338,7 +352,9 @@
           </div>
 
         <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/kuiz/07UI.png') }}" alt="8" />
+          <a href="{{route('quiz.intro-start', 8)}}">
+            <img class="slider-single-image" src="{{ asset('concept/images/kuiz/07UI.png') }}" alt="8" />
+          </a>
               <!-- <h1 class="slider-single-title">Advanced Simulation</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
@@ -347,7 +363,10 @@
           </div>
 
         <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/kuiz/08AS.png') }}" alt="9" />
+          <a href="{{route('quiz.intro-start', 9)}}">
+            <img class="slider-single-image" src="{{ asset('concept/images/kuiz/08AS.png') }}" alt="9" />
+
+          </a>
               <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
@@ -356,7 +375,10 @@
           </div>
 
 					<div class="slider-single">
-								<img class="slider-single-image" src="{{ asset('concept/images/kuiz/09AR.png') }}" alt="10" />
+            <a href="{{route('quiz.intro-start', 10)}}">
+              <img class="slider-single-image" src="{{ asset('concept/images/kuiz/09AR.png') }}" alt="10" />
+
+            </a>
 								<!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
 								<!-- <a class="slider-single-likes" href="javascript:void(0);">
 										<i class="fa fa-heart"></i>

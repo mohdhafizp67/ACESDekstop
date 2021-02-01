@@ -27,6 +27,87 @@ class QuizSeeder extends Seeder
         'lesson_id' => '1',
         ]
       );
+      DB::table('quizes')-> insert(
+        [
+        'time' => '10',
+        'number_of_question' => '10',
+        'percentage_to_pass' => '50',
+        'status' => '1',
+        'lesson_id' => '2',
+        ]
+      );
+      DB::table('quizes')-> insert(
+        [
+        'time' => '10',
+        'number_of_question' => '10',
+        'percentage_to_pass' => '50',
+        'status' => '1',
+        'lesson_id' => '3',
+        ]
+      );
+      DB::table('quizes')-> insert(
+        [
+        'time' => '10',
+        'number_of_question' => '10',
+        'percentage_to_pass' => '50',
+        'status' => '1',
+        'lesson_id' => '4',
+        ]
+      );
+      DB::table('quizes')-> insert(
+        [
+        'time' => '10',
+        'number_of_question' => '10',
+        'percentage_to_pass' => '50',
+        'status' => '1',
+        'lesson_id' => '5',
+        ]
+      );
+      DB::table('quizes')-> insert(
+        [
+        'time' => '10',
+        'number_of_question' => '10',
+        'percentage_to_pass' => '50',
+        'status' => '1',
+        'lesson_id' => '6',
+        ]
+      );
+      DB::table('quizes')-> insert(
+        [
+        'time' => '10',
+        'number_of_question' => '10',
+        'percentage_to_pass' => '50',
+        'status' => '1',
+        'lesson_id' => '7',
+        ]
+      );
+      DB::table('quizes')-> insert(
+        [
+        'time' => '10',
+        'number_of_question' => '10',
+        'percentage_to_pass' => '50',
+        'status' => '1',
+        'lesson_id' => '8',
+        ]
+      );
+      DB::table('quizes')-> insert(
+        [
+        'time' => '10',
+        'number_of_question' => '10',
+        'percentage_to_pass' => '50',
+        'status' => '1',
+        'lesson_id' => '9',
+        ]
+      );
+      DB::table('quizes')-> insert(
+        [
+        'time' => '10',
+        'number_of_question' => '10',
+        'percentage_to_pass' => '50',
+        'status' => '1',
+        'lesson_id' => '10',
+        ]
+      );
 
     }
 }

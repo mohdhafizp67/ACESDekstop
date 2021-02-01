@@ -20,7 +20,7 @@
 <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <style media="screen">
 .circle {
-width: 120%;
+width: 100%;
 margin: 6px 6px 20px;
 display: inline-block;
 position: relative;
@@ -32,7 +32,6 @@ left: 23%;
 
 .circle canvas {
 vertical-align: top;
-width: 50% !important;
 }
 
 .circle strong {
@@ -84,7 +83,11 @@ margin-left: -48%;
           <div class="col-md-3" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/profile_frame.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
                 <div style="padding: 12%;"></div>
+                @if(Auth::user()->profile_picture == null)
                   <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style=" width:66%;">
+                @else
+                <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style=" width:66%; height:66% ">
+                @endif
 
 
           </div>
@@ -129,9 +132,19 @@ margin-left: -48%;
         <div style="padding: 1%;"></div>
 
         <div class="row">
-          <div class="col-md-7">
+          <div class="col-md-3">
           </div>
-          <div class="col-md-5">
+          <div class="col-md-3">
+            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-repeat: no-repeat;background-size: 60% 60%;">
+              <div class="card-body list-group">
+                <div style="padding: 35%;"></div>
+
+                <!-- <i class="fa fa-commenting-o" aria-hidden="true"></i> -->
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
             <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <div class="card-header" style="background-color: transparent; border: transparent; font-weight: bold; font-size: 100%; margin: 3px;">ANNOUNCEMENT</div>
               <div class="card-body list-group p-2" style="overflow:auto;height:200px;width:80%; margin: 0 auto; border: transparent;">
@@ -179,8 +192,8 @@ $(document).ready(function ($) {
               $(this).find('.circle').circleProgress({
                   // startAngle: -Math.PI / 2,
                   value: percent / 100,
-                  size : 400,
-                  thickness: 20,
+                  size : 100,
+                  thickness: 8,
                   // fill: {
                   //     color: '#5AAAE7'
                   // }
@@ -209,8 +222,8 @@ $(document).ready(function ($) {
               $(this).find('.circle').circleProgress({
                   // startAngle: -Math.PI / 2,
                   value: percent / 100,
-                  size : 400,
-                  thickness: 20,
+                  size : 100,
+                  thickness: 8,
                   fill: {
                       gradient: ['#3aeabb', '#fdd250']
                   }
@@ -239,8 +252,8 @@ $(document).ready(function ($) {
               $(this).find('.circle').circleProgress({
                   // startAngle: -Math.PI / 2,
                   value: percent / 100,
-                  size : 400,
-                  thickness: 20,
+                  size : 100,
+                  thickness: 8,
                   fill: {
                       gradient: ['#3aeabb', '#fdd250']
                   }

@@ -9,10 +9,12 @@
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
 
 <div class="row">
+
   <div class="col-md-4">
     <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 15%;"/></center>
     <p class="text-center" style="color: #fff; padding-bottom: 10%; padding-top: 10%; text-transform: uppercase; font-size: 100%;">
       ACES will be a regional hub providing wide-ranging Industry 4.0 solutions including advisory, consulting and training services for businesses in Malaysia, ASEAN and ASIA.
+
     </p>
     <div class="row">
       <div class="col-md-1">
@@ -270,9 +272,9 @@
 
   </div>
 
-  <div class="col-md-1">
+  <!-- <div class="col-md-1">
 
-  </div>
+  </div> -->
 </div>
 
 
