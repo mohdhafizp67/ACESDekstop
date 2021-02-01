@@ -1,4 +1,4 @@
-@extends('layouts.app-student')
+@extends('layouts.app-student-qbadminui')
 @section('content')
     <link rel="stylesheet" href="{{ asset('game/style.css') }}">
     <link rel="shortcut icon" href="{{ asset('game/favicon.ico') }}" />
