@@ -26,6 +26,7 @@ class User extends Authenticatable implements Auditable
         'address',
         'postcode',
         'state',
+        'district',
         'ic_number',
         'is_admin',
         'is_active',

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\Models\User;
+use App\Models\Districts;
+
 use Illuminate\Support\Facades\Validator;
 use Storage;
 use Illuminate\Support\Facades\Hash;
@@ -16,8 +18,9 @@ class UserController extends Controller
   {
     $user_id = Auth::user()->id;
     $user = User:: findorFail($user_id);
+    $district = Districts::get();
 
-    return view('user.profile.edit', compact('user'));
+    return view('user.profile.edit', compact('user', 'district'));
   }
 
   public function update($id)
@@ -62,6 +65,7 @@ class UserController extends Controller
     $user->address = request()->address;
     $user->postcode = request()->postcode;
     $user->state = request()->state;
+    $user->district = request()->district;
 
     //upload profile picture
     // $upload = $request->file('gambar')->store('public/uploads');

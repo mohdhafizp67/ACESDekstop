@@ -67,6 +67,7 @@ class RegisterController extends Controller
           'address' => ['required', 'string'],
           'postcode' => ['required', 'string', 'max:5', 'min:5'],
           'state' => ['required', 'string'],
+          'district' => ['required', 'string'],
           'password' => ['required', 'string', 'min:8', 'confirmed'],
       ]);
     }
@@ -87,6 +88,7 @@ class RegisterController extends Controller
             'address' => $data['address'],
             'postcode' => $data['postcode'],
             'state' => $data['state'],
+            'district' => $data['district'],
             'password' => Hash::make($data['password']),
             'is_active' => 1,
             'is_student' => 1,
