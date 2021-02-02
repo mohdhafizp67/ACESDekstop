@@ -52,7 +52,9 @@ class LessonController extends Controller
 
   public function updateLink(Request $request){
     $lesson = Lesson::findorfail($request->lesson_id);
-    $lesson->video_link = $request->link;
+    $lesson->video_link_1 = $request->link1;
+    $lesson->video_link_2 = $request->link2;
+    $lesson->video_link_3 = $request->link3;
     $lesson->save();
 
     return redirect()->route('admin.activities.lesson.list')->with("success","Pautan video telah dikemaskini!");

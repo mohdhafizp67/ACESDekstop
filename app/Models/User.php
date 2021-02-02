@@ -61,4 +61,8 @@ class User extends Authenticatable implements Auditable
     public function messages(){
       return $this->hasMany('App\Models\Message');
     }
+
+    public function feedback(){
+      return $this->hasMany('App\Models\Feedback');
+    }
 }

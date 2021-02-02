@@ -73,8 +73,16 @@
                                     <form action="{{route('admin.activities.lesson.list.update')}}" method="post">
                                     <div class="modal-body">
                                       <div class="form-group">
-                                         <label style="color: black !important;">Pautan Video</label>
-                                         <input type="text" id="link" name="link" class="form-control bg-light" required>
+                                         <label style="color: black !important;">Pautan Video 1</label>
+                                         <input type="text" id="link" name="link1" class="form-control bg-light" required>
+                                      </div>
+                                      <div class="form-group">
+                                         <label style="color: black !important;">Pautan Video 2</label>
+                                         <input type="text" id="link" name="link2" class="form-control bg-light" required>
+                                      </div>
+                                      <div class="form-group">
+                                         <label style="color: black !important;">Pautan Video 3</label>
+                                         <input type="text" id="link" name="link3" class="form-control bg-light" required>
                                       </div>
                                     </div>
                                     <div class="modal-footer">

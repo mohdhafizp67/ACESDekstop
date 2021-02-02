@@ -18,7 +18,12 @@ class CreateLessonsTable extends Migration
             $table->timestamps();
             $table->string('lesson_type')->nullable();
             $table->string('lesson_subject')->nullable();
-            $table->string('video_link')->nullable();
+            $table->string('video_link_1')->nullable();
+            $table->string('video_link_2')->nullable();
+            $table->string('video_link_3')->nullable();
+            $table->string('image_1')->nullable();
+            $table->string('image_2')->nullable();
+            $table->string('image_3')->nullable();
         });
     }
 

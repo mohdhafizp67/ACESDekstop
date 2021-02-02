@@ -25,16 +25,16 @@
                 </div>
               </div>
               @endif
-                  <div class="card" style="padding: 10px;">
+                  <div class="card" style="padding: 5px;">
 
 
 
                     <!-- <div style="padding: 5px;"></div> -->
                       <h2 class="card-header" style="text-align: center;"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp Senarai Quiz</h2>
-                      <div class="card-body p-0">
+                      <div class="card-body p-2">
                         <div style="padding: 10px;"></div>
-                        <a href="{{route('admin.activities.quiz.add')}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Tambah Kuiz Baru</a> &nbsp &nbsp
-                        <hr>
+                        <!-- <a href="{{route('admin.activities.quiz.add')}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Tambah Kuiz Baru</a> &nbsp &nbsp
+                        <hr> -->
 
                         <div class="table-responsive">
                           <table id="table_data" class="table table-striped table-bordered second" style="width:100%">
@@ -58,7 +58,7 @@
                                 <td>
                                   <a href="{{ route('admin.activities.quiz.question-banks.list', $data->lesson_id) }}" class="btn btn-secondary"><i class="fa fa-university" aria-hidden="true"></i></a> &nbsp &nbsp
                                   <a href="{{route('admin.activities.quiz.edit', $data->id)}}" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> &nbsp &nbsp
-                                  <a href="#" class="btn btn-danger" onclick="pass_id_delete({{ $data->id  }})" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                  <!-- <a href="#" class="btn btn-danger" onclick="pass_id_delete({{ $data->id  }})" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash" aria-hidden="true"></i></a> -->
                                 </td>
 
                               </tr>

@@ -11,7 +11,12 @@ class Lesson extends Model
     protected $fillable = [
       'lesson_type',
       'lesson_subject',
-      'video_link'
+      'video_link_1',
+      'video_link_2',
+      'video_link_3',
+      'image_1',
+      'image_2',
+      'image_3',
     ];
 
     public function quiz(){

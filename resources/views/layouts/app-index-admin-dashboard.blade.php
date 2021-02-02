@@ -57,7 +57,7 @@
                       </button>
                       <div class="collapse navbar-collapse " id="navbarSupportedContent">
                           <ul class="navbar-nav ml-auto navbar-right-top">
-                            
+
                               <!-- <div style="border-left:1px solid #000;height:65px"></div> -->
                               <li class="nav-item dropdown nav-user">
                                   <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -158,11 +158,11 @@
                                   <!-- <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>Statistik Pelajar</a>
                                   </li> -->
-                                  <li class="nav-item ">
+                                  <!-- <li class="nav-item ">
 
                                     <a class="nav-link" href="{{route('admin.activities.lesson.list')}}"><i class="fa fa-book" aria-hidden="true"></i> Pelajaran</a>
 
-                                  </li>
+                                  </li> -->
                                   <li class="nav-item ">
 
                                     <a class="nav-link" href="{{ route('admin.activities.quiz.list') }}"><i class="fa fa-question-circle" aria-hidden="true"></i> Kuiz</a>
