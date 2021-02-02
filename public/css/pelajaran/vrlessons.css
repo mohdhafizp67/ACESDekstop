@@ -7,10 +7,10 @@
 	align-items: center;
 	min-height: 100vh;
 } */
-.slider {
+.slider1 {
 	width: 100%;
 }
-.slider input {
+.slider1 input {
 	display: none;
 }
 .testimonials {

@@ -108,8 +108,8 @@
                 <div class="col-md-2">
 
                 </div>
-                <div class="col-md">
-                  <a href="{{route('quiz.choose-quiz')}}" class="btn btn-block" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">Kembali Ke Senarai Quiz</a>
+                <div class="col-md" style="text-align: center;">
+                  <a href="{{route('quiz.choose-quiz')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding: 5%;">Kembali Ke Senarai Quiz</a>
                 </div>
                 <div class="col-md-2">
 
