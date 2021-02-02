@@ -31,7 +31,7 @@
         position: relative;
         margin: 0 auto;
         width: 800px;
-        height: 525px;
+        height: 500px;
       }
       .slider-container .bullet-container {
         position: absolute;
@@ -62,7 +62,7 @@
         width: 70%;
         height: 60%;
         transform: translate(-50%, -50%);
-        margin-top: -10%;
+        margin-top: -7%;
       }
       .slider-container .slider-content .slider-single {
         position: absolute;
@@ -257,7 +257,7 @@
   </head>
   <body>
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 3%;">
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
 
     <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">LESSONS IN I 4.0</h1>

@@ -84,7 +84,7 @@ margin-left: -48%;
 
                 <div style="padding: 12%;"></div>
                 @if(Auth::user()->profile_picture == null)
-                  <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style=" width:66%;">
+                  <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style=" width:66%; margin-top: -10%;">
                 @else
                 <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style=" width:66%; height:66% ">
                 @endif
@@ -93,7 +93,7 @@ margin-left: -48%;
           </div>
           <div class="col-md-3" >
             <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
-              <div class="card-body list-group">
+              <div class="card-body list-group" style="padding: 5%;">
                 <div class="progressbar1">
                 <div class="second circle" data-percent="90">
                   <strong></strong>
@@ -105,7 +105,7 @@ margin-left: -48%;
           </div>
           <div class="col-md-3">
             <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
-              <div class="card-body list-group">
+              <div class="card-body list-group" style="padding: 5%;">
                 <div class="progressbar1">
                 <div class="second circle" data-percent="73">
                   <strong></strong>
@@ -117,7 +117,7 @@ margin-left: -48%;
           </div>
           <div class="col-md-3">
             <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
-              <div class="card-body list-group">
+              <div class="card-body list-group" style="padding: 5%;">
                 <div class="progressbar1">
                 <div class="second circle" data-percent="45">
                   <strong></strong>
@@ -129,22 +129,35 @@ margin-left: -48%;
           </div>
         </div>
 
-        <div style="padding: 1%;"></div>
+        <div></div>
 
         <div class="row">
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-3">
-            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-repeat: no-repeat;background-size: 60% 60%;">
-              <div class="card-body list-group">
-                <div style="padding: 35%;"></div>
-
-                <!-- <i class="fa fa-commenting-o" aria-hidden="true"></i> -->
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6">
+      		<div class="col-md-6">
+      			<div class="row" style="margin-top: -4%;">
+      				<div class="col-md-6">
+                <iframe src="https://giphy.com/embed/javd6e9mMU0Gk" width="100%" height="auto" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/drone-javd6e9mMU0Gk"></a></p>
+      				</div>
+      				<div class="col-md-6">
+      					<div class="row">
+      						<div class="col-md-6" style="padding: 20%;background-color: transparent !important;background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-repeat: no-repeat;background-size: 100% 100%;">
+                    <i class="fas fa-sms" style="font-size: 300%;"></i>
+      						</div>
+                  <div class="col-md-6" style="padding: 20%;background-color: transparent !important;background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-repeat: no-repeat;background-size: 100% 100%;">
+                    <i class="fas fa-question" style="font-size: 300%;"></i>
+      						</div>
+      					</div>
+      					<div class="row">
+                  <div class="col-md-6" style="padding: 20%;background-color: transparent !important;background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-repeat: no-repeat;background-size: 100% 100%;">
+                    <i class="fas fa-gamepad" style="font-size: 300%;"></i>
+      						</div>
+                  <div class="col-md-6" style="padding: 20%;background-color: transparent !important;background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-repeat: no-repeat;background-size: 100% 100%;">
+                    <i class="fas fa-book-reader" style="font-size: 300%;"></i>
+      						</div>
+      					</div>
+      				</div>
+      			</div>
+      		</div>
+      		<div class="col-md-6">
             <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <div class="card-header" style="background-color: transparent; border: transparent; font-weight: bold; font-size: 100%; margin: 3px;">ANNOUNCEMENT</div>
               <div class="card-body list-group p-2" style="overflow:auto;height:200px;width:80%; margin: 0 auto; border: transparent;">
@@ -165,6 +178,21 @@ margin-left: -48%;
               <!-- <div class="card-footer" style="background-color: #130E29 !important; margin: 5px;">
               </div> -->
             </div>
+      		</div>
+      	</div>
+
+
+        <div class="row">
+          <div class="col-md-3">
+          </div>
+
+          <div class="col-md-3">
+
+
+          </div>
+
+          <div class="col-md-6">
+
           </div>
 
         </div>
