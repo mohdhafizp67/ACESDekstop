@@ -178,6 +178,10 @@
                                     <a class="nav-link" href="{{ route('admin.others.announcement.list') }}"><i class="fa fa-bullhorn" aria-hidden="true"></i>Annoucement</a>
                                   </li>
 
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{route('admin.others.feedback.list')}}"><i class="fa fa-commenting" aria-hidden="true"></i>User's Feedback</a>
+                                  </li>
+
 
 
                                   <!-- <li class="nav-divider">
