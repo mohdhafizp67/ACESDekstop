@@ -139,7 +139,7 @@
                                </div>
                                <div class="col-md-8">
                                  <div class="form-group">
-                                    <label>Negeri</label>
+                                    <label>DISTRICT</label>
                                     <!-- <input type="text" name="negeri" class="form-control bg-light" value="{{$user->state}}" required> -->
                                     <select class="custom-select  bg-light @error('state') is-invalid @enderror" id="district" name="district" value="{{ $user->district }}"  required>
                                           <option value="" selected required hidden>Choose District</option>
@@ -235,7 +235,7 @@
        </div>
        <div style="padding: 100px;"></div>
        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-       
+
 
        <script type="text/javascript">
        //input text ONLY

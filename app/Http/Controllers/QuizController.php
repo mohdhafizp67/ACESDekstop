@@ -26,6 +26,7 @@ class QuizController extends Controller
   public function viewQuizList()
   {
       $quiz_list = Quiz::where('status', '1')->get();
+    
       return view('admin.activities.quiz.list', compact('quiz_list'));
   }
 

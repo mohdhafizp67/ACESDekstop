@@ -30,7 +30,7 @@
 
 
                     <!-- <div style="padding: 5px;"></div> -->
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp Senarai Quiz</h2>
+                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp Quiz List</h2>
                       <div class="card-body p-2">
                         <div style="padding: 10px;"></div>
                         <!-- <a href="{{route('admin.activities.quiz.add')}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Tambah Kuiz Baru</a> &nbsp &nbsp
@@ -40,19 +40,21 @@
                           <table id="table_data" class="table table-striped table-bordered second" style="width:100%">
                             <thead style="text-align: center;">
                               <tr>
-                                <th>Pelajaran</th>
-                                <th>Jumlah Soalan</th>
-                                <th>Masa Diperuntukkan</th>
-                                <th>Peratusan Untuk Lulus</th>
-                                <th>Tindakan</th>
+                                <th>NO</th>
+                                <th>LESSON</th>
+                                <th>NUMBER OF QUESTIONS</th>
+                                <th>TIME ALLOCATED</th>
+                                <th>PERCENTAGE TO PASS</th>
+                                <th>ACTION</th>
                               </tr>
                             </thead>
                             <tbody style="text-align: center;">
                               @foreach($quiz_list as $data)
                               <tr>
+                                <td>{{ $data->id }}</td>
                                 <td>{{ $data->lesson->lesson_type }} | {{ $data->lesson->lesson_subject }}</td>
                                 <td>{{ $data->number_of_question }}</td>
-                                <td>{{ $data->time }} Minit</td>
+                                <td>{{ $data->time }} Minute</td>
                                 <td>{{ $data->percentage_to_pass }}%</td>
 
                                 <td>
