@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{ asset('qbadminui/css/vendor/bootstrap-4.3.1/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('qbadminui/css/main.css') }}">
 
+
     <link rel="stylesheet" href="{{ asset('qbadminui/css/vendor/DataTable-1.10.20/datatables.min.css') }}"></link>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -72,6 +73,31 @@
     border: 2px solid #007bff;
 }
 
+.modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 0px solid #dee2e6;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+.modal-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 0px solid #dee2e6;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+}
     </style>
     <meta name="theme-color" content="#fafafa">
 </head>
@@ -168,11 +194,11 @@
                           <p style="text-align: justify;">ARE YOU SURE TO LOG OUT?</p>
                       </div>
                       <div class="modal-footer">
-                          <a href="#" class="btn btn-primary" data-dismiss="modal">CANCEL</a>
+                          <a href="#" class="btn" data-dismiss="modal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">CANCEL</a>
                           <!-- <a href="#" class="btn btn-primary">Yes</a> -->
                           <form id="logout-form" action="{{ route('logout') }}" method="POST">
                           @csrf
-                          <button type="submit" name="button" class="btn btn-danger">LOG OUT</button>
+                          <button type="submit" name="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">LOG OUT</button>
                           </form>
                       </div>
                   </div>
