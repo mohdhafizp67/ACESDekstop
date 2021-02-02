@@ -81,9 +81,9 @@
                                           @endif
                                           <!-- <span><i class="fa fa-certificate" aria-hidden="true"></i> Admin </span> -->
                                       </div>
-                                      <a class="dropdown-item" href="{{route('admin.profiles.edit-profile')}}"><i class="fas fa-user mr-2"></i>Profil Pengguna</a>
-                                      <a class="dropdown-item" href="{{ route('admin.profiles.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Tukar Kata Laluan</a>
-                                      <a class="dropdown-item"  href="#" class="btn btn-block btn-danger" data-toggle="modal" data-target="#logOutModal"><i class="fas fa-power-off mr-2"></i>Log Keluar</a>
+                                      <a class="dropdown-item" href="{{route('admin.profiles.edit-profile')}}"><i class="fas fa-user mr-2"></i>USER PROFILE</a>
+                                      <a class="dropdown-item" href="{{ route('admin.profiles.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>CHANGE PASSWORD</a>
+                                      <a class="dropdown-item"  href="#" class="btn btn-block btn-danger" data-toggle="modal" data-target="#logOutModal"><i class="fas fa-power-off mr-2"></i>LOG OUT</a>
                                       <!-- <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                       <i class="fas fa-power-off mr-2"></i>Logout</a>
                                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -140,9 +140,11 @@
                           </button>
                           <div class="collapse navbar-collapse" id="navbarNav">
                               <ul class="navbar-nav flex-column">
-                                <li class="nav-divider">
+                                <div style="padding: 5%"></div>
+
+                                <!-- <li class="nav-divider">
                                   <img class="logo-img" src="{{ asset('concept/images/aces-removebg-preview.png') }}" alt="logo">
-                                </li>
+                                </li> -->
                                   <!-- <li class="nav-divider">
                                       Menu Utama
                                   </li> -->
@@ -165,7 +167,7 @@
                                   </li> -->
                                   <li class="nav-item ">
 
-                                    <a class="nav-link" href="{{ route('admin.activities.quiz.list') }}"><i class="fa fa-question-circle" aria-hidden="true"></i> Kuiz</a>
+                                    <a class="nav-link" href="{{ route('admin.activities.quiz.list') }}"><i class="fa fa-question-circle" aria-hidden="true"></i> Quiz</a>
 
                                   </li>
                                   <!-- <li class="nav-item ">
@@ -173,7 +175,7 @@
 
                                   </li> -->
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('admin.others.announcement.list') }}"><i class="fa fa-bullhorn" aria-hidden="true"></i>Pengumuman</a>
+                                    <a class="nav-link" href="{{ route('admin.others.announcement.list') }}"><i class="fa fa-bullhorn" aria-hidden="true"></i>Annoucement</a>
                                   </li>
 
 
@@ -182,7 +184,7 @@
                                       Lain-lain
                                   </li> -->
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('admin.others.user-list.list') }}"><i class="fa fa-users" aria-hidden="true"></i> Senarai Pengguna</a>
+                                    <a class="nav-link" href="{{ route('admin.others.user-list.list') }}"><i class="fa fa-users" aria-hidden="true"></i>Users List</a>
                                   </li>
 
                                   <li class="nav-item ">

@@ -12,14 +12,14 @@
                         <div class="page-header">
                             <h2 class="pageheader-title">ACES Dashboard</h2>
 
-                            <div class="page-breadcrumb">
+                            <!-- <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">Admin Dashboard</li>
                                     </ol>
                                 </nav>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -32,9 +32,9 @@
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                              <div class="card border-3 border-top" style="border-radius: 25px";>
                                  <div class="card-body border-radius" style="background-color: #fff";>
-                                     <h5 class="text-muted">Pelajar Baru</h5>
+                                     <h5 class="text-muted">JUMLAH PENGGUNA</h5>
                                      <div class="metric-value d-inline-block">
-                                         <h1 class="mb-1">200</h1>
+                                         <h1 class="mb-1">{{$totalUser}}</h1>
                                      </div>
                                      <!-- <div class="metric-label d-inline-block float-right text-success font-weight-bold">
                                          <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5.86%</span>
@@ -47,7 +47,7 @@
                                       <div class="card-body border-radius" style="background-color: #fff";>
                                           <h5 class="text-muted">Jumlah Pelajar</h5>
                                           <div class="metric-value d-inline-block">
-                                              <h1 class="mb-1">1500</h1>
+                                              <h1 class="mb-1">{{$totalStudent}}</h1>
                                           </div>
                                           <!-- <div class="metric-label d-inline-block float-right text-success font-weight-bold">
                                               <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">10%</span>
@@ -58,9 +58,9 @@
                               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                       <div class="card border-3 border-top" style="border-radius: 25px";>
                                           <div class="card-body border-radius" style="background-color: #fff";>
-                                              <h5 class="text-muted">Kuiz</h5>
+                                              <h5 class="text-muted">Jumlah Staff ECERDB</h5>
                                               <div class="metric-value d-inline-block">
-                                                  <h1 class="mb-1">200</h1>
+                                                  <h1 class="mb-1">{{$totalStaffecerd}}</h1>
                                               </div>
                                               <!-- <div class="metric-label d-inline-block float-right text-success font-weight-bold">
                                                   <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5%</span>
@@ -71,9 +71,9 @@
                                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                             <div class="card border-3 border-top" style="border-radius: 25px";>
                                                 <div class="card-body border-radius" style="background-color: #fff";>
-                                                    <h5 class="text-muted">Jumlah</h5>
+                                                    <h5 class="text-muted">Jumlah Admin</h5>
                                                     <div class="metric-value d-inline-block">
-                                                        <h1 class="mb-1">500</h1>
+                                                        <h1 class="mb-1">{{$totalAdmin}}</h1>
                                                     </div>
                                                     <!-- <div class="metric-label d-inline-block float-right text-danger font-weight-bold">
                                                         <span class="icon-circle-small icon-box-xs text-danger bg-danger-light bg-danger-light "><i class="fa fa-fw fa-arrow-down"></i></span><span class="ml-1">4%</span>

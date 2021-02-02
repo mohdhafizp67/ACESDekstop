@@ -5,6 +5,7 @@ use Auth;
 use App\Models\User;
 use App\Models\QuestionBank;
 use App\Models\AnswerBank;
+use App\Models\Districts;
 use App\Models\Audit;
 
 use Illuminate\Http\Request;
@@ -15,15 +16,21 @@ class AdminController extends Controller
 {
   public function index()
   {
-      return view('home-admin');
+    $totalUser = User::get()->count();
+    $totalStudent = User::where('is_student', '1')->get()->count();
+    $totalStaffecerd = User::where('is_ecerdb_personnel', '1')->get()->count();
+    $totalAdmin = User::where('is_admin', '1')->get()->count();
+
+    return view('home-admin', compact('totalUser','totalStudent','totalStaffecerd','totalAdmin'));
   }
 
   public function viewEditProfile()
   {
     $user_id = Auth::user()->id;
     $user = User:: findorFail($user_id);
+    $district = Districts::get();
 
-    return view('admin.profiles.edit-profile', compact('user'));
+    return view('admin.profiles.edit-profile', compact('user','district'));
   }
 
   public function updatingProfile(){
@@ -42,6 +49,7 @@ class AdminController extends Controller
     $user->address = request()->address;
     $user->postcode = request()->postcode;
     $user->state = request()->state;
+    $user->district = request()->district;
 
     //upload profile picture
     $gambar_profile = "";
