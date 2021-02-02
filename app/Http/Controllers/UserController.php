@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Models\User;
 use App\Models\Districts;
+use App\Models\Feedback;
+
 
 use Illuminate\Support\Facades\Validator;
 use Storage;
@@ -104,7 +106,20 @@ class UserController extends Controller
 
   public function feedbackSave(Request $request)
   {
+    // dd($request->all());
+    event($feedback_id = $this->createFeedback($request->all()));
+
     return redirect()->route('others.feedback')->with("success","Your feed back has been submitted");
+  }
+
+  public function createFeedback(array $data){
+    $user_id = Auth::user()->id;
+
+    return Feedback::create([
+        'subject' => $data['subject'],
+        'feedback' => $data['feedback'],
+        'user_id' => $user_id,
+    ]);
   }
 
   public function viewChangePassword()
