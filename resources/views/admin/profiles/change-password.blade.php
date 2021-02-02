@@ -45,12 +45,15 @@
                                        class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
                                        placeholder="Kata laluan semasa">
                                 <div class="input-group-append">
-                                  <a onclick="visiblePass()">
+
 
                                     <div class="input-group-text">
+                                      <a onclick="visiblePass()">
+
                                         <span id="icon_eye_pass" class="fa fa-eye" ></span>
+                                      </a>
+
                                     </div>
-                                  </a>
 
                                 </div>
                                 @if($errors->has('password'))
@@ -77,12 +80,14 @@
                                        class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
                                        placeholder="Kata Laluan Baru">
                                 <div class="input-group-append">
-                                  <a onclick="visiblenNewPass()">
 
                                     <div class="input-group-text">
+                                      <a onclick="visiblenNewPass()">
+
                                         <span id="icon_eye_new" class="fa fa-eye" ></span>
+                                      </a>
+
                                     </div>
-                                  </a>
 
                                 </div>
                                 @if($errors->has('password'))
@@ -100,12 +105,14 @@
                                        class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
                                        placeholder="Sahkan kata laluan baru">
                                 <div class="input-group-append">
-                                  <a onclick="visiblePassConfirm()">
 
                                     <div class="input-group-text">
+                                      <a onclick="visiblePassConfirm()">
+
                                         <span id="icon_eye_confirm" class="fa fa-eye" ></span>
+                                      </a>
+                                        
                                     </div>
-                                  </a>
 
                                 </div>
                                 @if($errors->has('password'))
