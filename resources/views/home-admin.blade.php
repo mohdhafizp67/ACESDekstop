@@ -32,7 +32,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                              <div class="card border-3 border-top" style="border-radius: 25px";>
                                  <div class="card-body border-radius" style="background-color: #fff";>
-                                     <h5 class="text-muted">JUMLAH PENGGUNA</h5>
+                                     <h5 class="text-muted">Number of all users</h5>
                                      <div class="metric-value d-inline-block">
                                          <h1 class="mb-1">{{$totalUser}}</h1>
                                      </div>
@@ -45,7 +45,7 @@
                          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                   <div class="card border-3 border-top" style="border-radius: 25px";>
                                       <div class="card-body border-radius" style="background-color: #fff";>
-                                          <h5 class="text-muted">Jumlah Pelajar</h5>
+                                          <h5 class="text-muted">Number of Students</h5>
                                           <div class="metric-value d-inline-block">
                                               <h1 class="mb-1">{{$totalStudent}}</h1>
                                           </div>
@@ -58,7 +58,7 @@
                               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                       <div class="card border-3 border-top" style="border-radius: 25px";>
                                           <div class="card-body border-radius" style="background-color: #fff";>
-                                              <h5 class="text-muted">Jumlah Staff ECERDB</h5>
+                                              <h5 class="text-muted">Number of ECERDB Staffs</h5>
                                               <div class="metric-value d-inline-block">
                                                   <h1 class="mb-1">{{$totalStaffecerd}}</h1>
                                               </div>
@@ -71,7 +71,7 @@
                                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                             <div class="card border-3 border-top" style="border-radius: 25px";>
                                                 <div class="card-body border-radius" style="background-color: #fff";>
-                                                    <h5 class="text-muted">Jumlah Admin</h5>
+                                                    <h5 class="text-muted">Numbers of Administrators</h5>
                                                     <div class="metric-value d-inline-block">
                                                         <h1 class="mb-1">{{$totalAdmin}}</h1>
                                                     </div>
@@ -93,19 +93,19 @@
                         <div class="container-fluid dashboard-content ">
                               <div class="card" style="border-radius: 25px";>
                                 <div style="padding: 10px;"></div>
-                                  <h2 class="card-header"><i class="fa fa-trophy" aria-hidden="true"></i> Carta Johan</h2>
+                                  <h2 class="card-header"><i class="fa fa-trophy" aria-hidden="true"></i>LEADERBOARD</h2>
 
                                   <div class="card-body">
                                       <div class="table-responsive">
                                           <table class="table">
                                               <thead class="bg-light">
                                                   <tr class="border-0">
-                                                      <th class="border-0">Kedudukan</th>
-                                                      <th class="border-0">Gambar</th>
-                                                      <th class="border-0">Nama Pelajar</th>
-                                                      <th class="border-0">Skor</th>
-                                                      <th class="border-0">Kemajuan</th>
-                                                      <th class="border-0">Gred</th>
+                                                      <th class="border-0">POSITION</th>
+                                                      <th class="border-0">PROFILE</th>
+                                                        <th class="border-0">STUDENT NAME</th>
+                                                      <th class="border-0">SCORE</th>
+                                                      <th class="border-0">PROGRESS</th>
+                                                      <th class="border-0">GRED</th>
 
 
                                                   </tr>
@@ -415,7 +415,7 @@
                         <!-- ============================================================== -->
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                           <div class="card" style="border-radius: 25px";>
-                              <h5 class="card-header">Pelajar Aktif/Tidak Aktif </h5>
+                              <h5 class="card-header">Active and Inactive Student</h5>
                               <div class="card-body">
                                   <div id="c3chart_donut"></div>
                               </div>
@@ -424,7 +424,7 @@
 
                       <div class="col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12">
                          <div class="card" style="border-radius: 25px";>
-                             <h5 class="card-header">Jumlah Pelajar</h5>
+                             <h5 class="card-header">Number of Students</h5>
                              <div class="card-body">
                                  <div id="c3chart_spline"></div>
                              </div>

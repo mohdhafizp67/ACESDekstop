@@ -28,19 +28,20 @@
                   <div class="card" style="padding: 10px;">
 
                     <div style="padding: 5px;"></div>
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-users" aria-hidden="true"></i>Senarai Pengguna</h2>
+                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-users" aria-hidden="true"></i>Users List</h2>
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
                         <div class="table-responsive">
                           <table id="table_data" class="table table-striped table-bordered second" style="width:100%">
                             <thead style="text-align: center;">
                               <tr>
-                                <th>Nama</th>
-                                <th>Kad Pengenalan</th>
-                                <th>Negeri</th>
-                                <th>Peranan</th>
-                                <th>Status</th>
-                                <th>Tindakan</th>
+                                <th>NAME</th>
+                                <th>IDENTIFICATION NUMBER</th>
+                                <th>STATE</th>
+                                <th>DISTRICT</th>
+                                <th>ROLE</th>
+                                <th>STATUS</th>
+                                <th>ACTION</th>
                               </tr>
                             </thead>
                             <tbody style="text-align: center;">
@@ -49,6 +50,7 @@
                             <td>{{ $data->name  }}</td>
                             <td>{{ $data->ic_number  }}</td>
                             <td>{{ $data->state  }}</td>
+                            <td>{{ $data->district  }}</td>
 
                             @if($data->is_admin == 1)
                             <td><span class="badge badge-pill badge-brand">Admin</span></td>
