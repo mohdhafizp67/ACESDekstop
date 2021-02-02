@@ -23,6 +23,55 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <style>
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 10rem;
+        padding: .5rem 0;
+        margin: .125rem 0 0;
+        font-size: 1rem;
+        color: #ffffff;
+        text-align: left;
+        list-style: none;
+        background-color: #17a2b88a;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: 10px;
+        border: 2px solid #007bff;
+    }
+
+      .dropdown-menu-right {
+      right: 0;
+      left: auto;
+      }
+
+    .dropdown-menu-max-height {
+        max-height: 15rem !important;
+        overflow: auto !important;
+    }
+
+    .modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #17a2b88a;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    border: 2px solid #007bff;
+}
+
     </style>
     <meta name="theme-color" content="#fafafa">
 </head>
@@ -226,14 +275,14 @@
                             <!-- Menu items -->
 
 
-                            <a href="#" class="dropdown-item disabled small" style="color: #ff0000 !important; font-size: 100% !important; padding-top: 10px !important;"><i class="far fa-user mr-1"></i>&nbsp {{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}} {{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[1]}} </a>
+                            <a href="#" class="dropdown-item disabled small" style="color: #ffffff !important; font-size: 100% !important; padding-top: 10px !important;"><i class="far fa-user mr-1"></i>&nbsp {{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}} {{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[1]}} </a>
                             <!-- <a href="#" class="dropdown-item disabled small"><i class="fa fa-certificate"></i>&nbsp Student </a> -->
                             <hr style="padding-bottom: 0px;">
 
 
-                            <a href="{{route('user.profile.edit')}}" class="dropdown-item text-secondary-light"><i class="fa fa-user-circle" aria-hidden="true"></i> UPDATE PROFILE</a>
-                            <a href="{{ route('user.change-password') }}" class="dropdown-item text-secondary-light"><i class="fa fa-lock" aria-hidden="true"></i> CHANGE PASSWORD</a>
-                            <a href="#" class="dropdown-item text-secondary-light" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i> LOG OUT</a>
+                            <a href="{{route('user.profile.edit')}}" class="dropdown-item"><i class="fa fa-user-circle" aria-hidden="true"></i> UPDATE PROFILE</a>
+                            <a href="{{ route('user.change-password') }}" class="dropdown-item"><i class="fa fa-lock" aria-hidden="true"></i> CHANGE PASSWORD</a>
+                            <a href="#" class="dropdown-item" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i> LOG OUT</a>
 
 
                             <!-- <a href="#" class="dropdown-item text-secondary-light">Billing history</a> -->

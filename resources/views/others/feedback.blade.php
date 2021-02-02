@@ -21,7 +21,7 @@
 
     <div class="container-fluid">
     	<div class="row">
-    		<div class="col-md-12" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-repeat: no-repeat;background-size: cover;">
+    		<div class="col-md-12" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-repeat: no-repeat;background-size: cover; padding-bottom: 4%;">
 
           <!-- <div style="padding: 30px;"></div> -->
 

@@ -89,7 +89,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 275px;
+      width: 500px;
       z-index: 100;
     }
 
@@ -164,15 +164,15 @@
   		<div class="testimonials">
 
   			<label class="item" for="t-1">
-          <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" width="100%" height="250px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   			</label>
   			<label class="item" for="t-2">
-          <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" width="100%" height="250px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   			</label>
   			<label class="item" for="t-3">
-          <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" width="10%" height="250px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   			</label>
 
@@ -242,12 +242,12 @@
         <div class="modal fade" id="lokasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header">
+                <!-- <div class="modal-header">
                 <h5 class="modal-title" id="lokasi">LOKASI KURSUS KEMAHIRAN VR</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                </div>
+                </div> -->
                 <div class="modal-body">
                 <img alt="Bootstrap Image Preview" src="{{asset('concept/images/pelajaran/lokasi.jpg')}}" style="width: 100%; height: auto;">
                 </div>

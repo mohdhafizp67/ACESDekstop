@@ -12,7 +12,7 @@
 
   <div class="col-md-4">
     <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; padding-top: 15%;"/></center>
-    <p class="text-center" style="color: #fff; padding-bottom: 10%; padding-top: 10%; text-transform: uppercase; font-size: 100%;">
+    <p class="text-center" style="color: #fff; padding-bottom: 10%; padding-top: 10%; text-transform: uppercase; font-size: 80%;">
       ACES will be a regional hub providing wide-ranging Industry 4.0 solutions including advisory, consulting and training services for businesses in Malaysia, ASEAN and ASIA.
 
     </p>
@@ -22,7 +22,7 @@
       </div>
       <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 5%;">
         <button type="button" class="btn">
-          <a href="#">HELP</a>
+          <a href="#" style="font-size: 80%;">HELP</a>
         </button>
       </div>
       <div class="col-md-2">
@@ -36,7 +36,7 @@
       </div>
       <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 5%;">
         <button type="button" class="btn">
-          <a href="#">TERM & CONDITIONS</a>
+          <a href="#" style="font-size: 80%;">T&C</a>
         </button>
       </div>
       <div class="col-md-2">
@@ -50,7 +50,7 @@
       </div>
       <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 5%;">
         <button type="button" class="btn">
-          <a href="#">PRIVACY</a>
+          <a href="#" style="font-size: 80%;">PRIVACY</a>
         </button>
       </div>
       <div class="col-md-2">
@@ -59,7 +59,7 @@
     </div>
 
   </div>
-  <div class="col-md-7" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
+  <div class="col-md-7" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%; margin-top: 2%;">
     <h4 style="color: #fff; font-size: 200%; text-align: center; text-transform: uppercase; padding-top: 10%;">
       REGISTRATION FORM
     </h4>
