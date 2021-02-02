@@ -7,6 +7,8 @@ use App\Models\QuestionBank;
 use App\Models\AnswerBank;
 use App\Models\Districts;
 use App\Models\Audit;
+use App\Models\Feedback;
+
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -122,8 +124,9 @@ class AdminController extends Controller
   {
       $user = User::get();
       $user = User::findOrFail($id);
+      $district = Districts::get();
       // dd($user);
-      return view('admin.others.user-list.edit', compact('user'));
+      return view('admin.others.user-list.edit', compact('user','district'));
   }
 
   public function updateUserList(Request $request){
@@ -135,6 +138,7 @@ class AdminController extends Controller
     $user->address = $request->address;
     $user->postcode = $request->postcode;
     $user->state = $request->state;
+    $user->district = $request->district;
 
     //updating role
     if($request->role == "Admin" ){
@@ -199,6 +203,11 @@ class AdminController extends Controller
                   ->get();
 
       return view('admin.others.audit-trail.audit-trail-log-filter', compact('data'));
+  }
+
+  public function viewFeedbackList(){
+    $feedback = Feedback::get();
+    return view('admin.others.feedback.list', compact('feedback'));
   }
 
 }

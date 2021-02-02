@@ -45,47 +45,47 @@
                                 <th>Tarikh </th>
                                 <th>Tindakan</th>
 
-                                @foreach($data as $datas)
-                                <tr>
 
-                                  <td>{{$datas->users->name}}</td>
-                                  <td>{{$datas->user_message}}</td>
-                                  <td>{{$datas->created_at}}</td>
-                                  <td> <a href="#" onclick="pass_id_delete({{ $datas->id  }})" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal2">Hapus</button></td>
-
-                                  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-                                      <div class="modal-dialog modal-dialog-centered" role="document">
-                                          <div class="modal-content">
-                                              <div class="modal-header">
-                                                  <h5 class="modal-title" id="exampleModalLabel2">Pengesahan</h5>
-                                                  <a href="#" class="close" data-dismiss="modal" aria-label="Close">
-                                                              <span aria-hidden="true">&times;</span>
-                                                          </a>
-                                              </div>
-                                              <div class="modal-body">
-                                                  <p>Anda pasti mahu menghapus pengumuman ini?</p>
-                                              </div>
-                                              <div class="modal-footer">
-                                                  <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
-                                                  <!-- <a href="#" class="btn btn-primary">Yes</a> -->
-                                                  <form class="" action="{{route('admin.others.announcement.delete')}}" method="post">
-                                                  @csrf
-                                                    <input type="hidden" id="announcement_id" name="announcement_id">
-                                                    <button type="submit" name="button" class="btn btn-primary">Hapus Pengumuman</button>
-                                                  </form>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-
-
-
-
-                              </tr>
-                                @endforeach
                             </thead>
                             <tbody style="text-align: center;">
+                              @foreach($data as $datas)
+                              <tr>
 
+                                <td>{{$datas->users->name}}</td>
+                                <td>{{$datas->user_message}}</td>
+                                <td>{{$datas->created_at}}</td>
+                                <td> <a href="#" onclick="pass_id_delete({{ $datas->id  }})" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal2">Hapus</button></td>
+
+                                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel2">Pengesahan</h5>
+                                                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </a>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Anda pasti mahu menghapus pengumuman ini?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                                <!-- <a href="#" class="btn btn-primary">Yes</a> -->
+                                                <form class="" action="{{route('admin.others.announcement.delete')}}" method="post">
+                                                @csrf
+                                                  <input type="hidden" id="announcement_id" name="announcement_id">
+                                                  <button type="submit" name="button" class="btn btn-primary">Hapus Pengumuman</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </tr>
+                              @endforeach
                             </tbody>
 
                           </table>

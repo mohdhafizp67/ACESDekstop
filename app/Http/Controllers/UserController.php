@@ -114,10 +114,11 @@ class UserController extends Controller
 
   public function createFeedback(array $data){
     $user_id = Auth::user()->id;
-
+    $status = "1";
     return Feedback::create([
         'subject' => $data['subject'],
         'feedback' => $data['feedback'],
+        'status' => $status,
         'user_id' => $user_id,
     ]);
   }

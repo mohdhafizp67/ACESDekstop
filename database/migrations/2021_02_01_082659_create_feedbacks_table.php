@@ -18,6 +18,7 @@ class CreateFeedbacksTable extends Migration
             $table->timestamps();
             $table->string('subject')->nullable();
             $table->string('feedback')->nullable();
+            $table->string('status')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
         });

@@ -167,6 +167,9 @@ Route::middleware('admin')->group(function () {
 
   Route::post('/admin/others/announcement/delete/', [App\Http\Controllers\AnnouncementController::class, 'deleteAnnouncement'])->name('admin.others.announcement.delete');
 
+  Route::get('/admin/others/feedback/list', [App\Http\Controllers\AdminController::class, 'viewFeedbackList'])->name('admin.others.feedback.list');
+
+
 });
 
 // outside of middleware
