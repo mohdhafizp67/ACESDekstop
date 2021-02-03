@@ -47,12 +47,12 @@
 .testimonials .item h2 {
 	font-size: 14px;
 }
-.dots {
+/* .dots {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.dots label {
+} */
+/* .dots label {
 	display: block;
 	height: 5px;
 	width: 5px;
@@ -61,7 +61,7 @@
 	background-color: #413B52;
 	margin: 7px;
 	transition: transform 0.2s, color 0.2s;
-}
+} */
 
 /* First */
 #t-1:checked ~ .dots label[for="t-1"] {
