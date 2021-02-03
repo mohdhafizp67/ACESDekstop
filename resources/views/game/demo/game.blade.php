@@ -231,7 +231,7 @@
         z-index: 3;
         display: block;
         left: 85%;
-        top: 45%;
+        top: 50%;
         color: #ffffff;
         transform: translateY(-50%);
         padding: 20px 15px;

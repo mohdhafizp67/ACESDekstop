@@ -1,4 +1,4 @@
-@extends('layouts.app-student-qbadminuiquiz')
+@extends('layouts.app-student-qbadminui')
 
 @section('content')
 
@@ -36,6 +36,13 @@
       opacity: 1;
   }
 
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+      color: #ffffff !important;
+      /* font-size: 150%; */
+      background-color: #003e6100 !important;
+      border-radius: 100%;
+      padding-top: 25%;
+  }
 </style>
 
 
@@ -55,7 +62,7 @@
           </div>
           <div class="col-md-3" style="text-align: center;">
             <button type="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-top: -30%;margin-left: -25%;">
-              <div style="color: red !important; font-align: center !important; font-size: 150%;"><span id="time"></span> minit!</div>
+              <div style="color: red !important; font-align: center !important; font-size: 150%;"><span id="time"></span> minutes</div>
             </button>
           </div>
         </div>
@@ -66,26 +73,32 @@
           @csrf
           <input type="hidden" name="quiz_id" value="{{$quiz->id}}">
         <div class="pills-regular">
-            <ul class="nav nav-pills m-1" id="pills-tab" role="tablist" style="padding-bottom: 1%; padding-left: 15%; padding-right: 15%;">
-
+    
+              <ul class="nav nav-pills m-1" id="pills-tab" role="tablist">
                 @foreach($question as $data)
-                  @if ($loop->first)
-                    <li class="nav-item" style="background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-left: 2%; font-size: 130%; width: 50px; height: 50px;">
+                  @if($loop->iteration < 10)
+                      <li class="nav-item" style="background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-left: 1%;font-size: 130%; width: 50px; height: 50px; text-align: center;">
+                          <a class="nav-link active" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="true">0{{$loop->iteration}}</a>
+                      </li>
+                  @elseif($loop->iteration == 10)
+                    <li class="nav-item" style="background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-left: 1%;font-size: 130%; width: 50px; height: 50px; text-align: center;">
                         <a class="nav-link active" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="true">{{$loop->iteration}}</a>
                     </li>
-                  @else
-                      @if($loop->iteration > 9)
-                      <li class="nav-item" style="background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-left: 2%;font-size: 130%; width: 50px; height: 50px;">
-                          <a class="nav-link" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false">{{$loop->iteration}}</a>
-                      </li>
-                      @else
-                      <li class="nav-item" style="background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-left: 2%;font-size: 130%; width: 50px; height: 50px;">
-                          <a class="nav-link" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false">{{$loop->iteration}}</a>
-                      </li>
-                      @endif
                   @endif
                 @endforeach
-            </ul>
+                @foreach($question as $data)
+                  @if($loop->iteration >  10)
+                      <li class="nav-item" style="background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-left: 1%; font-size: 130%; width: 50px; height: 50px; text-align: center;">
+                          <a class="nav-link active" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="true">{{$loop->iteration}}</a>
+                      </li>
+                  @endif
+                @endforeach
+              </ul>
+
+
+
+
+
             <div class="tab-content" id="pills-tabContent">
               @foreach($question as $data)
 
@@ -111,7 +124,6 @@
 
                     </div>
                     <div class="col-md-8">
-
                       <div class="form-group" style="color: #fff; font-size: 150%;">
                          <label>{{$data->question}}</label>
                       </div>
