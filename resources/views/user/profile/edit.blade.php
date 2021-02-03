@@ -194,6 +194,21 @@
                     </div>
                     <div class="col-md">
                       <div class="form-group" style="color: white !important;">
+                        <label class="col-form-label">SCHOOL NAME</label>
+                        <input id="school" type="text"name="school" value="{{Auth::user()->school}}" class="form-control" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);">
+                      </div>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md">
+                      <div class="form-group" style="color: white !important;">
                         <label class="col-form-label">UPLOAD PROFILE PICTURE</label>
 
                           <div class="custom-file">

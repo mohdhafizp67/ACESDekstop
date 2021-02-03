@@ -211,6 +211,19 @@
               @endif
             </div>
 
+            <div class="form-group">
+
+              <label for="exampleInputEmail1" style="color: #fff">
+                SCHOOL NAME
+              </label>
+              <input type="text" placeholder="SCHOOL NAME" name="school" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('school') ? 'is-invalid' : '' }}" value="{{ old('school') }}" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"/>
+              @if($errors->has('school'))
+                  <div class="invalid-feedback">
+                      <strong>{{ $errors->first('school') }}</strong>
+                  </div>
+              @endif
+            </div>
+
 
             <div class="row">
               <div class="col-md-6">

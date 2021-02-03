@@ -21,12 +21,12 @@ class UserSeeder extends Seeder
       DB::table('users')-> insert(
         [
         'id' => '1',
-        'name' => 'Syed Syahdan',
+        'name' => 'SYED SYAHDAN',
         'email' => 'user1@aces.com',
         'password' => $hashed_random_password,
         'ic_number' => '000000000000',
         'phone' => '0123456789',
-        'address' => 'Kampong Batu Udang',
+        'address' => 'KAMPONG BATU UDANG',
         'postcode' => '18200',
         'state' => 'Kelantan',
         'district' => 'Dabong',
@@ -40,12 +40,12 @@ class UserSeeder extends Seeder
       DB::table('users')-> insert(
         [
         'id' => '2',
-        'name' => 'Hafiz Al-Ghiyatuddin',
+        'name' => 'HAFIZ AL-GHIYATUDDIN',
         'email' => 'user2@aces.com',
         'password' => $hashed_random_password,
         'ic_number' => '111111111111',
         'phone' => '0123456789',
-        'address' => 'Pengkalan Chepa',
+        'address' => 'PENGKALAN CHEPA',
         'postcode' => '16100',
         'state' => 'Kelantan',
         'district' => 'Dabong',
@@ -59,15 +59,16 @@ class UserSeeder extends Seeder
       DB::table('users')-> insert(
         [
         'id' => '3',
-        'name' => 'Luqman Nul Hakeem',
+        'name' => 'LUQMAN NUL HAKEEM',
         'email' => 'user3@aces.com',
         'password' => $hashed_random_password,
         'ic_number' => '222222222222',
         'phone' => '0123456789',
-        'address' => 'Pengkalan Chepa',
+        'address' => 'PENGKALAN CHEPA',
         'postcode' => '16100',
         'state' => 'Kelantan',
         'district' => 'Dabong',
+        'school' => 'SMK DABONG',
         'is_admin' => '0',
         'is_active' => '1',
         'is_student' => '1',
