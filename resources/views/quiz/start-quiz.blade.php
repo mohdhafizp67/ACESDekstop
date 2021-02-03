@@ -319,10 +319,10 @@
                         <p>Anda pasti mahu menghantar quiz ini?</p>
                     </div>
                     <div class="modal-footer">
-                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                        <a href="#" class="btn" data-dismiss="modal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 22%;">Batal</a>
                         <form action="{{route('quiz.start-quiz')}}" method="post">
                         @csrf
-                        <button type="submit" name="button" class="btn btn-primary">Hantar Quiz</button>
+                        <button type="submit" name="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">Hantar Quiz</button>
                       </form>
                     </div>
                 </div>

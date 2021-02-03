@@ -194,7 +194,7 @@
                           <p style="text-align: justify;">ARE YOU SURE TO LOG OUT?</p>
                       </div>
                       <div class="modal-footer">
-                          <a href="#" class="btn" data-dismiss="modal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">CANCEL</a>
+                          <a href="#" class="btn" data-dismiss="modal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 22%;">CANCEL</a>
                           <!-- <a href="#" class="btn btn-primary">Yes</a> -->
                           <form id="logout-form" action="{{ route('logout') }}" method="POST">
                           @csrf
