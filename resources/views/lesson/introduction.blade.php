@@ -144,14 +144,11 @@
 
     <div class="container-fluid"  style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;" >
 	<div class="row">
-    <div class="col-md-1">
 
-    </div>
-		<div class="col-md-9">
-      <h1 style="padding-top: 3%; text-align: center;color: #fff; font-size: 250%; font-weight: bold;">VR LESSONS</h1>
+		<div class="col-md-12">
+      <h1 style="padding-top: 0%; padding-bottom: 1%;text-align: center;color: #fff; font-size: 250%; font-weight: bold;">INTRODUCTION</h1>
 		</div>
-		<div class="col-md-2">
-		</div>
+
 	</div>
 	<div class="row" style="padding-bottom: 10%">
     <div class="col-md-1">
@@ -173,14 +170,7 @@
 
         </label>
 
-  			<!-- <label class="item" for="t-2">
-          <iframe class="embed-responsive-item" width="100%" height="250px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  			</label> -->
-  			<!-- <label class="item" for="t-3">
-          <iframe class="embed-responsive-item" width="10%" height="250px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  			</label> -->
 
   		</div>
   		<!-- <div class="dots">

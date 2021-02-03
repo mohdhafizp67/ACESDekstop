@@ -37,7 +37,7 @@ Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, '
 //Lessons
 Route::get('/courses', [App\Http\Controllers\LessonController::class, 'courses'])->name('lesson.courses');
 
-Route::get('/vrlessons', [App\Http\Controllers\LessonController::class, 'vrlessons'])->name('lesson.vrlessons');
+Route::get('/introduction', [App\Http\Controllers\LessonController::class, 'introduction'])->name('lesson.introduction');
 
 Route::get('/pillar', [App\Http\Controllers\LessonController::class, 'pillar'])->name('lesson.pillar');
 

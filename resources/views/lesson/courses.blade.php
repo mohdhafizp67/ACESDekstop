@@ -228,7 +228,7 @@
         z-index: 3;
         display: block;
         left: 85%;
-        top: 50%;
+        top: 43%;
         color: #ffffff;
         transform: translateY(-50%);
         padding: 20px 15px;
@@ -267,7 +267,7 @@
       <div class="slider-content">
 
           <div class="slider-single">
-              <a href="{{route('lesson.vrlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/01.png') }}" alt="1" /></a>
+              <a href="{{route('lesson.introduction')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/01.png') }}" alt="1" /></a>
               <!-- <h1 class="slider-single-title">VR</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>

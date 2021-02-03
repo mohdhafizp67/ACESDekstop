@@ -132,12 +132,12 @@ margin-left: -48%;
         <div></div>
 
         <div class="row">
-      		<div class="col-md-6">
-      			<div class="row" style="margin-top: -4%;">
-      				<div class="col-md-6">
+      		<div class="col-md-12">
+      			<div class="row" style="margin-top: 0%;">
+      				<div class="col-md-4">
                 <iframe src="https://giphy.com/embed/javd6e9mMU0Gk" width="100%" height="auto" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/drone-javd6e9mMU0Gk"></a></p>
       				</div>
-      				<div class="col-md-6">
+      				<!-- <div class="col-md-6">
       					<div class="row">
       						<div class="col-md-6" style="padding: 20%;background-color: transparent !important;background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-repeat: no-repeat;background-size: 100% 100%;">
                     <i class="fas fa-sms" style="font-size: 300%;"></i>
@@ -154,31 +154,33 @@ margin-left: -48%;
                     <i class="fas fa-book-reader" style="font-size: 300%;"></i>
       						</div>
       					</div>
-      				</div>
+      				</div> -->
+
+              <div class="col-md-8">
+                <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
+                  <div class="card-header" style="background-color: transparent; border: transparent; font-weight: bold; font-size: 100%; margin: 3px;">ANNOUNCEMENT</div>
+                  <div class="card-body list-group p-2" style="overflow:auto;height:200px;width:80%; margin: 0 auto; border: transparent;">
+                    @foreach($announcement as $data)
+
+                      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                          <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1" style="font-size: 90%">ACES I 4.0</h5>
+                              <small class="text-muted">3 days ago</small>
+                          </div>
+                          <p class="mb-1">{{$data->user_message}}</p>
+                          <!-- <small class="text-muted">Donec id elit non mi porta.</small> -->
+                      </a>
+                      <div style="padding: 2px;"></div>
+                      @endforeach
+
+                  </div>
+                  <!-- <div class="card-footer" style="background-color: #130E29 !important; margin: 5px;">
+                  </div> -->
+                </div>
+              </div>
       			</div>
       		</div>
-      		<div class="col-md-6">
-            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
-              <div class="card-header" style="background-color: transparent; border: transparent; font-weight: bold; font-size: 100%; margin: 3px;">ANNOUNCEMENT</div>
-              <div class="card-body list-group p-2" style="overflow:auto;height:200px;width:80%; margin: 0 auto; border: transparent;">
-                @foreach($announcement as $data)
 
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                      <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1" style="font-size: 90%">ACES I 4.0</h5>
-                          <small class="text-muted">3 days ago</small>
-                      </div>
-                      <p class="mb-1">{{$data->user_message}}</p>
-                      <!-- <small class="text-muted">Donec id elit non mi porta.</small> -->
-                  </a>
-                  <div style="padding: 2px;"></div>
-                  @endforeach
-
-              </div>
-              <!-- <div class="card-footer" style="background-color: #130E29 !important; margin: 5px;">
-              </div> -->
-            </div>
-      		</div>
       	</div>
 
 
