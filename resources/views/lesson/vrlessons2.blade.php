@@ -169,8 +169,8 @@
   		<input type="radio" name="testimonial" id="t-5">
   		<div class="testimonials">
 
-  			<label class="item" for="t-1" style="margin-top: -5%;">
-          <iframe class="embed-responsive-item" width="100%" height="300px" src="https://www.youtube.com/embed/l2l5ZeVxmyo?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  			<label class="item" for="t-1">
+          <iframe class="embed-responsive-item" width="100%" height="250px" src="https://www.youtube.com/embed/l2l5ZeVxmyo?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   			</label>
   			<label class="item" for="t-2">
@@ -183,13 +183,13 @@
   			</label>
 
   		</div>
-  		<!-- <div class="dots">
+  		<div class="dots">
 
   			<label for="t-1"></label>
   			<label for="t-2"></label>
   			<label for="t-3"></label>
 
-  		</div> -->
+  		</div>
   	</div>
 
 
@@ -363,24 +363,24 @@
     </script>
 
     <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
+var slideIndex = 1;
+showDivs(slideIndex);
 
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        x[slideIndex-1].style.display = "block";
-      }
-      </script>
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
 
   </body>
 </html>
