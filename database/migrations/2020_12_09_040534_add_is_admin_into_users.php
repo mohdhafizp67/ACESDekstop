@@ -20,6 +20,7 @@ class AddIsAdminIntoUsers extends Migration
         $table->string('postcode')->nullable();
         $table->string('state')->nullable();
         $table->string('district')->nullable();
+        $table->string('school')->nullable();
         $table->boolean('is_admin')->default(false);
         $table->boolean('is_active')->default(true);
         $table->boolean('is_student')->default(false);

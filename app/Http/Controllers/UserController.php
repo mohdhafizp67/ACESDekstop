@@ -68,6 +68,8 @@ class UserController extends Controller
     $user->postcode = request()->postcode;
     $user->state = request()->state;
     $user->district = request()->district;
+    $user->school = request()->school;
+
 
     //upload profile picture
     // $upload = $request->file('gambar')->store('public/uploads');

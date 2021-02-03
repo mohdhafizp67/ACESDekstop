@@ -89,6 +89,7 @@ class RegisterController extends Controller
             'postcode' => $data['postcode'],
             'state' => $data['state'],
             'district' => $data['district'],
+            'school' => $data['school'],
             'password' => Hash::make($data['password']),
             'is_active' => 1,
             'is_student' => 1,
