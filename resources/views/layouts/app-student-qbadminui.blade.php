@@ -118,7 +118,7 @@
             <div class="the_menu mt-2">
                 <!-- Heading -->
                 <div class="side-menu-heading d-flex">
-                    <h6 class=" font-weight-bold pb-2 mx-3" style="color: yellow;">&nbsp&nbsp&nbsp&nbsp&nbsp{{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}} {{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[1]}} </h6>
+                    <h6 class=" font-weight-bold pb-2 mx-3" style="color: yellow;">&nbsp&nbsp&nbsp&nbsp&nbsp{{Auth::user()->name}} </h6>
 
                     <!-- <a  class="font-weight-bold ml-auto px-3"
                         href="{{ route('logout') }}"
@@ -301,7 +301,7 @@
                             <!-- Menu items -->
 
 
-                            <a href="#" class="dropdown-item disabled small" style="color: #ffffff !important; font-size: 100% !important; padding-top: 10px !important;"><i class="far fa-user mr-1"></i>&nbsp {{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}} {{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[1]}} </a>
+                            <a href="#" class="dropdown-item disabled small" style="color: #ffffff !important; font-size: 100% !important; padding-top: 10px !important;"><i class="far fa-user mr-1"></i>&nbsp {{Auth::user()->name}} </a>
                             <!-- <a href="#" class="dropdown-item disabled small"><i class="fa fa-certificate"></i>&nbsp Student </a> -->
                             <hr style="padding-bottom: 0px;">
 
