@@ -295,7 +295,7 @@
       if(negeri){
         $.ajax({
           type:"get",
-           url:"/register/ajax/get-district/"+negeri,
+           url:"/ACES/register/ajax/get-district/"+negeri,
 
           success: function(respond){
             //console.log(respond);
