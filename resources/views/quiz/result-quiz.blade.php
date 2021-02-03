@@ -14,7 +14,7 @@
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
   <h1 style="padding-top: 3%; text-align: center; color: #fff; font-weight: bold;">QUIZ SCORE</h1>
 
-<div class="row" style="padding-top: 5%; padding-bottom: 8%;">
+<div class="row" style="padding-bottom: 5%;">
   <div class="col-md-12">
 
     <div class="row">
@@ -22,7 +22,7 @@
 
       </div>
       <div class="col-md-8">
-        <div class="card-body" style="padding: 10%;background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
+        <div class="card-body" style="padding: 6%;background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
 
 
             <div class="card-body p-0">

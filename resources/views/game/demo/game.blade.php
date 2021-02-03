@@ -355,7 +355,7 @@
           </div>
 
           <div class="slider-single">
-                <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit9.png') }}" alt="6" />
+                <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit9ecerhq.png') }}" alt="6" />
                 <!-- <h1 class="slider-single-title">Circuit 09 - Autonomous Robot</h1> -->
                 <!-- <a class="slider-single-likes" href="javascript:void(0);">
                     <i class="fa fa-heart"></i>

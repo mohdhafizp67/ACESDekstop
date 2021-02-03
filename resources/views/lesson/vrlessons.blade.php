@@ -14,8 +14,8 @@
     <meta name="author" content="LayoutIt!">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="{{ asset('css/pelajaran/vrlessons.css') }} ">
 
     <style>
@@ -126,11 +126,11 @@
     }
 
     .button-container .button:nth-child(1) {
-      float: left;
+      /* float: left; */
     }
 
     .button-container .button:nth-child(2) {
-      float: right;
+      /* float: right; */
     }
 
     /* @font-face {
@@ -162,25 +162,25 @@
       <!-- <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
       <div class="slider1">
-  		<input type="radio" name="testimonial" id="t-1" checked>
+  		<!-- <input type="radio" name="testimonial" id="t-1" checked>
   		<input type="radio" name="testimonial" id="t-2">
   		<input type="radio" name="testimonial" id="t-3">
   		<input type="radio" name="testimonial" id="t-4">
-  		<input type="radio" name="testimonial" id="t-5">
+  		<input type="radio" name="testimonial" id="t-5"> -->
   		<div class="testimonials">
-
-  			<label class="item" for="t-1" style="margin-top: -5%;">
+        <label class="item" style="margin-top: -5%;">
           <iframe class="embed-responsive-item" width="100%" height="300px" src="https://www.youtube.com/embed/l2l5ZeVxmyo?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  			</label>
-  			<label class="item" for="t-2">
+        </label>
+
+  			<!-- <label class="item" for="t-2">
           <iframe class="embed-responsive-item" width="100%" height="250px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  			</label>
-  			<label class="item" for="t-3">
+  			</label> -->
+  			<!-- <label class="item" for="t-3">
           <iframe class="embed-responsive-item" width="10%" height="250px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  			</label>
+  			</label> -->
 
   		</div>
   		<!-- <div class="dots">
@@ -203,29 +203,28 @@
 
   <div class="row" style="padding-top: 1%; padding-bottom: 10%">
     <div class="col-md-2">
-
+      <div class="button-container">
+        <div class="button" ><i class="fas fa-angle-left" style="margin-left: 45%;"></i></div>
+      </div>
 		</div>
     <div class="col-md-8">
       <div class="items">
       		<div class="item1 active">
-      			<img src="{{asset('concept/images/icon/02U.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
+      			<img src="{{asset('concept/images/pelajaran/icon/colleges.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
       		</div>
       		<div class=" item1 next" >
-            <img src="{{asset('concept/images/icon/03S.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
+            <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
       		</div>
       		<div class="item1" >
-            <img src="{{asset('concept/images/icon/01C.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
+            <img src="{{asset('concept/images/pelajaran/icon/career.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
       		</div>
           <div class=" item1" >
-            <img src="{{asset('concept/images/icon/02U.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#lokasi">
+            <img src="{{asset('concept/images/pelajaran/icon/colleges.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#lokasi">
           </div>
       		<div class="item1 prev">
-            <img src="{{asset('concept/images/icon/01C.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
+            <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
       		</div>
-      		<div class="button-container">
-      			<div class="button"><i class="fas fa-angle-left"></i></div>
-      			<div class="button"><i class="fas fa-angle-right"></i></div>
-      		</div>
+
       	</div>
 
         <div class="modal fade" id="lokasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -266,9 +265,8 @@
                 </div> -->
                 <div class="modal-body">
                   <div class="w3-content w3-display-container">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/1.jpg')}}" style="width:100%">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/2.jpg')}}" style="width:100%">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/3.jpg')}}" style="width:100%">
+                    <img class="skill" src="{{asset('concept/images/pelajaran/1.jpg')}}" style="width:100%">
+
 
 
                     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -291,9 +289,7 @@
                 </div> -->
                 <div class="modal-body">
                   <div class="w3-content w3-display-container">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/vrcourses.jpg')}}" style="width:100%">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/vrcourses.jpg')}}" style="width:100%">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/vrcourses.jpg')}}" style="width:100%">
+                    <img class="career" src="{{asset('concept/images/pelajaran/vrcourses.jpg')}}" style="width:100%">
 
 
                     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -311,14 +307,16 @@
 
     </div>
     <div class="col-md-2">
-
+      <div class="button-container">
+        <div class="button" ><i class="fas fa-angle-right" style="margin-left: 45%;"></i></div>
+      </div>
     </div>
   </div>
 </div>
 
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script> -->
 
     <script>
     const slider = document.querySelector(".items");
@@ -381,6 +379,46 @@
         x[slideIndex-1].style.display = "block";
       }
       </script>
+
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex-1].style.display = "block";
+        }
+        </script>
+
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+          }
+          </script>
 
   </body>
 </html>
