@@ -170,7 +170,7 @@
   		<div class="testimonials">
 
   			<label class="item" for="t-1">
-          <iframe class="embed-responsive-item" width="100%" height="250px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" width="100%" height="250px" src="https://www.youtube.com/embed/l2l5ZeVxmyo?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   			</label>
   			<label class="item" for="t-2">
@@ -291,9 +291,9 @@
                 </div> -->
                 <div class="modal-body">
                   <div class="w3-content w3-display-container">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/1.jpg')}}" style="width:100%">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/2.jpg')}}" style="width:100%">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/3.jpg')}}" style="width:100%">
+                    <img class="mySlides" src="{{asset('concept/images/pelajaran/vrcourses.jpg')}}" style="width:100%">
+                    <img class="mySlides" src="{{asset('concept/images/pelajaran/vrcourses.jpg')}}" style="width:100%">
+                    <img class="mySlides" src="{{asset('concept/images/pelajaran/vrcourses.jpg')}}" style="width:100%">
 
 
                     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>

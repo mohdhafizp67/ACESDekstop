@@ -9,6 +9,7 @@
     <title>LEADERBOARD</title>
 
     <link rel="stylesheet" href="{{ asset('css/cartajohan.css') }} ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <style media="screen">
@@ -21,6 +22,8 @@
         border-top: 1px solid #2d6c7f;
         border-bottom: 1px solid #2d6c7f;
       }
+
+
     </style>
   </head>
   <body>
@@ -271,9 +274,17 @@
           <td style="color: #fff; font-size: 150%; color:#E9FF00">
             1000
           </td>
+          <td style="color: #fff; font-size: 150%; color:#E9FF00">
+            <div class="popup" onclick="myFunction()">Share+
+              <span class="popuptext" id="myPopup">
+                <a href="#" class="fa fa-facebook"></a>
+  	             <a href="#" class="fa fa-twitter"></a>
+               </span>
+             </div>
+          </td>
+
+
         </tr>
-
-
 
       </tbody>
     </table>
@@ -285,5 +296,13 @@
 </div>
 
   </body>
+  <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
 </html>
 @endsection

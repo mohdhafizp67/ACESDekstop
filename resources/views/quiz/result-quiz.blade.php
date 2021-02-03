@@ -32,7 +32,7 @@
 
                 </div>
                 <div class="col-md-4" style="font-size: 200%; color: #fff;">
-                  <label>Pelajaran :</label>
+                  <label>Lessons :</label>
                 </div>
                 <div class="col-md-6" style="font-size: 200%; color: #fff;">
                   <label>{{$student_quiz->quiz->lesson->lesson_type}} | {{$student_quiz->quiz->lesson->lesson_subject}}</label>
@@ -47,7 +47,7 @@
 
                 </div>
                 <div class="col-md-4" style="font-size: 200%; color: #fff;">
-                  <label>Markah :</label>
+                  <label>Mark :</label>
                 </div>
                 <div class="col-md-6" style="font-size: 200%; color: #fff;">
                   <label> {{$student_quiz->result}} / {{$student_quiz->quiz->number_of_question}}</label>
@@ -62,7 +62,7 @@
 
                 </div>
                 <div class="col-md-4" style="font-size: 200%; color: #fff;">
-                  <label>Peratusan :</label>
+                  <label>Percentage :</label>
                 </div>
                 <div class="col-md-6" style="font-size: 200%; color: #fff;">
                   <label> {{$student_quiz->percentage}} %</label>
@@ -77,7 +77,7 @@
 
                 </div>
                 <div class="col-md-4" style="font-size: 200%; color: #fff;">
-                  <label>Soalan yang telah dijawab :</label>
+                  <label>Answered questions :</label>
                 </div>
                 <div class="col-md-6" style="font-size: 200%; color: #fff;">
                   <label> {{$student_quiz->answered_question}} </label>
@@ -94,8 +94,12 @@
                 <div class="col-md-4" style="font-size: 200%; color: #fff;">
                   <label>Status :</label>
                 </div>
-                <div class="col-md-6" style="font-size: 200%; color: #fff;">
-                  <label> {{$student_quiz->result_status}}  </label>
+                <div class="col-md-6" style="font-size: 200%;">
+                  @if($student_quiz->result_status == "Lulus")
+                  <label style="color: #00FF16"> {{$student_quiz->result_status}}  </label>
+                  @else
+                  <label style="color: #F8273A"> {{$student_quiz->result_status}}  </label>
+                  @endif
                 </div>
                 <div class="col-md-1">
 
