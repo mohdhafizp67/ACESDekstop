@@ -30,7 +30,7 @@
 <div class="row">
   <div class="col-md-12">
     <h1 style="text-align: center; color: #fff; font-weight: bold;padding-top: 2%;">START QUIZ</h1>
-    <p style="padding-top: 5%; padding-bottom: 5%;text-align: center; color: #fff;font-size: 150%;">Asnwer all the quiz based on lessons</p>
+    <p style="padding-top: 5%; padding-bottom: 5%;text-align: center; color: #fff;font-size: 150%;">Answer all the question based on lessons</p>
   </div>
 
 

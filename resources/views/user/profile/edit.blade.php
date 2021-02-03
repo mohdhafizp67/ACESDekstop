@@ -29,7 +29,7 @@
             <div class="col-md-2">
 
             </div>
-            <div class="col-md" style="padding-top: 6%;">
+            <div class="col-md" style="padding-top: 2%;">
 
               @if ($message = Session::get('success'))
               <div id=alert>

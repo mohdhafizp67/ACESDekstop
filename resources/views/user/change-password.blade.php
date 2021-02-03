@@ -23,13 +23,13 @@
     	<div class="row">
     		<div class="col-md-12" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-repeat: no-repeat;background-size: cover;">
 
-          <div style="padding: 5%;"></div>
+          <div style="padding: 4%;"></div>
 
           <div class="row">
             <div class="col-md-2">
 
             </div>
-            <div class="col-md" style="padding-top: 6%;padding-bottom:4%;">
+            <div class="col-md">
 
               @if ($message = Session::get('success'))
               <div id=alert>
@@ -169,8 +169,8 @@
                     <div class="col-md-3">
 
                     </div>
-                    <div class="col-md-6 text-center" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-                        <button type="button" class="btn" name="button" data-toggle="modal" data-target="#exampleModal">
+                    <div class="col-md-6 text-center">
+                        <button type="button" class="btn" name="button" data-toggle="modal" data-target="#exampleModal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 60%;">
                             CHANGE PASSWORD
                         </button>
                     </div>
