@@ -151,15 +151,15 @@
                       </div>
                       @endif
 
-                      <div class="row">
+
                       @if($i > 3)
-                      <div class="col-md-6">
+                      <div class="col-md-6" style="margin-left: 35%;">
                         <label class="label label1 custom-control custom-radio custom-control-inline">
                             <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}"  class="custom-control-input"><span class="">{{$ans[$i]->answer}}</span>
                         </label>
                       </div>
                     @endif
-                  </div>
+
                     @endfor
                     <!-- <div class="col-md-2">
 
@@ -215,13 +215,13 @@
                       </div>
                     </div>
                     @foreach($answer as $ans)
-
+                    <div class="row" style="margin-left: 15%;">
                       <!-- <div class="col-md-2">
 
                       </div> -->
                       @for($i=0;$i<count($ans);$i++)
                         @if($ans[$i]->question_id == $data->id)
-                        <div class="col-md-4" style="margin-left: 10%;">
+                        <div class="col-md-4">
                           <label class="label label1 custom-control custom-radio custom-control-inline">
                               <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}"  class="custom-control-input"><span class="">{{$ans[$i]->answer}}</span>
                           </label>
@@ -244,7 +244,7 @@
                       <!-- <div class="col-md-2">
 
                       </div> -->
-
+                    </div>
                     @endforeach
 
 
