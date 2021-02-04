@@ -95,7 +95,7 @@ margin-left: -48%;
             <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <div class="card-body list-group" style="padding: 5%;">
                 <div class="progressbar1">
-                <div class="second circle" data-percent="90">
+                <div class="second circle" data-percent="{{$lesson_progress}}">
                   <strong></strong>
                   <span>LESSON</span>
                 </div>
@@ -107,7 +107,7 @@ margin-left: -48%;
             <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <div class="card-body list-group" style="padding: 5%;">
                 <div class="progressbar1">
-                <div class="second circle" data-percent="73">
+                <div class="second circle" data-percent="{{$quiz_progress}}">
                   <strong></strong>
                   <span>QUIZ</span>
                 </div>
