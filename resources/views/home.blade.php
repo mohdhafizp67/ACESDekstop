@@ -102,9 +102,9 @@ margin-left: -48%;
 
                 <div style="padding: 12%;"></div>
                 @if(Auth::user()->profile_picture == null)
-                  <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style=" width:66%; margin-top: -10%;">
+                  <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style=" width:70%; margin-top: -10%;">
                 @else
-                <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style=" width:66%; height:66% ">
+                <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style=" width:70%; height:70%;">
                 @endif
 
 
