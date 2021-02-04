@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="{{ asset('css/pelajaran/vrlessons.css') }} ">
+    <!-- <link rel="stylesheet" href="{{ asset('css/pelajaran/vrlessons.css') }} "> -->
 
     <style>
 
@@ -67,8 +67,8 @@
     }
 
     .item1 img {
-      width: 100%;
-      height: 100%;
+      width: 90%;
+      height: 90%;
       object-fit: cover;
     }
 
@@ -133,10 +133,15 @@
       /* float: right; */
     }
 
-    /* @font-face {
-        font-family: Azonix-1VB0;
-        src: url({{asset('concept/fonts/Azonix-1VB0.otf')}});
-    } */
+    .nav-tabs {
+    border-bottom: 0px solid #dee2e6;
+    }
+
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #013443;
+    border-color: #00f0ff #00f0ff #00f0ff;
+    }
 
     </style>
   </head>
@@ -150,36 +155,31 @@
 		</div>
 
 	</div>
-	<div class="row" style="padding-bottom: 10%">
+	<div class="row" style="padding-bottom: 1%">
     <div class="col-md-1">
 
     </div>
     <div class="col-md-10" style="background-image: url({{asset('concept/images/galaxy/panel.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
-      <!-- <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    <div class="tab-regular" style="margin-left: 5%;">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Part 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Part 2</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/CYiCXrdgwVg?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/M-TJz5nZ-9U?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
 
-      <div class="slider1">
-  		<!-- <input type="radio" name="testimonial" id="t-1" checked>
-  		<input type="radio" name="testimonial" id="t-2">
-  		<input type="radio" name="testimonial" id="t-3">
-  		<input type="radio" name="testimonial" id="t-4">
-  		<input type="radio" name="testimonial" id="t-5"> -->
-  		<div class="testimonials">
-        <label class="item" style="margin-top: -5%;">
-          <iframe class="embed-responsive-item" width="100%" height="300px" src="https://www.youtube.com/embed/19w-AbOKx3Y?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        </label>
-
-  		</div>
-  		<!-- <div class="dots">
-
-  			<label for="t-1"></label>
-  			<label for="t-2"></label>
-  			<label for="t-3"></label>
-
-  		</div> -->
-  	</div>
-
+                        </div>
+                    </div>
 
     </div>
 
@@ -189,7 +189,10 @@
 
 	</div>
 
-  <div class="row" style="padding-top: 1%; padding-bottom: 10%">
+
+
+
+  <div class="row" style="padding-top: 1%; padding-bottom: 5%">
     <div class="col-md-2">
       <div class="button-container">
         <div class="button" ><i class="fas fa-angle-left" style="margin-left: 45%;"></i></div>
@@ -306,47 +309,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script> -->
 
-    <script>
-    const slider = document.querySelector(".items");
-  const slides = document.querySelectorAll(".item1");
-  const button = document.querySelectorAll(".button");
-
-  let current = 0;
-  let prev = 4;
-  let next = 1;
-
-  for (let i = 0; i < button.length; i++) {
-    button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
-  }
-
-  const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
-
-  const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
-
-  const gotoNum = number => {
-    current = number;
-    prev = current - 1;
-    next = current + 1;
-
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("active");
-      slides[i].classList.remove("prev");
-      slides[i].classList.remove("next");
-    }
-
-    if (next == 5) {
-      next = 0;
-    }
-
-    if (prev == -1) {
-      prev = 4;
-    }
-
-    slides[current].classList.add("active");
-    slides[prev].classList.add("prev");
-    slides[next].classList.add("next");
-  }
-    </script>
 
     <script>
       var slideIndex = 1;

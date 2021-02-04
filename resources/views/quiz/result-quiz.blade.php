@@ -96,9 +96,9 @@
                 </div>
                 <div class="col-md-6" style="font-size: 200%;">
                   @if($student_quiz->result_status == "Lulus")
-                  <label style="color: #00FF16"> {{$student_quiz->result_status}}  </label>
+                  <label style="color: #00FF16"> Pass  </label>
                   @else
-                  <label style="color: #F8273A"> {{$student_quiz->result_status}}  </label>
+                  <label style="color: #F8273A"> Fail  </label>
                   @endif
                 </div>
                 <div class="col-md-1">
@@ -113,7 +113,7 @@
 
                 </div>
                 <div class="col-md" style="text-align: center;">
-                  <a href="{{route('quiz.choose-quiz')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding: 5%;">Kembali Ke Senarai Quiz</a>
+                  <a href="{{route('quiz.choose-quiz')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding: 5%; width: 55%;">Return to Quiz List</a>
                 </div>
                 <div class="col-md-2">
 

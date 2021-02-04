@@ -65,12 +65,12 @@
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #17a2b88a;
+    background-color: #012f37;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: .3rem;
     outline: 0;
-    border: 2px solid #007bff;
+    /* border: 2px solid #007bff; */
 }
 
 .modal-header {

@@ -1215,8 +1215,8 @@ button.close {
 .nav-pills .show > .nav-link {
   color: #ffffff !important;
   /* font-size: 150%; */
-  background-color: #003e6100 !important;
-  border-radius: 100%;
+  /* background-color: #003e6100 !important;
+  border-radius: 100%; */
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {

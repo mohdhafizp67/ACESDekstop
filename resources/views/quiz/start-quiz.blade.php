@@ -36,10 +36,20 @@
       opacity: 1;
   }
 
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    color: #ffd452 !important;
+    font-weight: bold;
+    background-color: #007bff00;
+    /* font-size: 150%; */
+    /* background-image: url({{asset('concept/images/galaxy/btn_prop2.png')}}); */
+
+  }
+
 </style>
 
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-bottom: 5%;">
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-bottom: 6%;">
   <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">QUIZ</h1>
   <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Please answer all the question</h1>
 
@@ -55,7 +65,7 @@
           </div>
           <div class="col-md-3" style="text-align: center;">
             <button type="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-top: -30%;margin-left: -25%;">
-              <div style="color: red !important; font-align: center !important; font-size: 150%;"><span id="time"></span> minit!</div>
+              <div style="color: red !important; font-align: center !important; font-size: 150%;"><span id="time"></span> minutes!</div>
             </button>
           </div>
         </div>
@@ -71,16 +81,16 @@
                 @foreach($question as $data)
                   @if ($loop->first)
                     <li class="nav-item" style="background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-left: 2%; font-size: 130%; width: 50px; height: 50px;">
-                        <a class="nav-link active" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="true">{{$loop->iteration}}</a>
+                        <a class="nav-link active" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="true" style="text-align: center; padding-top: 25%;">{{$loop->iteration}}</a>
                     </li>
                   @else
                       @if($loop->iteration > 9)
                       <li class="nav-item" style="background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-left: 2%;font-size: 130%; width: 50px; height: 50px;">
-                          <a class="nav-link" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false">{{$loop->iteration}}</a>
+                          <a class="nav-link" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false" style="text-align: center; padding-top: 25%;">{{$loop->iteration}}</a>
                       </li>
                       @else
                       <li class="nav-item" style="background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-left: 2%;font-size: 130%; width: 50px; height: 50px;">
-                          <a class="nav-link" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false">{{$loop->iteration}}</a>
+                          <a class="nav-link" id="pills-{{$loop->iteration}}-tab" data-toggle="pill" href="#pills-{{$loop->iteration}}" role="tab" aria-controls="{{$loop->iteration}}" aria-selected="false" style="text-align: center; padding-top: 25%;">{{$loop->iteration}}</a>
                       </li>
                       @endif
                   @endif
@@ -162,8 +172,8 @@
                     <div class="col-md-2">
 
                     </div>
-                    <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; padding: 1%;">
-                      <button class="btn btnNext" type="button" >NEXT</button>
+                    <div class="col-md-2">
+                      <button class="btn btnNext" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;">NEXT</button>
                     </div>
                   </div>
 
@@ -242,12 +252,12 @@
                       <div class="col-md-8">
 
                       </div>
-                      <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; padding: 1%;">
-                        <button class="btn btnPrevious" type="button" >PREVIOUS</button>
+                      <div class="col-md-2" >
+                        <button class="btn btnPrevious" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;">PREVIOUS</button>
 
                       </div>
-                      <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; padding: 1%;">
-                          <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal">SUBMIT</button>
+                      <div class="col-md-2">
+                          <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;">SUBMIT</button>
                       </div>
                     </div>
 
@@ -257,12 +267,12 @@
                       <div class="col-md-8">
 
                       </div>
-                      <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; padding: 1%;">
+                      <div class="col-md-2" >
 
-                        <button class="btn btnPrevious" type="button" >PREVIOUS</button>
+                        <button class="btn btnPrevious" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;">PREVIOUS</button>
                       </div>
-                      <div class="col-md-2" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; padding: 1%;">
-                        <button class="btn btnNext" type="button" >NEXT</button>
+                      <div class="col-md-2" >
+                        <button class="btn btnNext" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;">NEXT</button>
                       </div>
                     </div>
 
@@ -310,19 +320,19 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">CONFIRMATION</h5>
                         <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </a>
                     </div>
                     <div class="modal-body">
-                        <p>Anda pasti mahu menghantar quiz ini?</p>
+                        <p style="font-size: 150%;">Are you sure you want to submit this quiz?</p>
                     </div>
                     <div class="modal-footer">
-                        <a href="#" class="btn" data-dismiss="modal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 22%;">Batal</a>
+                        <a href="#" class="btn" data-dismiss="modal" style="background-image: url({{asset('concept/images/galaxy/submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 28%;">CANCEL</a>
                         <form action="{{route('quiz.start-quiz')}}" method="post">
                         @csrf
-                        <button type="submit" name="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">Hantar Quiz</button>
+                        <button type="submit" name="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 28%;">SUBMIT</button>
                       </form>
                     </div>
                 </div>
