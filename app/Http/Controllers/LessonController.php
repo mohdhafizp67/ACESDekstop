@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
 use App\Models\User;
 use App\Models\QuestionBank;
 use App\Models\AnswerBank;
 use App\Models\Lesson;
+use App\Models\Student_Lesson;
+
 
 use Illuminate\Http\Request;
 
@@ -22,7 +25,26 @@ class LessonController extends Controller
   }
   public function introduction()
   {
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "1";
+
+    $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
+    if($check_lesson_student == 0){
+      event($lesson_student_id = $this->create_lesson_student_1());
+    }
       return view('lesson.introduction');
+  }
+
+  public function create_lesson_student_1(){
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "1";
+    $student_completion = 1;
+
+    return Student_Lesson::create([
+        'lesson_id' => $lesson_id,
+        'student_id' => $student_id,
+        'student_completion' => $student_completion,
+    ]);
   }
 
   public function lokasivr()
