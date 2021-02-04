@@ -179,7 +179,7 @@
         </div>
 
         <!-- Main section -->
-        <main class="bg-light main-full-body">
+        <main class="main-full-body">
 
           <div class="modal fade" id="logOutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">

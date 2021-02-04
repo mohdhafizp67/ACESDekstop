@@ -2,7 +2,7 @@
 
 @section('content')
 <!DOCTYPE html>
-<html lang="en" style="background-color: #232121;">
+<html lang="en" style="background-color: #130e29 !important;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +54,7 @@
               @endif
 
 
-              <div class="card border-dark" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
+              <div class="card border-dark" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%;">
                 <div class="card-header" style="padding-bottom: 1px; border: transparent !important; padding-top: 4%; font-size: 160%; color: white; text-align: center;">CHANGE PASSWORD</div>
                 <hr style="width: 70%; margin: 0 auto; ">
                 <form action="{{route('user.change-password.save')}}" method="POST">
@@ -170,7 +170,7 @@
 
                     </div>
                     <div class="col-md-6 text-center">
-                        <button type="button" class="btn" name="button" data-toggle="modal" data-target="#exampleModal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 60%;">
+                        <button type="button" class="btn" name="button" data-toggle="modal" data-target="#exampleModal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 70%;">
                             CHANGE PASSWORD
                         </button>
                     </div>

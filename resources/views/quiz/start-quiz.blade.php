@@ -2,7 +2,9 @@
 
 @section('content')
 
-
+<!DOCTYPE html>
+<html lang="en" style="background-color: #130e29 !important;">
+  <head>
 <style media="screen">
 
     .label {
@@ -48,7 +50,8 @@
 
 </style>
 
-
+</head>
+<body>
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-bottom: 6%;">
   <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">QUIZ</h1>
   <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Please answer all the question</h1>
@@ -345,6 +348,7 @@
   </div>
 
 </div>
+</body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -419,10 +423,7 @@ $(document).ready(function(){
 });
 </script>
 
-<script>
 
-</script>
-
-
+</html>
 
 @endsection
