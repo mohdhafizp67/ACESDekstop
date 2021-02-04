@@ -156,7 +156,7 @@
 		</div>
 
 	</div>
-	<div class="row" style="padding-bottom: 1%">
+	<div class="row" style="padding-bottom: 5%">
     <div class="col-md-1">
 
     </div>
