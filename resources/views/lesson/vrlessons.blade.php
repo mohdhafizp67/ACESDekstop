@@ -225,7 +225,8 @@
                 <!-- <img alt="Bootstrap Image Preview" src="{{asset('concept/images/pelajaran/lokasi.jpg')}}" style="width: 100%; height: auto;"> -->
 
               <div class="w3-content w3-display-container">
-                <img class="skill" src="{{asset('concept/images/pelajaran/1.jpg')}}" style="width:100%">
+                <img class="career" src="{{asset('concept/images/pelajaran/vrcourses.jpg')}}" style="width:100%">
+
 
 
                 <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -273,7 +274,8 @@
                 </div> -->
                 <div class="modal-body">
                   <div class="w3-content w3-display-container">
-                    <img class="career" src="{{asset('concept/images/pelajaran/vrcourses.jpg')}}" style="width:100%">
+                    <img class="skill" src="{{asset('concept/images/pelajaran/icon/career2.jpeg')}}" style="width:100%">
+
 
 
                     <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
