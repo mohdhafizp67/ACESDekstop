@@ -135,7 +135,7 @@ margin-left: -48%;
       		<div class="col-md-12">
       			<div class="row" style="margin-top: 0%;">
       				<div class="col-md-4">
-                <iframe src="https://giphy.com/embed/javd6e9mMU0Gk" width="100%" height="auto" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/drone-javd6e9mMU0Gk"></a></p>
+                <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
       				</div>
       				<!-- <div class="col-md-6">
       					<div class="row">

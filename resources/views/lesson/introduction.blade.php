@@ -166,11 +166,9 @@
   		<input type="radio" name="testimonial" id="t-5"> -->
   		<div class="testimonials">
         <label class="item" style="margin-top: -5%;">
-          <iframe class="embed-responsive-item" width="100%" height="300px" src="https://www.youtube.com/embed/l2l5ZeVxmyo?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" width="100%" height="300px" src="https://www.youtube.com/embed/19w-AbOKx3Y?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </label>
-
-
 
   		</div>
   		<!-- <div class="dots">
@@ -200,9 +198,9 @@
     <div class="col-md-8">
       <div class="items">
       		<div class="item1 active">
-      			<img src="{{asset('concept/images/pelajaran/icon/colleges.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
+      			<img src="{{asset('concept/images/pelajaran/businessi40.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
       		</div>
-      		<div class=" item1 next" >
+      		<!-- <div class=" item1 next" >
             <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
       		</div>
       		<div class="item1" >
@@ -213,7 +211,7 @@
           </div>
       		<div class="item1 prev">
             <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
-      		</div>
+      		</div> -->
 
       	</div>
 
@@ -230,13 +228,13 @@
                 <!-- <img alt="Bootstrap Image Preview" src="{{asset('concept/images/pelajaran/lokasi.jpg')}}" style="width: 100%; height: auto;"> -->
 
               <div class="w3-content w3-display-container">
-                <img class="mySlides" src="{{asset('concept/images/pelajaran/1.jpg')}}" style="width:100%">
-                <img class="mySlides" src="{{asset('concept/images/pelajaran/2.jpg')}}" style="width:100%">
-                <img class="mySlides" src="{{asset('concept/images/pelajaran/3.jpg')}}" style="width:100%">
+                <img class="mySlides" src="{{asset('concept/images/pelajaran/companiesi40.jpg')}}" style="width:100%">
+                <!-- <img class="mySlides" src="{{asset('concept/images/pelajaran/2.jpg')}}" style="width:100%">
+                <img class="mySlides" src="{{asset('concept/images/pelajaran/3.jpg')}}" style="width:100%"> -->
 
 
-                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
               </div>
                 </div>
 
