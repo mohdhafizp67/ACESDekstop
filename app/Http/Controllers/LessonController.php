@@ -19,8 +19,9 @@ class LessonController extends Controller
       return view('lesson.courses');
   }
 
-  public function pillar()
+  public function vrlessons()
   {
+
 
     $student_id = Auth::user()->student->id;
     $lesson_id = "2";
@@ -29,7 +30,9 @@ class LessonController extends Controller
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_2());
     }
-      return view('lesson.pillar');
+
+      return view('lesson.vrlessons');
+
   }
 
   public function create_lesson_student_2(){
