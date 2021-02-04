@@ -67,8 +67,8 @@
     }
 
     .item1 img {
-      width: 100%;
-      height: 100%;
+      width: 90%;
+      height: 90%;
       object-fit: cover;
     }
 
@@ -133,10 +133,16 @@
       /* float: right; */
     }
 
-    /* @font-face {
-        font-family: Azonix-1VB0;
-        src: url({{asset('concept/fonts/Azonix-1VB0.otf')}});
-    } */
+    .nav-tabs {
+    border-bottom: 0px solid #dee2e6;
+    }
+
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #013443;
+    border-color: #00f0ff #00f0ff #00f0ff;
+    }
+
 
     </style>
   </head>
@@ -150,45 +156,31 @@
 		</div>
 
 	</div>
-	<div class="row" style="padding-bottom: 10%">
+	<div class="row" style="padding-bottom: 1%">
     <div class="col-md-1">
 
     </div>
     <div class="col-md-10" style="background-image: url({{asset('concept/images/galaxy/panel.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
-      <!-- <iframe class="embed-responsive-item" width="90%" height="300px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    <div class="tab-regular" style="margin-left: 5%;">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Part 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Part 2</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/rsnpypOFURw?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/M-TJz5nZ-9U?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
 
-      <div class="slider1">
-  		<!-- <input type="radio" name="testimonial" id="t-1" checked>
-  		<input type="radio" name="testimonial" id="t-2">
-  		<input type="radio" name="testimonial" id="t-3">
-  		<input type="radio" name="testimonial" id="t-4">
-  		<input type="radio" name="testimonial" id="t-5"> -->
-  		<div class="testimonials">
-        <label class="item" style="margin-top: -5%;">
-          <iframe class="embed-responsive-item" width="100%" height="300px" src="https://www.youtube.com/embed/M-TJz5nZ-9U?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        </label>
-
-  			<!-- <label class="item" for="t-2">
-          <iframe class="embed-responsive-item" width="100%" height="250px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  			</label> -->
-  			<!-- <label class="item" for="t-3">
-          <iframe class="embed-responsive-item" width="10%" height="250px" src="https://www.youtube.com/embed/TGJLXfSJDXI?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  			</label> -->
-
-  		</div>
-  		<!-- <div class="dots">
-
-  			<label for="t-1"></label>
-  			<label for="t-2"></label>
-  			<label for="t-3"></label>
-
-  		</div> -->
-  	</div>
-
+                        </div>
+                    </div>
 
     </div>
 
@@ -198,7 +190,7 @@
 
 	</div>
 
-  <div class="row" style="padding-top: 1%; padding-bottom: 10%">
+  <div class="row" style="padding-top: 1%; padding-bottom: 5%">
     <div class="col-md-2">
       <div class="button-container">
         <div class="button" ><i class="fas fa-angle-left" style="margin-left: 45%;"></i></div>
@@ -237,13 +229,11 @@
                 <!-- <img alt="Bootstrap Image Preview" src="{{asset('concept/images/pelajaran/lokasi.jpg')}}" style="width: 100%; height: auto;"> -->
 
               <div class="w3-content w3-display-container">
-                <img class="mySlides" src="{{asset('concept/images/pelajaran/1.jpg')}}" style="width:100%">
-                <img class="mySlides" src="{{asset('concept/images/pelajaran/2.jpg')}}" style="width:100%">
-                <img class="mySlides" src="{{asset('concept/images/pelajaran/3.jpg')}}" style="width:100%">
+                <img class="skill" src="{{asset('concept/images/pelajaran/1.jpg')}}" style="width:100%">
 
 
-                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
               </div>
                 </div>
 
@@ -262,8 +252,9 @@
                 </div> -->
                 <div class="modal-body">
                   <div class="w3-content w3-display-container">
-                    <img class="skill" src="{{asset('concept/images/pelajaran/1.jpg')}}" style="width:100%">
-
+                    <img class="mySlides" src="{{asset('concept/images/pelajaran/1.jpg')}}" style="width:100%">
+                    <img class="mySlides" src="{{asset('concept/images/pelajaran/2.jpg')}}" style="width:100%">
+                    <img class="mySlides" src="{{asset('concept/images/pelajaran/3.jpg')}}" style="width:100%">
 
 
                     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -289,8 +280,8 @@
                     <img class="career" src="{{asset('concept/images/pelajaran/vrcourses.jpg')}}" style="width:100%">
 
 
-                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                    <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
                   </div>
                 </div>
 

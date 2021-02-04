@@ -274,14 +274,14 @@
           <td style="color: #fff; font-size: 150%; color:#E9FF00">
             1000
           </td>
-          <td style="color: #fff; font-size: 150%; color:#E9FF00">
+          <!-- <td style="color: #fff; font-size: 150%; color:#E9FF00">
             <div class="popup" onclick="myFunction()">Share+
               <span class="popuptext" id="myPopup">
                 <a href="#" class="fa fa-facebook"></a>
   	             <a href="#" class="fa fa-twitter"></a>
                </span>
              </div>
-          </td>
+          </td> -->
 
 
         </tr>

@@ -22,7 +22,7 @@ class LessonSeeder extends Seeder
         [
         'id' => '1',
         'lesson_type' => 'IR 4.0',
-        'lesson_subject' => 'Pengenalan',
+        'lesson_subject' => 'Introduction',
         ]
       );
 

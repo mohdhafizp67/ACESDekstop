@@ -65,12 +65,12 @@
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #17a2b88a;
+    background-color: #012f37;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: .3rem;
     outline: 0;
-    border: 2px solid #007bff;
+    /* border: 2px solid #007bff; */
 }
 
 .modal-header {
@@ -198,7 +198,8 @@
                           <!-- <a href="#" class="btn btn-primary">Yes</a> -->
                           <form id="logout-form" action="{{ route('logout') }}" method="POST">
                           @csrf
-                          <button type="submit" name="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">LOG OUT</button>
+                          <button type="
+                          " name="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">LOG OUT</button>
                           </form>
                       </div>
                   </div>

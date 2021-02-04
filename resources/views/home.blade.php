@@ -58,6 +58,24 @@ font-size: 130%;
 margin-top: 58%;
 margin-left: -48%;
 }
+
+.list-group-item-action {
+    color: #f8f9fa !important;
+    font-size: 100%;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #003e616b;
+    border: 1px solid #17a2b8;
+}
+
+.text-muted {
+    color: #f8f9fa !important;
+}
 </style>
   </head>
   <body>
@@ -157,9 +175,9 @@ margin-left: -48%;
       				</div> -->
 
               <div class="col-md-8">
-                <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
+                <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box2.png')}}); background-repeat: no-repeat;background-size: 100% 100%; padding: 2%;">
                   <div class="card-header" style="background-color: transparent; border: transparent; font-weight: bold; font-size: 100%; margin: 3px;">ANNOUNCEMENT</div>
-                  <div class="card-body list-group p-2" style="overflow:auto;height:200px;width:80%; margin: 0 auto; border: transparent;">
+                  <div class="card-body list-group p-2" style="overflow:auto;height:150px;width:80%; margin: 0 auto; border: transparent;">
                     @foreach($announcement as $data)
 
                       <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
