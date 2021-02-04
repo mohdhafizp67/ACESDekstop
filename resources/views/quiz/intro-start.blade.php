@@ -4,7 +4,7 @@
 @section('content')
 
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" style="background-color: #130e29 !important;">
   <head>
     <meta charset="utf-8">
     <title>Start Quiz</title>

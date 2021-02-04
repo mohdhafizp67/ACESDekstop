@@ -3,7 +3,7 @@
 @section('content')
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #130e29 !important;">
   <head>
     <meta charset="utf-8">
     <title>LEADERBOARD</title>
@@ -65,7 +65,7 @@
   </div>
 </div>
 
-<div class="row" style="padding-bottom: 5%;">
+<div class="row" style="padding-bottom: 1%;">
   <div class="col-md-2">
 
   </div>
