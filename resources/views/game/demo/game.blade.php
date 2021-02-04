@@ -281,7 +281,7 @@
           </div>
 
           <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="2" />
+              <a href="http://161.35.227.188/drone_circuit/"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="2" /></a>
               <!-- <h1 class="slider-single-title">Circuit 01 - VR</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
