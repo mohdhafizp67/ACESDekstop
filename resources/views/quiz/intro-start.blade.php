@@ -35,7 +35,7 @@
 
 
 </div>
-<div class="row" style="padding-bottom: 21%;">
+<div class="row" style="padding-bottom: 22%;">
   <div class="col-md-4">
 
   </div>
