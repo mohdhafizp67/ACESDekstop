@@ -21,7 +21,27 @@ class LessonController extends Controller
 
   public function pillar()
   {
+
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "2";
+
+    $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
+    if($check_lesson_student == 0){
+      event($lesson_student_id = $this->create_lesson_student_2());
+    }
       return view('lesson.pillar');
+  }
+
+  public function create_lesson_student_2(){
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "2";
+    $student_completion = 1;
+
+    return Student_Lesson::create([
+        'lesson_id' => $lesson_id,
+        'student_id' => $student_id,
+        'student_completion' => $student_completion,
+    ]);
   }
   public function introduction()
   {
