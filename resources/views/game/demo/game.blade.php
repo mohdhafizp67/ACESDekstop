@@ -272,7 +272,7 @@
       <div class="slider-content">
 
           <div class="slider-single">
-              <a href="http://161.35.227.188/drone"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Introduction.png') }}" alt="1" /></a>
+              <a href="http://161.35.227.188/drone_1/"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Introduction.png') }}" alt="1" /></a>
               <!-- <h1 class="slider-single-title">Introduction - Tutorial</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
