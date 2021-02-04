@@ -19,9 +19,9 @@ class LessonController extends Controller
       return view('lesson.courses');
   }
 
-  public function pillar()
+  public function vrlessons()
   {
-      return view('lesson.pillar');
+      return view('lesson.vrlessons');
   }
   public function introduction()
   {
