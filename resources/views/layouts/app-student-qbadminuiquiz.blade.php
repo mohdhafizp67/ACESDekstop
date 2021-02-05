@@ -118,7 +118,6 @@
             <div class="the_menu mt-2">
                 <!-- Heading -->
                 <div class="side-menu-heading d-flex">
-                    <h6 class=" font-weight-bold pb-2 mx-3" style="color: yellow;">&nbsp&nbsp&nbsp&nbsp&nbsp{{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}} {{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[1]}} </h6>
 
                     <!-- <a  class="font-weight-bold ml-auto px-3"
                         href="{{ route('logout') }}"
