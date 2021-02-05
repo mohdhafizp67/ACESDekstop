@@ -281,7 +281,9 @@
           </div>
 
           <div class="slider-single">
+            <a href="http://161.35.227.188/Drone_Circuit_1_Keyboard/">
               <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="2" />
+            </a>
               <!-- <h1 class="slider-single-title">Circuit 01 - VR</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
@@ -290,7 +292,7 @@
           </div>
 
           <div class="slider-single">
-              <a href="http://161.35.227.188/drone_circuit_keyboard/"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2.png') }}" alt="3" /></a>
+              <a href="http://161.35.227.188/Drone_Circuit_2_Keyboard/"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2.png') }}" alt="3" /></a>
               <!-- <h1 class="slider-single-title">Circuit 02 - Addictive Manufacturing</h1> -->
               <!-- <a class="slider-single-likes" href="javascript:void(0);">
                   <i class="fa fa-heart"></i>
