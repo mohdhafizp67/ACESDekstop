@@ -37,8 +37,6 @@ class HomeController extends Controller
       $announcement = Announcement::get();
 
 
-
-
       // create student id
       if($student){
         //track student progress
@@ -64,6 +62,14 @@ class HomeController extends Controller
 
 
         return view('home', compact('announcement','lesson_progress','quiz_progress'));
+      }
+
+      // Hint: Auth::user() is the currently signed in user object.
+      $first_time_login = false;
+      if (Auth::user()->first_time_login) {
+          $first_time_login = true;
+          Auth::user()->first_time_login = 1; // Flip the flag to true
+          Auth::user()->save(); // By that you tell it to save the new flag value
       }
 
     }
