@@ -78,7 +78,7 @@ margin-left: -48%;
 }
 </style>
   </head>
-  <body>
+  <body onload="myFunction()">
 
     <div class="container-fluid">
 	<div class="row">
@@ -154,6 +154,11 @@ margin-left: -48%;
       			<div class="row" style="margin-top: 0%;">
       				<div class="col-md-4">
                 <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+                <audio id="myAudio" controls autoplay hidden="true";>
+                <source src="{{asset('concept/audio/cuba1.ogg')}}" type="audio/ogg">
+                <source src="{{asset('concept/audio/cuba.mp3')}}" type="audio/mpeg">
+                </audio>
+                <!-- <p id="demo1"></p> -->
       				</div>
       				<!-- <div class="col-md-6">
       					<div class="row">
@@ -315,5 +320,11 @@ $(document).ready(function ($) {
   animateElements();
   $(window).scroll(animateElements);
 });
+</script>
+
+<script>
+function myFunction() {
+  document.getElementById("myAudio").autoplay;
+}
 </script>
 @endsection

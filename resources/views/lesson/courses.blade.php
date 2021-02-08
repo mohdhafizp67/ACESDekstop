@@ -261,105 +261,118 @@
 
 
     <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">LESSONS IN I 4.0</h1>
-    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Swipe left to see other courses</h1>
-    <div class="slider-container">
+    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Swipe right to see other courses</h1>
 
-      <div class="slider-content">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="200%" height="auto" style="margin-top: 150%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+        <audio id="myAudio" controls autoplay hidden="true";>
+        <source src="{{asset('concept/audio/cuba1.ogg')}}" type="audio/ogg">
+        <source src="{{asset('concept/audio/cuba.mp3')}}" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="col-md-10" style="margin-left: -10%;">
+        <div class="slider-container">
 
-          <div class="slider-single">
-              <a href="{{route('lesson.introduction')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/01.png') }}" alt="1" /></a>
-              <!-- <h1 class="slider-single-title">VR</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
+          <div class="slider-content">
 
-          <div class="slider-single">
-              <a href="{{route('lesson.vrlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/02.png') }}" alt="2" /></a>
-              <!-- <h1 class="slider-single-title">Addictive Manufacturing</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
+              <div class="slider-single">
+                  <a href="{{route('lesson.introduction')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/01.png') }}" alt="1" /></a>
+                  <!-- <h1 class="slider-single-title">VR</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1,247</p>
+                  </a> -->
+              </div>
 
-          <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/03.png') }}" alt="3" />
-              <!-- <h1 class="slider-single-title">Internet of Things</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
+              <div class="slider-single">
+                  <a href="{{route('lesson.vrlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/02.png') }}" alt="2" /></a>
+                  <!-- <h1 class="slider-single-title">Addictive Manufacturing</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1,247</p>
+                  </a> -->
+              </div>
 
-
-          <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/04.png') }}" alt="4" />
-              <!-- <h1 class="slider-single-title">Big Data</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
+              <div class="slider-single">
+                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/03.png') }}" alt="3" />
+                  <!-- <h1 class="slider-single-title">Internet of Things</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1,247</p>
+                  </a> -->
+              </div>
 
 
-          <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/05.png') }}" alt="5" />
-              <!-- <h1 class="slider-single-title">Cloud Computing</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
+              <div class="slider-single">
+                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/04.png') }}" alt="4" />
+                  <!-- <h1 class="slider-single-title">Big Data</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1,247</p>
+                  </a> -->
+              </div>
 
-          <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/06.png') }}" alt="6" />
-              <!-- <h1 class="slider-single-title">Cyber Security</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
+
+              <div class="slider-single">
+                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/05.png') }}" alt="5" />
+                  <!-- <h1 class="slider-single-title">Cloud Computing</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1,247</p>
+                  </a> -->
+              </div>
+
+              <div class="slider-single">
+                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/06.png') }}" alt="6" />
+                  <!-- <h1 class="slider-single-title">Cyber Security</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1,247</p>
+                  </a> -->
+              </div>
+
+                <div class="slider-single">
+                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/07.png') }}" alt="7" />
+                  <!-- <h1 class="slider-single-title">Universal Integration</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1</p>
+                  </a> -->
+              </div>
 
             <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/07.png') }}" alt="7" />
-              <!-- <h1 class="slider-single-title">Universal Integration</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1</p>
-              </a> -->
+                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/08.png') }}" alt="8" />
+                  <!-- <h1 class="slider-single-title">Advanced Simulation</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>2</p>
+                  </a> -->
+              </div>
+
+            <div class="slider-single">
+                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/09.png') }}" alt="9" />
+                  <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>3</p> -->
+                  </a>
+              </div>
+
+              <div class="slider-single">
+                    <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/10.png') }}" alt="10" />
+                    <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
+                    <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                        <i class="fa fa-heart"></i>
+                        <p>3</p> -->
+                    </a>
+                </div>
+
           </div>
-
-        <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/08.png') }}" alt="8" />
-              <!-- <h1 class="slider-single-title">Advanced Simulation</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>2</p>
-              </a> -->
-          </div>
-
-        <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/09.png') }}" alt="9" />
-              <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>3</p> -->
-              </a>
-          </div>
-
-          <div class="slider-single">
-                <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/10.png') }}" alt="10" />
-                <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
-                <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                    <i class="fa fa-heart"></i>
-                    <p>3</p> -->
-                </a>
-            </div>
-
       </div>
-  </div>
+      </div>
+    </div>
+
 
 </div>
 
@@ -596,6 +609,12 @@
   }
 
   slideInitial();
+  </script>
+
+  <script>
+  function myFunction() {
+    document.getElementById("myAudio").autoplay;
+  }
   </script>
 
 </html>

@@ -93,6 +93,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'is_active' => 1,
             'is_student' => 1,
+            'first_time_login' => true
         ]);
     }
 }
