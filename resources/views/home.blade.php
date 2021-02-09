@@ -76,6 +76,27 @@ margin-left: -48%;
 .text-muted {
     color: #f8f9fa !important;
 }
+
+.button {
+  background-color: ##ffffff00;
+  border: none;
+  /* color: white; */
+  /* padding: 16px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buttonsound {
+  background-color: #ffffff00;
+  color: #fff;
+  /* border: 2px solid #4CAF50; */
+}
+
 </style>
   </head>
   <body onload="myFunction()">
@@ -87,7 +108,7 @@ margin-left: -48%;
 
         <h1 style="text-align: center; font-size: 450%; color: #fff; font-weight:bold; padding-top: 0%; padding-left: 9%;">
 
-  				ACES <font color="#ff0000">i 4.0</font> <br>
+  				ACES i<font color="#ff0000"> 4.0</font> <br>
   			</h1>
 
         <!-- <div style="position: absolute;  top: 70px;  right: 1px;">
@@ -98,7 +119,7 @@ margin-left: -48%;
           </a>
         </div> -->
         <div class="row">
-          <div class="col-md-3" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/profile_frame.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+          <div class="col-md-3" style="margin-top: -3%;background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/profile_frame.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
                 <div style="padding: 12%;"></div>
                 @if(Auth::user()->profile_picture == null)
@@ -153,13 +174,38 @@ margin-left: -48%;
       		<div class="col-md-12">
       			<div class="row" style="margin-top: 0%;">
       				<div class="col-md-4">
-                <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
-                <audio id="myAudio" controls autoplay hidden="true";>
-                <source src="{{asset('concept/audio/cuba1.ogg')}}" type="audio/ogg">
-                <source src="{{asset('concept/audio/cuba.mp3')}}" type="audio/mpeg">
-                </audio>
-                <!-- <p id="demo1"></p> -->
+                <span style="color: #fff; margin-left: -30%;">{{Auth::user()->name}}</span><br>
+                <span style="color: #fff; margin-left: -25%;">{{Auth::user()->school}}</span>
+                <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+
+
+                  <button class="button buttonsound" onclick="enableMute()" type="button" style="width: 25%; height: 15%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
+                  <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 15%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+
+                  <audio id="myAudio" controls autoplay hidden="true">
+
+                    <source src="{{asset('concept/audio/DASHBOARD.mp3')}}" type="audio/mpeg">
+                  </audio>
+
       				</div>
+              <script>
+              var aud = document.getElementById("myAudio");
+
+              function enableMute() {
+                console.log('mute');
+                aud.muted = true;
+              }
+
+              function disableMute() {
+                console.log('unmute');
+                aud.muted = false;
+              }
+
+              function checkMute() {
+                console.log('check');
+                alert(aud.muted);
+              }
+              </script>
       				<!-- <div class="col-md-6">
       					<div class="row">
       						<div class="col-md-6" style="padding: 20%;background-color: transparent !important;background-image: url({{asset('concept/images/galaxy/Btn_Prop.png')}}); background-repeat: no-repeat;background-size: 100% 100%;">
@@ -324,7 +370,9 @@ $(document).ready(function ($) {
 
 <script>
 function myFunction() {
+  console.log('auto');
   document.getElementById("myAudio").autoplay;
 }
 </script>
+
 @endsection

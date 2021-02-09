@@ -29,7 +29,7 @@ class NegeriSeeder extends Seeder
       DB::table('districts')-> insert(
         [
 
-        'daerah' => 'Alor Pasir',
+        'daerah' => 'Tumpat',
         'negeri' => 'Kelantan',
         ]
       );
@@ -37,7 +37,7 @@ class NegeriSeeder extends Seeder
       DB::table('districts')-> insert(
         [
 
-        'daerah' => 'Badang',
+        'daerah' => 'Kota Bharu',
         'negeri' => 'Kelantan',
         ]
       );
@@ -45,7 +45,7 @@ class NegeriSeeder extends Seeder
       DB::table('districts')-> insert(
         [
 
-        'daerah' => 'Banggu',
+        'daerah' => 'Bachok',
         'negeri' => 'Kelantan',
         ]
       );
@@ -53,7 +53,7 @@ class NegeriSeeder extends Seeder
       DB::table('districts')-> insert(
         [
 
-        'daerah' => 'Batu Melintang',
+        'daerah' => 'Pasir Mas',
         'negeri' => 'Kelantan',
         ]
       );
@@ -61,7 +61,7 @@ class NegeriSeeder extends Seeder
       DB::table('districts')-> insert(
         [
 
-        'daerah' => 'Batu Mengkebang',
+        'daerah' => 'Tanah Merah',
         'negeri' => 'Kelantan',
         ]
       );
@@ -69,7 +69,7 @@ class NegeriSeeder extends Seeder
       DB::table('districts')-> insert(
         [
 
-        'daerah' => 'Bekelam',
+        'daerah' => 'Machang',
         'negeri' => 'Kelantan',
         ]
       );
@@ -77,7 +77,7 @@ class NegeriSeeder extends Seeder
       DB::table('districts')-> insert(
         [
 
-        'daerah' => 'Bertam',
+        'daerah' => 'Jeli',
         'negeri' => 'Kelantan',
         ]
       );
@@ -85,7 +85,7 @@ class NegeriSeeder extends Seeder
       DB::table('districts')-> insert(
         [
 
-        'daerah' => 'Beta',
+        'daerah' => 'Kuala Krai',
         'negeri' => 'Kelantan',
         ]
       );
@@ -93,426 +93,426 @@ class NegeriSeeder extends Seeder
       DB::table('districts')-> insert(
         [
 
-        'daerah' => 'Bukit Abal',
+        'daerah' => 'Gua Musang',
         'negeri' => 'Kelantan',
         ]
       );
 
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Bukit Awang',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Bukit Jawa',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Bunut Susu',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Chetok',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Chiku',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Dabong',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Galas',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Gong Datok',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Gual Periok',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Gunong',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Jajahan Kota Bharu',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Jal Besar',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Jedok',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Jeram',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Kangkong',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Kebakat',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Kemumin',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Ketereh',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Kota',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Kuala Lemal',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Kubang Gadong',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Kubang Kerian',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Kubang Sepat',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Kusial',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Labok',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Limbat',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Limbongan',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Lojing',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Mahligai',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Melawi',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Olak Jeram',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Padang Pak Amat',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Pangkal Meleret',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Panji',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Panyit',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Pendek',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Pengkalan Kubur',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Peringat',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Perupok',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Pulai Chondong',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Salor',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Semerak',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Sering',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Sungai Pinang',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Tanjong Pauh',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Tawang',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Telong',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Temangan',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Terbok',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Ulu Kesial',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Ulu Sat',
-        'negeri' => 'Kelantan',
-        ]
-      );
-
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Wakat Bharu',
-        'negeri' => 'Kelantan',
-        ]
-      );
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Bukit Awang',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Bukit Jawa',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Bunut Susu',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Chetok',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Chiku',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Dabong',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Galas',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Gong Datok',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Gual Periok',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Gunong',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Jajahan Kota Bharu',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Jal Besar',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Jedok',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Jeram',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Kangkong',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Kebakat',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Kemumin',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Ketereh',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Kota',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Kuala Lemal',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Kubang Gadong',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Kubang Kerian',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Kubang Sepat',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Kusial',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Labok',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Limbat',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Limbongan',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Lojing',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Mahligai',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Melawi',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Olak Jeram',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Padang Pak Amat',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Pangkal Meleret',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Panji',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Panyit',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Pendek',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Pengkalan Kubur',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Peringat',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Perupok',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Pulai Chondong',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Salor',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Semerak',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Sering',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Sungai Pinang',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Tanjong Pauh',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Tawang',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Telong',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Temangan',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Terbok',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Ulu Kesial',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Ulu Sat',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
+
+      // DB::table('districts')-> insert(
+      //   [
+      //
+      //   'daerah' => 'Wakat Bharu',
+      //   'negeri' => 'Kelantan',
+      //   ]
+      // );
 
       DB::table('districts')-> insert(
         [
@@ -613,7 +613,7 @@ class NegeriSeeder extends Seeder
       DB::table('districts')-> insert(
         [
 
-        'daerah' => 'Kampung Pagi',
+        'daerah' => 'Temerloh',
         'negeri' => 'Pahang',
         ]
       );
@@ -666,6 +666,6 @@ class NegeriSeeder extends Seeder
         ]
       );
 
-    
+
     }
 }

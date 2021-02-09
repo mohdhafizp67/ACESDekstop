@@ -252,6 +252,26 @@
       	99%{	color:transparent;	}
       	100%{	color: #ffffff;	}
       }
+
+      .button {
+        background-color: ##ffffff00;
+        border: none;
+        /* color: white; */
+        /* padding: 16px 32px; */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /* margin: 4px 2px; */
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      .buttonsound {
+        background-color: #ffffff00;
+        color: #fff;
+        /* border: 2px solid #4CAF50; */
+      }
       </style>
 
   </head>
@@ -261,17 +281,40 @@
 
 
     <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">LESSONS IN I 4.0</h1>
-    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Swipe right to see other courses</h1>
+    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Click right to see other courses</h1>
 
     <div class="row">
-      <div class="col-md-2">
-        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="200%" height="auto" style="margin-top: 150%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
-        <audio id="myAudio" controls autoplay hidden="true";>
-        <source src="{{asset('concept/audio/cuba1.ogg')}}" type="audio/ogg">
-        <source src="{{asset('concept/audio/cuba.mp3')}}" type="audio/mpeg">
+      <div class="col-md-4">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" style="margin-top: 30%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+
+        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 20%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
+        <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+
+        <audio id="myAudio" controls autoplay hidden="true">
+        
+        <source src="{{asset('concept/audio/LESSONS.mp3')}}" type="audio/mpeg">
         </audio>
+
+        <script>
+        var aud = document.getElementById("myAudio");
+
+        function enableMute() {
+          console.log('mute');
+          aud.muted = true;
+        }
+
+        function disableMute() {
+          console.log('unmute');
+          aud.muted = false;
+        }
+
+        function checkMute() {
+          console.log('check');
+          alert(aud.muted);
+        }
+        </script>
       </div>
-      <div class="col-md-10" style="margin-left: -10%;">
+      <div class="col-md-8" style="margin-left: -20%;">
         <div class="slider-container">
 
           <div class="slider-content">
@@ -613,6 +656,7 @@
 
   <script>
   function myFunction() {
+    console.log('auto');
     document.getElementById("myAudio").autoplay;
   }
   </script>

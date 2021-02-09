@@ -24,6 +24,7 @@ class UserController extends Controller
 
     return view('user.profile.edit', compact('user', 'district'));
   }
+  
 
   public function update($id)
   {

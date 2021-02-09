@@ -16,6 +16,27 @@
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="css/style.css" rel="stylesheet">
 
+    <style>
+    .button {
+      background-color: ##ffffff00;
+      border: none;
+      /* color: white; */
+      /* padding: 16px 32px; */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      /* margin: 4px 2px; */
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .buttonsound {
+      background-color: #ffffff00;
+      color: #fff;
+      /* border: 2px solid #4CAF50; */
+    }
+    </style>
   </head>
   <body>
 
@@ -26,10 +47,37 @@
           <!-- <div style="padding: 30px;"></div> -->
 
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-4">
+              <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" style="margin-top: 60%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
+              <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 0%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
+              <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+
+              <audio id="myAudio" controls autoplay hidden="true">
+              <source src="{{asset('concept/audio/.ogg')}}" type="audio/ogg">
+              <source src="{{asset('concept/audio/.mp3')}}" type="audio/mpeg">
+              </audio>
+
+              <script>
+              var aud = document.getElementById("myAudio");
+
+              function enableMute() {
+                console.log('mute');
+                aud.muted = true;
+              }
+
+              function disableMute() {
+                console.log('unmute');
+                aud.muted = false;
+              }
+
+              function checkMute() {
+                console.log('check');
+                alert(aud.muted);
+              }
+              </script>
             </div>
-            <div class="col-md" style="padding-top: 6%;">
+            <div class="col-md-8" style="padding-top: 6%;margin-left: -5%;">
 
               @if ($message = Session::get('success'))
               <div id=alert>
@@ -126,17 +174,15 @@
 
                     </div>
                   </div>
-                  <div style="padding: 10px;"></div>
+                  <!-- <div style="padding: 10px;"></div> -->
 
                 </div>
               </form>
               </div>
             </div>
-            <div class="col-md-2">
 
-            </div>
           </div>
-          <div style="padding: 1%;"></div>
+
     		</div>
     	</div>
     </div>
@@ -144,6 +190,13 @@
     <!-- <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script> -->
+
+    <script>
+    function myFunction() {
+      console.log('auto');
+      document.getElementById("myAudio").autoplay;
+    }
+    </script>
   </body>
 </html>
 @endsection

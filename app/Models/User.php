@@ -33,8 +33,7 @@ class User extends Authenticatable implements Auditable
         'is_active',
         'is_student',
         'is_ecerdb_personnel',
-        'profile_picture',
-        'first_time_login'
+        'profile_picture'
 
     ];
 

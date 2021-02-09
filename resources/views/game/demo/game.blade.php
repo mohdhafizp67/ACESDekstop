@@ -256,6 +256,25 @@
       	100%{	color: #ffffff;	}
       }
 
+      .button {
+        background-color: ##ffffff00;
+        border: none;
+        /* color: white; */
+        /* padding: 16px 32px; */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /* margin: 4px 2px; */
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      .buttonsound {
+        background-color: #ffffff00;
+        color: #fff;
+        /* border: 2px solid #4CAF50; */
+      }
       </style>
 
   </head>
@@ -266,107 +285,143 @@
 
 
     <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">GAMES</h1>
-    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Swipe left to see other circut</h1>
-    <div class="slider-container">
+    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Click right to see other circuit</h1>
 
-      <div class="slider-content">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" style="margin-top: 30%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
-          <div class="slider-single">
-              <a href="http://161.35.227.188/drone/"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Introduction.png') }}" alt="1" /></a>
-              <!-- <h1 class="slider-single-title">Introduction - Tutorial</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
+        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 20%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
+        <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
 
-          <div class="slider-single">
-              <a href="http://161.35.227.188/drone_circuit_1_keyboard/"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="2" />
-              <!-- <h1 class="slider-single-title">Circuit 01 - VR</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
+        <audio id="myAudio" controls autoplay hidden="true">
 
-          <div class="slider-single">
-              <a href="http://161.35.227.188/drone_circuit_2_keyboard/"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2.png') }}" alt="3" /></a>
-              <!-- <h1 class="slider-single-title">Circuit 02 - Addictive Manufacturing</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
+        <source src="{{asset('concept/audio/GAME.mp3')}}" type="audio/mpeg">
+        </audio>
+
+        <script>
+        var aud = document.getElementById("myAudio");
+
+        function enableMute() {
+          console.log('mute');
+          aud.muted = true;
+        }
+
+        function disableMute() {
+          console.log('unmute');
+          aud.muted = false;
+        }
+
+        function checkMute() {
+          console.log('check');
+          alert(aud.muted);
+        }
+        </script>
+      </div>
+      <div class="col-md-8" style="margin-left: -20%;">
+        <div class="slider-container">
+
+          <div class="slider-content">
+
+              <div class="slider-single">
+                  <a href="http://161.35.227.188/drone/"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Introduction.png') }}" alt="1" /></a>
+                  <!-- <h1 class="slider-single-title">Introduction - Tutorial</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1,247</p>
+                  </a> -->
+              </div>
+
+              <div class="slider-single">
+                  <a href="http://161.35.227.188/drone_circuit_1_keyboard/"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="2" />
+                  <!-- <h1 class="slider-single-title">Circuit 01 - VR</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1,247</p>
+                  </a> -->
+              </div>
+
+              <div class="slider-single">
+                  <a href="http://161.35.227.188/drone_circuit_2_keyboard/"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2.png') }}" alt="3" /></a>
+                  <!-- <h1 class="slider-single-title">Circuit 02 - Addictive Manufacturing</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1,247</p>
+                  </a> -->
+              </div>
 
 
-          <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3.png') }}" alt="4" />
-              <!-- <h1 class="slider-single-title">Circuit 03 - Internet of Things</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
+              <div class="slider-single">
+                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3.png') }}" alt="4" />
+                  <!-- <h1 class="slider-single-title">Circuit 03 - Internet of Things</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1,247</p>
+                  </a> -->
+              </div>
 
 
-          <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4.png') }}" alt="5" />
-              <!-- <h1 class="slider-single-title">Circuit 04 - Big Data</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
+              <div class="slider-single">
+                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4.png') }}" alt="5" />
+                  <!-- <h1 class="slider-single-title">Circuit 04 - Big Data</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1,247</p>
+                  </a> -->
+              </div>
 
-          <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit5.png') }}" alt="6" />
-              <!-- <h1 class="slider-single-title">Circuit 05 - Cloud Computing</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1,247</p>
-              </a> -->
-          </div>
+              <div class="slider-single">
+                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit5.png') }}" alt="6" />
+                  <!-- <h1 class="slider-single-title">Circuit 05 - Cloud Computing</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1,247</p>
+                  </a> -->
+              </div>
+
+                <div class="slider-single">
+                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit6.png') }}" alt="6" />
+                  <!-- <h1 class="slider-single-title">Circuit 06 - Cyber Security</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>1</p>
+                  </a> -->
+              </div>
 
             <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit6.png') }}" alt="6" />
-              <!-- <h1 class="slider-single-title">Circuit 06 - Cyber Security</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>1</p>
-              </a> -->
+                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit7.png') }}" alt="6" />
+                  <!-- <h1 class="slider-single-title">Circuit 07 - Universal Integration</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>2</p>
+                  </a> -->
+              </div>
+
+            <div class="slider-single">
+                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit8.png') }}" alt="6" />
+                  <!-- <h1 class="slider-single-title">Circuit 08 - Advanced Simulation</h1> -->
+                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                      <i class="fa fa-heart"></i>
+                      <p>3</p> -->
+                  </a>
+              </div>
+
+              <div class="slider-single">
+                    <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit9ecerhq.png') }}" alt="6" />
+                    <!-- <h1 class="slider-single-title">Circuit 09 - Autonomous Robot</h1> -->
+                    <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                        <i class="fa fa-heart"></i>
+                        <p>3</p> -->
+                    </a>
+                </div>
+
+
           </div>
-
-        <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit7.png') }}" alt="6" />
-              <!-- <h1 class="slider-single-title">Circuit 07 - Universal Integration</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>2</p>
-              </a> -->
-          </div>
-
-        <div class="slider-single">
-              <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit8.png') }}" alt="6" />
-              <!-- <h1 class="slider-single-title">Circuit 08 - Advanced Simulation</h1> -->
-              <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                  <i class="fa fa-heart"></i>
-                  <p>3</p> -->
-              </a>
-          </div>
-
-          <div class="slider-single">
-                <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit9ecerhq.png') }}" alt="6" />
-                <!-- <h1 class="slider-single-title">Circuit 09 - Autonomous Robot</h1> -->
-                <!-- <a class="slider-single-likes" href="javascript:void(0);">
-                    <i class="fa fa-heart"></i>
-                    <p>3</p> -->
-                </a>
-            </div>
-
 
       </div>
+      </div>
+    </div>
 
-  </div>
 
 </div>
 
@@ -604,6 +659,13 @@
   }
 
   slideInitial();
+  </script>
+
+  <script>
+  function myFunction() {
+    console.log('auto');
+    document.getElementById("myAudio").autoplay;
+  }
   </script>
 
 </html>
