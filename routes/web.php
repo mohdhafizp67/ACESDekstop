@@ -34,6 +34,8 @@ Route::post('/profile/update', [App\Http\Controllers\UserController::class, 'upd
 
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('leaderboard');
 
+
+
 //Lessons
 Route::get('/courses', [App\Http\Controllers\LessonController::class, 'courses'])->name('lesson.courses');
 

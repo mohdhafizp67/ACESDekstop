@@ -14,7 +14,7 @@ class AddFirstTimeLoginToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-          $table->boolean('first_time_login')->default(false);
+            //
         });
     }
 
@@ -26,7 +26,7 @@ class AddFirstTimeLoginToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-          $table->dropColumn('first_time_login');
+            //
         });
     }
 }

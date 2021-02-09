@@ -4,6 +4,35 @@
 <html>
 <head>
   <link rel="stylesheet" href="{{ asset('css/Register.css') }} ">
+
+  <style>
+  .footer {
+    background-color: #000c15;
+    /* padding: 10px; */
+    /* text-align: center; */
+    font-size: 80%;
+  }
+
+  .button {
+    background-color: ##ffffff00;
+    border: none;
+    /* color: white; */
+    /* padding: 16px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .buttonsound {
+    background-color: #ffffff00;
+    color: #fff;
+    /* border: 2px solid #4CAF50; */
+  }
+  </style>
 </head>
 <body>
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
@@ -20,11 +49,47 @@
       <div class="col-md-1">
 
       </div>
-      <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 5%;">
-        <button type="button" class="btn">
+      <!-- <div class="col-md-8" style="color: #fff; text-align: center;padding: 5%;">
+        <button type="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; height: 165%;">
           <a href="#" style="font-size: 80%;">HELP</a>
         </button>
-      </div>
+      </div> -->
+      <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+
+      <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 20%;width: 25%; height: 15%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-off"></i></button>
+      <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 15%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+      <span  onclick="replay()" style="color: #fff; margin-left: 3%;"><i class="fas fa-undo"></i></span>
+
+
+      <audio id="myAudio" controls autoplay hidden="true">
+
+        <source src="{{asset('concept/audio/REGISTRATION.mp3')}}" type="audio/mpeg">
+      </audio>
+
+      <script>
+      var aud = document.getElementById("myAudio");
+
+      function enableMute() {
+        console.log('mute');
+        aud.muted = true;
+      }
+
+      function disableMute() {
+        console.log('unmute');
+        aud.muted = false;
+      }
+
+      function checkMute() {
+        console.log('check');
+        alert(aud.muted);
+      }
+
+      function replay(){
+        aud.currentTime=0;
+        aud.play();
+      }
+
+      </script>
       <div class="col-md-2">
 
       </div>
@@ -34,11 +99,11 @@
       <div class="col-md-1">
 
       </div>
-      <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 5%;">
-        <button type="button" class="btn">
+      <!-- <div class="col-md-8" style="color: #fff; text-align: center;padding: 5%;">
+        <button type="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; height: 165%;">
           <a href="#" style="font-size: 80%;">T&C</a>
         </button>
-      </div>
+      </div> -->
       <div class="col-md-2">
 
       </div>
@@ -48,11 +113,11 @@
       <div class="col-md-1">
 
       </div>
-      <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 5%;">
-        <button type="button" class="btn">
+      <!-- <div class="col-md-8" style="color: #fff; text-align: center;padding: 5%;">
+        <button type="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; height: 165%;">
           <a href="#" style="font-size: 80%;">PRIVACY</a>
         </button>
-      </div>
+      </div> -->
       <div class="col-md-2">
 
       </div>
@@ -216,7 +281,7 @@
               <label for="exampleInputEmail1" style="color: #fff">
                 SCHOOL NAME
               </label>
-              <input type="text" placeholder="SCHOOL NAME" name="school" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('school') ? 'is-invalid' : '' }}" value="{{ old('school') }}" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"/>
+              <input type="text" placeholder="School Name" name="school" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('school') ? 'is-invalid' : '' }}" value="{{ old('school') }}" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"/>
               @if($errors->has('school'))
                   <div class="invalid-feedback">
                       <strong>{{ $errors->first('school') }}</strong>
@@ -232,12 +297,26 @@
                   <label for="exampleInputPassword1" style="color: #fff">
                     PASSWORD
                   </label>
-                  <input type="password" placeholder="Password" id="password" name="password" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"/>
-                  @if($errors->has('password'))
-                      <div class="invalid-feedback">
-                          <strong>{{ $errors->first('password') }}</strong>
+                  <div class="input-group mb-3" style="color: white !important;">
+                      <input type="password"
+                             id="password"
+                             name="password"
+                             class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
+                             placeholder="Current Password"
+                             required>
+                      <div class="input-group-append">
+                          <div class="input-group-text">
+                            <a onclick="visiblePass()">
+                              <span id="icon_eye_pass" class="fa fa-eye" style="color: grey;"></span>
+                            </a>
+                          </div>
                       </div>
-                  @endif
+                      @if($errors->has('password'))
+                          <div class="invalid-feedback">
+                              <strong>{{ $errors->first('password') }}</strong>
+                          </div>
+                      @endif
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
@@ -246,12 +325,32 @@
                   <label for="exampleInputPassword1" style="color: #fff">
                     CONFIRM PASSWORD
                   </label>
-                  <input type="password" placeholder="Confirm Password" id="password_confirmation" name="password_confirmation" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('password_confirmation') ? 'is-invalid' : '' }}"/>
-                  @if($errors->has('password'))
-                      <div class="invalid-feedback">
-                          <strong>{{ $errors->first('password') }}</strong>
+                  <div class="input-group mb-3">
+                      <input type="password"
+                             id="password_confirmation"
+                             name="password_confirmation"
+                             class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
+                             placeholder="Confirmation Password"
+                             required>
+
+                      <div class="input-group-append">
+
+                          <div class="input-group-text">
+                            <a onclick="visiblePassConfirm()">
+
+                              <span id="icon_eye_confirm" class="fa fa-eye" style="color: grey;"></span>
+                            </a>
+
+                          </div>
+
                       </div>
-                  @endif
+
+                      @if($errors->has('password'))
+                          <div class="invalid-feedback">
+                              <strong>{{ $errors->first('password') }}</strong>
+                          </div>
+                      @endif
+                  </div>
                 </div>
 
               </div>
@@ -269,17 +368,13 @@
               </div>
             </div>
 
+            <span style="font-size: 80%;margin-left: 20%;"><a href="{{route('login')}}">Have an account? Log In here</a></span>
+
             </button>
           </form>
         </div>
 
       </div>
-
-
-
-
-
-
 
     </div>
 
@@ -290,6 +385,11 @@
   </div> -->
 </div>
 
+      <div class="row">
+        <div class="footer">
+        <span>&copy; Hakcipta Terpelihara 2021</span>&nbsp&nbsp&nbsp&nbsp<span style="margin-left: 53%;"><font color="white">TERMS&CONDITIONS</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">PRIVACY</font></span>
+        </div>
+      </div>
 
 </div>
 
@@ -370,6 +470,11 @@ $('#state').change(function(){
 });
 </script>
 
-
+<script>
+function myFunction() {
+  console.log('auto');
+  document.getElementById("myAudio").autoplay;
+}
+</script>
 </html>
 @endsection
