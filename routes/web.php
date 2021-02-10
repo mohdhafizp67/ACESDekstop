@@ -20,6 +20,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('/password/resets/{token}/{email}', [App\Http\Controllers\Auth\ResetPasswordController::class, 'showResetForm'])->name('password.reset');
 
 //ajax routes
 Route::get('/register/ajax/get-district/{data}', [App\Http\Controllers\ApiController::class, 'ajaxDistrict'])->name('register.ajax.district');
