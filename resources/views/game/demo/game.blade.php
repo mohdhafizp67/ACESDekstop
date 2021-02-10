@@ -33,10 +33,10 @@
       .slider-container {
         position: relative;
         margin: 0 auto;
-        width: 800px;
-        height: 525px;
+        /* width: 800px; */
+        height: 452px;
       }
-      .slider-container .bullet-container {
+      /* .slider-container .bullet-container {
         position: absolute;
         bottom: 20%;
         width: 100%;
@@ -51,7 +51,7 @@
         border-radius: 50%;
         background-color: white;
         opacity: 0.5;
-      }
+      } */
       .slider-container .bullet-container .bullet:last-child {
         margin-right: 0px;
       }
@@ -289,11 +289,12 @@
 
     <div class="row">
       <div class="col-md-4">
-        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" style="margin-top: 30%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="80%" style="margin-top: 60%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
-        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 20%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
+        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 0%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
         <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-
+        <span  onclick="replay()" style="color: #fff; margin-left: 3%;"><i class="fas fa-undo"></i></span>
+        
         <audio id="myAudio" controls autoplay hidden="true">
 
         <source src="{{asset('concept/audio/GAME.mp3')}}" type="audio/mpeg">
@@ -316,9 +317,13 @@
           console.log('check');
           alert(aud.muted);
         }
+        function replay(){
+          aud.currentTime=0;
+          aud.play();
+        }
         </script>
       </div>
-      <div class="col-md-8" style="margin-left: -20%;">
+      <div class="col-md-8" style="margin-left: -14%;">
         <div class="slider-container">
 
           <div class="slider-content">

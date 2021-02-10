@@ -33,26 +33,27 @@
       .slider-container {
         position: relative;
         margin: 0 auto;
-        width: 800px;
-        height: 525px;
+        /* width: 800px; */
+        height: 452px;
 
       }
-      .slider-container .bullet-container {
+      /* .slider-container .bullet-container {
         position: absolute;
         bottom: 20%;
-        width: 100%;
+        width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-      .slider-container .bullet-container .bullet {
+        margin-left: 25%;
+      } */
+      /* .slider-container .bullet-container .bullet {
         margin-right: 14px;
         height: 15px;
         width: 15px;
         border-radius: 50%;
         background-color: white;
         opacity: 0.5;
-      }
+      } */
       .slider-container .bullet-container .bullet:last-child {
         margin-right: 0px;
       }
@@ -288,12 +289,13 @@
     <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">QUIZ</h1>
     <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Click right to see other quiz</h1>
 
-    <div class="row">
+    <div class="row" style="padding: 1%;">
       <div class="col-md-4">
-        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" style="margin-top: 30%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="80%" style="margin-top: 60%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
-        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 20%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
+        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 0%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
         <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+        <span  onclick="replay()" style="color: #fff; margin-left: 3%;"><i class="fas fa-undo"></i></span>
 
         <audio id="myAudio" controls autoplay hidden="true">
 
@@ -317,9 +319,13 @@
           console.log('check');
           alert(aud.muted);
         }
+        function replay(){
+          aud.currentTime=0;
+          aud.play();
+        }
         </script>
       </div>
-      <div class="col-md-8" style="margin-left: -20%;">
+      <div class="col-md-8" style="margin-left: -14%;">
         <div class="slider-container">
 
           <div class="slider-content">
