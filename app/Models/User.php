@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use OwenIt\Auditing\Contracts\Auditable;
+use App\Notifications\ResetPasswordNotification;
 
 class User extends Authenticatable implements Auditable
 {
@@ -66,5 +67,10 @@ class User extends Authenticatable implements Auditable
 
     public function feedback(){
       return $this->hasMany('App\Models\Feedback');
+    }
+
+    public function sendPasswordResetNotification($token)
+    {
+      $this->notify(new ResetPasswordNotification($token, $this->email));
     }
 }
