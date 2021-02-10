@@ -43,7 +43,7 @@
         color: #ffffff;
         text-align: left;
         list-style: none;
-        background-color: #17a2b88a;
+        background-color: #095f6ddb;
         background-clip: padding-box;
         border: 1px solid rgba(0,0,0,.15);
         border-radius: 10px;
@@ -290,7 +290,7 @@
                     <div class="dropdown dropdown-arow-none d-contents text-center mx-2">
                         <!-- Icon -->
                         <a href="#" class="w-100 dropdown-toggle text-muted" data-toggle="dropdown">
-                          <span style="color: #fff; font-size: 100%;">PROFILE</span>
+                          <span style="color: #fff; font-size: 100%;">{{Auth::user()->name}}</span>
                           @if(Auth::user()->profile_picture == null)
 
 
@@ -305,9 +305,9 @@
                             <!-- Menu items -->
 
 
-                            <a href="#" class="dropdown-item disabled small" style="color: #ffffff !important; font-size: 100% !important; padding-top: 10px !important;"><i class="far fa-user mr-1"></i>&nbsp {{Auth::user()->name}} </a>
+                            <!-- <a href="#" class="dropdown-item disabled small" style="color: #ffffff !important; font-size: 100% !important; padding-top: 10px !important;"><i class="far fa-user mr-1"></i>&nbsp {{Auth::user()->name}} </a> -->
                             <!-- <a href="#" class="dropdown-item disabled small"><i class="fa fa-certificate"></i>&nbsp Student </a> -->
-                            <hr style="padding-bottom: 0px;">
+                            <!-- <hr style="padding-bottom: 0px;"> -->
 
 
                             <a href="{{route('user.profile.edit')}}" class="dropdown-item"><i class="fa fa-user-circle" aria-hidden="true"></i> UPDATE PROFILE</a>

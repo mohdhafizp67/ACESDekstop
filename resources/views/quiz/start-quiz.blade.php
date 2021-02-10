@@ -42,6 +42,8 @@
   .nav-pills .show > .nav-link {
     color: #ffd452 !important;
     font-weight: bold;
+    margin-top: -15%;
+    font-size: 150%;
     background-color: #007bff00;
     /* font-size: 150%; */
     /* background-image: url({{asset('concept/images/galaxy/btn_prop2.png')}}); */

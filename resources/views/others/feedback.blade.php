@@ -47,11 +47,12 @@
           <!-- <div style="padding: 30px;"></div> -->
 
           <div class="row">
-            <div class="col-md-4">
-              <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" style="margin-top: 60%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+            <!-- <div class="col-md-4">
+              <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="80%" style="margin-top: 60%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
               <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 0%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
               <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+              <span  onclick="replay()" style="color: #fff; margin-left: 3%;"><i class="fas fa-undo"></i></span>
 
               <audio id="myAudio" controls autoplay hidden="true">
               <source src="{{asset('concept/audio/.ogg')}}" type="audio/ogg">
@@ -75,9 +76,16 @@
                 console.log('check');
                 alert(aud.muted);
               }
+              function replay(){
+                aud.currentTime=0;
+                aud.play();
+              }
               </script>
+            </div> -->
+            <div class="col-md-4">
+
             </div>
-            <div class="col-md-8" style="padding-top: 6%;margin-left: -5%;">
+            <div class="col-md-8" style="padding-top: 2%; margin-left: 20%;">
 
               @if ($message = Session::get('success'))
               <div id=alert>
@@ -181,6 +189,9 @@
               </div>
             </div>
 
+            <div class="col-md-4">
+
+            </div>
           </div>
 
     		</div>

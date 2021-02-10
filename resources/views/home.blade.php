@@ -97,6 +97,10 @@ margin-left: -48%;
   /* border: 2px solid #4CAF50; */
 }
 
+.fontnew{
+  @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+  font-family: 'Arvo', serif;
+}
 </style>
   </head>
   <body onload="myFunction()">
@@ -108,7 +112,7 @@ margin-left: -48%;
 
         <h1 style="text-align: center; font-size: 450%; color: #fff; font-weight:bold; padding-top: 0%; padding-left: 9%;">
 
-  				ACES i<font color="#ff0000"> 4.0</font> <br>
+  				ACES <span class="fontnew">I</span><font color="#ff0000"> 4.0</font> <br>
   			</h1>
 
         <!-- <div style="position: absolute;  top: 70px;  right: 1px;">
@@ -173,14 +177,15 @@ margin-left: -48%;
         <div class="row">
       		<div class="col-md-12">
       			<div class="row" style="margin-top: 0%;">
-      				<div class="col-md-4">
-                <span style="color: #fff; margin-left: -30%;">{{Auth::user()->name}}</span><br>
-                <span style="color: #fff; margin-left: -25%;">{{Auth::user()->school}}</span>
+      				<div class="col-md-4" style="margin-left: -5%;">
+                <span style="color: #45e9b5; margin-left: 0%;">{{Auth::user()->name}}</span><br>
+                <span style="color: #45e9b5; margin-left: 0%;">{{Auth::user()->school}}</span>
                 <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
 
                   <button class="button buttonsound" onclick="enableMute()" type="button" style="width: 25%; height: 15%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
                   <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 15%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+                  <span  onclick="replay()" style="color: #fff; margin-left: 3%;"><i class="fas fa-undo"></i></span>
 
                   <audio id="myAudio" controls autoplay hidden="true">
 
@@ -204,6 +209,10 @@ margin-left: -48%;
               function checkMute() {
                 console.log('check');
                 alert(aud.muted);
+              }
+              function replay(){
+                aud.currentTime=0;
+                aud.play();
               }
               </script>
       				<!-- <div class="col-md-6">
