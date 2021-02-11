@@ -80,7 +80,7 @@ a {
 
     </div>
     <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/panel.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-      <iframe class="embed-responsive-item" style="padding: 3%;" width="100%" height="280px" src="https://www.youtube.com/embed/FnY9Re8wreY?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="embed-responsive-item" style="padding: 3%;" width="100%" height="280px" src="https://www.youtube.com/embed/fuTtS4fLvx0?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="col-md-2">
 
