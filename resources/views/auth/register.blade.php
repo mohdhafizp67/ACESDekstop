@@ -360,7 +360,7 @@
 
 
 
-            <div class="u-align-center u-form-group u-form-submit">
+            <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
 
 
               <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
