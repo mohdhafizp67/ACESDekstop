@@ -48,39 +48,12 @@ a {
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
 
 
-<div class="row" style="padding-top: 3%;padding-bottom: 1%;">
-  <div class="col-md-7">
-
-  </div>
-  <div class="col-md-2">
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;">MY</button>
-  </div>
-  <div class="col-md-2">
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;">ENG</button>
-  </div>
-  <div class="col-md-1">
-
-  </div>
-</div>
-  <div class="row" style="padding: 1%;">
-    <div class="col-md-4">
-      <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; margin-top:-25%;"></center>
-      <!-- <p class="text-center" style="color: #fff; padding-bottom: 5%; padding-top: 10%; text-transform: uppercase; font-size: 80%; text-align: end;">
-        ACES will be a regional hub providing wide-ranging Industry 4.0 solutions including advisory, consulting and training services for businesses in Malaysia, ASEAN and ASIA.
-      </p> -->
-      <div class="col-md-8">
-
-      </div>
-    </div>
-
-
-  </div>
-  <div class="row">
+  <div class="row" style="padding-top: 3%;">
     <div class="col-md-1">
 
     </div>
-    <div class="col-md-10" style="background-image: url({{asset('concept/images/galaxy/panel.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-      <iframe class="embed-responsive-item" style="padding: 3%;" width="100%" height="300px" src="https://www.youtube.com/embed/fuTtS4fLvx0?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-md-10" style="padding: 1%;background-image: url({{asset('concept/images/galaxy/panel.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+      <iframe class="embed-responsive-item" style="padding: 5%;" width="100%" height="400px" src="https://www.youtube.com/embed/fuTtS4fLvx0?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="col-md-1">
 

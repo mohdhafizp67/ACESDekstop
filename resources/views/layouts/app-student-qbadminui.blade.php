@@ -290,7 +290,7 @@
                     <div class="dropdown dropdown-arow-none d-contents text-center mx-2">
                         <!-- Icon -->
                         <a href="#" class="w-100 dropdown-toggle text-muted" data-toggle="dropdown">
-                          <span style="color: #fff; font-size: 100%;">{{Auth::user()->name}}</span>
+                          <span style="color: #45e9b5; font-size: 100%;">{{Auth::user()->name}}</span>
                           @if(Auth::user()->profile_picture == null)
 
 
