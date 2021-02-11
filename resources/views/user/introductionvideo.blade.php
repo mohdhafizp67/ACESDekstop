@@ -1,7 +1,7 @@
 @extends('layouts.app-login-register')
 
 @section('content')
-<html>
+<html style="background-color: #130e29 !important;">
 <head>
   <link rel="stylesheet" href="{{ asset('css/Login.css') }} ">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -76,13 +76,13 @@ a {
 
   </div>
   <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-1">
 
     </div>
-    <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/panel.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-      <iframe class="embed-responsive-item" style="padding: 3%;" width="100%" height="280px" src="https://www.youtube.com/embed/fuTtS4fLvx0?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-md-10" style="background-image: url({{asset('concept/images/galaxy/panel.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+      <iframe class="embed-responsive-item" style="padding: 3%;" width="100%" height="300px" src="https://www.youtube.com/embed/fuTtS4fLvx0?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-1">
 
     </div>
   </div>
