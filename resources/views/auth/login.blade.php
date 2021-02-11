@@ -99,7 +99,7 @@ margin: 1.75rem auto;
     <div class="col-md-4">
       <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; margin-top:-25%;"></center>
       <p class="text-center" style="color: #fff; padding-bottom: 5%; padding-top: 10%; text-transform: uppercase; font-size: 80%; text-align: end;">
-        ACES will be a regional hub providing wide-ranging Industry 4.0 solutions including advisory, consulting and training services for businesses in Malaysia, ASEAN and ASIA.
+        {{ __('landing_page.description') }}
       </p>
 
       <div class="row">
@@ -108,7 +108,7 @@ margin: 1.75rem auto;
         </div>
         <!-- <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 4%;">
           <button type="button" class="btn">
-            <a href="#" style="font-size: 80%;">HELP</a>
+            <a href="#" style="font-size: 80%;">{{ __('landing_page.help') }}</a>
           </button>
         </div> -->
         <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
@@ -174,7 +174,7 @@ margin: 1.75rem auto;
         </div>
         <!-- <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 4%;">
           <button type="button" class="btn">
-            <a href="#" style="font-size: 80%;">T&C</a>
+            <a href="#" style="font-size: 80%;">{{ __('landing_page.tnc') }}</a>
           </button>
         </div> -->
         <div class="col-md-2">
@@ -188,7 +188,7 @@ margin: 1.75rem auto;
         </div>
         <!-- <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 4%;">
           <button type="button" class="btn">
-            <a href="#" style="font-size: 80%;">PRIVACY</a>
+            <a href="#" style="font-size: 80%;">{{ __('landing_page.privacy') }}</a>
           </button>
         </div> -->
         <div class="col-md-2">
@@ -201,7 +201,7 @@ margin: 1.75rem auto;
     <div class="col-md-7" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%;">
 
       <h4 style="color: #fff; font-size: 200%; text-align: center; text-transform: uppercase; font-weight: bold; padding-top: 10%;">
-        LOGIN FORM
+        {{ __('landing_page.login.title') }}
       </h4>
 
 
@@ -215,7 +215,7 @@ margin: 1.75rem auto;
       				<div class="form-group">
 
       					<label for="exampleInputEmail1" style="color: #fff">
-      						IC NUMBER
+      						{{ __('landing_page.login.ic_number') }}
       					</label>
       					<input type="text" placeholder="IC Number" id="ic_number" name="ic_number" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" value="{{ old('ic_number') }}" required autocomplete="ic_number" autofocus/>
                 @error('ic_number')
@@ -227,7 +227,7 @@ margin: 1.75rem auto;
       				<div class="form-group" style="margin-bottom: 1%;">
 
       					<label for="exampleInputPassword1" style="color: #fff">
-      						PASSWORD
+                  {{ __('landing_page.login.password') }}
       					</label>
                 <div class="input-group mb-3" style="color: white !important;">
                     <input type="password"
@@ -255,10 +255,7 @@ margin: 1.75rem auto;
 
                                 <div class="u-align-center u-form-group u-form-submit">
                                   <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
-                                                  <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 30%;">{{ __('LOG IN') }}</button>
-                                                  <!-- <button type="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-                                                    <a href="{{route('register')}}">REGISTER</a>
-                                                  </button> -->
+                                                  <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">{{ strtoupper(__('landing_page.login.button')) }}</button>
                                   </div>
                                   <span style="font-size: 80%;margin-left: 20%;"><a href="{{route('register')}}">Don't have account? Register here</a></span>
                                 </div>
