@@ -15,6 +15,7 @@
   /* padding: 10px; */
   /* text-align: center; */
   font-size: 80%;
+  padding: 5px 0px 5px;
 }
 
 .button {
@@ -238,7 +239,7 @@ a {
 
                                 <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
                                   <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
-                                                  <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">{{ strtoupper(__('landing_page.login.button')) }}</button>
+                                                  <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 30%; color: #fff;">{{ strtoupper(__('landing_page.login.button')) }}</button>
                                   </div>
                                   <span style="font-size: 80%;"><a href="{{route('register')}}">{{ __('landing_page.login.register_here') }}</a></span>
                                 </div>
