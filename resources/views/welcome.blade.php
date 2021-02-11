@@ -34,7 +34,7 @@
 				<div class="col-md-4">
 				</div>
 				<div class="col-md-4" style="padding-top: 20%; padding-bottom: 24%;">
-					<button type="button" class="btn btn-welcome"><a href="{{route('login')}}"><img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;"></a></button>
+					<button type="button" class="btn btn-welcome"><a href="{{route('user.introductionvideo')}}"><img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;"></a></button>
 					<!-- <p style="padding-top: 10%; padding-bottom: 5%; color: #fff;">
 						Aces I 4.0 merupakan satu inisiatif yang mengguna pakai sistem elearning dan gamifikasi untuk memberi ilmu pengetahuan secara interaktif kepada pelajar pelajar tingkatan 5 di bawah kelolaan ecerdc.
 					</p> -->

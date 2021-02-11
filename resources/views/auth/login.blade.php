@@ -57,6 +57,12 @@ margin: 1.75rem auto;
     outline: 0;
     margin-left: 5%;
 }
+
+a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
 </style>
 </head>
 <body>
@@ -250,14 +256,14 @@ margin: 1.75rem auto;
                     @endif
                 </div>
       				</div>
-              <span class="psw" style="font-size: 70%;color: #fff;margin-left: 65%;"> <a href="{{route('password.update')}}">Forgot password?</a></span>
+              <span class="psw" style="font-size: 70%;color: #fff;"> <a href="{{route('password.update')}}">Forgot password?</a></span>
 
 
-                                <div class="u-align-center u-form-group u-form-submit">
+                                <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
                                   <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
                                                   <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">{{ strtoupper(__('landing_page.login.button')) }}</button>
                                   </div>
-                                  <span style="font-size: 80%;margin-left: 20%;"><a href="{{route('register')}}">Don't have account? Register here</a></span>
+                                  <span style="font-size: 80%;"><a href="{{route('register')}}">Don't have account? Register here</a></span>
                                 </div>
 
       				</button>

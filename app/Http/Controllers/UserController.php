@@ -24,7 +24,7 @@ class UserController extends Controller
 
     return view('user.profile.edit', compact('user', 'district'));
   }
-  
+
 
   public function update($id)
   {
@@ -191,6 +191,16 @@ class UserController extends Controller
     return view('game.demo.drone');
 
   }
+
+  public function Video()
+  {
+    // dd("masuk");
+
+    return view('user.introductionvideo');
+
+  }
+
+
 
 
 
