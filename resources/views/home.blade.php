@@ -101,6 +101,33 @@ margin-left: -48%;
   @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
   font-family: 'Arvo', serif;
 }
+
+/* .avatar {
+  vertical-align: middle;
+  width: 70%;
+  height: 70%;
+  margin-top: -7%;
+  border-radius: 50%;
+
+} */
+
+.img-container {
+  width: 70%;
+  height: 70%;
+  margin-top: -7%;
+   border: 0px solid;
+   border-radius: 50%;
+   position: relative;
+   object-fit: cover;
+ }
+ .img-container img {
+   width: 100%;
+   height: 200px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+ }
 </style>
   </head>
   <body onload="myFunction()">
@@ -127,9 +154,9 @@ margin-left: -48%;
 
                 <div style="padding: 12%;"></div>
                 @if(Auth::user()->profile_picture == null)
-                  <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style=" width:70%; margin-top: -10%;">
+                  <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="img-container" style=" width:70%; margin-top: -10%;">
                 @else
-                <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style=" width:70%; height:70%;">
+                <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="img-container">
                 @endif
 
 
