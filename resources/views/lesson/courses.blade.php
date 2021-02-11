@@ -390,7 +390,7 @@
               </div>
 
             <div class="slider-single">
-                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/08.png') }}" alt="8" />
+                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/universal.png') }}" alt="8" />
                   <!-- <h1 class="slider-single-title">Advanced Simulation</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -399,7 +399,7 @@
               </div>
 
             <div class="slider-single">
-                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/09.png') }}" alt="9" />
+                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/advanced.png') }}" alt="9" />
                   <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -408,7 +408,7 @@
               </div>
 
               <div class="slider-single">
-                    <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/10.png') }}" alt="10" />
+                    <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/autonomous.png') }}" alt="10" />
                     <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
                     <!-- <a class="slider-single-likes" href="javascript:void(0);">
                         <i class="fa fa-heart"></i>

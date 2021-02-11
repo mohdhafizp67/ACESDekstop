@@ -181,7 +181,9 @@
                               <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/ilnm5pkI9uM?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:280px;">
-                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><a href="https://youtu.be/v9rZOa3CUC8" style="margin-left:2%;">What is the Fourth Industrial Revolution?</a></p>
+                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><a href="https://youtu.be/v9rZOa3CUC8" style="margin-left:2%;" target="_blank">What is the Fourth Industrial Revolution?</a></p>
+                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 0%;"></i><a href="https://youtu.be/v9rZOa3CUC8" style="margin-left:2%;" target="_blank">What is the Fourth Industrial Revolution?</a></p>
+
                             </div>
 
                         </div>
@@ -207,7 +209,7 @@
     <div class="col-md-8">
       <div class="items">
       		<div class="item1 active">
-      			<img src="{{asset('concept/images/pelajaran/businessi40.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
+      			<img src="{{asset('concept/images/pelajaran/icon/industry.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
       		</div>
       		<!-- <div class=" item1 next" >
             <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
