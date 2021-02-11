@@ -292,7 +292,7 @@
           numb = numb.toFixed(2);
           if(numb > 2){
           alert('Ralat! Gambar anda melebihi 1MB. Saiz fail anda adalah: ' + numb +' MB');
-          document.getElementById("attachment_permohonan").value = "";
+          document.getElementById("gambar_profile").value = "";
           var fileName = "";
           $(this).next('.custom-file-label').html(fileName);
           return false;
