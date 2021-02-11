@@ -365,10 +365,12 @@
 
               <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
                   <button class="btn" type="submit" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">REGISTER</button>
+
               </div>
+              <span style="font-size: 80%;"><a href="{{route('login')}}">Have an account? Log In here</a></span>
             </div>
 
-            <span style="font-size: 80%;margin-left: 20%;"><a href="{{route('login')}}">Have an account? Log In here</a></span>
+
 
             </button>
           </form>
