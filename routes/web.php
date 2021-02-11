@@ -25,6 +25,9 @@ Route::get('/password/resets/{token}/{email}', [App\Http\Controllers\Auth\ResetP
 //ajax routes
 Route::get('/register/ajax/get-district/{data}', [App\Http\Controllers\ApiController::class, 'ajaxDistrict'])->name('register.ajax.district');
 
+Route::get('/video', [App\Http\Controllers\UserController::class, 'Video'])->name('user.introductionvideo');
+
+
 Route::middleware('student')->group(function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -34,8 +37,6 @@ Route::get('/profile/edit', [App\Http\Controllers\UserController::class, 'editPr
 Route::post('/profile/update', [App\Http\Controllers\UserController::class, 'updateprofil'])->name('user.update');
 
 Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, 'viewLeaderboard'])->name('leaderboard');
-
-
 
 //Lessons
 Route::get('/courses', [App\Http\Controllers\LessonController::class, 'courses'])->name('lesson.courses');
