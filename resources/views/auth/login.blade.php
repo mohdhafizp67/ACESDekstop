@@ -69,10 +69,10 @@ a {
 
   </div>
   <div class="col-md-2">
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;">ENG</button>
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;"><a href="{{ route('locale.setting', 'en') }}">ENG</a></button>
   </div>
   <div class="col-md-2">
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;">MY</button>
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;"><a href="{{ route('locale.setting', 'my') }}">MY</a></button>
   </div>
   <div class="col-md-1">
 
@@ -233,14 +233,14 @@ a {
                     @endif
                 </div>
       				</div>
-              <span class="psw" style="font-size: 70%;color: #fff;"> <a href="{{route('password.update')}}">Forgot password?</a></span>
+              <span class="psw" style="font-size: 70%;color: #fff;"> <a href="{{route('password.update')}}">{{ strtoupper(__('landing_page.login.forgot_password')) }}</a></span>
 
 
                                 <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
                                   <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
                                                   <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">{{ strtoupper(__('landing_page.login.button')) }}</button>
                                   </div>
-                                  <span style="font-size: 80%;"><a href="{{route('register')}}">Don't have account? Register here</a></span>
+                                  <span style="font-size: 80%;"><a href="{{route('register')}}">{{ __('landing_page.login.register_here') }}</a></span>
                                 </div>
 
       				</button>
@@ -259,7 +259,7 @@ a {
   </div>
   <div class="row">
     <div class="footer">
-    <span>&copy; Hakcipta Terpelihara 2021</span>&nbsp&nbsp&nbsp&nbsp<span style="margin-left: 53%;"><font color="white">TERMS&CONDITIONS</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">PRIVACY</font></span>
+    <span>&copy; {{ __('landing_page.login.copyright', [ 'year' => date('Y')]) }}</span>&nbsp&nbsp&nbsp&nbsp<span style="margin-left: 53%;"><font color="white">{{ __('landing_page.tnc_full') }}</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">{{ __('landing_page.privacy') }}</font></span>
     </div>
   </div>
 </div>
