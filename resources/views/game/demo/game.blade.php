@@ -294,7 +294,7 @@
         <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 0%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
         <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
         <span  onclick="replay()" style="color: #fff; margin-left: 3%;"><i class="fas fa-undo"></i></span>
-        
+
         <audio id="myAudio" controls autoplay hidden="true">
 
         <source src="{{asset('concept/audio/GAME.mp3')}}" type="audio/mpeg">
@@ -329,7 +329,7 @@
           <div class="slider-content">
 
               <div class="slider-single">
-                  <a href="http://161.35.227.188/drone/"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Introduction.png') }}" alt="1" /></a>
+                  <a href="http://161.35.227.188/drone_tutorial/"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Introduction.png') }}" alt="1" /></a>
                   <!-- <h1 class="slider-single-title">Introduction - Tutorial</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
