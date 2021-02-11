@@ -37,27 +37,6 @@
   /* border: 2px solid #4CAF50; */
 }
 
-.modal-dialog {
-max-width: 800px;
-margin: 1.75rem auto;
-}
-
-.modal-content {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 90%;
-    pointer-events: auto;
-    background-color: #022a36;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: .3rem;
-    outline: 0;
-    margin-left: 5%;
-}
-
 a {
     color: #fff;
     text-decoration: none;
@@ -69,7 +48,7 @@ a {
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
 
 <!-- Modal -->
-<div id="myModal" class="modal fade">
+<!-- <div id="myModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
@@ -82,7 +61,7 @@ a {
 	$(document).ready(function(){
 		$("#myModal").modal('show');
 	});
-</script>
+</script> -->
 <!-- Modal -->
 
 <div class="row" style="padding-top: 3%;padding-bottom: 1%;">
@@ -90,12 +69,10 @@ a {
 
   </div>
   <div class="col-md-2">
-
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;">ENG</button>
   </div>
   <div class="col-md-2">
-    <button type="button" class="btn" style="width: 100%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-      <a href="#">MY/ENG</a>
-    </button>
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;">MY</button>
   </div>
   <div class="col-md-1">
 

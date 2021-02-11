@@ -53,12 +53,10 @@ a {
 
   </div>
   <div class="col-md-2">
-
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;">MY</button>
   </div>
   <div class="col-md-2">
-    <button type="button" class="btn" style="width: 100%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-      <a href="#">MY/ENG</a>
-    </button>
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;">ENG</button>
   </div>
   <div class="col-md-1">
 
@@ -70,62 +68,40 @@ a {
       <!-- <p class="text-center" style="color: #fff; padding-bottom: 5%; padding-top: 10%; text-transform: uppercase; font-size: 80%; text-align: end;">
         ACES will be a regional hub providing wide-ranging Industry 4.0 solutions including advisory, consulting and training services for businesses in Malaysia, ASEAN and ASIA.
       </p> -->
+      <div class="col-md-8">
 
-      <div class="row">
-        <div class="col-md-1">
-
-        </div>
-
-
-
-        <div class="col-md-2">
-
-        </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-1">
-
-        </div>
-        <!-- <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 4%;">
-          <button type="button" class="btn">
-            <a href="#" style="font-size: 80%;">T&C</a>
-          </button>
-        </div> -->
-        <div class="col-md-2">
-
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-1">
-
-        </div>
-        <!-- <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;color: #fff; text-align: center;padding: 4%;">
-          <button type="button" class="btn">
-            <a href="#" style="font-size: 80%;">PRIVACY</a>
-          </button>
-        </div> -->
-        <div class="col-md-2">
-
-        </div>
-      </div>
-
     </div>
 
-    <div class="col-md-7" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%;">
 
-
-    </div>
-    <!-- <div class="col-md-1">
-
-    </div> -->
   </div>
   <div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8" style="background-image: url({{asset('concept/images/galaxy/panel.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+      <iframe class="embed-responsive-item" style="padding: 3%;" width="100%" height="280px" src="https://www.youtube.com/embed/FnY9Re8wreY?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+  </div>
+  <div class="row" style="padding-top: 3%; padding-bottom: 3%;">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <a href="{{route('login')}}"><button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 50%; color:#fff;">LOG IN</button></a>
+    </div>
+  </div>
+
+  <!-- <div class="row">
     <div class="footer">
     <span>&copy; Hakcipta Terpelihara 2021</span>&nbsp&nbsp&nbsp&nbsp<span style="margin-left: 53%;"><font color="white">TERMS&CONDITIONS</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">PRIVACY</font></span>
     </div>
-  </div>
+  </div> -->
 </div>
 
 </body>
