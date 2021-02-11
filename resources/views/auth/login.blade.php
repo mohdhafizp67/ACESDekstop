@@ -69,10 +69,10 @@ a {
 
   </div>
   <div class="col-md-2">
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;"><a href="{{ route('locale.setting', 'en') }}">ENG</a></button>
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;"><a href="{{-- route('locale.setting', 'en') --}}">ENG</a></button>
   </div>
   <div class="col-md-2">
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;"><a href="{{ route('locale.setting', 'my') }}">MY</a></button>
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;"><a href="{{-- route('locale.setting', 'my') --}}">MY</a></button>
   </div>
   <div class="col-md-1">
 
