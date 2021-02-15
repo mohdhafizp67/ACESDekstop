@@ -56,10 +56,8 @@
       </div> -->
       <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
-      <button class="button buttonsound" onclick="enableMute()" type="button" style="padding: 1%;margin-left: 20%;width: 25%; height: 15%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-off"></i></button>
-      <button class="button buttonsound" onclick="disableMute()" type="button" style="padding: 1%;width: 25%; height: 15%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-      <span  onclick="replay()" style="color: #fff; margin-left: 3%;padding: 1%;"><i class="fas fa-undo"></i></span>
-
+      <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 25%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 0%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+      <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
 
       <audio id="myAudio" controls autoplay hidden="true">
 
@@ -69,26 +67,35 @@
       <script>
       var aud = document.getElementById("myAudio");
 
-      function enableMute() {
-        console.log('mute');
-        aud.muted = true;
+      function mute() {
+        if(aud.muted == true)
+        {
+          console.log('unmute');
+          $('#mute_button').html('<i class="fas fa-volume-up"></i>');
+
+          aud.muted = false;
+        }
+        else {
+          console.log('mute');
+          aud.muted = true;
+          $('#mute_button').html('<i class="fas fa-volume-mute"></i>');
+
+        }
       }
 
-      function disableMute() {
-        console.log('unmute');
-        aud.muted = false;
-      }
+      // function disableMute() {
+      //   console.log('unmute');
+      //   aud.muted = false;
+      // }
 
-      function checkMute() {
-        console.log('check');
-        alert(aud.muted);
-      }
-
+      // function checkMute() {
+      //   console.log('check');
+      //   alert(aud.muted);
+      // }
       function replay(){
         aud.currentTime=0;
         aud.play();
       }
-
       </script>
       <div class="col-md-2">
 
@@ -281,7 +288,9 @@
               <label for="exampleInputEmail1" style="color: #fff">
                 SCHOOL NAME
               </label>
-              <input type="text" placeholder="School Name" name="school" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('school') ? 'is-invalid' : '' }}" value="{{ old('school') }}" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"/>
+              <select id="school" name="school" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('school') is-invalid @enderror" value="{{ old('school') }}">
+                <option value="" selected disabled hidden>Select School</option>
+              </select>
               @if($errors->has('school'))
                   <div class="invalid-feedback">
                       <strong>{{ $errors->first('school') }}</strong>
@@ -457,6 +466,43 @@ $('#state').change(function(){
         {
           // console.log(data.daerah);
           $("#district").append('<option value="'+data.daerah+'" >'+data.daerah+'</option>');
+        });
+            // $.each(JSON.parse(respond),function(key,value){
+            //     $("#jenis_data").append('<option value="'+value+'">'+value+'</option>');
+            // });
+      },
+      error: function(XMLHttpRequest, textStatus, errorThrown) {
+          console.log("Status: " + textStatus);
+          console.log("Error: " + errorThrown);
+      }
+    })
+
+  }
+});
+</script>
+
+<script type="text/javascript">
+$('#district').change(function(){
+  //fetch data from jenis_dokumen
+  var daerah = $(this).val();
+  //clear jenis_data selection
+  $("#school").empty();
+  //initialize selection
+  $("#school").append('<option value="" selected disabled hidden>Select School</option>');
+  //ajax
+
+  if(daerah){
+    $.ajax({
+      type:"get",
+       url:"/ACES/register/ajax/get-school/"+daerah,
+
+      success: function(respond){
+        //console.log(respond);
+        var data = JSON.parse(respond);
+        data.forEach(function(data)
+        {
+          // console.log(data.daerah);
+          $("#school").append('<option value="'+data.sekolah+'" >'+data.sekolah+'</option>');
         });
             // $.each(JSON.parse(respond),function(key,value){
             //     $("#jenis_data").append('<option value="'+value+'">'+value+'</option>');

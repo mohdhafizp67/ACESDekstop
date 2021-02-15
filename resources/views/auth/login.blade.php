@@ -97,9 +97,8 @@ a {
         </div> -->
         <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
-        <button class="button buttonsound" onclick="enableMute()" type="button" style="padding: 1%;margin-left: 20%;width: 25%; height: 15%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-off"></i></button>
-        <button class="button buttonsound" onclick="disableMute()" type="button" style="padding: 1%;width: 25%; height: 15%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-        <span  onclick="replay()" style="color: #fff; margin-left: 3%;padding: 1%;"><i class="fas fa-undo"></i></span>
+        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 20%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 0%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+        <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
 
 
         <audio id="myAudio" controls autoplay hidden="true">
@@ -110,26 +109,35 @@ a {
         <script>
         var aud = document.getElementById("myAudio");
 
-        function enableMute() {
-          console.log('mute');
-          aud.muted = true;
+        function mute() {
+          if(aud.muted == true)
+          {
+            console.log('unmute');
+            $('#mute_button').html('<i class="fas fa-volume-up"></i>');
+
+            aud.muted = false;
+          }
+          else {
+            console.log('mute');
+            aud.muted = true;
+            $('#mute_button').html('<i class="fas fa-volume-mute"></i>');
+
+          }
         }
 
-        function disableMute() {
-          console.log('unmute');
-          aud.muted = false;
-        }
+        // function disableMute() {
+        //   console.log('unmute');
+        //   aud.muted = false;
+        // }
 
-        function checkMute() {
-          console.log('check');
-          alert(aud.muted);
-        }
-
+        // function checkMute() {
+        //   console.log('check');
+        //   alert(aud.muted);
+        // }
         function replay(){
           aud.currentTime=0;
           aud.play();
         }
-
         </script>
         <!-- <div class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">

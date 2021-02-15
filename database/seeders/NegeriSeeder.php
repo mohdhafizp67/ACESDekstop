@@ -34,13 +34,7 @@ class NegeriSeeder extends Seeder
         ]
       );
 
-      DB::table('districts')-> insert(
-        [
-
-        'daerah' => 'Kota Bharu',
-        'negeri' => 'Kelantan',
-        ]
-      );
+      
 
       DB::table('districts')-> insert(
         [
@@ -54,6 +48,14 @@ class NegeriSeeder extends Seeder
         [
 
         'daerah' => 'Pasir Mas',
+        'negeri' => 'Kelantan',
+        ]
+      );
+
+      DB::table('districts')-> insert(
+        [
+
+        'daerah' => 'Pasir Puteh',
         'negeri' => 'Kelantan',
         ]
       );
@@ -97,6 +99,15 @@ class NegeriSeeder extends Seeder
         'negeri' => 'Kelantan',
         ]
       );
+
+      DB::table('districts')-> insert(
+        [
+
+       'daerah' => 'Ketereh',
+       'negeri' => 'Kelantan',
+       ]
+      );
+
 
       // DB::table('districts')-> insert(
       //   [
@@ -234,13 +245,6 @@ class NegeriSeeder extends Seeder
       //   ]
       // );
 
-      // DB::table('districts')-> insert(
-      //   [
-      //
-      //   'daerah' => 'Ketereh',
-      //   'negeri' => 'Kelantan',
-      //   ]
-      // );
 
       // DB::table('districts')-> insert(
       //   [
