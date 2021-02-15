@@ -19,5 +19,6 @@ class DatabaseSeeder extends Seeder
         $this->call('Database\Seeders\QuizSeeder');
         $this->call('Database\Seeders\QuestionSeeder');
         $this->call('Database\Seeders\NegeriSeeder');
+        $this->call('Database\Seeders\SekolahSeeder');
     }
 }

@@ -291,9 +291,11 @@
       <div class="col-md-4">
         <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="80%" style="margin-top: 60%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
-        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 0%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
+        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: -5%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
         <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-        <span  onclick="replay()" style="color: #fff; margin-left: 3%;"><i class="fas fa-undo"></i></span>
+
+        <span  onclick="replay()" style="color: #fff; margin-left: 1%;"><i class="fas fa-undo"></i></span>
+
 
         <audio id="myAudio" controls autoplay hidden="true">
 
@@ -323,7 +325,7 @@
         }
         </script>
       </div>
-      <div class="col-md-8" style="margin-left: -14%;">
+      <div class="col-md-8" style="margin-left: -17%;">
         <div class="slider-container">
 
           <div class="slider-content">
@@ -357,7 +359,7 @@
 
 
               <div class="slider-single">
-                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3.png') }}" alt="4" />
+                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3Mersingislands.png') }}" alt="4" />
                   <!-- <h1 class="slider-single-title">Circuit 03 - Internet of Things</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -367,7 +369,7 @@
 
 
               <div class="slider-single">
-                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4.png') }}" alt="5" />
+                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4Menara.png') }}" alt="5" />
                   <!-- <h1 class="slider-single-title">Circuit 04 - Big Data</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -385,7 +387,7 @@
               </div>
 
                 <div class="slider-single">
-                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit6.png') }}" alt="6" />
+                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit6Pasar.png') }}" alt="6" />
                   <!-- <h1 class="slider-single-title">Circuit 06 - Cyber Security</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -394,7 +396,7 @@
               </div>
 
             <div class="slider-single">
-                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit7.png') }}" alt="6" />
+                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit7Monumen.png') }}" alt="6" />
                   <!-- <h1 class="slider-single-title">Circuit 07 - Universal Integration</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>

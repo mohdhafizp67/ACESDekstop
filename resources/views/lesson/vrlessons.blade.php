@@ -162,10 +162,13 @@
     </div>
     <div class="col-md-10" style="background-image: url({{asset('concept/images/galaxy/panel.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
-                    <div class="tab-regular" style="margin-left: 5%;">
+                    <!-- <div class="tab-regular" style="margin-left: 5%;">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Part 1</a>
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#link" role="tab" aria-controls="home" aria-selected="true">Find Your Future</a>
                             </li>
 
                         </ul>
@@ -173,10 +176,41 @@
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                               <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/n4SeobN_PFM?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
+                            <div class="tab-pane fade show active" id="link" role="tabpanel" aria-labelledby="home-tab">
+                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><a href="https://youtu.be/jRQzl8ewDMQ" style="margin-left:2%;">Knowledge and Skill</a></p>
+                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 0%;"></i><a href="https://youtu.be/reAzWA3oFV8" style="margin-left:2%;">Training</a></p>
+                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 0%;"></i><a href="https://youtu.be/NqswOcwJBFE" style="margin-left:2%;">Job Virtual Reality Developer</a></p>
+
+                            </div>
 
 
                         </div>
+                    </div> -->
+
+                    <div class="tab-regular" style="margin-left: 5%;">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Introduction</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#link" role="tab" aria-controls="profile" aria-selected="false">I 4.0 Application</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/n4SeobN_PFM?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:280px;">
+                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><a href="https://youtu.be/jRQzl8ewDMQ" style="margin-left:2%;" target="_blank">Knowledge and Skill</a></p>
+                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 0%;"></i><a href="https://youtu.be/reAzWA3oFV8" style="margin-left:2%;" target="_blank">Training</a></p>
+                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 0%;"></i><a href="https://youtu.be/NqswOcwJBFE" style="margin-left:2%;" target="_blank">Job Virtual Reality Developer</a></p>
+                            </div>
+
+                        </div>
                     </div>
+
 
     </div>
 

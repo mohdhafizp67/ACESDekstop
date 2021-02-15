@@ -165,7 +165,7 @@
 
                         <div style="padding: 5px;"></div>
 
-                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="#" class="w-100 py-2" data-toggle="modal" data-target="#logOutModal">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-power-off" aria-hidden="true"></i>&nbsp&nbsp LOG OUT</a></li>
+                        <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="#" class="w-100 py-2" data-toggle="modal" data-target="#logOutModal">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-power-off" aria-hidden="true"></i>&nbsp&nbsp LOG OUT</a></li> -->
 
                         <!-- <li class="nav-divider" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
                             <button type="button" class="btn" name="button" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp&nbsp LOG KELUAR</button>
@@ -290,7 +290,7 @@
                     <div class="dropdown dropdown-arow-none d-contents text-center mx-2">
                         <!-- Icon -->
                         <a href="#" class="w-100 dropdown-toggle text-muted" data-toggle="dropdown">
-                          <span style="color: #fff; font-size: 100%;">{{Auth::user()->name}}</span>
+                          <span style="color: #45e9b5; font-size: 100%;">{{Auth::user()->name}}</span>
                           @if(Auth::user()->profile_picture == null)
 
 

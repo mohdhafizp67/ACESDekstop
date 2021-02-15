@@ -98,9 +98,36 @@ margin-left: -48%;
 }
 
 .fontnew{
-  @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
-  font-family: 'Arvo', serif;
+  @import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+  font-family: 'Long Cang', cursive;
 }
+
+/* .avatar {
+  vertical-align: middle;
+  width: 70%;
+  height: 70%;
+  margin-top: -7%;
+  border-radius: 50%;
+
+} */
+
+.img-container {
+  width: 70%;
+  height: 70%;
+  margin-top: -7%;
+   border: 0px solid;
+   border-radius: 50%;
+   position: relative;
+   object-fit: cover;
+ }
+ .img-container img {
+   width: 100%;
+   height: 200px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+ }
 </style>
   </head>
   <body onload="myFunction()">
@@ -127,9 +154,9 @@ margin-left: -48%;
 
                 <div style="padding: 12%;"></div>
                 @if(Auth::user()->profile_picture == null)
-                  <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style=" width:70%; margin-top: -10%;">
+                  <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="img-container">
                 @else
-                <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style=" width:70%; height:70%;">
+                <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="img-container" style=" width:70%;height: 155px;">
                 @endif
 
 
@@ -162,7 +189,7 @@ margin-left: -48%;
             <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <div class="card-body list-group" style="padding: 5%;">
                 <div class="progressbar1">
-                <div class="second circle" data-percent="45">
+                <div class="second circle" data-percent="0">
                   <strong></strong>
                   <span>GAME</span>
                 </div>
@@ -256,6 +283,7 @@ margin-left: -48%;
                   </div> -->
                 </div>
               </div>
+
       			</div>
       		</div>
 

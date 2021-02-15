@@ -287,9 +287,9 @@
       <div class="col-md-4">
         <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="80%" style="margin-top: 60%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
-        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 0%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
+        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: -5%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
         <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-        <span  onclick="replay()" style="color: #fff; margin-left: 3%;"><i class="fas fa-undo"></i></span>
+        <span  onclick="replay()" style="color: #fff; margin-left: 1%;"><i class="fas fa-undo"></i></span>
 
         <audio id="myAudio" controls autoplay hidden="true">
 
@@ -319,7 +319,7 @@
         }
         </script>
       </div>
-      <div class="col-md-8" style="margin-left: -14%;">
+      <div class="col-md-8" style="margin-left: -17%;">
         <div class="slider-container">
 
           <div class="slider-content">
@@ -390,7 +390,7 @@
               </div>
 
             <div class="slider-single">
-                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/08.png') }}" alt="8" />
+                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/universal.png') }}" alt="8" />
                   <!-- <h1 class="slider-single-title">Advanced Simulation</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -399,7 +399,7 @@
               </div>
 
             <div class="slider-single">
-                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/09.png') }}" alt="9" />
+                  <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/advanced.png') }}" alt="9" />
                   <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -408,7 +408,7 @@
               </div>
 
               <div class="slider-single">
-                    <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/10.png') }}" alt="10" />
+                    <img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/autonomous.png') }}" alt="10" />
                     <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
                     <!-- <a class="slider-single-likes" href="javascript:void(0);">
                         <i class="fa fa-heart"></i>
