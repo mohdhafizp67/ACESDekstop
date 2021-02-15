@@ -283,9 +283,9 @@
                 </div> -->
                 <div class="modal-body">
                   <div class="w3-content w3-display-container">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/1.jpg')}}" style="width:100%">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/2.jpg')}}" style="width:100%">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/3.jpg')}}" style="width:100%">
+                    <img class="mySlides" src="{{asset('concept/images/pelajaran/Page01.jpg')}}" style="width:100%">
+                    <img class="mySlides" src="{{asset('concept/images/pelajaran/Page02.jpg')}}" style="width:100%">
+
 
 
                     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>

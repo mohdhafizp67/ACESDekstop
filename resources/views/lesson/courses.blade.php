@@ -280,16 +280,17 @@
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
 
-    <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">LESSONS IN I 4.0</h1>
+    <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">LESSONS</h1>
     <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Click right to see other courses</h1>
 
     <div class="row">
       <div class="col-md-4">
         <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="80%" style="margin-top: 60%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
-        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: -5%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
-        <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-        <span  onclick="replay()" style="color: #fff; margin-left: 1%;"><i class="fas fa-undo"></i></span>
+        <!-- <button class="button buttonsound" onclick="mute()" type="button" style="margin-left: -5%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button> -->
+        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 7%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 0%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+        <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
+
 
         <audio id="myAudio" controls autoplay hidden="true">
 
@@ -299,20 +300,31 @@
         <script>
         var aud = document.getElementById("myAudio");
 
-        function enableMute() {
-          console.log('mute');
-          aud.muted = true;
+        function mute() {
+          if(aud.muted == true)
+          {
+            console.log('unmute');
+            $('#mute_button').html('<i class="fas fa-volume-up"></i>');
+
+            aud.muted = false;
+          }
+          else {
+            console.log('mute');
+            aud.muted = true;
+            $('#mute_button').html('<i class="fas fa-volume-mute"></i>');
+
+          }
         }
 
-        function disableMute() {
-          console.log('unmute');
-          aud.muted = false;
-        }
+        // function disableMute() {
+        //   console.log('unmute');
+        //   aud.muted = false;
+        // }
 
-        function checkMute() {
-          console.log('check');
-          alert(aud.muted);
-        }
+        // function checkMute() {
+        //   console.log('check');
+        //   alert(aud.muted);
+        // }
         function replay(){
           aud.currentTime=0;
           aud.play();

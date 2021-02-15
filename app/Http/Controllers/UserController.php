@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Models\User;
 use App\Models\Districts;
+use App\Models\School;
 use App\Models\Feedback;
 
 
@@ -21,8 +22,9 @@ class UserController extends Controller
     $user_id = Auth::user()->id;
     $user = User:: findorFail($user_id);
     $district = Districts::get();
+    $school = School::get();
 
-    return view('user.profile.edit', compact('user', 'district'));
+    return view('user.profile.edit', compact('user', 'district', 'school'));
   }
 
 

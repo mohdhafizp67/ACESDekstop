@@ -195,7 +195,15 @@
                     <div class="col-md">
                       <div class="form-group" style="color: white !important;">
                         <label class="col-form-label">SCHOOL NAME</label>
-                        <input id="school" type="text"name="school" value="{{Auth::user()->school}}" class="form-control" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);">
+                        <select class="custom-select  bg-light @error('school') is-invalid @enderror" id="school" name="school" value="{{ Auth::user()->school }}"  required>
+                              <option value="" selected disabled hidden>Choose School</option>
+                              <!-- <option value="Johor" {{ Auth::user()->district == "Banggu" ? 'selected' : '' }}>Banggu</option> -->
+                              @foreach($school as $data)
+                                @if($data->sekolah == Auth::user()->school)
+                                  <option value="{{$data->sekolah}}" {{ Auth::user()->school == $data->sekolah ? 'selected' : '' }}>{{$data->sekolah}}</option>
+                                @endif
+                              @endforeach
+                          </select>
                       </div>
                     </div>
                     <div class="col-md-1">
@@ -335,6 +343,44 @@
       }
     });
     </script>
+
+    <script type="text/javascript">
+    $('#district').change(function(){
+      //fetch data from jenis_dokumen
+      var daerah = $(this).val();
+      //clear jenis_data selection
+      $("#school").empty();
+      //initialize selection
+      $("#school").append('<option value="" selected disabled hidden>Select School</option>');
+      //ajax
+
+      if(daerah){
+        $.ajax({
+          type:"get",
+           url:"/ACES/register/ajax/get-school/"+daerah,
+
+          success: function(respond){
+            //console.log(respond);
+            var data = JSON.parse(respond);
+            data.forEach(function(data)
+            {
+              // console.log(data.daerah);
+              $("#school").append('<option value="'+data.sekolah+'" >'+data.sekolah+'</option>');
+            });
+                // $.each(JSON.parse(respond),function(key,value){
+                //     $("#jenis_data").append('<option value="'+value+'">'+value+'</option>');
+                // });
+          },
+          error: function(XMLHttpRequest, textStatus, errorThrown) {
+              console.log("Status: " + textStatus);
+              console.log("Error: " + errorThrown);
+          }
+        })
+
+      }
+    });
+    </script>
+
 
     <!-- <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

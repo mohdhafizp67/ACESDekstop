@@ -98,8 +98,8 @@ margin-left: -48%;
 }
 
 .fontnew{
-  @import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
-  font-family: 'Long Cang', cursive;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+  font-family: 'Roboto Mono', monospace;
 }
 
 /* .avatar {
@@ -210,9 +210,8 @@ margin-left: -48%;
                 <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
 
-                  <button class="button buttonsound" onclick="enableMute()" type="button" style="width: 25%; height: 15%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
-                  <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 15%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-                  <span  onclick="replay()" style="color: #fff; margin-left: 3%;"><i class="fas fa-undo"></i></span>
+                <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 0%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+                <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
 
                   <audio id="myAudio" controls autoplay hidden="true">
 
@@ -223,20 +222,31 @@ margin-left: -48%;
               <script>
               var aud = document.getElementById("myAudio");
 
-              function enableMute() {
-                console.log('mute');
-                aud.muted = true;
+              function mute() {
+                if(aud.muted == true)
+                {
+                  console.log('unmute');
+                  $('#mute_button').html('<i class="fas fa-volume-up"></i>');
+
+                  aud.muted = false;
+                }
+                else {
+                  console.log('mute');
+                  aud.muted = true;
+                  $('#mute_button').html('<i class="fas fa-volume-mute"></i>');
+
+                }
               }
 
-              function disableMute() {
-                console.log('unmute');
-                aud.muted = false;
-              }
+              // function disableMute() {
+              //   console.log('unmute');
+              //   aud.muted = false;
+              // }
 
-              function checkMute() {
-                console.log('check');
-                alert(aud.muted);
-              }
+              // function checkMute() {
+              //   console.log('check');
+              //   alert(aud.muted);
+              // }
               function replay(){
                 aud.currentTime=0;
                 aud.play();

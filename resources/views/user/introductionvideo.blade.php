@@ -13,13 +13,6 @@
   --overlay-color: #31385C;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 .showcase {
   position: absolute;
   right: 0;
@@ -122,11 +115,13 @@
 
 .social {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 65%;
+  font-size: 160%;
 }
 
 .social li {
@@ -145,31 +140,7 @@
   transform: scale(0.5) translateY(-15px);
 }
 
-.menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.menu ul {
-  position: relative;
-  list-style: none;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  font-size: 24px;
-  color: #111;
-}
-
-.menu ul li a:hover {
-  color: var(--overlay-color);
-}
 
 @media (max-width: 800px) {
   .showcase,
@@ -184,6 +155,16 @@
   .text h3 {
     font-size: 2em;
   }
+}
+
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  /* width: 100%; */
+  /* padding: 20px; */
 }
 
 </style>
@@ -207,13 +188,20 @@
     <!-- For example: https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
     <div class="overlay"></div>
 
-    <ul class="social">
 
-          <button onclick="pauseVid()" type="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;">Pause Video</button>&nbsp
+    <ul class="social content">
 
-           <button onclick="playVid()" type="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;">Play Video</button>&nbsp&nbsp
 
-           <a href="{{route('login')}}"><button type="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 200%; color: #fff;">Next</button></a>
+        <li>
+          <a href="#" onclick="pauseVid()"><i class="fas fa-pause"></i></a>
+        </li>
+        <li>
+          <a href="#" onclick="playVid()"><i class="fas fa-play"></i></a>
+        </li>
+        <li>
+          <a href="{{route('login')}}">Next</a>
+        </li>
+
 
     </ul>
 
