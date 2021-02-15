@@ -286,11 +286,13 @@
 
     //validatio file size
     $('#gambar_profile').on('change', function() {
-          var numb = $(this)[0].files[0].size/51200 /51200 ;
+          var numb = $(this)[0].files[0].size/1024 /1024 ;
+          console.log($(this)[0].files[0]);
+          console.log("Nilai" + numb);
           numb = numb.toFixed(2);
           if(numb > 2){
-          alert('Ralat! Gambar anda melebihi 50MB. Saiz fail anda adalah: ' + numb +' MB');
-          document.getElementById("attachment_permohonan").value = "";
+          alert('Ralat! Gambar anda melebihi 1MB. Saiz fail anda adalah: ' + numb +' MB');
+          document.getElementById("gambar_profile").value = "";
           var fileName = "";
           $(this).next('.custom-file-label').html(fileName);
           return false;
