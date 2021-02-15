@@ -194,7 +194,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#link" role="tab" aria-controls="profile" aria-selected="false">Find Your Future</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#link" role="tab" aria-controls="profile" aria-selected="false">I 4.0 Application</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
