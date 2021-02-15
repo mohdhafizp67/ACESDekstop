@@ -54,10 +54,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   object-fit: cover;
   opacity: 0.8;
-  height: 510px;
+  /* height: 510px; */
 }
 
 .overlay {
@@ -178,7 +178,6 @@
     <video
       id="myVideo"
       src="{{asset('concept/video/Mascotvideo.mp4')}}"
-      muted
       loop
       autoplay
       type="video/mp4"
