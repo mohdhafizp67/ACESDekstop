@@ -30,7 +30,7 @@
 <div class="row">
   <div class="col-md-12">
     <h1 style="text-align: center; color: #fff; font-weight: bold;padding-top: 2%;">START QUIZ</h1>
-    <p style="padding-top: 5%;text-align: center; color: #fff;font-size: 150%;">Answer all the question based on lessons</p>
+    <p style="padding-top: 0%;text-align: center; color: #fff;font-size: 150%;">Answer all the question based on lessons</p>
   </div>
 
 
@@ -39,7 +39,7 @@
   <div class="col-md-4">
 
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4" style="padding: 1.5%;">
     <!-- <button class="btn blinking" style="color: #fff; font-size: 100%;" onclick="pass_quiz_id(1)"> START </button> -->
     <form action="{{route('quiz.start-quiz')}}" method="post" style="margin: 12%;text-align: center;">
     @csrf

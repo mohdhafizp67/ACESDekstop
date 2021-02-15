@@ -291,7 +291,7 @@
 
     <div class="row" style="padding: 1%;">
       <div class="col-md-4">
-        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="80%" style="margin-top: 60%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="80%" style="margin-top: 40%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
         <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 7%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 0%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
         <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
