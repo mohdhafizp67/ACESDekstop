@@ -143,6 +143,22 @@
     border-color: #00f0ff #00f0ff #00f0ff;
     }
 
+    .w3-modal-content {
+    margin: auto;
+    background-color: #000;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px;
+    }
+    .w3-display-topright {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 250%;
+        color: red;
+    }
+
     </style>
   </head>
   <body>
@@ -175,13 +191,69 @@
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/GZrlQpHykQQ?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            </div>
+                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/GZrlQpHykQQ?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                               <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/ilnm5pkI9uM?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:280px;">
-                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><a href="https://youtu.be/v9rZOa3CUC8" style="margin-left:2%;" target="_blank">What is the Fourth Industrial Revolution?</a></p>
-                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 0%;"></i><a href="https://www.youtube.com/watch?v=b9mJrzdlfR8" style="margin-left:2%;" target="_blank">What is Industry 4.0 and what does it mean for you?</a></p>
+                              <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;">What is the Fourth Industrial Revolution?<span></p>
+
+                              <div id="id01" class="w3-modal">
+                                <div class="w3-modal-content w3-card-4">
+                                  <header class="">
+                                    <span onclick="document.getElementById('id01').style.display='none'"
+                                    class="w3-button w3-display-topright">&times;</span>
+
+                                  </header>
+                                  <div class="w3-container">
+                                    <iframe width="100%" height="350px" src="https://www.youtube.com/embed/v9rZOa3CUC8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  </div>
+
+                                </div>
+                              </div>
+
+                              <script>
+                                // Get the modal
+                                var modal = document.getElementById('id01');
+
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function(event) {
+                                  if (event.target == modal) {
+                                    modal.style.display = "none";
+                                  }
+                                }
+                                </script>
+
+                                <p onclick="document.getElementById('id02').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;">What is Industry 4.0 and what does it mean for you?<span></p>
+
+                                <div id="id02" class="w3-modal">
+                                  <div class="w3-modal-content w3-card-4">
+                                    <header class="">
+                                      <span onclick="document.getElementById('id02').style.display='none'"
+                                      class="w3-button w3-display-topright">&times;</span>
+
+                                    </header>
+                                    <div class="w3-container">
+                                      <iframe width="100%" height="350px" src="https://www.youtube.com/embed/b9mJrzdlfR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <script>
+                                  // Get the modal
+                                  var modal = document.getElementById('id02');
+
+                                  // When the user clicks anywhere outside of the modal, close it
+                                  window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                      modal.style.display = "none";
+                                    }
+                                  }
+                                  </script>
+
+
 
 
                             </div>
