@@ -1,7 +1,7 @@
 @extends('layouts.app-login-register')
 
 @section('content')
-<html style="background-color: #130e29 !important;">
+<html>
 <head>
   <link rel="stylesheet" href="{{ asset('css/Login.css') }} ">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -9,102 +9,227 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <style>
-/* Style the footer */
-.footer {
-  background-color: #000c15;
-  /* padding: 10px; */
-  /* text-align: center; */
-  font-size: 80%;
+:root {
+  --overlay-color: #31385C;
 }
 
-.button {
-  background-color: ##ffffff00;
-  border: none;
-  /* color: white; */
-  /* padding: 16px 32px; */
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  /* margin: 4px 2px; */
-  transition-duration: 0.4s;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.showcase.active {
+  right: 300px;
+}
+
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
   cursor: pointer;
 }
 
-.buttonsound {
-  background-color: #ffffff00;
-  color: #fff;
-  /* border: 2px solid #4CAF50; */
+.showcase video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* min-height: 100vh; */
+  object-fit: cover;
+  opacity: 0.8;
+  height: 510px;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-    background-color: transparent;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-color);
+  mix-blend-mode: overlay;
 }
+
+.text {
+  position: relative;
+  z-index: 10;
+}
+
+.text h2 {
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text h3 {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin: 20px 0;
+  max-width: 700px;
+}
+
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.text a:hover {
+  letter-spacing: 6px;
+}
+
+.social {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  filter: invert(1);
+  margin-right: 20px;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul {
+  position: relative;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+
+.menu ul li a:hover {
+  color: var(--overlay-color);
+}
+
+@media (max-width: 800px) {
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+
+  .text h2 {
+    font-size: 3em;
+  }
+
+  .text h3 {
+    font-size: 2em;
+  }
+}
+
 </style>
 </head>
 <body>
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
 
+  <section class="showcase">
+    <header>
+      <div class="toggle"></div>
+    </header>
+    <video
+      id="myVideo"
+      src="{{asset('concept/video/Mascotvideo.mp4')}}"
+      muted
+      loop
+      autoplay
+      type="video/mp4"
+    ></video>
+<!-- Sample Video provided by DesignSupply https://codepen.io/designsupply/pen/zmEWBm -->
+    <!-- Download Video Source and host the file on your own server -->
+    <!-- For example: https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+    <div class="overlay"></div>
 
-  <div class="row" style="padding-top: 3%;">
-    <div class="col-md-1">
+    <ul class="social">
 
-    </div>
-    <div class="col-md-10" style="padding: 1%;background-image: url({{asset('concept/images/galaxy/panel.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-      <iframe class="embed-responsive-item" style="padding: 5%;" width="100%" height="400px" src="https://www.youtube.com/embed/fuTtS4fLvx0?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="col-md-1">
+          <button onclick="pauseVid()" type="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;">Pause Video</button>&nbsp
 
-    </div>
-  </div>
-  <div class="row" style="padding-top: 3%; padding-bottom: 3%;">
-    <div class="col-md-4">
+           <button onclick="playVid()" type="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;">Play Video</button>&nbsp&nbsp
 
-    </div>
-    <div class="col-md-4">
-    </div>
-    <div class="col-md-4">
-      <a href="{{route('login')}}"><button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 50%; color:#fff;">LOG IN</button></a>
-    </div>
-  </div>
+           <a href="{{route('login')}}"><button type="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 200%; color: #fff;">Next</button></a>
 
-  <!-- <div class="row">
-    <div class="footer">
-    <span>&copy; Hakcipta Terpelihara 2021</span>&nbsp&nbsp&nbsp&nbsp<span style="margin-left: 53%;"><font color="white">TERMS&CONDITIONS</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">PRIVACY</font></span>
-    </div>
-  </div> -->
-</div>
+    </ul>
+
+  </section>
 
 </body>
-<script type="text/javascript">
-function onlyNumberKey(evt) {
-
-      // Only ASCII charactar in that range allowed
-      var ASCIICode = (evt.which) ? evt.which : evt.keyCode
-      if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
-          return false;
-      return true;
-  }
-
-  function visiblePass() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-      x.type = "text";
-      document.getElementById("icon_eye_pass").style.color = "#007bff";
-    } else {
-      x.type = "password";
-      document.getElementById("icon_eye_pass").style.color = "grey";
-
-    }
-  }
-</script>
 
 <script>
-function myFunction() {
-  console.log('auto');
-  document.getElementById("myAudio").autoplay;
+var vid = document.getElementById("myVideo");
+
+function playVid() {
+  vid.play();
+}
+
+function pauseVid() {
+  vid.pause();
 }
 </script>
 </html>

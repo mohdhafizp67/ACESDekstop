@@ -209,7 +209,7 @@
                     </div>
                     <div class="col-md">
                       <div class="form-group" style="color: white !important;">
-                        <label class="col-form-label">UPLOAD PROFILE PICTURE</label>
+                        <label class="col-form-label">UPLOAD PROFILE PICTURE <span style="font-size: 80%;"> : 150 x 150 pixels</span></label>
 
                           <div class="custom-file">
                               <input type="file" class="custom-file-input" id="gambar_profile" onchange="return fileValidation('gambar_profile')" name="gambar_profile">

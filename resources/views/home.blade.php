@@ -98,8 +98,8 @@ margin-left: -48%;
 }
 
 .fontnew{
-  @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
-  font-family: 'Arvo', serif;
+  @import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+  font-family: 'Long Cang', cursive;
 }
 
 /* .avatar {
@@ -189,7 +189,7 @@ margin-left: -48%;
             <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <div class="card-body list-group" style="padding: 5%;">
                 <div class="progressbar1">
-                <div class="second circle" data-percent="45">
+                <div class="second circle" data-percent="0">
                   <strong></strong>
                   <span>GAME</span>
                 </div>
@@ -283,6 +283,7 @@ margin-left: -48%;
                   </div> -->
                 </div>
               </div>
+
       			</div>
       		</div>
 

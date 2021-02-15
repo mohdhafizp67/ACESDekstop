@@ -287,9 +287,9 @@
       <div class="col-md-4">
         <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="80%" style="margin-top: 60%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
-        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: 0%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
+        <button class="button buttonsound" onclick="enableMute()" type="button" style="margin-left: -5%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button>
         <button class="button buttonsound" onclick="disableMute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-        <span  onclick="replay()" style="color: #fff; margin-left: 3%;"><i class="fas fa-undo"></i></span>
+        <span  onclick="replay()" style="color: #fff; margin-left: 1%;"><i class="fas fa-undo"></i></span>
 
         <audio id="myAudio" controls autoplay hidden="true">
 
@@ -319,7 +319,7 @@
         }
         </script>
       </div>
-      <div class="col-md-8" style="margin-left: -14%;">
+      <div class="col-md-8" style="margin-left: -17%;">
         <div class="slider-container">
 
           <div class="slider-content">
