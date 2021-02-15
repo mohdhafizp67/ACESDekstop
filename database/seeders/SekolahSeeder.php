@@ -406,6 +406,34 @@ class SekolahSeeder extends Seeder
         ]
       );
 
+      DB::table('schools')-> insert(
+        [
+
+        'daerah' => 'Pasir Puteh',
+        'negeri' => 'Kelantan',
+        'sekolah' => 'SMK CHERANG RUKU',
+        ]
+      );
+
+      DB::table('schools')-> insert(
+        [
+
+        'daerah' => 'Pasir Puteh',
+        'negeri' => 'Kelantan',
+        'sekolah' => 'SMK GAAL',
+        ]
+      );
+
+      DB::table('schools')-> insert(
+        [
+
+        'daerah' => 'Pasir Puteh',
+        'negeri' => 'Kelantan',
+        'sekolah' => 'SMK JERAM',
+        ]
+      );
+
+
 
     }
 }
