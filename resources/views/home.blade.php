@@ -19,6 +19,8 @@
 <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
 <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <style media="screen">
+
+
 .circle {
 width: 100%;
 margin: 6px 6px 20px;
@@ -37,7 +39,7 @@ vertical-align: top;
 .circle strong {
 position: absolute;
 top: 25%;
-left: -20%;
+left: -25%;
 width: 100%;
 text-align: center;
 line-height: 25px;
@@ -56,7 +58,7 @@ display: block;
 color: #f8f9fa;
 font-size: 130%;
 margin-top: 65%;
-margin-left: -50%;
+margin-left: -55%;
 }
 
 canvas {
