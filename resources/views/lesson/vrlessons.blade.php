@@ -17,6 +17,7 @@
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="{{ asset('css/pelajaran/vrlessons.css') }} ">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <style>
 
