@@ -71,170 +71,32 @@
   </div>
   <div class="col-md-8" style="overflow-y:auto;height:300px;width:100%;">
     <table class="table" style="text-align: center; text-transform: uppercase;">
-
+      @foreach($student as $data)
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
           <td style="color: #fff; font-size: 200%; text-align: end;font-weight: bold;">
-            1
+            {{$data->id}}
           </td>
           <td style="text-align: end;">
-            @if(Auth::user()->profile_picture != null)
-            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
+            @if($data->user->profile_picture!= null)
+            <img src="{{ asset( $image_path = str_replace('public', 'storage',  $data->user->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
             @else
-            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
+            <img src="{{ asset('https://i.redd.it/z394307odi741.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
             @endif <br>
           </td>
           <td style="color: #fff; font-size: 100%;">
-            <!-- {{Auth::user()->name}} -->
-            Mohd Amirul
+            {{$data->user->name}}
           </td>
           <td style="color: #fff; font-size: 100%;">
-            SMK
+            {{$data->user->school}}
           </td>
           <td style="color: #fff; font-size: 100%;">
-            Pahang
+            {{$data->user->state}}
           </td>
           <td style="color: #fff; font-size: 100%; font-weight: bold;">
-            3000
+            {{$total_mark}}
           </td>
         </tr>
-
-        <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff; font-size: 200%;text-align: end; font-weight: bold;">
-            2
-          </td>
-          <td style="text-align: end;">
-            @if(Auth::user()->profile_picture != null)
-            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
-            @else
-            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
-            @endif <br>
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            <!-- {{Auth::user()->name}} -->
-            Mohd Amirul
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            SMK
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            Pahang
-          </td>
-          <td style="color: #fff; font-size: 100%; font-weight: bold;">
-            3000
-          </td>
-        </tr>
-
-        <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff;font-size: 200%;text-align: end; font-weight: bold;">
-            3
-          </td>
-          <td style="text-align: end;">
-            @if(Auth::user()->profile_picture != null)
-            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
-            @else
-            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
-            @endif <br>
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            <!-- {{Auth::user()->name}} -->
-            Mohd Amirul
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            SMK
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            Pahang
-          </td>
-          <td style="color: #fff; font-size: 100%; font-weight: bold;">
-            3000
-          </td>
-        </tr>
-
-        <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff;font-size: 200%;text-align: end; font-weight: bold;">
-            4
-          </td>
-          <td style="text-align: end;">
-            @if(Auth::user()->profile_picture != null)
-            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
-            @else
-            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
-            @endif <br>
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            <!-- {{Auth::user()->name}} -->
-            Mohd Amirul
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            SMK
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            Pahang
-          </td>
-          <td style="color: #fff; font-size: 100%; font-weight: bold;">
-            3000
-          </td>
-        </tr>
-
-        <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff;font-size: 200%;text-align: end; font-weight: bold;">
-            5
-          </td>
-          <td style="text-align: end;">
-            @if(Auth::user()->profile_picture != null)
-            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
-            @else
-            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
-            @endif <br>
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            <!-- {{Auth::user()->name}} -->
-            Mohd Amirul
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            SMK
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            Pahang
-          </td>
-          <td style="color: #fff; font-size: 100%; font-weight: bold;">
-            3000
-          </td>
-        </tr>
-
-        <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff;font-size: 200%;text-align: end; font-weight: bold;">
-            6
-          </td>
-          <td style="text-align: end;">
-            @if(Auth::user()->profile_picture != null)
-            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
-            @else
-            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
-            @endif <br>
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            <!-- {{Auth::user()->name}} -->
-            Mohd Amirul
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            SMK
-          </td>
-          <td style="color: #fff; font-size: 100%;">
-            Pahang
-          </td>
-          <td style="color: #fff; font-size: 100%; font-weight: bold;">
-            3000
-          </td>
-        </tr>
-
-
-
-
-
-
-
-
+        @endforeach
       </tbody>
     </table>
   </div>
@@ -266,13 +128,13 @@
             {{Auth::user()->name}}
           </td>
           <td style="color: #fff; font-size: 150%; color:#E9FF00">
-            SMK
+            {{Auth::user()->school}}
           </td>
           <td style="color: #fff; font-size: 150%; color:#E9FF00">
-            Pahang
+            {{Auth::user()->state}}
           </td>
           <td style="color: #fff; font-size: 150%; color:#E9FF00">
-            1000
+            {{$total_mark}}
           </td>
           <!-- <td style="color: #fff; font-size: 150%; color:#E9FF00">
             <div class="popup" onclick="myFunction()">Share+

@@ -7,21 +7,6 @@
   <head>
 <style media="screen">
 
-    .btn {
-    border: none;
-    outline: none;
-    padding: 10px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-    font-size: 18px;
-    }
-
-    /* Style the active class, and buttons on mouse-over */
-    .active, .btn:hover {
-    background-color: #666;
-    color: white;
-    }
-
     .label {
     /* background-color: #4CAF50; */
     border: none;
@@ -40,14 +25,15 @@
 
   }
 
-  .label.active {
+  .label1 {
     background-color: #ffffff00;
     color: white;
     border: 2px solid #007bff;
   }
 
-  .label1 {
-    background-color: #ffffff00;
+
+  .label1:focus {
+    background-color: #1a7e8e;
     color: white;
     border: 2px solid #007bff;
   }
@@ -71,7 +57,6 @@
     /* background-image: url({{asset('concept/images/galaxy/btn_prop2.png')}}); */
 
   }
-
 </style>
 
 </head>
@@ -167,7 +152,7 @@
                       @if($ans[$i]->question_id == $data->id)
                       <div class="col-md-4" style="margin-left: 10%;">
                         <label class="label label1 custom-control custom-radio custom-control-inline">
-                            <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}"  class="custom-control-input"><span class="">{{$ans[$i]->answer}}</span>
+                            <input type="radio" name="answer[{{$loop->iteration}}]" value="{{$ans[$i]->id}}" class="custom-control-input"><span class="">{{$ans[$i]->answer}}</span>
                         </label>
                       </div>
                       <div class="col-md-2">
@@ -384,6 +369,10 @@ $('.btnNext').click(function() {
 
 $('.btnPrevious').click(function() {
   $('.nav-pills .active').parent().prev('li').find('a').trigger('click');
+});
+
+$('.label1').click(function() {
+  $("input[type=radio]:checked").parent("label").css("background-color", "#1a7e8e");
 });
 </script>
 

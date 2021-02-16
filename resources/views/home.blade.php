@@ -37,7 +37,7 @@ vertical-align: top;
 .circle strong {
 position: absolute;
 top: 25%;
-left: -23%;
+left: -20%;
 width: 100%;
 text-align: center;
 line-height: 25px;
@@ -137,6 +137,13 @@ canvas {
    top: 50%;
    transform: translate(-50%, -50%);
  }
+
+ img {
+   -o-object-fit: contain !important;
+      /* object-fit: contain !important; */
+   -o-object-position: center !important;
+      /* object-position: center !important; */
+ }
 </style>
   </head>
   <body onload="myFunction()">
@@ -148,7 +155,7 @@ canvas {
 
         <h1 style="text-align: center; font-size: 450%; color: #fff; font-weight:bold; padding-top: 0%; padding-left: 9%;">
 
-  				ACES <span class="fontnew">I</span><font color="#ff0000"> 4.0</font> <br>
+  				ACES <font color="#ff0000"><span class="fontnew"> I4.0</span></font> <br>
   			</h1>
 
         <!-- <div style="position: absolute;  top: 70px;  right: 1px;">
@@ -165,7 +172,7 @@ canvas {
                 @if(Auth::user()->profile_picture == null)
                   <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="img-container">
                 @else
-                <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="img-container" style=" width:70%;height: 155px;">
+                <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="img-container" style=" width:150px;height: 150px;">
                 @endif
 
 
@@ -219,8 +226,8 @@ canvas {
                 <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
 
-                <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 0%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-                <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
+                <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+                <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50%  50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
 
                   <audio id="myAudio" controls autoplay hidden="true">
 

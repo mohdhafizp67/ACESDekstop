@@ -149,7 +149,7 @@
     position: relative;
     padding: 0;
     outline: 0;
-    width: 600px;
+    width: 700px;
     }
     .w3-display-topright {
         position: absolute;
@@ -207,7 +207,7 @@
 
                                   </header>
                                   <div class="w3-container">
-                                    <iframe width="100%" height="350px" src="https://www.youtube.com/embed/v9rZOa3CUC8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/v9rZOa3CUC8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                   </div>
 
                                 </div>
@@ -235,7 +235,7 @@
 
                                     </header>
                                     <div class="w3-container">
-                                      <iframe width="100%" height="350px" src="https://www.youtube.com/embed/b9mJrzdlfR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                      <iframe width="100%" height="300px" src="https://www.youtube.com/embed/b9mJrzdlfR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
 
                                   </div>
