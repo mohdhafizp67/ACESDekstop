@@ -144,6 +144,21 @@
     border-color: #00f0ff #00f0ff #00f0ff;
     }
 
+    .w3-modal-content {
+    margin: auto;
+    background-color: #000;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 700px;
+    }
+    .w3-display-topright {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 250%;
+        color: red;
+    }
 
     </style>
   </head>
@@ -204,9 +219,91 @@
                             </div>
 
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:280px;">
-                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><a href="https://youtu.be/jRQzl8ewDMQ" style="margin-left:2%;" target="_blank">Knowledge and Skill</a></p>
-                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 0%;"></i><a href="https://youtu.be/reAzWA3oFV8" style="margin-left:2%;" target="_blank">Training</a></p>
-                              <p><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 0%;"></i><a href="https://youtu.be/NqswOcwJBFE" style="margin-left:2%;" target="_blank">Job Virtual Reality Developer</a></p>
+
+                              <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;">Knowledge and Skill<span></p>
+
+                              <div id="id01" class="w3-modal">
+                                <div class="w3-modal-content w3-card-4">
+                                  <header class="">
+                                    <span onclick="document.getElementById('id01').style.display='none'"
+                                    class="w3-button w3-display-topright">&times;</span>
+
+                                  </header>
+                                  <div class="w3-container">
+                                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/jRQzl8ewDMQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  </div>
+
+                                </div>
+                              </div>
+
+                              <script>
+                                // Get the modal
+                                var modal = document.getElementById('id01');
+
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function(event) {
+                                  if (event.target == modal) {
+                                    modal.style.display = "none";
+                                  }
+                                }
+                                </script>
+
+                                <p onclick="document.getElementById('id02').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;">Training<span></p>
+
+                                <div id="id02" class="w3-modal">
+                                  <div class="w3-modal-content w3-card-4">
+                                    <header class="">
+                                      <span onclick="document.getElementById('id02').style.display='none'"
+                                      class="w3-button w3-display-topright">&times;</span>
+
+                                    </header>
+                                    <div class="w3-container">
+                                      <iframe width="100%" height="300px" src="https://www.youtube.com/embed/reAzWA3oFV8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <script>
+                                  // Get the modal
+                                  var modal = document.getElementById('id02');
+
+                                  // When the user clicks anywhere outside of the modal, close it
+                                  window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                      modal.style.display = "none";
+                                    }
+                                  }
+                                  </script>
+
+                                  <p onclick="document.getElementById('id03').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;">Job Virtual Reality Developer<span></p>
+
+                                  <div id="id03" class="w3-modal">
+                                    <div class="w3-modal-content w3-card-4">
+                                      <header class="">
+                                        <span onclick="document.getElementById('id03').style.display='none'"
+                                        class="w3-button w3-display-topright">&times;</span>
+
+                                      </header>
+                                      <div class="w3-container">
+                                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/NqswOcwJBFE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                  <script>
+                                    // Get the modal
+                                    var modal = document.getElementById('id03');
+
+                                    // When the user clicks anywhere outside of the modal, close it
+                                    window.onclick = function(event) {
+                                      if (event.target == modal) {
+                                        modal.style.display = "none";
+                                      }
+                                    }
+                                    </script>
+
                             </div>
 
                         </div>

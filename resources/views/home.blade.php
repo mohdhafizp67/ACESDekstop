@@ -172,7 +172,7 @@ canvas {
                 @if(Auth::user()->profile_picture == null)
                   <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="img-container">
                 @else
-                <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="img-container" style=" width:150px;height: 150px;">
+                <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="img-container" style=" width:160px;height: 160px;">
                 @endif
 
 
