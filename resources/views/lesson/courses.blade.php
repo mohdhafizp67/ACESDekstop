@@ -294,7 +294,7 @@
 
         <audio id="myAudio" controls autoplay hidden="true">
 
-        <source src="{{asset('concept/audio/LESSONS.mp3')}}" type="audio/mpeg">
+        <source src="{{asset('concept/audio/lessonsv1.mp3')}}" type="audio/mpeg">
         </audio>
 
         <script>

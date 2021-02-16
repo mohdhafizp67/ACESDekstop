@@ -297,7 +297,7 @@
 
         <audio id="myAudio" controls autoplay hidden="true">
 
-        <source src="{{asset('concept/audio/GAME.mp3')}}" type="audio/mpeg">
+        <source src="{{asset('concept/audio/gamev1.mp3')}}" type="audio/mpeg">
         </audio>
 
         <script>
