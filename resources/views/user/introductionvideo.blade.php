@@ -177,7 +177,7 @@
     </header>
     <video
       id="myVideo"
-      src="{{asset('concept/video/Mascotvideo.mp4')}}"
+      src="{{asset('concept/video/mascotv2.mp4')}}"
       loop
       autoplay
       type="video/mp4"

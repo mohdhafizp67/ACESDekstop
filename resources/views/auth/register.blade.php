@@ -61,7 +61,7 @@
 
       <audio id="myAudio" controls autoplay hidden="true">
 
-        <source src="{{asset('concept/audio/REGISTRATION.mp3')}}" type="audio/mpeg">
+        <source src="{{asset('concept/audio/registerv1.mp3')}}" type="audio/mpeg">
       </audio>
 
       <script>
