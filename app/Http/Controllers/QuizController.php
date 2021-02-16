@@ -184,11 +184,11 @@ class QuizController extends Controller
 
   {
       $quiz = Quiz::findOrFail($request->quiz_id);
-      $question = QuestionBank::where('lesson_id', $quiz->lesson->id)->get()->random($quiz->number_of_question)->shuffle();
+      $question = QuestionBank::where('lesson_id', $quiz->lesson->id)->where('language', 'en' )->get()->random($quiz->number_of_question)->shuffle();
       // $question = $question->random($quiz->number_of_question);
       // $question = $question->shuffle();
       foreach ($question as $key => $value) {
-        $answer[] = AnswerBank::where('question_id', $value->id)->get()->shuffle();
+        $answer[] = AnswerBank::where('question_id', $value->id)->where('language', 'en' )->get()->shuffle();
       }
 
       foreach ($answer as $answers) {
