@@ -40,8 +40,8 @@ top: 25%;
 left: -23%;
 width: 100%;
 text-align: center;
-line-height: 40px;
-font-size: 30px;
+line-height: 25px;
+font-size: 150%;
 color: #f8f9fa;
 }
 
