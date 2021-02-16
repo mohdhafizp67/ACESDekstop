@@ -10522,6 +10522,2898 @@ class QuestionSeeder extends Seeder
 
 
 
+//En
+
+      DB::table('question_banks')-> insert(                 //start_IR 4.0
+        [
+          'id' => '221',               //bil soalan
+          'question' => 'What does IR4.0 refer to? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Internet Revolution 4.0',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '221', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Instagram Revolution 4.0',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '221',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Industrial Revolution 4.0',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '221',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Industries Revolution 4.0',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '221',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '222',               //bil soalan
+          'question' => 'Which best describe IR4.0 ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Uses water and steam power to run mechanical production facilities',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '222', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Uses electronics and IT to automate production',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '222',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Uses cyber physical-systems to monitor, analyse and automate businesses',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '222',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Uses electrical power to enable work-sharing mass production',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '222',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '223',               //bil soalan
+          'question' => 'Which industrial revolution introduced Cyber-physical systems?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => ' First Industrial Revolution',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '223', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Second Industrial Revolution',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '223',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Fourth Industrial Revolution',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '223',
+        ]
+      );
+
+     DB::table('answer_banks')-> insert(
+       [
+          'answer' => 'Third Industrial Revolution',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '223',
+      ]
+        );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+            'id' => '224',               //bil soalan
+            'question' => 'What separates the 4th industrial revolution from the rest?',
+            'status' => '1',
+            'language' => 'en',             // dah tukar en
+            'lesson_id' => '1',         //lesson
+          ]
+        );
+
+      DB::table('answer_banks')-> insert(
+        [
+            'answer' => 'It does not have new products',
+            'status' => 'False',
+            'language' => 'en',
+            'question_id' => '224', // ikut id soalan
+          ]
+        );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It does not have technological advancements',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '224',
+         ]
+       );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It did not introduce a new source of energy',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '224',
+         ]
+       );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It did not impact industries',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '224',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '225',               //bil soalan
+          'question' => 'What is Industry 4.0',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Manufacturing Sector Revolution',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '225', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Revolution after combining automation and digital',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '225',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The usage of computer technology and automation working in a new way that can solve difficult problem and predicting problem before it happens.',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '225',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Revolution started after the creation of electrical energy',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '225',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '226',               //bil soalan
+          'question' => 'What are the features that can help human to solve complex problems in Industry 4.0? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Automation',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '226', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Simulation',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '226',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'All of the above',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '226',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'System integration',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '226',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '227',               //bil soalan
+          'question' => 'The impacts of Industry 4.0 are',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'More systematic management of input and output',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '227', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Improvement in the standard of living of workers',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '227',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => ' All of the above',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '227',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Changing the future of career world and the workers',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '227',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '228',               //bil soalan
+          'question' => 'What is the difference in industry 3.0 and 4.0? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The innovation of steam energy that can improve production.',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '228', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The usage of electrical energy to improve production in a bigger scale',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '228',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The usage of better technology through combination of automation and computer technology to help with production ',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '228',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The Usage of electronics and IT to automate production',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '228',
+        ]
+      );                                                      // bawah
+
+
+
+     DB::table('question_banks')-> insert(                 //start
+       [
+         'id' => '229',               //bil soalan
+         'question' => 'What is the name of the government agency that helps ensure that Malaysia remains relevant in the global industry? ',
+         'status' => '1',
+         'language' => 'en',             // dah tukar en
+         'lesson_id' => '1',         //lesson
+       ]
+     );
+
+     DB::table('answer_banks')-> insert(
+       [
+         'answer' => 'MINDEF',
+         'status' => 'False',
+         'language' => 'en',
+         'question_id' => '229', // ikut id soalan
+       ]
+     );
+
+     DB::table('answer_banks')-> insert(
+       [
+         'answer' => ' MDEC',
+         'status' => 'False',
+         'language' => 'en',
+         'question_id' => '229',
+       ]
+    );
+
+    DB::table('answer_banks')-> insert(
+      [
+        'answer' => 'MIDA',
+        'status' => 'True',
+        'language' => 'en',
+        'question_id' => '229',
+       ]
+     );
+
+     DB::table('answer_banks')-> insert(
+       [
+         'answer' => 'MIND',
+         'status' => 'False',
+         'language' => 'en',
+         'question_id' => '229',
+       ]
+     );                                                      // bawah
+
+
+     DB::table('question_banks')-> insert(                 //start
+       [
+         'id' => '230',               //bil soalan
+         'question' => 'Which country government introduced the Industry 4.0 concept?',
+         'status' => '1',
+         'language' => 'en',             // dah tukar en
+         'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'United States of America',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '230', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'France',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '230',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Germany',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '230',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Great Britain',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '230',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '231',               //bil soalan
+          'question' => 'What are the advantages of Industry 4.0? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Low cost of implementation',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '231', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Creating more vacancies for workers',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '231',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Improved productivity and efficiency',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '231',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'No risk of hacking into internal network',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '231',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '232',               //bil soalan
+          'question' => 'Industrial Revolution 4.0 is indicated by',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Steam engine',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '232', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Computers',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '232',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Automation',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '232',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Electricity',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '232',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '233',               //bil soalan
+          'question' => 'which jobs would be replaced by advanced technology?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Medical technicians',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '233', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Scientist',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '233',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Umpires and referees',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '233',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Data analyst',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '233',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '234',               //bil soalan
+          'question' => 'What are the objective of industry 4.0?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+         ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Enabled self-controlling',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '234', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Increase efficiency',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '234',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'All of the above',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '234',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Reduce complexity',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '234',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '235',               //bil soalan
+          'question' => 'Mass production led to:',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Products being more superior in quality',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '235', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Laborers received higher wages',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '235',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Goods became less expensive',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '235',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Industries moved to rural areas',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '235',
+        ]
+      );                                                      // bawah
+
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '236',               //bil soalan
+          'question' => 'Before the Industrial Revolution all products were created by',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Factories',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '236', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Robots',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '236',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Hand',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '236',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Aliens',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '236',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '237',               //bil soalan
+          'question' => 'Some of the machines invented in the 18th and 19th centuries are:',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Telephones, geographic positioning system, radios, airplanes',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '237', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sailboats, automobiles, wheel barrels, clocks, word processors',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '237',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Steam engine, railroads, flying shuttle, phonograph, steam ships, light bulb',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '237',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Automatic washer, hair dryer, rockets, space shuttles',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '237',
+        ]
+      );                                                      // bawah
+
+
+
+     DB::table('question_banks')-> insert(                 //start
+       [
+         'id' => '238',               //bil soalan
+         'question' => 'What had to occur before the Industrial Revolution could take place?',
+         'status' => '1',
+         'language' => 'en',             // dah tukar en
+         'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The Economic Revolution',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '238', // ikut id soalan
+        ]
+      );
+
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The Glorious Revolution',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '238',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The Agricultural Revolution',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '238',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The French Revolution',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '238',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '239',               //bil soalan
+          'question' => 'What should I do to prepare myself in the future for IR 4.0',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Forgetting my roots',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '239', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Being selfish',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '239',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Upgrade my knowledge',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '239',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sleep',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '239',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '240',               //bil soalan
+          'question' => 'Malaysia already used IR 4.0 efficiently ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '1',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Yes',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '240', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Dont know',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '240',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'No',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '240',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Dont care',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '240',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start_Pillar 4.0
+        [
+          'id' => '241',               //bil soalan
+          'question' => 'The following includes the pillar of industry 4.0, except',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Internet of Things (IoT)',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '241', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Big Data',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '241',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Social Media',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '241',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Artificial Intelligence',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '241',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '242',               //bil soalan
+          'question' => 'Which one is not IR 4.0',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Cloud computing',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '242', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Big data',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '242',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Microsoft Office',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '242',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'IOT',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '242',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '243',               //bil soalan
+          'question' => 'Select the right answer about industry 4.0 pillars ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'IOT',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '243', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Simulation',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '243',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'All of the above',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '243',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Autonomous Robot',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '243',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '244',               //bil soalan
+          'question' => 'Which of the following statements describes a Cloud? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It’s merely the English word for Cloud',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '244', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It’s a term from the youth language and describes a theft',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '244',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Describes an external virtual environment to provide storage',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '244',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Radio Frequency Identification',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '244',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '245',               //bil soalan
+          'question' => 'How many pillars are there in IR 4.0?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Seven',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '245', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Ten',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '245',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Nine',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '245',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Eleven',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '245',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '246',               //bil soalan
+          'question' => 'Below is the tools/ software/ applications we have today for Industry 4.0 except',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Cockpit',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '246', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '3D visualization',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '246',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Window Task Manager',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '246',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Condition Monitoring',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '246',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '247',               //bil soalan
+          'question' => 'What is the 6 design principles of Industry 4.0?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Interoperability, real time capability, visualization, service orientation, decentralization, decisions',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '247', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Interoperability, real time capability, data, service orientation, decentralization, modularity',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '247',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Interoperability, real time capability, visualization, service orientation, decentralization, modularity',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '247',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Interoperability, real time capability, visualization, prediction, decentralization, modularity',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '247',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '248',               //bil soalan
+          'question' => '5 steps to turn big data become smart data. Please choose the correct one',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Data > Knowledge > Information > Wisdom > Decisions',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '248', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Data > Information > > Decisions > Wisdom > Knowledge',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '248',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Data > Information > Knowledge > Wisdom > Decisions',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '248',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Data > Information > Wisdom > Knowledge > Decisions',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '248',
+        ]
+      );                                                      // bawah
+
+
+
+     DB::table('question_banks')-> insert(                 //start
+       [
+         'id' => '249',               //bil soalan
+         'question' => 'One of the solutions we develop to present information for industry 4.0?',
+         'status' => '1',
+         'language' => 'en',             // dah tukar en
+         'lesson_id' => '2',         //lesson
+       ]
+     );
+
+     DB::table('answer_banks')-> insert(
+       [
+         'answer' => 'AutoPiQ',
+         'status' => 'False',
+         'language' => 'en',
+         'question_id' => '249', // ikut id soalan
+       ]
+     );
+
+     DB::table('answer_banks')-> insert(
+      [
+         'answer' => 'Availability Manager',
+         'status' => 'False',
+         'language' => 'en',
+         'question_id' => '249',
+       ]
+     );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Cockpit',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '249',
+        ]
+      );
+
+        DB::table('answer_banks')-> insert(
+          [
+            'answer' => 'Condition Monitoring',
+            'status' => 'False',
+            'language' => 'en',
+            'question_id' => '249',
+          ]
+        );                                                      // bawah
+
+
+
+
+        DB::table('question_banks')-> insert(                 //start
+          [
+            'id' => '250',               //bil soalan
+            'question' => 'What is Real-Time Capability?',
+            'status' => '1',
+            'language' => 'en',             // dah tukar en
+            'lesson_id' => '2',         //lesson
+          ]
+        );
+
+        DB::table('answer_banks')-> insert(
+          [
+            'answer' => 'The process of organizing and planning how to divide your time between specific activities',
+            'status' => 'False',
+            'language' => 'en',
+            'question_id' => '250', // ikut id soalan
+          ]
+        );
+
+        DB::table('answer_banks')-> insert(
+          [
+            'answer' => 'The limitations on the start and end times of a project',
+            'status' => 'False',
+            'language' => 'en',
+            'question_id' => '250',
+          ]
+        );
+
+        DB::table('answer_banks')-> insert(
+          [
+            'answer' => 'The capability to collect and analyse data and provide the insights immediately',
+            'status' => 'True',
+            'language' => 'en',
+            'question_id' => '250',
+          ]
+        );
+
+        DB::table('answer_banks')-> insert(
+          [
+            'answer' => 'A geographic region within which the same standard time is used',
+            'status' => 'False',
+            'language' => 'en',
+            'question_id' => '250',
+          ]
+        );                                                      // bawah
+
+
+
+        DB::table('question_banks')-> insert(                 //start
+          [
+            'id' => '251',               //bil soalan
+            'question' => 'What is Interoperability?',
+            'status' => '1',
+            'language' => 'en',             // dah tukar en
+            'lesson_id' => '2',         //lesson
+          ]
+        );
+
+        DB::table('answer_banks')-> insert(
+          [
+            'answer' => 'The action of functioning or the fact of being active or in effect',
+            'status' => 'False',
+            'language' => 'en',
+            'question_id' => '251', // ikut id soalan
+          ]
+        );
+
+        DB::table('answer_banks')-> insert(
+          [
+            'answer' => 'The procedures or ways in which a researcher is going to measure behaviours or qualities',
+            'status' => 'False',
+            'language' => 'en',
+            'question_id' => '251',
+          ]
+        );
+
+        DB::table('answer_banks')-> insert(
+          [
+            'answer' => 'The ability of cyber-physical systems, humans and Smart Factories to connect and communicate with each other via the Internet of Things and the Internet of Services',
+            'status' => 'True',
+            'language' => 'en',
+            'question_id' => '251',
+          ]
+        );
+
+        DB::table('answer_banks')-> insert(
+          [
+            'answer' => 'The administration of business practices to create the highest level of efficiency possible within an organization',
+            'status' => 'False',
+            'language' => 'en',
+            'question_id' => '251',
+          ]
+        );                                                      // bawah
+
+
+
+        DB::table('question_banks')-> insert(                 //start
+          [
+            'id' => '252',               //bil soalan
+            'question' => 'What is Virtualization?',
+            'status' => '1',
+            'language' => 'en',             // dah tukar en
+            'lesson_id' => '2',         //lesson
+          ]
+        );
+
+        DB::table('answer_banks')-> insert(
+          [
+            'answer' => 'Something such as a picture, diagram, or piece of film that is used to show or explain something',
+            'status' => 'False',
+            'language' => 'en',
+            'question_id' => '252', // ikut id soalan
+          ]
+        );
+
+        DB::table('answer_banks')-> insert(
+          [
+            'answer' => 'An eye exam that checks how well you see the details of a letter or symbol from a specific distance',
+            'status' => 'False',
+            'language' => 'en',
+            'question_id' => '252',
+          ]
+        );
+
+        DB::table('answer_banks')-> insert(
+          [
+            'answer' => 'A virtual copy of the Smart Factory which is created by linking sensor data with virtual plant models and simulation models',
+            'status' => 'True',
+            'language' => 'en',
+            'question_id' => '252',
+          ]
+        );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The entire area that can be seen when the eye is directed forward, including that which is seen with peripheral vision',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '252',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '253',               //bil soalan
+          'question' => 'What is Decentralization?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'To concentrate by placing power and authority in a centre or central organization centralized several functions in a single agency',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '253', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Decisions that are not taken independently at local level, but holistically at a more central level',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '253',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The ability of cyber-physical systems within Smart Factories to make decisions on their own',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '253',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Slows down communication between devices',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '253',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '254',               //bil soalan
+          'question' => 'What is Service Orientation?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'A system supplying a public need such as transport, communications, or utilities such as electricity and water',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '254', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'to define the perspective, position, plans, and patterns that a service provider needs to be able to execute to meet an organization--s business Outcomes',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '254',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Offering of services of cyber-physical systems, humans and Smart Factories via the Internet of Services',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '254',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The work of managing the inner workings of your business so it runs as efficiently as possible ',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '254',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '255',               //bil soalan
+          'question' => 'What is Modularity?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Each of a set of standardized parts or independent units that can be used to construct a more complex structure, such as an item of furniture or a building.',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '255', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'A set of one or more modules that together make up an application.',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '255',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Flexible adaptation of Smart Factories for changing requirements of individual modules.',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '255',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The remainder after dividing one number by another.',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '255',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '256',               //bil soalan
+          'question' => 'When does Industry 4.0 starts?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2007',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '256', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2020',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '256',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2013',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '256',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2016',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '256',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '257',               //bil soalan
+          'question' => 'What was the first source of energy?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Water',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '257', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Coal',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '257',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sun',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '257',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Wind',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '257',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '258',               //bil soalan
+          'question' => 'In which year was the term Industry 4.0 first introduced?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2013',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '258', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2017',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '258',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2011',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '258',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '2018',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '258',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '259',               //bil soalan
+          'question' => 'RFID is short for?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Real Fun Is Done',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '259', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Radio For Immediate Danger',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '259',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Radio Frequency IDentification',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '259',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Radio Formula IDentification',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '259',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '260',               //bil soalan
+          'question' => 'Augmented Reality is a describes a ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '2',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Computer simulation',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '260', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Virtual reality',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '260',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Computer-aided',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '260',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'In-game life',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '260',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start_VR_3
+        [
+          'id' => '261',               //bil soalan
+          'question' => 'What Does VR Mean ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Virtual R',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '261', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Augmented Reality ',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '261',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Virtual Reality ',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '261',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'VR',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '261',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '262',               //bil soalan
+          'question' => 'An example of non-immersive VR device is',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'An IMAX',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '262', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'A virtual reality headset',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '262',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'An iPad',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '262',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'A screen projection',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '262',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '263',               //bil soalan
+          'question' => 'A student scans an item in the real world and their phone tells them what it is.',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Fully-immersive virtual',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '263', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Non-immersive virtual',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '263',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Augmented',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '263',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Map',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '263',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '264',               //bil soalan
+          'question' => 'A person using a Snapchat filter.',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Fully-immersive virtual',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '264', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Non-immersive virtual',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '264',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Augmented',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '264',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Filter',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '264',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '265',               //bil soalan
+          'question' => 'A fitness fanatic using a treadmill, and a projected image on the screen in front of them.',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Augmented',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '265', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Fully-immersive virtual',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '265',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Non-immersive virtual',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '265',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Hologram',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '265',
+        ]
+      );                                                      // bawah
+
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '266',               //bil soalan
+          'question' => 'A teacher of a design class has her students use an app to see what different fixtures and paint colours would make the classroom look like.',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Fully-immersive virtual',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '266', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Non-immersive virtual',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '266',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Augmented',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '266',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Hologram',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '266',
+        ]
+      );                                                      // bawah
+
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '267',               //bil soalan
+          'question' => 'Which VR headset is most expensive? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Oculus Rift',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '267', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Computer',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '267',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'PlayStation',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '267',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Samsung',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '267',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '268',               //bil soalan
+          'question' => 'Which popular on-demand video streaming service has an app on the Gear VR for watching all your favourite shows and movies?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Amazon Prime Video',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '268', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Hulu',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '268',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Netflix',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '268',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => ' YouTube',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '268',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '269',               //bil soalan
+          'question' => 'VR may be useful for students with special needs because',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It allows them to escape from difficult social situations',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '269', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'They can attend class from home',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '269',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Teachers can develop personalized lessons for students',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '269',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'They can play with their friends',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '269',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '270',               //bil soalan
+          'question' => 'Which of the following is NOT a constraint of VR?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It can be costly',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '270', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Developing lessons/experiences can be time consuming',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '270',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It can only be used for Science and Geography',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '270',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Resistance to new technology from teachers',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '270',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '271',               //bil soalan
+          'question' => 'What are the 3 types of VR? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Immersive, 3D, non-immersive',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '271', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Digital, semi-immersive, projective',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '271',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Immersive, semi-immersive, non-immersive',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '271',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '3D, non-immersive, digital',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '271',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '272',               //bil soalan
+          'question' => 'What Does AR stand for? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Augmented realive',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '272', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Application reality',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '272',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Augmented reality',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '272',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Application realive',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '272',
+        ]
+      );                                                      // bawah
+
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '273',               //bil soalan
+          'question' => 'Which definition best fits "Augmented Reality"? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Technology that turns physical objects into digital objects',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '273', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Technology that completely immerses users in a new digital environment',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '273',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Technology that overlays digital information on top of real-world items',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '273',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Technology that can achieve a human-level understanding of images',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '273',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '274',               //bil soalan
+          'question' => 'A game based on which animated franchise propelled augmented reality (AR) into the mainstream in recent years?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Super Mario',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '274', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'World of Warcraft',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '274',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Pokémon',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '274',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Fortnite',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '274',
+        ]
+      );                                                      // bawah
+
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '275',               //bil soalan
+          'question' => 'Which of the following is NOT a listed benefit of augmented reality (AR) in Education? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Bringing Opportunities for Collaboration',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '275', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Increasing Accessibility to Educational Content',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '275',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Improving Student Academic Achievement',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '275',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Appealing to Multi-Modal Learning',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '275',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '276',               //bil soalan
+          'question' => 'Augmented reality (AR) provides features that are...',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Collaborative, virtual, and simulated',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '276', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Computer-generated, sensory, and entirely virtual',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '276',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Highly visual, interactive, and three-dimensional',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '276',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Auditory, immersive, and cost-efficient',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '276',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '277',               //bil soalan
+          'question' => 'Augmented reality (AR) can turn abstract concepts into realistic experiences by making abstractions appear as real objects in the user’s world and allowing them to interact with them naturally. Which type of learner will benefit most from the use of augmented reality?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Auditory learner',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '277', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Logical/mathematical learner',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '277',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kinaesthetic/visual learner',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '277',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'All of the above',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '277',
+        ]
+      );                                                      // bawah
+
+
+
+
+     DB::table('question_banks')-> insert(                 //start
+       [
+         'id' => '278',               //bil soalan
+         'question' => 'What are the 4 difficulties in using augmented reality (AR) in education?',
+         'status' => '1',
+         'language' => 'en',             // dah tukar en
+         'lesson_id' => '3',         //lesson
+       ]
+     );
+
+     DB::table('answer_banks')-> insert(
+       [
+         'answer' => 'Digital divide, limited funding, limited research, functionality issues',
+         'status' => 'False',
+         'language' => 'en',
+         'question_id' => '278', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Access to resources, lack of flexibility, lack of interpersonal connections, investment costs',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '278',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Lack of content-creation tools, investment costs, technology learning curves, limited research',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '278',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Investment costs, functionality issues, digital divide, lack of content-creation tools',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '278',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '279',               //bil soalan
+          'question' => 'What group was one of the first to start using Augmented Reality?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Doctors',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '279', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Businessmen',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '279',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The Military',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '279',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Engineers',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '279',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '280',               //bil soalan
+          'question' => 'How will we interact with technology in the future?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '3',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'A Keyboard',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '280', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => ' Voice',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '280',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => ' Thoughts',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '280',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Eyes',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '280',
+        ]
+      );                                                      // bawah
 
 
 
@@ -10531,20 +13423,7570 @@ class QuestionSeeder extends Seeder
 
 
 
+      DB::table('question_banks')-> insert(                 //start_IOT_4
+        [
+          'id' => '281',               //bil soalan
+          'question' => 'WHAT IS IoT? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Internet of Telecommunication',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '281', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Internet of Telekom Malaysia',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '281',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Internet of Things',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '281',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Internet of Terabytes',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '281',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '282',               //bil soalan
+          'question' => 'What statement suits the Internet of Things best?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The Internet of Things aims to build reliable software',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '282', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The Internet of Things aims to connect humans and things',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '282',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Refers to the billions of devices around the world that are connected to the internet',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '282',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Refers to things with internet',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '282',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '283',               //bil soalan
+          'question' => 'IoT is defined as a network of internet-connected things with _________ and are able to talk to each other and collect or exchange data.',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Security',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '283', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Senses',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '283',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sensors',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '283',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Wi-Fi',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '283',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '284',               //bil soalan 28
+          'question' => 'Select one(1) advantage of the IoT:',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Expensive',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '284', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Wastes time and money',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '284',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The ability to access information from anywhere at anytime',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '284',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Slows down communication between devices',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '284',
+        ]
+      );                                                      // bawah
+
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '285',               //bil soalan
+          'question' => 'Which are the big challenges of IoT?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It is very easy to create and implement',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '285', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Efficiency ',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '285',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Security and Privacy',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '285',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'None at all',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '285',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '286',               //bil soalan
+          'question' => 'What are the benefits of using IoT? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Limited data obtained',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '286', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The data obtained is difficult to observe',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '286',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The data obtained is real-time',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '286',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The data obtained is difficult to analyse',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '286',
+        ]
+      );                                                      // bawah
 
 
 
 
 
+     DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '287',               //bil soalan
+          'question' => 'One use of IoT is:',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Computer',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '287', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Laptop',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '287',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Smart Home',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '287',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Smart Phone',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '287',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '288',               //bil soalan
+          'question' => 'Which is not an IoT product?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Smart City',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '288', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Smart Watch',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '288',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Smart Savings',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '288',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Smart Water',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '288',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '289',               //bil soalan
+          'question' => 'IoT is built on:',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Cloud computing',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '289', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Networks of data gathering sensors',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '289',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Both',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '289',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'None',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '289',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '290',               //bil soalan
+          'question' => 'Which of the following do you not think cannot be currently managed using the Internet of Things?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Printer',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '290', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Kettle',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '290',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Soft furnishing',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '290',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Car',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '290',
+        ]
+      );                                                      // bawah
 
 
 
 
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '291',               //bil soalan
+          'question' => 'Which of the following is a disadvantage of IoT use?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Cost savings',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '291', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Increased productivity',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '291',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => ' Over dependency on Technology',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '291',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Better lifestyle',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '291',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '292',               //bil soalan
+          'question' => 'A device that receives information from many points on the network and transmits it to another network.',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Machine to Machine (M2M)',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '292', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sensor',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '292',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Gateway',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '292',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Wearables',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '292',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '293',               //bil soalan
+          'question' => 'The automation of communication between devices, with no human intervention.',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sensor',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '293', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Gateway',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '293',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Machine to Machine (M2M)',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '293',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Wearables',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '293',
+        ]
+      );                                                      // bawah
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '294',               //bil soalan
+          'question' => 'A device that detects or measures an event or physical property.',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Machine to Machine (M2M)',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '294', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Wearables',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '294',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sensor',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '294',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Gateway',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '294',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '295',               //bil soalan
+          'question' => 'A piece of clothing or a wearable accessory which has advanced electronic capabilities.',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Machine to Machine (M2M)',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '295', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Gateway',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '295',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Wearables',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '295',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sensor',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '295',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '296',               //bil soalan
+          'question' => 'An Internet of Things platform: ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Provides services for accessing, using, or participating in the Internet',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '296', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Allows individuals and organizations to make their website accessible',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '296',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Allows for devices and apps to communicate with each other',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '296',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Slows down communication between devices',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '296',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '297',               //bil soalan
+          'question' => 'What device was used as an example of control centre threats?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Apple Store',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '297', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Google Play',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '297',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Amazon Echo',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '297',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'SIRI',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '297',
+        ]
+      );
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '298',               //bil soalan
+          'question' => 'IoT devices should always be updated. Why?  ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Nicer interfaces',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '298', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Efficiency ',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '298',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Security and Privacy',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '298',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'None at all',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '298',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '299',               //bil soalan
+          'question' => 'What type of device could allow a vehicle to place a show a warning on the dashboard, which might also notify the cars manufacturer?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Digital network',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '299', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Generator',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '299',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Sensor',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '299',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Smart phone',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '299',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '300',               //bil soalan
+          'question' => 'Which are the components of IoT',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '4',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Smartphones',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '300', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Smartwatches',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '300',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'All of the above',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '300',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Refrigerators',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '300',
+        ]
+      );                                                      // bawah
 
 
 
 
+      DB::table('question_banks')-> insert(                 //start_BD_5
+        [
+          'id' => '301',               //bil soalan
+          'question' => 'Big data is the massive amount of rapidly moving and freely ..................',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
 
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Unavailable data',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '301', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Structured Data',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '301',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Available data',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '301',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Unstructured Data',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '301',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '302',               //bil soalan
+          'question' => 'What is NOT a characteristic of big data? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Volume',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '302', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Variety',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '302',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Vision',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '302',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Velocity',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '302',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '303',               //bil soalan
+          'question' => 'What is the true definition of big data',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Huge amount of space',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '303', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Unlimited speed data internet connection',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '303',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Large, diverse sets of information',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '303',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Small, undiverse sets of information',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '303',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '304',               //bil soalan
+          'question' => 'Which of the following is an example of big data? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'UMOBILE',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '304', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'AN IPHONE',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '304',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => ' NETFLIX',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '304',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'TESCO',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '304',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '305',               //bil soalan
+          'question' => 'Variety is a characteristic of big data. Which type of formats does Variety comes from? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Structured',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '305', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Unstructured',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '305',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'All of the above',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '305',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Semi-structured',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '305',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '306',               //bil soalan
+          'question' => 'What does Velocity refer to?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Speed of an internet',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '306', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Speed of light',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '306',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Processing speed of a data',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '306',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Speed of a car',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '306',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '307',               //bil soalan
+          'question' => 'Variety comes from structured or unstructured format. What is the difference between them?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Handwritten / Computer-typed',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '307', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Subjective / Objective',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '307',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Numerical format / Natural Language',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '307',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Clean / Dirty',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '307',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '308',               //bil soalan
+          'question' => 'Which of the following would NOT use big data analysis?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Healthcare companies',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '308', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Public agencies',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '308',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'High school students doing homework',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '308',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Retail companies',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '308',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '309',               //bil soalan
+          'question' => 'How does the YouTube count as a big data?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It stores their user healthcare data',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '309', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It helps people find a date with their data',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '309',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It stores videos that is uploaded by their user',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '309',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'It helps stores peoples height',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '309',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '310',               //bil soalan
+          'question' => 'Volume is one of the characteristics of big data. What does Volume refer to?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The amounts of water in a glass bottle',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '310', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The amount of money',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '310',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The amount of dataThe amount of money',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '310',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The amount of YouTube videos that existed',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '310',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '311',               //bil soalan
+          'question' => 'What is the advantage on using big data in education in real life?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'To waste time',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '311', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Higher risk to fail',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '311',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Effective learning',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '311',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Expensive and stylish',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '311',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '312',               //bil soalan
+          'question' => 'Big Data is significant because of all of the following except it___________________.',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Helps us in identifying trends in datar',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '312', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Can be used to make connections in data',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '312',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => '. Allows us to determine how much data a database can store',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '312',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Helps us solve questions we might have',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '312',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '313',               //bil soalan
+          'question' => 'What are the four Vs that best define Big Data?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Vacant - Valorant - Volume-Validity',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '313', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Validity - Velocity - Veracity- Volume',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '313',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Volume - Velocity - Variety- Veracity',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '313',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Varsity - Velocity - Volume- Validity',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '313',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '314',               //bil soalan
+          'question' => 'What are the examples of software tools that allow us to process Big Data? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Microsoft word and PowerPoint',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '314', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Google chrome and Mozilla Firefox',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '314',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Spreadsheets and databases ',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '314',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Windows media player and adobe reader ',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '314',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '315',               //bil soalan
+          'question' => 'Height, age, speed, length are all examples of this type of data:',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Exploratory',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '315', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Qualitative',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '315',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Quantitative',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '315',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Subjective',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '315',
+        ]
+      );                                                      // bawah
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '316',               //bil soalan
+          'question' => 'What does SaaS mean? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Software as a Solution',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '316', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Software as a System',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '316',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Software as a Service',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '316',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Software as a Secret',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '316',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '317',               //bil soalan
+          'question' => 'What would Amazon/Lazada/Shopee use Big Data for?',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'To store customer details',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '317', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'To store payment details',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '317',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'To analyse buying trends and recommend future purchases',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '317',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'To predict future company earnings',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '317',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '318',               //bil soalan
+          'question' => 'Veracity is one of the characteristics of big data. What does Veracity refer to? ',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The hard disk or server capacity it can hold',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '318', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The data that can be processed',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '318',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Refers to the biases, noise and abnormality in data',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '318',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'The number of YouTube/Netflix videos that existed',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '318',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '319',               //bil soalan
+          'question' => 'Unstructured Data Exists in the form of',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Addresses',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '319', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Dates',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '319',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Emails',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '319',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Relational Table',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '319',
+        ]
+      );                                                      // bawah
+
+
+
+      DB::table('question_banks')-> insert(                 //start
+        [
+          'id' => '320',               //bil soalan
+          'question' => 'Structured Data Exists in the form of',
+          'status' => '1',
+          'language' => 'en',             // dah tukar en
+          'lesson_id' => '5',         //lesson
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Post',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '320', // ikut id soalan
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Text & images',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '320',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Relational Table',
+          'status' => 'True',
+          'language' => 'en',
+          'question_id' => '320',
+        ]
+      );
+
+      DB::table('answer_banks')-> insert(
+        [
+          'answer' => 'Emails',
+          'status' => 'False',
+          'language' => 'en',
+          'question_id' => '320',
+        ]
+      );                                                      // bawah
+
+
+           DB::table('question_banks')-> insert(                 //start
+             [
+               'id' => '321',               //bil soalan
+               'question' => 'Cybersecurity is the protection of computer systems, networks, and data from...',
+               'status' => '1',
+               'language' => 'en',             // biar
+               'lesson_id' => '6',         //lesson
+             ]
+           );
+
+           DB::table('answer_banks')-> insert(
+             [
+               'answer' => 'Car thief',
+               'status' => 'False',
+               'language' => 'en',
+               'question_id' => '321', // ikut id soalan
+             ]
+           );
+
+           DB::table('answer_banks')-> insert(
+             [
+               'answer' => 'Pickpocket',
+               'status' => 'False',
+               'language' => 'en',
+               'question_id' => '321',
+             ]
+           );
+
+           DB::table('answer_banks')-> insert(
+             [
+               'answer' => 'Digital attacks',
+               'status' => 'True',
+               'language' => 'en',
+               'question_id' => '321',
+             ]
+           );
+
+           DB::table('answer_banks')-> insert(
+             [
+               'answer' => 'Shoplifter',
+               'status' => 'False',
+               'language' => 'en',
+               'question_id' => '321',
+             ]
+           );                                                      // bawah
+
+
+
+           DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '322',               //bil soalan
+              'question' => 'Which kind of personal information do people send over the Internet?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+           DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Credit Card Numbers',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '322', // ikut id soalan
+             ]
+           );
+
+           DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Contact Information',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '322',
+             ]
+           );
+
+           DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'All of the above',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '322',
+             ]
+           );
+
+           DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Medical Information',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '322',
+             ]
+           );                                                      // bawah
+
+
+
+
+            DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '323',               //bil soalan
+              'question' => 'Which of the following is not true about cybersecurity?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Recent data breaches have released personal information of hundreds of millions of people.',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '323', // ikut id soalan
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Cybersecurity is the protection of computer systems, networks, and data from digital attacks.',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '323',
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Cyber-attacks can devastate large organizations, but individuals are largely unaffected.',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '323',
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'As we rely more on computing devices to store and send data, we increase our vulnerability to cyber-attacks.',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '323',
+             ]
+           );                                                      // bawah
+
+
+
+             DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '324',               //bil soalan
+              'question' => 'In cybersecurity, what does CIA stand for?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Central Intelligence Agency',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '324', // ikut id soalan
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+             'answer' => 'Cybersecurity Investigation Agency',
+             'status' => 'False',
+             'language' => 'en',
+             'question_id' => '324',
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Confidentiality, Integrity, Availability',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '324',
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Cybersecurity, Internet, Accessibility',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '324',
+             ]
+           );                                                      // bawah
+
+
+             DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '325',               //bil soalan
+              'question' => 'What does a ransomware hacker do when they gain access to a user’s system?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Delete key system data',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '325', // ikut id soalan
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Copy a user’s personal data',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '325',
+              ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Encrypt important files',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '325',
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Move operating system data',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '325',
+             ]
+           );                                                      // bawah
+
+
+             DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '326',               //bil soalan
+              'question' => 'Most cyber attacks occur because of which of the following?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'A security bug',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '326', // ikut id soalan
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Poor quality software',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '326',
+              ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Human Mistakes',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '326',
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Poor firewall set up',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '326',
+             ]
+           );                                                      // bawah
+
+
+             DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '327',               //bil soalan
+              'question' => 'Which one of the following is not a method for preventing cyberattacks?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Use strong passwords',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '327', // ikut id soalan
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Install software updates often',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '327',
+              ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Use wireless internet only',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '327',
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Installing confirmed software',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '327',
+             ]
+           );
+
+
+          DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '328',               //bil soalan
+              'question' => 'Which of the following offers the BEST way to improve the security of your online accounts?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Long Passwords',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '328', // ikut id soalan
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Passwords with multiple characters',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '328',
+              ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'two-factor authentication',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '328',
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Changing your password every 3 months',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '328',
+             ]
+           );
+
+
+          DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '329',               //bil soalan
+              'question' => 'An automated cyber-attack where trying different combinations of usernames and password until attackers find one that works.',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Social Engineering',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '329', // ikut id soalan
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Phishing',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '329',
+              ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Brute Forcing',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '329',
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Baiting',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '329',
+             ]
+           );
+
+
+          DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '330',               //bil soalan
+              'question' => 'What the name given to the attempt to obtain sensitive information such as usernames and passwords, by disguising as a trustworthy entity in an electronic communication (e.g. creating a fake website)?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+            );
+
+           DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Trojan',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '330', // ikut id soalan
+             ]
+           );
+
+           DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Virus',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '330',
+              ]
+           );
+
+          DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Phishing',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '330',
+             ]
+           );
+
+          DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Ransomware',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '330',
+             ]
+           );
+
+
+          DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '331',               //bil soalan
+              'question' => 'What the name given to the cyber-attack where the perpetrator seeks to make a machine unavailable to its intended users by temporarily disrupting its services, typically accomplished by flooding the targeted machine in an attempt to overload it?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Spam',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '331', // ikut id soalan
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Cyberbullying',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '331',
+              ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Denial of Service (DoS)',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '331',
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Ransomware',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '331',
+             ]
+           );
+
+
+          DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '332',               //bil soalan
+              'question' => 'What the name given to the malicious software that threatens to publish the victims data or perpetually block access to it unless a ransom is paid?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Spam',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '332', // ikut id soalan
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Denial of Service (DoS)',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '332',
+              ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Ransomware',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '332',
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Cyberbullying',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '332',
+             ]
+           );
+
+
+            DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '333',               //bil soalan
+              'question' => 'What the name given to harassment using electronic forms of contact?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Spam',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '333', // ikut id soalan
+             ]
+           );
+
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Ransomware',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '333',
+              ]
+           );
+
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Cyberbullying',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '333',
+             ]
+           );
+
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Denial of Service (DoS)',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '333',
+             ]
+           );
+
+
+            DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '334',               //bil soalan
+              'question' => 'Which one of the following is NOT a type of Cybersecurity Attack?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Ransomware',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '334', // ikut id soalan
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Denial of Service (DoS)',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '334',
+              ]
+            );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Responsible Password Management',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '334',
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Cyberbullying',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '334',
+             ]
+           );
+
+
+            DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '335',               //bil soalan
+              'question' => 'Which one of the following is NOT a characteristic of a secure password?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Contains Uppercase letters',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '335', // ikut id soalan
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Contains Lowercase letter',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '335',
+              ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Is short',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '335',
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Is long',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '335',
+             ]
+           );
+
+
+            DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '336',               //bil soalan
+              'question' => 'Which one of the following is NOT a security threat?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Worm',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '336', // ikut id soalan
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Phishing',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '336',
+              ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Antivirus',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '336',
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Black Hat Hacking',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '336',
+             ]
+           );
+
+
+            DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '337',               //bil soalan
+              'question' => 'Which one of the following is NOT a defence strategy against security threats?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Assess Trustworthiness',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '337', // ikut id soalan
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Firewall',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '337',
+              ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Spam',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '337',
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Private Browsing',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '337',
+             ]
+           );
+
+
+            DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '338',               //bil soalan
+              'question' => 'While Trish was playing an online game, a pop-up appeared, prompting her to click on the flashing lights to receive more points for her game.  What should she do?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Click on the flashing lights',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '338', // ikut id soalan
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Turn off the game and the gaming console',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '338',
+              ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Click the X in the corner of the pop-up to make it go away',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '338',
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Save the pop-up message until she really needs extra points to win',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '338',
+             ]
+           );
+
+
+            DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '339',               //bil soalan
+              'question' => 'Malicious programs or code that damage or destroy data by attaching to a program or file in a victim computer; spread by human action, such as sharing infected files',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'worms',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '339', // ikut id soalan
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'phishing',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '339',
+              ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'viruses',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '339',
+             ]
+           );
+
+           DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'trojans',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '339',
+             ]
+           );
+
+
+            DB::table('question_banks')-> insert(                 //start
+             [
+              'id' => '340',               //bil soalan
+              'question' => 'What does the S stand for in HTTPS?',
+              'status' => '1',
+              'language' => 'en',             // biar
+              'lesson_id' => '6',         //lesson
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Security',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '340', // ikut id soalan
+             ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Safe',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '340',
+              ]
+           );
+
+            DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Secure',
+              'status' => 'True',
+              'language' => 'en',
+              'question_id' => '340',
+             ]
+           );
+
+             DB::table('answer_banks')-> insert(
+             [
+              'answer' => 'Socket',
+              'status' => 'False',
+              'language' => 'en',
+              'question_id' => '340',
+             ]
+           );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '341',               //bil soalan
+                    'question' => '_____________ is a general term used to describe a new class of network-based computing that takes place over the Internet',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Network Computing',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '341', // ikut id soalan
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Storage Computing',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '341',
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Cloud Computing',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '341',
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'None of the choices',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '341',
+                  ]
+                );                                                      // bawah
+
+
+
+            DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '342',               //bil soalan
+                   'question' => 'Which of these is an advantage of cloud storage?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'The user has no control over their data',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '342', // ikut id soalan
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Many programs can be run at the same time, regardless of the processing power of your device',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '342',
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Accessible anywhere with an internet connection',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '342',
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Portability',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '342',
+                  ]
+                );                                                      // bawah
+
+
+            DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '343',               //bil soalan
+                   'question' => 'Cloud technology has improved educational scenery except',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Lower cost',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '343', // ikut id soalan
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Creation of virtual classroom',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '343',
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Increase learning time',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '343',
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Better access to education and training',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '343',
+                  ]
+                );                                                      // bawah
+
+
+            DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '344',               //bil soalan
+                   'question' => 'What is the drawback of cloud computing in education system?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'The management of data and products',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '344', // ikut id soalan
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                  'answer' => 'The absence of hardware',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '344',
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'The need for high-speed internet access',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '344',
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'The wide connection of networks',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '344',
+                  ]
+                );                                                      // bawah
+
+
+            DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '345',               //bil soalan
+                   'question' => 'What is cloud computing?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Storing files on the Internet',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '345', // ikut id soalan
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Running an operating system',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '345',
+                   ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Running programs on a remote server',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '345',
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'All of the above',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '345',
+                  ]
+                );                                                      // bawah
+
+
+            DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '346',               //bil soalan
+                   'question' => 'Which of these is not a benefit to cloud computing?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Saves storage space on your PC',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '346', // ikut id soalan
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Gives you access to files from any computer',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '346',
+                   ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Completely protects your information from cloud hackers',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '346',
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Protects your files from being lost due to PC failure',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '346',
+                  ]
+                );                                                      // bawah
+
+
+            DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '347',               //bil soalan
+                   'question' => 'What is the process of using third party servers to store data and run online applications?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Data Centre Processing',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '347', // ikut id soalan
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Networking',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '347',
+                   ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Cloud Computing',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '347',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Internet Usage',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '347',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '348',               //bil soalan
+                   'question' => 'Facilities that house large collections of servers are called _____.',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Computer Processing Plants',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '348', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Internet Routing Facilities',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '348',
+                   ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Data Centres',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '348',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Cloud Computing Centres',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '348',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '349',               //bil soalan
+                   'question' => 'What is a disadvantage of cloud computing?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'The storage can be easily expanded',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '349', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Portability',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '349',
+                   ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'It is vulnerable to hacking',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '349',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'All of the above',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '349',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '350',               //bil soalan
+                   'question' => 'What is a possible risk of cloud computing?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Lack of Access to Data',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '350', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Full control over the data',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '350',
+                   ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Storage of data without control over the location of where the data is stored',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '350',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Lack of the ability to back up data',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '350',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '351',               //bil soalan
+                   'question' => 'What are the types of cloud services?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Public, private and hybrid clouds',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '351', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Personal area (PAN), Local area (LAN), Campus area networks (CAN)',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '351',
+                   ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Infrastructure as a service (IaaS), platform as a service (PaaS), software as a service (SaaS)',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '351',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Mail server, collaboration server, web server, application server',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '351',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '352',               //bil soalan
+                   'question' => 'What are the uses of cloud computing?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Collecting appropriate quantitative data, helps in drawing valid inferences',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '352', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Input, present and compare collected data',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '352',
+                   ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Create new apps and services, analyse data, embed intelligence, test and build applications',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '352',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Estimate income data, indicate success or failure of planning',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '352',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '353',               //bil soalan
+                   'question' => 'All of these are types of cloud services except',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Public cloud',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '353', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Hybrid cloud',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '353',
+                   ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Segregated cloud',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '353',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Private cloud',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '353',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '354',               //bil soalan
+                   'question' => 'What are security aspects provided by cloud services?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Zero infrastructure investment, just-in-time infrastructure',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '354', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Quick and easy setup, smooth organization system, single management environment',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '354',
+                   ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Access control, identity management, authentication and authorization',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '354',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Calculable cloud architecture, provide manageable workload dynamics',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '354',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '355',               //bil soalan
+                   'question' => 'These are the benefits of cloud computing in education system except',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Shareable and traceable data',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '355', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Stable technology for everyday use',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '355',
+                   ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Inflexibility in customizing products',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '355',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Easy access from anywhere',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '355',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '356',               //bil soalan
+                   'question' => 'Real time data processing in a cloud function does not help in',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'File processing',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '356', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Stream processing',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '356',
+                   ]
+                 );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Video and image analysis',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '356',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Event driven extract, transform and load function',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '356',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '357',               //bil soalan
+                   'question' => 'Which of these is an example of cloud storage?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Microsoft Azure',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '357', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Google Chrome',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '357',
+                   ]
+                 );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Google Drive',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '357',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'All of the above',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '357',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '358',               //bil soalan
+                   'question' => 'Which of these is not an example of cloud computing?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Google Drive',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '358', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'iCloud',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '358',
+                   ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Google Docs',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '358',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'OneDrive',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '358',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '359',               //bil soalan
+                   'question' => 'Which of these is an advantage of physical storage?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'The user does not have to worry about physical damage',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '359', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'It can be vulnerable to hacking',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '359',
+                   ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'The user has full control over how their data is stored',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '359',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'It is easy to expand storage',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '359',
+                  ]
+                );
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '360',               //bil soalan
+                   'question' => 'Which of the following is NOT a potential advantage of Cloud Computing?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '7',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Flexibility in payment plans',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '360', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Scalability and flexibility',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '360',
+                   ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Full control over data and software',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '360',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Instant updates and upgrades',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '360',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                   'id' => '361',               //bil soalan
+                   'question' => 'What is addictive manufacturing?',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '8',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'When companies or teams are working on multiple aspects of the same design at one time',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '361', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'Changing the design of something after production has already begun',
+                   'status' => 'False',
+                   'language' => 'en',
+                   'question_id' => '361',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                   'answer' => 'process of creating a physical object through selective fusion, sintering or polymerization of materials; common to all processes is that the parts are made by adding layers with very little waste',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '361',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Designing something while competing against other departments',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '361',
+                  ]
+                );                                                      // bawah
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '362',               //bil soalan
+                    'question' => 'Addictive manufacturing also called as',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '8',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Rapid prototyping',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '362', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Layer manufacturing',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '362',
+                   ]
+                 );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'All of the above',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '362',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Direct cad manufacturing',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '362',
+                  ]
+                );                                                      // bawah
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '363',               //bil soalan
+                    'question' => 'What is the vocabulary term used for the material we use to make 3D objects?',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '8',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Plastic',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '363', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Steel',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '363',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Filament',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '363',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Iron',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '363',
+                  ]
+                );                                                      // bawah
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '364',               //bil soalan
+                    'question' => 'What is the most important thing you should consider when making something in 3d?',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '8',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Size',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '364', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Functionality',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '364',
+                  ]
+                );
+
+         DB::table('answer_banks')-> insert(
+                 [
+                   'answer' => 'Gravity',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '364',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Quality',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '364',
+                  ]
+                );                                                      // bawah
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '365',               //bil soalan
+                    'question' => 'What does 3D mean?',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '8',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => '3 Day',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '365', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => '3 Decimal places',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '365',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => '3 Dimensions',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '365',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => '3 Dots',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '365',
+                  ]
+                );                                                      // bawah
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '366',               //bil soalan
+                    'question' => 'Which axis determines if the object is 3d?',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '8',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'x',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '366', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'y',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '366',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'z',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '366',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'w',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '366',
+                  ]
+                );                                                      // bawah
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '367',               //bil soalan
+                    'question' => 'What are the 3 axis in 3D printing?',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '8',         //lesson
+                 ]
+               );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'a, b, c',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '367', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'a, b, x',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '367',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                     'answer' => 'x, y, z',
+                     'status' => 'True',
+                     'language' => 'en',
+                     'question_id' => '367',
+                   ]
+                 );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'x, y, a',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '367',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '368',               //bil soalan
+                    'question' => 'What is one huge difference between 2D (drawing on paper) and 3D design?',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '8',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'You cant use colours when your 3D design and print',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '368', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'There are not many differences',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '368',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'You have to always look at all sides and angles when 3D designing',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '368',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => '2D design cant be done on a computer',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '368',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '369',               //bil soalan
+                    'question' => 'What are the two main types of filament?',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '8',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Polyamide (nylon) and Paper',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '369', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Thread and Fabric',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '369',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'ABS and PLA',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '369',
+                  ]
+                );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Aluminium and Plastic',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '369',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                   'id' => '370',               //bil soalan
+                   'question' => 'One of the most common uses of 3D printing in industry is to make:',
+                   'status' => '1',
+                   'language' => 'en',             // biar
+                   'lesson_id' => '8',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Cars',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '370', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Computers',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '370',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Prototypes',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '370',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Food',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '370',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '371',               //bil soalan
+                  'question' => 'What does CAD stand for?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '8',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Computer Aligned Design',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '371', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Computer Abled Design',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '371',
+                ]
+              );
+
+       DB::table('answer_banks')-> insert(
+               [
+                 'answer' => 'Computer Aided Design',
+                 'status' => 'True',
+                 'language' => 'en',
+                 'question_id' => '371',
+                ]
+              );
+
+       DB::table('answer_banks')-> insert(
+               [
+                  'answer' => 'Computer Archived Design',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '371',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '372',               //bil soalan
+                  'question' => '3D printing is what kind of process?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '8',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Equalitive',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '372', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Subtractive',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '372',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Additive',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '372',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Meltative',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '372',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '373',               //bil soalan
+                  'question' => 'Which of the following is a free app that you can use to create files for 3D printing?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '8',         //lesson
+                ]
+              );
+
+       DB::table('answer_banks')-> insert(
+              [
+                  'answer' => 'Solid Works',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '373', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => '3Dcad',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '373',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'TinkerCad',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '373',
+                ]
+              );
+
+       DB::table('answer_banks')-> insert(
+               [
+                  'answer' => 'AutoCad',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '373',
+               ]
+              );
+
+
+       DB::table('question_banks')-> insert(                 //start
+               [
+                  'id' => '374',               //bil soalan
+                  'question' => 'A first, typical or preliminary model of something from which other forms are developed or copied is called a:',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '8',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Polytype',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '374', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Practice run',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '374',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Prototype',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '374',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Protozip',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '374',
+                ]
+              );
+
+
+       DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '375',               //bil soalan
+                  'question' => 'Researchers are currently researching the possibility of using 3D printers to make which of the following:',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '8',         //lesson
+                ]
+              );
+
+      DB::table('answer_banks')-> insert(
+              [
+                 'answer' => 'Car tires',
+                 'status' => 'False',
+                 'language' => 'en',
+                 'question_id' => '375', // ikut id soalan
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'Trees',
+                'status' => 'False',
+                'language' => 'en',
+                'question_id' => '375',
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'Human organs',
+                'status' => 'True',
+                'language' => 'en',
+                'question_id' => '375',
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'Human hair',
+                'status' => 'False',
+                'language' => 'en',
+                'question_id' => '375',
+              ]
+            );
+
+
+      DB::table('question_banks')-> insert(                 //start
+              [
+                'id' => '376',               //bil soalan
+                'question' => 'What file type is needed to 3D print?',
+                'status' => '1',
+                'language' => 'en',             // biar
+                'lesson_id' => '8',         //lesson
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'SLS',
+                'status' => 'False',
+                'language' => 'en',
+                'question_id' => '376', // ikut id soalan
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'SLA',
+                'status' => 'False',
+                'language' => 'en',
+                'question_id' => '376',
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'STL',
+                'status' => 'True',
+                'language' => 'en',
+                'question_id' => '376',
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'DXL',
+                'status' => 'False',
+                'language' => 'en',
+                'question_id' => '376',
+              ]
+            );
+
+
+      DB::table('question_banks')-> insert(                 //start
+              [
+                'id' => '377',               //bil soalan
+                'question' => 'What are some uses for 3D printing?',
+                'status' => '1',
+                'language' => 'en',             // biar
+                'lesson_id' => '8',         //lesson
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'Architecture',
+                'status' => 'False',
+                'language' => 'en',
+                'question_id' => '377', // ikut id soalan
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'Food',
+                'status' => 'False',
+                'language' => 'en',
+                'question_id' => '377',
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'All of the above',
+                'status' => 'True',
+                'language' => 'en',
+                'question_id' => '377',
+              ]
+            );
+
+       DB::table('answer_banks')-> insert(
+               [
+                  'answer' => 'Medical',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '377',
+                ]
+              );
+
+
+       DB::table('question_banks')-> insert(                 //start
+               [
+                 'id' => '378',               //bil soalan
+                 'question' => 'Filament is usually',
+                 'status' => '1',
+                 'language' => 'en',             // biar
+                 'lesson_id' => '8',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Wood',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '378', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Iron',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '378',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Plastic',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '378',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Cartoon',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '378',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '379',               //bil soalan
+                  'question' => '3D printing uses',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '8',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Printer only',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '379', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Software only',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '379',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => '3D printer and software',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '379',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Normal printer',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '379',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '380',               //bil soalan
+                  'question' => 'One of the 3D printer advantage',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '8',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Costly',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '380', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Needs many people',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '380',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Reduces time',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '380',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Increases time',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '380',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '381',               //bil soalan
+                  'question' => 'A computer simulation is a program that _______ something you can see or experience in real life',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '9',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Differentiate',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '381', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Predict',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '381',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Imitates',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '381',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Alter',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '381',
+                ]
+              );                                                      // bawah
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '382',               //bil soalan
+                  'question' => '____________ read out on-screen text for those with little or no vision.',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '9',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Monitor reader',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '382', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Display reader',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '382',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Screen reader',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '382',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'e-Reader',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '382',
+                ]
+              );                                                      // bawah
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '383',               //bil soalan
+                  'question' => '______ converters translate on-screen text into a pattern of dots.',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '9',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Braile',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '383', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Brallie',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '383',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Braille',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '383',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Breille',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '383',
+                ]
+              );                                                      // bawah
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '384',               //bil soalan
+                  'question' => 'Which one of these is not an advantage of simulation?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '9',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Simulations can be sped up so behaviour can be studied easily over a long period of time',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '384', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Critical situations can be investigated without risk.',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '384',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Understanding it thoroughly is important. Without this a simulation cannot be created',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '384',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'They can be used in situations where a real experiment is difficult to do',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '384',
+                ]
+              );                                                      // bawah
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '385',               //bil soalan
+                  'question' => 'Which of these scenarios WOULDN\'T use a simulation?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '9',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Studying the effect of the sea on the coastline.',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '385', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Investigating the aerodynamics of cars.',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '385',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                   'answer' => 'Keeping track of the current football league tables',
+                   'status' => 'True',
+                   'language' => 'en',
+                   'question_id' => '385',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Studying the effect of carbon monoxide to the environment',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '385',
+                ]
+              );                                                      // bawah
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '386',               //bil soalan
+                  'question' => 'Which of these is an advantage of advance simulation?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '9',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Expensive in cost',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '386', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'High risk',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '386',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'It can avoid danger and loss of life.',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '386',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'High maintenance',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '386',
+                ]
+              );                                                      // bawah
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '387',               //bil soalan
+                  'question' => 'A ________ turns text that you type into speech using a simulated voice.',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '9',         //lesson
+                ]
+              );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Image generator',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '387', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Video',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '387',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Speech generator',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '387',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Person',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '387',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '388',               //bil soalan
+                    'question' => 'What is the view from the cockpit replaced within a flight simulator?',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '9',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Photographs',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '388', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Video Games',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '388',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Computer generated images',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '388',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Real life video',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '388',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '389',               //bil soalan
+                    'question' => 'Which of these would you NOT use flight simulation software for? ',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '9',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'To stimulate emergency situations',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '389', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'To experience flying in dangerous weather conditions',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '389',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'To try out different seat arrangements',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '389',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'To train new pilots',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '389',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '390',               //bil soalan
+                    'question' => 'Who is most likely to use computer simulation software?',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '9',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'The police to catch criminals',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '390', // ikut id soalan
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'A teacher giving an English lesson',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '390',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'A bridge designer testing different designs',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '390',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'A baby learning to walk',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '390',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '391',               //bil soalan
+                      'question' => '________ is an animation that illustrates construction processes in any order.',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '9',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Flight simulator',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '391', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Virtual Reality',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '391',
+                    ]
+                  );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Construction stimulation',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '391',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Augmented Reality',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '391',
+                  ]
+                );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '392',               //bil soalan
+                      'question' => 'What Is a Simulationist?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '9',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'An expert that create software programs that allow users to perform specific tasks on various devices, such as computers or mobile devices. They are responsible for the entire development, testing, and maintenance of software',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '392', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'An expert that analyse and evaluate the data needs of users. They develop and improve the data resources used to store and retrieve critical information',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '392',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'An expert in the knowledge, skills and attitudinal aspects of using the methodologies of simulation to achieve learning objectives',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '392',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'An expert that responsible for designing, developing, and testing computer components, such as circuit boards, routers, and memory devices',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '392',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '393',               //bil soalan
+                      'question' => 'Using simulation to make predictions of the future behaviour of a system can be difficult. Why?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '9',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'An expert sometimes forgot to do the work',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '393', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'The system is already difficult itself',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '393',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Some of the controlling parameters, processes and events are often uncertain and poorly understood',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '393',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Waste of time and not important',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '393',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '394',               //bil soalan
+                      'question' => 'What software is used for simulation?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '9',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Anylogic',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '394', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Matlab',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '394',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'All of the above',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '394',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Simscale',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '394',
+                    ]
+                  );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '395',               //bil soalan
+                    'question' => 'Which one of these is NOT a simulation?',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '9',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'A car racing computer game',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '395', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'A virtual wind tunnel',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '395',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'A spreadsheet tracking the lap times and positions in a car race',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '395',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'A computer program that is intended to model flying a plane',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '395',
+                  ]
+                );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '396',               //bil soalan
+                  'question' => 'What Are Simulation Models?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '9',         //lesson
+                ]
+              );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'The instance of a computer program that is being executed by one or many threads',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '396', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'The process of creating objects and characters for games, animations, movies, engineering projects, virtual and augmented reality and design projects',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '396',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'The process of creating and analysing a digital prototype of a physical model to predict its performance in the real world',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '396',
+                  ]
+                );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'A process for making a physical object from a three-dimensional digital model, typically by laying down many successive thin layers of a material',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '396',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '397',               //bil soalan
+                  'question' => 'Which of the following is the types of simulation tools?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '9',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Tools for simulating the movement of water',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '397', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'The simulation of evolution of a galaxy',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '397',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'All of the above',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '397',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'A computer simulation in medical field',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '397',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '398',               //bil soalan
+                  'question' => 'Select the valid reasons for using simulation.',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '9',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Optimized solutions are obtained',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '398', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Accurate results are obtained',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '398',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Conduct experiments without disrupting the real system',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '398',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'All of the above',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '398',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '399',               //bil soalan
+                  'question' => 'Simulation models can be used to obtain operating characteristic estimates in less time than with the real system using a feature of simulation called:',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '9',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Warp speed',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '399', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Microseconds',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '399',
+                ]
+              );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'Time compression',
+                'status' => 'True',
+                'language' => 'en',
+                'question_id' => '399',
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'None of the above',
+                'status' => 'False',
+                'language' => 'en',
+                'question_id' => '399',
+              ]
+            );
+
+
+      DB::table('question_banks')-> insert(                 //start
+              [
+                'id' => '400',               //bil soalan
+                'question' => 'A simulation can be used to?',
+                'status' => '1',
+                'language' => 'en',             // biar
+                'lesson_id' => '9',         //lesson
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'To obtain the result of the problem immediately',
+                'status' => 'False',
+                'language' => 'en',
+                'question_id' => '400', // ikut id soalan
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'Prescribe what to do about a problem',
+                'status' => 'False',
+                'language' => 'en',
+                'question_id' => '400',
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'Study alternative solutions to a problem',
+                'status' => 'True',
+                'language' => 'en',
+                'question_id' => '400',
+              ]
+            );
+
+      DB::table('answer_banks')-> insert(
+              [
+                'answer' => 'All of the above',
+                'status' => 'False',
+                'language' => 'en',
+                'question_id' => '400',
+              ]
+            );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '401',               //bil soalan
+                  'question' => 'What is system integration',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '10',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'One system into multiple program',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '401', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Multiple systems into multiple program',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '401',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Multiple systems into one program',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '401',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Two systems into one program',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '401',
+                ]
+              );                                                      // bawah
+
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '402',               //bil soalan
+                  'question' => 'Importance of system integration',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '10',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Improve system security',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '402', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Real time data',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '402',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'An integrated future',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '402',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Easier for administrators',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '402',
+                ]
+              );                                                      // bawah
+
+
+
+
+       DB::table('question_banks')-> insert(                 //start
+               [
+                 'id' => '403',               //bil soalan
+                 'question' => 'What are the challenges and issues of system integration?',
+                 'status' => '1',
+                 'language' => 'en',             // biar
+                 'lesson_id' => '10',         //lesson
+               ]
+             );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Variable changes of the environment',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '403', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Can support real time data',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '403',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Unable to manage large data',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '403',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Strong configuration management',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '403',
+                ]
+              );                                                      // bawah
+
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '404',               //bil soalan
+                  'question' => 'Which of the following is NOT an advantage of Universal integration?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '10',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Implement global best practices',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '404', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Improved process efficiency',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '404',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'High cost',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '404',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Improve quality and standardization',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '404',
+                ]
+              );                                                      // bawah
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '405',               //bil soalan
+                  'question' => 'Which item is NOT something integration offers to Shippers during processing?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '10',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Quicker processing',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '405', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'More accuracy',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '405',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Greater discounts',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '405',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Less time spent shipping',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '405',
+                ]
+              );                                                      // bawah
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '406',               //bil soalan
+                  'question' => 'Which of the following is a FALSE statement?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '10',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Profiles can be copied from one system to another',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '406', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'More than one profile can be created and used on an FSM system',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '406',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Profiles cannot be edited or changed once they are created',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '406',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Changing from one profile to another is as easy as clicking a checkbox',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '406',
+                ]
+              );                                                      // bawah
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '407',               //bil soalan
+                  'question' => 'What is the objectives of integration in business?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '10',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'For marketing purpose',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '407', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Increase man power',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '407',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Provide integrated, streamlined services to customers',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '407',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'To increase sales',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '407',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '408',               //bil soalan
+                  'question' => 'What is Silos?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '10',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Operating system is kept and accessible to environment',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '408', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Operating system is not kept and isolated from environment',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '408',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Operating system is kept and isolated from environment',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '408',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Operating system is not kept and accessible to environment',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '408',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '409',               //bil soalan
+                  'question' => 'When was the first programmable logic controller invented?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '10',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => '1980',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '409', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => '1968',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '409',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => '1969',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '409',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => '1952',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '409',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '410',               //bil soalan
+                  'question' => 'why you should choose a universal integration platform to support your businesses integration needs?',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '10',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Grow and upgrade easily',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '410', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Improve the speed and accuracy of your business processes',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '410',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'All of the above',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '410',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Create happy, returning customers',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '410',
+                ]
+              );
+
+
+        DB::table('question_banks')-> insert(                 //start
+                [
+                  'id' => '411',               //bil soalan
+                  'question' => 'System integrator is',
+                  'status' => '1',
+                  'language' => 'en',             // biar
+                  'lesson_id' => '10',         //lesson
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Managing and monitoring all installed systems and infrastructure',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '411', // ikut id soalan
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'A person who manages the operation of a computer system or particular electronic communication service',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '411',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'An individual or business that brings together multiple elements such as hardware, software, networking and storage from multiple vendors in order to create a system for the client',
+                  'status' => 'True',
+                  'language' => 'en',
+                  'question_id' => '411',
+                ]
+              );
+
+        DB::table('answer_banks')-> insert(
+                [
+                  'answer' => 'Specialists troubleshoot hardware problems and find fixes for them',
+                  'status' => 'False',
+                  'language' => 'en',
+                  'question_id' => '411',
+                ]
+              );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '412',               //bil soalan
+                    'question' => 'Typical System integration methods are divided into the following different categories:',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '10',         //lesson
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Point to point integration',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '412', // ikut id soalan
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Horizontal integration',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '412',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'All of the above',
+                    'status' => 'True',
+                    'language' => 'en',
+                    'question_id' => '412',
+                  ]
+                );
+
+          DB::table('answer_banks')-> insert(
+                  [
+                    'answer' => 'Star integration',
+                    'status' => 'False',
+                    'language' => 'en',
+                    'question_id' => '412',
+                  ]
+                );
+
+
+          DB::table('question_banks')-> insert(                 //start
+                  [
+                    'id' => '413',               //bil soalan
+                    'question' => 'Customer Relationship Management (CRM) is a form of system integration. What is CRM?',
+                    'status' => '1',
+                    'language' => 'en',             // biar
+                    'lesson_id' => '10',         //lesson
+                  ]
+                );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'A configuration of technology and organizational networks designed to deliver services that satisfy the needs, wants, or aspirations of customers',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '413', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'An organized collection of parts (or subsystems) that are highly integrated to accomplish an overall goal',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '413',
+                    ]
+                  );
+
+           DB::table('answer_banks')-> insert(
+                   [
+                      'answer' => 'A technology for managing all your company’s relationships and interactions with customers and potential customers',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '413',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'The system of support for freshly placed concrete including the mould or sheathing which contacts the concrete as well as supporting members, hardware, and necessary bracing',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '413',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '414',               //bil soalan
+                      'question' => 'Enterprise Resource Planning (ERP) system is designed to manage any and all business processes and automate various backend or back office functions that need not be carried out manually. What is the primary objective of an ERP?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '10',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'To increase productivity',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '414', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Stable technology for everyday use',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '414',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Usually to lower costs rather than increase revenue',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '414',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Nicer interfaces',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '414',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '415',               //bil soalan
+                      'question' => 'What does a System integrator do?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '10',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Writing programming codes',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '415', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Processing crime scenes by performing scene recognition, scene documentation and evidence collection',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '415',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Enabling the data integrations between the various existing systems of the final customer as defined by the project scope',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '415',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'They can arrest and detain individuals who are accused of breaking the law',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '415',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '416',               //bil soalan
+                      'question' => 'What is System Integration Testing (SIT)?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '10',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'The process of evaluating a system or its components with the intent to find whether it satisfies the specified requirements or not',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '416', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'A testing technique performed to determine whether or not the software system has met the requirement specifications',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '416',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'A type of software testing carried out in an integrated hardware and software environment to verify the behaviour of the complete system',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '416',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'None of the above',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '416',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '417',               //bil soalan
+                      'question' => 'Why do we need System Integration Testing?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '10',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Help to detect defect early',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '417', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'To correct data flow',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '417',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'All of the above',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '417',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'To utilize memory usage',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '417',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '418',               //bil soalan
+                      'question' => 'Incremental testing is a way of integration testing. There are two types of Incremental testing.',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '10',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Right-left approach, Left-right approach',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '418', // ikut id soalan
+                    ]
+                  );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Top-down approach, Right left approach',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '418',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Top-down approach, Bottom-up approach',
+                        'status' => 'True',
+                        'language' => 'en',
+                        'question_id' => '418',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Bottom-up approach, Right-left approach',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '418',
+                      ]
+                    );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '419',               //bil soalan
+                      'question' => 'What is Hardware Software Integration Testing?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '10',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'To verify that your product functions as designed',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '419', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Refers to the physical parts of a computer and related devices',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '419',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'A process of testing Computer Software Components (CSC) for high-level functionalities on the target hardware environment',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '419',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'None of the above',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '419',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '420',               //bil soalan
+                      'question' => 'What is Hardware Software Integration Testing goal?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '10',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'To correct performance of the software according to the requirements specified',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '420', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'To make sure that new errors have not been introduced',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '420',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'To test the behaviour of developed software integrated on the hardware component',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '420',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'All of the above',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '420',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '421',               //bil soalan
+                      'question' => 'The science and technology behind the design, manufacturing and application of robots.',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '11',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Computer Science',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '421', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Engineering Design Process',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '421',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Robotics',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '421',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Manufacturing',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '421',
+                    ]
+                  );                                                      // bawah
+
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '422',               //bil soalan
+                      'question' => 'An autonomous robot is one that:',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '11',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Has mechanisms to perform a variety of operations',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '422', // ikut id soalan
+                    ]
+                  );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Requires a human operator to carry out its tasks',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '422',
+                      ]
+                    );
+
+                DB::table('answer_banks')-> insert(
+                        [
+                          'answer' => 'Uses its own intelligence or program to handle situations',
+                          'status' => 'True',
+                          'language' => 'en',
+                          'question_id' => '422',
+                        ]
+                      );
+
+                DB::table('answer_banks')-> insert(
+                        [
+                          'answer' => 'Move randomly',
+                          'status' => 'False',
+                          'language' => 'en',
+                          'question_id' => '422',
+                        ]
+                      );                                                      // bawah
+
+
+                DB::table('question_banks')-> insert(                 //start
+                        [
+                          'id' => '423',               //bil soalan
+                          'question' => 'Components that provide the robot with the ability to interact with its environment.',
+                          'status' => '1',
+                          'language' => 'en',             // biar
+                          'lesson_id' => '11',         //lesson
+                        ]
+                      );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Sensors',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '423', // ikut id soalan
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Actuators',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '423',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Manipulators',
+                        'status' => 'True',
+                        'language' => 'en',
+                        'question_id' => '423',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Bumper Switch',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '423',
+                      ]
+                    );                                                      // bawah
+
+
+              DB::table('question_banks')-> insert(                 //start
+                      [
+                        'id' => '424',               //bil soalan
+                        'question' => 'These collect input from the environment and provide information that the robot can respond to.',
+                        'status' => '1',
+                        'language' => 'en',             // biar
+                        'lesson_id' => '11',         //lesson
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Manipulators',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '424', // ikut id soalan
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Drivetrain',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '424',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Sensors',
+                        'status' => 'True',
+                        'language' => 'en',
+                        'question_id' => '424',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Subsystem',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '424',
+                      ]
+                    );
+
+
+              DB::table('question_banks')-> insert(                 //start
+                      [
+                        'id' => '425',               //bil soalan
+                        'question' => 'The robotics subsystem that coordinates and controls all the other components. It is effectively the robot’s brain.',
+                        'status' => '1',
+                        'language' => 'en',             // biar
+                        'lesson_id' => '11',         //lesson
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Sensors',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '425', // ikut id soalan
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Mechanical Parts',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '425',
+                      ]
+                    );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Cortex Microcontroller',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '425',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Line Follower',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '425',
+                    ]
+                  );                                                      // bawah
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '426',               //bil soalan
+                      'question' => 'What type of engineer is responsible building, maintaining, or inventing robotic (sub)systems?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '11',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Software Engineer',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '426', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Electrical Engineer',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '426',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Mechanical Engineer',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '426',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Aeronautical Engineer',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '426',
+                    ]
+                  );                                                      // bawah
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '427',               //bil soalan
+                      'question' => 'Which one of these is an advantage of autonomous robot?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '11',         //lesson
+                      ]
+                      );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Increase error',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '427', // ikut id soalan
+                    ]
+                  );
+
+           DB::table('answer_banks')-> insert(
+                   [
+                      'answer' => 'Increase safety risk',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '427',
+                   ]
+                  );
+
+           DB::table('answer_banks')-> insert(
+                   [
+                      'answer' => 'Increase efficiency and productivity ',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '427',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Decrease in quality',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '427',
+                    ]
+                  );                                                      // bawah
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '428',               //bil soalan
+                      'question' => 'Which one of these is NOT an advantage of autonomous robot?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '11',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Safety in workplace',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '428', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Increase in productivity',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '428',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Potential job losses',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '428',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Reduce error and risk rates',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '428',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '429',               //bil soalan
+                      'question' => 'What types of robots are used for space exploration?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '11',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Toyota',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '429', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'NASA',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '429',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Rover',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '429',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Roomba',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '429',
+                    ]
+                  );
+
+
+             DB::table('question_banks')-> insert(                 //start
+                     [
+                       'id' => '430',               //bil soalan
+                       'question' => 'What are the three main parts of a robot?',
+                       'status' => '1',
+                       'language' => 'en',             // biar
+                       'lesson_id' => '11',         //lesson
+                     ]
+                   );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'light sensors, input, control system',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '430', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Robotics, output, control system',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '430',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Input, control system, output',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '430',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Camera, light, control system',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '430',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '431',               //bil soalan
+                      'question' => 'A robot used to go into places that would be too dangerous for a human to go is a ____.',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '11',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Cleaning robot',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '431', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Medical robot',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '431',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Military robot',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '431',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Industrial robot',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '431',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '432',               //bil soalan
+                      'question' => 'These robots are usually large. Some factories use them to build or help its products. What are they?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '11',         //lesson
+                    ]
+                  );
+
+             DB::table('answer_banks')-> insert(
+                     [
+                       'answer' => 'Cleaning robot',
+                       'status' => 'False',
+                       'language' => 'en',
+                       'question_id' => '432', // ikut id soalan
+                     ]
+                   );
+
+             DB::table('answer_banks')-> insert(
+                     [
+                       'answer' => 'Medical robot',
+                       'status' => 'False',
+                       'language' => 'en',
+                       'question_id' => '432',
+                     ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Industrial robot',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '432',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Military robot',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '432',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '433',               //bil soalan
+                      'question' => 'What is the definition of a Robot?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '11',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'A machine which resembles a human being',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '433', // ikut id soalan
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'Any machine which can follow instructions',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '433',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'A machine capable of carrying out a complex series of actions automatically, especially one programmable by a computer',
+                      'status' => 'True',
+                      'language' => 'en',
+                      'question_id' => '433',
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'A machine which can think for itself, especially if the thought processes are logical',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '433',
+                    ]
+                  );
+
+
+            DB::table('question_banks')-> insert(                 //start
+                    [
+                      'id' => '434',               //bil soalan
+                      'question' => 'How do robots make decisions?',
+                      'status' => '1',
+                      'language' => 'en',             // biar
+                      'lesson_id' => '11',         //lesson
+                    ]
+                  );
+
+            DB::table('answer_banks')-> insert(
+                    [
+                      'answer' => 'They consult with the mother board',
+                      'status' => 'False',
+                      'language' => 'en',
+                      'question_id' => '434', // ikut id soalan
+                    ]
+                  );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'They think and think until they come up with a decision',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '434',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'They follow directions written in a computer program',
+                        'status' => 'True',
+                        'language' => 'en',
+                        'question_id' => '434',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Control by humans',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '434',
+                      ]
+                    );
+
+
+              DB::table('question_banks')-> insert(                 //start
+                      [
+                        'id' => '435',               //bil soalan
+                        'question' => 'Where were robots first used?',
+                        'status' => '1',
+                        'language' => 'en',             // biar
+                        'lesson_id' => '11',         //lesson
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'In a lab',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '435', // ikut id soalan
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'In the space',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '435',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Automotive industry',
+                        'status' => 'True',
+                        'language' => 'en',
+                        'question_id' => '435',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Medical industry',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '435',
+                      ]
+                    );
+
+
+              DB::table('question_banks')-> insert(                 //start
+                      [
+                        'id' => '436',               //bil soalan
+                        'question' => 'First robots could only perform how many tasks at a time?',
+                        'status' => '1',
+                        'language' => 'en',             // biar
+                        'lesson_id' => '11',         //lesson
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Two',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '436', // ikut id soalan
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Four',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '436',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'One',
+                        'status' => 'True',
+                        'language' => 'en',
+                        'question_id' => '436',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Multiple task at once',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '436',
+                      ]
+                    );
+
+
+              DB::table('question_banks')-> insert(                 //start
+                      [
+                        'id' => '437',               //bil soalan
+                        'question' => 'Which of the following is not one of the 3D jobs of robots?',
+                        'status' => '1',
+                        'language' => 'en',             // biar
+                        'lesson_id' => '11',         //lesson
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Dirty',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '437', // ikut id soalan
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Dangerous',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '437',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Deadly',
+                        'status' => 'True',
+                        'language' => 'en',
+                        'question_id' => '437',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Dull',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '437',
+                      ]
+                    );
+
+
+              DB::table('question_banks')-> insert(                 //start
+                      [
+                        'id' => '438',               //bil soalan
+                        'question' => 'These are robots that are considered to possess artificial intelligence.',
+                        'status' => '1',
+                        'language' => 'en',             // biar
+                        'lesson_id' => '11',         //lesson
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Manual',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '438', // ikut id soalan
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Sensate',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '438',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Smart',
+                        'status' => 'True',
+                        'language' => 'en',
+                        'question_id' => '438',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Sequential',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '438',
+                      ]
+                    );
+
+
+              DB::table('question_banks')-> insert(                 //start
+                      [
+                        'id' => '439',               //bil soalan
+                        'question' => 'These are robots that will not function unless controlled by humans.',
+                        'status' => '1',
+                        'language' => 'en',             // biar
+                        'lesson_id' => '11',         //lesson
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Smart',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '439', // ikut id soalan
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Sensate',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '439',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Manual',
+                        'status' => 'True',
+                        'language' => 'en',
+                        'question_id' => '439',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => 'Sequential',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '439',
+                      ]
+                    );
+
+
+              DB::table('question_banks')-> insert(                 //start
+                      [
+                        'id' => '440',               //bil soalan
+                        'question' => 'The first digitally operated and programmable robot was invented by George Devol in _____.',
+                        'status' => '1',
+                        'language' => 'en',             // biar
+                        'lesson_id' => '11',         //lesson
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => '1977',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '440', // ikut id soalan
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => '2000',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '440',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => '1954',
+                        'status' => 'True',
+                        'language' => 'en',
+                        'question_id' => '440',
+                      ]
+                    );
+
+              DB::table('answer_banks')-> insert(
+                      [
+                        'answer' => '1957',
+                        'status' => 'False',
+                        'language' => 'en',
+                        'question_id' => '440',
+                      ]
+                    );
 
 
     }
