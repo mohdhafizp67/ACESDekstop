@@ -17,6 +17,7 @@
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="{{ asset('css/pelajaran/vrlessons.css') }} ">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <style>
 
@@ -200,8 +201,6 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                               <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/n4SeobN_PFM?autoplay=1&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                              <iframe width="1903" height="800" src="https://www.youtube.com/embed/1-YW6Vh7jDo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
 
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:280px;">

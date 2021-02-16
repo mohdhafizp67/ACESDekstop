@@ -1316,7 +1316,7 @@ button.close {
 .side-bar {
   /* background: linear-gradient(-154deg, #639, #33214b) !important; */
   background: linear-gradient(-154deg, #130E29, #130E29) !important;
-  /* height: 100vh !important; */
+  height: 100vh !important;
   width: 17rem !important;
   visibility: hidden;
   position: fixed !important;

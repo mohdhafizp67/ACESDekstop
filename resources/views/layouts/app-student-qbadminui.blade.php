@@ -138,7 +138,7 @@
                     <ul class="side-menu p-0 m-0 mt-3">
 
 
-                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-bottom: 4%;"><a href="{{route('home')}}" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-home" aria-hidden="true"></i>&nbsp&nbsp DASHBOARD</a></li>
+                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-bottom: 4%;"><a href="{{route('home')}}" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-home" aria-hidden="true"></i>&nbspDASHBOARD</a></li>
                         <!-- <div style="padding: 5px;"></div> -->
                         <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{ route('user.student.profile') }}" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-user-circle"aria-hidden="true"></i>&nbsp&nbsp PROFIL PELAJAR</a></li> -->
 
@@ -146,21 +146,21 @@
                             <font color="#77D8BE">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspACTIVITIES</font>
                         </li> -->
 
-                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('lesson.courses')}}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-book" aria-hidden="true"></i>&nbsp&nbsp LESSON</a></li>
+                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('lesson.courses')}}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-book" aria-hidden="true"></i>&nbspLESSON</a></li>
                         <div style="padding: 5px;"></div>
-                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('quiz.choose-quiz')}}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp&nbsp QUIZ</a></li>
-                        <div style="padding: 5px;"></div>
-
-                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('user.game.demo')}}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp&nbsp GAME</a></li>
+                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('quiz.choose-quiz')}}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-question-circle" aria-hidden="true"></i>&nbspQUIZ</a></li>
                         <div style="padding: 5px;"></div>
 
-                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-bottom: 4%;"><a href="{{ route('activities.leaderboard') }}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-trophy" aria-hidden="true"></i>&nbsp&nbsp LEADERBOARD</a></li>
+                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('user.game.demo')}}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-gamepad" aria-hidden="true"></i>&nbspGAME</a></li>
+                        <div style="padding: 5px;"></div>
+
+                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-bottom: 4%;"><a href="{{ route('activities.leaderboard') }}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-trophy" aria-hidden="true"></i>&nbspLEADERBOARD</a></li>
 
 
                         <!-- <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%;">
                             <font color="#77D8BE">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOTHERS</font>
                         </li> -->
-                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('others.feedback')}}" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-comments" aria-hidden="true"></i>&nbsp&nbsp FEED BACK</a></li>
+                        <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('others.feedback')}}" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-comments" aria-hidden="true"></i>&nbspFEEDBACK</a></li>
 
 
                         <div style="padding: 5px;"></div>
@@ -290,7 +290,7 @@
                     <div class="dropdown dropdown-arow-none d-contents text-center mx-2">
                         <!-- Icon -->
                         <a href="#" class="w-100 dropdown-toggle text-muted" data-toggle="dropdown">
-                          <span style="color: #45e9b5; font-size: 100%;">{{Auth::user()->name}}</span>
+                          <!-- <span style="color: #45e9b5; font-size: 100%;">{{Auth::user()->name}}</span> -->
                           @if(Auth::user()->profile_picture == null)
 
 

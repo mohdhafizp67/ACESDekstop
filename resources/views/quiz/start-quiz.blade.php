@@ -7,8 +7,23 @@
   <head>
 <style media="screen">
 
+    .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+    }
+
+    /* Style the active class, and buttons on mouse-over */
+    .active, .btn:hover {
+    background-color: #666;
+    color: white;
+    }
+
     .label {
-    background-color: #4CAF50;
+    /* background-color: #4CAF50; */
     border: none;
     color: black;
     padding: 5% 15%;
@@ -22,6 +37,13 @@
     border-radius: 25px;
     width: 250% !important;
     height: auto;
+
+  }
+
+  .label.active {
+    background-color: #ffffff00;
+    color: white;
+    border: 2px solid #007bff;
   }
 
   .label1 {
@@ -364,8 +386,6 @@ $('.btnPrevious').click(function() {
   $('.nav-pills .active').parent().prev('li').find('a').trigger('click');
 });
 </script>
-
-
 
 <!-- quiz display timer -->
 <script type="text/javascript">
