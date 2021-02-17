@@ -95,5 +95,29 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-  
+    /**
+   * Log the user out of the application.
+   *
+   * @param  \Illuminate\Http\Request $request
+   * @return \Illuminate\Http\Response
+   */
+  public function logout(Request $request)
+  {
+      $user = User::findOrFail(Auth::user()->id);
+      // dd($user);
+      if($user->first_time_login)
+      {
+        $user->first_time_login = 0;
+        $user->save();
+      }
+      Auth::logout();
+
+      $request->session()->invalidate();
+
+      $request->session()->regenerateToken();
+
+      return redirect('/login');
+  }
+
+
 }

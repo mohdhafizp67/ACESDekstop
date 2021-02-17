@@ -39,8 +39,8 @@ vertical-align: top;
 
 .circle strong {
 position: absolute;
-top: 25%;
-left: -25%;
+top: 35%;
+left: 0%;
 width: 100%;
 text-align: center;
 line-height: 25px;
@@ -59,15 +59,15 @@ display: block;
 color: #f8f9fa;
 font-size: 130%;
 margin-top: 65%;
-margin-left: -55%;
+margin-left: -5%;
 }
 
 canvas {
     position: absolute;
-    top: 0;
+    top: 15px;
     left: 0;
-    height: 75%;
-    margin-left: -5%;
+    height: 70%;
+    margin-left: 20%;
 }
 
 .list-group-item-action {
@@ -240,7 +240,9 @@ canvas {
       				</div>
               <script>
               var aud = document.getElementById("myAudio");
-
+              @if(Auth::user()->first_time_login == 0)
+                aud.muted = true;
+              @endif
               function mute() {
                 if(aud.muted == true)
                 {
