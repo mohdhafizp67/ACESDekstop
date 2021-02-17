@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Addictive Manufacturing Lessons</title>
+    <title>Additive Manufacturing Lessons</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
@@ -168,7 +168,7 @@
 	<div class="row">
 
 		<div class="col-md-12">
-      <h1 style="padding-top: 0%; padding-bottom: 1%; text-align: center;color: #fff; font-size: 250%; font-weight: bold;">ADDICTIVE MANUFACTURING</h1>
+      <h1 style="padding-top: 0%; padding-bottom: 1%; text-align: center;color: #fff; font-size: 250%; font-weight: bold;">ADDITIVE MANUFACTURING</h1>
 		</div>
 
 	</div>

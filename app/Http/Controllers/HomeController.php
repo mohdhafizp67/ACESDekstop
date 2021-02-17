@@ -34,7 +34,7 @@ class HomeController extends Controller
     public function index()
     {
       $student = Student::where('user_id', Auth::user()->id)->first();
-      $announcement = Announcement::get();
+      $announcement = Announcement::orderBy('id', 'DESC')->get();
 
 
 
