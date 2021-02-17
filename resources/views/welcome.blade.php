@@ -17,6 +17,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel='manifest' href="{{ asset('concept/manifest.json') }}">
+    <link rel="icon" href="{{ asset('concept/images/logo.png') }}" type="image/icon type">
 
 <style>
 .btn-welcome {
