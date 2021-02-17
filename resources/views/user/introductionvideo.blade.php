@@ -26,6 +26,7 @@
   color: #fff;
   transition: 0.5s;
   z-index: 2;
+
 }
 
 .showcase.active {
@@ -49,7 +50,7 @@
   cursor: pointer;
 }
 
-.showcase video {
+/* .showcase video {
   position: fixed;
   top: 0;
   left: 0;
@@ -57,7 +58,17 @@
   min-height: 100vh;
   object-fit: cover;
   opacity: 0.8;
-  /* height: 510px; */
+}  */
+
+
+.showcase video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  /* min-width: 100%; */
+  min-height: 100%;
+  width: 980px;
+  height: 500px;
 }
 
 .overlay {
@@ -160,7 +171,7 @@
 
 .content {
   position: fixed;
-  bottom: 0;
+  bottom: -10px;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   /* width: 100%; */
