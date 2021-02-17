@@ -19,6 +19,47 @@ class LessonController extends Controller
       return view('lesson.courses');
   }
 
+  public function addictivelessons()
+  {
+      return view('lesson.addictivelessons');
+  }
+
+  public function advancedlessons()
+  {
+      return view('lesson.advancedlessons');
+  }
+
+  public function autolessons()
+  {
+      return view('lesson.autolessons');
+  }
+
+  public function bigdatalessons()
+  {
+      return view('lesson.bigdatalessons');
+  }
+
+  public function cloudlessons()
+  {
+      return view('lesson.cloudlessons');
+  }
+
+  public function cyberlessons()
+  {
+      return view('lesson.cyberlessons');
+  }
+
+  public function iotlessons()
+  {
+      return view('lesson.iotlessons');
+  }
+
+  public function universallessons()
+  {
+      return view('lesson.universallessons');
+  }
+
+
   public function vrlessons()
   {
 
@@ -35,7 +76,10 @@ class LessonController extends Controller
 
   }
 
-  public function create_lesson_student_2(){
+  public function create_lesson_student_2()
+  {
+
+
     $student_id = Auth::user()->student->id;
     $lesson_id = "2";
     $student_completion = 1;

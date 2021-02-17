@@ -31,36 +31,36 @@
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">LEADERBOARD</h1>
 <div class="row" style="padding-top: 0%;">
-  <div class="col-md-2">
+  <div class="col-md-1">
 
   </div>
-  <div class="col-md-8">
+  <div class="col-md-10">
     <table class="table">
       <thead style="background-image: url({{asset('concept/images/galaxy/table.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
         <tr>
-          <th style="color: #5ddaff; font-size: 100%;text-align: justify;">
+          <th style="color: #5ddaff; font-size: 100%;text-align: end;">
             Ranking
           </th>
-          <th style="color: #5ddaff; font-size: 100text-align: justify;">
+          <th style="color: #5ddaff; font-size: 100text-align: right;">
             Avatar
           </th>
-          <th style="color: #5ddaff; font-size: 100%;text-align: center;">
+          <th style="color: #5ddaff; font-size: 100%;text-align: left;">
             Name
           </th>
-          <th style="color: #5ddaff; font-size: 100%;text-align: end;">
+          <th style="color: #5ddaff; font-size: 100%;text-align: left;">
             School
           </th>
-          <th style="color: #5ddaff; font-size: 100%;text-align: end;">
+          <th style="color: #5ddaff; font-size: 100%;text-align: left;">
             State
           </th>
-          <th style="color: #5ddaff; font-size: 100%;text-align: end;">
+          <th style="color: #5ddaff; font-size: 100%;text-align: left;">
             Points
           </th>
         </tr>
       </thead>
     </table>
   </div>
-  <div class="col-md-2">
+  <div class="col-md-1">
 
   </div>
 </div>
