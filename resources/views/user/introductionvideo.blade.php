@@ -53,7 +53,7 @@
 .showcase video {
   position: fixed;
   top: 0;
-  left: 5px;
+  left: 0;
   width: 100%;
   min-height: 100vh;
   object-fit: fill;
