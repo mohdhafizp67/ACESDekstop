@@ -87,7 +87,7 @@ class UserController extends Controller
 
     $user->save();
 
-    return redirect()->route('user.profile.edit')->with("success","Profil pengguna telah dikemaskini");
+    return redirect()->route('user.profile.edit')->with("success","User profile has been updated");
   }
 
   protected function validatorProfile(array $data)
