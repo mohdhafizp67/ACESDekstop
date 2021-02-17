@@ -24,6 +24,7 @@
     <link href="{{ asset('concept/vendor/fonts/circular-std/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('concept/libs/css/style.css') }}">
     <link rel="stylesheet" href=" {{ asset('concept/vendor/fonts/fontawesome/css/fontawesome-all.css') }}">
+    <link rel="icon" href="{{ asset('concept/images/logo.png') }}" type="image/icon type">
 
 </head>
 <body>

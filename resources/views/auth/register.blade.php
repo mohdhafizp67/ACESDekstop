@@ -4,6 +4,7 @@
 <html style="background-color: #130e29 !important;">
 <head>
   <link rel="stylesheet" href="{{ asset('css/Register.css') }} ">
+  <link rel="icon" href="{{ asset('concept/images/logo.png') }}" type="image/icon type">
 
   <style>
   .footer {
