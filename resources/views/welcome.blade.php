@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="{{ asset('css/welcome.css') }} ">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel='manifest' href="{{ asset('concept/manifest.json') }}">
 
 <style>
 .btn-welcome {
@@ -81,5 +82,12 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+
+    <script type="text/javascript">
+      import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+      const el = document.createElement('pwa-update');
+      document.body.appendChild(el);
+    </script>
   </body>
 </html>
