@@ -48,6 +48,22 @@ Route::get('/introduction', [App\Http\Controllers\LessonController::class, 'intr
 
 Route::get('/vrlessons', [App\Http\Controllers\LessonController::class, 'vrlessons'])->name('lesson.vrlessons');
 
+Route::get('/addictivelessons', [App\Http\Controllers\LessonController::class, 'addictivelessons'])->name('lesson.addictivelessons');
+
+Route::get('/iotlessons', [App\Http\Controllers\LessonController::class, 'iotlessons'])->name('lesson.iotlessons');
+
+Route::get('/bigdatalessons', [App\Http\Controllers\LessonController::class, 'bigdatalessons'])->name('lesson.bigdatalessons');
+
+Route::get('/cloudlessons', [App\Http\Controllers\LessonController::class, 'cloudlessons'])->name('lesson.cloudlessons');
+
+Route::get('/cyberlessons', [App\Http\Controllers\LessonController::class, 'cyberlessons'])->name('lesson.cyberlessons');
+
+Route::get('/universallessons', [App\Http\Controllers\LessonController::class, 'universallessons'])->name('lesson.universallessons');
+
+Route::get('/advancedlessons', [App\Http\Controllers\LessonController::class, 'advancedlessons'])->name('lesson.advancedlessons');
+
+Route::get('/autolessons', [App\Http\Controllers\LessonController::class, 'autolessons'])->name('lesson.autolessons');
+
 Route::get('/lokasivr', [App\Http\Controllers\LessonController::class, 'lokasivr'])->name('lesson.lokasivr');
 
 // Game
