@@ -303,7 +303,9 @@
 
         <script>
         var aud = document.getElementById("myAudio");
-
+        @if(Auth::user()->first_time_login == 0)
+          aud.muted = true;
+        @endif
         function mute() {
           if(aud.muted == true)
           {

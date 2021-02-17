@@ -167,7 +167,7 @@
 	<div class="row">
 
 		<div class="col-md-12">
-      <h1 style="padding-top: 0%; padding-bottom: 1%;text-align: center;color: #fff; font-size: 250%; font-weight: bold;">INTRODUCTION</h1>
+      <h1 style="padding-top: 0%; padding-bottom: 1%;text-align: center;color: #fff; font-weight: bold;">INTRODUCTION</h1>
 		</div>
 
 	</div>
