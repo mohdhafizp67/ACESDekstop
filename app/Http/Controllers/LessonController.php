@@ -19,44 +19,231 @@ class LessonController extends Controller
       return view('lesson.courses');
   }
 
-  public function addictivelessons()
+  public function additivelessons()
   {
-      return view('lesson.addictivelessons');
+
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "3";
+
+    $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
+    if($check_lesson_student == 0){
+      event($lesson_student_id = $this->create_lesson_student_3());
+    }
+
+      return view('lesson.additivelessons');
+  }
+
+  public function create_lesson_student_3()
+  {
+
+
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "3";
+    $student_completion = 1;
+
+    return Student_Lesson::create([
+        'lesson_id' => $lesson_id,
+        'student_id' => $student_id,
+        'student_completion' => $student_completion,
+    ]);
   }
 
   public function advancedlessons()
   {
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "9";
+
+    $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
+    if($check_lesson_student == 0){
+      event($lesson_student_id = $this->create_lesson_student_9());
+    }
+
       return view('lesson.advancedlessons');
+  }
+
+  public function create_lesson_student_9()
+  {
+
+
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "9";
+    $student_completion = 1;
+
+    return Student_Lesson::create([
+        'lesson_id' => $lesson_id,
+        'student_id' => $student_id,
+        'student_completion' => $student_completion,
+    ]);
   }
 
   public function autolessons()
   {
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "10";
+
+    $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
+    if($check_lesson_student == 0){
+      event($lesson_student_id = $this->create_lesson_student_10());
+    }
+
       return view('lesson.autolessons');
+  }
+
+  public function create_lesson_student_10()
+  {
+
+
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "10";
+    $student_completion = 1;
+
+    return Student_Lesson::create([
+        'lesson_id' => $lesson_id,
+        'student_id' => $student_id,
+        'student_completion' => $student_completion,
+    ]);
   }
 
   public function bigdatalessons()
   {
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "5";
+
+    $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
+    if($check_lesson_student == 0){
+      event($lesson_student_id = $this->create_lesson_student_5());
+    }
+
       return view('lesson.bigdatalessons');
+  }
+
+  public function create_lesson_student_5()
+  {
+
+
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "5";
+    $student_completion = 1;
+
+    return Student_Lesson::create([
+        'lesson_id' => $lesson_id,
+        'student_id' => $student_id,
+        'student_completion' => $student_completion,
+    ]);
   }
 
   public function cloudlessons()
   {
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "6";
+
+    $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
+    if($check_lesson_student == 0){
+      event($lesson_student_id = $this->create_lesson_student_6());
+    }
+
       return view('lesson.cloudlessons');
+  }
+
+  public function create_lesson_student_6()
+  {
+
+
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "6";
+    $student_completion = 1;
+
+    return Student_Lesson::create([
+        'lesson_id' => $lesson_id,
+        'student_id' => $student_id,
+        'student_completion' => $student_completion,
+    ]);
   }
 
   public function cyberlessons()
   {
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "7";
+
+    $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
+    if($check_lesson_student == 0){
+      event($lesson_student_id = $this->create_lesson_student_7());
+    }
+
       return view('lesson.cyberlessons');
   }
 
+  public function create_lesson_student_7()
+  {
+
+
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "7";
+    $student_completion = 1;
+
+    return Student_Lesson::create([
+        'lesson_id' => $lesson_id,
+        'student_id' => $student_id,
+        'student_completion' => $student_completion,
+    ]);
+  }
+
+
   public function iotlessons()
   {
+
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "4";
+
+    $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
+    if($check_lesson_student == 0){
+      event($lesson_student_id = $this->create_lesson_student_4());
+    }
+
       return view('lesson.iotlessons');
+  }
+
+  public function create_lesson_student_4()
+  {
+
+
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "4";
+    $student_completion = 1;
+
+    return Student_Lesson::create([
+        'lesson_id' => $lesson_id,
+        'student_id' => $student_id,
+        'student_completion' => $student_completion,
+    ]);
   }
 
   public function universallessons()
   {
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "8";
+
+    $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
+    if($check_lesson_student == 0){
+      event($lesson_student_id = $this->create_lesson_student_8());
+    }
+
       return view('lesson.universallessons');
+  }
+
+  public function create_lesson_student_8()
+  {
+
+
+    $student_id = Auth::user()->student->id;
+    $lesson_id = "8";
+    $student_completion = 1;
+
+    return Student_Lesson::create([
+        'lesson_id' => $lesson_id,
+        'student_id' => $student_id,
+        'student_completion' => $student_completion,
+    ]);
   }
 
 

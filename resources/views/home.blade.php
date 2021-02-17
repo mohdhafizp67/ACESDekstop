@@ -291,13 +291,13 @@ canvas {
 
               <div class="col-md-8">
                 <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/dashboardv2.png')}}); background-repeat: no-repeat;background-size: 100% 100%; padding: 2%;">
-                  <div class="card-header" style="background-color: transparent; border: transparent; font-weight: bold; font-size: 100%; margin: 3px;">ANNOUNCEMENT</div>
+                  <div class="card-header" style="background-color: transparent; border: transparent; font-weight: bold; font-size: 100%;">ANNOUNCEMENT</div>
                   <div class="card-body list-group p-2" style="overflow:auto;height:150px;width:80%; margin: 0 auto; border: transparent;">
                     @foreach($announcement as $data)
 
                       <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                           <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1" style="font-size: 90%">ACES I 4.0</h5>
+                              <h5 class="mb-1" style="font-size: 90%">ACES I4.0</h5>
                               <small class="text-muted">{{$data->created_at}}</small>
                           </div>
                           <p class="mb-1">{{$data->user_message}}</p>

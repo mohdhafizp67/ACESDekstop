@@ -50,26 +50,26 @@
   cursor: pointer;
 }
 
-/* .showcase video {
+.showcase video {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 5px;
   width: 100%;
   min-height: 100vh;
   object-fit: cover;
   opacity: 0.8;
-}  */
-
-
-.showcase video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  /* min-width: 100%; */
-  min-height: 100%;
-  width: 980px;
-  height: 500px;
 }
+
+/*
+.showcase video {
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  /* width: 980px;
+  height: 500px; */
+} */
 
 .overlay {
   position: absolute;
@@ -171,7 +171,7 @@
 
 .content {
   position: fixed;
-  bottom: -10px;
+  bottom: 0px;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   /* width: 100%; */

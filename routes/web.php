@@ -48,7 +48,7 @@ Route::get('/introduction', [App\Http\Controllers\LessonController::class, 'intr
 
 Route::get('/vrlessons', [App\Http\Controllers\LessonController::class, 'vrlessons'])->name('lesson.vrlessons');
 
-Route::get('/addictivelessons', [App\Http\Controllers\LessonController::class, 'addictivelessons'])->name('lesson.addictivelessons');
+Route::get('/additivelessons', [App\Http\Controllers\LessonController::class, 'additivelessons'])->name('lesson.additivelessons');
 
 Route::get('/iotlessons', [App\Http\Controllers\LessonController::class, 'iotlessons'])->name('lesson.iotlessons');
 
