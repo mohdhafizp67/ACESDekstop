@@ -355,7 +355,7 @@
               </div>
 
               <div class="slider-single">
-                  <a href="{{route('lesson.addictivelessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/03.png') }}" alt="3" /></a>
+                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/03.png') }}" alt="3" /></a>
                   <!-- <h1 class="slider-single-title">Internet of Things</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>

@@ -298,7 +298,7 @@ canvas {
                       <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                           <div class="d-flex w-100 justify-content-between">
                               <h5 class="mb-1" style="font-size: 90%">ACES I 4.0</h5>
-                              <small class="text-muted">5/2/2021</small>
+                              <small class="text-muted">{{$data->created_at}}</small>
                           </div>
                           <p class="mb-1">{{$data->user_message}}</p>
                           <!-- <small class="text-muted">Donec id elit non mi porta.</small> -->
