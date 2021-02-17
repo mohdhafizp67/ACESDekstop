@@ -56,7 +56,7 @@
   left: 5px;
   width: 100%;
   min-height: 100vh;
-  object-fit: cover;
+  object-fit: fill;
   opacity: 0.8;
 }
 
