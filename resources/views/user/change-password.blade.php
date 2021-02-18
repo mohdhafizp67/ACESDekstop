@@ -2,7 +2,7 @@
 
 @section('content')
 <!DOCTYPE html>
-<html lang="en" style="background-color: #130e29 !important;">
+<html lang="en" style="background-color: #000a11 !important;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,7 +29,7 @@
             <div class="col-md-2">
 
             </div>
-            <div class="col-md">
+            <div class="col-md" style="padding: 5%;">
 
               @if ($message = Session::get('success'))
               <div id=alert>
@@ -55,7 +55,7 @@
 
 
               <div class="card border-dark" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%;">
-                <div class="card-header" style="padding-bottom: 6px; border: transparent !important; padding-top: 4%; font-size: 160%; color: white; text-align: center;">CHANGE PASSWORD</div>
+                <div class="card-header" style="padding-bottom: 6px; border: transparent !important; padding-top: 4%; font-size: 200%; color: white; text-align: center;">CHANGE PASSWORD</div>
                 <!-- <hr style="width: 70%; margin: 0 auto; "> -->
                 <form action="{{route('user.change-password.save')}}" method="POST">
                   @csrf
@@ -133,7 +133,7 @@
                                  id="password_confirmation"
                                  name="password_confirmation"
                                  class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
-                                 placeholder="Sahkan kata laluan baru"
+                                 placeholder="Confirm New Password"
                                  required>
 
                           <div class="input-group-append">
@@ -165,12 +165,12 @@
 
 
 
-                  <div class="row">
+                  <div class="row" style="padding: 3%;">
                     <div class="col-md-3">
 
                     </div>
                     <div class="col-md-6 text-center">
-                        <button type="button" class="btn" name="button" data-toggle="modal" data-target="#exampleModal" style="padding: 6%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 70%;">
+                        <button type="button" class="btn" name="button" data-toggle="modal" data-target="#exampleModal" style="padding: 9%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 70%;">
                             CHANGE PASSWORD
                         </button>
                     </div>
@@ -183,18 +183,18 @@
                       <div class="modal-dialog modal-dialog-centered" role="document">
                           <div class="modal-content">
                               <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">CONFIRMATION</h5>
+                                  <h5 class="modal-title" id="exampleModalLabel" style="font-size: 200%;">CONFIRMATION</h5>
                                   <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                           </a>
                               </div>
                               <div class="modal-body">
-                                  <p>DO YOU WANT TO CHANGE THIS PASSWORD?</p>
+                                  <p style="font-size: 150%;">DO YOU WANT TO CHANGE THIS PASSWORD?</p>
                               </div>
                               <div class="modal-footer">
-                                  <a href="#" class="btn btn-secondary" data-dismiss="modal">CANCEL</a>
+                                  <a href="#" class="btn" data-dismiss="modal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 22%;">CANCEL</a>
                                   <!-- <a href="#" class="btn btn-primary">Yes</a> -->
-                                  <button type="submit" name="button" class="btn btn-primary">CHANGE PASSWORD</button>
+                                  <button type="submit" name="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 35%;">CHANGE PASSWORD</button>
                               </div>
                           </div>
                       </div>

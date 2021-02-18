@@ -2,7 +2,7 @@
 @section('content')
 
 <!DOCTYPE html>
-<html lang="en" style="background-color: #130e29 !important;">
+<html lang="en" style="background-color: #000a11 !important;">
   <head>
     <meta charset="utf-8">
     <title>PELAJARAN I 4.0</title>
@@ -31,7 +31,7 @@
         position: relative;
         margin: 0 auto;
         /* width: 800px; */
-        height: 452px;
+        height: 666px;
       }
       /* .slider-container .bullet-container {
         position: absolute;
@@ -277,19 +277,19 @@
   </head>
   <body>
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 7%;">
 
 
-    <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">LESSONS</h1>
-    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Click right to see other courses</h1>
+    <h1 style="padding-top: 1%; text-align: center;font-size: 550%; color: #fff; font-weight: bold;margin-top: -3%; padding-bottom: 0%;">LESSONS</h1>
+    <h1 class="blinking" style="font-size: 200%; text-align: center; padding-bottom: 4%; color: #fff;">Click right to see other courses</h1>
 
     <div class="row">
       <div class="col-md-4">
-        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="80%" style="margin-top: 40%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: 66%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-left: -13%;">
 
         <!-- <button class="button buttonsound" onclick="mute()" type="button" style="margin-left: -5%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 00%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-mute"></i></button> -->
-        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 7%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 0% 0%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-        <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
+        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 11.5%;width: 25%;height: 5.5%;  background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+        <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%;height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
 
 
         <audio id="myAudio" controls autoplay hidden="true">
@@ -339,7 +339,7 @@
           <div class="slider-content">
 
               <div class="slider-single">
-                  <a href="{{route('lesson.introduction')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/01.png') }}" alt="1" /></a>
+                  <a href="{{route('lesson.introduction')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/01.png') }}" alt="1" /></a>
                   <!-- <h1 class="slider-single-title">VR</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -348,7 +348,7 @@
               </div>
 
               <div class="slider-single">
-                  <a href="{{route('lesson.vrlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/02.png') }}" alt="2" /></a>
+                  <a href="{{route('lesson.vrlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/02.png') }}" alt="2" /></a>
                   <!-- <h1 class="slider-single-title">Addictive Manufacturing</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -357,7 +357,7 @@
               </div>
 
               <div class="slider-single">
-                  <a href="{{route('lesson.additivelessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/03.png') }}" alt="3" /></a>
+                  <a href="{{route('lesson.additivelessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/03.png') }}" alt="3" /></a>
                   <!-- <h1 class="slider-single-title">Internet of Things</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -367,7 +367,7 @@
 
 
               <div class="slider-single">
-                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/04.png') }}" alt="4" /></a>
+                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/04.png') }}" alt="4" /></a>
                   <!-- <h1 class="slider-single-title">Big Data</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -377,7 +377,7 @@
 
 
               <div class="slider-single">
-                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/05.png') }}" alt="5" /></a>
+                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/05.png') }}" alt="5" /></a>
                   <!-- <h1 class="slider-single-title">Cloud Computing</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -386,7 +386,7 @@
               </div>
 
               <div class="slider-single">
-                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/06.png') }}" alt="6" /></a>
+                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/06.png') }}" alt="6" /></a>
                   <!-- <h1 class="slider-single-title">Cyber Security</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -395,7 +395,7 @@
               </div>
 
                 <div class="slider-single">
-                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/07.png') }}" alt="7" /></a>
+                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/07.png') }}" alt="7" /></a>
                   <!-- <h1 class="slider-single-title">Universal Integration</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -404,7 +404,7 @@
               </div>
 
             <div class="slider-single">
-                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/universal.png') }}" alt="8" /></a>
+                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/08.png') }}" alt="8" /></a>
                   <!-- <h1 class="slider-single-title">Advanced Simulation</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -413,7 +413,7 @@
               </div>
 
             <div class="slider-single">
-                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/advanced.png') }}" alt="9" /></a>
+                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/09.png') }}" alt="9" /></a>
                   <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -422,7 +422,7 @@
               </div>
 
               <div class="slider-single">
-                    <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/icon/autonomous.png') }}" alt="10" /></a>
+                    <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/10.png') }}" alt="10" /></a>
                     <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
                     <!-- <a class="slider-single-likes" href="javascript:void(0);">
                         <i class="fa fa-heart"></i>

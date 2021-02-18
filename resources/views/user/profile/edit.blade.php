@@ -2,7 +2,7 @@
 
 @section('content')
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #000a11 !important;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -320,7 +320,7 @@
       if(negeri){
         $.ajax({
           type:"get",
-           url:"/ACES/register/ajax/get-district/"+negeri,
+           url:"/register/ajax/get-district/"+negeri,
 
           success: function(respond){
             //console.log(respond);
@@ -357,7 +357,7 @@
       if(daerah){
         $.ajax({
           type:"get",
-           url:"/ACES/register/ajax/get-school/"+daerah,
+           url:"/register/ajax/get-school/"+daerah,
 
           success: function(respond){
             //console.log(respond);
