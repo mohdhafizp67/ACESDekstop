@@ -39,6 +39,13 @@ class HomeController extends Controller
       // dd($name);
       $splitName = explode(' ', $name); // Restricts it to only 2 values, for names like Billy Bob Jones
 
+
+      $first_name = $splitName[0];
+      $last_name = !empty($splitName[1]) ? $splitName[1] : ''; // If last name doesn't exist, make it empty
+
+      // dd(count($splitName));
+
+
       $first_name = $splitName[0];
       $last_name = !empty($splitName[1]) ? $splitName[1] : ''; // If last name doesn't exist, make it empty
 
@@ -71,6 +78,7 @@ class HomeController extends Controller
 
 
         return view('home', compact('announcement','lesson_progress','quiz_progress','splitName'));
+
       }
 
     }
