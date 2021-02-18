@@ -194,7 +194,7 @@
                               <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/GZrlQpHykQQ?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                              </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/ilnm5pkI9uM?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/8pskpAbVf1E?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:280px;">
                               <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;">What is the Fourth Industrial Revolution?<span></p>
@@ -281,7 +281,7 @@
     <div class="col-md-8">
       <div class="items">
       		<div class="item1 active">
-      			<img src="{{asset('concept/images/pelajaran/icon/industry.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
+      			<img src="{{asset('concept/images/pelajaran/lesson/business.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
       		</div>
       		<!-- <div class=" item1 next" >
             <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">

@@ -224,7 +224,13 @@ canvas {
       		<div class="col-md-12">
       			<div class="row" style="margin-top: 0%;">
       				<div class="col-md-4" style="margin-left: -5%;">
-                <span style="color: #45e9b5; margin-left: 0%;">{{Auth::user()->name}}</span><br>
+                <span style="color: #45e9b5; margin-left: 0%;">
+                  @if(count($splitName) > 2 )
+                  {{$splitName[0].' '.$splitName[1]}}
+                  @else
+                  {{$splitName[0]}}
+                  @endif
+                </span><br>
                 <span style="color: #45e9b5; margin-left: 0%;">{{Auth::user()->school}}</span>
                 <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
