@@ -1,7 +1,7 @@
 @extends('layouts.app-login-register')
 
 @section('content')
-<html style="background-color: #000c15 !important;">
+<html style="background-color: #130e29 !important;">
 <head>
   <link rel="stylesheet" href="{{ asset('css/Login.css') }} ">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -14,10 +14,10 @@
 /* Style the footer */
 .footer {
   background-color: #000c15;
-  padding: 10px;
-  text-align: center;
-  font-size: 100%;
-  padding: 10px 0px 10px;
+  /* padding: 10px; */
+  /* text-align: center; */
+  font-size: 80%;
+  padding: 5px 0px 5px;
 }
 
 .button {
@@ -67,18 +67,21 @@ a {
 </script> -->
 <!-- Modal -->
 
-<div class="row" style="padding-top: 5%;">
-  <div class="col-md-6">
+<div class="row" style="padding-top: 3%;padding-bottom: 1%;">
+  <div class="col-md-7">
 
   </div>
-  <div class="col-md-6" style="text-align: center;">
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 25%; color: #fff;"><a href="{{-- route('locale.setting', 'en') --}}">ENG</a></button>
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 25%; color: #fff;"><a href="{{-- route('locale.setting', 'my') --}}">BM</a></button>
+  <div class="col-md-2">
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;"><a href="{{-- route('locale.setting', 'en') --}}">ENG</a></button>
   </div>
+  <div class="col-md-2">
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; color: #fff;"><a href="{{-- route('locale.setting', 'my') --}}">MY</a></button>
+  </div>
+  <div class="col-md-1">
 
-
+  </div>
 </div>
-  <div class="row" style="padding: 5%;padding-bottom:13%;">
+  <div class="row" style="padding: 1%;">
     <div class="col-md-4">
       <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; margin-top:-25%;"></center>
       <p class="text-center" style="color: #fff; padding-bottom: 5%; padding-top: 10%; text-transform: uppercase; font-size: 80%; text-align: end;">

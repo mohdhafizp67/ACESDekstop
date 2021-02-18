@@ -2,7 +2,7 @@
 
 @section('content')
 <!DOCTYPE html>
-<html lang="en" style="background-color: #000a11 !important;">
+<html lang="en" style="background-color: #130e29 !important;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,7 +44,7 @@ left: 0%;
 width: 100%;
 text-align: center;
 line-height: 25px;
-font-size: 200%;
+font-size: 150%;
 color: #f8f9fa;
 }
 
@@ -126,7 +126,7 @@ canvas {
 .img-container {
   width: 70%;
   height: 70%;
-  margin-top: -10%;
+  margin-top: -7%;
    border: 0px solid;
    border-radius: 50%;
    position: relative;
@@ -153,10 +153,10 @@ canvas {
 
     <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding: 7%;">
+		<div class="col-md-12" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
 
-        <h1 style="text-align: center; font-size: 550%; color: #fff; font-weight:bold; padding-top: 0%; padding-left: 9%;margin-top: -3%; padding-bottom: 4%;">
+        <h1 style="text-align: center; font-size: 450%; color: #fff; font-weight:bold; padding-top: 0%; padding-left: 9%;">
 
   				ACES <font color="#ff0000"><span class="fontnew"> I4.0</span></font> <br>
   			</h1>
@@ -168,7 +168,7 @@ canvas {
             </button>
           </a>
         </div> -->
-        <div class="row" style="padding-bottom: 5%;">
+        <div class="row">
           <div class="col-md-3" style="margin-top: -3%;background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/profile_frame.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
 
                 <div style="padding: 12%;"></div>
@@ -224,18 +224,12 @@ canvas {
       		<div class="col-md-12">
       			<div class="row" style="margin-top: 0%;">
       				<div class="col-md-4" style="margin-left: -5%;">
-                <span style="color: #45e9b5; margin-left: 8%;font-size: 150%;">
-                  @if(count($splitName) > 2 )
-                  {{$splitName[0].' '.$splitName[1]}}
-                  @else
-                  {{$splitName[0]}}
-                  @endif
-                </span><br>
-                <span style="color: #45e9b5; margin-left: 8%;font-size: 150%;">{{Auth::user()->school}}</span>
-                <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;margin-left: 3%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+                <span style="color: #45e9b5; margin-left: 0%;">{{Auth::user()->name}}</span><br>
+                <span style="color: #45e9b5; margin-left: 0%;">{{Auth::user()->school}}</span>
+                <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
 
-                <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;margin-left:6%;"><i class="fas fa-volume-up"></i></button>
+                <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
                 <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50%  50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
 
                   <audio id="myAudio" controls autoplay hidden="true">
@@ -298,9 +292,9 @@ canvas {
       					</div>
       				</div> -->
 
-              <div class="col-md-8" style="margin-left: -3%;">
-                <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/dashboardv2.png')}}); background-repeat: no-repeat;background-size: 100% 100%; padding: 5%; width: 111%;">
-                  <div class="card-header" style="background-color: transparent; border: transparent; font-weight: bold; font-size: 150%;">ANNOUNCEMENT</div>
+              <div class="col-md-8">
+                <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/dashboardv2.png')}}); background-repeat: no-repeat;background-size: 100% 100%; padding: 2%;">
+                  <div class="card-header" style="background-color: transparent; border: transparent; font-weight: bold; font-size: 100%;">ANNOUNCEMENT</div>
                   <div class="card-body list-group p-2" style="overflow:auto;height:150px;width:80%; margin: 0 auto; border: transparent;">
                     @foreach($announcement as $data)
 
