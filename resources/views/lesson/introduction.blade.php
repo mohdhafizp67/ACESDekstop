@@ -281,7 +281,7 @@
     <div class="col-md-8">
       <div class="items">
       		<div class="item1 active">
-      			<img src="{{asset('concept/images/pelajaran/icon/industry.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
+      			<img src="{{asset('concept/images/pelajaran/lesson/business.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
       		</div>
       		<!-- <div class=" item1 next" >
             <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
