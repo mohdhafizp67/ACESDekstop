@@ -216,7 +216,7 @@
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/n4SeobN_PFM?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/PlhCFG4vdh4?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
 
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:280px;">
@@ -328,19 +328,19 @@
     <div class="col-md-8">
       <div class="items">
       		<div class="item1 active">
-      			<img src="{{asset('concept/images/pelajaran/icon/colleges.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
+      			<img src="{{asset('concept/images/pelajaran/lesson/college.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
       		</div>
       		<div class=" item1 next" >
-            <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
+            <img src="{{asset('concept/images/pelajaran/lesson/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
       		</div>
       		<div class="item1" >
-            <img src="{{asset('concept/images/pelajaran/icon/career.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
+            <img src="{{asset('concept/images/pelajaran/lesson/career.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
       		</div>
           <div class=" item1" >
-            <img src="{{asset('concept/images/pelajaran/icon/colleges.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#lokasi">
+            <img src="{{asset('concept/images/pelajaran/lesson/college.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#lokasi">
           </div>
       		<div class="item1 prev">
-            <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
+            <img src="{{asset('concept/images/pelajaran/lesson/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
       		</div>
 
       	</div>
