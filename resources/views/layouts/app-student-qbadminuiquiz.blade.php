@@ -24,6 +24,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <style>
+    .side-bar .side-menu-item a, .side-bar .side-sub-menu-item a {
+    font-size: 20px !important;
+    display: block;
+    color: #626a72 !important;
+    transition: all ease 0.3s;
+    position: relative !important;
+    text-align: justify;
+    }
 
     .dropdown-menu {
         position: absolute;

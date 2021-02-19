@@ -4,17 +4,28 @@
 
 
 <!DOCTYPE html>
-<html lang="en" style="background-color: #130e29 !important;">
+<html lang="en" style="background-color: #000a11 !important;">
   <head>
     <meta charset="utf-8">
     <title>QUIZ RESULT</title>
+
+    <style media="screen">
+    label {
+      font-size: 25px !important;
+    }
+
+    .btn {
+    font-size: 20px !important;
+    color: #fff !important;
+}
+    </style>
   </head>
   <body>
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-  <h1 style="padding-top: 3%; text-align: center; color: #fff; font-weight: bold;">QUIZ SCORE</h1>
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 7%;">
+  <h1 style="padding-top: 3%; text-align: center; color: #fff; font-weight: bold;margin-top: -3%; padding-bottom: 4%;font-size: 550%;">QUIZ SCORE</h1>
 
-<div class="row" style="padding-bottom: 5%;">
+<div class="row" style="padding-bottom: 10%;">
   <div class="col-md-12">
 
     <div class="row">
@@ -31,10 +42,10 @@
                 <div class="col-md-1">
 
                 </div>
-                <div class="col-md-4" style="font-size: 200%; color: #fff;">
+                <div class="col-md-4" style="color: #fff;">
                   <label>Lessons :</label>
                 </div>
-                <div class="col-md-6" style="font-size: 200%; color: #fff;">
+                <div class="col-md-6" style="color: #fff;">
                   <label>{{$student_quiz->quiz->lesson->lesson_type}} | {{$student_quiz->quiz->lesson->lesson_subject}}</label>
                 </div>
                 <div class="col-md-1">
@@ -46,10 +57,10 @@
                 <div class="col-md-1">
 
                 </div>
-                <div class="col-md-4" style="font-size: 200%; color: #fff;">
+                <div class="col-md-4" style="color: #fff;">
                   <label>Mark :</label>
                 </div>
-                <div class="col-md-6" style="font-size: 200%; color: #fff;">
+                <div class="col-md-6" style="color: #fff;">
                   <label> {{$student_quiz->result}} / {{$student_quiz->quiz->number_of_question}}</label>
                 </div>
                 <div class="col-md-1">
@@ -61,10 +72,10 @@
                 <div class="col-md-1">
 
                 </div>
-                <div class="col-md-4" style="font-size: 200%; color: #fff;">
+                <div class="col-md-4" style="color: #fff;">
                   <label>Percentage :</label>
                 </div>
-                <div class="col-md-6" style="font-size: 200%; color: #fff;">
+                <div class="col-md-6" style="color: #fff;">
                   <label> {{$student_quiz->percentage}} %</label>
                 </div>
                 <div class="col-md-1">
@@ -76,10 +87,10 @@
                 <div class="col-md-1">
 
                 </div>
-                <div class="col-md-4" style="font-size: 200%; color: #fff;">
+                <div class="col-md-4" style="color: #fff;">
                   <label>Answered questions :</label>
                 </div>
-                <div class="col-md-6" style="font-size: 200%; color: #fff;">
+                <div class="col-md-6" style="color: #fff;">
                   <label> {{$student_quiz->answered_question}} </label>
                 </div>
                 <div class="col-md-1">
@@ -91,10 +102,10 @@
                 <div class="col-md-1">
 
                 </div>
-                <div class="col-md-4" style="font-size: 200%; color: #fff;">
+                <div class="col-md-4" style="color: #fff;">
                   <label>Status :</label>
                 </div>
-                <div class="col-md-6" style="font-size: 200%;">
+                <div class="col-md-6">
                   @if($student_quiz->result_status == "Lulus")
                   <label style="color: #00FF16"> Pass  </label>
                   @else
@@ -113,7 +124,7 @@
 
                 </div>
                 <div class="col-md" style="text-align: center;">
-                  <a href="{{route('quiz.choose-quiz')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding: 5%; width: 55%;">Return to Quiz List</a>
+                  <a href="{{route('quiz.choose-quiz')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding: 7%; width: 60%;">Return to Quiz List</a>
                 </div>
                 <div class="col-md-2">
 

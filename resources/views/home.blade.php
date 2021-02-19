@@ -59,7 +59,7 @@ display: block;
 color: #f8f9fa;
 font-size: 130%;
 margin-top: 65%;
-margin-left: -5%;
+margin-left: 0%;
 }
 
 canvas {
@@ -67,7 +67,7 @@ canvas {
     top: 15px;
     left: 0;
     height: 70%;
-    margin-left: 20%;
+    margin-left: 23.5%;
 }
 
 .list-group-item-action {

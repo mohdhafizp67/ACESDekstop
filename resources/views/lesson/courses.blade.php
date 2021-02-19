@@ -367,7 +367,7 @@
 
 
               <div class="slider-single">
-                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/04.png') }}" alt="4" /></a>
+                  <a href="{{route('lesson.iotlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/04.png') }}" alt="4" /></a>
                   <!-- <h1 class="slider-single-title">Big Data</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -377,7 +377,7 @@
 
 
               <div class="slider-single">
-                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/05.png') }}" alt="5" /></a>
+                  <a href="{{route('lesson.bigdatalessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/05.png') }}" alt="5" /></a>
                   <!-- <h1 class="slider-single-title">Cloud Computing</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
