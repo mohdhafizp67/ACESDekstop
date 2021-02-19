@@ -3,13 +3,10 @@
 @section('content')
 
 <!DOCTYPE html>
-<html lang="en" style="background-color: #000a11 !important;">
+<html lang="en" style="background-color: #130e29 !important;">
   <head>
 <style media="screen">
 
-label {
-    font-size: 20px !important;
-}
     .label {
     /* background-color: #4CAF50; */
     border: none;
@@ -18,7 +15,7 @@ label {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 150%;
+    font-size: 100%;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -64,7 +61,7 @@ label {
 
 </head>
 <body>
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-bottom: 6%;padding: 7%;">
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-bottom: 6%;">
   <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">QUIZ</h1>
   <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Please answer all the question</h1>
 
@@ -91,7 +88,7 @@ label {
           @csrf
           <input type="hidden" name="quiz_id" value="{{$quiz->id}}">
         <div class="pills-regular">
-            <ul class="nav nav-pills m-1" id="pills-tab" role="tablist" style="padding-bottom: 3%; padding-left: 15%; padding-right: 8%;">
+            <ul class="nav nav-pills m-1" id="pills-tab" role="tablist" style="padding-bottom: 1%; padding-left: 15%; padding-right: 8%;">
 
                 @foreach($question as $data)
                   @if ($loop->first)
@@ -137,7 +134,7 @@ label {
                     </div>
                     <div class="col-md-8">
 
-                      <div class="form-group" style="color: #fff; font-size: 200%;">
+                      <div class="form-group" style="color: #fff; font-size: 150%;">
                          <label>{{$data->question}}</label>
                       </div>
                     </div>
@@ -188,7 +185,7 @@ label {
 
                     </div>
                     <div class="col-md-2">
-                      <button class="btn btnNext" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 65%;padding:6%;">NEXT</button>
+                      <button class="btn btnNext" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;">NEXT</button>
                     </div>
                   </div>
 
@@ -268,11 +265,11 @@ label {
 
                       </div>
                       <div class="col-md-2" >
-                        <button class="btn btnPrevious" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 65%;padding: 6%;">PREVIOUS</button>
+                        <button class="btn btnPrevious" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;">PREVIOUS</button>
 
                       </div>
                       <div class="col-md-2">
-                          <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 65%;padding: 6%;">SUBMIT</button>
+                          <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;">SUBMIT</button>
                       </div>
                     </div>
 
@@ -284,10 +281,10 @@ label {
                       </div>
                       <div class="col-md-2" >
 
-                        <button class="btn btnPrevious" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 65%;padding: 6%;">PREVIOUS</button>
+                        <button class="btn btnPrevious" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;">PREVIOUS</button>
                       </div>
                       <div class="col-md-2" >
-                        <button class="btn btnNext" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 65%;padding: 6%;">NEXT</button>
+                        <button class="btn btnNext" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;">NEXT</button>
                       </div>
                     </div>
 

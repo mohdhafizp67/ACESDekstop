@@ -126,7 +126,7 @@
             <div class="the_menu mt-2">
                 <!-- Heading -->
                 <div class="side-menu-heading d-flex">
-                    <h6 class=" font-weight-bold pb-2 mx-3" style="color: #45e9b5;font-size: 150%;">&nbsp&nbsp&nbsp&nbsp&nbsp{{Auth::user()->name}} </h6>
+
                     <!-- <a  class="font-weight-bold ml-auto px-3"
                         href="{{ route('logout') }}"
                         onclick="event.preventDefault();
@@ -141,43 +141,42 @@
                     <ul class="side-menu p-0 m-0 mt-3">
 
 
-                      <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-bottom: 4%;"><a href="#" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-home" aria-hidden="true"></i>&nbspDASHBOARD</a></li>
-                      <!-- <div style="padding: 5px;"></div> -->
-                      <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{ route('user.student.profile') }}" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-user-circle"aria-hidden="true"></i>&nbsp&nbsp PROFIL PELAJAR</a></li> -->
+                        <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-bottom: 4%;"><a href="{{route('home')}}" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-home" aria-hidden="true"></i>&nbsp&nbsp DASHBOARD</a></li> -->
+                        <!-- <div style="padding: 5px;"></div> -->
+                        <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{ route('user.student.profile') }}" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-user-circle"aria-hidden="true"></i>&nbsp&nbsp PROFIL PELAJAR</a></li> -->
 
-                      <!-- <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%;">
-                          <font color="#77D8BE">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspACTIVITIES</font>
-                      </li> -->
+                        <!-- <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%;">
+                            <font color="#77D8BE">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspACTIVITIES</font>
+                        </li> -->
 
-                      <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="#" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-book" aria-hidden="true"></i>&nbspLESSON</a></li>
-                      <div style="padding: 5px;"></div>
-                      <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="#" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-question-circle" aria-hidden="true"></i>&nbspQUIZ</a></li>
-                      <div style="padding: 5px;"></div>
+                        <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('lesson.courses')}}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-book" aria-hidden="true"></i>&nbsp&nbsp LESSON</a></li> -->
+                        <!-- <div style="padding: 5px;"></div> -->
+                        <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('quiz.choose-quiz')}}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp&nbsp QUIZ</a></li> -->
+                        <!-- <div style="padding: 5px;"></div> -->
 
-                      <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="#" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-gamepad" aria-hidden="true"></i>&nbspGAME</a></li>
-                      <div style="padding: 5px;"></div>
+                        <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('user.game.demo')}}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-gamepad" aria-hidden="true"></i>&nbsp&nbsp GAME</a></li> -->
+                        <!-- <div style="padding: 5px;"></div> -->
 
-                      <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-bottom: 4%;"><a href="#" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-trophy" aria-hidden="true"></i>&nbspLEADERBOARD</a></li>
-
-
-                      <!-- <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%;">
-                          <font color="#77D8BE">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOTHERS</font>
-                      </li> -->
-                      <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="#" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-comments" aria-hidden="true"></i>&nbspFEEDBACK</a></li>
+                        <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; margin-bottom: 4%;"><a href="{{ route('activities.leaderboard') }}" class="w-100 py-2" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-trophy" aria-hidden="true"></i>&nbsp&nbsp LEADERBOARD</a></li> -->
 
 
-                      <div style="padding: 5px;"></div>
+                        <!-- <li class="nav-divider" style="text-align: justify; margin-left: 6%; font-size: 1rem; padding-top: 2%;padding-bottom: 2%;">
+                            <font color="#77D8BE">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOTHERS</font>
+                        </li> -->
+                        <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="{{route('others.feedback')}}" class="w-100 py-2">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fas fa-comments" aria-hidden="true"></i>&nbsp&nbsp FEED BACK</a></li> -->
 
-                      <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="#" class="w-100 py-2" data-toggle="modal" data-target="#logOutModal">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-power-off" aria-hidden="true"></i>&nbsp&nbsp LOG OUT</a></li> -->
 
-                      <!-- <li class="nav-divider" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-                          <button type="button" class="btn" name="button" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp&nbsp LOG KELUAR</button>
-                      </li> -->
+                        <!-- <div style="padding: 5px;"></div> -->
 
-                      <!-- <li class="nav-divider" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-                          <button type="button" class="btn" name="button" data-toggle="modal" data-target="#logOutModal" style="color: #ff1100"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp&nbsp LOG KELUAR</button>
-                      </li> -->
+                        <!-- <li class="side-menu-item px-3" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;"><a href="#" class="w-100 py-2" data-toggle="modal" data-target="#logOutModal">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-power-off" aria-hidden="true"></i>&nbsp&nbsp LOG OUT</a></li> -->
 
+                        <!-- <li class="nav-divider" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+                            <button type="button" class="btn" name="button" data-toggle="modal" data-target="#logOutModal"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp&nbsp LOG KELUAR</button>
+                        </li> -->
+
+                        <!-- <li class="nav-divider" style="background-image: url({{asset('concept/images/galaxy/button_main.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+                            <button type="button" class="btn" name="button" data-toggle="modal" data-target="#logOutModal" style="color: #ff1100"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp&nbsp LOG KELUAR</button>
+                        </li> -->
 
                     </ul>
                 </div>
