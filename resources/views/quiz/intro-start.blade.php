@@ -4,7 +4,7 @@
 @section('content')
 
 <!DOCTYPE html>
-<html lang="en" style="background-color: #130e29 !important;">
+<html lang="en" style="background-color: #000a11 !important;">
   <head>
     <meta charset="utf-8">
     <title>Start Quiz</title>
@@ -24,13 +24,13 @@
   </head>
   <body>
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover">
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;padding: 7%;">
 
 
 <div class="row">
   <div class="col-md-12">
-    <h1 style="text-align: center; color: #fff; font-weight: bold;padding-top: 2%;">START QUIZ</h1>
-    <p style="padding-top: 0%;text-align: center; color: #fff;font-size: 150%;">Answer all the question based on lessons</p>
+    <h1 style="text-align: center; color: #fff; font-weight: bold;padding-top: 3%;margin-top: -3%;font-size: 450%;">START QUIZ</h1>
+    <p style="padding-top: 0%;text-align: center; color: #fff;font-size: 200%;">Answer all the question based on lessons</p>
   </div>
 
 
@@ -43,7 +43,7 @@
     <!-- <button class="btn blinking" style="color: #fff; font-size: 100%;" onclick="pass_quiz_id(1)"> START </button> -->
     <form action="{{route('quiz.start-quiz')}}" method="post" style="margin: 12%;text-align: center;">
     @csrf
-    <button type="submit" name="button" class="btn"  style="background-image: url({{asset('concept/images/galaxy/button.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; padding: 8%;"><span style="font-size: 150%;">START</span></button>
+    <button type="submit" name="button" class="btn"  style="background-image: url({{asset('concept/images/galaxy/button.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; padding: 13%;"><span style="font-size: 150%;">START</span></button>
     <input type="hidden" id="quiz_id" name="quiz_id" value="{{$id}}">
   </form>
   </div>

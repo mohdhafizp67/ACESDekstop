@@ -3,7 +3,7 @@
 @section('content')
 
 <!DOCTYPE html>
-<html lang="en" style="background-color: #130e29 !important;">
+<html lang="en" style="background-color: #000a11 !important;">
   <head>
     <meta charset="utf-8">
     <title>LEADERBOARD</title>
@@ -28,8 +28,8 @@
   </head>
   <body>
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-<h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">LEADERBOARD</h1>
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 15%;">
+<h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;margin-top: -3%; padding-bottom: 0%;font-size: 550%;">LEADERBOARD</h1>
 <div class="row" style="padding-top: 0%;">
   <div class="col-md-2">
 

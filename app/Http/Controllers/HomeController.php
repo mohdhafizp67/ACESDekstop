@@ -35,7 +35,14 @@ class HomeController extends Controller
     {
       $student = Student::where('user_id', Auth::user()->id)->first();
       $announcement = Announcement::orderBy('id', 'DESC')->get();
+      $name= Auth::user()->name;
+      // dd($name);
+      $splitName = explode(' ', $name); // Restricts it to only 2 values, for names like Billy Bob Jones
 
+      $first_name = $splitName[0];
+      $last_name = !empty($splitName[1]) ? $splitName[1] : ''; // If last name doesn't exist, make it empty
+
+      // dd(count($splitName));
 
 
 
@@ -49,7 +56,7 @@ class HomeController extends Controller
         $quiz_progress = Student_Quiz::where('result_status', "Lulus")->where('student_id', $student_id)->distinct('quiz_id')->count();
         $quiz_progress = ($quiz_progress/10) * 100;
 
-        return view('home', compact('announcement','lesson_progress','quiz_progress'));
+        return view('home', compact('announcement','lesson_progress','quiz_progress', 'splitName'));
       }else {
         $student_id = Student::create([
           'user_id' => Auth::user()->id,
@@ -63,7 +70,7 @@ class HomeController extends Controller
         $quiz_progress = ($quiz_progress/10) * 100;
 
 
-        return view('home', compact('announcement','lesson_progress','quiz_progress'));
+        return view('home', compact('announcement','lesson_progress','quiz_progress','splitName'));
       }
 
     }
