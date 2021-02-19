@@ -2,7 +2,7 @@
 
 @section('content')
 <!DOCTYPE html>
-<html lang="en" style="background-color: #130e29 !important;">
+<html lang="en" style="background-color: #000a11 !important;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +13,12 @@
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="{{ asset('css/w3schools.css') }}">
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="{{ asset('css/pelajaran/vrlessons.css') }} "> -->
 
     <style>
-
     .mySlides {display:none;}
 
     .modal-dialog {
@@ -33,7 +32,7 @@
         display: flex;
         -ms-flex-direction: column;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         pointer-events: auto;
         background-color: #022a36;
         background-clip: padding-box;
@@ -149,7 +148,11 @@
     position: relative;
     padding: 0;
     outline: 0;
-    width: 700px;
+    width: 1000px;
+    display: block;
+    margin-left: 30%;
+    margin-top: 5%;
+
     }
     .w3-display-topright {
         position: absolute;
@@ -163,11 +166,11 @@
   </head>
   <body>
 
-    <div class="container-fluid"  style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;" >
+    <div class="container-fluid"  style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 7%;" >
 	<div class="row">
 
 		<div class="col-md-12">
-      <h1 style="padding-top: 0%; padding-bottom: 1%;text-align: center;color: #fff; font-weight: bold;">INTRODUCTION</h1>
+      <h1 style="padding-top: 0%; padding-bottom: 0%;text-align: center;color: #fff; font-weight: bold;margin-top: -3%;font-size: 450%;">INTRODUCTION</h1>
 		</div>
 
 	</div>
@@ -180,24 +183,24 @@
                     <div class="tab-regular" style="margin-left: 5%;">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Introduction</a>
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="font-size: 150%;">Introduction</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Pillar of I 4.0</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"  style="font-size: 150%;">Pillar of I 4.0</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#link" role="tab" aria-controls="profile" aria-selected="false">I 4.0 Application</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#link" role="tab" aria-controls="profile" aria-selected="false"  style="font-size: 150%;">I 4.0 Application</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/GZrlQpHykQQ?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <iframe class="embed-responsive-item" width="95%" height="450px" src="https://www.youtube.com/embed/GZrlQpHykQQ?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                              </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                              <iframe class="embed-responsive-item" width="95%" height="280px" src="https://www.youtube.com/embed/ilnm5pkI9uM?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <iframe class="embed-responsive-item" width="95%" height="450px" src="https://www.youtube.com/embed/8pskpAbVf1E?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:280px;">
-                              <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;">What is the Fourth Industrial Revolution?<span></p>
+                            <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:450px;">
+                              <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 200%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 200%;">What is the Fourth Industrial Revolution?<span></p>
 
                               <div id="id01" class="w3-modal">
                                 <div class="w3-modal-content w3-card-4">
@@ -207,7 +210,7 @@
 
                                   </header>
                                   <div class="w3-container">
-                                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/v9rZOa3CUC8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/v9rZOa3CUC8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                   </div>
 
                                 </div>
@@ -225,7 +228,7 @@
                                 }
                                 </script>
 
-                                <p onclick="document.getElementById('id02').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;">What is Industry 4.0 and what does it mean for you?<span></p>
+                                <p onclick="document.getElementById('id02').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 200%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 200%;">What is Industry 4.0 and what does it mean for you?<span></p>
 
                                 <div id="id02" class="w3-modal">
                                   <div class="w3-modal-content w3-card-4">
@@ -235,7 +238,7 @@
 
                                     </header>
                                     <div class="w3-container">
-                                      <iframe width="100%" height="300px" src="https://www.youtube.com/embed/b9mJrzdlfR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                      <iframe width="100%" height="500px" src="https://www.youtube.com/embed/b9mJrzdlfR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
 
                                   </div>
