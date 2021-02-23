@@ -45,6 +45,18 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
+
+.btnlg{
+  background-image: url('concept/images/galaxy/button_submit.png');
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25%;
+  height: 60%;
+  color: #fff;
+  padding: 1%;
+}
+
 </style>
 </head>
 <body>
@@ -68,20 +80,22 @@ a {
 <!-- Modal -->
 
 <div class="row" style="padding-top: 5%;">
-  <div class="col-md-6">
+  <div class="col-md-4">
+    <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 50%;"></center>
+  </div>
+  <div class="col-md-2">
 
   </div>
   <div class="col-md-6" style="text-align: center;">
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 25%; color: #fff;padding: 3%;"><a href="{{-- route('locale.setting', 'en') --}}">ENG</a></button>
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 25%; color: #fff;padding: 3%;"><a href="{{-- route('locale.setting', 'my') --}}">BM</a></button>
+    <button type="submit" class="btn btnlg" style="padding: 3%;"><a href="{{-- route('locale.setting', 'en') --}}">ENG</a></button>
+    <button type="submit" class="btn btnlg" style="padding: 3%;"><a href="{{-- route('locale.setting', 'my') --}}">BM</a></button>
   </div>
 
 
 </div>
-  <div class="row" style="padding: 5%;padding-bottom:11%;">
+  <div class="row">
     <div class="col-md-4">
-      <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; margin-top:-25%;"></center>
-      <p class="text-center" style="color: #fff; padding-bottom: 5%; padding-top: 10%; text-transform: uppercase; font-size: 80%; text-align: end;">
+      <p class="text-center" style="color: #fff; text-transform: uppercase; font-size: 100%;padding: 5%;">
         {{ __('landing_page.description') }}
       </p>
 
@@ -94,7 +108,7 @@ a {
             <a href="#" style="font-size: 80%;">{{ __('landing_page.help') }}</a>
           </button>
         </div> -->
-        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-top: -2%;">
 
         <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 20%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding: 1%;"><i class="fas fa-volume-up"></i></button>
         <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding: 1%;"><i class="fas fa-undo"></i></button>
@@ -246,7 +260,7 @@ a {
 
                                 <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
                                   <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
-                                                  <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 30%; color: #fff;padding: 3%;">{{ strtoupper(__('landing_page.login.button')) }}</button>
+                                                  <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 30%; color: #fff;">{{ strtoupper(__('landing_page.login.button')) }}</button>
                                   </div>
                                   <span style="font-size: 80%;"><a href="{{route('register')}}">{{ __('landing_page.login.register_here') }}</a></span>
                                 </div>
@@ -267,7 +281,7 @@ a {
   </div>
   <div class="row">
     <div class="footer">
-    <span>&copy; {{ __('landing_page.login.copyright', [ 'year' => date('Y')]) }}</span>&nbsp&nbsp&nbsp&nbsp<span><font color="white">{{ __('landing_page.tnc_full') }}</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">{{ __('landing_page.privacy') }}</font></span>
+    <span>&copy; {{ __('landing_page.login.copyright', [ 'year' => date('Y')]) }}</span>&nbsp&nbsp&nbsp&nbsp<span style="margin-left: 53%;"><font color="white">{{ __('landing_page.tnc_full') }}</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">{{ __('landing_page.privacy') }}</font></span>
     </div>
   </div>
 </div>

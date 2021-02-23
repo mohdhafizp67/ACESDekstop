@@ -399,7 +399,7 @@
 
       <div class="row">
         <div class="footer">
-        <span>&copy; Hakcipta Terpelihara 2021</span>&nbsp&nbsp&nbsp&nbsp<span style="margin-left: 53%;"><font color="white">TERMS&CONDITIONS</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">PRIVACY</font></span>
+        <span>&copy; {{ __('landing_page.login.copyright', [ 'year' => date('Y')]) }}</span>&nbsp&nbsp&nbsp&nbsp<span><font color="white">{{ __('landing_page.tnc_full') }}</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">{{ __('landing_page.privacy') }}</font></span>
         </div>
       </div>
 
