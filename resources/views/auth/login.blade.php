@@ -67,20 +67,27 @@ a {
 </script> -->
 <!-- Modal -->
 
-<div class="row" style="padding-top: 5%;">
-  <div class="col-md-6">
+<div class="row" style="padding-top: 2%;">
+  <div class="col-md-4">
+    <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%;"></center>
+  </div>
+  <div class="col-md-2">
 
   </div>
-  <div class="col-md-6" style="text-align: center;">
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 25%; color: #fff;padding: 3%;"><a href="{{-- route('locale.setting', 'en') --}}">ENG</a></button>
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 25%; color: #fff;padding: 3%;"><a href="{{-- route('locale.setting', 'my') --}}">BM</a></button>
+  <div class="col-md-5" style="text-align: center;padding-top: 5%;padding-left: 10%;">
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; color: #fff;width: 40%;"><a href="{{-- route('locale.setting', 'en') --}}">ENG</a></button>
+
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; color: #fff;width: 40%;"><a href="{{-- route('locale.setting', 'my') --}}">BM</a></button>
+
+  </div>
+  <div class="col-md-1">
+
   </div>
 
 
 </div>
-  <div class="row" style="padding: 5%;padding-bottom:11%;">
-    <div class="col-md-4">
-      <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; margin-top:-25%;"></center>
+  <div class="row" style="padding-bottom: 8%;">
+    <div class="col-md-4" style="padding:5%;">
       <p class="text-center" style="color: #fff; padding-bottom: 5%; padding-top: 10%; text-transform: uppercase; font-size: 80%; text-align: end;">
         {{ __('landing_page.description') }}
       </p>
@@ -96,8 +103,8 @@ a {
         </div> -->
         <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
-        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 20%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding: 1%;"><i class="fas fa-volume-up"></i></button>
-        <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding: 1%;"><i class="fas fa-undo"></i></button>
+        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 20%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+        <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
 
 
         <audio id="myAudio" controls autoplay hidden="true">
@@ -189,7 +196,7 @@ a {
 
     </div>
 
-    <div class="col-md-7" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%;">
+    <div class="col-md-7" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 95% 100%;">
 
       <h4 style="color: #fff; font-size: 200%; text-align: center; text-transform: uppercase; font-weight: bold; padding-top: 10%;">
         {{ __('landing_page.login.title') }}
