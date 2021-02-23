@@ -1,0 +1,4292 @@
+@media only screen and (min-width : 1501px) and (max-width : 1599px) {
+
+	/**
+	 * Login
+	*/
+
+	/**
+	 * Product All Category Module
+	*/
+
+
+	/**
+	 * Hikashop Product Category Page
+	*/
+	#hikashop_products_switcher_hikashop_category_information_menu_150 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_151 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_152 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_153 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_154 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_155 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_156 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_157 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_270 .hkc-md-3{
+		width:33.33%;
+	}
+	.newsflashtags-sardines figure {
+	    width: 33.33%;
+	    padding: 10px 5px;
+	}
+
+	/**
+	 * Hikashop Product Detail Page
+	*/
+	.hikashop_tabs_ul li{
+		display:block;
+	}
+	.nutrition-information-table{
+		overflow-x:auto;
+	}
+	#product-benefit .col-4,
+	#product-benefit .col-6{
+		width:100%;
+	}
+	#hikashop_carousel_hikashop_category_information_module_191 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_252 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_256 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_260 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_264 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_268 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_272 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_276 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_311 .owl-item{
+		width:auto !important;
+	}
+	#hikashop_carousel_hikashop_category_information_module_191 .owl-stage-outer,
+	#hikashop_carousel_hikashop_category_information_module_252 .owl-stage-outer,
+	#hikashop_carousel_hikashop_category_information_module_256 .owl-stage-outer,
+	#hikashop_carousel_hikashop_category_information_module_260 .owl-stage-outer,
+	#hikashop_carousel_hikashop_category_information_module_264 .owl-stage-outer,
+	#hikashop_carousel_hikashop_category_information_module_268 .owl-stage-outer,
+	#hikashop_carousel_hikashop_category_information_module_272 .owl-stage-outer,
+	#hikashop_carousel_hikashop_category_information_module_276 .owl-stage-outer,
+	#hikashop_carousel_hikashop_category_information_module_311 .owl-stage-outer{
+		height:345px;
+	}
+
+	/**
+	 * Recipes Page
+	*/
+	.blogrecipes p.img_caption{
+		width:207px;
+		height:90px;
+	}
+	.newsflashtop-recipes figure{
+		width:14%;
+	}
+	#hikashop_carousel_hikashop_category_information_module_212 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_221 .owl-item{
+		width:auto !important;
+	}
+	#hikashop_carousel_hikashop_category_information_module_212 .owl-stage-outer{
+		height:330px;
+	}
+	#recipe-detail .recipe-ingredients .col-6{
+		width:100%;
+	}
+
+	/**
+	 * Tips Page
+	*/
+	.tagssimilar a{
+		color:#262626;
+	}
+	.blogtips .col-sm-3{
+		width:50%;
+		float:left;
+	}
+
+	/**
+	 * Happenings Page
+	*/
+	.bloghappenings .col-sm-3{
+		width:50%;
+		float:left;
+	}
+	.bloghappenings .img_caption.none{
+		margin:0px auto;
+	}
+}
+
+/* Laptop *//* Updated on 20/8/2020 */
+@media only screen and (min-width : 1401px) and (max-width : 1500px) {
+
+	/**
+	 * Main Menu
+	*/
+	.nav.menu img{
+		display:none !important;
+	}
+
+	/**
+	 * Top Red Header
+	*/
+	#sp-header-mobile-only #offcanvas-toggler{
+		float:left;
+		line-height:60px;
+	}
+	#sp-header-mobile-only .visible-xs{
+		display:initial !important;
+	}
+	#sp-header-mobile-only .logo{
+		text-align:center;
+	}
+	#sp-logo{
+		margin-top:5px;
+	}
+	#hikashop_cart_149{
+		margin-top:10px;
+		float:right;
+		margin-right:20px;
+		position:relative;
+	}
+	.empty-cart{
+		left:25px;
+	}
+	.hikashop_small_cart_total_title.rounded-item{
+		left:25px;
+	}
+	.hidden-lg{
+		display:block !important;
+	}
+
+	/**
+	 * Below Top Header (Search)
+	*/
+	.hikashop_filter_button_inside{
+		margin-top:10px;
+		margin-right:0px !important;
+	}
+	#hikashop_filter_button_module_151{
+		border-radius:20px;
+		background:none;
+		border:none;
+		z-index:9999;
+		width:50px;
+		height:34px;
+		position:relative;
+		left:178px;
+	}
+	.hikashop_filter_button_inside::after{
+		font-family: "Font Awesome 5 Free";
+	    content: "\f002";
+	    display: inline-block;
+	    padding-right:10px;
+	    vertical-align: middle;
+	    font-weight:900;
+	    position:absolute;
+	    z-index:99;
+	    top:10px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2{
+		width:80% !important;
+		margin:10px 0px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2,
+	.hikashop_filter_button_inside{
+		display:inline-block !important;
+	}
+	#filter_text_productsearch_2{
+		border-radius:20px;
+		width:125%;
+	}
+
+	/**
+	 * Main Body
+	*/
+	#sp-component.col-sm-10{
+		width:100%;
+	}
+	#sp-main-body{
+		padding:0px 0px !important;
+	}
+	#sp-belowcomp.col-md-10{
+		width:100%;
+	}
+	#sp-slider.col-md-10{
+		width:100%;
+	}
+
+	/**
+	 * Homepage
+	*/
+	.slider-homepage .col-12{
+		width:100%;
+	}
+	.slider-homepage .col-12 .col-6{
+		width:50%;
+		float:left;
+	}
+	.recipe-search h2,
+	.recipes h2,
+	.top-product-featured h2,
+	.product-category h2,
+	.socmed-feed h2,
+	.happenings h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_category_information_module_136 .hkc-md-3{
+		width:25%;
+		float:left;
+	}
+	.product-category .hikashop_category_name{
+		width:245px;
+		height:76px;
+		margin-top:-76px;
+	}
+	#hikashop_category_information_module_136 .thumbnail{
+		margin-bottom:10px;
+		height:255px;
+	}
+
+	/**
+	 * Footer
+	*/
+	#logo-translator .logo{
+		width:40%;
+		float:left;
+	}
+	#logo-translator .bottom-translator{
+		width:60%;
+		float:left;
+	}
+	.bottom-translator{
+		float:right;
+	}
+	.bottom-translator img{
+		display:inline-block;
+		margin:5px;
+		border:2px solid #ffffff;
+		border-radius:20px;
+		width:40px;
+		height:40px;
+	}
+	.contact-us p{
+		text-transform:uppercase;
+	}
+	#country-select select{
+		width:250px;
+	}
+	#shorcut-link{
+		margin-top:0px;
+	}
+	#shorcut-link .footer-menu a{
+		color:#ffffff;
+	}
+	#shorcut-link .footer-menu li{
+		border-bottom:none;
+		display:inline-block;
+	}
+	#shorcut-link .footer-menu li a::before{
+		display:none;
+	}
+	#shorcut-link .footer-menu li a{
+		margin-right:10px;
+		line-height:24px;
+	}
+	#country-select #select_ss{
+		margin:0px;
+	}
+	.contact-us a,
+	.contact-us a:hover{
+		color:#ffffff;
+	}
+	#sp-mobile-footer-sticky .container{
+		width:100%;
+	}
+	.sticky-icon img{
+		display:inline-block;
+		margin:5px;
+	}
+	.sticky-icon{
+		margin:16px 0px;
+	}
+	.sticky-icon p{
+		text-align:center;
+	}
+	.sticky-newsletter .paper{
+		width:20%;
+		float:left;
+		text-align:center;
+	}
+	.paper img{
+		display:initial;
+	}
+	.sticky-newsletter .text{
+		width:80%;
+		float:left;
+	}
+	.sticky-newsletter{
+		margin:20px 0px;
+	}
+	.text{
+		font-size:12px;
+		line-height:28px;
+	}
+	#sp-footer2{
+		background:#fff100;
+		height:62px;
+	}
+	#sp-footer3{
+		background:#e40613;
+		height:62px;
+	}
+	#sp-mobile-footer-sticky{
+		position: fixed;
+	   	bottom: 0;
+	   	width: 100%;
+	   	z-index:999;
+	}
+	#sp-footer{
+		margin-bottom:62px;
+	}
+
+	/**
+	 * Main Slider Other Pages
+	*/
+	#sp-main-slider{
+		padding:0px 0px !important;
+	}
+
+	/**
+	 * About Page
+	*/
+	.sp-module.about-submenu ul >li.active a{
+		color:#fff100 !important;
+	}
+	.sp-module.about-submenu ul >li{
+		border-bottom:1px solid #e8e8e8 !important;
+	}
+	.sp-module.about-submenu{
+		margin:10px auto;
+	}
+	.h2-custom{
+		font-size:26px;
+		margin:10px 0px;
+	}
+	.h4-custom{
+		font-size:20px;
+		margin:10px 0px;
+	}
+	#asian-recognition .col-6{
+		width:100%;
+	}
+	#asian-recognition .col-6 table{
+		margin:10px 0px;
+	}
+	#asian-recognition .width_20{
+		width:20%;
+	}
+	#asian-recognition .width_80{
+		width:80%;
+	}
+	#external-site .h4-custom{
+		font-size:20px;
+	}
+	#external-site .col-7{
+		width:100%;
+	}
+
+	/**
+	 * Product All Category Module
+	*/
+	#all-product-categories .all-categories h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Hikashop Product Category Page
+	*/
+	.sardines-category h2,
+	.saba-category h2,
+	.mackerel-category h2,
+	.tuna-category h2,
+	.bakedbeans-category h2,
+	.coconut-category h2,
+	.fruits-category h2,
+	.vegetables-category h2,
+	.h2-custom h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_category_information_menu_150 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_151 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_152 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_153 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_154 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_155 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_156 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_157 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_270 .hikashop_product_image_subdiv{
+		width:auto !important;
+	}
+
+
+	/**
+	 * Hikashop Product Detail Page
+	*/
+	#hikashop_product_name_main,
+	#product-description h2,
+	#product-benefit h2,
+	#no-preservatives h2,
+	#omega h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.hikashop_tabs_ul li{
+		display:block;
+	}
+	#product-benefit h3,
+	#no-preservatives h3,
+	#omega h3{
+		margin: 10px 0px;
+    	font-size:19px;
+	}
+	.nutrition-information-table{
+		overflow-x:auto;
+	}
+	#product-benefit .col-4,
+	#product-benefit .col-6{
+		width:100%;
+	}
+
+	/**
+	 * Recipes Page
+	*/
+	#recipe-detail h2,
+	.recipes-page-category h2,
+	.recipes-page-category h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#recipe-detail .recipe-ingredients .col-6{
+		width:100%;
+	}
+	.newsflashtop-recipes figure{
+		width:14%;
+	}
+
+	/**
+	 * Tips Page
+	*/
+	.tips-page h2,
+	.tips .entry-header.has-post-format h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#sp-component.col-md-10{
+		width:100%;
+	}
+	.blogtips p.img_caption{
+		width:263px;
+	}
+	.tagssimilar a{
+		color:#262626;
+	}
+
+	/**
+	 * Happenings Page
+	*/
+	#happenings-detail h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * FAQ Page
+	*/
+	#main-faq-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Contact Us Page
+	*/
+	.contact-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * ESG Page
+	*/
+	.esg h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+}
+
+/* Laptop *//* Updated on 20/8/2020 */
+@media only screen and (min-width : 1300px) and (max-width : 1400px) {
+
+	/**
+	 * Main Menu
+	*/
+	.nav.menu img{
+		display:none !important;
+	}
+
+	/**
+	 * Top Red Header
+	*/
+	#sp-header-mobile-only #offcanvas-toggler{
+		float:left;
+		line-height:60px;
+	}
+	#sp-header-mobile-only .visible-xs{
+		display:initial !important;
+	}
+	#sp-header-mobile-only .logo{
+		text-align:center;
+	}
+	#sp-logo{
+		margin-top:5px;
+	}
+	#hikashop_cart_149{
+		margin-top:10px;
+		float:right;
+		margin-right:20px;
+		position:relative;
+	}
+	.empty-cart{
+		left:25px;
+	}
+	.hikashop_small_cart_total_title.rounded-item{
+		left:25px;
+	}
+	.hidden-lg{
+		display:block !important;
+	}
+
+	/**
+	 * Below Top Header (Search)
+	*/
+	.hikashop_filter_button_inside{
+		margin-top:10px;
+		margin-right:0px !important;
+	}
+	#hikashop_filter_button_module_151{
+		border-radius:20px;
+		background:none;
+		border:none;
+		z-index:9999;
+		width:50px;
+		height:34px;
+		position:relative;
+		left:178px;
+	}
+	.hikashop_filter_button_inside::after{
+		font-family: "Font Awesome 5 Free";
+	    content: "\f002";
+	    display: inline-block;
+	    padding-right:10px;
+	    vertical-align: middle;
+	    font-weight:900;
+	    position:absolute;
+	    z-index:99;
+	    top:10px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2{
+		width:80% !important;
+		margin:10px 0px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2,
+	.hikashop_filter_button_inside{
+		display:inline-block !important;
+	}
+	#filter_text_productsearch_2{
+		border-radius:20px;
+		width:125%;
+	}
+
+	/**
+	 * Main Body
+	*/
+	#sp-component.col-sm-10{
+		width:100%;
+	}
+	#sp-main-body{
+		padding:0px 0px !important;
+	}
+	#sp-belowcomp.col-md-10{
+		width:100%;
+	}
+	#sp-slider.col-md-10{
+		width:100%;
+	}
+
+	/**
+	 * Homepage
+	*/
+	.slider-homepage .col-12{
+		width:100%;
+	}
+	.slider-homepage .col-12 .col-6{
+		width:50%;
+		float:left;
+	}
+	.recipe-search h2,
+	.recipes h2,
+	.top-product-featured h2,
+	.product-category h2,
+	.socmed-feed h2,
+	.happenings h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_category_information_module_136 .hkc-md-3{
+		width:25%;
+		float:left;
+	}
+	.product-category .hikashop_category_name{
+		width:245px;
+		margin-top:-76px;
+		height:76px;
+	}
+	#hikashop_category_information_module_136 .thumbnail{
+		margin-bottom:10px;
+		height:255px;
+	}
+
+	/**
+	 * Footer
+	*/
+	#logo-translator .logo{
+		width:40%;
+		float:left;
+	}
+	#logo-translator .bottom-translator{
+		width:60%;
+		float:left;
+	}
+	.bottom-translator{
+		float:right;
+	}
+	.bottom-translator img{
+		display:inline-block;
+		margin:5px;
+		border:2px solid #ffffff;
+		border-radius:20px;
+		width:40px;
+		height:40px;
+	}
+	.contact-us p{
+		text-transform:uppercase;
+	}
+	#country-select select{
+		width:250px;
+	}
+	#shorcut-link{
+		margin-top:0px;
+	}
+	#shorcut-link .footer-menu a{
+		color:#ffffff;
+	}
+	#shorcut-link .footer-menu li{
+		border-bottom:none;
+		display:inline-block;
+	}
+	#shorcut-link .footer-menu li a::before{
+		display:none;
+	}
+	#shorcut-link .footer-menu li a{
+		margin-right:10px;
+		line-height:24px;
+	}
+	#country-select #select_ss{
+		margin:0px;
+	}
+	.contact-us a,
+	.contact-us a:hover{
+		color:#ffffff;
+	}
+	#sp-mobile-footer-sticky .container{
+		width:100%;
+	}
+	.sticky-icon img{
+		display:inline-block;
+		margin:5px;
+	}
+	.sticky-icon{
+		margin:16px 0px;
+	}
+	.sticky-icon p{
+		text-align:center;
+	}
+	.sticky-newsletter .paper{
+		width:20%;
+		float:left;
+		text-align:center;
+	}
+	.paper img{
+		display:initial;
+	}
+	.sticky-newsletter .text{
+		width:80%;
+		float:left;
+	}
+	.sticky-newsletter{
+		margin:20px 0px;
+	}
+	.text{
+		font-size:12px;
+		line-height:28px;
+	}
+	#sp-footer2{
+		background:#fff100;
+		height:62px;
+	}
+	#sp-footer3{
+		background:#e40613;
+		height:62px;
+	}
+	#sp-mobile-footer-sticky{
+		position: fixed;
+	   	bottom: 0;
+	   	width: 100%;
+	   	z-index:999;
+	}
+	#sp-footer{
+		margin-bottom:62px;
+	}
+
+	/**
+	 * Main Slider Other Pages
+	*/
+	#sp-main-slider{
+		padding:0px 0px !important;
+	}
+
+	/**
+	 * About Page
+	*/
+	.sp-module.about-submenu ul >li.active a{
+		color:#fff100 !important;
+	}
+	.sp-module.about-submenu ul >li{
+		border-bottom:1px solid #e8e8e8 !important;
+	}
+	.sp-module.about-submenu{
+		margin:10px auto;
+	}
+	.h2-custom{
+		font-size:26px;
+		margin:10px 0px;
+	}
+	.h4-custom{
+		font-size:20px;
+		margin:10px 0px;
+	}
+	#asian-recognition .col-6{
+		width:100%;
+	}
+	#asian-recognition .col-6 table{
+		margin:10px 0px;
+	}
+	#asian-recognition .width_20{
+		width:20%;
+	}
+	#asian-recognition .width_80{
+		width:80%;
+	}
+	#external-site .h4-custom{
+		font-size:20px;
+	}
+	#external-site .col-7{
+		width:100%;
+	}
+
+	/**
+	 * Product All Category Module
+	*/
+	#all-product-categories .all-categories h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Hikashop Product Category Page
+	*/
+	.sardines-category h2,
+	.saba-category h2,
+	.mackerel-category h2,
+	.tuna-category h2,
+	.bakedbeans-category h2,
+	.coconut-category h2,
+	.fruits-category h2,
+	.vegetables-category h2,
+	.h2-custom h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_products_switcher_hikashop_category_information_menu_150 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_151 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_152 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_153 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_154 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_155 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_156 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_157 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_270 .hkc-md-3{
+		width:33.33%;
+	}
+
+
+	/**
+	 * Hikashop Product Detail Page
+	*/
+	#hikashop_product_name_main,
+	#product-description h2,
+	#product-benefit h2,
+	#no-preservatives h2,
+	#omega h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.hikashop_tabs_ul li{
+		display:block;
+	}
+	#product-benefit h3,
+	#no-preservatives h3,
+	#omega h3{
+		margin: 10px 0px;
+    	font-size:19px;
+	}
+	.nutrition-information-table{
+		overflow-x:auto;
+	}
+	#product-benefit .col-4,
+	#product-benefit .col-6{
+		width:100%;
+	}
+
+	/**
+	 * Recipes Page
+	*/
+	#recipe-detail h2,
+	.recipes-page-category h2,
+	.recipes-page-category h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#recipe-detail .recipe-ingredients .col-6{
+		width:100%;
+	}
+	.newsflashtop-recipes figure{
+		width:14%;
+	}
+
+	/**
+	 * Tips Page
+	*/
+	.tips-page h2,
+	.tips .entry-header.has-post-format h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#sp-component.col-md-10{
+		width:100%;
+	}
+	.blogtips p.img_caption{
+		width:263px;
+	}
+	.tagssimilar a{
+		color:#262626;
+	}
+
+	/**
+	 * Happenings Page
+	*/
+	#happenings-detail h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * FAQ Page
+	*/
+	#main-faq-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Contact Us Page
+	*/
+	.contact-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * ESG Page
+	*/
+	.esg h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Benefit of Coconut Page
+	*/
+	.sp-module.about-submenu.coconut ul >li{
+		border-bottom:none !important;
+	}
+}
+
+/* Laptop *//* Updated on 20/8/2020 */
+@media only screen and (min-width : 1200px) and (max-width : 1299px) {
+
+	/**
+	 * Main Menu
+	*/
+	.nav.menu img{
+		display:none !important;
+	}
+
+	/**
+	 * Top Red Header
+	*/
+	#sp-header-mobile-only #offcanvas-toggler{
+		float:left;
+		line-height:60px;
+	}
+	#sp-header-mobile-only .visible-xs{
+		display:initial !important;
+	}
+	#sp-header-mobile-only .logo{
+		text-align:center;
+	}
+	#sp-logo{
+		margin-top:5px;
+	}
+	#hikashop_cart_149{
+		margin-top:10px;
+		float:right;
+		margin-right:20px;
+		position:relative;
+	}
+	.empty-cart{
+		left:25px;
+	}
+	.hikashop_small_cart_total_title.rounded-item{
+		left:25px;
+	}
+	.hidden-lg{
+		display:block !important;
+	}
+
+	/**
+	 * Below Top Header (Search)
+	*/
+	.hikashop_filter_button_inside{
+		margin-top:10px;
+		margin-right:0px !important;
+	}
+	#hikashop_filter_button_module_151{
+		border-radius:20px;
+		background:none;
+		border:none;
+		z-index:9999;
+		width:50px;
+		height:34px;
+		position:relative;
+		left:178px;
+	}
+	.hikashop_filter_button_inside::after{
+		font-family: "Font Awesome 5 Free";
+	    content: "\f002";
+	    display: inline-block;
+	    padding-right:10px;
+	    vertical-align: middle;
+	    font-weight:900;
+	    position:absolute;
+	    z-index:99;
+	    top:10px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2{
+		width:80% !important;
+		margin:10px 0px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2,
+	.hikashop_filter_button_inside{
+		display:inline-block !important;
+	}
+	#filter_text_productsearch_2{
+		border-radius:20px;
+		width:125%;
+	}
+
+	/**
+	 * Main Body
+	*/
+	#sp-component.col-sm-10{
+		width:100%;
+	}
+	#sp-main-body{
+		padding:0px 0px !important;
+	}
+	#sp-belowcomp.col-md-10{
+		width:100%;
+	}
+	#sp-slider.col-md-10{
+		width:100%;
+	}
+
+	/**
+	 * Homepage
+	*/
+	.slider-homepage .col-12{
+		width:100%;
+	}
+	.slider-homepage .col-12 .col-6{
+		width:50%;
+		float:left;
+	}
+	.recipe-search h2,
+	.recipes h2,
+	.top-product-featured h2,
+	.product-category h2,
+	.socmed-feed h2,
+	.happenings h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_category_information_module_136 .hkc-md-3{
+		width:25%;
+		float:left;
+	}
+	.product-category .hikashop_category_name{
+		width:245px;
+		margin-top:-76px;
+		height:76px;
+	}
+	#hikashop_category_information_module_136 .thumbnail{
+		margin-bottom:10px;
+		height:255px;
+	}
+
+	/**
+	 * Footer
+	*/
+	#logo-translator .logo{
+		width:40%;
+		float:left;
+	}
+	#logo-translator .bottom-translator{
+		width:60%;
+		float:left;
+	}
+	.bottom-translator{
+		float:right;
+	}
+	.bottom-translator img{
+		display:inline-block;
+		margin:5px;
+		border:2px solid #ffffff;
+		border-radius:20px;
+		width:40px;
+		height:40px;
+	}
+	.contact-us p{
+		text-transform:uppercase;
+	}
+	#country-select select{
+		width:250px;
+	}
+	#shorcut-link{
+		margin-top:0px;
+	}
+	#shorcut-link .footer-menu a{
+		color:#ffffff;
+	}
+	#shorcut-link .footer-menu li{
+		border-bottom:none;
+		display:inline-block;
+	}
+	#shorcut-link .footer-menu li a::before{
+		display:none;
+	}
+	#shorcut-link .footer-menu li a{
+		margin-right:10px;
+		line-height:24px;
+	}
+	#country-select #select_ss{
+		margin:0px;
+	}
+	.contact-us a,
+	.contact-us a:hover{
+		color:#ffffff;
+	}
+	#sp-mobile-footer-sticky .container{
+		width:100%;
+	}
+	.sticky-icon img{
+		display:inline-block;
+		margin:5px;
+	}
+	.sticky-icon{
+		margin:16px 0px;
+	}
+	.sticky-icon p{
+		text-align:center;
+	}
+	.sticky-newsletter .paper{
+		width:20%;
+		float:left;
+		text-align:center;
+	}
+	.paper img{
+		display:initial;
+	}
+	.sticky-newsletter .text{
+		width:80%;
+		float:left;
+	}
+	.sticky-newsletter{
+		margin:20px 0px;
+	}
+	.text{
+		font-size:12px;
+		line-height:28px;
+	}
+	#sp-footer2{
+		background:#fff100;
+		height:62px;
+	}
+	#sp-footer3{
+		background:#e40613;
+		height:62px;
+	}
+	#sp-mobile-footer-sticky{
+		position: fixed;
+	   	bottom: 0;
+	   	width: 100%;
+	   	z-index:999;
+	}
+	#sp-footer{
+		margin-bottom:62px;
+	}
+
+	/**
+	 * Main Slider Other Pages
+	*/
+	#sp-main-slider{
+		padding:0px 0px !important;
+	}
+
+	/**
+	 * About Page
+	*/
+	.sp-module.about-submenu ul >li.active a{
+		color:#fff100 !important;
+	}
+	.sp-module.about-submenu ul >li{
+		border-bottom:1px solid #e8e8e8 !important;
+	}
+	.sp-module.about-submenu{
+		margin:10px auto;
+	}
+	.h2-custom{
+		font-size:26px;
+		margin:10px 0px;
+	}
+	.h4-custom{
+		font-size:20px;
+		margin:10px 0px;
+	}
+	#asian-recognition .col-6{
+		width:100%;
+	}
+	#asian-recognition .col-6 table{
+		margin:10px 0px;
+	}
+	#asian-recognition .width_20{
+		width:20%;
+	}
+	#asian-recognition .width_80{
+		width:80%;
+	}
+	#external-site .h4-custom{
+		font-size:20px;
+	}
+	#external-site .col-7{
+		width:100%;
+	}
+
+	/**
+	 * Product All Category Module
+	*/
+	#all-product-categories .all-categories h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Hikashop Product Category Page
+	*/
+	.sardines-category h2,
+	.saba-category h2,
+	.mackerel-category h2,
+	.tuna-category h2,
+	.bakedbeans-category h2,
+	.coconut-category h2,
+	.fruits-category h2,
+	.vegetables-category h2,
+	.h2-custom h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_category_information_menu_150 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_151 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_152 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_153 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_154 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_155 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_156 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_157 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_270 .hikashop_product_image_subdiv{
+		width:auto !important;
+	}
+
+
+	/**
+	 * Hikashop Product Detail Page
+	*/
+	#hikashop_product_name_main,
+	#product-description h2,
+	#product-benefit h2,
+	#no-preservatives h2,
+	#omega h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.hikashop_tabs_ul li{
+		display:block;
+	}
+	#product-benefit h3,
+	#no-preservatives h3,
+	#omega h3{
+		margin: 10px 0px;
+    	font-size:19px;
+	}
+	.nutrition-information-table{
+		overflow-x:auto;
+	}
+	#product-benefit .col-4,
+	#product-benefit .col-6{
+		width:100%;
+	}
+
+	/**
+	 * Recipes Page
+	*/
+	#recipe-detail h2,
+	.recipes-page-category h2,
+	.recipes-page-category h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#recipe-detail .recipe-ingredients .col-6{
+		width:100%;
+	}
+	.newsflashtop-recipes figure{
+		width:14%;
+	}
+
+	/**
+	 * Tips Page
+	*/
+	.tips-page h2,
+	.tips .entry-header.has-post-format h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#sp-component.col-md-10{
+		width:100%;
+	}
+	.blogtips p.img_caption{
+		width:263px;
+	}
+	.tagssimilar a{
+		color:#262626;
+	}
+
+	/**
+	 * Happenings Page
+	*/
+	#happenings-detail h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * FAQ Page
+	*/
+	#main-faq-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Contact Us Page
+	*/
+	.contact-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * ESG Page
+	*/
+	.esg h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Benefit of Coconut Page
+	*/
+	.sp-module.about-submenu.coconut ul >li{
+		border-bottom:none !important;
+	}
+}
+
+/* Laptop */
+@media only screen and (min-width : 1024px) and (max-width : 1199px) {
+
+	/**
+	 * Main Menu
+	*/
+	.nav.menu img{
+		display:none !important;
+	}
+
+	/**
+	 * Top Red Header
+	*/
+	#sp-header-mobile-only #offcanvas-toggler{
+		float:left;
+		line-height:60px;
+	}
+	#sp-header-mobile-only .visible-xs{
+		display:initial !important;
+	}
+	#sp-header-mobile-only .logo{
+		text-align:center;
+	}
+	#sp-logo{
+		margin-top:5px;
+	}
+	#hikashop_cart_149{
+		margin-top:10px;
+		float:right;
+		margin-right:20px;
+		position:relative;
+	}
+	.empty-cart{
+		left:25px;
+	}
+	.hikashop_small_cart_total_title.rounded-item{
+		left:25px;
+	}
+
+	/**
+	 * Below Top Header (Search)
+	*/
+	.hikashop_filter_button_inside{
+		margin-top:10px;
+		margin-right:0px !important;
+	}
+	#hikashop_filter_button_module_151{
+		border-radius:20px;
+		background:none;
+		border:none;
+		z-index:9999;
+		width:50px;
+		height:34px;
+		position:relative;
+		left:178px;
+	}
+	.hikashop_filter_button_inside::after{
+		font-family: "Font Awesome 5 Free";
+	    content: "\f002";
+	    display: inline-block;
+	    padding-right:10px;
+	    vertical-align: middle;
+	    font-weight:900;
+	    position:absolute;
+	    z-index:99;
+	    top:10px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2{
+		width:80% !important;
+		margin:10px 0px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2,
+	.hikashop_filter_button_inside{
+		display:inline-block !important;
+	}
+	#filter_text_productsearch_2{
+		border-radius:20px;
+		width:125%;
+	}
+
+	/**
+	 * Main Body
+	*/
+	#sp-component.col-sm-10{
+		width:100%;
+	}
+	#sp-main-body{
+		padding:0px 0px !important;
+	}
+	#sp-belowcomp.col-md-10{
+		width:100%;
+	}
+	#sp-slider.col-md-10{
+		width:100%;
+	}
+
+	/**
+	 * Homepage
+	*/
+	.slider-homepage .col-12{
+		width:100%;
+	}
+	.slider-homepage .col-12 .col-6{
+		width:50%;
+		float:left;
+	}
+	.recipe-search h2,
+	.recipes h2,
+	.top-product-featured h2,
+	.product-category h2,
+	.socmed-feed h2,
+	.happenings h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_category_information_module_136 .hkc-md-3{
+		width:33.33%;
+		float:left;
+	}
+	.product-category .hikashop_category_name{
+		width:265px;
+		margin-left:4px;
+	}
+	#hikashop_category_information_module_136 .thumbnail{
+		margin-bottom:10px;
+		height:275px;
+	}
+	#hikashop_products_switcher_hikashop_category_information_module_135 .owl-item{
+		width:auto !important;
+	}
+	#hikashop_products_switcher_hikashop_category_information_module_135 .owl-stage-outer{
+		height:300px;
+	}
+
+	/**
+	 * Footer
+	*/
+	#logo-translator .logo{
+		width:40%;
+		float:left;
+	}
+	#logo-translator .bottom-translator{
+		width:60%;
+		float:left;
+	}
+	.bottom-translator{
+		float:right;
+	}
+	.bottom-translator img{
+		display:inline-block;
+		margin:5px;
+		border:2px solid #ffffff;
+		border-radius:20px;
+		width:40px;
+		height:40px;
+	}
+	.contact-us p{
+		text-transform:uppercase;
+	}
+	#country-select select{
+		width:250px;
+	}
+	#shorcut-link{
+		margin-top:0px;
+	}
+	#shorcut-link .footer-menu a{
+		color:#ffffff;
+	}
+	#shorcut-link .footer-menu li{
+		border-bottom:none;
+		display:inline-block;
+	}
+	#shorcut-link .footer-menu li a::before{
+		display:none;
+	}
+	#shorcut-link .footer-menu li a{
+		margin-right:10px;
+		line-height:24px;
+	}
+	#country-select #select_ss{
+		margin:0px;
+	}
+	.contact-us a,
+	.contact-us a:hover{
+		color:#ffffff;
+	}
+	#sp-mobile-footer-sticky .container{
+		width:100%;
+	}
+	.sticky-icon img{
+		display:inline-block;
+		margin:5px;
+	}
+	.sticky-icon{
+		margin:16px 0px;
+	}
+	.sticky-icon p{
+		text-align:center;
+	}
+	.sticky-newsletter .paper{
+		width:20%;
+		float:left;
+		text-align:center;
+	}
+	.paper img{
+		display:initial;
+	}
+	.sticky-newsletter .text{
+		width:80%;
+		float:left;
+	}
+	.sticky-newsletter{
+		margin:20px 0px;
+	}
+	.text{
+		font-size:12px;
+		line-height:28px;
+	}
+	#sp-footer2{
+		background:#fff100;
+		height:62px;
+	}
+	#sp-footer3{
+		background:#e40613;
+		height:62px;
+	}
+	#sp-mobile-footer-sticky{
+		position: fixed;
+	   	bottom: 0;
+	   	width: 100%;
+	   	z-index:999;
+	}
+	#sp-footer{
+		margin-bottom:62px;
+	}
+
+	/**
+	 * Main Slider Other Pages
+	*/
+	#sp-main-slider{
+		padding:0px 0px !important;
+	}
+
+	/**
+	 * About Page
+	*/
+	.sp-module.about-submenu ul >li.active a{
+		color:#fff100 !important;
+	}
+	.sp-module.about-submenu ul >li{
+		border-bottom:1px solid #e8e8e8 !important;
+	}
+	.sp-module.about-submenu{
+		margin:10px auto;
+	}
+	.h2-custom{
+		font-size:26px;
+		margin:10px 0px;
+	}
+	.h4-custom{
+		font-size:20px;
+		margin:10px 0px;
+	}
+	#asian-recognition .col-6{
+		width:100%;
+	}
+	#asian-recognition .col-6 table{
+		margin:10px 0px;
+	}
+	#asian-recognition .width_20{
+		width:20%;
+	}
+	#asian-recognition .width_80{
+		width:80%;
+	}
+	#external-site .h4-custom{
+		font-size:20px;
+	}
+	#external-site .col-7{
+		width:100%;
+	}
+
+	/**
+	 * Product All Category Module
+	*/
+	#all-product-categories .all-categories h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#all-product-categories .col-3{
+		width:21%;
+		float:left;
+	}
+	#all-product-categories .col-12{
+		margin:0px 70px;
+	}
+
+	/**
+	 * Hikashop Product Category Page
+	*/
+	.sardines-category h2,
+	.saba-category h2,
+	.mackerel-category h2,
+	.tuna-category h2,
+	.bakedbeans-category h2,
+	.coconut-category h2,
+	.fruits-category h2,
+	.vegetables-category h2,
+	.h2-custom h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_products_switcher_hikashop_category_information_menu_150 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_151 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_152 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_153 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_154 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_155 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_156 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_157 .hkc-md-3,
+	#hikashop_products_switcher_hikashop_category_information_menu_270 .hkc-md-3{
+		width:33.33%;
+		float:left;
+	}
+	.newsflashtags-sardines figure{
+		width:25%;
+		padding:0px 5px;
+	}
+	.newsflashtags-sardines p.img_caption{
+		width:225px;
+		height:90px;
+		margin-top:-90px;
+	}
+
+	/**
+	 * Hikashop Product Detail Page
+	*/
+	#hikashop_product_name_main,
+	#product-description h2,
+	#product-benefit h2,
+	#no-preservatives h2,
+	#omega h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.hikashop_tabs_ul li{
+		display:block;
+	}
+	#product-benefit h3,
+	#no-preservatives h3,
+	#omega h3{
+		margin: 10px 0px;
+    	font-size:19px;
+	}
+	.nutrition-information-table{
+		overflow-x:auto;
+	}
+	#product-benefit .col-4,
+	#product-benefit .col-6{
+		width:100%;
+	}
+	#hikashop_category_information_module_191 .hikashop_product_image_subdiv,
+	#hikashop_category_information_module_252 .hikashop_product_image_subdiv,
+	#hikashop_category_information_module_256 .hikashop_product_image_subdiv,
+	#hikashop_category_information_module_260 .hikashop_product_image_subdiv,
+	#hikashop_category_information_module_264 .hikashop_product_image_subdiv,
+	#hikashop_category_information_module_268 .hikashop_product_image_subdiv,
+	#hikashop_category_information_module_272 .hikashop_product_image_subdiv,
+	#hikashop_category_information_module_276 .hikashop_product_image_subdiv,
+	#hikashop_category_information_module_311 .hikashop_product_image_subdiv{
+		width:auto !important;
+	}
+	#hikashop_category_information_module_191 .hikashop_product_image,
+	#hikashop_category_information_module_252 .hikashop_product_image,
+	#hikashop_category_information_module_256 .hikashop_product_image,
+	#hikashop_category_information_module_260 .hikashop_product_image,
+	#hikashop_category_information_module_264 .hikashop_product_image,
+	#hikashop_category_information_module_268 .hikashop_product_image,
+	#hikashop_category_information_module_272 .hikashop_product_image,
+	#hikashop_category_information_module_276 .hikashop_product_image,
+	#hikashop_category_information_module_311 .hikashop_product_image{
+		height:auto !important;
+	}
+
+	/**
+	 * Recipes Page
+	*/
+	#recipe-detail h2,
+	.recipes-page-category h2,
+	.recipes-page-category h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#recipe-detail .recipe-ingredients .col-6{
+		width:100%;
+	}
+	.newsflashtop-recipes figure{
+		width:14%;
+	}
+	#hikashop_category_information_module_212 .hikashop_product_image_subdiv,
+	#hikashop_category_information_module_221 .hikashop_product_image_subdiv{
+		width:auto !important;
+	}
+	#hikashop_category_information_module_212 .hikashop_product_image,
+	#hikashop_category_information_module_221 .hikashop_product_image{
+		height:auto !important;
+	}
+	.blogrecipes p.img_caption{
+		width:205px;
+		height:90px;
+	}
+	.tag-category img{
+		width:205px;
+	}
+	.tag-category .img_caption{
+		width:205px;
+		height:90px;
+		bottom:90px;
+	}
+	.tag-category .category.list-striped li{
+		height:235px;
+	}
+
+	/**
+	 * Tips Page
+	*/
+	.tips-page h2,
+	.tips .entry-header.has-post-format h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#sp-component.col-md-10{
+		width:100%;
+	}
+	.blogtips p.img_caption{
+		width:213px;
+	}
+	.tagssimilar a{
+		color:#262626;
+	}
+
+	/**
+	 * Happenings Page
+	*/
+	#happenings-detail h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.bloghappenings p.img_caption{
+		width:213px;
+	}
+
+	/**
+	 * FAQ Page
+	*/
+	#main-faq-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Contact Us Page
+	*/
+	.contact-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * ESG Page
+	*/
+	.esg h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Benefit of Baked Beans Page
+	*/
+	.sp-module.about-submenu.baked-beans li{
+		display:block;
+	}
+
+	/**
+	 * Benefit of Coconut Page
+	*/
+	.sp-module.about-submenu.coconut ul >li{
+		border-bottom:none !important;
+	}
+}
+
+/* Responsive Tablet*/
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+
+	/**
+	 * Main Menu
+	*/
+	.nav.menu img{
+		display:none !important;
+	}
+
+	/**
+	 * Top Red Header
+	*/
+	#sp-header-mobile-only #offcanvas-toggler{
+		float:left;
+		line-height:60px;
+	}
+	#sp-header-mobile-only .visible-xs{
+		display:initial !important;
+	}
+	#sp-header-mobile-only .logo{
+		text-align:center;
+	}
+	#sp-logo{
+		margin-top:5px;
+	}
+	#hikashop_cart_149{
+		margin-top:10px;
+		float:right;
+		margin-right:20px;
+		position:relative;
+	}
+	.empty-cart{
+		left:25px;
+	}
+	.hikashop_small_cart_total_title.rounded-item{
+		left:25px;
+	}
+
+	/**
+	 * Below Top Header (Search)
+	*/
+	.hikashop_filter_button_inside{
+		margin-top:10px;
+		margin-right:0px !important;
+	}
+	#hikashop_filter_button_module_151{
+		border-radius:20px;
+		background:none;
+		border:none;
+		z-index:9999;
+		width:50px;
+		height:34px;
+		position:relative;
+		left:178px;
+	}
+	.hikashop_filter_button_inside::after{
+		font-family: "Font Awesome 5 Free";
+	    content: "\f002";
+	    display: inline-block;
+	    padding-right:10px;
+	    vertical-align: middle;
+	    font-weight:900;
+	    position:absolute;
+	    z-index:99;
+	    top:10px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2{
+		width:80% !important;
+		margin:10px 0px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2,
+	.hikashop_filter_button_inside{
+		display:inline-block !important;
+	}
+	#filter_text_productsearch_2{
+		border-radius:20px;
+		width:125%;
+	}
+
+	/**
+	 * Main Body
+	*/
+	#sp-component.col-sm-10{
+		width:100%;
+	}
+	#sp-main-body{
+		padding:0px 0px !important;
+	}
+	#sp-belowcomp.col-md-10{
+		width:100%;
+	}
+	#sp-slider.col-md-10{
+		width:100%;
+	}
+
+	/**
+	 * Homepage
+	*/
+	.slider-homepage .col-12{
+		width:100%;
+	}
+	.slider-homepage .col-12 .col-6{
+		width:50%;
+		float:left;
+	}
+	.recipe-search h2,
+	.recipes h2,
+	.top-product-featured h2,
+	.product-category h2,
+	.socmed-feed h2,
+	.happenings h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_category_information_module_136 .hkc-md-3{
+		width:39%;
+		float:left;
+		margin:0px auto;
+	}
+	.product-category .hikashop_category_name{
+		width:245px;
+		margin-top:-76px;
+		height:76px;
+	}
+	#hikashop_category_information_module_136 .thumbnail{
+		margin-bottom:10px;
+		height:255px;
+	}
+
+	/**
+	 * Footer
+	*/
+	#logo-translator .logo{
+		width:40%;
+		float:left;
+	}
+	#logo-translator .bottom-translator{
+		width:60%;
+		float:left;
+	}
+	.bottom-translator{
+		float:right;
+	}
+	.bottom-translator img{
+		display:inline-block;
+		margin:5px;
+		border:2px solid #ffffff;
+		border-radius:20px;
+		width:40px;
+		height:40px;
+	}
+	.contact-us p{
+		text-transform:uppercase;
+	}
+	#country-select select{
+		width:250px;
+	}
+	#shorcut-link{
+		margin-top:0px;
+	}
+	#shorcut-link .footer-menu a{
+		color:#ffffff;
+	}
+	#shorcut-link .footer-menu li{
+		border-bottom:none;
+		display:inline-block;
+	}
+	#shorcut-link .footer-menu li a::before{
+		display:none;
+	}
+	#shorcut-link .footer-menu li a{
+		margin-right:10px;
+		line-height:24px;
+	}
+	#country-select #select_ss{
+		margin:0px;
+	}
+	.contact-us a,
+	.contact-us a:hover{
+		color:#ffffff;
+	}
+	#sp-mobile-footer-sticky .container{
+		width:100%;
+	}
+	.sticky-icon img{
+		display:inline-block;
+		margin:5px;
+	}
+	.sticky-icon{
+		margin:16px 0px;
+	}
+	.sticky-icon p{
+		text-align:center;
+	}
+	.sticky-newsletter .paper{
+		width:20%;
+		float:left;
+		text-align:center;
+	}
+	.paper img{
+		display:initial;
+	}
+	.sticky-newsletter .text{
+		width:80%;
+		float:left;
+	}
+	.sticky-newsletter{
+		margin:20px 0px;
+	}
+	.text{
+		font-size:12px;
+		line-height:28px;
+	}
+	#sp-footer2{
+		background:#fff100;
+		height:62px;
+	}
+	#sp-footer3{
+		background:#e40613;
+		height:62px;
+	}
+	#sp-mobile-footer-sticky{
+		position: fixed;
+	   	bottom: 0;
+	   	width: 100%;
+	   	z-index:999;
+	}
+	#sp-footer{
+		margin-bottom:62px;
+	}
+
+	/**
+	 * Main Slider Other Pages
+	*/
+	#sp-main-slider{
+		padding:0px 0px !important;
+	}
+
+	/**
+	 * About Page
+	*/
+	.sp-module.about-submenu ul >li.active a{
+		color:#fff100 !important;
+	}
+	.sp-module.about-submenu ul >li{
+		border-bottom:1px solid #e8e8e8 !important;
+	}
+	.sp-module.about-submenu{
+		margin:10px auto;
+	}
+	.h2-custom{
+		font-size:26px;
+		margin:10px 0px;
+	}
+	.h4-custom{
+		font-size:20px;
+		margin:10px 0px;
+	}
+	#asian-recognition .col-6{
+		width:100%;
+	}
+	#asian-recognition .col-6 table{
+		margin:10px 0px;
+	}
+	#asian-recognition .width_20{
+		width:20%;
+	}
+	#asian-recognition .width_80{
+		width:80%;
+	}
+	#external-site .h4-custom{
+		font-size:20px;
+	}
+	#external-site .col-7{
+		width:100%;
+	}
+
+	/**
+	 * Product All Category Module
+	*/
+	#all-product-categories .all-categories h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Hikashop Product Category Page
+	*/
+	.sardines-category h2,
+	.saba-category h2,
+	.mackerel-category h2,
+	.tuna-category h2,
+	.bakedbeans-category h2,
+	.coconut-category h2,
+	.fruits-category h2,
+	.vegetables-category h2,
+	.h2-custom h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_category_information_menu_150 .hkc-md-3,
+	#hikashop_category_information_menu_151 .hkc-md-3,
+	#hikashop_category_information_menu_152 .hkc-md-3,
+	#hikashop_category_information_menu_153 .hkc-md-3,
+	#hikashop_category_information_menu_154 .hkc-md-3,
+	#hikashop_category_information_menu_155 .hkc-md-3,
+	#hikashop_category_information_menu_156 .hkc-md-3,
+	#hikashop_category_information_menu_157 .hkc-md-3,
+	#hikashop_category_information_menu_270 .hkc-md-3{
+		width:49%;
+	}
+	.newsflashtags-sardines figure{
+		width:33.33%;
+		padding:10px 5px;
+	}
+	.newsflashtags-sardines p.img_caption{
+		width:240px;
+		height:90px;
+		margin-top:-90px;
+	}
+
+	/**
+	 * Hikashop Product Detail Page
+	*/
+	#hikashop_product_name_main,
+	#product-description h2,
+	#product-benefit h2,
+	#no-preservatives h2,
+	#omega h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.hikashop_tabs_ul li{
+		display:block;
+	}
+	#product-benefit h3,
+	#no-preservatives h3,
+	#omega h3{
+		margin: 10px 0px;
+    	font-size:19px;
+	}
+	.nutrition-information-table{
+		overflow-x:auto;
+	}
+	#product-benefit .col-4,
+	#product-benefit .col-6{
+		width:100%;
+	}
+
+	/**
+	 * Recipes Page
+	*/
+	#recipe-detail h2,
+	.recipes-page-category h2,
+	.recipes-page-category h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#recipe-detail .recipe-ingredients .col-6{
+		width:100%;
+	}
+	.newsflashtop-recipes figure{
+		width:22%;
+		margin:10px 10px;
+	}
+	.blogrecipes p.img_caption{
+		width:150px;
+		padding:10px 5px;
+		height:90px;
+	}
+	.tag-category img{
+		width:150px;
+	}
+	.tag-category .img_caption{
+		width:150px;
+		height:100px;
+		bottom:100px;
+		padding:10px;
+	}
+	.tag-category .category.list-striped li{
+		height:175px;
+	}
+
+	/**
+	 * Tips Page
+	*/
+	.tips-page h2,
+	.tips .entry-header.has-post-format h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#sp-component.col-md-10{
+		width:100%;
+	}
+	.blogtips p.img_caption{
+		width:158px;
+		height:110px;
+	}
+	.tagssimilar a{
+		color:#262626;
+	}
+
+	/**
+	 * Happenings Page
+	*/
+	#happenings-detail h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.bloghappenings p.img_caption{
+		width:158px;
+		padding:10px;
+	}
+
+	/**
+	 * FAQ Page
+	*/
+	#main-faq-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Contact Us Page
+	*/
+	.contact-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * ESG Page
+	*/
+	.esg h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Benefit of Baked Beans Page
+	*/
+	.sp-module.about-submenu.baked-beans li{
+		display:block;
+	}
+
+	/**
+	 * Benefit of Coconut Page
+	*/
+	.sp-module.about-submenu.coconut ul >li{
+		display:block;
+	}
+}
+
+/* Mobile Landscape*/
+@media only screen and (min-width : 668px) and (max-width : 767px) {
+
+	/**
+	 * Main Menu
+	*/
+	.nav.menu img{
+		display:none !important;
+	}
+
+	/**
+	 * Top Red Header
+	*/
+	#sp-header-mobile-only #offcanvas-toggler{
+		float:left;
+		line-height:60px;
+	}
+	#sp-header-mobile-only .visible-xs{
+		display:initial !important;
+	}
+	#sp-header-mobile-only .logo{
+		text-align:center;
+	}
+	#sp-logo{
+		margin-top:5px;
+	}
+	#hikashop_cart_149{
+		margin-top:10px;
+		float:right;
+		margin-right:20px;
+		position:relative;
+	}
+	.empty-cart{
+		left:25px;
+	}
+	.hikashop_small_cart_total_title.rounded-item{
+		left:25px;
+	}
+
+	/**
+	 * Below Top Header (Search)
+	*/
+	.hikashop_filter_button_inside{
+		margin-top:10px;
+		margin-right:0px !important;
+	}
+	#hikashop_filter_button_module_151{
+		border-radius:20px;
+		background:none;
+		border:none;
+		z-index:9999;
+		width:50px;
+		height:34px;
+		position:relative;
+		left:178px;
+	}
+	.hikashop_filter_button_inside::after{
+		font-family: "Font Awesome 5 Free";
+	    content: "\f002";
+	    display: inline-block;
+	    padding-right:10px;
+	    vertical-align: middle;
+	    font-weight:900;
+	    position:absolute;
+	    z-index:99;
+	    top:10px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2{
+		width:80% !important;
+		margin:10px 0px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2,
+	.hikashop_filter_button_inside{
+		display:inline-block !important;
+	}
+	#filter_text_productsearch_2{
+		border-radius:20px;
+		width:125%;
+	}
+
+	/**
+	 * Main Body
+	*/
+	#sp-component.col-sm-10{
+		width:100%;
+	}
+	#sp-main-body{
+		padding:0px 0px !important;
+	}
+	#sp-belowcomp.col-md-10{
+		width:100%;
+	}
+	#sp-slider.col-md-10{
+		width:100%;
+	}
+
+	/**
+	 * Homepage
+	*/
+	.recipe-search h2,
+	.recipes h2,
+	.top-product-featured h2,
+	.product-category h2,
+	.socmed-feed h2,
+	.happenings h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_products_switcher_hikashop_category_information_module_135 .owl-item{
+		width:auto !important;
+	}
+	#hikashop_products_switcher_hikashop_category_information_module_135 .owl-stage-outer{
+		height:300px;
+	}
+	#hikashop_category_information_module_136 .hkc-md-3{
+		width:43%;
+		float:left;
+		margin:0px auto;
+	}
+
+	/**
+	 * Footer
+	*/
+	#logo-translator .logo{
+		width:40%;
+		float:left;
+	}
+	#logo-translator .bottom-translator{
+		width:60%;
+		float:left;
+	}
+	.bottom-translator{
+		float:right;
+	}
+	.bottom-translator img{
+		display:inline-block;
+		margin:5px;
+		border:2px solid #ffffff;
+		border-radius:20px;
+		width:40px;
+		height:40px;
+	}
+	.contact-us p{
+		text-transform:uppercase;
+	}
+	#country-select select{
+		width:250px;
+	}
+	#shorcut-link{
+		margin-top:0px;
+	}
+	#shorcut-link .footer-menu a{
+		color:#ffffff;
+	}
+	#shorcut-link .footer-menu li{
+		border-bottom:none;
+		display:inline-block;
+	}
+	#shorcut-link .footer-menu li a::before{
+		display:none;
+	}
+	#shorcut-link .footer-menu li a{
+		margin-right:10px;
+		line-height:24px;
+	}
+	#country-select #select_ss{
+		margin:0px;
+	}
+	.contact-us a,
+	.contact-us a:hover{
+		color:#ffffff;
+	}
+	#sp-mobile-footer-sticky .container{
+		width:100%;
+	}
+	.sticky-icon img{
+		display:inline-block;
+		margin:5px;
+	}
+	.sticky-icon{
+		margin:16px 0px;
+	}
+	.sticky-icon p{
+		text-align:center;
+	}
+	.sticky-newsletter .paper{
+		width:20%;
+		float:left;
+		text-align:center;
+	}
+	.paper img{
+		display:initial;
+	}
+	.sticky-newsletter .text{
+		width:80%;
+		float:left;
+	}
+	.sticky-newsletter{
+		margin:20px 0px;
+	}
+	.text{
+		font-size:12px;
+		line-height:28px;
+	}
+	#sp-footer2{
+		background:#fff100;
+		height:62px;
+	}
+	#sp-footer3{
+		background:#e40613;
+		height:62px;
+	}
+	#sp-mobile-footer-sticky{
+		position: fixed;
+	   	bottom: 0;
+	   	width: 100%;
+	   	z-index:999;
+	}
+	#sp-footer{
+		margin-bottom:62px;
+	}
+
+	/**
+	 * Main Slider Other Pages
+	*/
+	#sp-main-slider{
+		padding:0px 0px !important;
+	}
+
+	/**
+	 * About Page
+	*/
+	.sp-module.about-submenu ul >li.active a{
+		color:#fff100 !important;
+	}
+	.sp-module.about-submenu ul >li{
+		border-bottom:1px solid #e8e8e8 !important;
+		display:block;
+	}
+	.sp-module.about-submenu{
+		margin:10px auto;
+	}
+	.h2-custom{
+		font-size:26px;
+		margin:10px 0px;
+	}
+	.h4-custom{
+		font-size:20px;
+		margin:10px 0px;
+	}
+	#asian-recognition .col-6{
+		width:100%;
+	}
+	#asian-recognition .col-6 table{
+		margin:10px 0px;
+	}
+	#asian-recognition .width_20{
+		width:20%;
+	}
+	#asian-recognition .width_80{
+		width:80%;
+	}
+	#external-site .h4-custom{
+		font-size:20px;
+	}
+	#external-site .col-7{
+		width:100%;
+	}
+
+	/**
+	 * Product All Category Module
+	*/
+	#all-product-categories .all-categories h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Hikashop Product Category Page
+	*/
+	.sardines-category h2,
+	.saba-category h2,
+	.mackerel-category h2,
+	.tuna-category h2,
+	.bakedbeans-category h2,
+	.coconut-category h2,
+	.fruits-category h2,
+	.vegetables-category h2,
+	.h2-custom h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	#hikashop_category_information_menu_150 .hkc-md-3,
+	#hikashop_category_information_menu_151 .hkc-md-3,
+	#hikashop_category_information_menu_152 .hkc-md-3,
+	#hikashop_category_information_menu_153 .hkc-md-3,
+	#hikashop_category_information_menu_154 .hkc-md-3,
+	#hikashop_category_information_menu_155 .hkc-md-3,
+	#hikashop_category_information_menu_156 .hkc-md-3,
+	#hikashop_category_information_menu_157 .hkc-md-3,
+	#hikashop_category_information_menu_270 .hkc-md-3{
+		width:49%;
+	}
+	.newsflashtags-sardines figure {
+	    width: 33.33%;
+	    padding: 10px 5px;
+	}
+	.newsflashtags-sardines p.img_caption{
+		width:226px;
+		height:90px;
+		margin-top:-90px;
+	}
+
+	/**
+	 * Hikashop Product Detail Page
+	*/
+	#hikashop_product_name_main,
+	#product-description h2,
+	#product-benefit h2,
+	#no-preservatives h2,
+	#omega h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.hikashop_tabs_ul li{
+		display:block;
+	}
+	#product-benefit h3,
+	#no-preservatives h3,
+	#omega h3{
+		margin: 10px 0px;
+    	font-size:19px;
+	}
+	.nutrition-information-table{
+		overflow-x:auto;
+	}
+	#product-benefit .col-4,
+	#product-benefit .col-6{
+		width:100%;
+	}
+	#hikashop_carousel_hikashop_category_information_module_191 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_252 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_256 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_260 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_264 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_268 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_272 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_276 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_311 .owl-item{
+		width:auto !important;
+	}
+
+	/**
+	 * Recipes Page
+	*/
+	#recipe-detail h2,
+	.recipes-page-category h2,
+	.recipes-page-category h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#recipe-detail .recipe-ingredients .col-6{
+		width:100%;
+	}
+	.newsflashtop-recipes figure{
+		width:22%;
+		margin:10px;
+	}
+	.blogrecipes .col-sm-3{
+		width:50%;
+		float:left;
+	}
+	.blogrecipes .img_caption.none{
+		margin:0px auto;
+	}
+	#hikashop_carousel_hikashop_category_information_module_212 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_221 .owl-item{
+		width:auto !important;
+	}
+	.tag-category .category.list-striped li{
+		width:49%;
+	}
+
+	/**
+	 * Tips Page
+	*/
+	.tips-page h2,
+	.tips .entry-header.has-post-format h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#sp-component.col-md-10{
+		width:100%;
+	}
+	.tagssimilar a{
+		color:#262626;
+	}
+	.blogtips .col-sm-3{
+		width:50%;
+		float:left;
+	}
+	.blogtips .img_caption.none{
+		margin:0px auto;
+	}
+	.blogtips p.img_caption{
+		width:273px;
+		margin-left:-2px;
+	}
+
+	/**
+	 * Happenings Page
+	*/
+	#happenings-detail h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.bloghappenings .col-sm-3{
+		width:50%;
+		float:left;
+	}
+	.bloghappenings .img_caption.none{
+		margin:0px auto;
+	}
+
+	/**
+	 * FAQ Page
+	*/
+	#main-faq-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Contact Us Page
+	*/
+	.contact-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * ESG Page
+	*/
+	.esg h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Benefit of Baked Beans Page
+	*/
+	.sp-module.about-submenu.baked-beans li{
+		display:block;
+	}
+
+	/**
+	 * Benefit of Coconut Page
+	*/
+	.sp-module.about-submenu.coconut ul >li{
+		display:block;
+	}
+}
+
+/* Mobile Landscape*/
+@media only screen and (min-width : 569px) and (max-width : 667px) {
+
+	/**
+	 * Main Menu
+	*/
+	.nav.menu img{
+		display:none !important;
+	}
+
+	/**
+	 * Top Red Header
+	*/
+	#sp-header-mobile-only #offcanvas-toggler{
+		float:left;
+		line-height:60px;
+	}
+	#sp-header-mobile-only .visible-xs{
+		display:initial !important;
+	}
+	#sp-header-mobile-only .logo{
+		text-align:center;
+	}
+	#sp-logo{
+		margin-top:5px;
+	}
+	#hikashop_cart_149{
+		margin-top:10px;
+		float:right;
+		margin-right:20px;
+		position:relative;
+	}
+	.empty-cart{
+		left:25px;
+	}
+	.hikashop_small_cart_total_title.rounded-item{
+		left:25px;
+	}
+
+	/**
+	 * Below Top Header (Search)
+	*/
+	.hikashop_filter_button_inside{
+		margin-top:10px;
+		margin-right:0px !important;
+	}
+	#hikashop_filter_button_module_151{
+		border-radius:20px;
+		background:none;
+		border:none;
+		z-index:9999;
+		width:50px;
+		height:34px;
+		position:relative;
+		left:178px;
+	}
+	.hikashop_filter_button_inside::after{
+		font-family: "Font Awesome 5 Free";
+	    content: "\f002";
+	    display: inline-block;
+	    padding-right:10px;
+	    vertical-align: middle;
+	    font-weight:900;
+	    position:absolute;
+	    z-index:99;
+	    top:10px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2{
+		width:80% !important;
+		margin:10px 0px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2,
+	.hikashop_filter_button_inside{
+		display:inline-block !important;
+	}
+	#filter_text_productsearch_2{
+		border-radius:20px;
+		width:125%;
+	}
+
+	/**
+	 * Main Body
+	*/
+	#sp-component.col-sm-10{
+		width:100%;
+	}
+	#sp-main-body{
+		padding:0px 0px !important;
+	}
+	#sp-belowcomp.col-md-10{
+		width:100%;
+	}
+	#sp-slider.col-md-10{
+		width:100%;
+	}
+
+	/**
+	 * Homepage
+	*/
+	.recipe-search h2,
+	.recipes h2,
+	.top-product-featured h2,
+	.product-category h2,
+	.socmed-feed h2,
+	.happenings h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_products_switcher_hikashop_category_information_module_135 .owl-item{
+		width:auto !important;
+	}
+	#hikashop_products_switcher_hikashop_category_information_module_135 .owl-stage-outer{
+		height:300px;
+	}
+	#hikashop_category_information_module_136 .hkc-md-3{
+		width:48%;
+		float:left;
+		margin:0px auto;
+	}
+	.product-category .hikashop_category_name{
+		width:266px;
+	}
+
+	/**
+	 * Footer
+	*/
+	#logo-translator .logo{
+		width:40%;
+		float:left;
+	}
+	#logo-translator .bottom-translator{
+		width:60%;
+		float:left;
+	}
+	.bottom-translator{
+		float:right;
+	}
+	.bottom-translator img{
+		display:inline-block;
+		margin:5px;
+		border:2px solid #ffffff;
+		border-radius:20px;
+		width:40px;
+		height:40px;
+	}
+	.contact-us p{
+		text-transform:uppercase;
+	}
+	#country-select select{
+		width:250px;
+	}
+	#shorcut-link{
+		margin-top:0px;
+	}
+	#shorcut-link .footer-menu a{
+		color:#ffffff;
+	}
+	#shorcut-link .footer-menu li{
+		border-bottom:none;
+		display:inline-block;
+	}
+	#shorcut-link .footer-menu li a::before{
+		display:none;
+	}
+	#shorcut-link .footer-menu li a{
+		margin-right:10px;
+		line-height:24px;
+	}
+	#country-select #select_ss{
+		margin:0px;
+	}
+	.contact-us a,
+	.contact-us a:hover{
+		color:#ffffff;
+	}
+	#sp-mobile-footer-sticky .container{
+		width:100%;
+	}
+	.sticky-icon img{
+		display:inline-block;
+		margin:5px;
+	}
+	.sticky-icon{
+		margin:16px 0px;
+	}
+	.sticky-icon p{
+		text-align:center;
+	}
+	.sticky-newsletter .paper{
+		width:20%;
+		float:left;
+		text-align:center;
+	}
+	.paper img{
+		display:initial;
+	}
+	.sticky-newsletter .text{
+		width:80%;
+		float:left;
+	}
+	.sticky-newsletter{
+		margin:20px 0px;
+	}
+	.text{
+		font-size:12px;
+		line-height:28px;
+	}
+	#sp-footer2{
+		background:#fff100;
+		height:62px;
+	}
+	#sp-footer3{
+		background:#e40613;
+		height:62px;
+	}
+	#sp-mobile-footer-sticky{
+		position: fixed;
+	   	bottom: 0;
+	   	width: 100%;
+	   	z-index:999;
+	}
+	#sp-footer{
+		margin-bottom:62px;
+	}
+
+	/**
+	 * Main Slider Other Pages
+	*/
+	#sp-main-slider{
+		padding:0px 0px !important;
+	}
+
+	/**
+	 * About Page
+	*/
+	.sp-module.about-submenu ul >li.active a{
+		color:#fff100 !important;
+	}
+	.sp-module.about-submenu ul >li{
+		border-bottom:1px solid #e8e8e8 !important;
+		display:block;
+	}
+	.sp-module.about-submenu{
+		margin:10px auto;
+	}
+	.h2-custom{
+		font-size:26px;
+		margin:10px 0px;
+	}
+	.h4-custom{
+		font-size:20px;
+		margin:10px 0px;
+	}
+	#asian-recognition .col-6{
+		width:100%;
+	}
+	#asian-recognition .col-6 table{
+		margin:10px 0px;
+	}
+	#asian-recognition .width_20{
+		width:20%;
+	}
+	#asian-recognition .width_80{
+		width:80%;
+	}
+	#external-site .h4-custom{
+		font-size:20px;
+	}
+	#external-site .col-7{
+		width:100%;
+	}
+
+	/**
+	 * Product All Category Module
+	*/
+	#all-product-categories .all-categories h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#all-product-categories .col-12{
+		margin:0px 10px;
+	}
+	#all-product-categories .col-3{
+		width:50%;
+	}
+
+	/**
+	 * Hikashop Product Category Page
+	*/
+	.sardines-category h2,
+	.saba-category h2,
+	.mackerel-category h2,
+	.tuna-category h2,
+	.bakedbeans-category h2,
+	.coconut-category h2,
+	.fruits-category h2,
+	.vegetables-category h2,
+	.h2-custom h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_category_information_menu_150 .hkc-md-3,
+	#hikashop_category_information_menu_151 .hkc-md-3,
+	#hikashop_category_information_menu_152 .hkc-md-3,
+	#hikashop_category_information_menu_153 .hkc-md-3,
+	#hikashop_category_information_menu_154 .hkc-md-3,
+	#hikashop_category_information_menu_155 .hkc-md-3,
+	#hikashop_category_information_menu_156 .hkc-md-3,
+	#hikashop_category_information_menu_157 .hkc-md-3,
+	#hikashop_category_information_menu_270 .hkc-md-3{
+		width:49%;
+	}
+	.newsflashtags-sardines figure {
+	    width: 33.33%;
+	    padding: 10px 5px;
+	}
+	.newsflashtags-sardines p.img_caption{
+		width:203px;
+		height:90px;
+		margin-top:-90px;
+	}
+
+	/**
+	 * Hikashop Product Detail Page
+	*/
+	#hikashop_product_name_main,
+	#product-description h2,
+	#product-benefit h2,
+	#no-preservatives h2,
+	#omega h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.hikashop_tabs_ul li{
+		display:block;
+	}
+	#product-benefit h3,
+	#no-preservatives h3,
+	#omega h3{
+		margin: 10px 0px;
+    	font-size:19px;
+	}
+	.nutrition-information-table{
+		overflow-x:auto;
+	}
+	#product-benefit .col-4,
+	#product-benefit .col-6{
+		width:100%;
+	}
+	#hikashop_carousel_hikashop_category_information_module_191 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_252 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_256 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_260 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_264 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_268 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_272 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_276 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_311 .owl-item{
+		width:auto !important;
+	}
+
+	/**
+	 * Recipes Page
+	*/
+	#recipe-detail h2,
+	.recipes-page-category h2,
+	.recipes-page-category h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#recipe-detail .recipe-ingredients .col-6{
+		width:100%;
+	}
+	.newsflashtop-recipes figure{
+		width:21%;
+		margin:10px;
+	}
+	.blogrecipes .col-sm-3{
+		width:50%;
+		float:left;
+	}
+	.blogrecipes .img_caption.none{
+		margin:0px auto;
+	}
+	#hikashop_carousel_hikashop_category_information_module_212 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_221 .owl-item{
+		width:auto !important;
+	}
+	.tag-category .category.list-striped li{
+		width:49%;
+	}
+
+	/**
+	 * Tips Page
+	*/
+	.tips-page h2,
+	.tips .entry-header.has-post-format h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#sp-component.col-md-10{
+		width:100%;
+	}
+	.tagssimilar a{
+		color:#262626;
+	}
+	.blogtips .col-sm-3{
+		width:50%;
+		float:left;
+	}
+	.blogtips .img_caption.none{
+		margin:0px auto;
+	}
+	.blogtips p.img_caption{
+		width:270px;
+	}
+
+	/**
+	 * Happenings Page
+	*/
+	#happenings-detail h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.bloghappenings .col-sm-3{
+		width:50%;
+		float:left;
+	}
+	.bloghappenings .img_caption.none{
+		margin:0px auto;
+	}
+
+	/**
+	 * FAQ Page
+	*/
+	#main-faq-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Contact Us Page
+	*/
+	.contact-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * ESG Page
+	*/
+	.esg h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Benefit of Baked Beans Page
+	*/
+	.sp-module.about-submenu.baked-beans li{
+		display:block;
+	}
+
+	/**
+	 * Benefit of Coconut Page
+	*/
+	.sp-module.about-submenu.coconut ul >li{
+		display:block;
+	}
+}
+
+/* Mobile Landscape*/
+@media only screen and (min-width : 426px) and (max-width : 568px) {
+
+	/**
+	 * Main Menu
+	*/
+	.nav.menu img{
+		display:none !important;
+	}
+
+	/**
+	 * Top Red Header
+	*/
+	#sp-header-mobile-only #offcanvas-toggler{
+		float:left;
+		line-height:60px;
+	}
+	#sp-header-mobile-only .visible-xs{
+		display:initial !important;
+	}
+	#sp-header-mobile-only .logo{
+		text-align:center;
+	}
+	#sp-logo{
+		margin-top:5px;
+	}
+	#hikashop_cart_149{
+		margin-top:10px;
+		float:right;
+		margin-right:20px;
+		position:relative;
+	}
+	.empty-cart{
+		left:25px;
+	}
+	.hikashop_small_cart_total_title.rounded-item{
+		left:25px;
+	}
+
+	/**
+	 * Below Top Header (Search)
+	*/
+	.hikashop_filter_button_inside{
+		margin-top:10px;
+		margin-right:0px !important;
+	}
+	#hikashop_filter_button_module_151{
+		border-radius:20px;
+		background:none;
+		border:none;
+		z-index:9999;
+		width:50px;
+		height:34px;
+		position:relative;
+		left:178px;
+	}
+	.hikashop_filter_button_inside::after{
+		font-family: "Font Awesome 5 Free";
+	    content: "\f002";
+	    display: inline-block;
+	    padding-right:10px;
+	    vertical-align: middle;
+	    font-weight:900;
+	    position:absolute;
+	    z-index:99;
+	    top:10px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2{
+		width:80% !important;
+		margin:10px 0px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2,
+	.hikashop_filter_button_inside{
+		display:inline-block !important;
+	}
+	#filter_text_productsearch_2{
+		border-radius:20px;
+		width:125%;
+	}
+
+	/**
+	 * Main Body
+	*/
+	#sp-component.col-sm-10{
+		width:100%;
+	}
+	#sp-main-body{
+		padding:0px 0px !important;
+	}
+	#sp-belowcomp.col-md-10{
+		width:100%;
+	}
+	#sp-slider.col-md-10{
+		width:100%;
+	}
+
+	/**
+	 * Homepage
+	*/
+	.recipe-search h2,
+	.recipes h2,
+	.top-product-featured h2,
+	.product-category h2,
+	.socmed-feed h2,
+	.happenings h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_products_switcher_hikashop_category_information_module_135 .owl-item{
+		width:auto !important;
+	}
+	#hikashop_products_switcher_hikashop_category_information_module_135 .owl-stage-outer{
+		height:300px;
+	}
+	#hikashop_category_information_module_136 .hkc-md-3{
+		width:57%;
+		float:left;
+		margin:0px auto;
+	}
+	.product-category .hikashop_category_name{
+		width:266px;
+	}
+
+	/**
+	 * Footer
+	*/
+	#logo-translator .logo{
+		width:40%;
+		float:left;
+	}
+	#logo-translator .bottom-translator{
+		width:60%;
+		float:left;
+	}
+	.bottom-translator{
+		float:right;
+	}
+	.bottom-translator img{
+		display:inline-block;
+		margin:5px;
+		border:2px solid #ffffff;
+		border-radius:20px;
+		width:40px;
+		height:40px;
+	}
+	.contact-us p{
+		text-transform:uppercase;
+	}
+	#country-select select{
+		width:250px;
+	}
+	#shorcut-link{
+		margin-top:0px;
+	}
+	#shorcut-link .footer-menu a{
+		color:#ffffff;
+	}
+	#shorcut-link .footer-menu li{
+		border-bottom:none;
+		display:inline-block;
+	}
+	#shorcut-link .footer-menu li a::before{
+		display:none;
+	}
+	#shorcut-link .footer-menu li a{
+		margin-right:10px;
+		line-height:24px;
+	}
+	#country-select #select_ss{
+		margin:0px;
+	}
+	.contact-us a,
+	.contact-us a:hover{
+		color:#ffffff;
+	}
+	#sp-mobile-footer-sticky .container{
+		width:100%;
+	}
+	.sticky-icon img{
+		display:inline-block;
+		margin:5px;
+	}
+	.sticky-icon{
+		margin:16px 0px;
+	}
+	.sticky-icon p{
+		text-align:center;
+	}
+	.sticky-newsletter .paper{
+		width:20%;
+		float:left;
+		text-align:center;
+	}
+	.paper img{
+		display:initial;
+	}
+	.sticky-newsletter .text{
+		width:80%;
+		float:left;
+	}
+	.sticky-newsletter{
+		margin:20px 0px;
+	}
+	.text{
+		font-size:12px;
+		line-height:16px;
+		margin-top:-2px;
+	}
+	#sp-footer2{
+		background:#fff100;
+		height:62px;
+	}
+	#sp-footer3{
+		background:#e40613;
+		height:62px;
+	}
+	#sp-mobile-footer-sticky{
+		position: fixed;
+	   	bottom: 0;
+	   	width: 100%;
+	   	z-index:999;
+	}
+	#sp-footer{
+		margin-bottom:62px;
+	}
+
+	/**
+	 * Main Slider Other Pages
+	*/
+	#sp-main-slider{
+		padding:0px 0px !important;
+	}
+
+	/**
+	 * About Page
+	*/
+	.sp-module.about-submenu ul >li.active a{
+		color:#fff100 !important;
+	}
+	.sp-module.about-submenu ul >li{
+		border-bottom:1px solid #e8e8e8 !important;
+		display:block;
+	}
+	.sp-module.about-submenu{
+		margin:10px auto;
+	}
+	.h2-custom{
+		font-size:26px;
+		margin:10px 0px;
+	}
+	.h4-custom{
+		font-size:20px;
+		margin:10px 0px;
+	}
+	#asian-recognition .col-6{
+		width:100%;
+	}
+	#asian-recognition .col-6 table{
+		margin:10px 0px;
+	}
+	#asian-recognition .width_20{
+		width:20%;
+	}
+	#asian-recognition .width_80{
+		width:80%;
+	}
+	#external-site .h4-custom{
+		font-size:20px;
+	}
+	#external-site .col-7{
+		width:100%;
+	}
+
+	/**
+	 * Product All Category Module
+	*/
+	#all-product-categories .all-categories h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#all-product-categories .col-12{
+		margin:0px 10px;
+	}
+	#all-product-categories .col-3{
+		width:50%;
+	}
+
+	/**
+	 * Hikashop Product Category Page
+	*/
+	.sardines-category h2,
+	.saba-category h2,
+	.mackerel-category h2,
+	.tuna-category h2,
+	.bakedbeans-category h2,
+	.coconut-category h2,
+	.fruits-category h2,
+	.vegetables-category h2,
+	.h2-custom h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#hikashop_category_information_menu_150 .hkc-md-3,
+	#hikashop_category_information_menu_151 .hkc-md-3,
+	#hikashop_category_information_menu_152 .hkc-md-3,
+	#hikashop_category_information_menu_153 .hkc-md-3,
+	#hikashop_category_information_menu_154 .hkc-md-3,
+	#hikashop_category_information_menu_155 .hkc-md-3,
+	#hikashop_category_information_menu_156 .hkc-md-3,
+	#hikashop_category_information_menu_157 .hkc-md-3,
+	#hikashop_category_information_menu_270 .hkc-md-3{
+		width:100%;
+	}
+	.newsflashtags-sardines figure {
+	    width: 50%;
+	    padding: 10px 5px;
+	}
+	.newsflashtags-sardines p.img_caption{
+		width:259px;
+		/*height:90px;*/
+		/*margin-top:-90px;*/
+	}
+
+	/**
+	 * Hikashop Product Detail Page
+	*/
+	#hikashop_product_name_main,
+	#product-description h2,
+	#product-benefit h2,
+	#no-preservatives h2,
+	#omega h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.hikashop_tabs_ul li{
+		display:block;
+	}
+	#product-benefit h3,
+	#no-preservatives h3,
+	#omega h3{
+		margin: 10px 0px;
+    	font-size:19px;
+	}
+	.nutrition-information-table{
+		overflow-x:auto;
+	}
+	#product-benefit .col-4,
+	#product-benefit .col-6{
+		width:100%;
+	}
+	#hikashop_carousel_hikashop_category_information_module_191 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_252 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_256 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_260 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_264 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_268 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_272 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_276 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_311 .owl-item{
+		width:auto !important;
+	}
+
+	/**
+	 * Recipes Page
+	*/
+	#recipe-detail h2,
+	.recipes-page-category h2,
+	.recipes-page-category h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#recipe-detail .recipe-ingredients .col-6{
+		width:100%;
+	}
+	.newsflashtop-recipes figure{
+		width:21%;
+		margin:10px;
+	}
+	.blogrecipes .col-sm-3{
+		width:50%;
+		float:left;
+	}
+	.blogrecipes .img_caption.none{
+		margin:0px auto;
+	}
+	#hikashop_carousel_hikashop_category_information_module_212 .owl-item,
+	#hikashop_carousel_hikashop_category_information_module_221 .owl-item{
+		width:auto !important;
+	}
+	.tag-category .category.list-striped li{
+		width:49%;
+		padding:0px 20px;
+	}
+	.blogrecipes p.img_caption{
+		width:239px;
+	}
+	.tag-category .category.list-striped li img{
+		width:239px;
+	}
+
+	/**
+	 * Tips Page
+	*/
+	.tips-page h2,
+	.tips .entry-header.has-post-format h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#sp-component.col-md-10{
+		width:100%;
+	}
+	.tagssimilar a{
+		color:#262626;
+	}
+	.blogtips .col-sm-3{
+		width:50%;
+		float:left;
+	}
+	.blogtips .img_caption.none{
+		margin:0px auto;
+	}
+	.blogtips p.img_caption{
+		width:254px;
+	}
+
+	/**
+	 * Happenings Page
+	*/
+	#happenings-detail h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.bloghappenings .col-sm-3{
+		width:50%;
+		float:left;
+	}
+	.bloghappenings .img_caption.none{
+		margin:0px auto;
+	}
+	.bloghappenings p.img_caption{
+		width:254px;
+	}
+
+	/**
+	 * FAQ Page
+	*/
+	#main-faq-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Contact Us Page
+	*/
+	.contact-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * ESG Page
+	*/
+	.esg h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Benefit of Baked Beans Page
+	*/
+	.sp-module.about-submenu.baked-beans li{
+		display:block;
+	}
+
+	/**
+	 * Benefit of Coconut Page
+	*/
+	.sp-module.about-submenu.coconut ul >li{
+		display:block;
+	}
+}
+
+/* Mobile Large */
+@media only screen and (max-width : 425px) {
+
+	/**
+	 * Main Menu
+	*/
+	.nav.menu img{
+		display:none !important;
+	}
+
+	/**
+	 * Top Red Header
+	*/
+	#sp-header-mobile-only #offcanvas-toggler{
+		float:left;
+		line-height:60px;
+	}
+	#sp-header-mobile-only .visible-xs{
+		display:initial !important;
+	}
+	#sp-header-mobile-only .logo{
+		text-align:center;
+	}
+	#sp-logo{
+		margin-top:5px;
+	}
+	#hikashop_cart_149{
+		margin-top:10px;
+		float:right;
+		margin-right:20px;
+		position:relative;
+	}
+	.empty-cart{
+		left:25px;
+	}
+	.hikashop_small_cart_total_title.rounded-item{
+		left:25px;
+	}
+
+	/**
+	 * Below Top Header (Search)
+	*/
+	.hikashop_filter_button_inside{
+		margin-top:10px;
+		margin-right:0px !important;
+	}
+	#hikashop_filter_button_module_151{
+		border-radius:20px;
+		background:none;
+		border:none;
+		z-index:9999;
+		width:50px;
+		height:34px;
+		position:relative;
+		left:178px;
+	}
+	.hikashop_filter_button_inside::after{
+		font-family: "Font Awesome 5 Free";
+	    content: "\f002";
+	    display: inline-block;
+	    padding-right:10px;
+	    vertical-align: middle;
+	    font-weight:900;
+	    position:absolute;
+	    z-index:99;
+	    top:10px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2{
+		width:80% !important;
+		margin:10px 0px;
+	}
+	.hikashop_filter_main.hikashop_filter_main_productsearch_2,
+	.hikashop_filter_button_inside{
+		display:inline-block !important;
+	}
+	#filter_text_productsearch_2{
+		border-radius:20px;
+		width:125%;
+	}
+
+	/**
+	 * Main Body
+	*/
+	#sp-component.col-sm-10{
+		width:100%;
+	}
+	#sp-main-body{
+		padding:0px 0px !important;
+	}
+	#sp-belowcomp.col-md-10{
+		width:100%;
+	}
+	#sp-slider.col-md-10{
+		width:100%;
+	}
+
+	/**
+	 * Homepage
+	*/
+	.slider-homepage .col-12{
+		width:100%;
+	}
+	.slider-homepage .col-12 .col-6{
+		width:50%;
+		float:left;
+	}
+	.recipe-search h2,
+	.recipes h2,
+	.top-product-featured h2,
+	.product-category h2,
+	.socmed-feed h2,
+	.happenings h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.recipes .bt-cs .bt-row{
+		width:25% !important;
+	}
+	#hikashop_category_information_module_136 .hkc-md-3{
+		width:77%;
+		float:left;
+		margin:0px auto;
+	}
+
+	/**
+	 * Footer
+	*/
+	#logo-translator .logo{
+		width:40%;
+		float:left;
+	}
+	#logo-translator .bottom-translator{
+		width:60%;
+		float:left;
+	}
+	.bottom-translator{
+		float:right;
+	}
+	.bottom-translator img{
+		display:inline-block;
+		margin:5px;
+		border:2px solid #ffffff;
+		border-radius:20px;
+		width:40px;
+		height:40px;
+	}
+	.contact-us p{
+		text-transform:uppercase;
+	}
+	#country-select select{
+		width:250px;
+	}
+	#shorcut-link{
+		margin-top:0px;
+	}
+	#shorcut-link .footer-menu a{
+		color:#ffffff;
+	}
+	#shorcut-link .footer-menu li{
+		border-bottom:none;
+		display:inline-block;
+	}
+	#shorcut-link .footer-menu li a::before{
+		display:none;
+	}
+	#shorcut-link .footer-menu li a{
+		margin-right:10px;
+		line-height:24px;
+	}
+	#country-select #select_ss{
+		margin:0px;
+	}
+	.contact-us a,
+	.contact-us a:hover{
+		color:#ffffff;
+	}
+	#sp-mobile-footer-sticky .container{
+		width:100%;
+	}
+	.sticky-icon img{
+		display:inline-block;
+		margin:5px;
+	}
+	.sticky-icon{
+		margin:16px 0px;
+	}
+	.sticky-icon p{
+		text-align:center;
+	}
+	.sticky-newsletter .paper{
+		width:20%;
+		float:left;
+		text-align:center;
+	}
+	.paper img{
+		display:initial;
+	}
+	.sticky-newsletter .text{
+		width:80%;
+		float:left;
+	}
+	.sticky-newsletter{
+		margin:20px 0px;
+	}
+	.text{
+		font-size:12px;
+		line-height:16px;
+	}
+	#sp-footer2{
+		background:#fff100;
+		height:62px;
+	}
+	#sp-footer3{
+		background:#e40613;
+		height:62px;
+	}
+	#sp-mobile-footer-sticky{
+		position: fixed;
+	   	bottom: 0;
+	   	width: 100%;
+	   	z-index:999;
+	}
+	#sp-footer{
+		margin-bottom:62px;
+	}
+
+	/**
+	 * Main Slider Other Pages
+	*/
+	#sp-main-slider{
+		padding:0px 0px !important;
+	}
+
+	/**
+	 * About Page
+	*/
+	.sp-module.about-submenu ul >li.active a{
+		color:#fff100 !important;
+	}
+	.sp-module.about-submenu ul >li{
+		border-bottom:1px solid #e8e8e8 !important;
+		display:block;
+	}
+	.sp-module.about-submenu{
+		margin:10px auto;
+	}
+	.h2-custom{
+		font-size:26px;
+		margin:10px 0px;
+	}
+	.h4-custom{
+		font-size:20px;
+		margin:10px 0px;
+	}
+	#asian-recognition .col-6{
+		width:100%;
+	}
+	#asian-recognition .col-6 table{
+		margin:10px 0px;
+	}
+	#asian-recognition .width_20{
+		width:30%;
+	}
+	#asian-recognition .width_80{
+		width:70%;
+	}
+	#external-site .h4-custom{
+		font-size:20px;
+	}
+	#external-site .col-7{
+		width:100%;
+	}
+	.hidden-mobile{
+		display:none !important;
+	}
+	#ayambrand .col-4{
+		width:100%;
+	}
+
+	/**
+	 * Product All Category Module
+	*/
+	#all-product-categories .all-categories h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#all-product-categories .col-3{
+		width:50%;
+	}
+	#all-product-categories .col-12{
+		margin:0px;
+	}
+
+	/**
+	 * Hikashop Product Category Page
+	*/
+	.sardines-category h2,
+	.saba-category h2,
+	.mackerel-category h2,
+	.tuna-category h2,
+	.bakedbeans-category h2,
+	.coconut-category h2,
+	.fruits-category h2,
+	.vegetables-category h2,
+	.h2-custom h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.newsflashtags-sardines figure{
+		width:50%;
+		padding:10px 5px;
+	}
+	.newsflashtags-sardines p.img_caption{
+		width:188px;
+		height:90px;
+		margin-top:-90px;
+		padding:10px;
+	}
+
+	/**
+	 * Hikashop Product Detail Page
+	*/
+	#hikashop_product_name_main,
+	#product-description h2,
+	#product-benefit h2,
+	#no-preservatives h2,
+	#omega h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.hikashop_tabs_ul li{
+		display:block;
+	}
+	#product-benefit h3,
+	#no-preservatives h3,
+	#omega h3{
+		margin: 10px 0px;
+    	font-size:19px;
+	}
+	.nutrition-information-table{
+		overflow-x:auto;
+	}
+	#product-benefit .col-4,
+	#product-benefit .col-6{
+		width:100%;
+	}
+
+	/**
+	 * Recipes Page
+	*/
+	#recipe-detail h2,
+	.recipes-page-category h2,
+	.recipes-page-category h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#recipe-detail .recipe-ingredients .col-6{
+		width:100%;
+	}
+	.blogrecipes .img_caption.none{
+		margin:0px auto;
+	}
+	.newsflashtop-recipes figure{
+		width:28%;
+		padding:10px 0px;
+	}
+	.tag-category .category.list-striped li{
+		width:100%;
+	}
+	.blogrecipes p.img_caption{
+		bottom:-10px;
+	}
+
+	/**
+	 * Tips Page
+	*/
+	.tips-page h2,
+	.tips .entry-header.has-post-format h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	#sp-component.col-md-10{
+		width:100%;
+	}
+	.tagssimilar a{
+		color:#262626;
+	}
+	.blogtips .img_caption.none{
+		margin:0px auto;
+	}
+	.blogtips p.img_caption{
+		bottom:-10px;
+		width:270px;
+	}
+	#tips-detail .col-6{
+		width:100%;
+	}
+
+	/**
+	 * Happenings Page
+	*/
+	#happenings-detail h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+	.bloghappenings .img_caption.none{
+		margin:0px auto;
+	}
+	.bloghappenings p.img_caption{
+		bottom:-10px;
+	}
+
+	/**
+	 * FAQ Page
+	*/
+	#main-faq-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Contact Us Page
+	*/
+	.contact-page h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * ESG Page
+	*/
+	.esg h2{
+		margin:10px 0px;
+		font-size:26px;
+	}
+
+	/**
+	 * Benefit of Baked Beans Page
+	*/
+	.sp-module.about-submenu.baked-beans li{
+		display:block;
+	}
+
+	/**
+	 * Benefit of Coconut Page
+	*/
+	.sp-module.about-submenu.coconut ul >li{
+		display:block;
+	}
+}
+
+/* Mobile Medium */
+@media only screen and (max-width : 375px) {
+
+	/**
+	 * Homepage
+	*/
+	#hikashop_category_information_module_136 .hkc-md-3{
+		width:88%;
+		float:left;
+	}
+
+	/**
+	 * About Page
+	*/
+	#asian-recognition .width_20{
+		width:35%;
+	}
+	#asian-recognition .width_80{
+		width:65%;
+	}
+
+	/**
+	 * Hikashop Product Category Page
+	*/
+	.newsflashtags-sardines figure{
+		width:100%;
+	}
+	.newsflashtags-sardines p.img_caption{
+		width:270px;
+		height:68px;
+		margin-top:-68px;
+	}
+
+	/**
+	 * Hikashop Product Detail Page
+	*/
+	#nutritional-info .col-3{
+		width:50%;
+		float:left;
+	}
+
+	/**
+	 * Recipes Page
+	*/
+	.newsflashtop-recipes figure{
+		width:44%;
+	}
+	.recipe-icons span:after{
+		content:"\A";
+		white-space:pre;
+	}
+
+	/**
+	 * Tips Page
+	*/
+	#tips-detail .col-6{
+		width:100%;
+	}
+}
+
+/* Mobile Small */
+@media only screen and (max-width : 320px) {
+
+	/**
+	 * Homepage
+	*/
+	#hikashop_category_information_module_136 .hkc-md-3{
+		width:100%;
+	}
+	#hikashop_category_information_module_136 div.hikashop_container{
+		margin:5px !important;
+	}
+
+	/**
+	 * Footer
+	*/
+	.sticky-newsletter .text{
+		margin-top:-12px;
+	}
+
+	/**
+	 * About Page
+	*/
+	#asian-recognition .width_20{
+		width:40%;
+	}
+	#asian-recognition .width_80{
+		width:60%;
+	}
+
+	/**
+	 * Hikashop Product Category Page
+	*/
+	#hikashop_category_information_menu_150 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_151 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_152 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_153 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_154 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_155 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_156 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_157 .hikashop_product_image_subdiv,
+	#hikashop_category_information_menu_270 .hikashop_product_image_subdiv{
+		width:auto !important;
+	}
+
+	/**
+	 * Recipes Page
+	*/
+	.newsflashtop-recipes figure{
+		width:43%;
+	}
+	.tag-category .category.list-striped li{
+		padding:0px;
+	}
+
+	/**
+	 * Tips Page
+	*/
+	#tips-detail .col-6{
+		width:100%;
+	}
+}
