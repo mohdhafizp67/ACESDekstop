@@ -360,7 +360,7 @@
                 <!-- <img alt="Bootstrap Image Preview" src="{{asset('concept/images/pelajaran/lokasi.jpg')}}" style="width: 100%; height: auto;"> -->
 
               <div class="w3-content w3-display-container">
-                <img class="career" src="{{asset('concept/images/pelajaran/bigdata/bigdatacourses.jpeg')}}" style="width:100%">
+                <img class="career" src="{{asset('concept/images/pelajaran/bigdata/bigdatacourses1.png')}}" style="width:100%">
 
 
 
@@ -384,8 +384,8 @@
                 </div> -->
                 <div class="modal-body">
                   <div class="w3-content w3-display-container">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/bigdata/bigdataskills.jpeg')}}" style="width:100%">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/bigdataskills2.jpeg')}}" style="width:100%">
+                    <img class="mySlides" src="{{asset('concept/images/pelajaran/bigdata/bigdataskills1.png')}}" style="width:100%">
+                    <img class="mySlides" src="{{asset('concept/images/pelajaran/bigdata/bigdataskills2.png')}}" style="width:100%">
 
 
 
@@ -409,7 +409,7 @@
                 </div> -->
                 <div class="modal-body">
                   <div class="w3-content w3-display-container">
-                    <img class="mySlides2" src="{{asset('concept/images/pelajaran/bigdata/bigdatacareer.jpeg')}}" style="width:100%">
+                    <img class="mySlides2" src="{{asset('concept/images/pelajaran/bigdata/bigdatacareer1.png')}}" style="width:100%">
 
 
 

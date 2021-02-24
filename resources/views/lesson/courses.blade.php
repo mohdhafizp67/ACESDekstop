@@ -386,7 +386,7 @@
               </div>
 
               <div class="slider-single">
-                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/06.png') }}" alt="6" /></a>
+                  <a href="{{route('lesson.cloudlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/06.png') }}" alt="6" /></a>
                   <!-- <h1 class="slider-single-title">Cyber Security</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -395,7 +395,7 @@
               </div>
 
                 <div class="slider-single">
-                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/07.png') }}" alt="7" /></a>
+                  <a href="{{route('lesson.cyberlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/07.png') }}" alt="7" /></a>
                   <!-- <h1 class="slider-single-title">Universal Integration</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -404,7 +404,7 @@
               </div>
 
             <div class="slider-single">
-                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/08.png') }}" alt="8" /></a>
+                  <a href="{{route('lesson.universallessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/08.png') }}" alt="8" /></a>
                   <!-- <h1 class="slider-single-title">Advanced Simulation</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -413,7 +413,7 @@
               </div>
 
             <div class="slider-single">
-                  <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/09.png') }}" alt="9" /></a>
+                  <a href="{{route('lesson.advancedlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/09.png') }}" alt="9" /></a>
                   <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -422,7 +422,7 @@
               </div>
 
               <div class="slider-single">
-                    <a href="#"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/10.png') }}" alt="10" /></a>
+                    <a href="{{route('lesson.autolessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/10.png') }}" alt="10" /></a>
                     <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
                     <!-- <a class="slider-single-likes" href="javascript:void(0);">
                         <i class="fa fa-heart"></i>

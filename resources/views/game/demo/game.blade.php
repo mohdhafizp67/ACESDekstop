@@ -380,7 +380,7 @@
 
 
               <div class="slider-single">
-                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4Menara.png') }}" alt="5" />
+                  <a href="http://161.35.227.188/drone_circuit_4?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4Menara.png') }}" alt="5" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 04 - Big Data</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -416,7 +416,7 @@
               </div>
 
             <div class="slider-single">
-                  <img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit8.png') }}" alt="6" />
+                  <a href="http://161.35.227.188/drone_circuit_8?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit8.png') }}" alt="6" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 08 - Advanced Simulation</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
