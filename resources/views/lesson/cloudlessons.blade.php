@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>VR Lessons</title>
+    <title>Cloud Computing</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
@@ -171,7 +171,7 @@
 	<div class="row">
 
 		<div class="col-md-12">
-      <h1 style="padding-top: 0%; padding-bottom: 0%; text-align: center;color: #fff; font-weight: bold;margin-top: -3%;font-size: 450%;">VR LESSONS</h1>
+      <h1 style="padding-top: 0%; padding-bottom: 0%; text-align: center;color: #fff; font-weight: bold;margin-top: -3%;font-size: 450%;">CLOUD COMPUTING</h1>
 		</div>
 
 	</div>
@@ -218,7 +218,7 @@
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                              <iframe class="embed-responsive-item" width="95%" height="450px" src="https://www.youtube.com/embed/qYnVqJ6ko8I?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <iframe class="embed-responsive-item" width="95%" height="450px" src="https://www.youtube.com/embed/-9M5qxYsDNk?autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
 
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:450px;">

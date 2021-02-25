@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>VR Lessons</title>
+    <title>Cyber Security</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
@@ -171,7 +171,7 @@
 	<div class="row">
 
 		<div class="col-md-12">
-      <h1 style="padding-top: 0%; padding-bottom: 0%; text-align: center;color: #fff; font-weight: bold;margin-top: -3%;font-size: 450%;">VR LESSONS</h1>
+      <h1 style="padding-top: 0%; padding-bottom: 0%; text-align: center;color: #fff; font-weight: bold;margin-top: -3%;font-size: 450%;">CYBER SECURITY</h1>
 		</div>
 
 	</div>
