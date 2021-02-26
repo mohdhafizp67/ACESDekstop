@@ -360,7 +360,7 @@
               </div>
 
               <div class="slider-single">
-                  <a href="http://161.35.227.188/drone_circuit_2_d?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2.png') }}" alt="3" /></a>
+                  <a href="http://161.35.227.188/drone_circuit_2_d?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2Tasik.png') }}" alt="3" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 02 - Addictive Manufacturing</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>

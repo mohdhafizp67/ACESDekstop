@@ -126,7 +126,7 @@ a {
           else {
             console.log('mute');
             aud.muted = true;
-            $('#mute_button').html('<i class="fas fa-volume-mute"></i>');
+            $('#mute_button').html('<i class="fas fa-volume-off"></i>');
 
           }
         }

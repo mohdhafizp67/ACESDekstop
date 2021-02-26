@@ -172,15 +172,17 @@
                     <div class="col-md">
                       <div class="form-group" style="color: white !important;">
                         <label class="col-form-label">DISTRICT</label>
-                        <select class="custom-select  bg-light @error('district') is-invalid @enderror" id="district" name="district" value="{{ Auth::user()->district }}"  required>
+                        <input id="district" type="text"name="district" value="{{Auth::user()->district}}" class="form-control" >
+
+                        <!-- <select class="custom-select  bg-light @error('district') is-invalid @enderror" id="district" name="district" value="{{ Auth::user()->district }}"  required>
                               <option value="" selected disabled hidden>Choose District</option>
-                              <!-- <option value="Johor" {{ Auth::user()->district == "Banggu" ? 'selected' : '' }}>Banggu</option> -->
+
                               @foreach($district as $data)
                                 @if($data->negeri == Auth::user()->state)
                                   <option value="{{$data->daerah}}" {{ Auth::user()->district == $data->daerah ? 'selected' : '' }}>{{$data->daerah}}</option>
                                 @endif
                               @endforeach
-                          </select>
+                          </select> -->
                       </div>
                     </div>
                     <div class="col-md-1">
@@ -195,15 +197,17 @@
                     <div class="col-md">
                       <div class="form-group" style="color: white !important;">
                         <label class="col-form-label">SCHOOL NAME</label>
-                        <select class="custom-select  bg-light @error('school') is-invalid @enderror" id="school" name="school" value="{{ Auth::user()->school }}"  required>
+                        <input id="school" type="text"name="school" value="{{Auth::user()->school}}" class="form-control" >
+
+                        <!-- <select class="custom-select  bg-light @error('school') is-invalid @enderror" id="school" name="school" value="{{ Auth::user()->school }}"  required>
                               <option value="" selected disabled hidden>Choose School</option>
-                              <!-- <option value="Johor" {{ Auth::user()->district == "Banggu" ? 'selected' : '' }}>Banggu</option> -->
+
                               @foreach($school as $data)
                                 @if($data->sekolah == Auth::user()->school)
                                   <option value="{{$data->sekolah}}" {{ Auth::user()->school == $data->sekolah ? 'selected' : '' }}>{{$data->sekolah}}</option>
                                 @endif
                               @endforeach
-                          </select>
+                          </select> -->
                       </div>
                     </div>
                     <div class="col-md-1">

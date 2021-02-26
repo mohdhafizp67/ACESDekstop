@@ -79,7 +79,7 @@
         else {
           console.log('mute');
           aud.muted = true;
-          $('#mute_button').html('<i class="fas fa-volume-mute"></i>');
+          $('#mute_button').html('<i class="fas fa-volume-off"></i>');
 
         }
       }
@@ -244,21 +244,21 @@
                   <select id="state" name="state" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('state') }}">
                     <option value="" selected disabled hidden>Select State  </option>
                     <option value="Johor" {{ old('state') == "Johor" ? 'selected' : '' }}>Johor</option>
-                    <option disabled value="Kedah" {{ old('state') == "Kedah" ? 'selected' : '' }}>Kedah</option>
+                    <option  value="Kedah" {{ old('state') == "Kedah" ? 'selected' : '' }}>Kedah</option>
                     <option value="Kelantan" {{ old('state') == "Kelantan" ? 'selected' : '' }}>Kelantan</option>
-                    <option disabled value="Melaka" {{ old('state') == "Melaka" ? 'selected' : '' }}>Melaka</option>
-                    <option disabled value="Negeri Sembilan" {{ old('state') == "Negeri Sembilan" ? 'selected' : '' }}>Negeri Sembilan</option>
+                    <option  value="Melaka" {{ old('state') == "Melaka" ? 'selected' : '' }}>Melaka</option>
+                    <option  value="Negeri Sembilan" {{ old('state') == "Negeri Sembilan" ? 'selected' : '' }}>Negeri Sembilan</option>
                     <option value="Pahang" {{ old('state') == "Pahang" ? 'selected' : '' }}>Pahang</option>
-                    <option disabled value="Pulau Pinang" {{ old('state') == "Pulau Pinang" ? 'selected' : '' }}>Pulau Pinang</option>
-                    <option disabled value="Perak" {{ old('state') == "Perak" ? 'selected' : '' }}>Perak</option>
-                    <option disabled value="Perlis" {{ old('state') == "Perlis" ? 'selected' : '' }}>Perlis</option>
-                    <option disabled value="Sabah" {{ old('state') == "Sabah" ? 'selected' : '' }}>Sabah</option>
-                    <option disabled value="Sarawak" {{ old('state') == "Sarawak" ? 'selected' : '' }}>Sarawak</option>
-                    <option disabled value="Selangor" {{ old('state') == "Selangor" ? 'selected' : '' }}>Selangor</option>
+                    <option  value="Pulau Pinang" {{ old('state') == "Pulau Pinang" ? 'selected' : '' }}>Pulau Pinang</option>
+                    <option  value="Perak" {{ old('state') == "Perak" ? 'selected' : '' }}>Perak</option>
+                    <option  value="Perlis" {{ old('state') == "Perlis" ? 'selected' : '' }}>Perlis</option>
+                    <option  value="Sabah" {{ old('state') == "Sabah" ? 'selected' : '' }}>Sabah</option>
+                    <option  value="Sarawak" {{ old('state') == "Sarawak" ? 'selected' : '' }}>Sarawak</option>
+                    <option  value="Selangor" {{ old('state') == "Selangor" ? 'selected' : '' }}>Selangor</option>
                     <option value="Terengganu" {{ old('state') == "Terengganu" ? 'selected' : '' }}>Terengganu</option>
-                    <option disabled value="WP Kuala Lumpur" {{ old('state') == "WP Kuala Lumpur" ? 'selected' : '' }}>WP Kuala Lumpur</option>
-                    <option disabled value="WP Putrajaya" {{ old('state') == "WP Putrajaya" ? 'selected' : '' }}>WP Putrajaya</option>
-                    <option disabled value="WP Labuan" {{ old('state') == "WP Labuan" ? 'selected' : '' }}>WP Labuan</option>
+                    <option  value="WP Kuala Lumpur" {{ old('state') == "WP Kuala Lumpur" ? 'selected' : '' }}>WP Kuala Lumpur</option>
+                    <option  value="WP Putrajaya" {{ old('state') == "WP Putrajaya" ? 'selected' : '' }}>WP Putrajaya</option>
+                    <option  value="WP Labuan" {{ old('state') == "WP Labuan" ? 'selected' : '' }}>WP Labuan</option>
                   </select>
                   @if($errors->has('state'))
                       <div class="invalid-feedback">
@@ -268,18 +268,18 @@
                 </div>
               </div>
             </div>
-
             <div class="form-group">
 
               <label for="exampleInputEmail1" style="color: #fff">
                 DISTRICT
               </label>
-              <select id="district" name="district" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('district') }}">
+              <input type="text" name="district" placeholder="District" value="{{ old('district') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('district') ? 'is-invalid' : '' }}">
+              <!-- <select id="district" name="district" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('district') }}">
                 <option value="" selected disabled hidden>Select District</option>
-              </select>
-              @if($errors->has('state'))
+              </select> -->
+              @if($errors->has('district'))
                   <div class="invalid-feedback">
-                      <strong>{{ $errors->first('state') }}</strong>
+                      <strong>{{ $errors->first('district') }}</strong>
                   </div>
               @endif
             </div>
@@ -289,9 +289,11 @@
               <label for="exampleInputEmail1" style="color: #fff">
                 SCHOOL NAME
               </label>
-              <select id="school" name="school" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('school') is-invalid @enderror" value="{{ old('school') }}">
+              <input type="text" name="school" placeholder="School" value="{{ old('school') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('school') ? 'is-invalid' : '' }}">
+
+              <!-- <select id="school" name="school" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('school') is-invalid @enderror" value="{{ old('school') }}">
                 <option value="" selected disabled hidden>Select School</option>
-              </select>
+              </select> -->
               @if($errors->has('school'))
                   <div class="invalid-feedback">
                       <strong>{{ $errors->first('school') }}</strong>
@@ -445,7 +447,7 @@
     //ajax for daerah
 </script>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 $('#state').change(function(){
   //fetch data from jenis_dokumen
   var negeri = $(this).val();
@@ -480,9 +482,9 @@ $('#state').change(function(){
 
   }
 });
-</script>
+</script> -->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 $('#district').change(function(){
   //fetch data from jenis_dokumen
   var daerah = $(this).val();
@@ -517,7 +519,7 @@ $('#district').change(function(){
 
   }
 });
-</script>
+</script> -->
 
 <script>
 function myFunction() {
