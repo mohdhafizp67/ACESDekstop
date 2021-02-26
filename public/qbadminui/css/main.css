@@ -1362,7 +1362,7 @@ button.close {
 
 .side-bar .side-menu-item a,
 .side-bar .side-sub-menu-item a {
-  font-size: 20px !important;
+  font-size: 15px !important;
   display: block;
   color: #f8f9fa  !important;
   transition: all ease 0.3s;
