@@ -116,7 +116,7 @@
         <div class="side-bar side-bar-lg-active" data-theme="purple">
             <!-- Brand details -->
             <div class="side-menu-brand d-flex flex-column justify-content-center align-items-center clear mt-3">
-                <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 100%;padding-top: 45%;">
+                <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 100%;padding-top: 40%;">
                 <!-- <a href="{{ route('home') }}" class="brand-name mt-2 ml-2 font-weight-bold" style="text-align: center; font-size: 20px !important;">Permohonan Data Geospatial</a> -->
             </div>
             @if(Auth::user())
@@ -191,13 +191,13 @@
               <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                       <div class="modal-header">
-                          <h6 class="modal-title" id="exampleModalLabel" style="font-size: 200%;">CONFIRMATION</h6>
+                          <h6 class="modal-title" id="exampleModalLabel" style="font-size: 150%;">CONFIRMATION</h6>
                           <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                       <span aria-hidden="true">&times;</span>
                                   </a>
                       </div>
                       <div class="modal-body">
-                          <p style="text-align: justify;font-size: 150%;">ARE YOU SURE TO LOG OUT?</p>
+                          <p style="text-align: justify;font-size: 120%;">ARE YOU SURE TO LOG OUT?</p>
                       </div>
                       <div class="modal-footer">
                           <a href="#" class="btn" data-dismiss="modal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 22%;">CANCEL</a>
@@ -312,9 +312,9 @@
                             <!-- <hr style="padding-bottom: 0px;"> -->
 
 
-                            <a href="{{route('user.profile.edit')}}" class="dropdown-item" style="font-size: 150%;"><i class="fa fa-user-circle" aria-hidden="true"></i> UPDATE PROFILE</a>
-                            <a href="{{ route('user.change-password') }}" class="dropdown-item" style="font-size: 150%;"><i class="fa fa-lock" aria-hidden="true"></i> CHANGE PASSWORD</a>
-                            <a href="#" class="dropdown-item" data-toggle="modal" data-target="#logOutModal" style="font-size: 150%;"><i class="fa fa-power-off" aria-hidden="true"></i> LOG OUT</a>
+                            <a href="{{route('user.profile.edit')}}" class="dropdown-item" style="font-size: 120%;"><i class="fa fa-user-circle" aria-hidden="true"></i> UPDATE PROFILE</a>
+                            <a href="{{ route('user.change-password') }}" class="dropdown-item" style="font-size: 120%;"><i class="fa fa-lock" aria-hidden="true"></i> CHANGE PASSWORD</a>
+                            <a href="#" class="dropdown-item" data-toggle="modal" data-target="#logOutModal" style="font-size: 120%;"><i class="fa fa-power-off" aria-hidden="true"></i> LOG OUT</a>
 
 
                             <!-- <a href="#" class="dropdown-item text-secondary-light">Billing history</a> -->

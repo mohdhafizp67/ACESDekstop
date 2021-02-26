@@ -28,8 +28,8 @@
   </head>
   <body>
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 7%;">
-<h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;margin-top: -3%; padding-bottom: 4%;font-size: 550%;">LEADERBOARD</h1>
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
+<h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold; padding-bottom: 4%;font-size: 450%;">LEADERBOARD</h1>
 <div class="row" style="padding-top: 0%;">
   <div class="col-md-1">
 
@@ -78,21 +78,21 @@
           </td>
           <td style="text-align: end;padding-left:7%;">
             @if($data->user->profile_picture!= null)
-            <img src="{{ asset( $image_path = str_replace('public', 'storage',  $data->user->profile_picture)) }}"  class="profile-avatar" style="height:60px; width:60px;">
+            <img src="{{ asset( $image_path = str_replace('public', 'storage',  $data->user->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
             @else
-            <img src="{{ asset('https://i.redd.it/z394307odi741.png')}}"  class="profile-avatar" style="height:60px; width:60px;">
+            <img src="{{ asset('https://i.redd.it/z394307odi741.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
             @endif <br>
           </td>
-          <td style="color: #fff; font-size: 150%;">
+          <td style="color: #fff; font-size: 100%;">
             {{$data->user->name}}
           </td>
-          <td style="color: #fff; font-size: 150%;">
+          <td style="color: #fff; font-size: 100%;">
             {{$data->user->school}}
           </td>
-          <td style="color: #fff; font-size: 150%;">
+          <td style="color: #fff; font-size: 100%;">
             {{$data->user->state}}
           </td>
-          <td style="color: #fff; font-size: 150%; font-weight: bold;">
+          <td style="color: #fff; font-size: 100%; font-weight: bold;">
             {{$total_mark}}
           </td>
         </tr>
@@ -114,26 +114,26 @@
     <table class="table" style="text-align: center; text-transform: uppercase;">
 
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-          <td style="color: #fff; font-size: 200%; text-align: end; color:#E9FF00">
+          <td style="color: #fff; font-size: 150%; text-align: end; color:#E9FF00">
             {{$data->id}}
           </td>
           <td style="text-align: end;">
             @if(Auth::user()->profile_picture != null)
-            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:60px; width:60px;">
+            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:50px; width:50px;">
             @else
-            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:60px; width:60px;">
+            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:50px; width:50px;">
             @endif <br>
           </td>
-          <td style="color: #fff; font-size: 200%; color:#E9FF00">
+          <td style="color: #fff; font-size: 150%; color:#E9FF00">
             {{Auth::user()->name}}
           </td>
-          <td style="color: #fff; font-size: 200%; color:#E9FF00">
+          <td style="color: #fff; font-size: 150%; color:#E9FF00">
             {{Auth::user()->school}}
           </td>
-          <td style="color: #fff; font-size: 200%; color:#E9FF00">
+          <td style="color: #fff; font-size: 150%; color:#E9FF00">
             {{Auth::user()->state}}
           </td>
-          <td style="color: #fff; font-size: 200%; color:#E9FF00">
+          <td style="color: #fff; font-size: 150%; color:#E9FF00">
             {{$total_mark}}
           </td>
           <!-- <td style="color: #fff; font-size: 150%; color:#E9FF00">

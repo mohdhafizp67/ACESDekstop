@@ -34,7 +34,7 @@
         position: relative;
         margin: 0 auto;
         /* width: 800px; */
-        height: 666px;
+        height: 600px;
 
       }
       /* .slider-container .bullet-container {
@@ -282,12 +282,12 @@
   </head>
   <body>
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 7%;">
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
 
 
 
-    <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;margin-top: -3%; padding-bottom: 0%;font-size: 550%;">QUIZ</h1>
-    <h1 class="blinking" style="font-size: 200%; text-align: center; padding-bottom: 4%; color: #fff;">Click right to see other quiz</h1>
+    <h1 style="padding-top: 4%; text-align: center; color: #fff; font-weight: bold; padding-bottom: 0%;font-size: 450%;">QUIZ</h1>
+    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 4%; color: #fff;">Click right to see other quiz</h1>
 
     <div class="row" style="padding: 1%;">
       <div class="col-md-4">
