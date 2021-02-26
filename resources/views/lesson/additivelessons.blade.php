@@ -83,12 +83,16 @@
       z-index: 2;
       opacity: 0.25;
       transform: translate(-125%, -50%);
+      cursor: not-allowed;
+
     }
 
     .item1.next {
       z-index: 2;
       opacity: 0.25;
       transform: translate(25%, -50%);
+      cursor: not-allowed;
+      
     }
 
     .items .button-container {
