@@ -10,6 +10,11 @@
 
     <link rel="stylesheet" href="{{ asset('css/cartajohan.css') }} ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Include from the CDN -->
+    <script src=
+  "https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+    </script>
+
 
 
     <style media="screen">
@@ -23,12 +28,14 @@
         border-bottom: 1px solid #2d6c7f;
       }
 
-
+      #photo {
+  			padding: 4px;
+  		}
     </style>
   </head>
   <body>
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
+<div id="photo" class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
 <h1 style="padding-top: 4%; text-align: center;font-size: 350%; color: #fff; font-weight: bold;; padding-bottom: 0%;">LEADERBOARD</h1>
 <div class="row" style="padding-top: 0%;">
   <div class="col-md-1">
@@ -136,6 +143,30 @@
           <td style="color: #fff; font-size: 100%; color:#E9FF00">
             {{$total_mark}}
           </td>
+          <!-- <td style="color: #fff; font-size: 100%; color:#E9FF00">
+            <button onclick="takeshot()" data-toggle="modal" data-target="#myModal">
+        			Take Screenshot
+        		</button>
+
+
+           <div class="modal fade" id="myModal" role="dialog">
+             <div class="modal-dialog">
+
+
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 </div>
+                 <div class="modal-body">
+                   <div id="output"></div>
+                 </div>
+
+               </div>
+
+             </div>
+           </div>
+          </td> -->
+
           <!-- <td style="color: #fff; font-size: 150%; color:#E9FF00">
             <div class="popup" onclick="myFunction()">Share+
               <span class="popuptext" id="myPopup">
@@ -158,6 +189,26 @@
 </div>
 
   </body>
+  <script type="text/javascript">
+
+    // Define the function
+    // to screenshot the div
+    function takeshot() {
+      let div =
+        document.getElementById('photo');
+
+      // Use the html2canvas
+      // function to take a screenshot
+      // and append it
+      // to the output div
+      html2canvas(div).then(
+        function (canvas) {
+          document
+          .getElementById('output')
+          .appendChild(canvas);
+        })
+    }
+  </script>
   <script>
 // When the user clicks on div, open the popup
 function myFunction() {
