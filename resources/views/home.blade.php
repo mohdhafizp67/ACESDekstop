@@ -124,9 +124,9 @@ canvas {
 } */
 
 .img-container {
-  width: 70%;
-  height: 70%;
-  margin-top: -10%;
+  width: 75%;
+  height: 75%;
+  margin-top: -11%;
    border: 0px solid;
    border-radius: 50%;
    position: relative;
