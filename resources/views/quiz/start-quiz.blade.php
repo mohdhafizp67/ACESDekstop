@@ -19,11 +19,11 @@ label {
     text-decoration: none;
     display: inline-block;
     font-size: 150%;
-    margin: 4px 30px;
+    margin: 4px 40px;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 25px;
-    width: 250% !important;
+    width: 240% !important;
     height: auto;
 
   }
