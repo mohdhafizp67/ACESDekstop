@@ -57,7 +57,7 @@ font-weight: normal;
 .circle span {
 display: block;
 color: #f8f9fa;
-font-size: 130%;
+font-size: 100%;
 margin-top: 65%;
 margin-left: 0%;
 }

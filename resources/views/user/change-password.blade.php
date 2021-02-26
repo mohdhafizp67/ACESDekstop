@@ -170,7 +170,7 @@
 
                     </div>
                     <div class="col-md-6 text-center">
-                        <button type="button" class="btn" name="button" data-toggle="modal" data-target="#exampleModal" style="padding: 9%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 70%;">
+                        <button type="button" class="btn" name="button" data-toggle="modal" data-target="#exampleModal" style="padding: 9%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
                             CHANGE PASSWORD
                         </button>
                     </div>
