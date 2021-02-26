@@ -351,7 +351,7 @@
               </div>
 
               <div class="slider-single">
-                  <a href="http://161.35.227.188/drone_circuit_1?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="2" />
+                  <a href="http://161.35.227.188/drone_circuit_1_d?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="2" />
                   <!-- <h1 class="slider-single-title">Circuit 01 - VR</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -360,7 +360,7 @@
               </div>
 
               <div class="slider-single">
-                  <a href="http://161.35.227.188/drone_circuit_2?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2.png') }}" alt="3" /></a>
+                  <a href="http://161.35.227.188/drone_circuit_2_d?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2.png') }}" alt="3" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 02 - Addictive Manufacturing</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -380,7 +380,7 @@
 
 
               <div class="slider-single">
-                  <a href="http://161.35.227.188/drone_circuit_4?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4Menara.png') }}" alt="5" /></a>
+                  <a href="http://161.35.227.188/drone_circuit_4_d?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4Menara.png') }}" alt="5" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 04 - Big Data</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -416,7 +416,7 @@
               </div>
 
             <div class="slider-single">
-                  <a href="http://161.35.227.188/drone_circuit_8?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit8.png') }}" alt="6" /></a>
+                  <a href="http://161.35.227.188/drone_circuit_8_d?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit8.png') }}" alt="6" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 08 - Advanced Simulation</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
