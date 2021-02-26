@@ -43,7 +43,7 @@
     <!-- <button class="btn blinking" style="color: #fff; font-size: 100%;" onclick="pass_quiz_id(1)"> START </button> -->
     <form action="{{route('quiz.start-quiz')}}" method="post" style="margin: 12%;text-align: center;">
     @csrf
-    <button type="submit" name="button" class="btn"  style="background-image: url({{asset('concept/images/galaxy/button.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; padding: 13%;"><span style="font-size: 150%;">START</span></button>
+    <button type="submit" name="button" class="btn"  style="background-image: url({{asset('concept/images/galaxy/button.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 100%; padding: 8%;"><span style="font-size: 150%;">START</span></button>
     <input type="hidden" id="quiz_id" name="quiz_id" value="{{$id}}">
   </form>
   </div>

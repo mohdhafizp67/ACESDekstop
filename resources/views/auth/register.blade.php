@@ -458,7 +458,7 @@ $('#state').change(function(){
   if(negeri){
     $.ajax({
       type:"get",
-       url:"/register/ajax/get-district/"+negeri,
+       url:"/ACES/register/ajax/get-district/"+negeri,
 
       success: function(respond){
         //console.log(respond);
@@ -495,7 +495,7 @@ $('#district').change(function(){
   if(daerah){
     $.ajax({
       type:"get",
-       url:"/register/ajax/get-school/"+daerah,
+       url:"/ACES/register/ajax/get-school/"+daerah,
 
       success: function(respond){
         //console.log(respond);

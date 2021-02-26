@@ -23,9 +23,9 @@ Auth::routes();
 Route::get('/password/resets/{token}/{email}', [App\Http\Controllers\Auth\ResetPasswordController::class, 'showResetForm'])->name('password.reset');
 
 //ajax routes
-Route::get('/register/ajax/get-district/{data}', [App\Http\Controllers\ApiController::class, 'ajaxDistrict'])->name('register.ajax.district');
+Route::get('/ACES/register/ajax/get-district/{data}', [App\Http\Controllers\ApiController::class, 'ajaxDistrict'])->name('register.ajax.district');
 
-Route::get('/register/ajax/get-school/{data}', [App\Http\Controllers\ApiController::class, 'ajaxSchool'])->name('register.ajax.school');
+Route::get('/ACES/register/ajax/get-school/{data}', [App\Http\Controllers\ApiController::class, 'ajaxSchool'])->name('register.ajax.school');
 
 
 Route::get('/video', [App\Http\Controllers\UserController::class, 'Video'])->name('user.introductionvideo');
