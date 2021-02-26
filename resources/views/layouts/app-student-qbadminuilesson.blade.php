@@ -296,10 +296,10 @@
                           @if(Auth::user()->profile_picture == null)
 
 
-                          <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style="height:100px; width:100px;">
+                          <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="profile-avatar" style="height:60px; width:60px;">
 
                           @else
-                          <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:100px; width:100px; ">
+                          <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:60px; width:60px; ">
                           @endif
                         </a>
                         <!-- Dropdown Menu -->
@@ -312,9 +312,9 @@
                             <!-- <hr style="padding-bottom: 0px;"> -->
 
 
-                            <a href="{{route('user.profile.edit')}}" class="dropdown-item" style="font-size: 150%;"><i class="fa fa-user-circle" aria-hidden="true"></i> UPDATE PROFILE</a>
-                            <a href="{{ route('user.change-password') }}" class="dropdown-item" style="font-size: 150%;"><i class="fa fa-lock" aria-hidden="true"></i> CHANGE PASSWORD</a>
-                            <a href="#" class="dropdown-item" data-toggle="modal" data-target="#logOutModal" style="font-size: 150%;"><i class="fa fa-power-off" aria-hidden="true"></i> LOG OUT</a>
+                            <a href="{{route('user.profile.edit')}}" class="dropdown-item" style="font-size: 100%;"><i class="fa fa-user-circle" aria-hidden="true"></i> UPDATE PROFILE</a>
+                            <a href="{{ route('user.change-password') }}" class="dropdown-item" style="font-size: 100%;"><i class="fa fa-lock" aria-hidden="true"></i> CHANGE PASSWORD</a>
+                            <a href="#" class="dropdown-item" data-toggle="modal" data-target="#logOutModal" style="font-size: 100%;"><i class="fa fa-power-off" aria-hidden="true"></i> LOG OUT</a>
 
 
                             <!-- <a href="#" class="dropdown-item text-secondary-light">Billing history</a> -->

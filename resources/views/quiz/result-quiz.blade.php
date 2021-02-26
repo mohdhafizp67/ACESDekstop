@@ -11,21 +11,21 @@
 
     <style media="screen">
     label {
-      font-size: 25px !important;
+      font-size: 15px !important;
     }
 
     .btn {
-    font-size: 20px !important;
+    font-size: 15px !important;
     color: #fff !important;
 }
     </style>
   </head>
   <body>
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 7%;">
-  <h1 style="padding-top: 3%; text-align: center; color: #fff; font-weight: bold;margin-top: -3%; padding-bottom: 4%;font-size: 550%;">QUIZ SCORE</h1>
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
+  <h1 style="padding-top: 10%; text-align: center;font-size: 350%; color: #fff; font-weight: bold;; padding-bottom: 5%;">QUIZ SCORE</h1>
 
-<div class="row" style="padding-bottom: 10%;">
+<div class="row" style="padding-bottom: 12%;">
   <div class="col-md-12">
 
     <div class="row">
@@ -124,7 +124,7 @@
 
                 </div>
                 <div class="col-md" style="text-align: center;">
-                  <a href="{{route('quiz.choose-quiz')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;padding: 7%; width: 60%;">Return to Quiz List</a>
+                  <a href="{{route('quiz.choose-quiz')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;">Return to Quiz List</a>
                 </div>
                 <div class="col-md-2">
 

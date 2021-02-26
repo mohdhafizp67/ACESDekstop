@@ -19,7 +19,7 @@ label {
     text-decoration: none;
     display: inline-block;
     font-size: 150%;
-    margin: 4px 2px;
+    margin: 4px 30px;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 25px;
@@ -188,7 +188,7 @@ label {
 
                     </div>
                     <div class="col-md-2">
-                      <button class="btn btnNext" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 65%;padding:6%;">NEXT</button>
+                      <button class="btn btnNext" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;padding:5%;">NEXT</button>
                     </div>
                   </div>
 
@@ -268,11 +268,11 @@ label {
 
                       </div>
                       <div class="col-md-2" >
-                        <button class="btn btnPrevious" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 65%;padding: 6%;">PREVIOUS</button>
+                        <button class="btn btnPrevious" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;padding: 5%;">PREVIOUS</button>
 
                       </div>
                       <div class="col-md-2">
-                          <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 65%;padding: 6%;">SUBMIT</button>
+                          <button class="btn" type="button" data-toggle="modal" data-target="#exampleModal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;padding: 5%;">SUBMIT</button>
                       </div>
                     </div>
 
@@ -284,10 +284,10 @@ label {
                       </div>
                       <div class="col-md-2" >
 
-                        <button class="btn btnPrevious" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 65%;padding: 6%;">PREVIOUS</button>
+                        <button class="btn btnPrevious" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;padding: 5%;">PREVIOUS</button>
                       </div>
                       <div class="col-md-2" >
-                        <button class="btn btnNext" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 65%;padding: 6%;">NEXT</button>
+                        <button class="btn btnNext" type="button" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; text-align: center; width: 100%;padding: 5%;">NEXT</button>
                       </div>
                     </div>
 

@@ -25,7 +25,7 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
+      font-size: 15px;
       /* margin: 4px 2px; */
       transition-duration: 0.4s;
       cursor: pointer;
@@ -38,7 +38,7 @@
     }
 
     label {
-    font-size: 200% !important;
+    font-size: 100% !important;
     }
     </style>
   </head>
@@ -46,7 +46,7 @@
 
     <div class="container-fluid">
     	<div class="row">
-    		<div class="col-md-12" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-repeat: no-repeat;background-size: cover; padding-bottom: 4%;padding: 7%;">
+    		<div class="col-md-12" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-repeat: no-repeat;background-size: cover;padding: 0%;">
 
           <!-- <div style="padding: 30px;"></div> -->
 
@@ -89,7 +89,7 @@
             <div class="col-md-4">
 
             </div>
-            <div class="col-md-8" style="padding-top: 2%; margin-left: 20%;">
+            <div class="col-md-8" style="padding-top: 5%; margin-left: 20%;">
 
               @if ($message = Session::get('success'))
               <div id=alert>
@@ -115,11 +115,11 @@
 
 
               <div class="card border-dark" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
-                <div class="card-header" style="padding-bottom: 1px; border: transparent !important; padding-top: 4%; font-size: 250%; color: white;">FEEDBACK</div>
+                <div class="card-header" style="padding-bottom: 1px; border: transparent !important; padding-top: 5%; font-size: 200%; color: white;">FEEDBACK</div>
                 <hr style="width: 70%; margin: 0 auto; ">
                 <form action="{{route('others.feedback.save')}}" method="POST">
                   @csrf
-                <div class="card-body" style="padding-top: 1px;">
+                <div class="card-body" style="padding-top: 5%;">
                   <div class="row">
                     <div class="col-md-1">
 
@@ -127,13 +127,13 @@
                     <div class="col-md-5">
                       <div class="form-group" style="color: white !important;">
                         <label class="col-form-label">NAME</label>
-                        <input id="name" type="text"name="name" value="{{Auth::user()->name}}" class="form-control" style="font-size: 150%;" disabled>
+                        <input id="name" type="text"name="name" value="{{Auth::user()->name}}" class="form-control" style="font-size: 100%;" disabled>
                       </div>
                     </div>
                     <div class="col-md-5">
                         <div class="form-group" style="color: white !important;">
                           <label class="col-form-label">EMAIL</label>
-                          <input id="email" type="text"name="email" value="{{Auth::user()->email}}" class="form-control" style="font-size: 150%;" disabled>
+                          <input id="email" type="text"name="email" value="{{Auth::user()->email}}" class="form-control" style="font-size: 100%;" disabled>
                         </div>
                     </div>
                     <div class="col-md-1">
@@ -148,7 +148,7 @@
                     <div class="col-md-10">
                       <div class="form-group" style="color: white !important;">
                         <label class="col-form-label">SUBJECT</label>
-                        <input id="subject" type="text"name="subject" class="form-control" style="font-size: 150%;" required>
+                        <input id="subject" type="text"name="subject" class="form-control" style="font-size: 100%;" required>
                       </div>
                     </div>
                     <div class="col-md-1">
@@ -163,7 +163,7 @@
                     <div class="col-md-10">
                       <div class="form-group" style="color: white !important;">
                         <label class="col-form-label">COMMENT</label>
-                        <textarea class="form-control" id="feedback" name="feedback" rows="3" style="font-size: 150%;" required></textarea>
+                        <textarea class="form-control" id="feedback" name="feedback" rows="3" style="font-size: 100%;" required></textarea>
                       </div>
                     </div>
                     <div class="col-md-1">
@@ -175,8 +175,8 @@
                     <div class="col-md-4">
 
                     </div>
-                    <div class="col-md-4" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 3%;">
-                        <button type="submit" class="btn" name="button" style="font-size: 200%;">
+                    <div class="col-md-4" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 2%;width: 100%;">
+                        <button type="submit" class="btn" name="button" style="font-size: 150%;">
                           SUBMIT
                         </button>
 

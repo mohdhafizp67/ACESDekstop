@@ -29,7 +29,7 @@
   <body>
 
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
-<h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold; padding-bottom: 4%;font-size: 450%;">LEADERBOARD</h1>
+<h1 style="padding-top: 4%; text-align: center;font-size: 350%; color: #fff; font-weight: bold;; padding-bottom: 0%;">LEADERBOARD</h1>
 <div class="row" style="padding-top: 0%;">
   <div class="col-md-1">
 
@@ -38,22 +38,22 @@
     <table class="table">
       <thead style="background-image: url({{asset('concept/images/galaxy/table.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
         <tr>
-          <th style="color: #5ddaff; font-size: 150%;text-align: right;">
+          <th style="color: #5ddaff; font-size: 120%;text-align: right;">
             Ranking
           </th>
-          <th style="color: #5ddaff; font-size: 150%;text-align: center;">
+          <th style="color: #5ddaff; font-size: 120%;text-align: left;">
             Avatar
           </th>
-          <th style="color: #5ddaff; font-size: 150%;text-align: left;">
+          <th style="color: #5ddaff; font-size: 120%;text-align: left;">
             Name
           </th>
-          <th style="color: #5ddaff; font-size: 150%;text-align: center;">
+          <th style="color: #5ddaff; font-size: 120%;text-align: center;">
             School
           </th>
-          <th style="color: #5ddaff; font-size: 150%;text-align: center;">
+          <th style="color: #5ddaff; font-size: 120%;text-align: center;">
             State
           </th>
-          <th style="color: #5ddaff; font-size: 150%;text-align: left;">
+          <th style="color: #5ddaff; font-size: 120%;text-align: left;">
             Points
           </th>
         </tr>
@@ -69,7 +69,7 @@
   <div class="col-md-2">
 
   </div>
-  <div class="col-md-8" style="overflow-y:auto;height: 460px;width:100%;">
+  <div class="col-md-8" style="overflow-y:auto;height: 350px;width:100%;">
     <table class="table" style="text-align: center; text-transform: uppercase;">
       @foreach($student as $data)
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
@@ -83,7 +83,7 @@
             <img src="{{ asset('https://i.redd.it/z394307odi741.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
             @endif <br>
           </td>
-          <td style="color: #fff; font-size: 100%;">
+          <td style="color: #fff; font-size: 100%;padding-left: 5%;">
             {{$data->user->name}}
           </td>
           <td style="color: #fff; font-size: 100%;">
@@ -119,21 +119,21 @@
           </td>
           <td style="text-align: end;">
             @if(Auth::user()->profile_picture != null)
-            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:50px; width:50px;">
+            <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px;">
             @else
-            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:50px; width:50px;">
+            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:40px; width:40px;">
             @endif <br>
           </td>
-          <td style="color: #fff; font-size: 150%; color:#E9FF00">
+          <td style="color: #fff; font-size: 100%; color:#E9FF00">
             {{Auth::user()->name}}
           </td>
-          <td style="color: #fff; font-size: 150%; color:#E9FF00">
+          <td style="color: #fff; font-size: 100%; color:#E9FF00">
             {{Auth::user()->school}}
           </td>
-          <td style="color: #fff; font-size: 150%; color:#E9FF00">
+          <td style="color: #fff; font-size: 100%; color:#E9FF00">
             {{Auth::user()->state}}
           </td>
-          <td style="color: #fff; font-size: 150%; color:#E9FF00">
+          <td style="color: #fff; font-size: 100%; color:#E9FF00">
             {{$total_mark}}
           </td>
           <!-- <td style="color: #fff; font-size: 150%; color:#E9FF00">
