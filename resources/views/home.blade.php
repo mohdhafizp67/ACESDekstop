@@ -156,7 +156,7 @@ canvas {
 		<div class="col-md-12" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding: 5%;">
 
 
-        <h1 style="text-align: center; font-size: 450%; color: #fff; font-weight:bold; padding-top: 5%; padding-left: 9%;margin-top: -3%; padding-bottom: 4%;">
+        <h1 style="text-align: center; font-size: 450%; color: #fff; font-weight:bold; padding-top: 0%; padding-left: 9%;margin-top: -3%; padding-bottom: 5%;">
 
   				ACES <font color="#ff0000"><span class="fontnew"> I4.0</span></font> <br>
   			</h1>

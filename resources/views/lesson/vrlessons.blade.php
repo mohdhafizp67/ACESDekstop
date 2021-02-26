@@ -478,9 +478,7 @@
 
     slides[current].classList.add("active");
     slides[prev].classList.add("prev");
-    slides[prev].disabled = true;
     slides[next].classList.add("next");
-    slides[next].disabled = true;
   }
     </script>
 
