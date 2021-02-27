@@ -256,6 +256,62 @@
                                   }
                                   </script>
 
+                                  <p onclick="document.getElementById('id03').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">Industry 4.0<span></p>
+
+                                  <div id="id03" class="w3-modal">
+                                    <div class="w3-modal-content w3-card-4">
+                                      <header class="">
+                                        <span onclick="document.getElementById('id03').style.display='none'"
+                                        class="w3-button w3-display-topright">&times;</span>
+
+                                      </header>
+                                      <div class="w3-container">
+                                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/IMmnSZ7U1qM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                  <script>
+                                    // Get the modal
+                                    var modal = document.getElementById('id03');
+
+                                    // When the user clicks anywhere outside of the modal, close it
+                                    window.onclick = function(event) {
+                                      if (event.target == modal) {
+                                        modal.style.display = "none";
+                                      }
+                                    }
+                                    </script>
+
+                                    <p onclick="document.getElementById('id04').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">4th Industrial Revolution<span></p>
+
+                                    <div id="id04" class="w3-modal">
+                                      <div class="w3-modal-content w3-card-4">
+                                        <header class="">
+                                          <span onclick="document.getElementById('id04').style.display='none'"
+                                          class="w3-button w3-display-topright">&times;</span>
+
+                                        </header>
+                                        <div class="w3-container">
+                                          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/1ezqG29uymo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+
+                                      </div>
+                                    </div>
+
+                                    <script>
+                                      // Get the modal
+                                      var modal = document.getElementById('id04');
+
+                                      // When the user clicks anywhere outside of the modal, close it
+                                      window.onclick = function(event) {
+                                        if (event.target == modal) {
+                                          modal.style.display = "none";
+                                        }
+                                      }
+                                      </script>
+
 
 
 
