@@ -40,7 +40,7 @@ vertical-align: top;
 .circle strong {
 position: absolute;
 top: 35%;
-left: 5%;
+left: 1%;
 width: 100%;
 text-align: center;
 line-height: 25px;
