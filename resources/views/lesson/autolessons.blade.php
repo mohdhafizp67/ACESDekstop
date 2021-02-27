@@ -91,7 +91,7 @@
       opacity: 0.25;
       transform: translate(25%, -50%);
       cursor: not-allowed;
-      
+
     }
 
     .items .button-container {
@@ -227,7 +227,7 @@
 
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:350px;">
 
-                              <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">Knowledge and Skill<span></p>
+                              <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">How Autonomous Robots Are Changing Construction<span></p>
 
                               <div id="id01" class="w3-modal">
                                 <div class="w3-modal-content w3-card-4">
@@ -237,7 +237,7 @@
 
                                   </header>
                                   <div class="w3-container">
-                                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/jRQzl8ewDMQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/zBvvbOLq3t0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                   </div>
 
                                 </div>
@@ -254,6 +254,62 @@
                                   }
                                 }
                                 </script>
+
+                                <p onclick="document.getElementById('id02').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">Autonomous Mobile Robots (AMRs) in Action<span></p>
+
+                                <div id="id02" class="w3-modal">
+                                  <div class="w3-modal-content w3-card-4">
+                                    <header class="">
+                                      <span onclick="document.getElementById('id02').style.display='none'"
+                                      class="w3-button w3-display-topright">&times;</span>
+
+                                    </header>
+                                    <div class="w3-container">
+                                      <iframe width="100%" height="300px" src="https://www.youtube.com/embed/M0fL5Q6rGws" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                                <script>
+                                  // Get the modal
+                                  var modal = document.getElementById('id02');
+
+                                  // When the user clicks anywhere outside of the modal, close it
+                                  window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                      modal.style.display = "none";
+                                    }
+                                  }
+                                  </script>
+
+                                  <p onclick="document.getElementById('id03').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">Autonomous Electric Tractor - Future of Farming<span></p>
+
+                                  <div id="id03" class="w3-modal">
+                                    <div class="w3-modal-content w3-card-4">
+                                      <header class="">
+                                        <span onclick="document.getElementById('id03').style.display='none'"
+                                        class="w3-button w3-display-topright">&times;</span>
+
+                                      </header>
+                                      <div class="w3-container">
+                                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/gMaQq_vRaa8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                  <script>
+                                    // Get the modal
+                                    var modal = document.getElementById('id03');
+
+                                    // When the user clicks anywhere outside of the modal, close it
+                                    window.onclick = function(event) {
+                                      if (event.target == modal) {
+                                        modal.style.display = "none";
+                                      }
+                                    }
+                                    </script>
 
                             </div>
 

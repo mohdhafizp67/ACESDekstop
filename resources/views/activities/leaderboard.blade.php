@@ -17,6 +17,7 @@
 
 
 
+
     <style media="screen">
       .table thead th{
             border-bottom: 2px solid #0000;
@@ -31,6 +32,11 @@
       #photo {
   			padding: 4px;
   		}
+
+      .canvas{
+        width: 400px;
+        height: 300px;
+      }
     </style>
   </head>
   <body>
@@ -159,6 +165,24 @@
                  </div>
                  <div class="modal-body">
                    <div id="output"></div>
+
+                   <div id="mImageBox">
+                   <button id="my_image" alt=''  src='https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png' class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook"></i></button>
+                   </div>
+                   <script>
+                   function fbs_click(TheImg) {
+
+                      var  u=TheImg.getAttribute('src');
+
+                       t=TheImg.getAttribute('alt');
+
+                       window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');
+
+                       return false;
+
+                      }
+                    </script>
+
                  </div>
 
                </div>
