@@ -15,7 +15,6 @@ class LeaderboardController extends Controller
         return $query->where('is_active','1');
       })->take(10)->get();
 
-      dd($student);
 
       foreach ($student as $data) {
         $lesson_progress = Student_Lesson::where('student_id', $data->id)->count();
