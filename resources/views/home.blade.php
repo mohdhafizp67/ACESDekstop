@@ -150,12 +150,12 @@ canvas {
 
  .text-block {
   position: absolute;
-  bottom: 30px;
+  /* bottom: 30px;
   right: 15px;
   background-color: black;
   color: white;
   padding-left: 0px;
-  padding-right: 0px;
+  padding-right: 0px; */
 }
 </style>
   </head>
@@ -217,7 +217,7 @@ canvas {
           <div class="col-md-3">
             <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <div class="text-block">
-                <h4>COMING SOON</h4>
+                <img src="{{ asset('concept/images/coming.png') }}" style="width: 170px;">
               </div>
               <div class="card-body list-group" style="padding: 5%;">
                 <div class="progressbar1">
