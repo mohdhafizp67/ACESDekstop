@@ -11,7 +11,7 @@ class LeaderboardController extends Controller
 {
   public function viewLeaderboard()
   {
-      $student =  Student::get();
+      $student =  Student::take(10)->get();
 
       foreach ($student as $data) {
         $lesson_progress = Student_Lesson::where('student_id', $data->id)->count();
