@@ -40,17 +40,17 @@
 
       /* Track */
       ::-webkit-scrollbar-track {
-        background: #f1f1f1;
+        background: #130E29;
       }
-       
+
       /* Handle */
       ::-webkit-scrollbar-thumb {
-        background: #888;
+        background: #130E29;
       }
 
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
-        background: #555;
+        background: #130E29;
       }
     </style>
   </head>
