@@ -29,7 +29,7 @@ class Student extends Model
     }
 
     public function leaderboard(){
-      return $this->hasMany('App\Models\Leaderboard', 'id', 'leaderboard_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+      return $this->hasOne('App\Models\Leaderboard', 'id', 'leaderboard_id')->orderBy('scores');; //return $this->hasMany('Model', 'foreign_key', 'local_key');
     }
 
     // public function message_id(){

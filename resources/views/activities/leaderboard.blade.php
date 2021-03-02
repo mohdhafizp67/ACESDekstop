@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="{{ asset('css/cartajohan.css') }} ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Include from the CDN -->
-    <script src=
-  "https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
-    </script>
+    <script type="text/javascript" src="html2canvas-master/dist/html2canvas.js"></script>
 
 
 
@@ -121,7 +119,7 @@
             {{$data->user->state}}
           </td>
           <td style="color: #fff; font-size: 100%; font-weight: bold;">
-            {{$total_mark}}
+            {{$data->leaderboard->scores}}
           </td>
         </tr>
         @endforeach
@@ -162,7 +160,7 @@
             {{Auth::user()->state}}
           </td>
           <td style="color: #fff; font-size: 100%; color:#E9FF00">
-            {{$total_mark}}
+            {{$data->leaderboard->scores}}
           </td>
            <!-- <td style="color: #fff; font-size: 100%; color:#E9FF00">
             <button onclick="takeshot()" data-toggle="modal" data-target="#myModal">
@@ -179,7 +177,7 @@
                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                  </div>
                  <div class="modal-body">
-                   <div id="output"></div>
+                   <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'>
 
                    <div id="mImageBox">
                    <button id="my_image" alt=''  src='http://161.35.227.188/ACES-Desktop/storage/uploads/user_pictures/2mrc9Yk9ktr0AZdBVc5PPHxal1GKKNkqIGzTMeQ9.jpg' class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook"></i></button>
@@ -228,36 +226,36 @@
 </div>
 
   </body>
-  <script type="text/javascript">
 
-    // Define the function
-    // to screenshot the div
-    function takeshot() {
-      let div =
-        document.getElementById('photo');
+      <script type='text/javascript'>
+      function screenshot(){
+         html2canvas(document.body,{background: '#fff'}).then(function(canvas) {
 
-      // Use the html2canvas
-      // function to take a screenshot
-      // and append it
-      // to the output div
-      html2canvas(div).then(
-        function (canvas) {
-          document
-          .getElementById('output')
-          .appendChild(canvas);
-          console.log(canvas);
-        })
+          document.body.appendChild(canvas);
 
+          // Get base64URL
+          var base64URL = canvas.toDataURL('image/jpeg').replace('image/jpeg', 'image/octet-stream');
 
-    }
-  </script>
-  <script>
-// When the user clicks on div, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
+          // AJAX request
+          $.ajax({
+             url: 'ajaxfile.php',
+             type: 'post',
+             data: {image: base64URL},
+             success: function(data){
+                console.log('Upload successfully');
+             }
+          });
+        });
+      }
+      </script>
+
+        <script>
+      // When the user clicks on div, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+      </script>
 
 </html>
 @endsection
