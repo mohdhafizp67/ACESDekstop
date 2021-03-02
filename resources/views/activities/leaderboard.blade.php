@@ -100,26 +100,26 @@
       @foreach($student as $data)
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
           <td style="color: #fff; font-size: 200%; text-align: end;font-weight: bold;padding-left: 5%;">
-            {{$data->id}}
+            {{ $loop->index + 1  }}
           </td>
           <td style="text-align: end;padding-left:7%;">
-            @if($data->user->profile_picture!= null)
+            @if($data->profile_picture!= null)
             <img src="{{ asset( $image_path = str_replace('public', 'storage',  $data->user->profile_picture)) }}" onError="this.src='http://161.35.227.188/ACES{{ ( $image_path = str_replace('public', 'storage',  $data->user->profile_picture)) }}';" class="profile-avatar" style="height:40px; width:40px;">
             @else
             <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}"  class="profile-avatar" style="height:40px; width:40px;">
             @endif <br>
           </td>
           <td style="color: #fff; font-size: 100%;padding-left: 5%;">
-            {{$data->user->name}}
+            {{$data->name}}
           </td>
           <td style="color: #fff; font-size: 100%;">
-            {{$data->user->school}}
+            {{$data->school}}
           </td>
           <td style="color: #fff; font-size: 100%;">
-            {{$data->user->state}}
+            {{$data->state}}
           </td>
           <td style="color: #fff; font-size: 100%; font-weight: bold;">
-            {{$data->leaderboard->scores}}
+            {{$data->total_points ? $data->total_points : 0}}
           </td>
         </tr>
         @endforeach
@@ -141,7 +141,7 @@
 
         <tr class="table" style="background-image: url({{asset('concept/images/galaxy/table2.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
           <td style="color: #fff; font-size: 150%; text-align: end; color:#E9FF00">
-            {{$data->id}}
+            {{$current_user_ranking}}
           </td>
           <td style="text-align: end;">
             @if(Auth::user()->profile_picture != null)
@@ -160,7 +160,7 @@
             {{Auth::user()->state}}
           </td>
           <td style="color: #fff; font-size: 100%; color:#E9FF00">
-            {{$data->leaderboard->scores}}
+            {{$current_user_marks}}
           </td>
            <!-- <td style="color: #fff; font-size: 100%; color:#E9FF00">
             <button onclick="takeshot()" data-toggle="modal" data-target="#myModal">
