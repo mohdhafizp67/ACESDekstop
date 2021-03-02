@@ -286,15 +286,16 @@
 
 
 
-    <h1 style="padding-top: 4%; text-align: center; color: #fff; font-weight: bold; padding-bottom: 0%;font-size: 350%;">QUIZ</h1>
-    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Click right to see other quiz</h1>
+    <h1 style="padding-top: 4%; text-align: center; color: #fff; font-weight: bold; padding-bottom: 0%;font-size: 350%;padding-left: 3%;">QUIZ</h1>
+    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;padding-left: 3%;">Click right to see other quiz</h1>
 
     <div class="row" style="padding: 1%;">
       <div class="col-md-4">
-        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" style="margin-top: 80%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-left: -3%;">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="99%" style="margin-top: 80%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-left: -3%;">
 
-        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="padding: 1%;margin-left: 18%;width: 25%; height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-        <button onclick="replay()" class="button buttonsound" type="button" style="padding: 1%;color: #fff; width: 25%; height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
+
+        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="padding: 1%;margin-left: 13.8%;width: 27%; height: 5.6%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up" style="font-size: 16px;"></i></button>
+        <button onclick="replay()" class="button buttonsound" type="button" style="padding: 1%;color: #fff; width: 27%; height: 5.6%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo" style="font-size: 16px;"></i></button>
 
         <audio id="myAudio" controls autoplay hidden="true">
 

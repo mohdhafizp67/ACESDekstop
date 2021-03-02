@@ -275,6 +275,8 @@
         color: #fff;
         /* border: 2px solid #4CAF50; */
       }
+
+
       </style>
 
   </head>
@@ -284,15 +286,15 @@
 
 
 
-    <h1 style="padding-top: 4%; text-align: center; color: #fff; font-weight: bold; padding-bottom: 0%;font-size: 350%;">GAMES</h1>
-    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 1%; color: #fff;">Click right to see other circuit</h1>
+    <h1 style="padding-top: 4%; text-align: center; color: #fff; font-weight: bold; padding-bottom: 0%;font-size: 350%;padding-left: 3%;">GAMES</h1>
+    <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 1%; color: #fff;padding-left: 3%;">Click right to see other circuit</h1>
 
     <div class="row">
       <div class="col-md-4">
-        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" style="margin-top: 80%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-left: 0%;">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" style="margin-top: 77%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-left: 0%;">
 
-        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 20%;width: 25%; height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-        <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
+        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 17%;width: 25.5%; height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+        <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25.5%; height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
 
 
         <audio id="myAudio" controls autoplay hidden="true">
@@ -342,6 +344,7 @@
           <div class="slider-content">
 
               <div class="slider-single">
+
                   <a href="http://161.35.227.188/drone_tutorial_d?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Introduction.png') }}" alt="1" /></a>
                   <!-- <h1 class="slider-single-title">Introduction - Tutorial</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">

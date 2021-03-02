@@ -182,7 +182,7 @@
                    <div id="output"></div>
 
                    <div id="mImageBox">
-                   <button id="my_image" alt=''  src='http://acesdekstop.test/public/storage/uploads/user_pictures/ySOUgENPEEQvrlv62D7UUu92xc00wkWrhviOQmTE.jpg' class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook"></i></button>
+                   <button id="my_image" alt=''  src='http://161.35.227.188/ACES-Desktop/storage/uploads/user_pictures/2mrc9Yk9ktr0AZdBVc5PPHxal1GKKNkqIGzTMeQ9.jpg' class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook"></i></button>
                    </div>
                    <script>
                    function fbs_click(TheImg) {
@@ -245,6 +245,7 @@
           document
           .getElementById('output')
           .appendChild(canvas);
+          console.log(canvas);
         })
 
 
