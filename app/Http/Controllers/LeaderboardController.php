@@ -53,16 +53,12 @@ class LeaderboardController extends Controller
     return Leaderboard::Create([
       'student_id' => $data->id,
       'scores' => $total_mark,
-      'game_id' => null,
-      'student_games_id' => null,
       ]);
   }
 
   public function update($data, $total_mark){
     $leaderboard = Leaderboard::findOrFail($data->id);
     $leaderboard->scores = $total_mark;
-    $leaderboard->game_id = null;
-    $leaderboard->student_games_id = null;
     $leaderboard->save();
     return $leaderboard;
   }
