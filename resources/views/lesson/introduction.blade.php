@@ -538,7 +538,7 @@
             window.setTimeout(function() {
               $.ajax({
                 type:"get",
-                 url:"/ACES-Dekstop/lesson/ajax/update-lesson/1",
+                 url:"/ACES-Desktop/lesson/ajax/update-lesson/1",
 
                 success: function(respond){
                   console.log("berjaya");
