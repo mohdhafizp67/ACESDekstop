@@ -13,6 +13,8 @@ class Leaderboard extends Model
 
     protected $fillable = [
       'student_id',
+      'game_id',
+      'student_games_id',
       'scores'
     ];
 
