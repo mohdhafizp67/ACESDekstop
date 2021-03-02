@@ -84,6 +84,7 @@
       opacity: 0.25;
       transform: translate(-125%, -50%);
       cursor: not-allowed;
+      pointer-events: none;
 
     }
 
@@ -92,6 +93,7 @@
       opacity: 0.25;
       transform: translate(25%, -50%);
       cursor: not-allowed;
+      pointer-events: none;
 
     }
 
