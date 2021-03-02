@@ -522,6 +522,47 @@
           }
           x[slideIndex-1].style.display = "block";
         }
+
+        function startTimer(duration, display) {
+          var timer = duration, minutes, seconds;
+          setInterval(function () {
+              minutes = parseInt(timer / 60, 10);
+              seconds = parseInt(timer % 60, 10);
+
+              minutes = minutes < 10 ? "0" + minutes : minutes;
+              seconds = seconds < 10 ? "0" + seconds : seconds;
+
+              // display.textContent = minutes + ":" + seconds;
+
+              if (--timer < 0) {
+                  timer = duration;
+              }
+          }, 1000);
+        }
+
+        window.onload = function () {
+          //display timer
+          var fiveMinutes = 60 * 1,
+              display = document.querySelector('#time');
+          startTimer(fiveMinutes, display);
+
+          //timer for auto submit form/quiz
+          var setTimer = (1 * 60) * 1000;
+          // var setTimer = 5000;
+          window.setTimeout(function() {
+            $.ajax({
+              type:"get",
+               url:"/lesson/ajax/update-lesson/7",
+
+              success: function(respond){
+              },
+              error: function(XMLHttpRequest, textStatus, errorThrown) {
+                  console.log("Status: " + textStatus);
+                  console.log("Error: " + errorThrown);
+              }
+            })
+           }, setTimer);
+        };
         </script>
 
 

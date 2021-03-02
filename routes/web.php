@@ -46,23 +46,43 @@ Route::get('/courses', [App\Http\Controllers\LessonController::class, 'courses']
 
 Route::get('/introduction', [App\Http\Controllers\LessonController::class, 'introduction'])->name('lesson.introduction');
 
+Route::get('/lesson/ajax/update-lesson/1', [App\Http\Controllers\LessonController::class, 'update_lesson1'])->name('lesson1.ajax.update');
+
 Route::get('/vrlessons', [App\Http\Controllers\LessonController::class, 'vrlessons'])->name('lesson.vrlessons');
+
+Route::get('/lesson/ajax/update-lesson/2', [App\Http\Controllers\LessonController::class, 'update_lesson2'])->name('lesson2.ajax.update');
 
 Route::get('/additivelessons', [App\Http\Controllers\LessonController::class, 'additivelessons'])->name('lesson.additivelessons');
 
+Route::get('/lesson/ajax/update-lesson/3', [App\Http\Controllers\LessonController::class, 'update_lesson3'])->name('lesson3.ajax.update');
+
 Route::get('/iotlessons', [App\Http\Controllers\LessonController::class, 'iotlessons'])->name('lesson.iotlessons');
+
+Route::get('/lesson/ajax/update-lesson/4', [App\Http\Controllers\LessonController::class, 'update_lesson4'])->name('lesson4.ajax.update');
 
 Route::get('/bigdatalessons', [App\Http\Controllers\LessonController::class, 'bigdatalessons'])->name('lesson.bigdatalessons');
 
+Route::get('/lesson/ajax/update-lesson/5', [App\Http\Controllers\LessonController::class, 'update_lesson5'])->name('lesson5.ajax.update');
+
 Route::get('/cloudlessons', [App\Http\Controllers\LessonController::class, 'cloudlessons'])->name('lesson.cloudlessons');
+
+Route::get('/lesson/ajax/update-lesson/6', [App\Http\Controllers\LessonController::class, 'update_lesson6'])->name('lesson6.ajax.update');
 
 Route::get('/cyberlessons', [App\Http\Controllers\LessonController::class, 'cyberlessons'])->name('lesson.cyberlessons');
 
+Route::get('/lesson/ajax/update-lesson/7', [App\Http\Controllers\LessonController::class, 'update_lesson7'])->name('lesson7.ajax.update');
+
 Route::get('/universallessons', [App\Http\Controllers\LessonController::class, 'universallessons'])->name('lesson.universallessons');
+
+Route::get('/lesson/ajax/update-lesson/8', [App\Http\Controllers\LessonController::class, 'update_lesson8'])->name('lesson8.ajax.update');
 
 Route::get('/advancedlessons', [App\Http\Controllers\LessonController::class, 'advancedlessons'])->name('lesson.advancedlessons');
 
+Route::get('/lesson/ajax/update-lesson/9', [App\Http\Controllers\LessonController::class, 'update_lesson9'])->name('lesson9.ajax.update');
+
 Route::get('/autolessons', [App\Http\Controllers\LessonController::class, 'autolessons'])->name('lesson.autolessons');
+
+Route::get('/lesson/ajax/update-lesson/10', [App\Http\Controllers\LessonController::class, 'update_lesson10'])->name('lesson10.ajax.update');
 
 Route::get('/lokasivr', [App\Http\Controllers\LessonController::class, 'lokasivr'])->name('lesson.lokasivr');
 

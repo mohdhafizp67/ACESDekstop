@@ -21,7 +21,10 @@ class LessonController extends Controller
 
   public function additivelessons()
   {
+      return view('lesson.additivelessons');
+  }
 
+  public function update_lesson3(){
     $student_id = Auth::user()->student->id;
     $lesson_id = "3";
 
@@ -29,8 +32,7 @@ class LessonController extends Controller
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_3());
     }
-
-      return view('lesson.additivelessons');
+    exit;
   }
 
   public function create_lesson_student_3()
@@ -50,6 +52,10 @@ class LessonController extends Controller
 
   public function advancedlessons()
   {
+      return view('lesson.advancedlessons');
+  }
+
+  public function update_lesson9(){
     $student_id = Auth::user()->student->id;
     $lesson_id = "9";
 
@@ -57,8 +63,7 @@ class LessonController extends Controller
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_9());
     }
-
-      return view('lesson.advancedlessons');
+    exit;
   }
 
   public function create_lesson_student_9()
@@ -78,6 +83,10 @@ class LessonController extends Controller
 
   public function autolessons()
   {
+      return view('lesson.autolessons');
+  }
+
+  public function update_lesson10(){
     $student_id = Auth::user()->student->id;
     $lesson_id = "10";
 
@@ -85,8 +94,7 @@ class LessonController extends Controller
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_10());
     }
-
-      return view('lesson.autolessons');
+    exit;
   }
 
   public function create_lesson_student_10()
@@ -106,6 +114,10 @@ class LessonController extends Controller
 
   public function bigdatalessons()
   {
+      return view('lesson.bigdatalessons');
+  }
+
+  public function update_lesson5(){
     $student_id = Auth::user()->student->id;
     $lesson_id = "5";
 
@@ -113,8 +125,7 @@ class LessonController extends Controller
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_5());
     }
-
-      return view('lesson.bigdatalessons');
+    exit;
   }
 
   public function create_lesson_student_5()
@@ -134,6 +145,10 @@ class LessonController extends Controller
 
   public function cloudlessons()
   {
+      return view('lesson.cloudlessons');
+  }
+
+  public function update_lesson6(){
     $student_id = Auth::user()->student->id;
     $lesson_id = "6";
 
@@ -141,8 +156,7 @@ class LessonController extends Controller
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_6());
     }
-
-      return view('lesson.cloudlessons');
+    exit;
   }
 
   public function create_lesson_student_6()
@@ -162,6 +176,10 @@ class LessonController extends Controller
 
   public function cyberlessons()
   {
+      return view('lesson.cyberlessons');
+  }
+
+  public function update_lesson7(){
     $student_id = Auth::user()->student->id;
     $lesson_id = "7";
 
@@ -169,8 +187,7 @@ class LessonController extends Controller
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_7());
     }
-
-      return view('lesson.cyberlessons');
+    exit;
   }
 
   public function create_lesson_student_7()
@@ -191,7 +208,10 @@ class LessonController extends Controller
 
   public function iotlessons()
   {
+      return view('lesson.iotlessons');
+  }
 
+  public function update_lesson4(){
     $student_id = Auth::user()->student->id;
     $lesson_id = "4";
 
@@ -199,8 +219,7 @@ class LessonController extends Controller
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_4());
     }
-
-      return view('lesson.iotlessons');
+    exit;
   }
 
   public function create_lesson_student_4()
@@ -220,6 +239,10 @@ class LessonController extends Controller
 
   public function universallessons()
   {
+      return view('lesson.universallessons');
+  }
+
+  public function update_lesson8(){
     $student_id = Auth::user()->student->id;
     $lesson_id = "8";
 
@@ -227,8 +250,7 @@ class LessonController extends Controller
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_8());
     }
-
-      return view('lesson.universallessons');
+    exit;
   }
 
   public function create_lesson_student_8()
@@ -249,8 +271,10 @@ class LessonController extends Controller
 
   public function vrlessons()
   {
+      return view('lesson.vrlessons');
+  }
 
-
+  public function update_lesson2(){
     $student_id = Auth::user()->student->id;
     $lesson_id = "2";
 
@@ -258,9 +282,7 @@ class LessonController extends Controller
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_2());
     }
-
-      return view('lesson.vrlessons');
-
+    exit;
   }
 
   public function create_lesson_student_2()
@@ -279,14 +301,17 @@ class LessonController extends Controller
   }
   public function introduction()
   {
+      return view('lesson.introduction');
+  }
+
+  public function update_lesson1(){
     $student_id = Auth::user()->student->id;
     $lesson_id = "1";
-
     $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_1());
     }
-      return view('lesson.introduction');
+    exit;
   }
 
   public function create_lesson_student_1(){
