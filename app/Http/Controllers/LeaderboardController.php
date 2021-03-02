@@ -43,8 +43,6 @@ class LeaderboardController extends Controller
           // dd($data);
           event($leaderboard = $this->create($data, $total_mark));
           $data->leaderboard_id = $leaderboard->id;
-          $data->game_id = null;
-          $data->student_games_id = null;
           $data->save();
         }
       }
@@ -63,6 +61,8 @@ class LeaderboardController extends Controller
   public function update($data, $total_mark){
     $leaderboard = Leaderboard::findOrFail($data->id);
     $leaderboard->scores = $total_mark;
+    $leaderboard->game_id = null;
+    $leaderboard->student_games_id = null;
     $leaderboard->save();
     return $leaderboard;
   }
