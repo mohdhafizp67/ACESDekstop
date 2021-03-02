@@ -60,7 +60,7 @@
         left: 50%;
         top: 45%;
         width: 70%;
-        height: 60%;
+        height: 59%;
         transform: translate(-50%, -50%);
         margin-top: -7%;
       }
@@ -280,16 +280,16 @@
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
 
 
-    <h1 style="padding-top: 4%; text-align: center;font-size: 350%; color: #fff; font-weight: bold;; padding-bottom: 0%;padding-left: 3%;">LESSONS</h1>
+    <h1 style="padding-top: 2%; text-align: center;font-size: 350%; color: #fff; font-weight: bold;; padding-bottom: 0%;padding-left: 3%;">LESSONS</h1>
     <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;padding-left: 3%;">Click right to see other courses</h1>
 
     <div class="row">
       <div class="col-md-4">
-        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: 80%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-left: 0%;">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="90%" height="auto" style="margin-top: 40%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-left: 0%;">
 
 
-        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="padding: 1%;margin-left: 17%;width: 26%; height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-        <button onclick="replay()" class="button buttonsound" type="button" style="padding: 1%;color: #fff; width: 26%; height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
+        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 17%;width: 26%; height: 5.2%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up" style="font-size: 17px;"></i></button>
+        <button onclick="replay()" class="button buttonsound" type="button" style=";color: #fff; width: 26%; height: 5.2%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
 
 
         <audio id="myAudio" controls autoplay hidden="true">
