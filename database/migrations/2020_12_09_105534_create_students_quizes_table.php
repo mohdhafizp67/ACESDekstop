@@ -16,7 +16,7 @@ class CreateStudentsQuizesTable extends Migration
         Schema::create('students_quizes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer('result')->default(0);
+            $table->string('result')->nullable();
             $table->string('answered_question')->nullable();
             $table->string('percentage')->nullable();
             $table->string('result_status')->nullable();
