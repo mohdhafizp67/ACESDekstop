@@ -26,7 +26,7 @@ class AddTotalScoresToLeaderboardsTable extends Migration
     public function down()
     {
         Schema::table('leaderboards', function (Blueprint $table) {
-          $table->dropColumn('screenshots');
+          $table->dropColumn('scores');
         });
     }
 }
