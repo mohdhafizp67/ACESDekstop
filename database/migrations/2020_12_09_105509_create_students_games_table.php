@@ -18,9 +18,9 @@ class CreateStudentsGamesTable extends Migration
             $table->timestamps();
             $table->integer('student_point')->nullable();
             $table->unsignedBigInteger('student_id');
-            // $table->unsignedBigInteger('game_id');
+            $table->unsignedBigInteger('game_id');
             $table->foreign('student_id')->references('id')->on('students');
-            // $table->foreign('game_id')->references('id')->on('games');
+            $table->foreign('game_id')->references('id')->on('games');
         });
     }
 
