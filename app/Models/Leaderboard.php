@@ -20,11 +20,11 @@ class Leaderboard extends Model
       return $this->belongsTo('App\Models\Student', 'id', 'student_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
     }
 
-    // public function game(){
-    //   return $this->belongsTo('App\Models\Game', 'id', 'game_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
-    // }
-    //
-    // public function student_game(){
-    //   return $this->belongsTo('App\Models\Student_Game', 'id', 'student_games_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
-    // }
+    public function game(){
+      return $this->belongsTo('App\Models\Game', 'id', 'game_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+    }
+
+    public function student_game(){
+      return $this->belongsTo('App\Models\Student_Game', 'id', 'student_games_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+    }
 }
