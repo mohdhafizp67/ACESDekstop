@@ -50,7 +50,7 @@ class LeaderboardController extends Controller
     // }
     // return view('activities.leaderboard', compact('student'));
 
-    // 
+    //
     // $student = DB::table('students')->select(DB::raw('students_games.student_point,students_quizes.result,(students_games.student_point + students_quizes.result) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
     //   ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
     //   ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
@@ -68,6 +68,8 @@ class LeaderboardController extends Controller
       ->orderBy("total_points", "DESC")
       ->limit(10)
       ->get();
+
+      dd($student);
 
     $all_students =  DB::table('students')->select(DB::raw('sum(students_games.student_point) as total_points, users.id as user_id'))
       ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
