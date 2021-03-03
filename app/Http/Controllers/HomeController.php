@@ -9,6 +9,8 @@ use App\Models\Announcement;
 use App\Models\User;
 use App\Models\Student_Lesson;
 use App\Models\Student_Quiz;
+use App\Models\Student_Game;
+
 
 
 
@@ -55,6 +57,10 @@ class HomeController extends Controller
 
         $quiz_progress = Student_Quiz::where('result_status', "Lulus")->where('student_id', $student_id)->distinct('quiz_id')->count();
         $quiz_progress = ($quiz_progress/10) * 100;
+
+        // $game_progress = Student_Game::where('game_id', $game_id)->count();
+        // $game_progress = ($game_progress/10) * 100;
+
 
         return view('home', compact('announcement','lesson_progress','quiz_progress', 'splitName'));
       }else {

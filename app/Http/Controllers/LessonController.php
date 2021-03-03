@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Auth;
 use App\Models\User;
+use App\Models\Leaderboard;
 use App\Models\QuestionBank;
 use App\Models\AnswerBank;
 use App\Models\Lesson;
@@ -310,6 +311,22 @@ class LessonController extends Controller
     $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_1());
+
+      $find_leaderboard = Leaderboard::where('student_id', $student_id)->count();
+      // dd($find_leaderboard);
+      if($find_leaderboard != 0){
+        $find_leaderboard = Leaderboard::where('student_id', $student_id);
+
+        $leaderboard->scores = $leaderboard->scores + 10;
+
+        $leaderboard->save();
+      }else {
+        $leaderboard = new Leaderboard();
+
+        $leaderboard->student_id = $student_id;
+        $leaderboard->scores = 10;
+        $leaderboard->save();
+      }
     }
     exit;
   }
