@@ -345,7 +345,7 @@
 
               <div class="slider-single">
 
-                  <a href="http://localhost/drone_circuit_1_d/drone_circuit_1_d?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Arena.png') }}" alt="1" /></a>
+                  <a href="http://161.35.227.188/drone_tutorial?secret={{base64_encode(auth()->user()->ic_number)}}"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Arena.png') }}" alt="1" /></a>
                   <!-- <h1 class="slider-single-title">Introduction - Tutorial</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
