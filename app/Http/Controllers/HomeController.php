@@ -58,11 +58,11 @@ class HomeController extends Controller
         $quiz_progress = Student_Quiz::where('result_status', "Lulus")->where('student_id', $student_id)->distinct('quiz_id')->count();
         $quiz_progress = ($quiz_progress/10) * 100;
 
-        // $game_progress = Student_Game::where('game_id', $game_id)->count();
-        // $game_progress = ($game_progress/10) * 100;
+        $game_progress = Student_Game::where('student_id', $student_id)->distinct('game_id')->count();
+        $game_progress = ($game_progress/10) * 100;
 
 
-        return view('home', compact('announcement','lesson_progress','quiz_progress', 'splitName'));
+        return view('home', compact('announcement','lesson_progress','quiz_progress', 'game_progress', 'splitName'));
       }else {
         $student_id = Student::create([
           'user_id' => Auth::user()->id,
@@ -75,8 +75,11 @@ class HomeController extends Controller
         $quiz_progress = Student_Quiz::where('result_status', "Lulus")->where('student_id', $student_id)->distinct('quiz_id')->count();
         $quiz_progress = ($quiz_progress/10) * 100;
 
+        $game_progress = Student_Game::where('student_id', $student_id)->distinct('game_id')->count();
+        $game_progress = ($game_progress/10) * 100;
 
-        return view('home', compact('announcement','lesson_progress','quiz_progress','splitName'));
+
+        return view('home', compact('announcement','lesson_progress','quiz_progress','game_progress', 'splitName'));
       }
 
     }

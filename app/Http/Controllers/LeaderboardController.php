@@ -62,21 +62,21 @@ class LeaderboardController extends Controller
     //   ->get();
 
     $student = DB::table('students')->select(DB::raw('sum(students_games.student_point) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
-      ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
-      ->join("users", "users.id", "=", "students.user_id")
-      ->groupBy("students.id")
-      ->orderBy("total_points", "DESC")
-      ->limit(10)
-      ->get();
+        ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
+        ->join("users", "users.id", "=", "students.user_id")
+        ->groupBy("students.id")
+        ->orderBy("total_points", "DESC")
+        ->limit(10)
+        ->get();
 
       // dd($student);
 
-    $all_students =  DB::table('students')->select(DB::raw('sum(students_games.student_point) as total_points, users.id as user_id'))
-      ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
-      ->join("users", "users.id", "=", "students.user_id")
-      ->groupBy("students.id")
-      ->orderBy("total_points", "DESC")
-      ->get();
+      $all_students =  DB::table('students')->select(DB::raw('sum(students_games.student_point) as total_points, users.id as user_id'))
+       ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
+       ->join("users", "users.id", "=", "students.user_id")
+       ->groupBy("students.id")
+       ->orderBy("total_points", "DESC")
+       ->get();
 
     $current_user_ranking = 0;
 
@@ -99,7 +99,7 @@ class LeaderboardController extends Controller
   }
 
   public function create($data, $total_mark)
-  {
+ {
     return Leaderboard::Create([
       'student_id' => $data->id,
       'scores' => $total_mark,
