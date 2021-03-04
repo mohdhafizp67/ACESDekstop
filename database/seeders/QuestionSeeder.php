@@ -5293,7 +5293,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Mengumpulkan data kuantitatif yang sesuai, membantu membuat kesimpulan yang sah ',
+          'answer' => 'Untuk bermain permainan video',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '112', // ikut id soalan
@@ -5302,7 +5302,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Masukkan, hadirkan dan bandingkan data yang dikumpulkan ',
+          'answer' => 'Untuk menonton televisyen tanpa gangguan',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '112',
@@ -5320,7 +5320,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Anggarkan data pendapatan, nyatakan kejayaan atau kegagalan merancang',
+          'answer' => 'Untuk memanggil hujan',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '112',
@@ -5359,7 +5359,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Awan berasingan ',
+          'answer' => 'Awan kumulonimbus',
           'status' => 'True',
           'language' => 'bm',
           'question_id' => '113',
@@ -5389,7 +5389,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'pelaburan infrastruktur sifar, infrastruktur tepat pada waktunya',
+          'answer' => 'pelaburan infrastruktur sifar',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '114', // ikut id soalan
@@ -5398,7 +5398,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Penyediaan cepat dan mudah, sistem organisasi yang lancar, persekitaran pengurusan tunggal',
+          'answer' => 'Penyediaan cepat dan mudah',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '114',
@@ -5416,7 +5416,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Senibina awan yang dapat dikira, memberikan dinamika beban kerja yang dapat dikendalikan',
+          'answer' => 'Memberi perkhidmatan percuma',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '114',
@@ -5455,7 +5455,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Ketidakselarasan dalam menyesuaikan produk',
+          'answer' => 'Akses internet diperlukan',
           'status' => 'True',
           'language' => 'bm',
           'question_id' => '115',
@@ -5503,7 +5503,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Analisis video dan gambar',
+          'answer' => 'Bermain permainan video',
           'status' => 'True',
           'language' => 'bm',
           'question_id' => '116',
@@ -5533,7 +5533,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Microsoft Azure',
+          'answer' => 'Paint',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '117', // ikut id soalan
@@ -5542,7 +5542,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Google Chrome',
+          'answer' => 'Google Classroom',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '117',
@@ -5599,7 +5599,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Google Docs',
+          'answer' => 'Microsoft Word',
           'status' => 'True',
           'language' => 'bm',
           'question_id' => '118',
@@ -7217,7 +7217,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Seorang pakar yang membuat program perisian yang membolehkan pengguna melakukan tugas tertentu pada pelbagai peranti, seperti komputer atau peranti mudah alih. Mereka bertanggung jawab untuk keseluruhan pengembangan, pengujian, dan penyelenggaraan perisian',
+          'answer' => 'Seorang pakar yang membuat program perisian yang membolehkan pengguna melakukan tugas tertentu pada pelbagai peranti',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '152', // ikut id soalan
@@ -7226,7 +7226,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Seorang pakar yang menganalisis dan menilai keperluan data pengguna. Mereka mengembangkan dan meningkatkan sumber data yang digunakan untuk menyimpan dan mengambil maklumat kritikal',
+          'answer' => 'Seorang pakar yang menganalisis dan menilai keperluan data pengguna',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '152',
@@ -7244,7 +7244,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Seorang pakar yang bertanggungjawab merancang, mengembangkan, dan menguji komponen komputer, seperti papan litar, penghala, dan peranti memori',
+          'answer' => 'Seorang pakar yang bertanggungjawab merancang, mengembangkan, dan menguji komponen komputer',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '152',
@@ -7418,7 +7418,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Proses mencipta objek dan watak untuk permainan, animasi, filem, projek kejuruteraan, projek realiti dan reka bentuk maya dan augmented',
+          'answer' => 'Proses mencipta objek dan watak untuk permainan, animasi dan filem',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '156',
@@ -7505,7 +7505,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Penyelesaian yang dioptimumkan diperoleh',
+          'answer' => 'Murah dan senang digunakan',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '158', // ikut id soalan
@@ -7553,7 +7553,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Minit',
+          'answer' => 'Saat',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '159', // ikut id soalan
@@ -8700,7 +8700,7 @@ class QuestionSeeder extends Seeder
       DB::table('question_banks')-> insert(                 //start
         [
           'id' => '183',               //bil soalan
-          'question' => 'Komponen yang memberi robot keupayaan untuk berinteraksi dengan persekitarannya ialah :',
+          'question' => 'Apakah nama robot Malaysia pertama?',
           'status' => '1',
           'language' => 'bm',             // biar
           'lesson_id' => '11',         //lesson
@@ -8709,7 +8709,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Sensor',
+          'answer' => 'Sophia',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '183', // ikut id soalan
@@ -8718,7 +8718,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Penggerak',
+          'answer' => 'Siri',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '183',
@@ -8727,7 +8727,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Manipulator',
+          'answer' => 'Adam',
           'status' => 'True',
           'language' => 'bm',
           'question_id' => '183',
@@ -8736,7 +8736,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Suis',
+          'answer' => 'Cortana',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '183',
@@ -8748,7 +8748,7 @@ class QuestionSeeder extends Seeder
       DB::table('question_banks')-> insert(                 //start
         [
           'id' => '184',               //bil soalan
-          'question' => 'Mengumpulkan input dari persekitaran dan memberikan maklumat kepada robot untuk bertindak balas',
+          'question' => 'Tenaga suria menjana elektrik dari sumber apa?',
           'status' => '1',
           'language' => 'bm',             // biar
           'lesson_id' => '11',         //lesson
@@ -8757,7 +8757,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Manipulator',
+          'answer' => 'Angin',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '184', // ikut id soalan
@@ -8766,7 +8766,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Camera',
+          'answer' => 'Air',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '184',
@@ -8775,7 +8775,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Sensor',
+          'answer' => 'Matahari',
           'status' => 'True',
           'language' => 'bm',
           'question_id' => '184',
@@ -8784,7 +8784,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Papan induk',
+          'answer' => 'Tenaga panas bumi',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '184',
@@ -8796,7 +8796,7 @@ class QuestionSeeder extends Seeder
       DB::table('question_banks')-> insert(                 //start
         [
           'id' => '185',               //bil soalan
-          'question' => 'Subsistem robotik yang menyelaraskan dan mengawal semua komponen lain. Ia merupakan otak robot',
+          'question' => 'Beberapa robot digunakan untuk bekerja di bunker penyimpanan nuklear di mana tahap radiasi yang tinggi akan mempengaruhi pekerja manusia secara negatif. Apa yang dilengkapi robot ini?',
           'status' => '1',
           'language' => 'bm',             // biar
           'lesson_id' => '11',         //lesson
@@ -8805,7 +8805,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Sensor',
+          'answer' => 'Laser',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '185', // ikut id soalan
@@ -8814,7 +8814,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Bahagian Mekanikal',
+          'answer' => 'Pembuat kopi',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '185',
@@ -8823,7 +8823,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Mikrokontroler Cortex',
+          'answer' => 'Sarung tangan anti-radiasi',
           'status' => 'True',
           'language' => 'bm',
           'question_id' => '185',
@@ -8832,7 +8832,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Komputer',
+          'answer' => 'Lampu suluh',
           'status' => 'False',
           'language' => 'bm',
           'question_id' => '185',
@@ -10773,7 +10773,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Automation',
+          'answer' => 'Imitation',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '226', // ikut id soalan
@@ -10782,7 +10782,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Simulation',
+          'answer' => 'Emulation',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '226',
@@ -10791,7 +10791,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'All answer stated',
+          'answer' => 'Automation',
           'status' => 'True',
           'language' => 'en',
           'question_id' => '226',
@@ -10800,7 +10800,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'System integration',
+          'answer' => 'System analysis',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '226',
@@ -10820,7 +10820,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'More systematic management of input and output',
+          'answer' => 'Increase in product cost',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '227', // ikut id soalan
@@ -10829,7 +10829,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Improvement in the standard of living of workers',
+          'answer' => 'Low standard living of workers',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '227',
@@ -10838,7 +10838,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => ' All answer stated',
+          'answer' => ' Changing the future of career world and the workers',
           'status' => 'True',
           'language' => 'en',
           'question_id' => '227',
@@ -10847,7 +10847,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Changing the future of career world and the workers',
+          'answer' => 'No change occur',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '227',
@@ -11154,7 +11154,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Enabled self-controlling',
+          'answer' => 'Enabled manual control',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '234', // ikut id soalan
@@ -11163,7 +11163,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Increase efficiency',
+          'answer' => 'Increase problem in workplace',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '234',
@@ -11172,7 +11172,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'All answer stated',
+          'answer' => 'Increase efficiency',
           'status' => 'True',
           'language' => 'en',
           'question_id' => '234',
@@ -11181,7 +11181,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Reduce complexity',
+          'answer' => 'Increase complexity',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '234',
@@ -11590,7 +11590,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'IOT',
+          'answer' => 'Smart Phone,Smart house',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '243', // ikut id soalan
@@ -11599,7 +11599,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Simulation',
+          'answer' => 'Automatic cars',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '243',
@@ -11608,7 +11608,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'All answer stated',
+          'answer' => 'IOT, Simulation,Autonomous Robot',
           'status' => 'True',
           'language' => 'en',
           'question_id' => '243',
@@ -11617,7 +11617,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Autonomous Robot',
+          'answer' => 'Robotic, RFID, Touch & Go',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '243',
@@ -13261,7 +13261,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'All answer stated',
+          'answer' => 'Army and doctors',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '277',
@@ -14344,7 +14344,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Smartphones',
+          'answer' => 'Water bottle,landline telephone ',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '300', // ikut id soalan
@@ -14353,7 +14353,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Smartwatches',
+          'answer' => 'Microphone, Headphone',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '300',
@@ -14362,7 +14362,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'All answer stated',
+          'answer' => 'Smartphones,Smartwatches,Refrigerators ',
           'status' => 'True',
           'language' => 'en',
           'question_id' => '300',
@@ -14371,7 +14371,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Refrigerators',
+          'answer' => 'Personal Stationery',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '300',
@@ -14585,7 +14585,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Structured',
+          'answer' => 'PDF',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '305', // ikut id soalan
@@ -14594,7 +14594,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Unstructured',
+          'answer' => 'Word',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '305',
@@ -14603,7 +14603,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'All answer stated',
+          'answer' => 'Structured, Unstructured',
           'status' => 'True',
           'language' => 'en',
           'question_id' => '305',
@@ -14612,7 +14612,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'Semi-structured',
+          'answer' => 'Excel',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '305',
@@ -15395,7 +15395,7 @@ class QuestionSeeder extends Seeder
 
            DB::table('answer_banks')-> insert(
              [
-              'answer' => 'Credit Card Numbers',
+              'answer' => 'Your examination marks',
               'status' => 'False',
               'language' => 'en',
               'question_id' => '322', // ikut id soalan
@@ -15404,7 +15404,7 @@ class QuestionSeeder extends Seeder
 
            DB::table('answer_banks')-> insert(
              [
-              'answer' => 'Contact Information',
+              'answer' => 'Pet information',
               'status' => 'False',
               'language' => 'en',
               'question_id' => '322',
@@ -15413,7 +15413,7 @@ class QuestionSeeder extends Seeder
 
            DB::table('answer_banks')-> insert(
              [
-              'answer' => 'All answer stated',
+              'answer' => 'Contact Information',
               'status' => 'True',
               'language' => 'en',
               'question_id' => '322',
@@ -15422,7 +15422,7 @@ class QuestionSeeder extends Seeder
 
            DB::table('answer_banks')-> insert(
              [
-              'answer' => 'Medical Information',
+              'answer' => 'Information Technology',
               'status' => 'False',
               'language' => 'en',
               'question_id' => '322',
@@ -16512,7 +16512,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'All answer stated',
+                   'answer' => 'Using Windows 10',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '345',
@@ -16700,7 +16700,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'All answer stated',
+                   'answer' => 'No disadvantage',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '349',
@@ -16814,7 +16814,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'Collecting appropriate quantitative data, helps in drawing valid inferences',
+                   'answer' => 'Playing games',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '352', // ikut id soalan
@@ -16823,7 +16823,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'Input, present and compare collected data',
+                   'answer' => 'To watch television with ease',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '352',
@@ -16841,7 +16841,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'Estimate income data, indicate success or failure of planning',
+                   'answer' => 'To call for the rain',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '352',
@@ -16879,7 +16879,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'Segregated cloud',
+                   'answer' => 'Cumulonimbus cloud',
                    'status' => 'True',
                    'language' => 'en',
                    'question_id' => '353',
@@ -16908,7 +16908,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'Zero infrastructure investment, just-in-time infrastructure',
+                   'answer' => 'Zero infrastructure investment',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '354', // ikut id soalan
@@ -16917,7 +16917,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'Quick and easy setup, smooth organization system, single management environment',
+                   'answer' => 'Quick and easy setup',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '354',
@@ -16935,7 +16935,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'Calculable cloud architecture, provide manageable workload dynamics',
+                   'answer' => 'Provide free services',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '354',
@@ -16973,7 +16973,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'Inflexibility in customizing products',
+                   'answer' => 'Internet access is required',
                    'status' => 'True',
                    'language' => 'en',
                    'question_id' => '355',
@@ -17020,7 +17020,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'Video and image analysis',
+                   'answer' => 'Playing games',
                    'status' => 'True',
                    'language' => 'en',
                    'question_id' => '356',
@@ -17049,7 +17049,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'Microsoft Azure',
+                   'answer' => 'Paint',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '357', // ikut id soalan
@@ -17058,7 +17058,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'Google Chrome',
+                   'answer' => 'Google Classroom',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '357',
@@ -17076,7 +17076,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'All answer stated',
+                   'answer' => 'Microsoft Word',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '357',
@@ -17114,7 +17114,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'Google Docs',
+                   'answer' => 'Microsoft Word',
                    'status' => 'True',
                    'language' => 'en',
                    'question_id' => '358',
@@ -17283,7 +17283,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                    'answer' => 'Rapid prototyping',
+                    'answer' => 'Prototyping',
                     'status' => 'False',
                     'language' => 'en',
                     'question_id' => '362', // ikut id soalan
@@ -17292,7 +17292,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                    'answer' => 'Layer manufacturing',
+                    'answer' => 'Layer Cutting',
                     'status' => 'False',
                     'language' => 'en',
                     'question_id' => '362',
@@ -17301,7 +17301,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                    'answer' => 'All answer stated',
+                    'answer' => 'Layer manufacturing',
                     'status' => 'True',
                     'language' => 'en',
                     'question_id' => '362',
@@ -17310,7 +17310,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                    'answer' => 'Direct cad manufacturing',
+                    'answer' => 'Laser Cutting',
                     'status' => 'False',
                     'language' => 'en',
                     'question_id' => '362',
@@ -17988,7 +17988,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
               [
-                'answer' => 'Architecture',
+                'answer' => 'Car parts',
                 'status' => 'False',
                 'language' => 'en',
                 'question_id' => '377', // ikut id soalan
@@ -18006,7 +18006,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
               [
-                'answer' => 'All answer stated',
+                'answer' => 'Medical,Architecture',
                 'status' => 'True',
                 'language' => 'en',
                 'question_id' => '377',
@@ -18015,7 +18015,7 @@ class QuestionSeeder extends Seeder
 
        DB::table('answer_banks')-> insert(
                [
-                  'answer' => 'Medical',
+                  'answer' => 'Building a cargo ship',
                   'status' => 'False',
                   'language' => 'en',
                   'question_id' => '377',
@@ -18693,7 +18693,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'An expert that create software programs that allow users to perform specific tasks on various devices, such as computers or mobile devices. They are responsible for the entire development, testing, and maintenance of software',
+                      'answer' => 'An expert that create software programs that allow users to perform specific tasks on various devices, such as computers or mobile devices. ',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '392', // ikut id soalan
@@ -18702,7 +18702,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'An expert that analyse and evaluate the data needs of users. They develop and improve the data resources used to store and retrieve critical information',
+                      'answer' => 'An expert that analyse and evaluate the data needs of users. ',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '392',
@@ -18720,7 +18720,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'An expert that responsible for designing, developing, and testing computer components, such as circuit boards, routers, and memory devices',
+                      'answer' => 'An expert that responsible for designing, developing, and testing computer components',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '392',
@@ -18787,7 +18787,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'Anylogic',
+                      'answer' => 'Adobe premiere',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '394', // ikut id soalan
@@ -18796,7 +18796,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'Matlab',
+                      'answer' => 'Photoshop',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '394',
@@ -18805,7 +18805,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'All answer stated',
+                      'answer' => 'Matlab',
                       'status' => 'True',
                       'language' => 'en',
                       'question_id' => '394',
@@ -18814,7 +18814,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'Simscale',
+                      'answer' => 'Steam app',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '394',
@@ -18890,7 +18890,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                    'answer' => 'The process of creating objects and characters for games, animations, movies, engineering projects, virtual and augmented reality and design projects',
+                    'answer' => 'The process of creating objects and characters for games, animations and movies',
                     'status' => 'False',
                     'language' => 'en',
                     'question_id' => '396',
@@ -18928,7 +18928,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'Tools for simulating the movement of water',
+                  'answer' => 'The simulation of having a heart attack',
                   'status' => 'False',
                   'language' => 'en',
                   'question_id' => '397', // ikut id soalan
@@ -18937,7 +18937,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'The simulation of evolution of a galaxy',
+                  'answer' => 'The simulation of evolution of a car',
                   'status' => 'False',
                   'language' => 'en',
                   'question_id' => '397',
@@ -18946,7 +18946,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'All answer stated',
+                  'answer' => 'Tools for simulating the movement of water',
                   'status' => 'True',
                   'language' => 'en',
                   'question_id' => '397',
@@ -18955,7 +18955,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'A computer simulation in medical field',
+                  'answer' => 'A computer simulation in IT field',
                   'status' => 'False',
                   'language' => 'en',
                   'question_id' => '397',
@@ -18975,7 +18975,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'Optimized solutions are obtained',
+                  'answer' => 'Cheap and easy to use',
                   'status' => 'False',
                   'language' => 'en',
                   'question_id' => '398', // ikut id soalan
@@ -19002,7 +19002,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'All answer stated',
+                  'answer' => 'No valid reasons',
                   'status' => 'False',
                   'language' => 'en',
                   'question_id' => '398',
@@ -19022,7 +19022,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'Warp speed',
+                  'answer' => 'Seconds',
                   'status' => 'False',
                   'language' => 'en',
                   'question_id' => '399', // ikut id soalan
@@ -19096,7 +19096,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
               [
-                'answer' => 'All answer stated',
+                'answer' => 'To do housechores automatically',
                 'status' => 'False',
                 'language' => 'en',
                 'question_id' => '400',
@@ -19543,7 +19543,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'Grow and upgrade easily',
+                  'answer' => 'Hard to Grow and upgrade ',
                   'status' => 'False',
                   'language' => 'en',
                   'question_id' => '410', // ikut id soalan
@@ -19552,7 +19552,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'Improve the speed and accuracy of your business processes',
+                  'answer' => 'Decrease the speed and accuracy of your business processes',
                   'status' => 'False',
                   'language' => 'en',
                   'question_id' => '410',
@@ -19561,7 +19561,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'All answer stated',
+                  'answer' => 'Improve the speed and accuracy of your business processes',
                   'status' => 'True',
                   'language' => 'en',
                   'question_id' => '410',
@@ -19570,7 +19570,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'Create happy, returning customers',
+                  'answer' => 'Customers loss interest',
                   'status' => 'False',
                   'language' => 'en',
                   'question_id' => '410',
@@ -19637,7 +19637,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                    'answer' => 'Point to point integration',
+                    'answer' => 'Point integration',
                     'status' => 'False',
                     'language' => 'en',
                     'question_id' => '412', // ikut id soalan
@@ -19646,7 +19646,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                    'answer' => 'Horizontal integration',
+                    'answer' => 'Vertical integration',
                     'status' => 'False',
                     'language' => 'en',
                     'question_id' => '412',
@@ -19655,7 +19655,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                    'answer' => 'All answer stated',
+                    'answer' => 'Point to point integration',
                     'status' => 'True',
                     'language' => 'en',
                     'question_id' => '412',
@@ -19664,7 +19664,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                    'answer' => 'Star integration',
+                    'answer' => 'Moon integration',
                     'status' => 'False',
                     'language' => 'en',
                     'question_id' => '412',
@@ -19872,7 +19872,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'Help to detect defect early',
+                      'answer' => 'Help to detect defect later',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '417', // ikut id soalan
@@ -19881,7 +19881,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'To correct data flow',
+                      'answer' => 'To increase data flow',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '417',
@@ -19890,7 +19890,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'All answer stated',
+                      'answer' => 'Help to detect defect early',
                       'status' => 'True',
                       'language' => 'en',
                       'question_id' => '417',
@@ -19899,7 +19899,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'To utilize memory usage',
+                      'answer' => 'To maximize memory usage',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '417',
@@ -20040,7 +20040,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'All answer stated',
+                      'answer' => 'To increase the productivity of work',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '420',
@@ -20146,7 +20146,7 @@ class QuestionSeeder extends Seeder
                 DB::table('question_banks')-> insert(                 //start
                         [
                           'id' => '423',               //bil soalan
-                          'question' => 'Components that provide the robot with the ability to interact with its environment.',
+                          'question' => 'What is the name of the first Malaysian robot?',
                           'status' => '1',
                           'language' => 'en',             // biar
                           'lesson_id' => '11',         //lesson
@@ -20155,7 +20155,7 @@ class QuestionSeeder extends Seeder
 
               DB::table('answer_banks')-> insert(
                       [
-                        'answer' => 'Sensors',
+                        'answer' => 'Sophia',
                         'status' => 'False',
                         'language' => 'en',
                         'question_id' => '423', // ikut id soalan
@@ -20164,7 +20164,7 @@ class QuestionSeeder extends Seeder
 
               DB::table('answer_banks')-> insert(
                       [
-                        'answer' => 'Actuators',
+                        'answer' => 'Siri',
                         'status' => 'False',
                         'language' => 'en',
                         'question_id' => '423',
@@ -20173,7 +20173,7 @@ class QuestionSeeder extends Seeder
 
               DB::table('answer_banks')-> insert(
                       [
-                        'answer' => 'Manipulators',
+                        'answer' => 'Adam',
                         'status' => 'True',
                         'language' => 'en',
                         'question_id' => '423',
@@ -20182,7 +20182,7 @@ class QuestionSeeder extends Seeder
 
               DB::table('answer_banks')-> insert(
                       [
-                        'answer' => 'Bumper Switch',
+                        'answer' => 'Cortana',
                         'status' => 'False',
                         'language' => 'en',
                         'question_id' => '423',
@@ -20193,7 +20193,7 @@ class QuestionSeeder extends Seeder
               DB::table('question_banks')-> insert(                 //start
                       [
                         'id' => '424',               //bil soalan
-                        'question' => 'These collect input from the environment and provide information that the robot can respond to.',
+                        'question' => 'Solar power generates electricity from what source?',
                         'status' => '1',
                         'language' => 'en',             // biar
                         'lesson_id' => '11',         //lesson
@@ -20202,7 +20202,7 @@ class QuestionSeeder extends Seeder
 
               DB::table('answer_banks')-> insert(
                       [
-                        'answer' => 'Manipulators',
+                        'answer' => 'Wind',
                         'status' => 'False',
                         'language' => 'en',
                         'question_id' => '424', // ikut id soalan
@@ -20211,7 +20211,7 @@ class QuestionSeeder extends Seeder
 
               DB::table('answer_banks')-> insert(
                       [
-                        'answer' => 'Drivetrain',
+                        'answer' => 'Water',
                         'status' => 'False',
                         'language' => 'en',
                         'question_id' => '424',
@@ -20220,7 +20220,7 @@ class QuestionSeeder extends Seeder
 
               DB::table('answer_banks')-> insert(
                       [
-                        'answer' => 'Sensors',
+                        'answer' => 'Sun',
                         'status' => 'True',
                         'language' => 'en',
                         'question_id' => '424',
@@ -20229,7 +20229,7 @@ class QuestionSeeder extends Seeder
 
               DB::table('answer_banks')-> insert(
                       [
-                        'answer' => 'Subsystem',
+                        'answer' => 'Geothermal energy',
                         'status' => 'False',
                         'language' => 'en',
                         'question_id' => '424',
@@ -20240,7 +20240,7 @@ class QuestionSeeder extends Seeder
               DB::table('question_banks')-> insert(                 //start
                       [
                         'id' => '425',               //bil soalan
-                        'question' => 'The robotics subsystem that coordinates and controls all the other components. It is effectively the robot’s brain.',
+                        'question' => 'Some robots are used to work in nuclear storage bunkers where high radiation levels would negatively affect human workers. What are these robots equipped with?',
                         'status' => '1',
                         'language' => 'en',             // biar
                         'lesson_id' => '11',         //lesson
@@ -20249,7 +20249,7 @@ class QuestionSeeder extends Seeder
 
               DB::table('answer_banks')-> insert(
                       [
-                        'answer' => 'Sensors',
+                        'answer' => 'Lasers',
                         'status' => 'False',
                         'language' => 'en',
                         'question_id' => '425', // ikut id soalan
@@ -20258,7 +20258,7 @@ class QuestionSeeder extends Seeder
 
               DB::table('answer_banks')-> insert(
                       [
-                        'answer' => 'Mechanical Parts',
+                        'answer' => 'Coffee makers',
                         'status' => 'False',
                         'language' => 'en',
                         'question_id' => '425',
@@ -20267,7 +20267,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'Cortex Microcontroller',
+                      'answer' => 'Anti-radiation gloves',
                       'status' => 'True',
                       'language' => 'en',
                       'question_id' => '425',
@@ -20276,7 +20276,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'Line Follower',
+                      'answer' => 'Torchlight',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '425',
