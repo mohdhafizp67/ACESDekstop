@@ -18,8 +18,8 @@ class CreateGamesTable extends Migration
             $table->timestamps();
             $table->string('game_level')->nullable();
             $table->string('game_type')->nullable();
-            $table->unsignedBigInteger('lesson_id');
-            $table->foreign('lesson_id')->references('id')->on('lessons');
+            // $table->unsignedBigInteger('lesson_id');
+            // $table->foreign('lesson_id')->references('id')->on('lessons');
         });
     }
 

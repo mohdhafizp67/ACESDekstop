@@ -216,12 +216,12 @@ canvas {
           </div>
           <div class="col-md-3">
             <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
-              <div class="text-block">
+              <!-- <div class="text-block">
                 <img src="{{ asset('concept/images/coming.png') }}" style="width: 170px;">
-              </div>
+              </div> -->
               <div class="card-body list-group" style="padding: 5%;">
                 <div class="progressbar1">
-                <div class="second circle" data-percent="0">
+                <div class="second circle" data-percent="{{$game_progress}}">
                   <strong></strong>
                   <span>GAME</span>
                 </div>

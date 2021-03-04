@@ -119,6 +119,9 @@ Route::get('/game/tutorial', [App\Http\Controllers\GameController::class, 'tutor
 
 Route::get('/game/test', [App\Http\Controllers\GameController::class, 'test'])->name('user.game.test');
 
+Route::get('/game/demo/ajax/update-game/{game_id}', [App\Http\Controllers\GameController::class, 'update_game'])->name('game.ajax.update');
+
+
 
 
 Route::get('/feedback', [App\Http\Controllers\UserController::class, 'feedback'])->name('others.feedback');
