@@ -221,7 +221,7 @@ canvas {
               </div>
               <div class="card-body list-group" style="padding: 5%;">
                 <div class="progressbar1">
-                <div class="second circle" data-percent="0">
+                <div class="second circle" data-percent="{{$game_progress}}">
                   <strong></strong>
                   <span>GAME</span>
                 </div>
