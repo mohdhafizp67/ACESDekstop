@@ -86,7 +86,7 @@ a {
 
 
 </div>
-  <div class="row" style="padding-bottom: 8%;">
+  <div class="row" style="padding-bottom: 0%;">
     <div class="col-md-4" style="padding:5%;">
       <p class="text-center" style="color: #fff; padding-bottom: 5%; padding-top: 10%; text-transform: uppercase; font-size: 80%; text-align: end;">
         {{ __('landing_page.description') }}
@@ -196,9 +196,9 @@ a {
 
     </div>
 
-    <div class="col-md-7" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 95% 100%;">
+    <div class="col-md-7" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 95% 90%;">
 
-      <h4 style="color: #fff; font-size: 200%; text-align: center; text-transform: uppercase; font-weight: bold; padding-top: 10%;">
+      <h4 style="color: #fff; font-size: 200%; text-align: center; text-transform: uppercase; font-weight: bold; padding-top: 5%;">
         {{ __('landing_page.login.title') }}
       </h4>
 
