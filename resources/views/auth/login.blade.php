@@ -74,10 +74,10 @@ a {
   <div class="col-md-2">
 
   </div>
-  <div class="col-md-5" style="text-align: center;padding-top: 5%;padding-left: 10%;">
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; color: #fff;width: 40%;"><a href="{{-- route('locale.setting', 'en') --}}">ENG</a></button>
+  <div class="col-md-5" style="text-align: center;padding-top: 4%;padding-left: 10%;">
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; color: #fff;width: 40%;padding: 3%"><a href="{{-- route('locale.setting', 'en') --}}">ENG</a></button>
 
-    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; color: #fff;width: 40%;"><a href="{{-- route('locale.setting', 'my') --}}">BM</a></button>
+    <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; color: #fff;width: 40%;padding: 3%"><a href="{{-- route('locale.setting', 'my') --}}">BM</a></button>
 
   </div>
   <div class="col-md-1">
