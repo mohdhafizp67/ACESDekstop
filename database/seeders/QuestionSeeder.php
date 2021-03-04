@@ -10791,7 +10791,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'All of the above',
+          'answer' => 'All answer stated',
           'status' => 'True',
           'language' => 'en',
           'question_id' => '226',
@@ -10838,7 +10838,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => ' All of the above',
+          'answer' => ' All answer stated',
           'status' => 'True',
           'language' => 'en',
           'question_id' => '227',
@@ -11172,7 +11172,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'All of the above',
+          'answer' => 'All answer stated',
           'status' => 'True',
           'language' => 'en',
           'question_id' => '234',
@@ -11608,7 +11608,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'All of the above',
+          'answer' => 'All answer stated',
           'status' => 'True',
           'language' => 'en',
           'question_id' => '243',
@@ -13261,7 +13261,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'All of the above',
+          'answer' => 'All answer stated',
           'status' => 'False',
           'language' => 'en',
           'question_id' => '277',
@@ -14362,7 +14362,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'All of the above',
+          'answer' => 'All answer stated',
           'status' => 'True',
           'language' => 'en',
           'question_id' => '300',
@@ -14603,7 +14603,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
         [
-          'answer' => 'All of the above',
+          'answer' => 'All answer stated',
           'status' => 'True',
           'language' => 'en',
           'question_id' => '305',
@@ -15413,7 +15413,7 @@ class QuestionSeeder extends Seeder
 
            DB::table('answer_banks')-> insert(
              [
-              'answer' => 'All of the above',
+              'answer' => 'All answer stated',
               'status' => 'True',
               'language' => 'en',
               'question_id' => '322',
@@ -16512,7 +16512,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'All of the above',
+                   'answer' => 'All answer stated',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '345',
@@ -16700,7 +16700,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'All of the above',
+                   'answer' => 'All answer stated',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '349',
@@ -17076,7 +17076,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                   'answer' => 'All of the above',
+                   'answer' => 'All answer stated',
                    'status' => 'False',
                    'language' => 'en',
                    'question_id' => '357',
@@ -17301,7 +17301,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                    'answer' => 'All of the above',
+                    'answer' => 'All answer stated',
                     'status' => 'True',
                     'language' => 'en',
                     'question_id' => '362',
@@ -18006,7 +18006,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
               [
-                'answer' => 'All of the above',
+                'answer' => 'All answer stated',
                 'status' => 'True',
                 'language' => 'en',
                 'question_id' => '377',
@@ -18805,7 +18805,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'All of the above',
+                      'answer' => 'All answer stated',
                       'status' => 'True',
                       'language' => 'en',
                       'question_id' => '394',
@@ -18946,7 +18946,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'All of the above',
+                  'answer' => 'All answer stated',
                   'status' => 'True',
                   'language' => 'en',
                   'question_id' => '397',
@@ -19002,7 +19002,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'All of the above',
+                  'answer' => 'All answer stated',
                   'status' => 'False',
                   'language' => 'en',
                   'question_id' => '398',
@@ -19096,7 +19096,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
               [
-                'answer' => 'All of the above',
+                'answer' => 'All answer stated',
                 'status' => 'False',
                 'language' => 'en',
                 'question_id' => '400',
@@ -19561,7 +19561,7 @@ class QuestionSeeder extends Seeder
 
         DB::table('answer_banks')-> insert(
                 [
-                  'answer' => 'All of the above',
+                  'answer' => 'All answer stated',
                   'status' => 'True',
                   'language' => 'en',
                   'question_id' => '410',
@@ -19655,7 +19655,7 @@ class QuestionSeeder extends Seeder
 
           DB::table('answer_banks')-> insert(
                   [
-                    'answer' => 'All of the above',
+                    'answer' => 'All answer stated',
                     'status' => 'True',
                     'language' => 'en',
                     'question_id' => '412',
@@ -19890,7 +19890,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'All of the above',
+                      'answer' => 'All answer stated',
                       'status' => 'True',
                       'language' => 'en',
                       'question_id' => '417',
@@ -20040,7 +20040,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'All of the above',
+                      'answer' => 'All answer stated',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '420',
