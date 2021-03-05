@@ -70,7 +70,7 @@ class LeaderboardController extends Controller
     //     ->limit(10)
     //     ->get();
 
-      // dd($student);
+      dd($student);
 
       $all_students =  DB::table('students')->select(DB::raw('sum(students_games.student_point) as total_points, users.id as user_id'))
        ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
