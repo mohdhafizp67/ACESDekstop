@@ -366,7 +366,7 @@
                 <!-- <img alt="Bootstrap Image Preview" src="{{asset('concept/images/pelajaran/lokasi.jpg')}}" style="width: 100%; height: auto;"> -->
 
               <div class="w3-content w3-display-container">
-                <img class="career" src="{{asset('concept/images/pelajaran/cyber/cybercourses.jpeg')}}" style="width:100%">
+                <img class="career" src="{{asset('concept/images/pelajaran/courses/cybercourseshd.jpg')}}" style="width:100%">
 
 
 
