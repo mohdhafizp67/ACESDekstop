@@ -41,8 +41,18 @@ class Handler extends ExceptionHandler
 
     protected function unauthenticated($request, AuthenticationException $exception)
     {
-        return $request->expectsJson()
-            ? response()->json(['message' => $exception->getMessage()], 401)
-            : redirect()->guest(route('login'))->with("error","Session Expired. Please log back in.");
+        // return $request->expectsJson()
+        //     ? response()->json(['message' => $exception->getMessage()], 401)
+        //     : redirect()->guest(route('login'))->with("error","Session Expired. Please log back in.");
+
+        if ($e instanceof ModelNotFoundException) {
+            $e = new NotFoundHttpException($e->getMessage(), $e);
+        } elseif ($e instanceof AuthorizationException) {
+            $e = new AccessDeniedHttpException($e->getMessage(), $e);
+        } elseif ($e instanceof TokenMismatchException) {
+              return redirect()->route('login');
+        }
+
+        return $e;
     }
 }
