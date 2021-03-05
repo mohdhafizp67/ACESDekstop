@@ -119,7 +119,7 @@
             {{$data->state}}
           </td>
           <td style="color: #fff; font-size: 100%; font-weight: bold;">
-            {{$data->total_points ? $data->total_points : 0}}
+            {{ $data->total_points ? $data->total_points : 0 }}
           </td>
         </tr>
         @endforeach

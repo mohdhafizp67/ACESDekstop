@@ -10,7 +10,7 @@ use App\Models\AnswerBank;
 use App\Models\Lesson;
 use App\Models\Student_Lesson;
 
-
+use stdClass;
 use Illuminate\Http\Request;
 
 class LessonController extends Controller
@@ -306,29 +306,32 @@ class LessonController extends Controller
   }
 
   public function update_lesson1(){
+    $response = new stdClass();
+
     $student_id = Auth::user()->student->id;
+    // dd($student_id);
     $lesson_id = "1";
     $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
-    if($check_lesson_student == 0){
+    if($check_lesson_student == 0){ //kalau first time
       event($lesson_student_id = $this->create_lesson_student_1());
 
-      $find_leaderboard = Leaderboard::where('student_id', $student_id)->count();
-      // dd($find_leaderboard);
-      if($find_leaderboard != 0){
-        $find_leaderboard = Leaderboard::where('student_id', $student_id);
-
-        $leaderboard->scores = $leaderboard->scores + 10;
-
-        $leaderboard->save();
-      }else {
+      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
+      if(!$leaderboard){
         $leaderboard = new Leaderboard();
-
         $leaderboard->student_id = $student_id;
         $leaderboard->scores = 10;
         $leaderboard->save();
+
+        $response->success = true;
+        $response->message = "Student marks updated";
       }
+      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
+      dd($leaderboard);
+    }else {
+      $response->success = false;
+      $response->message = "Student exist";
     }
-    exit;
+    return response()->json($response);
   }
 
   public function create_lesson_student_1(){
