@@ -10,6 +10,7 @@ use App\Models\User;
 use App\Models\Student_Lesson;
 use App\Models\Student_Quiz;
 use App\Models\Student_Game;
+use App\Models\Leaderboard;
 
 
 
@@ -43,6 +44,39 @@ class HomeController extends Controller
 
       $first_name = $splitName[0];
       $last_name = !empty($splitName[1]) ? $splitName[1] : ''; // If last name doesn't exist, make it empty
+
+
+
+
+      //check student id
+      $student_checker = Student::where('user_id', Auth::user()->id)->count();
+
+      if($student_checker == 0){
+        //create student id
+        $student = new Student();
+
+        $student->user_id = Auth::user()->id;
+        $student->save();
+
+        //fetch student id
+        $student_id = Auth::user()->student->id;
+
+        //checking table leaderboard sama ada dah daftar ke blum
+        $find_leaderboard = Leaderboard::where('student_id', $student_id)->count();
+
+
+        //kalau 0 tak daftar, klau 1 dah daftar
+        if($find_leaderboard == 0){
+
+          //create leader board
+          $leaderboard = new Leaderboard();
+
+          //initialize data
+          $leaderboard->student_id = $student_id;
+          $leaderboard->scores = 0;
+          $leaderboard->save();
+        }
+      }
 
       // dd(count($splitName));
 
@@ -81,7 +115,6 @@ class HomeController extends Controller
 
         return view('home', compact('announcement','lesson_progress','quiz_progress','game_progress', 'splitName'));
       }
-
     }
 
 
