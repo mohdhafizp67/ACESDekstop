@@ -51,10 +51,10 @@ class LeaderboardController extends Controller
     // return view('activities.leaderboard', compact('student'));
 
 
-    $student = DB::table('students')->select(DB::raw('students_games.student_point,students_quizes.percentage,leaderboard.scores(students_games.student_point + students_quizes.percentage + leaderboard.scores) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
+    $student = DB::table('students')->select(DB::raw('students_games.student_point,students_quizes.percentage,leaderboards.scores(students_games.student_point + students_quizes.percentage + leaderboards.scores) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
       ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
       ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
-      ->leftJoin("leaderboard", "leaderboard.student_id", "=", "students.id")
+      ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
 
       ->join("users", "users.id", "=", "students.user_id")
 
