@@ -282,8 +282,23 @@ class LessonController extends Controller
     $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_2());
+
+      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
+      if(!$leaderboard){
+        $leaderboard = new Leaderboard();
+        $leaderboard->student_id = $student_id;
+        $leaderboard->scores = 10;
+        $leaderboard->save();
+
+        $response->success = true;
+        $response->message = "Student marks updated";
+      }
+      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
+    }else {
+      $response->success = false;
+      $response->message = "Student exist";
     }
-    exit;
+    return response()->json($response);
   }
 
   public function create_lesson_student_2()
@@ -326,7 +341,7 @@ class LessonController extends Controller
         $response->message = "Student marks updated";
       }
       $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-      dd($leaderboard);
+      // dd($leaderboard);
     }else {
       $response->success = false;
       $response->message = "Student exist";

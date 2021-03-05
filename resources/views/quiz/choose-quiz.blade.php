@@ -364,7 +364,7 @@
               </div>
 
               <div class="slider-single">
-                <a href="{{route('quiz.intro-start', 3)}}"><img class="slider-single-image" src="{{ asset('concept/images/kuiz/02AM.png') }}" alt="3" /></a>
+                <a href="{{route('quiz.intro-start', 3)}}"><img class="slider-single-image" src="{{ asset('concept/images/kuiz/additive.png') }}" alt="3" /></a>
 
 
                   <!-- <h1 class="slider-single-title">Internet of Things</h1> -->
