@@ -18,7 +18,7 @@ class CreateStudentsQuizesTable extends Migration
             $table->timestamps();
             $table->string('result')->nullable();
             $table->string('answered_question')->nullable();
-            $table->string('percentage')->nullable();
+            $table->string('percentage')->default(0);
             $table->string('result_status')->nullable();
             $table->unsignedBigInteger('student_id');
             $table->unsignedBigInteger('quiz_id');

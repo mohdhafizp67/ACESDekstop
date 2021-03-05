@@ -14,7 +14,7 @@ class AddTotalScoresToLeaderboardsTable extends Migration
     public function up()
     {
         Schema::table('leaderboards', function (Blueprint $table) {
-          $table->integer('scores')->nullable();
+          $table->integer('scores')->default(0);
         });
     }
 
