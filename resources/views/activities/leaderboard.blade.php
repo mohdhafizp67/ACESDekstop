@@ -104,7 +104,7 @@
           </td>
           <td style="text-align: end;padding-left:7%;">
             @if($data->profile_picture!= null)
-            <img src="{{ asset( $image_path = str_replace('public', 'storage',  $data->user->profile_picture)) }}" onError="this.src='http://161.35.227.188/ACES{{ ( $image_path = str_replace('public', 'storage',  $data->user->profile_picture)) }}';" class="profile-avatar" style="height:40px; width:40px;">
+            <img src="{{ asset( $image_path = str_replace('public', 'storage',  $data->profile_picture)) }}" onError="this.src='http://161.35.227.188/ACES{{ ( $image_path = str_replace('public', 'storage',  $data->profile_picture)) }}';" class="profile-avatar" style="height:40px; width:40px;">
             @else
             <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}"  class="profile-avatar" style="height:40px; width:40px;">
             @endif <br>
