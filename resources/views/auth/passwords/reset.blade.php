@@ -40,7 +40,7 @@
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
 
 
-<div class="row" style="padding-top: 8%;padding-bottom: 1%;">
+<div class="row" style="padding-top: 5%;padding-bottom: 1%;">
   <div class="col-md-7">
 
   </div>
@@ -57,7 +57,7 @@
 
   </div>
 </div>
-  <div class="row" style="padding: 1%;">
+  <div class="row" style="padding: 1%; padding-bottom: 5%;">
     <div class="col-md-4">
       <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; margin-top:-25%;"></center>
       <p class="text-center" style="color: #fff; padding-bottom: 5%; padding-top: 10%; text-transform: uppercase; font-size: 80%; text-align: end;">
