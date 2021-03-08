@@ -8,6 +8,12 @@ use App\Models\AnswerBank;
 use App\Models\Districts;
 use App\Models\Audit;
 use App\Models\Feedback;
+use App\Models\Student_Lesson;
+use App\Models\Student_Quiz;
+use App\Models\Student_Game;
+use App\Models\Leaderboard;
+use App\Models\Student;
+use DB;
 
 
 use Illuminate\Http\Request;
@@ -23,8 +29,37 @@ class AdminController extends Controller
     $totalStaffecerd = User::where('is_ecerdb_personnel', '1')->get()->count();
     $totalAdmin = User::where('is_admin', '1')->get()->count();
 
-    return view('home-admin', compact('totalUser','totalStudent','totalStaffecerd','totalAdmin'));
+
+    $student = DB::table('students')->select(DB::raw('students_games.student_point,students_quizes.percentage,leaderboards.scores, (IFNULL(students_games.student_point, 0) + IFNULL(students_quizes.percentage, 0) + IFNULL(leaderboards.scores, 0)) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
+      ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
+      ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
+      ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
+
+      ->join("users", "users.id", "=", "students.user_id")
+
+      ->orderBy("total_points", "DESC")
+      ->limit(10)
+      ->get();
+
+       $all_students =  DB::table('students')->select(DB::raw('students_games.student_point,students_quizes.percentage,leaderboards.scores, (IFNULL(students_games.student_point, 0) + IFNULL(students_quizes.percentage, 0) + IFNULL(leaderboards.scores, 0)) as total_points, users.id as user_id'))
+        ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
+        ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
+        ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
+        ->join("users", "users.id", "=", "students.user_id")
+        // ->groupBy("students.id")
+        ->orderBy("total_points", "DESC")
+        ->get();
+
+    $current_user_ranking = 0;
+
+    for ($i = 0; $i < count($all_students); $i++) {
+      if ($all_students[$i]->user_id == Auth::user()->id) {
+        $current_user_ranking = $i + 1;
+      }
+
+    return view('home-admin', compact('totalUser','totalStudent','totalStaffecerd','totalAdmin', 'student', 'current_user_ranking'));
   }
+}
 
   public function viewEditProfile()
   {

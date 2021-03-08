@@ -15,18 +15,18 @@ class AddForeignKeyIntoStudents extends Migration
     {
         Schema::table('students', function (Blueprint $table) {
           $table->unsignedBigInteger('user_id')->nullable();
-          $table->unsignedBigInteger('student_lesson_id')->nullable();
-          $table->unsignedBigInteger('student_quiz_id')->nullable();
-          $table->unsignedBigInteger('student_game_id')->nullable();
-          $table->unsignedBigInteger('leaderboard_id')->nullable();
-          $table->unsignedBigInteger('message_id')->nullable();
+          // $table->unsignedBigInteger('student_lesson_id')->nullable();
+          // $table->unsignedBigInteger('student_quiz_id')->nullable();
+          // $table->unsignedBigInteger('student_game_id')->nullable();
+          // $table->unsignedBigInteger('leaderboard_id')->nullable();
+          // $table->unsignedBigInteger('message_id')->nullable();
 
           $table->foreign('user_id')->references('id')->on('users');
-          $table->foreign('student_lesson_id')->references('id')->on('students_lessons');
-          $table->foreign('student_quiz_id')->references('id')->on('students_quizes');
-          $table->foreign('student_game_id')->references('id')->on('students_games');
-          $table->foreign('leaderboard_id')->references('id')->on('leaderboards');
-          $table->foreign('message_id')->references('id')->on('messages');
+          // $table->foreign('student_lesson_id')->references('id')->on('students_lessons');
+          // $table->foreign('student_quiz_id')->references('id')->on('students_quizes');
+          // $table->foreign('student_game_id')->references('id')->on('students_games');
+          // $table->foreign('leaderboard_id')->references('id')->on('leaderboards');
+          // $table->foreign('message_id')->references('id')->on('messages');
         });
     }
 

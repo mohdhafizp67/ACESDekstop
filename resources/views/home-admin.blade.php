@@ -100,78 +100,43 @@
                                           <table class="table">
                                               <thead class="bg-light">
                                                   <tr class="border-0">
-                                                      <th class="border-0">POSITION</th>
-                                                      <th class="border-0">PROFILE</th>
-                                                        <th class="border-0">STUDENT NAME</th>
-                                                      <th class="border-0">SCORE</th>
-                                                      <th class="border-0">PROGRESS</th>
-                                                      <th class="border-0">GRED</th>
+                                                      <th class="border-0">Raniking</th>
+                                                      <th class="border-0">Avatar</th>
+                                                        <th class="border-0">Name</th>
+                                                      <th class="border-0">School</th>
+                                                      <th class="border-0">State</th>
+                                                      <th class="border-0">Points</th>
 
 
                                                   </tr>
                                               </thead>
                                               <tbody>
+                                                @foreach($student as $data)
                                                   <tr>
-                                                      <td>1</td>
-                                                      <td>
-                                                          <div class="m-r-10"><img src="https://publichealth.uga.edu/wp-content/uploads/2020/01/Thomas-Cameron_Student_Profile.jpg" alt="user" class="rounded" width="45" height="45"></div>
-                                                      </td>
-                                                      <td>Adam Malik</td>
-                                                      <td>99</td>
-                                                      <td><div class="w3-light-grey w3-round">
-                                                        <div class="w3-container w3-blue w3-round" style="width:50%">75%</div>
-                                                      </div></td>
-                                                      <td>A</td>
+                                                    <td style="color: #000; font-size: 200%; text-align: left;font-weight: bold;">
+                                                      {{ $loop->index + 1  }}
+                                                    </td>
+                                                    <td style="text-align: left;">
+                                                      @if($data->profile_picture!= null)
+                                                      <img src="{{ asset( $image_path = str_replace('public', 'storage',  $data->profile_picture)) }}" onError="this.src='http://161.35.227.188/ACES{{ ( $image_path = str_replace('public', 'storage',  $data->profile_picture)) }}';" class="profile-avatar" style="height:40px; width:40px;">
+                                                      @else
+                                                      <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}"  class="profile-avatar" style="height:40px; width:40px;">
+                                                      @endif <br>
+                                                    </td>
+                                                    <td style="color: #000; font-size: 100%;">
+                                                      {{$data->name}}
+                                                    </td>
+                                                    <td style="color: #000; font-size: 100%;">
+                                                      {{$data->school}}
+                                                    </td>
+                                                    <td style="color: #000; font-size: 100%;">
+                                                      {{$data->state}}
+                                                    </td>
+                                                    <td style="color: #000; font-size: 100%; font-weight: bold;">
+                                                      {{ $data->total_points ? $data->total_points : 0 }}
+                                                    </td>
                                                   </tr>
-                                                  <tr>
-                                                      <td>2</td>
-                                                      <td>
-                                                          <div class="m-r-10"><img src="https://www2.physics.ox.ac.uk/sites/default/files/images/Stan1.jpg" alt="user" class="rounded" width="45" height="45"></div>
-                                                      </td>
-                                                      <td>James Alexx</td>
-                                                      <td>99</td>
-                                                      <td><div class="w3-light-grey w3-round">
-                                                        <div class="w3-container w3-blue w3-round" style="width:50%">75%</div>
-                                                      </div></td>
-                                                      <td>A</td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td>3</td>
-                                                      <td>
-                                                          <div class="m-r-10"><img src="https://www.law.uchicago.edu/files/styles/extra_large/public/2018-03/theisen_tarra.jpg?itok=5iSSWAci" alt="user" class="rounded" width="45" height="45"></div>
-                                                      </td>
-                                                      <td>Suzy Anderson</td>
-                                                      <td>98</td>
-                                                      <td><div class="w3-light-grey w3-round">
-                                                        <div class="w3-container w3-blue w3-round" style="width:50%">75%</div>
-                                                      </div></td>
-                                                      <td>A</td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td>4</td>
-                                                      <td>
-                                                          <div class="m-r-10"><img src="https://www.coa.edu/live/image/gid/7/width/500/height/500/crop/1/src_region/0,0,600,600/7837_Profile-2.rev.1572210489.jpg" alt="user" class="rounded" width="45" height="45"></div>
-                                                      </td>
-                                                      <td>Yoshiro Wakata</td>
-                                                      <td>97</td>
-                                                      <td><div class="w3-light-grey w3-round">
-                                                        <div class="w3-container w3-blue w3-round" style="width:50%">75%</div>
-                                                      </div></td>
-                                                      <td>B</td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td>5</td>
-                                                      <td>
-                                                          <div class="m-r-10"><img src="https://minervaschools-production-cms-uploads.s3.amazonaws.com/images/20150916_MNRV_220.2e16d0ba.fill-724x452.jpg?could_not_match_s3_bucket_and_object" alt="user" class="rounded" width="45" height="45"></div>
-                                                      </td>
-                                                      <td>John Reese</td>
-                                                      <td>97</td>
-                                                      <td><div class="w3-light-grey w3-round">
-                                                        <div class="w3-container w3-blue w3-round" style="width:50%">75%</div>
-                                                      </div></td>
-                                                      <td>B</td>
-                                                  </tr>
-
+                                                  @endforeach
                                               </tbody>
                                           </table>
                                       </div>
