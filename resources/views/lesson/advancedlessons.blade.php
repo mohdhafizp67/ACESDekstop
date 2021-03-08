@@ -282,24 +282,24 @@
 		</div>
     <div class="col-md-8">
       <div class="items">
-          <div class="item1 active">
-            <img src="{{asset('concept/images/pelajaran/lesson/college.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
-          </div>
-          <div class=" item1 next" >
-            <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
-          </div>
-          <div class="item1" >
+      		<div class="item1 active">
+      			<img src="{{asset('concept/images/pelajaran/lesson/college.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
+      		</div>
+      		<div class=" item1 next" >
+            <img src="{{asset('concept/images/pelajaran/lesson/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
+      		</div>
+      		<div class="item1" >
             <img src="{{asset('concept/images/pelajaran/lesson/career.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
-          </div>
+      		</div>
           <div class=" item1" >
-            <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
+            <img src="{{asset('concept/images/pelajaran/lesson/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
           </div>
-          <div class="item1 prev">
+      		<div class="item1 prev">
             <img src="{{asset('concept/images/pelajaran/lesson/career.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
 
-          </div>
+      		</div>
 
-        </div>
+      	</div>
 
         <div class="modal fade" id="lokasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">

@@ -344,7 +344,7 @@
           <div class="slider-content">
 
               <div class="slider-single">
-                  <a href="{{route('quiz.intro-start', 1)}}"><img class="slider-single-image" src="{{ asset('concept/images/kuiz/00.png') }}" alt="1" /></a>
+                  <a href="{{route('quiz.intro-start', 1)}}"><img class="slider-single-image" src="{{ asset('concept/images/kuiz/introduction.png') }}" alt="1" /></a>
                   <!-- <h1 class="slider-single-title">VR</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -424,7 +424,7 @@
 
             <div class="slider-single">
               <a href="{{route('quiz.intro-start', 8)}}">
-                <img class="slider-single-image" src="{{ asset('concept/images/kuiz/07UI.png') }}" alt="8" />
+                <img class="slider-single-image" src="{{ asset('concept/images/kuiz/universal.png') }}" alt="8" />
               </a>
                   <!-- <h1 class="slider-single-title">Advanced Simulation</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">

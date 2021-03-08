@@ -311,13 +311,13 @@
       			<img src="{{asset('concept/images/pelajaran/lesson/college.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
       		</div>
       		<div class=" item1 next" >
-            <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
+            <img src="{{asset('concept/images/pelajaran/lesson/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
       		</div>
       		<div class="item1" >
             <img src="{{asset('concept/images/pelajaran/lesson/career.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
       		</div>
           <div class=" item1" >
-            <img src="{{asset('concept/images/pelajaran/icon/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
+            <img src="{{asset('concept/images/pelajaran/lesson/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
           </div>
       		<div class="item1 prev">
             <img src="{{asset('concept/images/pelajaran/lesson/career.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
