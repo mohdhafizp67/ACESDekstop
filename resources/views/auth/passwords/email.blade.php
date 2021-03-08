@@ -20,17 +20,18 @@
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
 
 
-<div class="row" style="padding-top: 4%;padding-bottom: 2%;">
+<div class="row" style="padding-top: 5%;padding-bottom: 2%;">
   <div class="col-md-7">
 
   </div>
   <div class="col-md-2">
 
   </div>
-  <div class="col-md-2">
-    <button type="button" class="btn" style="width: 100%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-      <a href="#">MY/ENG</a>
-    </button>
+  <div class="col-md-5" style="text-align: center;padding-top: 4%;padding-left: 10%;">
+    <!-- <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; color: #fff;width: 40%;padding: 3%"><a href="{{-- route('locale.setting', 'en') --}}">ENG</a></button> -->
+
+    <!-- <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; color: #fff;width: 40%;padding: 3%"><a href="{{-- route('locale.setting', 'my') --}}">BM</a></button> -->
+
   </div>
   <div class="col-md-1">
 
@@ -52,27 +53,8 @@
             <a href="#" style="font-size: 80%;">HELP</a>
           </button>
         </div> -->
-        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#video">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="80%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#video">
 
-        <div class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <!-- <div class="modal-header">
-                <h5 class="modal-title" id="lokasi">KERJAYA DALAM VR</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div> -->
-                <div class="modal-body">
-                  <div class="w3-content w3-display-container">
-                    <iframe width="100%" height="300px" src="https://www.youtube.com/embed/b9mJrzdlfR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                  </div>
-                </div>
-
-            </div>
-            </div>
-        </div>
         <div class="col-md-2">
 
         </div>
@@ -110,19 +92,19 @@
 
     <div class="col-md-7" style="background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/cards2.png')}}); background-repeat: no-repeat;background-size: 100% 100%;">
 
-      <h4 style="color: #fff; font-size: 200%; text-align: center; text-transform: uppercase; font-weight: bold; padding-top: 10%;">
+      <h4 style="color: #fff; font-size: 150%; text-align: center; text-transform: uppercase; font-weight: bold; padding-top: 10%;">
         RESET PASSWORD
       </h4>
 
 
-      <div class="card-body" style="padding: 10%;margin-top: -10%;">
+      <div class="card-body" style="padding: 15%;margin-top: -10%;">
         <form action="{{ route('password.email') }}" method="POST">
           @csrf
         <div class="row">
 
           <div class="col-md-12">
             <div class="form-group">
-              <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+              <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email">
               @error('email')
               <span class="invalid-feedback" role="alert">
                       <strong>{{ $message }}</strong>
@@ -133,7 +115,7 @@
               <button type="submit" class="btn" style="padding: 5%;width: 50%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">Reset Password</button>
               <!-- <div class="form-group pt-1" style="text-align: center;"><a class="btn" href="../index.html" style="padding: 5%;width: 50%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">Reset Password</a></div> -->
             </div>
-              <div class="btn" style="margin-left: 20%;">
+              <div class="btn" style="margin-left: 25%;">
                   <span style="font-size: 80%;">Don't have an account? <a href="{{route('register')}}">Sign Up</a></span>
               </div>
           </div>
