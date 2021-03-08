@@ -57,7 +57,7 @@
 
   </div>
 </div>
-  <div class="row" style="padding: 1%; padding-bottom: 5%;">
+  <div class="row" style="padding: 1%; padding-bottom: 6%;">
     <div class="col-md-4">
       <center><img alt="Bootstrap Image Preview" src="{{asset('concept/images/login/Logo.png')}}" style="width: 80%; margin-top:-25%;"></center>
       <p class="text-center" style="color: #fff; padding-bottom: 5%; padding-top: 10%; text-transform: uppercase; font-size: 80%; text-align: end;">
