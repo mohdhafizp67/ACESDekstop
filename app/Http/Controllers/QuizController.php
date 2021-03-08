@@ -256,16 +256,31 @@ class QuizController extends Controller
 
     $student_id = Auth::user()->student->id;
 
+    $student_quiz = Student_Quiz::where('student_id', $student_id)->first();
 
-    $student_quiz = Student_Quiz::Create([
+    if($status == "Lulus"){
+      if(!$student_quiz){
+        $student_quiz = Student_Quiz::Create([
 
-      'result' => $mark,
-      'answered_question' => $answered_question,
-      'percentage' => $percentage,
-      'result_status' => $status,
-      'quiz_id' => $request->quiz_id,
-      'student_id' => $student_id,
-      ]);
+          'result' => $mark,
+          'answered_question' => $answered_question,
+          'percentage' => $percentage,
+          'result_status' => $status,
+          'quiz_id' => $request->quiz_id,
+          'student_id' => $student_id,
+          ]);
+      }else {
+        // $leaderboard = new Leaderboard();
+        $student_quiz->result = $mark;
+        $student_quiz->answered_question = $answered_question;
+        $student_quiz->percentage += $percentage;
+        $student_quiz->result_status = $status;
+        $student_quiz->quiz_id = $request->quiz_id;
+        $student_quiz->student_id = $student_id;
+
+        $student_quiz->save();
+      }
+    }
 
     return redirect()->route('quiz.result-quiz', $student_quiz->id);
   }
