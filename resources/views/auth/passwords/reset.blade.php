@@ -40,17 +40,18 @@
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
 
 
-<div class="row" style="padding-top: 3%;padding-bottom: 1%;">
+<div class="row" style="padding-top: 8%;padding-bottom: 1%;">
   <div class="col-md-7">
 
   </div>
   <div class="col-md-2">
 
   </div>
-  <div class="col-md-2">
-    <button type="button" class="btn" style="width: 100%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
-      <a href="#">MY/ENG</a>
-    </button>
+  <div class="col-md-5" style="text-align: center;padding-top: 4%;padding-left: 10%;">
+    <!-- <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; color: #fff;width: 40%;padding: 3%"><a href="{{-- route('locale.setting', 'en') --}}">ENG</a></button> -->
+
+    <!-- <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; color: #fff;width: 40%;padding: 3%"><a href="{{-- route('locale.setting', 'my') --}}">BM</a></button> -->
+
   </div>
   <div class="col-md-1">
 
@@ -169,11 +170,7 @@
 
     </div> -->
   </div>
-  <div class="row">
-    <div class="footer">
-    <span>&copy; Hakcipta Terpelihara 2021</span>&nbsp&nbsp&nbsp&nbsp<span style="margin-left: 53%;"><font color="white">TERMS&CONDITIONS</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">PRIVACY</font></span>
-    </div>
-  </div>
+
 </div>
 
 </body>
