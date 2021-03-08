@@ -26,6 +26,8 @@ class LessonController extends Controller
   }
 
   public function update_lesson3(){
+    $response = new stdClass();
+
     $student_id = Auth::user()->student->id;
     $lesson_id = "3";
 
@@ -42,9 +44,15 @@ class LessonController extends Controller
 
         $response->success = true;
         $response->message = "Student marks updated";
+      }else {
+        // $leaderboard = new Leaderboard();
+        $leaderboard->student_id = $student_id;
+        $leaderboard->scores += 10;
+        $leaderboard->save();
+
+        $response->success = true;
+        $response->message = "Student marks updated + 10";
       }
-      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-      // dd($leaderboard);
     }else {
       $response->success = false;
       $response->message = "Student exist";
@@ -72,6 +80,8 @@ class LessonController extends Controller
   }
 
   public function update_lesson9(){
+    $response = new stdClass();
+
     $student_id = Auth::user()->student->id;
     $lesson_id = "9";
 
@@ -88,9 +98,15 @@ class LessonController extends Controller
 
         $response->success = true;
         $response->message = "Student marks updated";
+      }else {
+        // $leaderboard = new Leaderboard();
+        $leaderboard->student_id = $student_id;
+        $leaderboard->scores += 10;
+        $leaderboard->save();
+
+        $response->success = true;
+        $response->message = "Student marks updated + 10";
       }
-      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-      // dd($leaderboard);
     }else {
       $response->success = false;
       $response->message = "Student exist";
@@ -119,6 +135,8 @@ class LessonController extends Controller
   }
 
   public function update_lesson10(){
+    $response = new stdClass();
+
     $student_id = Auth::user()->student->id;
     $lesson_id = "10";
 
@@ -135,9 +153,15 @@ class LessonController extends Controller
 
         $response->success = true;
         $response->message = "Student marks updated";
+      }else {
+        // $leaderboard = new Leaderboard();
+        $leaderboard->student_id = $student_id;
+        $leaderboard->scores += 10;
+        $leaderboard->save();
+
+        $response->success = true;
+        $response->message = "Student marks updated + 10";
       }
-      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-      // dd($leaderboard);
     }else {
       $response->success = false;
       $response->message = "Student exist";
@@ -166,6 +190,8 @@ class LessonController extends Controller
   }
 
   public function update_lesson5(){
+    $response = new stdClass();
+
     $student_id = Auth::user()->student->id;
     $lesson_id = "5";
 
@@ -182,9 +208,15 @@ class LessonController extends Controller
 
         $response->success = true;
         $response->message = "Student marks updated";
+      }else {
+        // $leaderboard = new Leaderboard();
+        $leaderboard->student_id = $student_id;
+        $leaderboard->scores += 10;
+        $leaderboard->save();
+
+        $response->success = true;
+        $response->message = "Student marks updated + 10";
       }
-      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-      // dd($leaderboard);
     }else {
       $response->success = false;
       $response->message = "Student exist";
@@ -211,6 +243,8 @@ class LessonController extends Controller
   }
 
   public function update_lesson6(){
+    $response = new stdClass();
+
     $student_id = Auth::user()->student->id;
     $lesson_id = "6";
 
@@ -227,9 +261,15 @@ class LessonController extends Controller
 
         $response->success = true;
         $response->message = "Student marks updated";
+      }else {
+        // $leaderboard = new Leaderboard();
+        $leaderboard->student_id = $student_id;
+        $leaderboard->scores += 10;
+        $leaderboard->save();
+
+        $response->success = true;
+        $response->message = "Student marks updated + 10";
       }
-      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-      // dd($leaderboard);
     }else {
       $response->success = false;
       $response->message = "Student exist";
@@ -258,6 +298,8 @@ class LessonController extends Controller
   }
 
   public function update_lesson7(){
+    $response = new stdClass();
+
     $student_id = Auth::user()->student->id;
     $lesson_id = "7";
 
@@ -274,9 +316,15 @@ class LessonController extends Controller
 
         $response->success = true;
         $response->message = "Student marks updated";
+      }else {
+        // $leaderboard = new Leaderboard();
+        $leaderboard->student_id = $student_id;
+        $leaderboard->scores += 10;
+        $leaderboard->save();
+
+        $response->success = true;
+        $response->message = "Student marks updated + 10";
       }
-      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-      // dd($leaderboard);
     }else {
       $response->success = false;
       $response->message = "Student exist";
@@ -306,13 +354,15 @@ class LessonController extends Controller
   }
 
   public function update_lesson4(){
+    $response = new stdClass();
+
     $student_id = Auth::user()->student->id;
     $lesson_id = "4";
 
     $check_lesson_student = Student_Lesson::where('student_id',  $student_id)->where('lesson_id', $lesson_id)->count();
     if($check_lesson_student == 0){
       event($lesson_student_id = $this->create_lesson_student_4());
-      
+
       $leaderboard = Leaderboard::where('student_id', $student_id)->first();
       if(!$leaderboard){
         $leaderboard = new Leaderboard();
@@ -322,9 +372,15 @@ class LessonController extends Controller
 
         $response->success = true;
         $response->message = "Student marks updated";
+      }else {
+        // $leaderboard = new Leaderboard();
+        $leaderboard->student_id = $student_id;
+        $leaderboard->scores += 10;
+        $leaderboard->save();
+
+        $response->success = true;
+        $response->message = "Student marks updated + 10";
       }
-      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-      // dd($leaderboard);
     }else {
       $response->success = false;
       $response->message = "Student exist";
@@ -353,6 +409,8 @@ class LessonController extends Controller
   }
 
   public function update_lesson8(){
+    $response = new stdClass();
+
     $student_id = Auth::user()->student->id;
     $lesson_id = "8";
 
@@ -369,9 +427,15 @@ class LessonController extends Controller
 
         $response->success = true;
         $response->message = "Student marks updated";
+      }else {
+        // $leaderboard = new Leaderboard();
+        $leaderboard->student_id = $student_id;
+        $leaderboard->scores += 10;
+        $leaderboard->save();
+
+        $response->success = true;
+        $response->message = "Student marks updated + 10";
       }
-      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-      // dd($leaderboard);
     }else {
       $response->success = false;
       $response->message = "Student exist";
@@ -402,6 +466,8 @@ class LessonController extends Controller
   }
 
   public function update_lesson2(){
+    $response = new stdClass();
+
     $student_id = Auth::user()->student->id;
     $lesson_id = "2";
 
@@ -418,8 +484,15 @@ class LessonController extends Controller
 
         $response->success = true;
         $response->message = "Student marks updated";
+      }else {
+        // $leaderboard = new Leaderboard();
+        $leaderboard->student_id = $student_id;
+        $leaderboard->scores += 10;
+        $leaderboard->save();
+
+        $response->success = true;
+        $response->message = "Student marks updated + 10";
       }
-      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
     }else {
       $response->success = false;
       $response->message = "Student exist";
@@ -465,9 +538,15 @@ class LessonController extends Controller
 
         $response->success = true;
         $response->message = "Student marks updated";
+      }else {
+        // $leaderboard = new Leaderboard();
+        $leaderboard->student_id = $student_id;
+        $leaderboard->scores += 10;
+        $leaderboard->save();
+
+        $response->success = true;
+        $response->message = "Student marks updated + 10";
       }
-      $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-      // dd($leaderboard);
     }else {
       $response->success = false;
       $response->message = "Student exist";
