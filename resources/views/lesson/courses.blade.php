@@ -395,7 +395,8 @@
               </div>
 
                 <div class="slider-single">
-                  <a href="{{route('lesson.cyberlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/cyber.png') }}" alt="7" /></a>
+                  <a href="{{route('lesson.advancedlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/advanced.png') }}" alt="9" /></a>
+
                   <!-- <h1 class="slider-single-title">Universal Integration</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -404,7 +405,8 @@
               </div>
 
             <div class="slider-single">
-                  <a href="{{route('lesson.universallessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/08.png') }}" alt="8" /></a>
+                  <a href="{{route('lesson.autolessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/autonomous.png') }}" alt="10" /></a>
+
                   <!-- <h1 class="slider-single-title">Advanced Simulation</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -413,7 +415,8 @@
               </div>
 
             <div class="slider-single">
-                  <a href="{{route('lesson.advancedlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/advanced.png') }}" alt="9" /></a>
+                  <a href="{{route('lesson.universallessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/08.png') }}" alt="8" /></a>
+
                   <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -422,7 +425,8 @@
               </div>
 
               <div class="slider-single">
-                    <a href="{{route('lesson.autolessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/autonomous.png') }}" alt="10" /></a>
+                    <a href="{{route('lesson.cyberlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/cyber.png') }}" alt="7" /></a>
+
                     <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
                     <!-- <a class="slider-single-likes" href="javascript:void(0);">
                         <i class="fa fa-heart"></i>
