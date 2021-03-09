@@ -9,6 +9,8 @@ use App\Models\User;
 use App\Models\Student;
 use App\Models\Student_Quiz;
 use App\Models\Quiz;
+use App\Models\Leaderboard;
+
 use App\Models\Lesson;
 use App\Models\QuestionBank;
 use App\Models\AnswerBank;
@@ -256,33 +258,93 @@ class QuizController extends Controller
 
     $student_id = Auth::user()->student->id;
 
-    $student_quiz = Student_Quiz::where('student_id', $student_id)->first();
+    $check_student_quiz = Student_quiz::where('student_id', $student_id)->where('quiz_id', $request->quiz_id)->count();
+    // dd($check_student_quiz);
 
-    if($status == "Lulus"){
-      if(!$student_quiz){
-        $student_quiz = Student_Quiz::Create([
+    if($check_student_quiz == 0){
+      $student_quiz = Student_Quiz::Create([
 
-          'result' => $mark,
-          'answered_question' => $answered_question,
-          'percentage' => $percentage,
-          'result_status' => $status,
-          'quiz_id' => $request->quiz_id,
-          'student_id' => $student_id,
-          ]);
-      }else {
-        // $leaderboard = new Leaderboard();
-        $student_quiz->result = $mark;
-        $student_quiz->answered_question = $answered_question;
-        $student_quiz->percentage += $percentage;
-        $student_quiz->result_status = $status;
-        $student_quiz->quiz_id = $request->quiz_id;
-        $student_quiz->student_id = $student_id;
+        'result' => $mark,
+        'answered_question' => $answered_question,
+        'percentage' => $percentage,
+        'result_status' => $status,
+        'quiz_id' => $request->quiz_id,
+        'student_id' => $student_id,
+        ]);
 
-        $student_quiz->save();
-      }
+        //update leaderboards
+        // dd($student_quiz);
+        $leaderboard = Leaderboard::where('student_id', $student_id)->first();
+        // dd($leaderboard);
+        $leaderboard->scores = $leaderboard->scores + $percentage;
+        $leaderboard->save();
+    }else {
+      // dd($mark);
+      $quiz = Student_quiz::where('student_id', $student_id)->where('quiz_id', $request->quiz_id)->first();
+      // dd($quiz);
+
+      // if($quiz->result < $mark){
+        if($quiz->result_status == "Lulus"){
+          //update leaderboard
+          $leaderboard = Leaderboard::where('student_id', $student_id)->first();
+
+          $leaderboard->scores = ($leaderboard->scores - $quiz->percentage) + $percentage;
+          $leaderboard->save();
+
+          $quiz->result = $mark;
+          $quiz->answered_question = $answered_question;
+          $quiz->percentage = $percentage;
+          $quiz->result_status = $status;
+          $quiz->quiz_id = $request->quiz_id;
+          $quiz->student_id = $student_id;
+          $quiz->save();
+        }
+        else {
+          $quiz->result = $mark;
+          $quiz->answered_question = $answered_question;
+          $quiz->percentage = $percentage;
+          $quiz->result_status = $status;
+          $quiz->quiz_id = $request->quiz_id;
+          $quiz->student_id = $student_id;
+          $quiz->save();
+        }
+      // }
+
     }
 
-    return redirect()->route('quiz.result-quiz', $student_quiz->id);
+
+    // $student_id = Auth::user()->student->id;
+    //
+    // $student_quiz = Student_Quiz::where('student_id', $student_id)->first();
+    //
+    // if($status == "Lulus"){
+    //
+    //   if(!$student_quiz){
+    //     $student_quiz = Student_Quiz::Create([
+    //
+    //       'result' => $mark,
+    //       'answered_question' => $answered_question,
+    //       'percentage' => $percentage,
+    //       'result_status' => $status,
+    //       'quiz_id' => $request->quiz_id,
+    //       'student_id' => $student_id,
+    //       ]);
+    //   }else {
+    //     // $leaderboard = new Leaderboard();
+    //     $student_quiz->result = $mark;
+    //     $student_quiz->answered_question = $answered_question;
+    //     $student_quiz->percentage += $percentage;
+    //     $student_quiz->result_status = $status;
+    //     $student_quiz->quiz_id = $request->quiz_id;
+    //     $student_quiz->student_id = $student_id;
+    //
+    //     $student_quiz->save();
+    //   }
+
+
+    // }
+
+    return redirect()->route('quiz.result-quiz', $quiz->id);
   }
 
   public function resultQuiz($id)
