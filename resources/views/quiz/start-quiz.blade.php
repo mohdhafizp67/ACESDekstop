@@ -58,7 +58,6 @@ label {
     background-color: #007bff00;
     /* font-size: 150%; */
     /* background-image: url({{asset('concept/images/galaxy/btn_prop2.png')}}); */
-
   }
 </style>
 
@@ -375,9 +374,46 @@ $('.btnPrevious').click(function() {
 });
 
 $('.label1').click(function() {
+  $("input[type=radio]").parent("label").css("background-color", "#ffffff00");
   $("input[type=radio]:checked").parent("label").css("background-color", "#1a7e8e");
 });
 </script>
+
+<!-- <script>
+$('#label_1_color').click(function() {
+  console.log("masuk1");
+  $("#label_1_color_radio").parent("label").css("background-color", "#1a7e8e");
+  $("#label_2_color_radio").parent("label").css("background-color", "#ffffff00");
+  $("#label_3_color_radio").parent("label").css("background-color", "#ffffff00");
+  $("#label_4_color_radio").parent("label").css("background-color", "#ffffff00");
+});
+
+
+$('#label_2_color').click(function() {
+  console.log("masuk2");
+  $("#label_1_color_radio").parent("label").css("background-color", "#ffffff00");
+  $("#label_2_color_radio").parent("label").css("background-color", "#1a7e8e");
+  $("#label_3_color_radio").parent("label").css("background-color", "#ffffff00");
+  $("#label_4_color_radio").parent("label").css("background-color", "#ffffff00");
+});
+
+
+$('#label_3_color').click(function() {
+  console.log("masuk3");
+  $("#label_1_color_radio").parent("label").css("background-color", "#ffffff00");
+  $("#label_2_color_radio").parent("label").css("background-color", "#ffffff00");
+  $("#label_3_color_radio").parent("label").css("background-color", "#1a7e8e");
+  $("#label_4_color_radio").parent("label").css("background-color", "#ffffff00");
+});
+
+$('#label_4_color').click(function() {
+  console.log("masuk4");
+  $("#label_1_color_radio").parent("label").css("background-color", "#ffffff00");
+  $("#label_2_color_radio").parent("label").css("background-color", "#ffffff00");
+  $("#label_3_color_radio").parent("label").css("background-color", "#ffffff00");
+  $("#label_4_color_radio").parent("label").css("background-color", "#1a7e8e");
+});
+</script> -->
 
 <!-- quiz display timer -->
 <script type="text/javascript">
