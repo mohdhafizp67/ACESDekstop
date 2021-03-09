@@ -51,9 +51,9 @@ class LeaderboardController extends Controller
     // return view('activities.leaderboard', compact('student'));
 
 
-    $student = DB::table('students')->select(DB::raw('students_games.student_point,students_quizes.percentage,leaderboards.scores, (IFNULL(students_games.student_point, 0) + IFNULL(students_quizes.percentage, 0) + IFNULL(leaderboards.scores, 0)) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
+    $student = DB::table('students')->select(DB::raw('students_games.student_point, leaderboards.scores, (IFNULL(students_games.student_point, 0) + IFNULL(leaderboards.scores, 0)) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
       ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
-      ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
+      // ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
       ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
 
       ->join("users", "users.id", "=", "students.user_id")
@@ -61,6 +61,7 @@ class LeaderboardController extends Controller
       ->orderBy("total_points", "DESC")
       ->limit(10)
       ->get();
+
       // dd($student);
     // $student = DB::table('students')->select(DB::raw('sum(students_games.student_point) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
     //     ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
@@ -79,9 +80,9 @@ class LeaderboardController extends Controller
       //  ->orderBy("total_points", "DESC")
       //  ->get();
 
-       $all_students =  DB::table('students')->select(DB::raw('students_games.student_point,students_quizes.percentage,leaderboards.scores, (IFNULL(students_games.student_point, 0) + IFNULL(students_quizes.percentage, 0) + IFNULL(leaderboards.scores, 0)) as total_points, users.id as user_id'))
+       $all_students =  DB::table('students')->select(DB::raw('students_games.student_point, leaderboards.scores, (IFNULL(students_games.student_point, 0) + IFNULL(leaderboards.scores, 0)) as total_points, users.id as user_id'))
         ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
-        ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
+        // ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
         ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
         ->join("users", "users.id", "=", "students.user_id")
         // ->groupBy("students.id")
@@ -96,9 +97,9 @@ class LeaderboardController extends Controller
       }
     }
 
-    $current_user = DB::table('students')->select(DB::raw('students_games.student_point,students_quizes.percentage,leaderboards.scores, (IFNULL(students_games.student_point, 0) + IFNULL(students_quizes.percentage, 0) + IFNULL(leaderboards.scores, 0)) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
+    $current_user = DB::table('students')->select(DB::raw('students_games.student_point, leaderboards.scores, (IFNULL(students_games.student_point, 0) + IFNULL(leaderboards.scores, 0)) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
       ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
-      ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
+      // ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
       ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
       ->join("users", "users.id", "=", "students.user_id")
       ->where("users.id", "=", Auth::user()->id)
@@ -108,21 +109,5 @@ class LeaderboardController extends Controller
     $current_user_marks = $current_user[0]->total_points;
 
     return view('activities.leaderboard', compact('student', 'current_user_marks', 'current_user_ranking'));
-  }
-
-  public function create($data, $total_mark)
- {
-    return Leaderboard::Create([
-      'student_id' => $data->id,
-      'scores' => $total_mark,
-    ]);
-  }
-
-  public function update($data, $total_mark)
-  {
-    $leaderboard = Leaderboard::findOrFail($data->id);
-    $leaderboard->scores = $total_mark;
-    $leaderboard->save();
-    return $leaderboard;
   }
 }
