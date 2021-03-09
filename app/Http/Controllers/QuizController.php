@@ -279,25 +279,23 @@ class QuizController extends Controller
         $leaderboard->scores = $leaderboard->scores + $percentage;
         $leaderboard->save();
     }else {
-      // dd($mark);
       $quiz = Student_quiz::where('student_id', $student_id)->where('quiz_id', $request->quiz_id)->first();
-      // dd($quiz);
 
-      // if($quiz->result < $mark){
-        if($quiz->result_status == "Lulus"){
-          //update leaderboard
-          $leaderboard = Leaderboard::where('student_id', $student_id)->first();
+        if($status == "Lulus"){
+          if($mark > $quiz->result){
+            //update leaderboard
+            $leaderboard = Leaderboard::where('student_id', $student_id)->first();
+            $leaderboard->scores = ($leaderboard->scores - $quiz->percentage) + $percentage;
+            $leaderboard->save();
 
-          $leaderboard->scores = ($leaderboard->scores - $quiz->percentage) + $percentage;
-          $leaderboard->save();
-
-          $quiz->result = $mark;
-          $quiz->answered_question = $answered_question;
-          $quiz->percentage = $percentage;
-          $quiz->result_status = $status;
-          $quiz->quiz_id = $request->quiz_id;
-          $quiz->student_id = $student_id;
-          $quiz->save();
+            $quiz->result = $mark;
+            $quiz->answered_question = $answered_question;
+            $quiz->percentage = $percentage;
+            $quiz->result_status = $status;
+            $quiz->quiz_id = $request->quiz_id;
+            $quiz->student_id = $student_id;
+            $quiz->save();
+          }
         }
         else {
           $quiz->result = $mark;
@@ -308,8 +306,6 @@ class QuizController extends Controller
           $quiz->student_id = $student_id;
           $quiz->save();
         }
-      // }
-
     }
 
 
