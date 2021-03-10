@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Student;
 use App\Models\Student_Game;
-use App\Models\Leaderboard;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use stdClass;
@@ -43,21 +42,6 @@ class StudentGameController extends Controller
 
             if (count($student_game_search) === 1) {
                 $student_game = Student_Game::find($student_game_search[0]->id);
-
-                $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-                if(!$leaderboard){
-                  $leaderboard = new Leaderboard();
-                  $leaderboard->student_id = $student_id;
-                  $leaderboard->scores = $leaderboard->scores + $student_point;
-                  $leaderboard->save();
-
-                }else {
-                  // $leaderboard = new Leaderboard();
-                  $leaderboard->student_id = $student_id;
-                  $leaderboard->scores = ($leaderboard->scores - $student_game->student_point) + $student_point;
-                  $leaderboard->save();
-
-                }
             }
 
             $student_game->student_point = $request->student_point;
