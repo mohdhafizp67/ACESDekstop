@@ -75,24 +75,28 @@ class StudentGameController extends Controller
                     $student_game->game_id = $request->game_id;
                     $student_game->student_id = $student_id;
                     $student_game->save();
+                    $response->success = true;
+                    $response->message = "Score saved";
                   }
 
-                      else {
-                        $student_game->student_point;
-                        $student_game->game_id = $request->game_id;
-                        $student_game->student_id = $student_id;
-                        $student_game->save();
-                      }
+                  else {
+                    $student_game->student_point;
+                    $student_game->game_id = $request->game_id;
+                    $student_game->student_id = $student_id;
+                    $student_game->save();
+                    $response->success = true;
+                    $response->message = "Score saved";
+                  }
+
             }
 
 
-            $student_game->student_point = $request->student_point;
-            $student_game->game_id = $request->game_id;
-            $student_game->student_id = $student[0]->id;
-            $student_game->save();
+            // $student_game->student_point = $request->student_point;
+            // $student_game->game_id = $request->game_id;
+            // $student_game->student_id = $student[0]->id;
+            // $student_game->save();
 
-            $response->success = true;
-            $response->message = "Score saved";
+
         } catch (Throwable $e) {
             $response->success = false;
             $response->message = $e;
