@@ -44,7 +44,7 @@ class StudentGameController extends Controller
                 $student_game = Student_Game::find($student_game_search[0]->id);
             }
 
-            dd($student_game);
+            
             $student_game->student_point = $request->student_point;
             $student_game->game_id = $request->game_id;
             $student_game->student_id = $student[0]->id;
