@@ -51,17 +51,11 @@ class StudentGameController extends Controller
             if (count($student_game_search) === 1) {
                 $student_game = Student_Game::find($student_game_search[0]->id);
 
-                if($student_point > $student_game->student_point){
+                $leaderboard = Leaderboard::where('student_id', $student_id)->first();
+                $leaderboard->scores = ($leaderboard->scores - $student_game->student_point) + $student_point;
+                $leaderboard->save();
 
-                          $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-                          $leaderboard->scores = ($leaderboard->scores - $student_game->student_point) + $student_point;
-                          $leaderboard->save();
 
-                          $student_game->student_point;
-                          $student_game->game_id = $request->game_id;
-                          $student_game->student_id = $student_id;
-                          $student_game->save();
-                        }
             }
 
             $student_game->student_point = $request->student_point;
