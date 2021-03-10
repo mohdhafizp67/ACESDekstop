@@ -36,58 +36,21 @@ class StudentGameController extends Controller
                 ->where("game_id", "=", $request->game_id)
                 ->get();
 
-            $student_id = Auth::user()->student->id;
-
-            if (count($student_game_search) == 0) {
-                $check_student_game = Student_Game::where('student_id',  $student_id)->where('game_id',$request->$game_id)->count();
-                if($check_student_game == 0){
-                  $student_game = Student_Game::Create([
-
-                    'student_point' => $student_point,
-                    'game_id' => $request->game_id,
-                    'student_id' => $student_id,
-                    ]);
-
-                    $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-
-                    $leaderboard->scores = $leaderboard->scores + $student_point;
-                    $leaderboard->save();
+            if (count($student_game_search) === 0) {
+                $student_game = new Student_Game();
             }
 
-            if (count($student_game_search) == 1) {
-                $student_game = Student_Game::where('student_id', $student_id)->where('game_id', $request->game_id)->first();
-
-                if($student_point > $game_student->student_point){
-
-                  $leaderboard = Leaderboard::where('student_id', $student_id)->first();
-                  $leaderboard->scores = ($leaderboard->scores - $student_game->student_point) + $student_point;
-                  $leaderboard->save();
-
-                  $student_game->student_point;
-                  $student_game->game_id = $request->game_id;
-                  $student_game->student_id = $student_id;
-                  $student_game->save();
-                  $response->success = true;
-                  $response->message = "Score saved";
-                }else {
-                  $student_game->student_point;
-                  $student_game->game_id = $request->game_id;
-                  $student_game->student_id = $student_id;
-                  $student_game->save();
-                  $response->success = true;
-                  $response->message = "Score saved";
-                }
+            if (count($student_game_search) === 1) {
+                $student_game = Student_Game::find($student_game_search[0]->id);
             }
 
+            $student_game->student_point = $request->student_point;
+            $student_game->game_id = $request->game_id;
+            $student_game->student_id = $student[0]->id;
 
-            }
-
-            // $student_game->student_point = $request->student_point;
-            // $student_game->game_id = $request->game_id;
-            // $student_game->student_id = $student[0]->id;
-            // $student_game->save();
-
-
+            $student_game->save();
+            $response->success = true;
+            $response->message = "Score saved";
         } catch (Throwable $e) {
             $response->success = false;
             $response->message = $e;
@@ -95,5 +58,4 @@ class StudentGameController extends Controller
 
         return response()->json($response);
     }
-
 }
