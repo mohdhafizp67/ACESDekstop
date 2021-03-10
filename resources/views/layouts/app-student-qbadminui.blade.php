@@ -116,7 +116,7 @@
         <div class="side-bar side-bar-lg-active" data-theme="purple">
             <!-- Brand details -->
             <div class="side-menu-brand d-flex flex-column justify-content-center align-items-center clear mt-3">
-                <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 100%;padding-top: 30%;">
+                <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 100%;padding-top: 35%;">
                 <!-- <a href="{{ route('home') }}" class="brand-name mt-2 ml-2 font-weight-bold" style="text-align: center; font-size: 20px !important;">Permohonan Data Geospatial</a> -->
             </div>
             @if(Auth::user())
@@ -124,7 +124,7 @@
             <div class="the_menu mt-2">
                 <!-- Heading -->
                 <div class="side-menu-heading d-flex">
-                    <h6 class=" font-weight-bold pb-2 mx-3" style="color: #45e9b5;font-size: 150%;">&nbsp&nbsp&nbsp&nbsp&nbsp{{Auth::user()->name}} </h6>
+                    <h6 class=" font-weight-bold pb-2 mx-3" style="color: #45e9b5;font-size: 130%;">{{Auth::user()->name}} </h6>
 
                     <!-- <a  class="font-weight-bold ml-auto px-3"
                         href="{{ route('logout') }}"
@@ -262,7 +262,7 @@
 
 
 
-                <a href="{{ url()->previous() }}" class="btn btn-outline-primary m-2" style="font-size:150%"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back</a>
+                <!-- <a href="{{ url()->previous() }}" class="btn btn-outline-primary m-2" style="font-size:150%"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back</a> -->
 
 
 
