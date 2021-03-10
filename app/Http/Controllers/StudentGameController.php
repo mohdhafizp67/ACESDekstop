@@ -36,11 +36,11 @@ class StudentGameController extends Controller
                 ->where("game_id", "=", $request->game_id)
                 ->get();
 
-            if (count($student_game_search) === 0) {
+            if (count($student_game_search) == 0) {
                 $student_game = new Student_Game();
             }
 
-            if (count($student_game_search) === 1) {
+            if (count($student_game_search) == 1) {
                 $student_game = Student_Game::find($student_game_search[0]->id);
             }
 
@@ -48,10 +48,8 @@ class StudentGameController extends Controller
             $student_game->student_point = $request->student_point;
             $student_game->game_id = $request->game_id;
             $student_game->student_id = $student[0]->id;
-
-          
-
             $student_game->save();
+
             $response->success = true;
             $response->message = "Score saved";
         } catch (Throwable $e) {
