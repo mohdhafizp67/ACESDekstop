@@ -45,7 +45,7 @@ class GameController extends Controller
       if(!$leaderboard){
         $leaderboard = new Leaderboard();
         $leaderboard->student_id = $student_id;
-        $leaderboard->scores = $leaderboard->scores + $game_id->student_point;
+        $leaderboard->scores = ($leaderboard->scores - $check_game_student->student_point) + $student_point;
         $leaderboard->save();
 
         $response->success = true;
@@ -53,7 +53,7 @@ class GameController extends Controller
       }else {
         // $leaderboard = new Leaderboard();
         $leaderboard->student_id = $student_id;
-        $leaderboard->scores = $leaderboard->scores + $game_id->student_point;
+        $leaderboard->scores = $leaderboard->scores + $student_point;
         $leaderboard->save();
 
         $response->success = true;
