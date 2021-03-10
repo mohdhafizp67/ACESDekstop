@@ -25,12 +25,13 @@
 
     <style>
     .side-bar .side-menu-item a, .side-bar .side-sub-menu-item a {
-    font-size: 20px !important;
+    font-size: 15px !important;
     display: block;
     color: #626a72 !important;
     transition: all ease 0.3s;
     position: relative !important;
     text-align: justify;
+
     }
 
     .dropdown-menu {
@@ -118,7 +119,7 @@
         <div class="side-bar side-bar-lg-active" data-theme="purple">
             <!-- Brand details -->
             <div class="side-menu-brand d-flex flex-column justify-content-center align-items-center clear mt-3">
-                <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 100%;padding-top: 15%;">
+                <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 100%;padding-top: 35%;">
                 <!-- <a href="{{ route('home') }}" class="brand-name mt-2 ml-2 font-weight-bold" style="text-align: center; font-size: 20px !important;">Permohonan Data Geospatial</a> -->
             </div>
             @if(Auth::user())
@@ -126,7 +127,7 @@
             <div class="the_menu mt-2">
                 <!-- Heading -->
                 <div class="side-menu-heading d-flex">
-                    <h6 class=" font-weight-bold pb-2 mx-3" style="color: #45e9b5;font-size: 150%;">&nbsp&nbsp&nbsp&nbsp&nbsp{{Auth::user()->name}} </h6>
+                    <h6 class=" font-weight-bold pb-2 mx-3" style="color: #45e9b5;font-size: 130%;">{{Auth::user()->name}} </h6>
                     <!-- <a  class="font-weight-bold ml-auto px-3"
                         href="{{ route('logout') }}"
                         onclick="event.preventDefault();
