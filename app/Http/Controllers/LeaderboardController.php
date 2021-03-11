@@ -57,7 +57,7 @@ class LeaderboardController extends Controller
       ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
 
       ->join("users", "users.id", "=", "students.user_id")
-
+      ->groupBy("students.id")
       ->orderBy("total_points", "DESC")
       ->limit(10)
       ->get();
@@ -85,7 +85,7 @@ class LeaderboardController extends Controller
         // ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
         ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
         ->join("users", "users.id", "=", "students.user_id")
-        // ->groupBy("students.id")
+        ->groupBy("students.id")
         ->orderBy("total_points", "DESC")
         ->get();
 
@@ -103,7 +103,7 @@ class LeaderboardController extends Controller
       ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
       ->join("users", "users.id", "=", "students.user_id")
       ->where("users.id", "=", Auth::user()->id)
-      // ->groupBy("students.id")
+      ->groupBy("students.id")
       ->get();
 
     $current_user_marks = $current_user[0]->total_points;
