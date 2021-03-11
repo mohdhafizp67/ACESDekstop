@@ -63,7 +63,7 @@ class LeaderboardController extends Controller
     //   ->get();
 
       // dd($student);
-    $student = DB::table('students')->select(DB::raw('sum(students_games.student_point) + IFNULL(leaderboards.scores, 0) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
+    $student = DB::table('students')->select(DB::raw('IFNULL(sum(students_games.student_point),0) + IFNULL(leaderboards.scores, 0) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
         ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
         ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
         ->join("users", "users.id", "=", "students.user_id")
@@ -74,7 +74,7 @@ class LeaderboardController extends Controller
 
       // dd($student);
 
-      $all_students =  DB::table('students')->select(DB::raw('sum(students_games.student_point) + IFNULL(leaderboards.scores, 0) as total_points, users.id as user_id'))
+      $all_students =  DB::table('students')->select(DB::raw('IFNULL(sum(students_games.student_point),0) + IFNULL(leaderboards.scores, 0) as total_points, users.id as user_id'))
        ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
        ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
        ->join("users", "users.id", "=", "students.user_id")
@@ -99,7 +99,7 @@ class LeaderboardController extends Controller
       }
     }
 
-    $current_user = DB::table('students')->select(DB::raw('sum(students_games.student_point) + IFNULL(leaderboards.scores, 0) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
+    $current_user = DB::table('students')->select(DB::raw('IFNULL(sum(students_games.student_point),0) + IFNULL(leaderboards.scores, 0) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
       ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
       ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
       ->join("users", "users.id", "=", "students.user_id")
