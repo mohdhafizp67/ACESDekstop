@@ -307,24 +307,24 @@
 		</div>
     <div class="col-md-8">
       <div class="items">
-      		<div class="item1 active">
-      			<img src="{{asset('concept/images/pelajaran/lesson/college.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
-      		</div>
-      		<div class=" item1 next" >
-            <img src="{{asset('concept/images/pelajaran/lesson/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
-      		</div>
-      		<div class="item1" >
-            <img src="{{asset('concept/images/pelajaran/lesson/career.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
-      		</div>
-          <div class=" item1" >
-            <img src="{{asset('concept/images/pelajaran/lesson/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
+          <div class="item1 active">
+            <img src="{{asset('concept/images/pelajaran/lesson/college.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;" data-toggle="modal" data-target="#lokasi">
           </div>
-      		<div class="item1 prev">
+          <div class=" item1 next" >
+            <img src="{{asset('concept/images/pelajaran/lesson/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
+          </div>
+          <div class="item1" >
+            <img src="{{asset('concept/images/pelajaran/lesson/career.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
+          </div>
+          <div class=" item1" >
+            <img src="{{asset('concept/images/pelajaran/lesson/skill.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#kemahiran">
+          </div>
+          <div class="item1 prev">
             <img src="{{asset('concept/images/pelajaran/lesson/career.png')}}" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;"  data-toggle="modal" data-target="#prospek">
 
-      		</div>
+          </div>
 
-      	</div>
+        </div>
 
         <div class="modal fade" id="lokasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -339,7 +339,7 @@
                 <!-- <img alt="Bootstrap Image Preview" src="{{asset('concept/images/pelajaran/lokasi.jpg')}}" style="width: 100%; height: auto;"> -->
 
               <div class="w3-content w3-display-container">
-                <img class="career" src="{{asset('concept/images/pelajaran/courses/universalcourseshd.jpg')}}" style="width:100%">
+                <img class="career" src="{{asset('concept/images/pelajaran/courses/universalcourses.png')}}" style="width:100%">
 
 
 
@@ -362,7 +362,11 @@
                 </button>
                 </div> -->
                 <div class="modal-body">
-                  <div class="w3-content w3-display-container">
+                  <div class="display-container">
+                    <img class="career" src="{{asset('concept/images/pelajaran/courses/universalskill.png')}}" style="width:100%">
+
+                  </div>
+                  <!-- <div class="w3-content w3-display-container">
                     <img class="mySlides" src="{{asset('concept/images/pelajaran/Page01.jpg')}}" style="width:100%">
                     <img class="mySlides" src="{{asset('concept/images/pelajaran/Page02.jpg')}}" style="width:100%">
 
@@ -370,7 +374,7 @@
 
                     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-                  </div>
+                  </div> -->
                 </div>
 
             </div>
@@ -387,7 +391,10 @@
                 </button>
                 </div> -->
                 <div class="modal-body">
-                  <div class="w3-content w3-display-container">
+                  <div class="display-container">
+                    <img class="career" src="{{asset('concept/images/pelajaran/courses/universalcareer.png')}}" style="width:100%">
+                  </div>
+                  <!-- <div class="w3-content w3-display-container">
                     <img class="mySlides2" src="{{asset('concept/images/pelajaran/vr/careervr.jpeg')}}" style="width:100%">
                     <img class="mySlides2" src="{{asset('concept/images/pelajaran/vr/careervr2.jpeg')}}" style="width:100%">
 
@@ -395,7 +402,7 @@
 
                     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-                  </div>
+                  </div> -->
                 </div>
 
             </div>
@@ -461,7 +468,7 @@
   }
     </script>
 
-    <script>
+    <!-- <script>
       var slideIndex = 1;
       showDivs(slideIndex);
 
@@ -479,9 +486,9 @@
         }
         x[slideIndex-1].style.display = "block";
       }
-      </script>
+      </script> -->
 
-      <script>
+      <!-- <script>
         var slideIndex = 1;
         showDivs(slideIndex);
 
@@ -500,6 +507,45 @@
           x[slideIndex-1].style.display = "block";
         }
 
+        </script> -->
+        <script>
+          var slideIndex = 1;
+          var slideIndex1 = 1;
+
+          carousel();
+          carousel1();
+
+          function carousel() {
+            var i;
+              var x = document.getElementsByClassName("mySlides1");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > x.length) {
+                slideIndex = 1
+              }
+              x[slideIndex - 1].style.display = "block";
+              setTimeout(carousel, 5000); // Change image every 2 seconds
+            }
+
+            function carousel1() {
+            var i;
+              var x = document.getElementsByClassName("mySlides2");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              slideIndex1++;
+              if (slideIndex1 > x.length) {
+                slideIndex1 = 1
+              }
+              x[slideIndex1 - 1].style.display = "block";
+              setTimeout(carousel1, 5000); // Change image every 2 seconds
+            }
+
+          </script>
+
+        <script>
         function startTimer(duration, display) {
           var timer = duration, minutes, seconds;
           setInterval(function () {
