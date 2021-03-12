@@ -418,8 +418,10 @@
                 </div> -->
                 <div class="modal-body">
                   <div class="w3-content w3-display-container">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/Page01.jpg')}}" style="width:100%">
-                    <img class="mySlides" src="{{asset('concept/images/pelajaran/Page02.jpg')}}" style="width:100%">
+                    <img class="mySlides2" src="{{asset('concept/images/pelajaran/vr/skill1.png')}}" style="width:100%">
+                    <img class="mySlides2" src="{{asset('concept/images/pelajaran/vr/skill2.png')}}" style="width:100%">
+                    <img class="mySlides2" src="{{asset('concept/images/pelajaran/vr/skill3.png')}}" style="width:100%">
+                    <img class="mySlides2" src="{{asset('concept/images/pelajaran/vr/skill4.png')}}" style="width:100%">
 
 
 
@@ -443,13 +445,14 @@
                 </div> -->
                 <div class="modal-body">
                   <div class="w3-content w3-display-container">
-                    <img class="mySlides2" src="{{asset('concept/images/pelajaran/vr/careervr.jpeg')}}" style="width:100%">
-                    <img class="mySlides2" src="{{asset('concept/images/pelajaran/vr/careervr2.jpeg')}}" style="width:100%">
+                    <img class="mySlides" src="{{asset('concept/images/pelajaran/vr/careervr2.jpeg')}}" style="width:100%">
+                    <img class="mySlides" src="{{asset('concept/images/pelajaran/vr/careervr.jpeg')}}" style="width:100%">
 
 
 
-                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+                    <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
                   </div>
                 </div>
 
