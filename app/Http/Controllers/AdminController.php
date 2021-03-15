@@ -30,26 +30,23 @@ class AdminController extends Controller
     $totalAdmin = User::where('is_admin', '1')->get()->count();
 
 
-    $student = DB::table('students')->select(DB::raw('students_games.student_point,students_quizes.percentage,leaderboards.scores, (IFNULL(students_games.student_point, 0) + IFNULL(students_quizes.percentage, 0) + IFNULL(leaderboards.scores, 0)) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
-      ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
-      ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
-      ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
-
-      ->join("users", "users.id", "=", "students.user_id")
-
-      ->orderBy("total_points", "DESC")
-      ->limit(10)
-      ->get();
-
-       $all_students =  DB::table('students')->select(DB::raw('students_games.student_point,students_quizes.percentage,leaderboards.scores, (IFNULL(students_games.student_point, 0) + IFNULL(students_quizes.percentage, 0) + IFNULL(leaderboards.scores, 0)) as total_points, users.id as user_id'))
+    $student = DB::table('students')->select(DB::raw('IFNULL(sum(students_games.student_point),0) + IFNULL(leaderboards.scores, 0) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
         ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
-        ->leftJoin("students_quizes", "students_quizes.student_id", "=", "students.id")
         ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
         ->join("users", "users.id", "=", "students.user_id")
-        // ->groupBy("students.id")
+        ->groupBy("students.id","leaderboards.scores")
         ->orderBy("total_points", "DESC")
+        ->limit(10)
         ->get();
 
+        $all_students =  DB::table('students')->select(DB::raw('IFNULL(sum(students_games.student_point),0) + IFNULL(leaderboards.scores, 0) as total_points, users.id as user_id'))
+         ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
+         ->leftJoin("leaderboards", "leaderboards.student_id", "=", "students.id")
+         ->join("users", "users.id", "=", "students.user_id")
+         ->groupBy("students.id", "leaderboards.scores")
+         ->orderBy("total_points", "DESC")
+         ->get();
+         
     $current_user_ranking = 0;
 
     for ($i = 0; $i < count($all_students); $i++) {

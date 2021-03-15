@@ -100,7 +100,7 @@
                                           <table class="table">
                                               <thead class="bg-light">
                                                   <tr class="border-0">
-                                                      <th class="border-0">Raniking</th>
+                                                      <th class="border-0">Ranking</th>
                                                       <th class="border-0">Avatar</th>
                                                         <th class="border-0">Name</th>
                                                       <th class="border-0">School</th>
