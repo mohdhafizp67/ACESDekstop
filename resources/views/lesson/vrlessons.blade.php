@@ -176,7 +176,7 @@
 	<div class="row">
 
 		<div class="col-md-12">
-      <h1 style="padding-top: 5%;padding-bottom: 0%;text-align: center;color: #fff; font-weight: bold;font-size: 250%;">VR LESSONS</h1>
+      <h1 style="padding-top: 5%;padding-bottom: 0%;text-align: center;color: #fff; font-weight: bold;font-size: 250%;">AR/VR LESSONS</h1>
 		</div>
 
 	</div>
@@ -214,7 +214,7 @@
                     <div class="tab-regular" style="margin-left: 5%;">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="font-size: 100%;">Introduction</a>
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="font-size: 100%;">Introduction to VR</a>
                             </li>
 
                             <li class="nav-item">
