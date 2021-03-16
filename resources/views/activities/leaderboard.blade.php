@@ -54,7 +54,7 @@
   </head>
   <body>
 
-<div id="photo" class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
+<div id="photo" class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 0% 100%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
 <h1 style="padding-top: 4%; text-align: center;font-size: 350%; color: #fff; font-weight: bold;; padding-bottom: 0%;">LEADERBOARD</h1>
 <div class="row" style="padding-top: 0%;">
   <div class="col-md-1">
@@ -162,10 +162,10 @@
           <td style="color: #fff; font-size: 100%; color:#E9FF00">
             {{$current_user_marks}}
           </td>
-           <!-- <td style="color: #fff; font-size: 100%; color:#E9FF00">
-            <button onclick="takeshot()" data-toggle="modal" data-target="#myModal">
-        			Take Screenshot
-        		</button>
+           <td style="color: #fff; font-size: 100%; color:#E9FF00">
+            <span onclick="takeshot()" data-toggle="modal" data-target="#myModal" style="font-size: 15px;">
+        			<i class="fas fa-camera"></i>
+        		</span>
 
 
            <div class="modal fade" id="myModal" role="dialog">
@@ -202,17 +202,7 @@
 
              </div>
            </div>
-          </td> -->
-
-          <!-- <td style="color: #fff; font-size: 150%; color:#E9FF00">
-            <div class="popup" onclick="myFunction()">Share+
-              <span class="popuptext" id="myPopup">
-                <a href="#" class="fa fa-facebook"></a>
-  	             <a href="#" class="fa fa-twitter"></a>
-               </span>
-             </div>
-          </td> -->
-
+          </td>
 
         </tr>
 
