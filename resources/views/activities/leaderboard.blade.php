@@ -11,7 +11,7 @@
     <!-- <link rel="stylesheet" href="{{ asset('css/cartajohan.css') }} "> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Include from the CDN -->
-    <!-- <script type="text/javascript" src="html2canvas-master/dist/html2canvas.js"></script> -->
+    <script type="text/javascript" src="html2canvas-master/dist/html2canvas.js"></script>
 
 
 

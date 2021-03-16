@@ -272,12 +272,17 @@
         color: #fff;
         /* border: 2px solid #4CAF50; */
       }
+      html, body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden
+      }
       </style>
 
   </head>
   <body>
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
+<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding-bottom: 0%;">
 
 
     <h1 style="padding-top: 2%; text-align: center;font-size: 350%; color: #fff; font-weight: bold;; padding-bottom: 0%;padding-left: 3%;">LESSONS</h1>
