@@ -162,7 +162,7 @@
           <td style="color: #fff; font-size: 100%; color:#E9FF00">
             {{$current_user_marks}}
           </td>
-           <td style="color: #fff; font-size: 100%; color:#E9FF00">
+           <!-- <td style="color: #fff; font-size: 100%; color:#E9FF00">
             <span onclick="takeshot()" data-toggle="modal" data-target="#myModal" style="font-size: 15px;">
         			<i class="fas fa-camera"></i>
         		</span>
@@ -202,7 +202,7 @@
 
              </div>
            </div>
-          </td>
+          </td> -->
 
         </tr>
 
