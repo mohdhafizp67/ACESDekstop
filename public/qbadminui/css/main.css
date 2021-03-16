@@ -1317,7 +1317,7 @@ button.close {
 .side-bar {
   /* background: linear-gradient(-154deg, #639, #33214b) !important; */
   background: linear-gradient(-154deg, #130E29, #130E29) !important;
-  /* height: 100vh !important; */
+  height: 100vh !important;
   width: 18rem !important;
   visibility: hidden;
   position: fixed !important;
@@ -1327,6 +1327,25 @@ button.close {
   transition: all ease 0.5s;
   z-index: 99;
   overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #130E29 ;
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
 }
 
 .side-bar .side-menu-brand {
