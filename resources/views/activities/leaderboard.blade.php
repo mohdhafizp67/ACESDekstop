@@ -11,7 +11,8 @@
     <!-- <link rel="stylesheet" href="{{ asset('css/cartajohan.css') }} "> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Include from the CDN -->
-    <script type="text/javascript" src="html2canvas-master/dist/html2canvas.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
 
 
 
@@ -162,8 +163,8 @@
           <td style="color: #fff; font-size: 100%; color:#E9FF00">
             {{$current_user_marks}}
           </td>
-           <!-- <td style="color: #fff; font-size: 100%; color:#E9FF00">
-            <span onclick="takeshot()" data-toggle="modal" data-target="#myModal" style="font-size: 15px;">
+           <td style="color: #fff; font-size: 100%; color:#E9FF00">
+            <span onclick="screenshot()" data-toggle="modal" data-target="#myModal" style="font-size: 15px;">
         			<i class="fas fa-camera"></i>
         		</span>
 
@@ -180,7 +181,8 @@
                    <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'>
 
                    <div id="mImageBox">
-                   <button id="my_image" alt=''  src='http://161.35.227.188/ACES-Desktop/storage/uploads/user_pictures/2mrc9Yk9ktr0AZdBVc5PPHxal1GKKNkqIGzTMeQ9.jpg' class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook"></i></button>
+                     <img id="facebook_image" width="400px" height="400px">
+                   <button id="my_image" alt=''  src="{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook"></i></button>
                    </div>
                    <script>
                    function fbs_click(TheImg) {
@@ -202,7 +204,7 @@
 
              </div>
            </div>
-          </td> -->
+          </td>
 
         </tr>
 
@@ -216,6 +218,7 @@
 </div>
 
   </body>
+      <script src="http://hongru.github.io/proj/canvas2image/canvas2image.js"></script>
 
       <script type='text/javascript'>
       function screenshot(){
@@ -224,15 +227,28 @@
           document.body.appendChild(canvas);
 
           // Get base64URL
-          var base64URL = canvas.toDataURL('image/jpeg').replace('image/jpeg', 'image/octet-stream');
-
+          // var base64URL = canvas.toDataURL('image/jpeg').replace('image/jpeg', 'image/octet-stream');
+          var base64URL = canvas.toDataURL(); // type, quality
+          var image = base64URL.replace(/^data:image\/(png|jpg);base64,/, "");
+          // console.log(base64URL);
           // AJAX request
           $.ajax({
-             url: 'ajaxfile.php',
+             url: 'upload/screenshot',
              type: 'post',
-             data: {image: base64URL},
-             success: function(data){
-                console.log('Upload successfully');
+             dataType: 'text',
+             // contentType: false,
+             headers: {
+               'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+             },
+             data: {
+               image: image
+             },
+             success: function(data, textStatus){
+                console.log(data);
+                document.getElementById("facebook_image").src = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}";
+             },
+             error: function(data, textStatus, error){
+               console.log(error);
              }
           });
         });

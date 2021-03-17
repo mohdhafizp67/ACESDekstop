@@ -137,6 +137,8 @@ Route::get('/leaderboard', [App\Http\Controllers\LeaderboardController::class, '
 Route::get('/chat', [App\Http\Controllers\ChatController::class, 'index'])->name('activities.chat');
 
 
+//screenshot
+Route::post('/upload/screenshot', [App\Http\Controllers\ApiController::class, 'ajaxUploadImage']);
 });
 
 Route::middleware('admin')->group(function () {
