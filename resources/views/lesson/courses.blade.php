@@ -353,7 +353,7 @@
               </div>
 
               <div class="slider-single">
-                  <a href="{{route('lesson.vrlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/vr.png') }}" alt="2" /></a>
+                  <a href="{{route('lesson.vrlessons')}}"><img class="slider-single-image" src="{{ asset('concept/images/pelajaran/lesson/vrarlesson.png') }}" alt="2" /></a>
                   <!-- <h1 class="slider-single-title">Addictive Manufacturing</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
