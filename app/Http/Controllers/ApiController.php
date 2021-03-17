@@ -40,19 +40,19 @@ class ApiController extends Controller
     $user = User::findOrFail($user_id);
     $response = new stdClass();
 
-    // try {
+    try {
         // $gambar_screenshot = print_r($imageDecoded)->store('public/uploads/screenshot');
         // $path = Storage::url($gambar_screenshot);
         $path = 'uploads/screenshot_'.$user_id.'.png';
         file_put_contents($path, $imageDecoded);
         $user->screenshots = $path;
         $user->save();
-        // $response->success = true;
-        // $response->message = "Upload Success";
-    // }catch (Throwable $e) {
-    //     $response->success = false;
-    //     $response->message = $e;
-    // }
+        $response->success = true;
+        $response->message = "Upload Success";
+    }catch (Throwable $e) {
+        $response->success = false;
+        $response->message = $e;
+    }
     // dd($screenshot);
     return response()->json($response);
   }
