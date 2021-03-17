@@ -353,7 +353,7 @@
               </div>
 
               <div class="slider-single">
-                <a href="{{route('quiz.intro-start', 2)}}"><img class="slider-single-image" src="{{ asset('concept/images/kuiz/vr.png') }}" alt="2" /></a>
+                <a href="{{route('quiz.intro-start', 2)}}"><img class="slider-single-image" src="{{ asset('concept/images/kuiz/vrar.png') }}" alt="2" /></a>
 
 
                   <!-- <h1 class="slider-single-title">Addictive Manufacturing</h1> -->
@@ -432,7 +432,7 @@
 
             <div class="slider-single">
               <a href="{{route('quiz.intro-start', 8)}}"><img class="slider-single-image" src="{{ asset('concept/images/kuiz/universal.png') }}" alt="8" /></a>
-              
+
                   <!-- <h1 class="slider-single-title">Autonomous Robot</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
