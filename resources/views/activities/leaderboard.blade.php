@@ -223,14 +223,14 @@
       <script type='text/javascript'>
       function screenshot(){
          html2canvas(document.body,{background: '#fff'}).then(function(canvas) {
+          $("#facebook_image").src.= ""; // clear previous image
 
           document.body.appendChild(canvas);
-
           // Get base64URL
-          // var base64URL = canvas.toDataURL('image/jpeg').replace('image/jpeg', 'image/octet-stream');
-          var base64URL = canvas.toDataURL(); // type, quality
+          var base64URL = canvas.toDataURL();
           var image = base64URL.replace(/^data:image\/(png|jpg);base64,/, "");
           // console.log(base64URL);
+
           // AJAX request
           $.ajax({
              url: 'upload/screenshot',
@@ -245,8 +245,7 @@
              },
              success: function(data, textStatus){
                 console.log(data);
-                document.getElementById("facebook_image").src = "";
-                document.getElementById("facebook_image").src = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}";
+                document.getElementById("facebook_image").src = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
              },
              error: function(data, textStatus, error){
                console.log(error);
