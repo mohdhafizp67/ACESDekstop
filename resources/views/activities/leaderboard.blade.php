@@ -175,15 +175,17 @@
 
                <div class="modal-content">
                  <div class="modal-header">
+                   <span>Share on Facebook</span>
                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                  </div>
                  <div class="modal-body">
-                   <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'>
+                   <!-- <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'> -->
 
                    <div id="mImageBox">
-                     <img id="facebook_image" width="400px" height="400px">
-                   <button id="my_image" alt=''  src="{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook"></i></button>
-                   </div>
+                     <img id="facebook_image" width="400px" height="auto;">
+                   </div><br>
+                   <span id="my_image" alt=''  src="{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" class="social__link" onclick="fbs_click(this)"><i class="fab fa-facebook" style="font-size: 30px;"></i></span>
+
                    <script>
                    function fbs_click(TheImg) {
 
@@ -226,7 +228,6 @@
 
         document.getElementById("facebook_image").src = "#"; // clear previous image
 
-          document.body.appendChild(canvas);
           // Get base64URL
           var base64URL = canvas.toDataURL("image/jpg",1.0);
           var image = base64URL.replace(/^data:image\/(png|jpg);base64,/, "");
