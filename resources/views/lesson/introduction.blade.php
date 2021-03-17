@@ -370,7 +370,7 @@
                 <!-- <img alt="Bootstrap Image Preview" src="{{asset('concept/images/pelajaran/lokasi.jpg')}}" style="width: 100%; height: auto;"> -->
 
               <div class="w3-content w3-display-container">
-                <img class="mySlides" src="{{asset('concept/images/pelajaran/companiesi40.jpg')}}" style="width:100%">
+                <img class="mySlides" src="{{asset('concept/images/pelajaran/infocompany.jpg')}}" style="width:100%">
                 <!-- <img class="mySlides" src="{{asset('concept/images/pelajaran/2.jpg')}}" style="width:100%">
                 <img class="mySlides" src="{{asset('concept/images/pelajaran/3.jpg')}}" style="width:100%"> -->
 

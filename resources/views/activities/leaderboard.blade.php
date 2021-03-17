@@ -228,7 +228,7 @@
 
           document.body.appendChild(canvas);
           // Get base64URL
-          var base64URL = canvas.toDataURL();
+          var base64URL = canvas.toDataURL("image/jpg",1.0);
           var image = base64URL.replace(/^data:image\/(png|jpg);base64,/, "");
           // console.log(base64URL);
 
