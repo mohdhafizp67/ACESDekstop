@@ -245,6 +245,7 @@
              },
              success: function(data, textStatus){
                 console.log(data);
+                document.getElementById("facebook_image").src = "";
                 document.getElementById("facebook_image").src = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}";
              },
              error: function(data, textStatus, error){
