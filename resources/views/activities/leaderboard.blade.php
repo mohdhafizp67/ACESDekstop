@@ -223,7 +223,8 @@
       <script type='text/javascript'>
       function screenshot(){
          html2canvas(document.body,{background: '#fff'}).then(function(canvas) {
-          $("#facebook_image").src.= ""; // clear previous image
+
+        document.getElementById("facebook_image").src = "#"; // clear previous image
 
           document.body.appendChild(canvas);
           // Get base64URL
