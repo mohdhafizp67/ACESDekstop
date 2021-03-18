@@ -277,8 +277,8 @@
              },
              success: function(data, textStatus){
                 console.log(data);
-                document.getElementById("my_image").src = "http://161.35.227.188/ACES-Desktop{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
-                document.getElementById("facebook_image").src = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
+                document.getElementById("my_image").src = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
+                document.getElementById("facebook_image").src = "http://161.35.227.188/ACES-Desktop{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
              },
              error: function(data, textStatus, error){
                console.log(error);
