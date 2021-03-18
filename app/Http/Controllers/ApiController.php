@@ -50,7 +50,7 @@ class ApiController extends Controller
         $response->success = true;
         $response->message = "Upload Success";
     }catch (Throwable $e) {
-        $response->success = false;
+        $response->success = app()->make(\App\Exceptions\Handler::class)->report($e);
         $response->message = $e;
     }
     // dd($screenshot);
