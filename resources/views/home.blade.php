@@ -183,7 +183,7 @@ canvas {
 
                 <div style="padding: 12%;"></div>
                 @if(Auth::user()->profile_picture == null)
-                  <img src="{{ asset('https://i.redd.it/z394307odi741.png') }}" alt="profile" class="img-container">
+                  <img src="{{ asset('concept/images/defaultprofile.jpg') }}" alt="profile" class="img-container">
                 @else
                 <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}" onError="this.src='http://161.35.227.188/ACES{{ ( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}';" class="img-container">
                 @endif

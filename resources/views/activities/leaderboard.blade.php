@@ -115,7 +115,7 @@
             @if($data->profile_picture!= null)
             <img src="{{ asset( $image_path = str_replace('public', 'storage',  $data->profile_picture)) }}" onError="this.src='http://161.35.227.188/ACES{{ ( $image_path = str_replace('public', 'storage',  $data->profile_picture)) }}';" class="profile-avatar" style="height:40px; width:40px;">
             @else
-            <img src="{{ asset('concept/images/profilebasic.png') }}"  class="profile-avatar" style="height:40px; width:40px;">
+            <img src="{{ asset('concept/images/defaultprofile.jpg') }}"  class="profile-avatar" style="height:40px; width:40px;">
             @endif <br>
           </td>
           <td style="color: #fff; font-size: 100%;padding-left: 5%;">
@@ -156,7 +156,7 @@
             @if(Auth::user()->profile_picture != null)
             <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}" onError="this.src='http://161.35.227.188/ACES{{ ( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}';" class="profile-avatar" style="height:40px; width:40px;">
             @else
-            <img src="{{ asset('concept/images/profilebasic.png') }}"  class="profile-avatar" style="height:40px; width:40px;">
+            <img src="{{ asset('concept/images/defaultprofile.jpg') }}"  class="profile-avatar" style="height:40px; width:40px;">
             @endif <br>
           </td>
           <td style="color: #fff; font-size: 100%; color:#E9FF00">
@@ -190,9 +190,10 @@
                    <!-- <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'> -->
 
                    <div id="mImageBox">
-                     <img id="facebook_image" width="100%" height="auto;">
+                     <img id="facebook_image"  width="100%" height="auto;">
                    </div><br>
                    <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>
+
 
                    <script>
                    function fbs_click(TheImg) {
@@ -251,6 +252,7 @@
   </body>
       <script src="http://hongru.github.io/proj/canvas2image/canvas2image.js"></script>
 
+
       <script type='text/javascript'>
       function screenshot(){
          html2canvas(document.body,{background: '#fff'}).then(function(canvas) {
@@ -281,7 +283,6 @@
                 var att = document.createAttribute("src");
                 att.value = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}";
                 image.setAttributeNode(att);
-                // document.getElementById("my_image").innerHTML  = "src={{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
                 document.getElementById("facebook_image").src = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
              },
              error: function(data, textStatus, error){
