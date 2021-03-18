@@ -210,7 +210,7 @@
 
                     </script>
 
-                    <span id="my_image2" alt=''  src="{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" class="social__link" onclick="twt_click(this)"><i class="fab fa-twitter-square" style="font-size: 30px;"></i></span>
+                    <!-- <span id="my_image2" alt=''  src="{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" class="social__link" onclick="twt_click(this)"><i class="fab fa-twitter-square" style="font-size: 30px;"></i></span>
 
                     <script>
                     function twt_click(TheImg) {
@@ -219,14 +219,14 @@
 
                         t=TheImg.getAttribute('alt');
 
-                        window.open('https://twitter.com/intent/tweet?u=&http://161.35.227.188/ACES{{ ( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}'+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'tweet','toolbar=0,status=0,width=626,height=436');
+                        window.open('https://twitter.com/intent/tweet?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');
 
                         return false;
 
                       };
 
 
-                     </script>
+                     </script> -->
 
 
                  </div>
