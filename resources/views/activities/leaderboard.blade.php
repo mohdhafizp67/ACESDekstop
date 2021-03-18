@@ -192,7 +192,7 @@
                    <div id="mImageBox">
                      <img id="facebook_image" width="100%" height="auto;">
                    </div><br>
-                   <span id="my_image" alt='' class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>
+                   <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>
 
                    <script>
                    function fbs_click(TheImg) {
@@ -277,7 +277,11 @@
              },
              success: function(data, textStatus){
                 console.log(data);
-                document.getElementById("my_image").src = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
+                var image = document.getElementById("my_image");
+                var att = document.createAttribute("src");
+                att.value = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}";
+                image.setAttributeNode(att);
+                // document.getElementById("my_image").innerHTML  = "src={{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
                 document.getElementById("facebook_image").src = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
              },
              error: function(data, textStatus, error){
