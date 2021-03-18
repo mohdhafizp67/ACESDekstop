@@ -51,6 +51,14 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #13526403;
       }
+
+      .fa-facebook-square {
+        color: #3b5998;
+        background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
+        background-size: 55%;
+        background-position: 70% 0;
+        background-repeat: no-repeat;
+      }
     </style>
   </head>
   <body>
@@ -174,17 +182,17 @@
 
 
                <div class="modal-content">
-                 <div class="modal-header">
+                 <div class="modal-header" style="color: yellow;">
                    <span>Share on Facebook</span>
-                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                   <button type="button" class="close" data-dismiss="modal" style="color: #fff;">&times;</button>
                  </div>
                  <div class="modal-body">
                    <!-- <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'> -->
 
                    <div id="mImageBox">
-                     <img id="facebook_image" width="400px" height="auto;">
+                     <img id="facebook_image" width="100%" height="auto;">
                    </div><br>
-                   <span id="my_image" alt=''  src="{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" class="social__link" onclick="fbs_click(this)"><i class="fab fa-facebook" style="font-size: 30px;"></i></span>
+                   <span id="my_image" alt=''  src="{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>
 
                    <script>
                    function fbs_click(TheImg) {
@@ -197,9 +205,11 @@
 
                        return false;
 
-                      }
-                    </script>
+                     };
 
+
+                    </script>
+  
                  </div>
 
                </div>
