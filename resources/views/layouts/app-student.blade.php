@@ -61,7 +61,7 @@
                             @if(Auth::user()->profile_picture != null)
                             <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:60px; width:60px; border-radius: 25px;">
                             @else
-                            <img src="{{asset('concept/images/profile.png')}}"  class="profile-avatar" style="height:60px; width:60px; border-radius: 25px;">
+                            <img src="{{asset('concept/images/defaultprofile.jpg')}}"  class="profile-avatar" style="height:60px; width:60px; border-radius: 25px;">
                             @endif
                           </a>
 
