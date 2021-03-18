@@ -192,7 +192,7 @@
                    <div id="mImageBox">
                      <img id="facebook_image" width="100%" height="auto;">
                    </div><br>
-                   <span id="my_image" alt=''  src="{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>
+                   <span id="my_image" alt='' class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>
 
                    <script>
                    function fbs_click(TheImg) {
@@ -256,6 +256,7 @@
          html2canvas(document.body,{background: '#fff'}).then(function(canvas) {
 
         document.getElementById("facebook_image").src = "#"; // clear previous image
+        document.getElementById("my_image").src = "#"; // clear previous image
 
           // Get base64URL
           var base64URL = canvas.toDataURL("image/jpg",1.0);
@@ -276,6 +277,7 @@
              },
              success: function(data, textStatus){
                 console.log(data);
+                document.getElementById("my_image").src = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
                 document.getElementById("facebook_image").src = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
              },
              error: function(data, textStatus, error){
