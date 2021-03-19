@@ -7,11 +7,28 @@
   <link rel="icon" href="{{ asset('concept/images/logo.png') }}" type="image/icon type">
 
   <style>
+
+  #warning-message { display: none; }
+   @media only screen and (orientation:portrait){
+       #wrapper { display:none; }
+       #warning-message {
+         display:block;
+         background-color: #130e29;
+         text-align: center;
+         font-size: 150%;
+       }
+   }
+   @media only screen and (orientation:landscape){
+       #warning-message { display:none; }
+   }
+
+
   .footer {
     background-color: #000c15;
-    /* padding: 10px; */
-    /* text-align: center; */
+    padding: 10px;
+    text-align: center;
     font-size: 80%;
+    padding: 10px 0px 10px;
   }
 
   .button {
@@ -36,6 +53,10 @@
   </style>
 </head>
 <body>
+
+  <div id="wrapper">
+
+
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
 
 <div class="row">
@@ -407,6 +428,17 @@
 
 </div>
 
+
+</div>
+<div id="warning-message">
+    <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;padding-top: 20%;padding-bottom: 20%;">
+    <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+
+
+    <span style="color: #fff;">Best View is in Landscape Mode</span>
+    <br><br>
+    <span style="color: #fff;">Please rotate your device to view ACES WEB APP</span>
+</div>
 
 </body>
 <script type="text/javascript">

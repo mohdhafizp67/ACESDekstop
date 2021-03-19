@@ -10,13 +10,27 @@
 <link rel="icon" href="{{ asset('concept/images/logo.png') }}" type="image/icon type">
 
 <style>
+#warning-message { display: none; }
+ @media only screen and (orientation:portrait){
+     #wrapper { display:none; }
+     #warning-message {
+       display:block;
+       background-color: #000c15;
+       text-align: center;
+       font-size: 150%;
+     }
+ }
+ @media only screen and (orientation:landscape){
+     #warning-message { display:none; }
+ }
+
 
 /* Style the footer */
 .footer {
   background-color: #000c15;
   padding: 10px;
   text-align: center;
-  font-size: 100%;
+  font-size: 80%;
   padding: 10px 0px 10px;
 }
 
@@ -48,6 +62,9 @@ a {
 </style>
 </head>
 <body>
+    <div id="wrapper">
+
+
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; background-color: transparent !important;">
 
 <!-- Modal -->
@@ -103,8 +120,8 @@ a {
         </div> -->
         <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
-        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 20%;width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
-        <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
+        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 20%;width: 32%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
+        <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 32%; height: 10%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
 
 
         <audio id="myAudio" controls autoplay hidden="true">
@@ -253,7 +270,7 @@ a {
 
                                 <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
                                   <div class="u-align-center u-form-group u-form-submit" style="text-align: center;">
-                                                  <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 30%; color: #fff;padding: 3%;">{{ strtoupper(__('landing_page.login.button')) }}</button>
+                                                  <button type="submit" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 30%; color: #fff;padding: 2%;">{{ strtoupper(__('landing_page.login.button')) }}</button>
                                   </div>
                                   <span style="font-size: 80%;"><a href="{{route('register')}}">{{ __('landing_page.login.register_here') }}</a></span>
                                 </div>
@@ -277,6 +294,17 @@ a {
     <span>&copy; {{ __('landing_page.login.copyright', [ 'year' => date('Y')]) }}</span>&nbsp&nbsp&nbsp&nbsp<span><font color="white">{{ __('landing_page.tnc_full') }}</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">{{ __('landing_page.privacy') }}</font></span>
     </div>
   </div>
+</div>
+
+</div>
+<div id="warning-message">
+    <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;padding-top: 20%;padding-bottom: 20%;">
+    <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+
+
+    <span style="color: #fff;">Best View is in Landscape Mode</span>
+    <br><br>
+    <span style="color: #fff;">Please rotate your device to view ACES WEB APP</span>
 </div>
 
 </body>
