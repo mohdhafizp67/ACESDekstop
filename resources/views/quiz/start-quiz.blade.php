@@ -7,6 +7,20 @@
   <head>
 <style media="screen">
 
+#warning-message { display: none; }
+ @media only screen and (orientation:portrait){
+     #wrapper { display:none; }
+     #warning-message {
+       display:block;
+       background-color: #000c15;
+       text-align: center;
+       font-size: 150%;
+     }
+ }
+ @media only screen and (orientation:landscape){
+     #warning-message { display:none; }
+ }
+
 label {
     font-size: 20px !important;
 }
@@ -63,6 +77,7 @@ label {
 
 </head>
 <body>
+  <div id="wrapper">
 <div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-bottom: 6%;padding: 7%;">
   <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">QUIZ</h1>
   <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Please answer all the question</h1>
@@ -90,7 +105,7 @@ label {
           @csrf
           <input type="hidden" name="quiz_id" value="{{$quiz->id}}">
         <div class="pills-regular">
-            <ul class="nav nav-pills m-1" id="pills-tab" role="tablist" style="padding-bottom: 3%; padding-left: 15%; padding-right: 8%;">
+            <ul class="nav nav-pills m-1" id="pills-tab" role="tablist" style="padding-bottom: 3%; padding-left: 15%;">
 
                 @foreach($question as $data)
                   @if ($loop->first)
@@ -359,6 +374,18 @@ label {
   </div>
 
 </div>
+
+</div>
+<div id="warning-message">
+    <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;padding-top: 20%;padding-bottom: 20%;">
+    <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+
+
+    <span style="color: #fff;text-transform: uppercase;">Best View is in Landscape Mode</span>
+    <br><br>
+    <span style="color: #fff;text-transform: uppercase;">Please rotate your device to view ACES WEB APP</span>
+</div>
+
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

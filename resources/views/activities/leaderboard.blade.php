@@ -18,6 +18,20 @@
 
 
     <style media="screen">
+    #warning-message { display: none; }
+     @media only screen and (orientation:portrait){
+         #wrapper { display:none; }
+         #warning-message {
+           display:block;
+           background-color: #000c15;
+           text-align: center;
+           font-size: 150%;
+         }
+     }
+     @media only screen and (orientation:landscape){
+         #warning-message { display:none; }
+     }
+
       .table thead th{
             border-bottom: 2px solid #0000;
             border-top: 1px solid #0000;
@@ -62,6 +76,8 @@
     </style>
   </head>
   <body>
+
+    <div id="wrapper">
 
 <div id="photo" class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 0% 100%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
 <h1 style="padding-top: 4%; text-align: center;font-size: 350%; color: #fff; font-weight: bold;; padding-bottom: 0%;">LEADERBOARD</h1>
@@ -247,6 +263,17 @@
 
   </div>
 </div>
+</div>
+
+</div>
+<div id="warning-message">
+    <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;padding-top: 20%;padding-bottom: 20%;">
+    <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+
+
+    <span style="color: #fff;text-transform: uppercase;">Best View is in Landscape Mode</span>
+    <br><br>
+    <span style="color: #fff;text-transform: uppercase;">Please rotate your device to view ACES WEB APP</span>
 </div>
 
   </body>

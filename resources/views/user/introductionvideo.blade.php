@@ -1,7 +1,7 @@
 @extends('layouts.app-login-register')
 
 @section('content')
-<html>
+<html style="background-color: #032c41">
 <head>
   <link rel="stylesheet" href="{{ asset('css/Login.css') }} ">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -10,6 +10,21 @@
 <link rel="icon" href="{{ asset('concept/images/logo.png') }}" type="image/icon type">
 
 <style>
+
+#warning-message { display: none; }
+ @media only screen and (orientation:portrait){
+     #wrapper { display:none; }
+     #warning-message {
+       display:block;
+       background-color: #032c41;
+       text-align: center;
+       font-size: 150%;
+     }
+ }
+ @media only screen and (orientation:landscape){
+     #warning-message { display:none; }
+ }
+
 :root {
   --overlay-color: #31385C;
 }
@@ -133,7 +148,7 @@
   justify-content: center;
   align-items: center;
   padding-left: 65%;
-  font-size: 160%;
+  font-size: 120%;
 }
 
 .social li {
@@ -175,13 +190,44 @@
   bottom: 0px;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
-  /* width: 100%; */
-  /* padding: 20px; */
+  width: 80%;
+  padding: 1%;
 }
+
+.modal-body {
+  h1 {
+    font-weight:900;
+    font-size:2.3em;
+    text-transform:uppercase;
+  }
+}
+
+
 
 </style>
 </head>
 <body>
+  <div id="wrapper">
+      <!-- your html for your website -->
+
+  <!-- <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content" style="margin-top: 50%; background-color: #013240">
+        <div class="modal-header">
+          <h5 style="color: #FF0000">Disclaimer</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        <div class="modal-body text-center">
+
+          <span style="font-size: 15px; color: #fff;">It's available for Desktop view only for now.</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div> -->
 
   <section class="showcase">
     <header>
@@ -189,11 +235,15 @@
     </header>
     <video
       id="myVideo"
-      src="{{asset('concept/video/mascotv3.mp4')}}"
+      src="{{asset('concept/video/mascotv7.mp4')}}"
       loop
       autoplay
       type="video/mp4"
     ></video>
+
+
+
+
 <!-- Sample Video provided by DesignSupply https://codepen.io/designsupply/pen/zmEWBm -->
     <!-- Download Video Source and host the file on your own server -->
     <!-- For example: https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
@@ -201,22 +251,41 @@
 
 
     <ul class="social content">
-
-
+      <li>
+        <a><span style="color: #000;">Choose Your Platform:</span></a>
+      </li>
+      <li>
+        <a href="http://161.35.227.188/ACES-Desktop/login">Login</a>
+      </li>
+      <li>
+        <span>|</span>
+      </li>
+      <li>
+        <a href="http://161.35.227.188/ACES-Desktop/register"><span>Register</span></a>
+      </li>
         <li>
           <a href="#" onclick="pauseVid()"><i class="fas fa-pause"></i></a>
         </li>
         <li>
           <a href="#" onclick="playVid()"><i class="fas fa-play"></i></a>
         </li>
-        <li>
-          <a href="{{route('login')}}">Next</a>
-        </li>
+
 
 
     </ul>
 
   </section>
+
+</div>
+<div id="warning-message">
+    <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;padding-top: 20%;padding-bottom: 20%;">
+    <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+
+
+    <span style="color: #fff;">Best View is in Landscape Mode</span>
+    <br><br>
+    <span style="color: #fff;">Please rotate your device to view ACES WEB APP</span>
+</div>
 
 </body>
 
@@ -231,5 +300,13 @@ function pauseVid() {
   vid.pause();
 }
 </script>
+
+<script>
+$(document).ready(function(){
+ $('#myModal').modal('show');
+  });
+</script>
+
+
 </html>
 @endsection
