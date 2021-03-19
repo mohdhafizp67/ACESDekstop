@@ -15,10 +15,24 @@
 
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- <link href="css/style.css" rel="stylesheet"> -->
-
+    <style media="screen">
+    #warning-message { display: none; }
+     @media only screen and (orientation:portrait){
+         #wrapper { display:none; }
+         #warning-message {
+           display:block;
+           background-color: #000c15;
+           text-align: center;
+           font-size: 150%;
+         }
+     }
+     @media only screen and (orientation:landscape){
+         #warning-message { display:none; }
+     }
+    </style>
   </head>
   <body>
-
+    <div id="wrapper">
     <div class="container-fluid">
     	<div class="row">
     		<div class="col-md-12" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-repeat: no-repeat;background-size: cover;">
@@ -266,6 +280,17 @@
     	</div>
     </div>
 
+  </div>
+  <div id="warning-message">
+      <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;padding-top: 20%;padding-bottom: 20%;">
+      <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+
+
+      <span style="color: #fff;text-transform: uppercase;">Best View is in Landscape Mode</span>
+      <br><br>
+      <span style="color: #fff;text-transform: uppercase;">Please rotate your device to view ACES WEB APP</span>
+  </div>
+  
     <script type="text/javascript">
     function onlyNumberKey(evt) {
 

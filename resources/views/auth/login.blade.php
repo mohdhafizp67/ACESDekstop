@@ -302,9 +302,9 @@ a {
     <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
 
-    <span style="color: #fff;">Best View is in Landscape Mode</span>
+    <span style="color: #fff;text-transform: uppercase;">Best View is in Landscape Mode</span>
     <br><br>
-    <span style="color: #fff;">Please rotate your device to view ACES WEB APP</span>
+    <span style="color: #fff;text-transform: uppercase;">Please rotate your device to view ACES WEB APP</span>
 </div>
 
 </body>

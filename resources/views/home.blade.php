@@ -19,147 +19,163 @@
       <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
       <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
       <style media="screen">
-      <link rel="icon" href="{{ asset('concept/images/logo.png') }}" type="image/icon type">
 
 
-.circle {
-width: 100%;
-margin: 6px 6px 20px;
-display: inline-block;
-position: relative;
-text-align: center;
-line-height: 1.2;
-top: 10%;
-left: 23%;
-}
+      #warning-message { display: none; }
+       @media only screen and (orientation:portrait){
+           #wrapper { display:none; }
+           #warning-message {
+             display:block;
+             background-color: #000c15;
+             text-align: center;
+             font-size: 150%;
+           }
+       }
+       @media only screen and (orientation:landscape){
+           #warning-message { display:none; }
+       }
 
-.circle canvas {
-vertical-align: top;
-}
+      .circle {
+      width: 100%;
+      margin: 6px 6px 20px;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      line-height: 1.2;
+      top: 10%;
+      left: 23%;
+      }
 
-.circle strong {
-position: absolute;
-top: 35%;
-left: 1%;
-width: 100%;
-text-align: center;
-line-height: 25px;
-font-size: 200%;
-color: #f8f9fa;
-}
+      .circle canvas {
+      vertical-align: top;
+      }
 
-.circle strong i {
-font-style: normal;
-font-size: 0.6em;
-font-weight: normal;
-}
+      .circle strong {
+      position: absolute;
+      top: 35%;
+      left: -22%;
+      width: 100%;
+      text-align: center;
+      line-height: 25px;
+      font-size: 180%;
+      color: #f8f9fa;
+      }
 
-.circle span {
-display: block;
-color: #f8f9fa;
-font-size: 100%;
-margin-top: 65%;
-margin-left: 0%;
-}
+      .circle strong i {
+      font-style: normal;
+      font-size: 0.6em;
+      font-weight: normal;
+      }
 
-canvas {
-    position: absolute;
-    top: 15px;
-    left: 0;
-    height: 70%;
-    margin-left: 23.5%;
-}
+      .circle span {
+      display: block;
+      color: #f8f9fa;
+      font-size: 120%;
+      margin-top: 70%;
+      margin-left: -50%;
+      }
 
-.list-group-item-action {
-    color: #f8f9fa !important;
-    font-size: 100%;
-    background-color: #003e61 !important;
-}
+      canvas {
+          position: absolute;
+          top: 15px;
+          left: 0;
+          height: 70%;
+          margin-left: -3%;
+      }
 
-.list-group-item {
-    position: relative;
-    display: block;
-    padding: .75rem 1.25rem;
-    margin-bottom: -1px;
-    background-color: #003e616b;
-    border: 1px solid #17a2b8;
-}
+      .list-group-item-action {
+          color: #f8f9fa !important;
+          font-size: 100%;
+          background-color: #003e61 !important;
+      }
 
-.text-muted {
-    color: #f8f9fa !important;
-}
+      .list-group-item {
+          position: relative;
+          display: block;
+          padding: .75rem 1.25rem;
+          margin-bottom: -1px;
+          background-color: #003e616b;
+          border: 1px solid #17a2b8;
+      }
 
-.button {
-  background-color: ##ffffff00;
-  border: none;
-  /* color: white; */
-  /* padding: 16px 32px; */
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  /* margin: 4px 2px; */
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
+      .text-muted {
+          color: #f8f9fa !important;
+      }
 
-.buttonsound {
-  background-color: #ffffff00;
-  color: #fff;
-  /* border: 2px solid #4CAF50; */
-}
+      .button {
+        background-color: ##ffffff00;
+        border: none;
+        /* color: white; */
+        /* padding: 16px 32px; */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /* margin: 4px 2px; */
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
 
-.fontnew{
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
-  font-family: 'Roboto Mono', monospace;
-}
+      .buttonsound {
+        background-color: #ffffff00;
+        color: #fff;
+        /* border: 2px solid #4CAF50; */
+      }
 
-/* .avatar {
-  vertical-align: middle;
-  width: 70%;
-  height: 70%;
-  margin-top: -7%;
-  border-radius: 50%;
+      .fontnew{
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+        font-family: 'Roboto Mono', monospace;
+      }
 
-} */
+      /* .avatar {
+        vertical-align: middle;
+        width: 70%;
+        height: 70%;
+        margin-top: -7%;
+        border-radius: 50%;
 
-.img-container {
-  width: 75%;
-  height: 75%;
-  margin-top: -11%;
-   border: 0px solid;
-   border-radius: 50%;
-   position: relative;
-   object-fit: cover;
- }
- .img-container img {
-   width: 100%;
-   height: 200px;
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
- }
+      } */
 
- img {
-   -o-object-fit: contain !important;
-      /* object-fit: contain !important; */
-   -o-object-position: center !important;
-      /* object-position: center !important; */
- }
+      .img-container {
+        background-size: contain;
+          position: absolute;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 65%;
+          width: 65%;
+          border-radius: 100%;
+          margin-left: -32.5%;
+          top: 17.5%;
+       }
+       .img-container img {
+         width: 100%;
+         height: 200px;
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+       }
 
- .text-block {
-  position: absolute;
-  /* bottom: 30px;
-  right: 15px;
-  background-color: black;
-  color: white;
-  padding-left: 0px;
-  padding-right: 0px; */
-}
-</style>
+       img {
+         -o-object-fit: contain !important;
+            /* object-fit: contain !important; */
+         -o-object-position: center !important;
+            /* object-position: center !important; */
+       }
+
+       .text-block {
+        position: absolute;
+        /* bottom: 30px;
+        right: 15px;
+        background-color: black;
+        color: white;
+        padding-left: 0px;
+        padding-right: 0px; */
+      }
+    </style>
   </head>
   <body onload="myFunction()">
+  <div id="wrapper">
 
     <div class="container-fluid">
 	<div class="row">
@@ -357,6 +373,17 @@ canvas {
 
 		</div>
 	</div>
+</div>
+
+</div>
+<div id="warning-message">
+    <img class="logo-img" src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="logo" style="width: 100%;padding-top: 20%;padding-bottom: 20%;">
+    <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
+
+
+    <span style="color: #fff;text-transform: uppercase;">Best View is in Landscape Mode</span>
+    <br><br>
+    <span style="color: #fff;text-transform: uppercase;">Please rotate your device to view ACES WEB APP</span>
 </div>
 
     <!-- <script src="js/jquery.min.js"></script> -->
