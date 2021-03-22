@@ -14,7 +14,6 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
 
-    <meta name="twitter:image" content="{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" />
 
 
     <style media="screen">
@@ -209,7 +208,7 @@
                      <img id="facebook_image"  loading="lazy" width="100%" height="auto;">
                    </div><br>
                    <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>&nbsp
-                   <a href="https://twitter.com/intent/tweet?text={{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" class="popup">Share on twitter</a>
+
 
 
                    <script>
