@@ -205,7 +205,7 @@
                    <!-- <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'> -->
 
                    <div id="mImageBox">
-                     <img id="facebook_image"  loading="lazy" width="100%" height="auto;">
+                     <img id="facebook_image"  loading="lazy" alt="{{ asset('concept/images/loading.gif') }}" width="100%" height="auto;">
                    </div><br>
                    <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>&nbsp
 
