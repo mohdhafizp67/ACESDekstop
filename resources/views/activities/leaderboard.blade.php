@@ -205,7 +205,7 @@
                    <!-- <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'> -->
 
                    <div id="mImageBox">
-                     <img id="facebook_image" src="https://thumbs.gfycat.com/BitterEarnestBeardeddragon-small.gif" alt="https://thumbs.gfycat.com/BitterEarnestBeardeddragon-small.gif" width="100%" height="auto;">
+                     <img id="facebook_image" src="{{ asset('concept/images/loading.gif') }}" onError="{{ asset('concept/images/loading.gif') }}" width="100%" height="auto;">
                    </div><br>
                    <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>&nbsp
 
