@@ -251,7 +251,7 @@ a.whatsapp { color: #fff;}
                      <img id="facebook_image"  loading="lazy" width="100%" height="auto;">
                    </div><br>
                    <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>&nbsp
-                   <a data-text="Leaderboard" data-link="{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" class="whatsapp w3_whatsapp_btn w3_whatsapp_btn_large">Share</a>
+                   <a data-text="Your message goes here." data-link="http://161.35.227.188/ACES-Desktop{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" class="whatsapp w3_whatsapp_btn w3_whatsapp_btn_large">Share</a>
                    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
                    <script>
                    $(document).ready(function() {
@@ -277,13 +277,13 @@ a.whatsapp { color: #fff;}
                     };
                     $(document).on("click", '.whatsapp', function() {
                     if( isMobile.any() ) {
-                    var text = $(this).attr("src");
-                    var url = $(this).attr("my_image");
+                    var text = $(this).attr("data-text");
+                    var url = $(this).attr("data-link");
                     var message = encodeURIComponent(text) + " - " + encodeURIComponent(url);
-                    var whatsapp_url = "whatsapp://send?text=" + {{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }};
+                    var whatsapp_url = "whatsapp://send?text=" + message;
                     window.location.href = whatsapp_url;
                     } else {
-                    alert("Success");
+                    alert("Please share this article in mobile device");
                     }
                     });
                     });
