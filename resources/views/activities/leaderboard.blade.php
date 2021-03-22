@@ -209,23 +209,7 @@
                      <img id="facebook_image"  loading="lazy" width="100%" height="auto;">
                    </div><br>
                    <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>&nbsp
-                   <span id="my_image" class="social__link" onclick="ws_click(this)"><i class="fa fa-whatsapp" style="font-size: 30px;"></i></span>
 
-                   <script>
-                   function ws_click(TheImg) {
-
-                      var  u=TheImg.getAttribute('src');
-
-                       t=TheImg.getAttribute('alt');
-
-                       window.open('whatsapp://send?text='encodeURIComponent('{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}'),'sharer','toolbar=0,status=0,width=626,height=436');
-
-                       return false;
-
-                     };
-
-
-                    </script>
 
                    <script>
                    function fbs_click(TheImg) {
