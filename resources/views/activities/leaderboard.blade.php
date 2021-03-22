@@ -284,8 +284,8 @@
       function screenshot(){
          html2canvas(document.body,{background: '#fff'}).then(function(canvas) {
 
-        document.getElementById("facebook_image").src = "#"; // clear previous image
-        document.getElementById("my_image").src = "{{ asset('concept/images/loading.gif') }}"; // clear previous image
+        document.getElementById("facebook_image").src = "{{ asset('concept/images/loading.gif') }}"; // clear previous image
+        document.getElementById("my_image").src = "#"; // clear previous image
 
           // Get base64URL
           var base64URL = canvas.toDataURL("image/jpg",1.0);
