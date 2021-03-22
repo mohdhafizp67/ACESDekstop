@@ -14,7 +14,7 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
 
-
+    <meta name="twitter:image" content="{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" />
 
 
     <style media="screen">
@@ -73,48 +73,6 @@
         background-position: 70% 0;
         background-repeat: no-repeat;
       }
-
-
-      .w3_whatsapp_btn {
-background-image: url('icon.png');
-border: 1px solid rgba(0, 0, 0, 0.1);
-display: inline-block !important;
-position: relative;
-font-family: Arial,sans-serif;
-letter-spacing: .4px;
-cursor: pointer;
-font-weight: 400;
-text-transform: none;
-color: #fff;
-border-radius: 2px;
-background-color: #5cbe4a;
-background-repeat: no-repeat;
-line-height: 1.2;
-text-decoration: none;
-text-align: left;
-}
-.w3_whatsapp_btn_small {
-font-size: 12px;
-background-size: 16px;
-background-position: 5px 2px;
-padding: 3px 6px 3px 25px;
-}
-
-.w3_whatsapp_btn_medium {
-font-size: 16px;
-background-size: 20px;
-background-position: 4px 2px;
-padding: 4px 6px 4px 30px;
-}
-
-.w3_whatsapp_btn_large {
-font-size: 16px;
-background-size: 20px;
-background-position: 5px 5px;
-padding: 8px 6px 8px 30px;
-color: #fff;
-}
-a.whatsapp { color: #fff;}
     </style>
   </head>
   <body>
@@ -251,7 +209,8 @@ a.whatsapp { color: #fff;}
                      <img id="facebook_image"  loading="lazy" width="100%" height="auto;">
                    </div><br>
                    <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>&nbsp
-          
+                   <a href="https://twitter.com/intent/tweet?text={{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}" class="popup">Share on twitter</a>
+
 
                    <script>
                    function fbs_click(TheImg) {
