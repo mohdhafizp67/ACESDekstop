@@ -209,7 +209,7 @@
                      <img id="facebook_image"  loading="lazy" width="100%" height="auto;">
                    </div><br>
                    <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>&nbsp
-                   <a href="whatsapp://send?text=http://161.35.227.188/ACES-Desktop{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }} " data-action="share/whatsapp/share"><i class="fa fa-whatsapp" style="font-size: 30px;"></i>  </a>
+                   <!-- <a href="whatsapp://send?text=http://161.35.227.188/ACES-Desktop{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }} " data-action="share/whatsapp/share"><i class="fa fa-whatsapp" style="font-size: 30px;"></i>  </a> -->
 
 
                    <script>
