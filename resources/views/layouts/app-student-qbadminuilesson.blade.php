@@ -192,20 +192,20 @@
               <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                       <div class="modal-header">
-                          <h6 class="modal-title" id="exampleModalLabel" style="font-size: 200%;">CONFIRMATION</h6>
+                          <h6 class="modal-title" id="exampleModalLabel" style="font-size: 150%;">CONFIRMATION</h6>
                           <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                       <span aria-hidden="true">&times;</span>
                                   </a>
                       </div>
                       <div class="modal-body">
-                          <p style="text-align: justify;font-size: 150%;">ARE YOU SURE TO LOG OUT?</p>
+                          <p style="text-align: justify;font-size: 120%;">ARE YOU SURE TO LOG OUT?</p>
                       </div>
                       <div class="modal-footer">
-                          <a href="#" class="btn" data-dismiss="modal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 22%;">CANCEL</a>
+                          <a href="#" class="btn" data-dismiss="modal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 18%;">CANCEL</a>
                           <!-- <a href="#" class="btn btn-primary">Yes</a> -->
                           <form id="logout-form" action="{{ route('logout') }}" method="POST">
                           @csrf
-                          <button type="submit" name="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">LOG OUT</button>
+                          <button type="submit" name="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;width: 110%;">LOG OUT</button>
                           </form>
                       </div>
                   </div>
