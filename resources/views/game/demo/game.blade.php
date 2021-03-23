@@ -290,7 +290,20 @@
         /* border: 2px solid #4CAF50; */
       }
 
-
+      #mobile{
+        display:none;
+      }
+      #desktop{
+        display:block;
+      }
+      @media screen and (max-width: 980px) {
+         #mobile {
+             display:block;
+         }
+         #desktop {
+             display:none;
+         }
+      }
       </style>
 
   </head>
@@ -361,16 +374,21 @@
 
               <div class="slider-single">
 
-                  <a href="http://161.35.227.188/drone_tutorial_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(1)"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Arena.png') }}" alt="tutorial" /></a>
-                  <!-- <h1 class="slider-single-title">Introduction - Tutorial</h1> -->
-                  <!-- <a class="slider-single-likes" href="javascript:void(0);">
+                <a href="https://drive.google.com/file/d/1VK63AENjBDO9GWa3KFKRwk6U4JvPw2oi/view?usp=sharing" onclick="ajaxGame(1)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Arena.png') }}" alt="tutorial" /></a>
+                <a href="http://161.35.227.188/drone_tutorial_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(1)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Arena.png') }}" alt="tutorial" /></a>
+
+
+                  <!-- <h1 class="slider-single-title">Introduction - Tutorial</h1>
+                  <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
                       <p>1,247</p>
                   </a> -->
               </div>
 
               <div class="slider-single">
-                  <a href="http://161.35.227.188/drone_circuit_1_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(2)"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="1" />
+
+                <a href="#" onclick="ajaxGame(2)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="1" />
+                <a href="http://161.35.227.188/drone_circuit_1_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(2)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="1" />
                   <!-- <h1 class="slider-single-title">Circuit 01 - VR</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -379,7 +397,9 @@
               </div>
 
               <div class="slider-single">
-                  <a href="http://161.35.227.188/drone_circuit_2_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(3)"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2Tasik.png') }}" alt="2" /></a>
+
+                <a href="#" onclick="ajaxGame(3)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2Tasik.png') }}" alt="2" /></a>
+                <a href="http://161.35.227.188/drone_circuit_2_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(3)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2Tasik.png') }}" alt="2" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 02 - Addictive Manufacturing</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -389,7 +409,9 @@
 
 
               <div class="slider-single">
-                  <a href="http://161.35.227.188/drone_circuit_3_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(4)"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3Mersingislands.png') }}" alt="3" /></a>
+
+                <a href="#" onclick="ajaxGame(4)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3Mersingislands.png') }}" alt="3" /></a>
+                <a href="http://161.35.227.188/drone_circuit_3_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(4)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3Mersingislands.png') }}" alt="3" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 03 - Internet of Things</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -399,7 +421,9 @@
 
 
               <div class="slider-single">
-                  <a href="http://161.35.227.188/drone_circuit_4_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(5)"><img class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4Menara.png') }}" alt="4" /></a>
+
+                <a href="#" onclick="ajaxGame(5)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4Menara.png') }}" alt="4" /></a>
+                <a href="http://161.35.227.188/drone_circuit_4_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(5)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4Menara.png') }}" alt="4" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 04 - Big Data</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -409,7 +433,8 @@
 
               <div class="slider-single">
 
-                  <img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit05.png') }}" alt="5" />
+                <img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit05.png') }}" alt="5" />
+                <img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit05.png') }}" alt="5" />
 
                   <!-- <a href="" onclick="ajaxGame(6)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit05.png') }}" alt="5" /></a> -->
                   <!-- <h1 class="slider-single-title">Circuit 05 - Cloud Computing</h1> -->
@@ -421,7 +446,8 @@
 
                 <div class="slider-single">
 
-                  <img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit06.png') }}" alt="6" />
+                  <img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit06.png') }}" alt="6" />
+                  <img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit06.png') }}" alt="6" />
 
                   <!-- <a href="" onclick="ajaxGame(7)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit06.png') }}" alt="6" /></a> -->
                   <!-- <h1 class="slider-single-title">Circuit 06 - Cyber Security</h1> -->
@@ -433,7 +459,8 @@
 
             <div class="slider-single">
 
-                  <img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit07.png') }}" alt="7" />
+                <img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit07.png') }}" alt="7" />
+                <img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit07.png') }}" alt="7" />
 
                   <!-- <a href="" onclick="ajaxGame(8)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit07.png') }}" alt="7" /></a> -->
                   <!-- <h1 class="slider-single-title">Circuit 07 - Universal Integration</h1> -->
@@ -445,7 +472,8 @@
 
             <div class="slider-single">
 
-                <img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit08.png') }}" alt="8" />
+              <img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit08.png') }}" alt="8" />
+              <img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit08.png') }}" alt="8" />
 
                 <!-- <a href="" onclick="ajaxGame(9)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit08.png') }}" alt="8" /></a> -->
                   <!-- <h1 class="slider-single-title">Circuit 08 - Advanced Simulation</h1> -->
@@ -457,7 +485,8 @@
 
               <div class="slider-single">
 
-                  <img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit09.png') }}" alt="9" />
+                <img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit09.png') }}" alt="9" />
+                <img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit09.png') }}" alt="9" />
 
                     <!-- <a href="" onclick="ajaxGame(10)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit09.png') }}" alt="9" /></a> -->
                     <!-- <h1 class="slider-single-title">Circuit 09 - Autonomous Robot</h1> -->
@@ -488,7 +517,7 @@
       <br><br>
       <span style="color: #fff;text-transform: uppercase;">Please rotate your device to view ACES WEB APP</span>
   </div>
-  
+
   </body>
 
 
