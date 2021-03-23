@@ -1,4 +1,4 @@
-@extends('errors::minimal')
+@extends('errors::gameover')
 
 @section('title', __('Unauthorized'))
 @section('code', '401')

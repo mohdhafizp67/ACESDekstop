@@ -1,4 +1,4 @@
-@extends('errors::minimal')
+@extends('errors::gameover')
 
 @section('title', __('Server Error'))
 @section('code', '500')

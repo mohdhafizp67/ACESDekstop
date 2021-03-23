@@ -1,4 +1,4 @@
-@extends('errors::illustrated-layout')
+@extends('errors::gameover')
 
 @section('title', __('Not Found'))
 @section('code', '404')
