@@ -481,7 +481,7 @@ window.onload = function () {
 </script>
 
 <!-- disable back button during quiz -->
-<script>
+<!-- <script>
     window.location.hash = "no-back-button";
 
     window.location.hash = "Again-No-back-button";
@@ -489,7 +489,51 @@ window.onload = function () {
     window.onhashchange = function(){
         window.location.hash = "no-back-button";
     }
+</script> -->
+<script type="text/javascript">
+history.pushState(null, null, document.title);
+window.addEventListener('popstate', function () {
+  history.pushState(null, null, document.title);
+});
 </script>
+<!-- <script>
+(function (global) {
+
+  if(typeof (global) === "undefined") {
+      throw new Error("window is undefined");
+  }
+
+  var _hash = "!";
+  var noBackPlease = function () {
+      global.location.href += "#";
+
+      // Making sure we have the fruit available for juice (^__^)
+      global.setTimeout(function () {
+          global.location.href += "!";
+      }, 50);
+  };
+
+  global.onhashchange = function () {
+      if (global.location.hash !== _hash) {
+          global.location.hash = _hash;
+      }
+  };
+
+  global.onload = function () {
+      noBackPlease();
+
+      // Disables backspace on page except on input fields and textarea..
+      document.body.onkeydown = function (e) {
+          var elm = e.target.nodeName.toLowerCase();
+          if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
+              e.preventDefault();
+          }
+          // Stopping the event bubbling up the DOM tree...
+          e.stopPropagation();
+      };
+  }
+})(window);
+</script> -->
 
 <!-- disable F5 button for refresh -->
 <script type="text/javascript">
