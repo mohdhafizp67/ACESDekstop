@@ -182,7 +182,7 @@
 		<div class="col-md-12" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding: 5%;">
 
 
-        <h1 style="text-align: center; font-size: 450%; color: #fff; font-weight:bold; padding-top: 0%; padding-left: 9%;margin-top: -3%; padding-bottom: 5%;">
+        <h1 style="text-align: center; font-size: 450%; color: #fff; font-weight:bold; padding-top: 0%; padding-left: 9%;margin-top: -3%; padding-bottom: 2%;">
 
   				ACES <font color="#ff0000"><span class="fontnew"> I4.0</span></font> <br>
   			</h1>
@@ -251,7 +251,7 @@
 
         <div class="row">
       		<div class="col-md-12">
-      			<div class="row" style="margin-top: 0%;">
+      			<div class="row" style="margin-top: -2%;">
       				<div class="col-md-4" style="margin-left: -5%;">
                 <span style="color: #45e9b5; margin-left: 8%;font-size: 150%;">
                   @if(count($splitName) > 2 )
