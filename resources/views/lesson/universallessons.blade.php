@@ -42,19 +42,19 @@
     }
 
     .modal-content {
-        position: relative;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        width: 100%;
-        pointer-events: auto;
-        background-color: #022a36;
-        background-clip: padding-box;
-        border: 1px solid rgba(0,0,0,.2);
-        border-radius: .3rem;
-        outline: 0;
-        margin-left: 5%;
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 70%;
+      pointer-events: auto;
+      background-color: #022a36;
+      background-clip: padding-box;
+      border: 1px solid rgba(0,0,0,.2);
+      border-radius: .3rem;
+      outline: 0;
+      margin-left: 20%;
     }
 
 
@@ -192,7 +192,7 @@
 	<div class="row">
 
 		<div class="col-md-12">
-      <h1 style="padding-top: 5%; padding-bottom: 0%;text-align: center;color: #fff; font-weight: bold;font-size: 250%;">UNIVERSAL INTEGRATION</h1>
+      <h1 style="padding-top: 1%; padding-bottom: 4%;text-align: center;color: #fff; font-weight: bold;font-size: 250%;">UNIVERSAL INTEGRATION</h1>
 		</div>
 
 	</div>
