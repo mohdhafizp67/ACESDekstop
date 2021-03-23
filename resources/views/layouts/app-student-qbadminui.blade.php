@@ -204,7 +204,7 @@
                           <!-- <a href="#" class="btn btn-primary">Yes</a> -->
                           <form id="logout-form" action="{{ route('logout') }}" method="POST">
                           @csrf
-                          <button type="submit" name="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">LOG OUT</button>
+                          <button type="submit" name="button" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;width: 110%;">LOG OUT</button>
                           </form>
                       </div>
                   </div>
