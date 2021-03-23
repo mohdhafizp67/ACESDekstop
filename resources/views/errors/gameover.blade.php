@@ -15,7 +15,8 @@ background: white
   <body>
 
 <p class="center">Space Invadors destroyed this page! Take revenge on them!
-  <br/> Use <span class="label label-danger">Space</span> to shoot and <span class="label label-danger">←</span>&#160;<span class="label label-danger">→</span> to move!&#160;&#160;&#160;<button class="btn btn-default btn-xs" id="restart">Restart</button></p>
+  <br/> Use <span class="label label-danger">Space</span> to shoot and <span class="label label-danger">←</span>&#160;<span class="label label-danger">→</span> to move!&#160;&#160;&#160;<button class="btn btn-default btn-xs" id="restart">Restart</button>&#160;&#160;&#160;
+  <a href="{{route('home')}}"><button class="btn btn-default btn-xs">Home</button></a></p>
 
 <canvas id="space-invaders"/>
   </body>
