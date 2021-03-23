@@ -252,7 +252,7 @@
 
     <ul class="social content">
       <li>
-        <a><span style="color: #000;">Choose Your Platform:</span></a>
+        <a><span style="color: #000;">Select the options to proceed:</span></a>
       </li>
       <li>
         <a href="http://161.35.227.188/ACES-Desktop/login">Login</a>
