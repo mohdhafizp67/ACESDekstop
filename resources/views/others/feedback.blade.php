@@ -175,8 +175,8 @@
                     <div class="col-md-4">
 
                     </div>
-                    <div class="col-md-4" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 2%;width: 100%;">
-                        <button class="btn" type="submit" style="font-size: 150%;">
+                    <div class="col-md-4" >
+                        <button class="btn" type="submit" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 8%;width: 100%;font-size: 150%;">
                           SUBMIT
                         </button>
 
