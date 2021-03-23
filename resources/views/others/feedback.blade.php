@@ -31,25 +31,9 @@
      @media only screen and (orientation:landscape){
          #warning-message { display:none; }
      }
-     
-    .button {
-      background-color: ##ffffff00;
-      border: none;
-      /* color: white; */
-      /* padding: 16px 32px; */
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 15px;
-      /* margin: 4px 2px; */
-      transition-duration: 0.4s;
-      cursor: pointer;
-    }
 
-    .buttonsound {
-      background-color: #ffffff00;
-      color: #fff;
-      /* border: 2px solid #4CAF50; */
+     .btn:hover {
+    background-color: #f4433600;
     }
 
     label {
@@ -192,7 +176,7 @@
 
                     </div>
                     <div class="col-md-4" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 2%;width: 100%;">
-                        <button type="submit" class="btn" name="button" style="font-size: 150%;">
+                        <button class="btn" type="submit" style="font-size: 150%;">
                           SUBMIT
                         </button>
 
