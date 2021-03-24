@@ -309,7 +309,7 @@
 
 
                     <ul class="social-buttons">
-                      <li id="my_image" class="button__share button__share--facebook"><a href="javascript:void(window.open('https://www.facebook.com/sharer.php?u=' + encodeURIComponent(document.location) + '?t=' + encodeURIComponent(document.title),'_blank'))">Facebook</a></li>
+                      <li id="my_image" onclick="fbs_click(this)" class="button__share button__share--facebook">Facebook</li>
                       <li class="button__share button__share--googleplus"><a href="javascript:void(window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.location),'_blank'))">Google+ Share</a></li>
                       <li class="button__share button__share--twitter"><a href="javascript:void(window.open('https://twitter.com/share?url=' + encodeURIComponent(document.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;via=fabienb&amp;hashtags=koandesign','_blank'))">Twitter</a></li>
 
