@@ -4,19 +4,30 @@
     <meta charset="utf-8">
     <style media="screen">
     .center{text-align:center}
-#space-invaders {
-margin: 0 auto;
-display: block;
-background: white
-}
+      #space-invaders {
+      margin: 0 auto;
+      display: block;
+      background: white
+      }
+
+      .label-danger{
+        background-color: #00D3E2;
+        border-radius: 10px;
+      }
+
+      .btn-restart{
+        background-color: #FF0000;
+        border-radius: 10px;
+        width: 7%;
+      }
     </style>
     <title></title>
   </head>
   <body>
 
 <p class="center">Space Invadors destroyed this page! Take revenge on them!
-  <br/> Use <span class="label label-danger">Space</span> to shoot and <span class="label label-danger">←</span>&#160;<span class="label label-danger">→</span> to move!&#160;&#160;&#160;<button class="btn btn-default btn-xs" id="restart">Restart</button>&#160;&#160;&#160;
-  <a href="{{route('home')}}"><button class="btn btn-default btn-xs">Home</button></a></p>
+  <br/> Use <span class="label label-danger">Space</span> to shoot and <span class="label label-danger">←</span>&#160;<span class="label label-danger">→</span> to move!&#160;&#160;&#160;<button class="btn btn-restart btn-xs" id="restart">Restart</button>&#160;&#160;&#160;
+  <a href="{{route('home')}}"><button class="btn btn-default btn-xs">Go Back to ACES WEB APP</button></a></p>
 
 <canvas id="space-invaders"/>
   </body>
