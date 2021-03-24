@@ -13,12 +13,24 @@
       .label-danger{
         background-color: #00D3E2;
         border-radius: 10px;
+        width: 10%;
       }
 
       .btn-restart{
         background-color: #FF0000;
         border-radius: 10px;
         width: 7%;
+        border: 1px;
+        border-color: #fff;
+        color: #fff;
+      }
+      .btn-restarthome{
+        background-color: #FF0000;
+        border-radius: 10px;
+        width: 15%;
+        border: 1px;
+        border-color: #fff;
+        color: #fff;
       }
     </style>
     <title></title>
@@ -26,11 +38,18 @@
   <body>
 
 <p class="center">Space Invadors destroyed this page! Take revenge on them!
-  <br/> Use <span class="label label-danger">Space</span> to shoot and <span class="label label-danger">←</span>&#160;<span class="label label-danger">→</span> to move!&#160;&#160;&#160;<button class="btn btn-restart btn-xs" id="restart">Restart</button>&#160;&#160;&#160;
-  <a href="{{route('home')}}"><button class="btn btn-default btn-xs">Go Back to ACES WEB APP</button></a></p>
+  <br/> Use <span class="label label-danger">Space</span> to shoot and <span class="label label-danger">←</span>&#160;<span class="label label-danger">→</span> to move!&#160;&#160;&#160;<button class="btn btn-restart btn-xs" id="restart">Restart</button>&#160;&#160;
+  <a href="{{route('home')}}"><button class="btn btn-restarthome btn-xs">Go Back to ACES WEB APP</button></a></p>
 
 <canvas id="space-invaders"/>
   </body>
+
+  <script>
+        var timer = setTimeout(function() {
+            window.location='{{route('home')}}'
+        }, 10000);
+    </script>
+
 
   <script type="text/javascript">
   ;(function() {
