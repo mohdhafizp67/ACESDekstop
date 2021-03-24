@@ -104,6 +104,7 @@
   margin-right: .7em;
   margin-bottom: .7em;
   border-radius: 4px;
+  cursor: grab;
 }
 .button__share:last-child {
   margin-right: 0;
@@ -128,6 +129,7 @@
 }
 .button__share--facebook {
   background-color: #3b5998;
+  padding: 1%;
 }
 .button__share--googleplus {
   background-color: #dc4e41;
@@ -310,7 +312,6 @@
 
                     <ul class="social-buttons">
                       <li id="my_image" onclick="fbs_click(this)" class="button__share button__share--facebook">Facebook</li>
-                      <li class="button__share button__share--googleplus"><a href="javascript:void(window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.location),'_blank'))">Google+ Share</a></li>
                       <li class="button__share button__share--twitter"><a href="javascript:void(window.open('https://twitter.com/share?url=' + encodeURIComponent(document.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;via=fabienb&amp;hashtags=koandesign','_blank'))">Twitter</a></li>
 
                     </ul>
