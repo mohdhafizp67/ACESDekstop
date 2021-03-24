@@ -14,6 +14,12 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
 
+    <meta property="og:url"           content="http://www.example.com/projectfoldername/aa.php" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="image Title" />
+    <meta property="og:description"   content="image description" />
+    <meta property="og:image"         content="http:///www.example.com/projectfoldername/imagefolder/image.jpg" />
+
 
 
     <style media="screen">
@@ -72,6 +78,99 @@
         background-position: 70% 0;
         background-repeat: no-repeat;
       }
+
+
+      .social-buttons {
+  list-style-type: none;
+  box-sizing: border-box;
+  *zoom: 1;
+}
+.social-buttons:before,
+.social-buttons:after {
+  box-sizing: border-box;
+}
+.social-buttons:before,
+.social-buttons:after {
+  content: " ";
+  display: table;
+  line-height: 0;
+}
+.social-buttons:after {
+  clear: both;
+}
+.button__share {
+  float: left;
+  background-color: #888;
+  margin-right: .7em;
+  margin-bottom: .7em;
+  border-radius: 4px;
+}
+.button__share:last-child {
+  margin-right: 0;
+}
+.button__share:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
+.button__share a {
+  color: #fff;
+  font-family: Arial, Helvetica, -apple-system, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.33;
+  text-decoration: none;
+  padding: .35em .7em;
+  display: inline-block;
+}
+.button__share--facebook {
+  background-color: #3b5998;
+}
+.button__share--googleplus {
+  background-color: #dc4e41;
+}
+.button__share--twitter {
+  background-color: #55acee;
+}
+.button__share--linkedin {
+  background-color: #0077b5;
+}
+.button__share--reddit {
+  background-color: #ff4500;
+}
+.button__share--hackernews {
+  background-color: #ff6600;
+}
+.button__share--buffer {
+  background-color: #323b43;
+}
+.button__share--digg {
+  background-color: #000000;
+}
+.button__share--tumblr {
+  background-color: #35465c;
+}
+.button__share--stumbleupon {
+  background-color: #eb4924;
+}
+.button__share--delicious {
+  background-color: #3399ff;
+}
+.button__share--evernote {
+  background-color: #7ac142;
+}
+.button__share--wordpress {
+  background-color: #21759b;
+}
+.button__share--pocket {
+  background-color: #ef4056;
+}
+.button__share--pinterest {
+  background-color: #bd081c;
+}
     </style>
   </head>
   <body>
@@ -207,7 +306,16 @@
                    <div id="mImageBox">
                      <img id="facebook_image" src="{{ asset('concept/images/loading.gif') }}" onError="{{ asset('concept/images/loading.gif') }}" width="100%" height="auto;">
                    </div><br>
-                   <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>&nbsp
+
+
+                    <ul class="social-buttons">
+                      <li id="my_image" class="button__share button__share--facebook"><a href="javascript:void(window.open('https://www.facebook.com/sharer.php?u=' + encodeURIComponent(document.location) + '?t=' + encodeURIComponent(document.title),'_blank'))">Facebook</a></li>
+                      <li class="button__share button__share--googleplus"><a href="javascript:void(window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.location),'_blank'))">Google+ Share</a></li>
+                      <li class="button__share button__share--twitter"><a href="javascript:void(window.open('https://twitter.com/share?url=' + encodeURIComponent(document.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;via=fabienb&amp;hashtags=koandesign','_blank'))">Twitter</a></li>
+
+                    </ul>
+
+                   <!-- <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>&nbsp -->
                    <!-- <a href='javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);document.body.appendChild(e)%7D)());'>Pin</a> -->
 
 
