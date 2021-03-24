@@ -131,48 +131,10 @@
   background-color: #3b5998;
   padding: 1%;
 }
-.button__share--googleplus {
-  background-color: #dc4e41;
-}
 .button__share--twitter {
   background-color: #55acee;
 }
-.button__share--linkedin {
-  background-color: #0077b5;
-}
-.button__share--reddit {
-  background-color: #ff4500;
-}
-.button__share--hackernews {
-  background-color: #ff6600;
-}
-.button__share--buffer {
-  background-color: #323b43;
-}
-.button__share--digg {
-  background-color: #000000;
-}
-.button__share--tumblr {
-  background-color: #35465c;
-}
-.button__share--stumbleupon {
-  background-color: #eb4924;
-}
-.button__share--delicious {
-  background-color: #3399ff;
-}
-.button__share--evernote {
-  background-color: #7ac142;
-}
-.button__share--wordpress {
-  background-color: #21759b;
-}
-.button__share--pocket {
-  background-color: #ef4056;
-}
-.button__share--pinterest {
-  background-color: #bd081c;
-}
+
     </style>
   </head>
   <body>
@@ -310,9 +272,9 @@
                    </div><br>
 
 
-                    <ul class="social-buttons">
+                    <ul class="social-buttons" style="padding-left: 40%;">
                       <li id="my_image" onclick="fbs_click(this)" class="button__share button__share--facebook">Facebook</li>
-                      <li class="button__share button__share--twitter"><a href="javascript:void(window.open('https://twitter.com/share?url=' + encodeURIComponent(document.location) + '&amp;text=' + encodeURIComponent(document.title)))">Twitter</a></li>
+                      <!-- <li id="my_image" class="button__share button__sharetwitter"><a href="javascript:void(window.open('https://twitter.com/share?url=' + encodeURIComponent(document.location) + '&amp;text=' + encodeURIComponent(document.title)))">Twitter</a></li> -->
 
                     </ul>
 
