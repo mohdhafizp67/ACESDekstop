@@ -61,7 +61,6 @@ class LeaderboardController extends Controller
     //   ->orderBy("total_points", "DESC")
     //   ->limit(10)
     //   ->get();
-
       // dd($student);
     $student = DB::table('students')->select(DB::raw('IFNULL(sum(students_games.student_point),0) + IFNULL(leaderboards.scores, 0) as total_points, students.id as id, users.profile_picture as profile_picture, users.name as name, users.school as school, users.state as state'))
         ->leftJoin("students_games", "students_games.student_id", "=", "students.id")
@@ -108,6 +107,7 @@ class LeaderboardController extends Controller
       ->get();
 
     $current_user_marks = $current_user[0]->total_points;
+    
 
     return view('activities.leaderboard', compact('student', 'current_user_marks', 'current_user_ranking'));
   }
