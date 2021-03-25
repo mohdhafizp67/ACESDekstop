@@ -255,13 +255,13 @@
         <a><span style="color: #000;">Select the options to proceed:</span></a>
       </li>
       <li>
-        <a href="http://161.35.227.188/ACES-Desktop/login">Login</a>
+        <a href="{{route('login')}}">Login</a>
       </li>
       <li>
         <span>|</span>
       </li>
       <li>
-        <a href="http://161.35.227.188/ACES-Desktop/register"><span>Register</span></a>
+        <a href="{{route('register')}}"><span>Register</span></a>
       </li>
         <li>
           <a href="#" onclick="pauseVid()"><i class="fas fa-pause"></i></a>
