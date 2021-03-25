@@ -14,11 +14,6 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
 
-    <meta property="og:url"           content="http://www.example.com/projectfoldername/aa.php" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="image Title" />
-    <meta property="og:description"   content="image description" />
-    <meta property="og:image"         content="http:///www.example.com/projectfoldername/imagefolder/image.jpg" />
 
 
 
@@ -274,14 +269,21 @@
 
                     <ul class="social-buttons" style="padding-left: 40%;">
                       <li id="my_image" onclick="fbs_click(this)" class="button__share button__share--facebook">Facebook</li>
-                      <!-- <li id="my_image" class="button__share button__sharetwitter"><a href="javascript:void(window.open('https://twitter.com/share?url=' + encodeURIComponent(document.location) + '&amp;text=' + encodeURIComponent(document.title)))">Twitter</a></li> -->
 
+                      <li id="my_image" onclick="twt_click(this)" class="button__share button__share--twitter">Twitter</li>
+                      <!-- <li class="button__share button__sharetwitter"><a href="https://twitter.com/intent/tweet?text=Your%20Content%20Here" target="blank">Twitter</a></li> -->
                     </ul>
 
                    <!-- <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>&nbsp -->
                    <!-- <a href='javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);document.body.appendChild(e)%7D)());'>Pin</a> -->
 
-
+                    <script type="text/javascript">
+                      function twt_click() {
+                        var url = "http://161.35.227.188/ACES-Desktop";
+                        var text = "Come and Join Us! Lets Race";
+                        window.open('http://twitter.com/share?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text), 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+                      }
+                    </script>
 
                    <script>
                    function fbs_click(TheImg) {
@@ -290,7 +292,8 @@
 
                        t=TheImg.getAttribute('alt');
 
-                       window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');
+                       var text = "Come and Join Us! Lets Race";
+                       window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t)+'&text='+encodeURIComponent(text),'sharer','toolbar=0,status=0,width=626,height=436');
 
                        return false;
 
