@@ -270,20 +270,20 @@
                     <ul class="social-buttons" style="padding-left: 40%;">
                       <li id="my_image" onclick="fbs_click(this)" class="button__share button__share--facebook">Facebook</li>
 
-                      <li id="my_image" onclick="twt_click(this)" class="button__share button__share--twitter">Twitter</li>
+                      <!-- <li id="my_image" onclick="twt_click(this)" class="button__share button__sharetwitter">Twitter</li> -->
                       <!-- <li class="button__share button__sharetwitter"><a href="https://twitter.com/intent/tweet?text=Your%20Content%20Here" target="blank">Twitter</a></li> -->
                     </ul>
 
                    <!-- <span id="my_image" class="social__link" onclick="fbs_click(this)"><i class="fa fa-facebook-square" style="font-size: 30px;"></i></span>&nbsp -->
                    <!-- <a href='javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);document.body.appendChild(e)%7D)());'>Pin</a> -->
 
-                    <script type="text/javascript">
+                    <!-- <script type="text/javascript">
                       function twt_click() {
                         var url = "http://161.35.227.188/ACES-Desktop";
                         var text = "Come and Join Us! Lets Race";
                         window.open('http://twitter.com/share?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text), 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
                       }
-                    </script>
+                    </script> -->
 
                    <script>
                    function fbs_click(TheImg) {
