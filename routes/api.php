@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/game/save-score', [App\Http\Controllers\StudentGameController::class, 'create']);
+
+Route::post('/game/save-score/mobile', [App\Http\Controllers\StudentGameController::class, 'createMobile']);
