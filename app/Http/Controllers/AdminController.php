@@ -46,7 +46,7 @@ class AdminController extends Controller
          ->groupBy("students.id", "leaderboards.scores")
          ->orderBy("total_points", "DESC")
          ->get();
-         
+
     $current_user_ranking = 0;
 
     for ($i = 0; $i < count($all_students); $i++) {
@@ -57,6 +57,7 @@ class AdminController extends Controller
     return view('home-admin', compact('totalUser','totalStudent','totalStaffecerd','totalAdmin', 'student', 'current_user_ranking'));
   }
 }
+
 
   public function viewEditProfile()
   {
@@ -240,6 +241,11 @@ class AdminController extends Controller
   public function viewFeedbackList(){
     $feedback = Feedback::get();
     return view('admin.others.feedback.list', compact('feedback'));
+  }
+
+  public function viewGraph()
+  {
+      return view('admin.profiles.graph');
   }
 
 }

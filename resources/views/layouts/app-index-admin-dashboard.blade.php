@@ -179,7 +179,7 @@
                                   </li>
 
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{route('admin.others.feedback.list')}}"><i class="fa fa-commenting" aria-hidden="true"></i>User's Feedback</a>
+                                    <a class="nav-link" href="{{route('admin.others.feedback.list')}}"><i class="fas fa-commenting" aria-hidden="true"></i>User's Feedback</a>
                                   </li>
 
 
@@ -193,6 +193,10 @@
 
                                   <li class="nav-item ">
                                     <a class="nav-link" href="{{ route('admin.others.audit-trail.audit-trail-log') }}"><i class="fas fa-signal" aria-hidden="true"></i> Log Audit Trail </a>
+                                  </li>
+
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('admin.profiles.graph') }}"><i class="fas fa-signal" aria-hidden="true"></i>Statistic</a>
                                   </li>
                                   <!-- <li class="nav-item ">
                                     <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i>Maklum balas</a>

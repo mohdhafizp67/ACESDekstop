@@ -217,6 +217,8 @@ Route::middleware('admin')->group(function () {
 
   Route::get('/admin/others/feedback/list', [App\Http\Controllers\AdminController::class, 'viewFeedbackList'])->name('admin.others.feedback.list');
 
+  Route::get('/admin/profile/graph', [App\Http\Controllers\AdminController::class, 'viewGraph'])->name('admin.profiles.graph');
+
 
 });
 
