@@ -18,9 +18,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
+
 
     <link rel="stylesheet" href="{{ asset('concept/vendor/bootstrap/css/bootstrap.min.css') }}">
     <link href="{{ asset('concept/vendor/fonts/circular-std/style.css') }}" rel="stylesheet">
@@ -37,120 +35,81 @@
               <!-- navbar -->
               <!-- ============================================================== -->
               <div class="dashboard-header">
-                  <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                      <a class="navbar-brand" href="{{ route('home-admin') }}">ACES</a>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                          <ul class="navbar-nav ml-auto navbar-right-top">
-                              <!-- <li class="nav-item">
-                                  <div id="custom-search" class="top-search-bar">
-                                      <input class="form-control" type="text" placeholder="Search..">
-                                  </div>
-                              </li> -->
-                              <!-- <li class="nav-item dropdown notification">
-                                  <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
-                                  <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
-                                      <li>
-                                          <div class="notification-title"> Notification</div>
-                                          <div class="notification-list">
-                                              <div class="list-group">
-                                                  <a href="#" class="list-group-item list-group-item-action active">
-                                                      <div class="notification-info">
-                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
-                                                          <div class="notification-list-user-block"><span class="notification-list-user-name">Jeremy Rakestraw</span>accepted your invitation to join the team.
-                                                              <div class="notification-date">2 min ago</div>
-                                                          </div>
-                                                      </div>
-                                                  </a>
-                                                  <a href="#" class="list-group-item list-group-item-action">
-                                                      <div class="notification-info">
-                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
-                                                          <div class="notification-list-user-block"><span class="notification-list-user-name">John Abraham </span>is now following you
-                                                              <div class="notification-date">2 days ago</div>
-                                                          </div>
-                                                      </div>
-                                                  </a>
-                                                  <a href="#" class="list-group-item list-group-item-action">
-                                                      <div class="notification-info">
-                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
-                                                          <div class="notification-list-user-block"><span class="notification-list-user-name">Monaan Pechi</span> is watching your main repository
-                                                              <div class="notification-date">2 min ago</div>
-                                                          </div>
-                                                      </div>
-                                                  </a>
-                                                  <a href="#" class="list-group-item list-group-item-action">
-                                                      <div class="notification-info">
-                                                          <div class="notification-list-user-img"><img src="#" alt="" class="user-avatar-md rounded-circle"></div>
-                                                          <div class="notification-list-user-block"><span class="notification-list-user-name">Jessica Caruso</span>accepted your invitation to join the team.
-                                                              <div class="notification-date">2 min ago</div>
-                                                          </div>
-                                                      </div>
-                                                  </a>
-                                              </div>
-                                          </div>
-                                      </li>
-                                      <li>
-                                          <div class="list-footer"> <a href="#">View all notifications</a></div>
-                                      </li>
-                                  </ul>
-                              </li> -->
-                              <!-- <li class="nav-item dropdown connection">
-                                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
-                                  <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
-                                      <li class="connection-list">
-                                          <div class="row">
-                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Github</span></a>
-                                              </div>
-                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Dribbble</span></a>
-                                              </div>
-                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Dropbox</span></a>
-                                              </div>
-                                          </div>
-                                          <div class="row">
-                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="#" alt=""> <span>Bitbucket</span></a>
-                                              </div>
-                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="#" alt="" ><span>Mail chimp</span></a>
-                                              </div>
-                                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
-                                                  <a href="#" class="connection-item"><img src="#" alt="" > <span>Slack</span></a>
-                                              </div>
-                                          </div>
-                                      </li>
-                                      <li>
-                                          <div class="conntection-footer"><a href="#">More</a></div>
-                                      </li>
-                                  </ul>
-                              </li> -->
-                              <li class="nav-item dropdown nav-user">
-                                  <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 230%;"></i></a>
-                                  <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
-                                      <div class="nav-user-info">
-                                          <!-- <h4 class="mb-0 text-white nav-user-name">{{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}}</h4> -->
-                                          <h6 class="mb-0 text-white nav-user-name">{{Auth::user()->name}}</h6>
-                                          <div style="padding: 5px;"></div>
-                                          <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i> Admin</h6>
-                                          <!-- <span><i class="fa fa-certificate" aria-hidden="true"></i> Admin </span> -->
-                                      </div>
-                                      <a class="dropdown-item" href="{{route('admin.profiles.edit-profile')}}"><i class="fas fa-user mr-2"></i>Profile</a>
-                                      <a class="dropdown-item" href="{{ route('admin.profiles.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</a>
-                                      <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                      <i class="fas fa-power-off mr-2"></i>Logout</a>
-                                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                      @csrf
-                                      </form>
-                                  </div>
-                              </li>
-                          </ul>
-                      </div>
-                  </nav>
-              </div>
+                <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                    <a class="navbar-brand" href="{{ route('home-admin') }}">ACES</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto navbar-right-top">
+
+                            <!-- <div style="border-left:1px solid #000;height:65px"></div> -->
+                            <li class="nav-item dropdown nav-user">
+                                <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <!-- <i class="fa fa-cog" aria-hidden="true" style="font-size: 180%;"></i> -->
+                                  @if(Auth::user()->profile_picture != null)
+                                  <img src="{{ asset( $image_path = str_replace('public', 'storage',  Auth::user()->profile_picture)) }}"  class="profile-avatar" style="height:40px; width:40px; ">
+                                  @else
+                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU"  class="profile-avatar" style="height:40px; width:40px; ">
+                                  @endif
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                                    <div class="nav-user-info">
+                                        <!-- <h4 class="mb-0 text-white nav-user-name">{{explode(' ',trim(ucwords(strtolower((Auth::user()->name)))))[0]}}</h4> -->
+                                        <h6 class="mb-0 text-white nav-user-name">{{Auth::user()->name}}</h6>
+                                        <div style="padding: 5px;"></div>
+                                        @if(Auth::user()->is_admin == 1)
+                                        <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i>Admin Sistem</h6>
+                                        @else
+                                        <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i>ECERDB Personnel</h6>
+                                        @endif
+                                        <!-- <span><i class="fa fa-certificate" aria-hidden="true"></i> Admin </span> -->
+                                    </div>
+                                    <a class="dropdown-item" href="{{route('admin.profiles.edit-profile')}}"><i class="fas fa-user mr-2"></i>USER PROFILE</a>
+                                    <a class="dropdown-item" href="{{ route('admin.profiles.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>CHANGE PASSWORD</a>
+                                    <a class="dropdown-item"  href="#" class="btn btn-block btn-danger" data-toggle="modal" data-target="#logOutModal"><i class="fas fa-power-off mr-2"></i>LOG OUT</a>
+                                    <!-- <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    <i class="fas fa-power-off mr-2"></i>Logout</a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                    </form> -->
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown connection">
+                                <!-- <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a> -->
+                                <a href="#" class="btn btn-block btn-danger" data-toggle="modal" data-target="#logOutModal" style="font-size: 200%;"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+                <div class="modal fade" id="logOutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </a>
+                            </div>
+                            <div class="modal-body">
+                                <p>Anda mahu log keluar?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                <!-- <a href="#" class="btn btn-primary">Yes</a> -->
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <button type="submit" name="button" class="btn btn-primary">Log Keluar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
               <!-- ============================================================== -->
               <!-- end navbar -->
               <!-- ============================================================== -->
@@ -165,44 +124,68 @@
                               <span class="navbar-toggler-icon"></span>
                           </button>
                           <div class="collapse navbar-collapse" id="navbarNav">
-                              <ul class="navbar-nav flex-column">
-                                <li class="nav-divider">
+                            <ul class="navbar-nav flex-column">
+                                <div style="padding: 5%"></div>
+
+                                <!-- <li class="nav-divider">
                                   <img class="logo-img" src="{{ asset('concept/images/aces-removebg-preview.png') }}" alt="logo">
-                                </li>
-                                  <li class="nav-divider">
-                                      Main Menu
-                                  </li>
+                                </li> -->
+                                  <!-- <li class="nav-divider">
+                                      Menu Utama
+                                  </li> -->
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('home-admin') }}"><i class="fa fa-home" aria-hidden="true"></i>Admin Dashboard</a>
+                                    <a class="nav-link" href="{{ route('home-admin') }}"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a>
                                   </li>
-                                  <li class="nav-divider">
-                                      Activities
-                                  </li>
+                                  <!-- <li class="nav-divider">
+                                      Aktiviti
+                                  </li> -->
+                                  <!-- <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Kemajuan Pelajar</a>
+                                  </li> -->
+                                  <!-- <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>Statistik Pelajar</a>
+                                  </li> -->
+                                  <!-- <li class="nav-item ">
+
+                                    <a class="nav-link" href="{{route('admin.activities.lesson.list')}}"><i class="fa fa-book" aria-hidden="true"></i> Pelajaran</a>
+
+                                  </li> -->
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Student Progress</a>
+
+                                    <a class="nav-link" href="{{ route('admin.activities.quiz.list') }}"><i class="fa fa-question-circle" aria-hidden="true"></i> Quiz</a>
+
                                   </li>
+                                  <!-- <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Carta Johan</a>
+
+                                  </li> -->
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>Student Statistic</a>
-                                  </li>
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-university" aria-hidden="true"></i>Question Bank</a>
-                                  </li>
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Leader Board</a>
-                                  </li>
-                                  <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fa fa-bullhorn" aria-hidden="true"></i>Announcement</a>
+                                    <a class="nav-link" href="{{ route('admin.others.announcement.list') }}"><i class="fa fa-bullhorn" aria-hidden="true"></i>Annoucement</a>
                                   </li>
 
-                                  <li class="nav-divider">
-                                      Others
-                                  </li>
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="{{ route('admin.others.user-list') }}"><i class="fa fa-users" aria-hidden="true"></i>  User List</a>
+                                    <a class="nav-link" href="{{route('admin.others.feedback.list')}}"><i class="fa fa-bullhorn" aria-hidden="true"></i>User's Feedback</a>
                                   </li>
+
+
+
+                                  <!-- <li class="nav-divider">
+                                      Lain-lain
+                                  </li> -->
                                   <li class="nav-item ">
-                                    <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i>  Feedback</a>
+                                    <a class="nav-link" href="{{ route('admin.others.user-list.list') }}"><i class="fa fa-users" aria-hidden="true"></i>Users List</a>
                                   </li>
+
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('admin.others.audit-trail.audit-trail-log') }}"><i class="fas fa-signal" aria-hidden="true"></i> Log Audit Trail </a>
+                                  </li>
+
+                                  <li class="nav-item ">
+                                    <a class="nav-link" href="{{ route('admin.profiles.graph') }}"><i class="fas fa-signal" aria-hidden="true"></i>Statistic</a>
+                                  </li>
+                                  <!-- <li class="nav-item ">
+                                    <a class="nav-link" href="#"><i class="fas fa-comments" aria-hidden="true"></i>Maklum balas</a>
+                                  </li> -->
                                   <!-- <li class="nav-item ">
                                       <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
                                       <div id="submenu-1" class="collapse submenu" style="">
@@ -490,7 +473,7 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <div class="footer" style="background-color:#060026";>
+            {{-- <div class="footer" style="background-color:#060026";>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -505,7 +488,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- ============================================================== -->
             <!-- end footer -->
             <!-- ============================================================== -->
@@ -517,62 +500,5 @@
         </main>
     </div>
 </body>
-  <script src="{{ asset('concept/vendor/jquery/jquery-3.3.1.min.js') }}"></script>
-  <script src="{{ asset('concept/vendor/bootstrap/js/bootstrap.bundle.js') }}"></script>
 
-  <!-- slimscroll js -->
-  <script src="{{ asset('concept/vendor/slimscroll/jquery.slimscroll.js') }}"></script>
-  <!-- main js -->
-  <script src="{{ asset('concept/libs/js/main-js.js  ') }}"></script>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.flash.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js"></script>
-
-  <script>
-        $(function () {
-            var table = $('#table_data').DataTable({
-              "responsive" : true,
-              "dom": 'Bfrtip',
-              "buttons": [
-                  'excel', 'pdf', 'print'
-              ],
-              "scrollX": true,
-              // "language": {
-              //     "lengthMenu": "Memaparkan _MENU_ rekod per halaman",
-              //     "zeroRecords": "Tiada rekod.",
-              //     "info": "Memaparkan halaman _PAGE_ dari _PAGES_",
-              //     "infoEmpty": "Tidak ada rekod yang tersedia",
-              //     "infoFiltered": "(Ditapis dari _MAX_ jumlah rekod)",
-              //     "search": "Carian",
-              //     "previous": "Sebelum",
-              //     "paginate": {
-              //         "first":      "Pertama",
-              //         "last":       "Terakhir",
-              //         "next":       "Seterusnya",
-              //         "previous":   "Sebelumnya"
-              //     },
-              //     "searchPanes": {
-              //         "clearMessage": 'Padam Tapisan',
-              //         "title":{
-              //             _: 'Tapisan Dipilih - %d',
-              //             0: 'Tiada Tapisan Dipilih',
-              //             1: 'Satu Tapisan Dipilih',
-              //         }
-              //     }
-              // },
-            });
-          //   table.on( 'order.dt search.dt', function () {
-          //   table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
-          //       cell.innerHTML = i+1;
-          //   } );
-          // } ).draw();
-        });
-    </script>
 </html>
