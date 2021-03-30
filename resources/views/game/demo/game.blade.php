@@ -311,16 +311,16 @@
 
     <div id="wrapper">
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
+<div class="container-fluid">
 
 
 
-    <h1 style="padding-top: 4%; text-align: center; color: #fff; font-weight: bold; padding-bottom: 0%;font-size: 350%;padding-left: 3%;">GAMES</h1>
+    <h1 style="padding-top: 2%; text-align: center; color: #fff; font-weight: bold; padding-bottom: 0%;font-size: 350%;padding-left: 3%;">GAMES</h1>
     <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 1%; color: #fff;padding-left: 3%;">Click right to see other circuit</h1>
 
     <div class="row">
       <div class="col-md-4">
-        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="90%" style="margin-top: 30.5%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-left: 0%;">
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="90%" style="margin-top: 36%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-left: 0%;">
 
         <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 17%;width: 25.5%; height: 5.3%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
         <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25.5%; height: 5.3%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>
@@ -375,7 +375,7 @@
               <div class="slider-single">
 
                 <a href="#" onclick="ajaxGame(1)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Arena.png') }}" alt="tutorial" /></a>
-                <a href="http://161.35.227.188/drone_tutorial_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(1)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Arena.png') }}" alt="tutorial" /></a>
+                <a href="http://161.35.227.188/drone_tutorial?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(1)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Arena.png') }}" alt="tutorial" /></a>
 
 
                   <!-- <h1 class="slider-single-title">Introduction - Tutorial</h1>
@@ -388,7 +388,7 @@
               <div class="slider-single">
 
                 <a href="#" onclick="ajaxGame(2)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="1" />
-                <a href="http://161.35.227.188/drone_circuit_1_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(2)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="1" />
+                <a href="http://161.35.227.188/drone_circuit_1?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(2)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit1.png') }}" alt="1" />
                   <!-- <h1 class="slider-single-title">Circuit 01 - VR</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -399,7 +399,7 @@
               <div class="slider-single">
 
                 <a href="#" onclick="ajaxGame(3)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2Tasik.png') }}" alt="2" /></a>
-                <a href="http://161.35.227.188/drone_circuit_2_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(3)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2Tasik.png') }}" alt="2" /></a>
+                <a href="http://161.35.227.188/drone_circuit_2?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(3)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2Tasik.png') }}" alt="2" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 02 - Addictive Manufacturing</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -411,7 +411,7 @@
               <div class="slider-single">
 
                 <a href="#" onclick="ajaxGame(4)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3Mersingislands.png') }}" alt="3" /></a>
-                <a href="http://161.35.227.188/drone_circuit_3_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(4)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3Mersingislands.png') }}" alt="3" /></a>
+                <a href="http://161.35.227.188/drone_circuit_3?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(4)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3Mersingislands.png') }}" alt="3" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 03 - Internet of Things</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>
@@ -423,7 +423,7 @@
               <div class="slider-single">
 
                 <a href="#" onclick="ajaxGame(5)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4Menara.png') }}" alt="4" /></a>
-                <a href="http://161.35.227.188/drone_circuit_4_d?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(5)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4Menara.png') }}" alt="4" /></a>
+                <a href="http://161.35.227.188/drone_circuit_4?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(5)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit4Menara.png') }}" alt="4" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 04 - Big Data</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
                       <i class="fa fa-heart"></i>

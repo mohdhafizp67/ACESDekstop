@@ -35,7 +35,7 @@
     <div id="wrapper">
     <div class="container-fluid">
     	<div class="row">
-    		<div class="col-md-12" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-repeat: no-repeat;background-size: cover;">
+    		<div class="col-md-12">
 
           <!-- <div style="padding: 30px;"></div> -->
 
@@ -290,7 +290,7 @@
       <br><br>
       <span style="color: #fff;text-transform: uppercase;">Please rotate your device to view ACES WEB APP</span>
   </div>
-  
+
     <script type="text/javascript">
     function onlyNumberKey(evt) {
 

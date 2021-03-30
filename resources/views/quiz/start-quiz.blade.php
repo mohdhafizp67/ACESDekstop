@@ -78,7 +78,7 @@ label {
 </head>
 <body>
   <div id="wrapper">
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding-bottom: 6%;padding: 7%;">
+<div class="container-fluid">
   <h1 style="padding-top: 1%; text-align: center; color: #fff; font-weight: bold;">QUIZ</h1>
   <h1 class="blinking" style="font-size: 150%; text-align: center; padding-bottom: 0%; color: #fff;">Please answer all the question</h1>
 

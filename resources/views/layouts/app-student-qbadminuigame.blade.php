@@ -108,7 +108,6 @@
     <meta name="theme-color" content="#fafafa">
 </head>
 <body class="position-relative" style="background-color: #130e29 !important;">
-
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
@@ -117,7 +116,7 @@
         <div class="side-bar side-bar-lg-active" data-theme="purple">
             <!-- Brand details -->
             <div class="side-menu-brand d-flex flex-column justify-content-center align-items-center clear mt-3">
-                <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 100%;padding-top: 40%;">
+                <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 100%;padding-top: 35%;">
                 <!-- <a href="{{ route('home') }}" class="brand-name mt-2 ml-2 font-weight-bold" style="text-align: center; font-size: 20px !important;">Permohonan Data Geospatial</a> -->
             </div>
             @if(Auth::user())
@@ -125,7 +124,7 @@
             <div class="the_menu mt-2">
                 <!-- Heading -->
                 <div class="side-menu-heading d-flex">
-                    <h6 class=" font-weight-bold pb-2 mx-3" style="color: #45e9b5;font-size: 120%;">{{Auth::user()->name}} </h6>
+                    <h6 class=" font-weight-bold pb-2 mx-3" style="color: #45e9b5;font-size: 130%;">{{Auth::user()->name}} </h6>
 
                     <!-- <a  class="font-weight-bold ml-auto px-3"
                         href="{{ route('logout') }}"
@@ -186,7 +185,7 @@
         </div>
 
         <!-- Main section -->
-        <main class="main-full-body" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">
+        <main class="main-full-body" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding-bottom: 0%;">
 
           <div class="modal fade" id="logOutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
@@ -201,7 +200,7 @@
                           <p style="text-align: justify;font-size: 120%;">ARE YOU SURE TO LOG OUT?</p>
                       </div>
                       <div class="modal-footer">
-                          <a href="#" class="btn" data-dismiss="modal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 18%;">CANCEL</a>
+                          <a href="#" class="btn" data-dismiss="modal" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; width: 22%;">CANCEL</a>
                           <!-- <a href="#" class="btn btn-primary">Yes</a> -->
                           <form id="logout-form" action="{{ route('logout') }}" method="POST">
                           @csrf
@@ -263,7 +262,7 @@
 
 
 
-                <a href="{{ url()->previous() }}" class="btn btn-outline-primary m-2" style="font-size:150%"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back</a>
+                <!-- <a href="{{ url()->previous() }}" class="btn btn-outline-primary m-2" style="font-size:150%"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back</a> -->
 
 
 
