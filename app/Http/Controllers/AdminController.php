@@ -36,8 +36,9 @@ class AdminController extends Controller
         ->join("users", "users.id", "=", "students.user_id")
         ->groupBy("students.id","leaderboards.scores")
         ->orderBy("total_points", "DESC")
-        ->limit(10)
-        ->get();
+        // ->limit(10)
+        // ->get();
+        ->paginate(10);
 
         $all_students =  DB::table('students')->select(DB::raw('IFNULL(sum(students_games.student_point),0) + IFNULL(leaderboards.scores, 0) as total_points, users.id as user_id'))
          ->leftJoin("students_games", "students_games.student_id", "=", "students.id")

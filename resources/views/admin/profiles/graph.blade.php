@@ -181,7 +181,7 @@ html, body {
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container" style="padding-bottom: 10%;padding-right: 10%;">
             <main>
                 <div class="dashboard-container">
                     <div class="card-1">

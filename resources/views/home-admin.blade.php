@@ -114,7 +114,7 @@
                                                 @foreach($student as $data)
                                                   <tr>
                                                     <td style="color: #000; font-size: 200%; text-align: left;font-weight: bold;">
-                                                      {{ $loop->index + 1  }}
+                                                      {{ ($student ->currentpage()-1) * $student ->perpage() + $loop->index + 1  }}
                                                     </td>
                                                     <td style="text-align: left;">
                                                       @if($data->profile_picture!= null)
@@ -142,47 +142,8 @@
                                       </div>
                                   </div>
                               </div>
+                              {{ $student->links("pagination::bootstrap-4") }}
                         </div>
-
-                    </div>
-                    <div class="row">
-
-                    </div>
-
-                    <div class="row">
-
-                    </div>
-                    <div class="row">
-
-                        {{-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                          <div class="card" style="border-radius: 25px";>
-                              <h5 class="card-header">Active and Inactive Student</h5>
-                              <div class="card-body">
-                                  <div id="c3chart_donut"></div>
-                              </div>
-                          </div>
-                      </div> --}}
-
-                      {{-- <div class="col-xl-8 col-lg-6 col-md-6 col-sm-12 col-12">
-                         <div class="card" style="border-radius: 25px";>
-                             <h5 class="card-header">Number of Students</h5>
-                             <div class="card-body">
-                                 <div id="c3chart_spline"></div>
-                             </div>
-                         </div>
-                     </div> --}}
-
-                    </div>
-
-                    <div class="row">
-                    <div class="row">
-                        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
-
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-
-                        </div>
-
                     </div>
                 </div>
             </div>

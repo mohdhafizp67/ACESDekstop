@@ -2071,7 +2071,7 @@ Pageheader
     color: #fff;
     background-color: #fff;
     width: 100%;
-    /*position: absolute; bottom: 0;*/
+    /* position: absolute; bottom: 10px; */
 }
 
 .footer-links {}
