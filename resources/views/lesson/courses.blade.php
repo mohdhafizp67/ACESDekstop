@@ -293,7 +293,7 @@
 
     <div id="wrapper">
 
-<div class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding-bottom: 0%;">
+<div class="container-fluid">
 
 
     <h1 style="padding-top: 2%; text-align: center;font-size: 350%; color: #fff; font-weight: bold;; padding-bottom: 0%;padding-left: 3%;">LESSONS</h1>

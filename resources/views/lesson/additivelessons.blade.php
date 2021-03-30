@@ -190,7 +190,7 @@
   <body>
 
 <div id="wrapper">
-    <div class="container-fluid"  style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding: 0%;" >
+    <div class="container-fluid">
 	<div class="row">
 
 		<div class="col-md-12">

@@ -185,7 +185,7 @@
         </div>
 
         <!-- Main section -->
-        <main class="main-full-body">
+        <main class="main-full-body" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;padding-bottom: 0%;">
 
           <div class="modal fade" id="logOutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">

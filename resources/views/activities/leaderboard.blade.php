@@ -1,4 +1,4 @@
-@extends('layouts.app-student-qbadminui')
+@extends('layouts.app-student-qbadminuigame')
 
 @section('content')
 
@@ -136,7 +136,7 @@
 
     <div id="wrapper">
 
-<div id="photo" class="container-fluid" style="background-image: url({{asset('concept/images/galaxy/background3.png')}}); background-position: 0% 100%;background-repeat: no-repeat;background-size: cover;padding: 0%;">
+<div id="photo" class="container-fluid">
 <h1 style="padding-top: 4%; text-align: center;font-size: 350%; color: #fff; font-weight: bold;; padding-bottom: 0%;">LEADERBOARD</h1>
 <div class="row" style="padding-top: 0%;">
   <div class="col-md-1">
