@@ -183,9 +183,10 @@ class QuizController extends Controller
   }
 
   public function startQuiz(Request $request)
-
   {
+    //   dd($request->all());
       $quiz = Quiz::findOrFail($request->quiz_id);
+    //   dd($quiz);
       $question = QuestionBank::where('lesson_id', $quiz->lesson->id)->where('language', 'en' )->get()->random($quiz->number_of_question)->shuffle();
       // $question = $question->random($quiz->number_of_question);
       // $question = $question->shuffle();
@@ -262,7 +263,7 @@ class QuizController extends Controller
     // dd($check_student_quiz);
 
     if($check_student_quiz == 0){
-      $student_quiz = Student_Quiz::Create([
+      $quiz = Student_Quiz::Create([
 
         'result' => $mark,
         'answered_question' => $answered_question,
