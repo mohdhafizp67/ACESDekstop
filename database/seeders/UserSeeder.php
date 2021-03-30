@@ -56,32 +56,5 @@ class UserSeeder extends Seeder
         ]
       );
 
-      DB::table('users')-> insert(
-        [
-        'id' => '3',
-        'name' => 'LUQMAN NUL HAKEEM',
-        'email' => 'user3@aces.com',
-        'password' => $hashed_random_password,
-        'ic_number' => '222222222222',
-        'phone' => '0123456789',
-        'address' => 'PENGKALAN CHEPA',
-        'postcode' => '16100',
-        'state' => 'Kelantan',
-        'district' => 'Dabong',
-        'school' => 'SMK DABONG',
-        'is_admin' => '0',
-        'is_active' => '1',
-        'is_student' => '1',
-        'is_ecerdb_personnel' => '0',
-        ]
-      );
-
-      DB::table('students')-> delete();
-      DB::table('students')-> insert(
-        [
-        'user_id' => '3',
-        ]
-      );
-
     }
 }

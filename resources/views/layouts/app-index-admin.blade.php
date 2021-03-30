@@ -29,7 +29,7 @@
 </head>
 <body>
     <div id="app">
-        <main class="py-0">
+        <main class="py-4">
           <div class="dashboard-main-wrapper">
               <!-- ============================================================== -->
               <!-- navbar -->
@@ -473,7 +473,7 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            {{-- <div class="footer" style="background-color:#060026";>
+            <div class="footer" style="background-color:#060026; position: absolute";>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -488,7 +488,7 @@
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
             <!-- ============================================================== -->
             <!-- end footer -->
             <!-- ============================================================== -->
