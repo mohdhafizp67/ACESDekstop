@@ -39,8 +39,8 @@ class ResetPasswordMail extends Mailable
 
        // return $this->to($this->user->email , $this->user->name)
        // return $this->from(env('MAIL_FROM_ADDRESS'))
-       return $this->from('devartaniscloud@gmail.com', 'E-mel Sistem ACES')
-               ->subject('Tetapan Semula Katalaluan')
+       return $this->from('devartaniscloud@gmail.com', 'ACES System Email')
+               ->subject('Reset Password')
                ->view('mail.reset-password', compact('token', 'user'));
      }
 }
