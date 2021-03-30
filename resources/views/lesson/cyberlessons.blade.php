@@ -623,7 +623,7 @@
           window.setTimeout(function() {
             $.ajax({
               type:"get",
-               url:"/lesson/ajax/update-lesson/7",
+               url:"/ACES/lesson/ajax/update-lesson/7",
 
               success: function(respond){
               },
