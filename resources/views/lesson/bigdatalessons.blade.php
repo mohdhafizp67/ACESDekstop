@@ -570,17 +570,17 @@
 
       window.onload = function () {
         //display timer
-        var fiveMinutes = 125 * 1,
+        var fiveMinutes = 117 * 1,
             display = document.querySelector('#time');
         startTimer(fiveMinutes, display);
 
         //timer for auto submit form/quiz
-        var setTimer = (1 * 125) * 1000;
+        var setTimer = (1 * 117) * 1000;
         // var setTimer = 5000;
         window.setTimeout(function() {
           $.ajax({
             type:"get",
-             url:"/ACES-Desktop/lesson/ajax/update-lesson/5",
+             url:"/lesson/ajax/update-lesson/5",
 
             success: function(respond){
             },

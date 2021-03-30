@@ -556,17 +556,17 @@
 
         window.onload = function () {
           //display timer
-          var fiveMinutes = 130 * 1,
+          var fiveMinutes = 113 * 1,
               display = document.querySelector('#time');
           startTimer(fiveMinutes, display);
 
           //timer for auto submit form/quiz
-          var setTimer = (1 * 130) * 1000;
+          var setTimer = (1 * 113) * 1000;
           // var setTimer = 5000;
           window.setTimeout(function() {
             $.ajax({
               type:"get",
-               url:"/ACES-Desktop/lesson/ajax/update-lesson/9",
+               url:"/lesson/ajax/update-lesson/9",
 
               success: function(respond){
               },
