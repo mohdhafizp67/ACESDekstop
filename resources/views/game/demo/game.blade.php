@@ -374,7 +374,7 @@
 
               <div class="slider-single">
 
-                <a href="#" onclick="ajaxGame(1)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Arena.png') }}" alt="tutorial" /></a>
+                <a href="https://drive.google.com/u/1/uc?export=download&confirm=7EpR&id=1VK63AENjBDO9GWa3KFKRwk6U4JvPw2oi" onclick="ajaxGame(1)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Arena.png') }}" alt="tutorial" /></a>
                 <a href="http://161.35.227.188/drone_tutorial?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(1)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Arena.png') }}" alt="tutorial" /></a>
 
 
