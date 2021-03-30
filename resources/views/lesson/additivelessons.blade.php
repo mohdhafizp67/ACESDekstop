@@ -618,17 +618,17 @@
 
         window.onload = function () {
           //display timer
-          var fiveMinutes = 5 * 1,
+          var fiveMinutes = 87 * 1,
               display = document.querySelector('#time');
           startTimer(fiveMinutes, display);
 
           //timer for auto submit form/quiz
-          var setTimer = (1 * 5) * 1000;
+          var setTimer = (1 * 87) * 1000;
           // var setTimer = 5000;
           window.setTimeout(function() {
             $.ajax({
               type:"get",
-               url:"/public/lesson/ajax/update-lesson/3",
+               url:"/lesson/ajax/update-lesson/3",
 
               success: function(respond){
               },

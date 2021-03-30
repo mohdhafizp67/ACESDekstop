@@ -240,7 +240,7 @@
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                              <iframe class="embed-responsive-item" width="95%" height="350px" src="https://www.youtube.com/embed/CUpa_nNHlfo?cc_load_policy=1&autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              <iframe class="embed-responsive-item" width="95%" height="350px" src="https://www.youtube.com/embed/zv4e_DN62io?cc_load_policy=1&autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
 
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:350px;">
@@ -648,17 +648,17 @@
 
         window.onload = function () {
           //display timer
-          var fiveMinutes = 147 * 1,
+          var fiveMinutes = 115 * 1,
               display = document.querySelector('#time');
           startTimer(fiveMinutes, display);
 
           //timer for auto submit form/quiz
-          var setTimer = (1 * 147) * 1000;
+          var setTimer = (1 * 115) * 1000;
           // var setTimer = 5000;
           window.setTimeout(function() {
             $.ajax({
               type:"get",
-               url:"/ACES-Desktop/lesson/ajax/update-lesson/2",
+               url:"/lesson/ajax/update-lesson/2",
 
               success: function(respond){
               },
