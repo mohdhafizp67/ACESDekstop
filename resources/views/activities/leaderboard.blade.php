@@ -374,7 +374,6 @@
              url: 'upload/screenshot',
              type: 'post',
              dataType: 'text',
-             description: 'I am blessed',
              // contentType: false,
              headers: {
                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
