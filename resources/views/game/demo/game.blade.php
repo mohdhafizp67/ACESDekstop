@@ -434,8 +434,7 @@
               <div class="slider-single">
 
                 <img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit05.png') }}" alt="5" />
-                <img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit05.png') }}" alt="5" />
-
+                <a href="http://161.35.227.188/drone_circuit_5?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(6)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit05.png') }}" alt="5" /></a>
                   <!-- <a href="" onclick="ajaxGame(6)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit05.png') }}" alt="5" /></a> -->
                   <!-- <h1 class="slider-single-title">Circuit 05 - Cloud Computing</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
@@ -447,7 +446,7 @@
                 <div class="slider-single">
 
                   <img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit06.png') }}" alt="6" />
-                  <img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit06.png') }}" alt="6" />
+                  <a href="http://161.35.227.188/drone_circuit_6?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(7)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit06.png') }}" alt="6" /></a>
 
                   <!-- <a href="" onclick="ajaxGame(7)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit06.png') }}" alt="6" /></a> -->
                   <!-- <h1 class="slider-single-title">Circuit 06 - Cyber Security</h1> -->
@@ -460,7 +459,7 @@
             <div class="slider-single">
 
                 <img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit07.png') }}" alt="7" />
-                <img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit07.png') }}" alt="7" />
+                <a href="http://161.35.227.188/drone_circuit_7?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(8)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit07.png') }}" alt="7" /></a>
 
                   <!-- <a href="" onclick="ajaxGame(8)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit07.png') }}" alt="7" /></a> -->
                   <!-- <h1 class="slider-single-title">Circuit 07 - Universal Integration</h1> -->
@@ -473,7 +472,7 @@
             <div class="slider-single">
 
               <img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit08.png') }}" alt="8" />
-              <img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit08.png') }}" alt="8" />
+              <a href="http://161.35.227.188/drone_circuit_8?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(9)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit08.png') }}" alt="8" /></a>
 
                 <!-- <a href="" onclick="ajaxGame(9)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit08.png') }}" alt="8" /></a> -->
                   <!-- <h1 class="slider-single-title">Circuit 08 - Advanced Simulation</h1> -->
@@ -486,7 +485,7 @@
               <div class="slider-single">
 
                 <img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit09.png') }}" alt="9" />
-                <img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit09.png') }}" alt="9" />
+                <a href="http://161.35.227.188/drone_circuit_9?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(10)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit09.png') }}" alt="9" /></a>
 
                     <!-- <a href="" onclick="ajaxGame(10)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit09.png') }}" alt="9" /></a> -->
                     <!-- <h1 class="slider-single-title">Circuit 09 - Autonomous Robot</h1> -->
