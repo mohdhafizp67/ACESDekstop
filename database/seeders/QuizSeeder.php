@@ -108,6 +108,15 @@ class QuizSeeder extends Seeder
         'lesson_id' => '10',
         ]
       );
+      DB::table('quizes')-> insert(
+        [
+        'time' => '10',
+        'number_of_question' => '10',
+        'percentage_to_pass' => '50',
+        'status' => '1',
+        'lesson_id' => '11',
+        ]
+      );
 
     }
 }
