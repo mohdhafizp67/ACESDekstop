@@ -580,7 +580,7 @@
         window.setTimeout(function() {
           $.ajax({
             type:"get",
-             url:"/lesson/ajax/update-lesson/5",
+             url:"/ACES/lesson/ajax/update-lesson/5",
 
             success: function(respond){
             },

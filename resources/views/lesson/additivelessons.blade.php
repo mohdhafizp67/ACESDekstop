@@ -628,7 +628,7 @@
           window.setTimeout(function() {
             $.ajax({
               type:"get",
-               url:"/lesson/ajax/update-lesson/3",
+               url:"/ACES/lesson/ajax/update-lesson/3",
 
               success: function(respond){
               },
