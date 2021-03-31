@@ -263,8 +263,19 @@ class AdminController extends Controller
       $lesson10 = Student_Lesson::where('lesson_id',10)->count();
       $lesson11 = Student_Lesson::where('lesson_id',11)->count();
 
+      $game1 = Student_Game::where('game_id',1)->count();
+      $game2 = Student_Game::where('game_id',2)->count();
+      $game3 = Student_Game::where('game_id',3)->count();
+      $game4 = Student_Game::where('game_id',4)->count();
+      $game5 = Student_Game::where('game_id',5)->count();
+      $game6 = Student_Game::where('game_id',6)->count();
+      $game7 = Student_Game::where('game_id',7)->count();
+      $game8 = Student_Game::where('game_id',8)->count();
+      $game9 = Student_Game::where('game_id',9)->count();
+      $game10 = Student_Game::where('game_id',10)->count();
 
-      return view('admin.profiles.graph',compact('student_active','student_inactive', 'student_pass', 'student_fail', 'lesson1','lesson3','lesson4','lesson5','lesson6','lesson7','lesson8','lesson9','lesson10','lesson11',));
+
+      return view('admin.profiles.graph',compact('student_active','student_inactive', 'student_pass', 'student_fail', 'lesson1','lesson3','lesson4','lesson5','lesson6','lesson7','lesson8','lesson9','lesson10','lesson11','game1','game2','game3','game4','game5','game6','game7','game8','game9','game10'));
   }
 
 }
