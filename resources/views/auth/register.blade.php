@@ -294,7 +294,7 @@
               <label for="exampleInputEmail1" style="color: #fff">
                 DISTRICT
               </label>
-              <input type="text" name="district" placeholder="District" value="{{ old('district') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('district') ? 'is-invalid' : '' }}">
+              <input type="text" name="district" placeholder="District" value="{{ old('district') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('district') ? 'is-invalid' : '' }}" required>
               <!-- <select id="district" name="district" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('district') }}">
                 <option value="" selected disabled hidden>Select District</option>
               </select> -->
@@ -310,7 +310,7 @@
               <label for="exampleInputEmail1" style="color: #fff">
                 SCHOOL NAME
               </label>
-              <input type="text" name="school" placeholder="School" value="{{ old('school') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('school') ? 'is-invalid' : '' }}">
+              <input type="text" name="school" placeholder="School" value="{{ old('school') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('school') ? 'is-invalid' : '' }}" required>
 
               <!-- <select id="school" name="school" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('school') is-invalid @enderror" value="{{ old('school') }}">
                 <option value="" selected disabled hidden>Select School</option>
