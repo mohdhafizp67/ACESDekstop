@@ -246,7 +246,25 @@ class AdminController extends Controller
 
   public function viewGraph()
   {
-      return view('admin.profiles.graph');
+      $student_active = User::where('is_student',1)->where('is_active',1)->count();
+      $student_inactive = User::where('is_student',1)->where('is_active',0)->count();
+
+      $student_pass = Student_Quiz::where('result_status','Lulus')->count();
+      $student_fail = Student_Quiz::where('result_status','Gagal')->count();
+
+      $lesson1 = Student_Lesson::where('lesson_id',1)->count();
+      $lesson3 = Student_Lesson::where('lesson_id',3)->count();
+      $lesson4 = Student_Lesson::where('lesson_id',4)->count();
+      $lesson5 = Student_Lesson::where('lesson_id',5)->count();
+      $lesson6 = Student_Lesson::where('lesson_id',6)->count();
+      $lesson7 = Student_Lesson::where('lesson_id',7)->count();
+      $lesson8 = Student_Lesson::where('lesson_id',8)->count();
+      $lesson9 = Student_Lesson::where('lesson_id',9)->count();
+      $lesson10 = Student_Lesson::where('lesson_id',10)->count();
+      $lesson11 = Student_Lesson::where('lesson_id',11)->count();
+
+
+      return view('admin.profiles.graph',compact('student_active','student_inactive', 'student_pass', 'student_fail', 'lesson1','lesson3','lesson4','lesson5','lesson6','lesson7','lesson8','lesson9','lesson10','lesson11',));
   }
 
 }

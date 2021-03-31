@@ -247,13 +247,14 @@ html, body {
 var bar = document.getElementById('bar');
 var barConfig = new Chart(bar, {
   type: 'bar',
+
    data: {
         labels: ['Lesson 1', 'Lesson 2', 'Lesson 3',
                   'Lesson 4', 'Lesson 5', 'Lesson 6',
-                  'Lesson 7'],
+                  'Lesson 7', 'Lesson 8', 'Lesson 9', 'Lesson 10'],
         datasets: [{
-            label: 'Progress',
-            data: [30, 25, 20, 15, 11, 4, 2],
+            label: 'Number of Student',
+            data: [{{ $lesson1 }},{{ $lesson3 }},{{ $lesson4 }},{{ $lesson5 }},{{ $lesson6 }},{{ $lesson7 }},{{ $lesson8 }},{{ $lesson9 }},{{ $lesson10 }},{{ $lesson11 }} ],
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
@@ -264,7 +265,9 @@ var barConfig = new Chart(bar, {
                 'rgba(64, 159, 64, 1)',
                 'rgba(45, 129, 100, 1)',
                 'rgba(11, 19, 64, 1)',
-                'rgba(99, 59, 64, 1)'
+                'rgba(99, 59, 64, 1)',
+                'rgba(11, 19, 64, 1)',
+                'rgba(11, 19, 64, 1)',
             ],
             borderWidth: 1
         }]
@@ -273,12 +276,18 @@ var barConfig = new Chart(bar, {
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    precision:0
+
                 }
             }]
         },
       responsive: true, // Instruct chart js to respond nicely.
       maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
+      legend:
+                {
+                    display: true
+                }
     }
 })
 
@@ -290,7 +299,7 @@ var doughnutConfig = new Chart(doughnut, {
     labels: ['Active', 'Not Active'],
     datasets: [{
       label: 'Status',
-      data: [80, 20],
+      data: [{{ $student_active }}, {{ $student_inactive }}],
       backgroundColor: [
         'rgba(0, 230, 118, 1)',
         'rgba(255, 206, 86, 1)',
@@ -336,7 +345,7 @@ var doughnutConfig = new Chart(pie, {
     labels: ['Pass', 'Fail'],
     datasets: [{
       label: '# of data',
-      data: [80, 40],
+      data: [{{ $student_pass }}, {{ $student_fail }}],
       backgroundColor: [
         'rgba(103, 216, 239, 1)',
         'rgba(246, 26, 104,1)'
