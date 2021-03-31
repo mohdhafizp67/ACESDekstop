@@ -25,7 +25,7 @@
     --grey: #eeeeee;
 }
 html, body {
-    font-family: 'roboto';
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
     height: 100%;
     background-color: var(--grey);
 }
