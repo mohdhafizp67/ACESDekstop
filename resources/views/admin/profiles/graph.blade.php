@@ -301,8 +301,8 @@ var doughnutConfig = new Chart(doughnut, {
       label: 'Status',
       data: [{{ $student_active }}, {{ $student_inactive }}],
       backgroundColor: [
-        'rgba(0, 230, 118, 1)',
-        'rgba(255, 206, 86, 1)',
+        'rgba(38, 84, 255, 1)',
+        'rgba(255, 0, 23, 1)',
       ],
       borderWidth: 1
     }]
@@ -326,8 +326,8 @@ var doughnutConfig = new Chart(doughnut, {
               label: 'Number of Student', // Name the series
               data: [{{ $game1 }},{{ $game2 }},{{ $game3 }},{{ $game4 }},{{ $game5 }},{{ $game6 }},{{ $game7 }},{{ $game8 }},{{ $game9 }},{{ $game10 }} ], // Specify the data values array
               fill: false,
-              borderColor: '#2196f3', // Add custom color border (Line)
-              backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
+              borderColor: '#2EFFF1', // Add custom color border (Line)
+              backgroundColor: '#FF2E2E', // Add custom color background (Points and Fill)
               borderWidth: 1 // Specify bar border width
           }]},
           options: {
@@ -360,8 +360,8 @@ var doughnutConfig = new Chart(pie, {
       label: '# of data',
       data: [{{ $student_pass }}, {{ $student_fail }}],
       backgroundColor: [
-        'rgba(103, 216, 239, 1)',
-        'rgba(246, 26, 104,1)'
+        'rgba(81, 228, 223, 1)',
+        'rgba(255, 224, 123, 1)'
       ],
       borderWidth: 1
     }]
