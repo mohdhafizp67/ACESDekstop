@@ -139,16 +139,11 @@
                                </div>
                                <div class="col-md-8">
                                  <div class="form-group">
-                                    <label>DISTRICT</label>
+                                    <label>Daerah</label>
+                                        <input type="text" name="district" placeholder="District" value="{{ old('district') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('district') ? 'is-invalid' : '' }}" required>
+
                                     <!-- <input type="text" name="negeri" class="form-control bg-light" value="{{$user->state}}" required> -->
-                                    <select class="custom-select  bg-light @error('state') is-invalid @enderror" id="district" name="district" value="{{ $user->district }}"  required>
-                                          <option value="" selected required hidden>Choose District</option>
-                                          @foreach($district as $data)
-                                            @if($data->negeri == $user->state)
-                                              <option value="{{$data->daerah}}" {{ $user->district == $data->daerah ? 'selected' : '' }}>{{$data->daerah}}</option>
-                                            @endif
-                                          @endforeach
-                                      </select>
+
                                  </div>
                                </div>
                                <div class="col-md-2">
