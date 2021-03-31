@@ -321,19 +321,32 @@ var doughnutConfig = new Chart(doughnut, {
      type: 'line',
     data: {
           labels: ['Game 1', 'Game 2', 'Game 3',
-                    'Game 4', 'Game 5', 'Game 6', 'Game 7'],
+                    'Game 4', 'Game 5', 'Game 6', 'Game 7', 'Game 8', 'Game 9', 'Game 10'],
           datasets: [{
               label: 'Progress', // Name the series
-              data: [30, 15, 20, 10, 25, 15, 10], // Specify the data values array
+              data: [{{ $game1 }},{{ $game2 }},{{ $game3 }},{{ $game4 }},{{ $game5 }},{{ $game6 }},{{ $game7 }},{{ $game8 }},{{ $game9 }},{{ $game10 }} ], // Specify the data values array
               fill: false,
               borderColor: '#2196f3', // Add custom color border (Line)
               backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
               borderWidth: 1 // Specify bar border width
           }]},
-         options: {
-            responsive: true, // Instruct chart js to respond nicely.
-            maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
-      }
+          options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    precision:0
+
+                }
+            }]
+        },
+      responsive: true, // Instruct chart js to respond nicely.
+      maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
+      legend:
+                {
+                    display: true
+                }
+    }
 
   })
 
