@@ -10,6 +10,9 @@
         </title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" rel="stylesheet" type="text/css">
+        <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+        <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/mapdata/countries/my/my-all.js"></script>
 
         <style>
             :root {
@@ -178,10 +181,17 @@ html, body {
         max-width: 1400px;
     }
 }
+
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+
         </style>
     </head>
     <body>
-        <div class="container" style="padding-bottom: 10%;padding-right: 10%;">
+        <div class="container" style="padding-bottom: 5%;padding-right: 10%;">
             <main>
                 <div class="dashboard-container">
                     <div class="card-1">
@@ -232,11 +242,100 @@ html, body {
                             </canvas>
                         </div>
                     </div>
+
+
                 </div>
+
+                <div class="container" style="margin-left: 5%;padding-top: 5%;">
+                    <div class="card">
+                        <h4 class="chart-lbl">
+                            Malaysia Map
+                        </h4>
+                        <div class="divider">
+                        </div>
+                        <div id="container"></div>
+                    </div>
+                </div>
+
+
+
             </main>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
         </script>
+
+
+<script>
+    // Prepare demo data
+    // Data is joined to map using value of 'hc-key' property by default.
+    // See API docs for 'joinBy' for more info on linking data and map.
+    var data = [
+        ['my-sa', {{ $state13 }}],
+        ['my-sk', {{ $state12 }}],
+        ['my-pg', {{ $state3 }}],
+        ['my-kh', {{ $state2 }}],
+        ['my-sl', {{ $state5 }}],
+        ['my-ph', {{ $state9 }}],
+        ['my-kl', {{ $state14 }}],
+        ['my-pj', {{ $state15 }}],
+        ['my-pl', {{ $state1 }}],
+        ['my-jh', {{ $state8 }}],
+        ['my-pk', {{ $state4 }}],
+        ['my-kn', {{ $state10 }}],
+        ['my-me', {{ $state7 }}],
+        ['my-ns', {{ $state6 }}],
+        ['my-te', {{ $state11 }}]
+    ];
+
+    // Create the chart
+    Highcharts.mapChart('container', {
+        chart: {
+            map: 'countries/my/my-all'
+        },
+
+        title: {
+            text: ''
+        },
+
+        subtitle: {
+            text: ''
+        },
+
+        mapNavigation: {
+            enabled: true,
+            buttonOptions: {
+                verticalAlign: 'bottom'
+            }
+        },
+
+        colorAxis: {
+            min: 0
+        },
+
+        series: [{
+            data: data,
+            name: 'Number of User From Each States',
+            states: {
+                hover: {
+                    color: '#F5FF40'
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}'
+            }
+        }, {
+            name: 'Separators',
+            type: 'mapline',
+            data: Highcharts.geojson(Highcharts.maps['countries/my/my-all'], 'mapline'),
+            color: 'silver',
+            nullColor: 'silver',
+            showInLegend: false,
+            enableMouseTracking: false
+        }]
+    });
+
+</script>
 
         <script>
 

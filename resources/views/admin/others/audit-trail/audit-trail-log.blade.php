@@ -38,16 +38,16 @@
 
                             </div>
                             <div class="col-md-4">
-                              <label>Dari :</label>
+                              <label>From :</label>
                               <input id="tarikh_mula" class="form-control bg-light" type="date" name="tarikh_mula" required>
                             </div>
                             <div class="col-md-4">
-                              <label>Hingga :</label>
+                              <label>To :</label>
                               <input id="tarikh_akhir" class="form-control bg-light" type="date" name="tarikh_akhir" required>
                             </div>
                             <div class="col-md-3">
                               <div style="padding:15px;"></div>
-                              <button type="submit" class="btn btn-primary m-auto" name="button"><i class="fa fa-search" aria-hidden="true"></i> Tapis Senarai</button>
+                              <button type="submit" class="btn btn-primary m-auto" name="button"><i class="fa fa-search" aria-hidden="true"></i> Filter</button>
                               <a href="{{ route('admin.others.audit-trail.audit-trail-log') }}" class="btn btn-primary m-auto"><i class="fa fa-refresh" aria-hidden="true"></i> Reset</a>
                             </div>
                           </div>
@@ -58,15 +58,15 @@
                             <!-- Table head -->
                             <thead>
                                 <tr>
-                                  <th class="all">Bil</th>
-                                  <th class="all">Nama Pengguna</th>
-                                  <th class="all">E-mail</th>
-                                  <th class="all">Alamat IP</th>
-                                  <th class="all">Masa</th>
-                                  <th class="all">Pengkalan Data</th>
-                                  <th class="all">Acara</th>
-                                  <th class="all">Data Lama</th>
-                                  <th class="all">Data Baharu</th>
+                                  <th class="all">No</th>
+                                  <th class="all">User Name</th>
+                                  <th class="all">Email</th>
+                                  <th class="all">IP Address</th>
+                                  <th class="all">Time</th>
+                                  <th class="all">Database</th>
+                                  <th class="all">Event</th>
+                                  <th class="all">Previous Data</th>
+                                  <th class="all">New Data</th>
 
                                 </tr>
                             </thead>
