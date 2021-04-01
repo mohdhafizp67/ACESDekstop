@@ -30,20 +30,20 @@
 
 
                     <!-- <div style="padding: 5px;"></div> -->
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbspPengumuman</h2>
+                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbspANNOUNCEMENT</h2>
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
-                        <a href="{{route('admin.others.announcement.create')}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Tambah Pengumuman Baru</a> &nbsp &nbsp
+                        <a href="{{route('admin.others.announcement.create')}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Add New Announcement</a> &nbsp &nbsp
                         <hr>
 
                         <div class="table-responsive">
                           <table id="table_data" class="table table-striped table-bordered second" style="width:100%">
                             <thead style="text-align: center;">
                               <tr>
-                                <th>Nama</th>
-                                <th>Mesej</th>
-                                <th>Tarikh </th>
-                                <th>Tindakan</th>
+                                <th>Name</th>
+                                <th>Message</th>
+                                <th>Date</th>
+                                <th>Action</th>
 
 
                             </thead>

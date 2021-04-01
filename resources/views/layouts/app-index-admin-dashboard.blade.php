@@ -105,20 +105,20 @@
                       <div class="modal-dialog modal-dialog-centered" role="document">
                           <div class="modal-content">
                               <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                  <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                   <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                               <span aria-hidden="true">&times;</span>
                                           </a>
                               </div>
                               <div class="modal-body">
-                                  <p>Anda mahu log keluar?</p>
+                                  <p>Are you sure to log out?</p>
                               </div>
                               <div class="modal-footer">
-                                  <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                  <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                   <!-- <a href="#" class="btn btn-primary">Yes</a> -->
                                   <form id="logout-form" action="{{ route('logout') }}" method="POST">
                                   @csrf
-                                  <button type="submit" name="button" class="btn btn-primary">Log Keluar</button>
+                                  <button type="submit" name="button" class="btn btn-primary">Log Out</button>
                                   </form>
                               </div>
                           </div>
@@ -492,7 +492,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                             Copyright © 2020 Artanis Cloud. All rights reserved. Dashboard by Warga Artanis.
+                             Copyright © 2020 Artanis Cloud. All rights reserved.
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="text-md-right footer-links d-none d-sm-block">
@@ -561,29 +561,7 @@
                   'excel', 'pdf', 'print'
               ],
               "scrollX": true,
-              "language": {
-                  "lengthMenu": "Memaparkan _MENU_ rekod per halaman",
-                  "zeroRecords": "Tiada rekod.",
-                  "info": "Memaparkan halaman _PAGE_ dari _PAGES_",
-                  "infoEmpty": "Tidak ada rekod yang tersedia",
-                  "infoFiltered": "(Ditapis dari _MAX_ jumlah rekod)",
-                  "search": "Carian",
-                  "previous": "Sebelum",
-                  "paginate": {
-                      "first":      "Pertama",
-                      "last":       "Terakhir",
-                      "next":       "Seterusnya",
-                      "previous":   "Sebelumnya"
-                  },
-                  "searchPanes": {
-                      "clearMessage": 'Padam Tapisan',
-                      "title":{
-                          _: 'Tapisan Dipilih - %d',
-                          0: 'Tiada Tapisan Dipilih',
-                          1: 'Satu Tapisan Dipilih',
-                      }
-                  }
-              },
+
             });
 
         });

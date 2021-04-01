@@ -274,8 +274,26 @@ class AdminController extends Controller
       $game9 = Student_Game::where('game_id',9)->count();
       $game10 = Student_Game::where('game_id',10)->count();
 
+      $state1 = User::where('state','Perlis')->count();
+      $state2 = User::where('state','Kedah')->count();
+      $state3 = User::where('state','Pulau Pinang')->count();
+      $state4 = User::where('state','Perak')->count();
+      $state5 = User::where('state','Selangor')->count();
+      $state6 = User::where('state','Negeri Sembilan')->count();
+      $state7 = User::where('state','Melaka')->count();
+      $state8 = User::where('state','Johor')->count();
+      $state9 = User::where('state','Pahang')->count();
+      $state10 = User::where('state','Kelantan')->count();
+      $state11 = User::where('state','Terengganu')->count();
+      $state12 = User::where('state','Sarawak')->count();
+      $state13 = User::where('state','Sabah')->count();
+      $state14 = User::where('state','WP Kuala Lumpur')->count();
+      $state15 = User::where('state','WP Putrajaya')->count();
 
-      return view('admin.profiles.graph',compact('student_active','student_inactive', 'student_pass', 'student_fail', 'lesson1','lesson3','lesson4','lesson5','lesson6','lesson7','lesson8','lesson9','lesson10','lesson11','game1','game2','game3','game4','game5','game6','game7','game8','game9','game10'));
+
+
+      return view('admin.profiles.graph',compact('student_active','student_inactive', 'student_pass', 'student_fail', 'lesson1','lesson3','lesson4','lesson5','lesson6','lesson7','lesson8','lesson9','lesson10','lesson11','game1','game2','game3','game4','game5','game6','game7','game8','game9','game10',
+      'state1','state2','state3','state4','state5','state6','state7','state8','state9','state10','state11','state12','state13','state14','state15'));
   }
 
 }
