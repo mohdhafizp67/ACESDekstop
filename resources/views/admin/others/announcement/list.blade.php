@@ -7,7 +7,7 @@
               @if ($message = Session::get('success'))
               <div id=alert>
                   <div class="alert alert-card  alert-success" role="alert">
-                      <strong>Operasi Berjaya! </strong>
+                      <strong>Operation Successful! </strong>
                       {{$message}}
                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
@@ -17,7 +17,7 @@
               @elseif ($message = Session::get('error'))
               <div id="alert">
                 <div class="alert alert-card  alert-danger" role="alert">
-                    <strong>Ralat! </strong>
+                    <strong>Error! </strong>
                     {{$message}}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -54,27 +54,27 @@
                                 <td>{{$datas->users->name}}</td>
                                 <td>{{$datas->user_message}}</td>
                                 <td>{{$datas->created_at}}</td>
-                                <td> <a href="#" onclick="pass_id_delete({{ $datas->id  }})" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal2">Hapus</button></td>
+                                <td> <a href="#" onclick="pass_id_delete({{ $datas->id  }})" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal2">Delete</button></td>
 
                                 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel2">Pengesahan</h5>
+                                                <h5 class="modal-title" id="exampleModalLabel2">Confirmation</h5>
                                                 <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </a>
                                             </div>
                                             <div class="modal-body">
-                                                <p>Anda pasti mahu menghapus pengumuman ini?</p>
+                                                <p>Are you sure you want to delete this announcement?</p>
                                             </div>
                                             <div class="modal-footer">
-                                                <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                                <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                                 <!-- <a href="#" class="btn btn-primary">Yes</a> -->
                                                 <form class="" action="{{route('admin.others.announcement.delete')}}" method="post">
                                                 @csrf
                                                   <input type="hidden" id="announcement_id" name="announcement_id">
-                                                  <button type="submit" name="button" class="btn btn-primary">Hapus Pengumuman</button>
+                                                  <button type="submit" name="button" class="btn btn-primary">Delete Announcement</button>
                                                 </form>
                                             </div>
                                         </div>

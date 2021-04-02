@@ -7,7 +7,7 @@
               @if ($message = Session::get('success'))
               <div id=alert>
                   <div class="alert alert-card  alert-success" role="alert">
-                      <strong>Operasi Berjaya! </strong>
+                      <strong>Operation Successful! </strong>
                       {{$message}}
                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
@@ -17,7 +17,7 @@
               @elseif ($message = Session::get('error'))
               <div id="alert">
                 <div class="alert alert-card  alert-danger" role="alert">
-                    <strong>Ralat! </strong>
+                    <strong>Error! </strong>
                     {{$message}}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -38,16 +38,16 @@
 
                             </div>
                             <div class="col-md-4">
-                              <label>Dari :</label>
+                              <label>From :</label>
                               <input id="tarikh_mula" class="form-control bg-light" type="date" name="tarikh_mula" required>
                             </div>
                             <div class="col-md-4">
-                              <label>Hingga :</label>
+                              <label>To :</label>
                               <input id="tarikh_akhir" class="form-control bg-light" type="date" name="tarikh_akhir" required>
                             </div>
                             <div class="col-md-3">
                               <div style="padding:15px;"></div>
-                              <button type="submit" class="btn btn-primary m-auto" name="button"><i class="fa fa-search" aria-hidden="true"></i> Tapis Senarai</button>
+                              <button type="submit" class="btn btn-primary m-auto" name="button"><i class="fa fa-search" aria-hidden="true"></i>  Filter</button>
                               <a href="{{ route('admin.others.audit-trail.audit-trail-log') }}" class="btn btn-primary m-auto"><i class="fa fa-refresh" aria-hidden="true"></i> Reset</a>
                             </div>
                           </div>
@@ -58,15 +58,15 @@
                             <!-- Table head -->
                             <thead>
                                 <tr>
-                                  <th class="all">Bil</th>
-                                  <th class="all">Nama Pengguna</th>
-                                  <th class="all">E-mail</th>
-                                  <th class="all">Alamat IP</th>
-                                  <th class="all">Masa</th>
-                                  <th class="all">Pengkalan Data</th>
-                                  <th class="all">Acara</th>
-                                  <th class="all">Data Lama</th>
-                                  <th class="all">Data Baharu</th>
+                                  <th class="all">No</th>
+                                  <th class="all">User name</th>
+                                  <th class="all">Email</th>
+                                  <th class="all">IP address</th>
+                                  <th class="all">Time</th>
+                                  <th class="all">Database</th>
+                                  <th class="all">Event</th>
+                                  <th class="all">Previous Data</th>
+                                  <th class="all">New Data</th>
 
                                 </tr>
                             </thead>
@@ -128,19 +128,19 @@
                               <div class="modal-dialog" role="document">
                                   <div class="modal-content">
                                       <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                          <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                           <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                       <span aria-hidden="true">&times;</span>
                                                   </a>
                                       </div>
                                       <div class="modal-body">
-                                          <p>Anda pasti mahu menyahaktif pengguna ini?</p>
+                                          <p>Are you sure you want to deactivate this user?</p>
                                       </div>
                                       <div class="modal-footer">
-                                          <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                          <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                           <form class="" action="{{ route('admin.others.user-list.disable') }}" method="post">
                                             @csrf
-                                            <button type="submit" name="button" class="btn btn-primary">Nyahaktifkan Pengguna</button>
+                                            <button type="submit" name="button" class="btn btn-primary">Deactivate User</button>
                                             <input type="hidden" id="id_disable" name="id_disable">
 
                                           </form>
@@ -153,19 +153,19 @@
                               <div class="modal-dialog" role="document">
                                   <div class="modal-content">
                                       <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                          <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                           <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                       <span aria-hidden="true">&times;</span>
                                                   </a>
                                       </div>
                                       <div class="modal-body">
-                                        <p>Anda pasti mahu mengaktifkan pengguna ini?</p>
+                                        <p>Are you sure you want to enable this user?</p>
                                       </div>
                                       <div class="modal-footer">
-                                          <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                          <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                           <form class="" action="{{ route('admin.others.user-list.activate') }}" method="post">
                                             @csrf
-                                          <button type="submit" name="button" class="btn btn-primary">Aktifkan</button>
+                                          <button type="submit" name="button" class="btn btn-primary">Activate</button>
                                           <input type="hidden" id="id_activate" name="id_activate">
 
                                           </form>

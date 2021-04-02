@@ -29,7 +29,7 @@
                     @endif
 
                     <!-- <div style="padding: 5px;"></div> -->
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp Tambah Kuiz Baru</h2>
+                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp Add New Quiz</h2>
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
 
@@ -41,10 +41,10 @@
                             </div>
                             <div class="col-md-4">
                               <div class="form-group">
-                                 <label>Pelajaran</label>
+                                 <label>Lesson</label>
                                  <!-- <input type="text" name="chapter" class="form-control bg-light" required> -->
                                  <select class="custom-select  bg-light @error('state') is-invalid @enderror" name="lesson_id" value="{{ old('lesson_id') }}"  >
-                                       <option value="" selected disabled hidden>Pilih pelajaran</option>
+                                       <option value="" selected disabled hidden>Select lesson</option>
                                        @foreach($lesson as $data)
                                        <option value="{{$data->id}}" {{ old('lesson_id') == $data->id ? 'selected' : '' }}>{{$data->lesson_type}} | {{$data->lesson_subject}}</option>
                                        @endforeach
@@ -53,7 +53,7 @@
                             </div>
                             <div class="col-md-4">
                               <div class="form-group">
-                                 <label>Masa Diperuntukkan (Minit)</label>
+                                 <label>Allocated Time (Minutes)</label>
                                  <input type="input" name="time" class="form-control bg-light" onkeypress="return onlyNumberKey(event)" maxlength="3" required>
                                 <!-- <select class="custom-select  bg-light @error('state') is-invalid @enderror" name="time" value="{{ old('time') }}"  >
                                       <option value="" selected disabled hidden>Pilih masa yang diperuntukkan</option>
@@ -79,17 +79,17 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Jumlah Soalan</label>
+                               <label>Number of Questions</label>
                                <input type="text" name="number_of_question" maxlength="3" class="form-control bg-light" onkeypress="return onlyNumberKey(event)" required>
                                <!-- <small>Jumlah soalan tidak kurang dari 10 dan tidak melebihi 99</small> -->
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Peratus Kelulusan</label>
+                               <label>Percentage of Completion</label>
                                <!-- <input type="text" name="percentage_to_pass" class="form-control bg-light" required> -->
                                <select class="custom-select  bg-light @error('state') is-invalid @enderror" name="percentage_to_pass" value="{{ old('percentage_to_pass') }}"  >
-                                     <option value="" selected disabled hidden>Pilih peratus kelulusan</option>
+                                     <option value="" selected disabled hidden>Select the percentage of passes</option>
                                      <option value="10" {{ old('percentage_to_pass') == 10 ? 'selected' : '' }}>10 %</option>
                                      <option value="20" {{ old('percentage_to_pass') == 20 ? 'selected' : '' }}>20 %</option>
                                      <option value="30" {{ old('percentage_to_pass') == 30 ? 'selected' : '' }}>30 %</option>
@@ -115,7 +115,7 @@
                           </div>
                           <div class="col-md-8">
                             <!-- <button class="btn btn-block btn-primary" type="submit">Change Password</button> -->
-                            <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Simpan Tetapan Quiz</a>
+                            <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Save Quiz Settings</a>
                           </div>
                           <div class="col-md-2">
 
@@ -126,18 +126,18 @@
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                         <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </a>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Anda pasti mahu menyimpan tetapan ini?</p>
+                                        <p>Are you want to keep this setting?</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                         <!-- <a href="#" class="btn btn-primary">Yes</a> -->
-                                        <button type="submit" name="button" class="btn btn-primary">Simpan Tetapan Quiz</button>
+                                        <button type="submit" name="button" class="btn btn-primary">Save Quiz Settings</button>
                                     </div>
                                 </div>
                             </div>

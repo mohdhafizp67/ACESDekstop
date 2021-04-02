@@ -7,7 +7,7 @@
               @if ($message = Session::get('success'))
               <div id=alert>
                   <div class="alert alert-card  alert-success" role="alert">
-                      <strong>Operasi Berjaya! </strong>
+                      <strong>Operation Successful! </strong>
                       {{$message}}
                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
@@ -17,7 +17,7 @@
               @elseif ($message = Session::get('error'))
               <div id="alert">
                 <div class="alert alert-card  alert-danger" role="alert">
-                    <strong>Ralat! </strong>
+                    <strong>Error! </strong>
                     {{$message}}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -28,7 +28,7 @@
                   <div class="card" style="padding: 10px;">
 
                     <div style="padding: 5px;"></div>
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Tukar Kata Laluan</h2>
+                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>Change Password</h2>
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
                         <form action="{{ route('admin.profiles.change-password.updating') }}" method="post">
@@ -43,7 +43,7 @@
                                        id="password"
                                        name="password"
                                        class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
-                                       placeholder="Kata laluan semasa">
+                                       placeholder="Password">
                                 <div class="input-group-append">
 
 
@@ -78,7 +78,7 @@
                                        id="new_password"
                                        name="new_password"
                                        class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
-                                       placeholder="Kata Laluan Baru">
+                                       placeholder="New Password">
                                 <div class="input-group-append">
 
                                     <div class="input-group-text">
@@ -103,7 +103,7 @@
                                        id="password_confirmation"
                                        name="password_confirmation"
                                        class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
-                                       placeholder="Sahkan kata laluan baru">
+                                       placeholder="Confirm new password">
                                 <div class="input-group-append">
 
                                     <div class="input-group-text">
@@ -111,7 +111,7 @@
 
                                         <span id="icon_eye_confirm" class="fa fa-eye" ></span>
                                       </a>
-                                        
+
                                     </div>
 
                                 </div>
@@ -133,7 +133,7 @@
                           </div>
                           <div class="col-md-8">
                             <!-- <button class="btn btn-block btn-primary" type="submit">Change Password</button> -->
-                            <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Tukar Kata Laluan</a>
+                            <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Change Password</a>
                           </div>
                           <div class="col-md-2">
 
@@ -145,18 +145,18 @@
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                         <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </a>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Anda pasti mahu menukar kata laluan?</p>
+                                        <p>Are you sure you want to change the password?</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                         <!-- <a href="#" class="btn btn-primary">Yes</a> -->
-                                        <button type="submit" name="button" class="btn btn-primary">Tukar Kata Laluan</button>
+                                        <button type="submit" name="button" class="btn btn-primary">Change Password</button>
                                     </div>
                                 </div>
                             </div>

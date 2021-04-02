@@ -55,15 +55,15 @@
                             @if($data->is_admin == 1)
                             <td><span class="badge badge-pill badge-brand">Admin</span></td>
                             @elseif($data->is_student == 1)
-                            <td><span class="badge badge-pill badge-primary">Pelajar</span></td>
+                            <td><span class="badge badge-pill badge-primary">Student</span></td>
                             @elseif($data->is_ecerdb_personnel == 1)
-                            <td><span class="badge badge-pill badge-info">ECERDB Personnel</span></td>
+                            <td><span class="badge badge-pill badge-info">ECERDC Personnel</span></td>
                             @endif
 
                             @if($data->is_active == 1)
-                            <td><span class="badge badge-pill badge-success">Aktif</span></td>
+                            <td><span class="badge badge-pill badge-success">Active</span></td>
                             @else
-                            <td><span class="badge badge-pill badge-danger">Tidak Aktif</span></td>
+                            <td><span class="badge badge-pill badge-danger">Not Active</span></td>
                             @endif
 
                             <td>
@@ -83,19 +83,19 @@
                               <div class="modal-dialog modal-dialog-centered" role="document">
                                   <div class="modal-content">
                                       <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                          <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                           <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                       <span aria-hidden="true">&times;</span>
                                                   </a>
                                       </div>
                                       <div class="modal-body">
-                                          <p>Anda pasti mahu menyahaktif pengguna ini?</p>
+                                          <p>Are you sure you want to deactivate this user?</p>
                                       </div>
                                       <div class="modal-footer">
-                                          <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                          <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                           <form class="" action="{{ route('admin.others.user-list.disable') }}" method="post">
                                             @csrf
-                                            <button type="submit" name="button" class="btn btn-primary">Nyahaktifkan Pengguna</button>
+                                            <button type="submit" name="button" class="btn btn-primary">Deactivate User</button>
                                             <input type="hidden" id="id_disable" name="id_disable">
 
                                           </form>
@@ -108,19 +108,19 @@
                               <div class="modal-dialog modal-dialog-centered" role="document">
                                   <div class="modal-content">
                                       <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                          <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                           <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                       <span aria-hidden="true">&times;</span>
                                                   </a>
                                       </div>
                                       <div class="modal-body">
-                                        <p>Anda pasti mahu mengaktifkan pengguna ini?</p>
+                                        <p>Are you sure you want to enable this user?</p>
                                       </div>
                                       <div class="modal-footer">
-                                          <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                          <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                           <form class="" action="{{ route('admin.others.user-list.activate') }}" method="post">
                                             @csrf
-                                          <button type="submit" name="button" class="btn btn-primary">Aktifkan</button>
+                                          <button type="submit" name="button" class="btn btn-primary">Activate</button>
                                           <input type="hidden" id="id_activate" name="id_activate">
 
                                           </form>
