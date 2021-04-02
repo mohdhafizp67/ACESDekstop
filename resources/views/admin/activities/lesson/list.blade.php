@@ -29,7 +29,7 @@
                     @endif
 
                     <!-- <div style="padding: 5px;"></div> -->
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-book" aria-hidden="true"></i>&nbsp Pelajaran</h2>
+                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-book" aria-hidden="true"></i>&nbsp Lesson</h2>
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
 
@@ -39,7 +39,7 @@
                               <tr>
                                 <th>Pelajaran</th>
                                 <!-- <th>Pautan Video</th> -->
-                                <th>Tindakan</th>
+                                <th>Action</th>
                               </tr>
                             </thead>
                             <tbody style="text-align: center;">
@@ -65,7 +65,7 @@
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Kemaskini Pautan Video</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Update Video Link</h5>
                                         <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </a>
@@ -73,24 +73,24 @@
                                     <form action="{{route('admin.activities.lesson.list.update')}}" method="post">
                                     <div class="modal-body">
                                       <div class="form-group">
-                                         <label style="color: black !important;">Pautan Video 1</label>
+                                         <label style="color: black !important;">Video Link 1</label>
                                          <input type="text" id="link" name="link1" class="form-control bg-light" required>
                                       </div>
                                       <div class="form-group">
-                                         <label style="color: black !important;">Pautan Video 2</label>
+                                         <label style="color: black !important;">Video Link 2</label>
                                          <input type="text" id="link" name="link2" class="form-control bg-light" required>
                                       </div>
                                       <div class="form-group">
-                                         <label style="color: black !important;">Pautan Video 3</label>
+                                         <label style="color: black !important;">Video Link 3</label>
                                          <input type="text" id="link" name="link3" class="form-control bg-light" required>
                                       </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                         <!-- <a href="#" class="btn btn-primary">Yes</a> -->
 
                                         @csrf
-                                          <button type="submit" name="button" class="btn btn-primary">Muatnaik</button>
+                                          <button type="submit" name="button" class="btn btn-primary">Upload</button>
                                           <input type="hidden" id="lesson_id" name="lesson_id">
                                     </div>
                                   </form>

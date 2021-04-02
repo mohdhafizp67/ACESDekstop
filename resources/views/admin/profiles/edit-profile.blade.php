@@ -7,7 +7,7 @@
                  @if ($message = Session::get('success'))
                  <div id=alert>
                      <div class="alert alert-card  alert-success" role="alert">
-                         <strong>Operasi Berjaya! </strong>
+                         <strong>Operation Successful! </strong>
                          {{$message}}
                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                          <span aria-hidden="true">&times;</span>
@@ -17,7 +17,7 @@
                  @elseif ($message = Session::get('error'))
                  <div id="alert">
                    <div class="alert alert-card  alert-danger" role="alert">
-                       <strong>Ralat! </strong>
+                       <strong>Error! </strong>
                        {{$message}}
                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                        <span aria-hidden="true">&times;</span>
@@ -29,7 +29,7 @@
                      <div class="card" style="padding: 10px;">
 
                        <div style="padding: 5px;"></div>
-                         <h2 class="card-header" style="text-align: center;"><i class="fas fa-edit"></i>Kemaskini Profil Pengguna</h2>
+                         <h2 class="card-header" style="text-align: center;"><i class="fas fa-edit"></i>Update User Profile</h2>
                          <div class="card-body p-0">
                            <div style="padding: 10px;"></div>
 
@@ -41,13 +41,13 @@
                                </div>
                                <div class="col-md-4">
                                  <div class="form-group">
-                                    <label>Nama</label>
+                                    <label>Name</label>
                                     <input type="text" name="name" class="form-control bg-light" placeholder="Input Full Name" value="{{$user->name}}" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);" required>
                                  </div>
                                </div>
                                <div class="col-md-4">
                                  <div class="form-group">
-                                    <label>Kad Pengenalan</label>
+                                    <label>Identification Card</label>
                                     <input type="text" name="ic_number" class="form-control bg-light" placeholder="Input IC Number" maxlength="12" minlength="12" value="{{$user->ic_number}}" onkeypress="return onlyNumberKey(event)" required>
                                  </div>
                                </div>
@@ -68,7 +68,7 @@
                                </div>
                                <div class="col-md-4">
                                  <div class="form-group">
-                                    <label>Telefon Bimbit</label>
+                                    <label>Mobile Phone</label>
                                     <input type="text" name="phone" class="form-control bg-light" placeholder="Input Phone Number" maxlength="11" minlength="10" value="{{$user->phone}}" onkeypress="return onlyNumberKey(event)" required>
                                  </div>
                                </div>
@@ -83,7 +83,7 @@
                                </div>
                                <div class="col-md-8">
                                  <div class="form-group">
-                                    <label>Alamat</label>
+                                    <label>Addresss</label>
                                     <!-- <input type="text" name="phone" class="form-control bg-light" placeholder="Input Phone Number" value=""> -->
                                     <textarea name="address" class="form-control bg-light" rows="2" cols="20" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);" required>{{$user->address}}</textarea>
                                  </div>
@@ -99,13 +99,13 @@
                                </div>
                                <div class="col-md-4">
                                  <div class="form-group">
-                                    <label>Poskod</label>
+                                    <label>Postcode</label>
                                     <input type="text" name="postcode" class="form-control bg-light" placeholder="Input Postcode" maxlength="5" minlength="5" value="{{$user->postcode}}" onkeypress="return onlyNumberKey(event)" required>
                                  </div>
                                </div>
                                <div class="col-md-4">
                                  <div class="form-group">
-                                    <label>Negeri</label>
+                                    <label>State</label>
                                     <select id="state" class="custom-select  bg-light @error('state') is-invalid @enderror" name="state" value="{{ $user->state }}"  required>
                                           <option value="" selected disabled hidden>Choose State</option>
                                           <option value="Johor" {{ $user->state == "Johor" ? 'selected' : '' }}>Johor</option>
@@ -138,7 +138,7 @@
                                </div>
                                <div class="col-md-8">
                                  <div class="form-group">
-                                    <label>Daerah</label>
+                                    <label>District</label>
                                     <select class="custom-select  bg-light @error('state') is-invalid @enderror" id="district" name="district" value="{{ $user->district }}"  required>
                                           <option value="" selected disabled hidden>Choose District</option>
                                           @foreach($district as $data)
@@ -162,12 +162,12 @@
                                </div>
                                <div class="col-md">
                                  <div class="form-group">
-                                     <label >Muatnaik Gambar Profil</label>
+                                     <label >Upload Profile Picture</label>
                                      <div class="custom-file">
                                          <input type="file" class="custom-file-input" id="gambar_profile" onchange="return fileValidation('gambar_profile')" name="gambar_profile">
-                                         <label class="custom-file-label bg-light" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Muatnaik fail</label>
+                                         <label class="custom-file-label bg-light" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Upload a file</label>
                                      </div>
-                                     <small id="saiz_data" class="form-text text-secondary">Muat naik gambar tidak melebihi 50MB</small>
+                                     <small id="saiz_data" class="form-text text-secondary">Upload a photo does not exceed 50MB</small>
 
                                      @error('gambar_profile')
                                      <div class="alert alert-danger">
@@ -187,7 +187,7 @@
                                </div>
                                <div class="col-md-8">
                                  <!-- <button class="btn btn-block btn-primary" type="submit">Update Profile</button> -->
-                                 <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Kemaskini Profil</a>
+                                 <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Update Profile</a>
                                </div>
                                <div class="col-md-2">
 
@@ -198,18 +198,18 @@
                                  <div class="modal-dialog modal-dialog-centered" role="document">
                                      <div class="modal-content">
                                          <div class="modal-header">
-                                             <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                             <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                              <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                          <span aria-hidden="true">&times;</span>
                                                      </a>
                                          </div>
                                          <div class="modal-body">
-                                             <p>Anda pasti mahu mengemaskini profil?</p>
+                                             <p>Are you sure you want to update your profile?</p>
                                          </div>
                                          <div class="modal-footer">
-                                             <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                             <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                              <!-- <a href="#" class="btn btn-primary">Yes</a> -->
-                                             <button type="submit" name="button" class="btn btn-primary">Kemaskini Profil</button>
+                                             <button type="submit" name="button" class="btn btn-primary">Update Profile</button>
                                          </div>
                                      </div>
                                  </div>

@@ -7,7 +7,7 @@
               @if ($message = Session::get('success'))
               <div id=alert>
                   <div class="alert alert-card  alert-success" role="alert">
-                      <strong>Operasi Berjaya! </strong>
+                      <strong>Operation Successful! </strong>
                       {{$message}}
                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
@@ -17,7 +17,7 @@
               @elseif ($message = Session::get('error'))
               <div id="alert">
                 <div class="alert alert-card  alert-danger" role="alert">
-                    <strong>Ralat! </strong>
+                    <strong>Error! </strong>
                     {{$message}}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -30,12 +30,12 @@
 
 
                     <div style="padding: 5px;"></div>
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-university" aria-hidden="true"></i>&nbsp Bank Soalan</h2>
+                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-university" aria-hidden="true"></i>&nbsp Question Bank</h2>
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
-                        <a href="{{route('admin.activities.quiz.question-banks.add', $lesson_id)}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Tambah Soalan Baru</a>
+                        <a href="{{route('admin.activities.quiz.question-banks.add', $lesson_id)}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Add New Question</a>
                         &nbsp&nbsp&nbsp&nbsp
-                        <a href="{{route('admin.activities.quiz.list')}}" class="btn btn-primary"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> &nbsp Kembali ke Senarai Kuiz</a>
+                        <a href="{{route('admin.activities.quiz.list')}}" class="btn btn-primary"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> &nbsp Return to Quiz List</a>
 
                         <hr>
 
@@ -43,9 +43,9 @@
                           <table id="table_data" class="table table-striped table-bordered second" style="width:100%">
                             <thead style="text-align: center;">
                               <tr>
-                                <th>Pelajaran</th>
-                                <th>Soalan</th>
-                                <th>Tindakan</th>
+                                <th>Lesson</th>
+                                <th>Question</th>
+                                <th>Action</th>
                               </tr>
                             </thead>
                             <tbody style="text-align: center;">
@@ -69,20 +69,20 @@
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                         <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </a>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Anda pasti mahu memadam soalan ini?</p>
+                                        <p>Are you want to delete this question?</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                         <!-- <a href="#" class="btn btn-primary">Yes</a> -->
                                         <form class="" action="{{route('admin.activities.question-banks.remove')}}" method="post">
                                         @csrf
-                                          <button type="submit" name="button" class="btn btn-primary">Padam Soalan</button>
+                                          <button type="submit" name="button" class="btn btn-primary">Delete Question</button>
                                           <input type="hidden" id="question_id" name="question_id">
                                         </form>
                                     </div>

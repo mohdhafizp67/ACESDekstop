@@ -29,7 +29,7 @@
                     @endif
 
                     <!-- <div style="padding: 5px;"></div> -->
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-book" aria-hidden="true"></i>&nbsp Tambah Pelajaran Baru</h2>
+                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-book" aria-hidden="true"></i>&nbsp Add New Lesson</h2>
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
 
@@ -42,13 +42,13 @@
                             </div>
                             <div class="col-md-4">
                               <div class="form-group">
-                                 <label>Jenis Pelajaran</label>
+                                 <label>Type of Lesson</label>
                                  <input type="text" name="lesson_type" class="form-control bg-light" required>
                               </div>
                             </div>
                             <div class="col-md-4">
                               <div class="form-group">
-                                 <label>Subjek Pelajaran</label>
+                                 <label>Subject of Lesson</label>
                                  <input type="text" name="lesson_subject" class="form-control bg-light" required>
                               </div>
                             </div>
@@ -62,7 +62,7 @@
 
                             </div>
                             <div class="col-md-8">
-                              <button type="submit" class="btn btn-block btn-primary" name="button">Simpan Pelajaran</button>
+                              <button type="submit" class="btn btn-block btn-primary" name="button">Save Lessons</button>
                             </div>
                             <div class="col-md-2">
 

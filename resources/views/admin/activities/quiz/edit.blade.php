@@ -29,7 +29,7 @@
                     @endif
 
                     <!-- <div style="padding: 5px;"></div> -->
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp Kemaskini Kuiz</h2>
+                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp Quiz Update</h2>
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
 
@@ -41,13 +41,13 @@
                             </div>
                             <div class="col-md-4">
                               <div class="form-group">
-                                 <label>Pelajaran</label>
+                                 <label>Lesson</label>
                                  <input type="text" name="lesson" class="form-control bg-light" value="{{$lesson->lesson_type}} | {{$lesson->lesson_subject}}" disabled>
                               </div>
                             </div>
                             <div class="col-md-4">
                               <div class="form-group">
-                                 <label>Masa Diperuntukkan (Minit)</label>
+                                 <label>Allocated Time (Minutes)</label>
                                  <input type="text" name="time" class="form-control bg-light" value="{{$quiz->time}}" onkeypress="return onlyNumberKey(event)" maxlength="3" required>
                                 <!-- <select class="custom-select  bg-light @error('state') is-invalid @enderror" name="time" value="{{ $quiz->time }}"  >
                                       <option value="" selected disabled hidden>Pilih masa yang diperuntukkan</option>
@@ -73,14 +73,14 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Jumlah Soalan</label>
+                               <label>Number of Questions</label>
                                <input type="text" name="number_of_question" maxlength="3" class="form-control bg-light" onkeypress="return onlyNumberKey(event)" value="{{$quiz->number_of_question}}"required>
-                               <small>Jumlah soalan tidak kurang dari 10 dan tidak melebihi 99</small>
+                               <small>The number of questions is not less than 10 and not more than 99</small>
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Peratus Kelulusan</label>
+                               <label>Percentage of Completion</label>
                                <!-- <input type="text" name="percentage_to_pass" class="form-control bg-light" required> -->
                                <select class="custom-select  bg-light @error('state') is-invalid @enderror" name="percentage_to_pass" value="{{ $quiz->percentage_to_pass }}"  >
                                      <option value="" selected disabled hidden>Pilih peratus kelulusan</option>
@@ -109,7 +109,7 @@
                           </div>
                           <div class="col-md-8">
                             <!-- <button class="btn btn-block btn-primary" type="submit">Change Password</button> -->
-                            <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Simpan Tetapan Quiz</a>
+                            <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Save Quiz Settings</a>
                           </div>
                           <div class="col-md-2">
 
@@ -120,18 +120,18 @@
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                         <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </a>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Anda pasti mahu menyimpan tetapan ini?</p>
+                                        <p>Are you want to save this setting?</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                         <!-- <a href="#" class="btn btn-primary">Yes</a> -->
-                                        <button type="submit" name="button" class="btn btn-primary">Simpan Tetapan Quiz</button>
+                                        <button type="submit" name="button" class="btn btn-primary">Save Quiz Settings</button>
                                     </div>
                                 </div>
                             </div>

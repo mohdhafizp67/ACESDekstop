@@ -29,7 +29,7 @@
                     @endif
 
                     <div style="padding: 5px;"></div>
-                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-university" aria-hidden="true"></i>&nbsp Tambah Soalan Baru</h2>
+                      <h2 class="card-header" style="text-align: center;"><i class="fa fa-university" aria-hidden="true"></i>&nbsp Add New Question</h2>
                       <div class="card-body p-0">
                         <div style="padding: 10px;"></div>
 
@@ -41,7 +41,7 @@
                             </div>
                             <div class="col-md-8">
                               <div class="form-group">
-                                 <label>Pelajaran</label>
+                                 <label>Lesson</label>
                                  <input type="text" name="chapter" class="form-control bg-light" value="{{$lesson->lesson_type}} | {{$lesson->lesson_subject}}" disabled>
 
                               </div>
@@ -57,7 +57,7 @@
                           </div>
                           <div class="col-md-8">
                             <div class="form-group">
-                               <label>Soalan</label>
+                               <label>Question</label>
                                <textarea name="question" rows="3" class="form-control bg-light" required></textarea>
                             </div>
                           </div>
@@ -72,13 +72,13 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Pilihan 1  &nbsp&nbsp&nbsp&nbsp[Jawapan]</label>
+                               <label>Option 1  &nbsp&nbsp&nbsp&nbsp[Answer]</label>
                                <input type="text" name="answer" class="form-control bg-light" required>
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Pilihan 2</label>
+                               <label>Option 2</label>
                                <input type="text" name="option[]" class="form-control bg-light" required>
                             </div>
                           </div>
@@ -93,13 +93,13 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Pilihan 3</label>
+                               <label>Option 3</label>
                                <input type="text" name="option[]" class="form-control bg-light" required>
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                               <label>Pilihan 4</label>
+                               <label>Option 4</label>
                                <input type="text" name="option[]" class="form-control bg-light" required>
                             </div>
                           </div>
@@ -114,7 +114,7 @@
                           </div>
                           <div class="col-md-8">
                             <!-- <button class="btn btn-block btn-primary" type="submit">Change Password</button> -->
-                            <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Simpan Soalan</a>
+                            <a href="#" class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Save the Question</a>
                           </div>
                           <div class="col-md-2">
 
@@ -125,18 +125,18 @@
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                         <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </a>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Anda pasti mahu menyimpan soalan ini?</p>
+                                        <p>Are you want to keep this question?</p>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                         <!-- <a href="#" class="btn btn-primary">Yes</a> -->
-                                        <button type="submit" name="button" class="btn btn-primary">Simpan Soalan</button>
+                                        <button type="submit" name="button" class="btn btn-primary">Save Question</button>
                                     </div>
                                 </div>
                             </div>
