@@ -227,24 +227,34 @@ a {
           <div class="col-md-12">
             <form action="{{ route('login') }}" method="POST" style="padding: 10px" source="custom" name="form">
               @csrf
+                    @if ($message = Session::get('error'))
+                        <div id=alert>
+                            <div class="alert alert-card alert-danger" role="alert">
+                                {{ $message }}
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    @endif
       				<div class="form-group">
 
       					<label for="exampleInputEmail1" style="color: #fff">
       						{{ __('landing_page.login.ic_number') }}
       					</label>
       					<input type="text" placeholder="IC Number" id="ic_number" name="ic_number" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" value="{{ old('ic_number') }}" required autocomplete="ic_number" autofocus/>
-                @error('ic_number')
-                           <span class="invalid-feedback" role="alert">
-                               <strong>{{ $message }}</strong>
-                           </span>
-                 @enderror
+                        @error('ic_number')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                        @enderror
       				</div>
       				<div class="form-group" style="margin-bottom: 1%;">
 
       					<label for="exampleInputPassword1" style="color: #fff">
                   {{ __('landing_page.login.password') }}
       					</label>
-                <div class="input-group mb-3" style="color: white !important;">
+                <div class="mb-3 input-group" style="color: white !important;">
                     <input type="password"
                            id="password"
                            name="password"

@@ -69,7 +69,7 @@ class LoginController extends Controller
           if($user_active){
             if($user_active->is_active == 0)
             {
-              return redirect('/login')->with('error','Akaun anda telah dinyahaktifkan oleh admin.');
+              return redirect('/login')->with("error", "Your account has been deactived. Please contact the admin for account activation.");
             }
 
            if ($this->attemptLogin($request)) {
