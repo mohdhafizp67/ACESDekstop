@@ -7,7 +7,7 @@
               @if ($message = Session::get('success'))
               <div id=alert>
                   <div class="alert alert-card  alert-success" role="alert">
-                      <strong>Operasi Berjaya! </strong>
+                      <strong>Operation Successful! </strong>
                       {{$message}}
                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
@@ -17,7 +17,7 @@
               @elseif ($message = Session::get('error'))
               <div id="alert">
                 <div class="alert alert-card  alert-danger" role="alert">
-                    <strong>Ralat! </strong>
+                    <strong>Error! </strong>
                     {{$message}}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -128,19 +128,19 @@
                               <div class="modal-dialog" role="document">
                                   <div class="modal-content">
                                       <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                          <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                           <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                       <span aria-hidden="true">&times;</span>
                                                   </a>
                                       </div>
                                       <div class="modal-body">
-                                          <p>Anda pasti mahu menyahaktif pengguna ini?</p>
+                                          <p>Are you sure you want to deactivate this user?</p>
                                       </div>
                                       <div class="modal-footer">
-                                          <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                          <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                           <form class="" action="{{ route('admin.others.user-list.disable') }}" method="post">
                                             @csrf
-                                            <button type="submit" name="button" class="btn btn-primary">Nyahaktifkan Pengguna</button>
+                                            <button type="submit" name="button" class="btn btn-primary">Deactivate User</button>
                                             <input type="hidden" id="id_disable" name="id_disable">
 
                                           </form>
@@ -153,19 +153,19 @@
                               <div class="modal-dialog" role="document">
                                   <div class="modal-content">
                                       <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel">Pengesahan</h5>
+                                          <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
                                           <a href="#" class="close" data-dismiss="modal" aria-label="Close">
                                                       <span aria-hidden="true">&times;</span>
                                                   </a>
                                       </div>
                                       <div class="modal-body">
-                                        <p>Anda pasti mahu mengaktifkan pengguna ini?</p>
+                                        <p>Are you sure you want to activate this user?</p>
                                       </div>
                                       <div class="modal-footer">
-                                          <a href="#" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                          <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
                                           <form class="" action="{{ route('admin.others.user-list.activate') }}" method="post">
                                             @csrf
-                                          <button type="submit" name="button" class="btn btn-primary">Aktifkan</button>
+                                          <button type="submit" name="button" class="btn btn-primary">Activate</button>
                                           <input type="hidden" id="id_activate" name="id_activate">
 
                                           </form>
