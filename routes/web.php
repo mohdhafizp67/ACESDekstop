@@ -222,7 +222,8 @@ Route::middleware('student')->group(function () {
 
 
     });
-};
+
+});
 
 // outside of middleware
 Route::get('/messages', [App\Http\Controllers\ChatController::class, 'fetchMessages'])->name('chat/messages');
