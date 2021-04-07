@@ -191,7 +191,7 @@
             <img src="{{ asset('concept/images/defaultprofile.jpg') }}"  class="profile-avatar" style="height:40px; width:40px;">
             @endif <br>
           </td>
-          <td style="color: #fff; font-size: 100%;padding-left: 5%;">
+          <td style="color: #fff; font-size: 100%;padding-left: 15%;">
             {{$data->name}}
           </td>
           <td style="color: #fff; font-size: 100%;">
