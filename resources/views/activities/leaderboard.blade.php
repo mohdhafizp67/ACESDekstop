@@ -184,7 +184,7 @@
           <td style="color: #fff; font-size: 200%; text-align: end;font-weight: bold;padding-left: 5%;">
             {{ $loop->index + 1  }}
           </td>
-          <td style="text-align: end;padding-left:7%;">
+          <td style="text-align: end;padding-left:0%;">
             @if($data->profile_picture!= null)
             <img src="{{ asset( $image_path = str_replace('public', 'storage',  $data->profile_picture)) }}" onError="this.src='http://161.35.227.188/ACES{{ ( $image_path = str_replace('public', 'storage',  $data->profile_picture)) }}';" class="profile-avatar" style="height:40px; width:40px;">
             @else
