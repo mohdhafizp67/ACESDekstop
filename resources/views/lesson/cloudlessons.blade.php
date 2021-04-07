@@ -47,7 +47,7 @@
       display: flex;
       -ms-flex-direction: column;
       flex-direction: column;
-      width: 70%;
+      width: 100%;
       pointer-events: auto;
       background-color: #022a36;
       background-clip: padding-box;
