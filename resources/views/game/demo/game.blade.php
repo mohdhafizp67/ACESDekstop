@@ -398,7 +398,7 @@
 
               <div class="slider-single">
 
-                <a href="http://161.35.227.188/ACES-Games/APK/ACES-Circuit-3.apk" onclick="ajaxGame(3)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2Tasik.png') }}" alt="2" /></a>
+                <a href="#" onclick="ajaxGame(3)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2Tasik.png') }}" alt="2" /></a>
                 <a href="http://161.35.227.188/drone_circuit_2?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(3)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit2Tasik.png') }}" alt="2" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 02 - Addictive Manufacturing</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
@@ -410,7 +410,7 @@
 
               <div class="slider-single">
 
-                <a href="#" onclick="ajaxGame(4)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3Mersingislands.png') }}" alt="3" /></a>
+                <a href="http://161.35.227.188/ACES-Games/APK/ACES-Circuit-3.apk" onclick="ajaxGame(4)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3Mersingislands.png') }}" alt="3" /></a>
                 <a href="http://161.35.227.188/drone_circuit_3?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(4)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit3Mersingislands.png') }}" alt="3" /></a>
                   <!-- <h1 class="slider-single-title">Circuit 03 - Internet of Things</h1> -->
                   <!-- <a class="slider-single-likes" href="javascript:void(0);">
