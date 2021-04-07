@@ -184,14 +184,14 @@
           <td style="color: #fff; font-size: 200%; text-align: end;font-weight: bold;padding-left: 5%;">
             {{ $loop->index + 1  }}
           </td>
-          <td style="text-align: end;padding-left:16%;">
+          <td style="text-align: center;">
             @if($data->profile_picture!= null)
             <img src="{{ asset( $image_path = str_replace('public', 'storage',  $data->profile_picture)) }}" onError="this.src='http://161.35.227.188/ACES{{ ( $image_path = str_replace('public', 'storage',  $data->profile_picture)) }}';" class="profile-avatar" style="height:40px; width:40px;">
             @else
             <img src="{{ asset('concept/images/defaultprofile.jpg') }}"  class="profile-avatar" style="height:40px; width:40px;">
             @endif <br>
           </td>
-          <td style="color: #fff; font-size: 100%;padding-left: 15%;">
+          <td style="color: #fff; font-size: 100%;text-align: center;">
             {{$data->name}}
           </td>
           <td style="color: #fff; font-size: 100%;">
