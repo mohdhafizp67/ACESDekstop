@@ -552,19 +552,25 @@
   <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js"></script>
 
-  <script>
-        $(function () {
-            var table = $('#table_data').DataTable({
-              "responsive" : true,
-              "dom": 'Bfrtip',
-              "buttons": [
-                  'excel', 'pdf', 'print'
-              ],
-              "scrollX": true,
-
-            });
+<script>
+    $(function () {
+        var table = $('#table_data').DataTable({
+          "responsive" : true,
+          "dom": 'Bfrtip',
+          "order": [[ 4, "desc" ]],
+          "buttons": [
+              'excel', 'pdf', 'print'
+          ],
+          "scrollX": true,
 
         });
-    </script>
+        table.on( 'order.dt search.dt', function () {
+        table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+        } );
+    } ).draw();
+    });
+
+</script>
 
 </html>
