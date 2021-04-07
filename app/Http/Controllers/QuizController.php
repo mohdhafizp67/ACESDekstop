@@ -83,7 +83,7 @@ class QuizController extends Controller
 
   public function viewQuestionBank($lesson_id)
   {
-      $question_list = QuestionBank::where('status','1')->where('lesson_id', $lesson_id)->get();
+      $question_list = QuestionBank::where('status','1')->where('lesson_id', $lesson_id)->where('language', 'en' )->get();
       return view('admin.activities.quiz.question-banks.list',compact('question_list','lesson_id'));
   }
 

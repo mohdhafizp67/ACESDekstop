@@ -151,7 +151,7 @@
                                </div>
                              </div>
 
-                             <hr>
+
 
                              <div class="row">
                                <div class="col-md-2">
@@ -183,7 +183,7 @@
                                </div>
                              </div>
 
-                             <hr>
+
                              <div style="padding: 5px;"></div>
                              <input type="hidden" name="user_id" value="{{$user->id}}">
 
