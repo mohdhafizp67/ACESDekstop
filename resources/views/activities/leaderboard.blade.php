@@ -149,7 +149,7 @@
           <th style="color: #5ddaff; font-size: 120%;text-align: right;">
             Ranking
           </th>
-          <th style="color: #5ddaff; font-size: 120%;text-align: left;">
+          <th style="color: #5ddaff; font-size: 120%;text-align: center;">
             Avatar
           </th>
           <th style="color: #5ddaff; font-size: 120%;text-align: left;">
