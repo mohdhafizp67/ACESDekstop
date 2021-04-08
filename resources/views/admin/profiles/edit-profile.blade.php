@@ -6,7 +6,7 @@
                <div class="container-fluid dashboard-content ">
                  @if ($message = Session::get('success'))
                  <div id=alert>
-                     <div class="alert alert-card  alert-success" role="alert">
+                     <div class="alert alert-card alert-success" role="alert">
                          <strong>Operation Successful! </strong>
                          {{$message}}
                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -16,7 +16,7 @@
                  </div>
                  @elseif ($message = Session::get('error'))
                  <div id="alert">
-                   <div class="alert alert-card  alert-danger" role="alert">
+                   <div class="alert alert-card alert-danger" role="alert">
                        <strong>Error! </strong>
                        {{$message}}
                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -30,7 +30,7 @@
 
                        <div style="padding: 5px;"></div>
                          <h2 class="card-header" style="text-align: center;"><i class="fas fa-edit"></i>Update User Profile</h2>
-                         <div class="card-body p-0">
+                         <div class="p-0 card-body">
                            <div style="padding: 10px;"></div>
 
                            <form action="{{route('admin.profiles.edit-profile.updating')}}" method="POST" enctype="multipart/form-data">
@@ -137,17 +137,21 @@
 
                                </div>
                                <div class="col-md-8">
-                                 <div class="form-group">
-                                    <label>District</label>
-                                    <select class="custom-select  bg-light @error('state') is-invalid @enderror" id="district" name="district" value="{{ $user->district }}"  required>
-                                          <option value="" selected disabled hidden>Choose District</option>
-                                          @foreach($district as $data)
-                                            @if($data->negeri == Auth::user()->state)
-                                              <option value="{{$data->daerah}}" {{ Auth::user()->district == $data->daerah ? 'selected' : '' }}>{{$data->daerah}}</option>
-                                            @endif
-                                          @endforeach
-                                      </select>
-                                 </div>
+                                <div class="form-group">
+
+                                    <label for="exampleInputEmail1">
+                                      DISTRICT
+                                    </label>
+                                    <input type="text" name="district" placeholder="District" value="{{ old('district') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('district') ? 'is-invalid' : '' }}" required>
+                                    <!-- <select id="district" name="district" class="u-border-1 u-border-grey-75 u-grey-75 u-input u-input-rectangle u-text-body-alt-color u-input-7 custom-select @error('state') is-invalid @enderror" value="{{ old('district') }}">
+                                      <option value="" selected disabled hidden>Select District</option>
+                                    </select> -->
+                                    @if($errors->has('district'))
+                                        <div class="invalid-feedback">
+                                            <strong>{{ $errors->first('district') }}</strong>
+                                        </div>
+                                    @endif
+                                  </div>
                                </div>
                                <div class="col-md-2">
 
