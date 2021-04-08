@@ -35,13 +35,13 @@
               <!-- navbar -->
               <!-- ============================================================== -->
               <div class="dashboard-header">
-                <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <nav class="bg-white navbar navbar-expand-lg fixed-top">
                     <a class="navbar-brand" href="{{ route('home-admin') }}">ACES</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto navbar-right-top">
+                        <ul class="ml-auto navbar-nav navbar-right-top">
 
                             <!-- <div style="border-left:1px solid #000;height:65px"></div> -->
                             <li class="nav-item dropdown nav-user">
@@ -66,11 +66,11 @@
                                         @endif
                                         <!-- <span><i class="fa fa-certificate" aria-hidden="true"></i> Admin </span> -->
                                     </div>
-                                    <a class="dropdown-item" href="{{route('admin.profiles.edit-profile')}}"><i class="fas fa-user mr-2"></i>USER PROFILE</a>
-                                    <a class="dropdown-item" href="{{ route('admin.profiles.change-password') }}"><i class="fa fa-unlock-alt mr-2" aria-hidden="true"></i>CHANGE PASSWORD</a>
-                                    <a class="dropdown-item"  href="#" class="btn btn-block btn-danger" data-toggle="modal" data-target="#logOutModal"><i class="fas fa-power-off mr-2"></i>LOG OUT</a>
+                                    <a class="dropdown-item" href="{{route('admin.profiles.edit-profile')}}"><i class="mr-2 fas fa-user"></i>USER PROFILE</a>
+                                    <a class="dropdown-item" href="{{ route('admin.profiles.change-password') }}"><i class="mr-2 fa fa-unlock-alt" aria-hidden="true"></i>CHANGE PASSWORD</a>
+                                    <a class="dropdown-item"  href="#" class="btn btn-block btn-danger" data-toggle="modal" data-target="#logOutModal"><i class="mr-2 fas fa-power-off"></i>LOG OUT</a>
                                     <!-- <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                    <i class="fas fa-power-off mr-2"></i>Logout</a>
+                                    <i class="mr-2 fas fa-power-off"></i>Logout</a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                     </form> -->
@@ -480,11 +480,11 @@
                              Copyright © 2021 East Coast Economic Region Development Council. All rights reserved.
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="text-md-right footer-links d-none d-sm-block">
+                            {{-- <div class="text-md-right footer-links d-none d-sm-block">
                                 <a href="javascript: void(0);">About</a>
                                 <a href="javascript: void(0);">Support</a>
                                 <a href="javascript: void(0);">Contact Us</a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
