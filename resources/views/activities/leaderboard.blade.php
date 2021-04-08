@@ -402,6 +402,12 @@
       function myFunction() {
         var popup = document.getElementById("myPopup");
         popup.classList.toggle("show");
+
+        // $(document).ready(function() {
+        //   $(".myPopup").on("hidden.bs.modal", function() {
+        //   $(".myPopup").html("");
+        //   });
+        // });
       }
       </script>
 

@@ -245,7 +245,7 @@
 
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:350px;">
 
-                              <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">How Autonomous Robots Are Changing Construction<span></p>
+                              <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;pointer-events: none;">How Autonomous Robots Are Changing Construction<span></p>
 
                               <div id="id01" class="w3-modal">
                                 <div class="w3-modal-content w3-card-4">
@@ -273,7 +273,7 @@
                                 }
                                 </script>
 
-                                <p onclick="document.getElementById('id02').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">Autonomous Mobile Robots (AMRs) in Action<span></p>
+                                <p onclick="document.getElementById('id02').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;pointer-events: none;">Autonomous Mobile Robots (AMRs) in Action<span></p>
 
                                 <div id="id02" class="w3-modal">
                                   <div class="w3-modal-content w3-card-4">
@@ -301,7 +301,7 @@
                                   }
                                   </script>
 
-                                  <p onclick="document.getElementById('id03').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">Autonomous Electric Tractor - Future of Farming<span></p>
+                                  <p onclick="document.getElementById('id03').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;pointer-events: none;">Autonomous Electric Tractor - Future of Farming<span></p>
 
                                   <div id="id03" class="w3-modal">
                                     <div class="w3-modal-content w3-card-4">
