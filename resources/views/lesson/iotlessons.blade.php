@@ -246,7 +246,7 @@
 
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:350px;">
 
-                              <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">What is IoT?<span></p>
+                              <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;pointer-events: none;">What is IoT?<span></p>
 
                               <div id="id01" class="w3-modal">
                                 <div class="w3-modal-content w3-card-4">
@@ -274,7 +274,7 @@
                                 }
                                 </script>
 
-                                <p onclick="document.getElementById('id02').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">Top 10 IoT(Internet Of Things) Projects Of All Time<span></p>
+                                <p onclick="document.getElementById('id02').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;pointer-events: none;">Top 10 IoT(Internet Of Things) Projects Of All Time<span></p>
 
                                 <div id="id02" class="w3-modal">
                                   <div class="w3-modal-content w3-card-4">
@@ -302,7 +302,7 @@
                                   }
                                   </script>
 
-                                  <p onclick="document.getElementById('id03').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">Useful IoT Devices | Smart IoT Projects | IoT Applications<span></p>
+                                  <p onclick="document.getElementById('id03').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;pointer-events: none;">Useful IoT Devices | Smart IoT Projects | IoT Applications<span></p>
 
                                   <div id="id03" class="w3-modal">
                                     <div class="w3-modal-content w3-card-4">
