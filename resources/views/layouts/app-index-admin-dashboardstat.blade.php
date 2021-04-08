@@ -76,7 +76,7 @@
                                           <h6 class="mb-0 text-white nav-user-name">{{Auth::user()->name}}</h6>
                                           <div style="padding: 5px;"></div>
                                           @if(Auth::user()->is_admin == 1)
-                                          <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i>Admin Sistem</h6>
+                                          <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i>Admin</h6>
                                           @else
                                           <h6 class="mb-0 text-white nav-user-name" style="font-weight: bold;"><i class="fa fa-certificate" aria-hidden="true"></i>ECERDC Personnel</h6>
                                           @endif
