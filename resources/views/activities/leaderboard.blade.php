@@ -385,11 +385,17 @@
                 console.log(data);
                 var image = document.getElementById("my_image");
                 var att = document.createAttribute("src");
+                console.log("{{ auth()->user()->screenshots }}");
+                if(!("{{ auth()->user()->screenshots }}")){
+                    location.reload();
+                }
                 att.value = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}";
                 image.setAttributeNode(att);
+                console.log("{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}");
                 document.getElementById("facebook_image").src = "{{asset( $image_path = str_replace('public', 'storage',  auth()->user()->screenshots)) }}"; // append new data with
              },
              error: function(data, textStatus, error){
+               location.reload();
                console.log(error);
              }
           });
@@ -397,19 +403,19 @@
       }
       </script>
 
-        <script>
+        {{-- <script>
       // When the user clicks on div, open the popup
       function myFunction() {
         var popup = document.getElementById("myPopup");
         popup.classList.toggle("show");
 
-        // $(document).ready(function() {
-        //   $(".myPopup").on("hidden.bs.modal", function() {
-        //   $(".myPopup").html("");
-        //   });
-        // });
+        $(document).ready(function() {
+          $(".myPopup").on("hidden.bs.modal", function() {
+          $(".myPopup").html("");
+          });
+        });
       }
-      </script>
+      </script> --}}
 
 </html>
 @endsection
