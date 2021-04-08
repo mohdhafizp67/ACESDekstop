@@ -42,11 +42,12 @@ class QuizController extends Controller
   {
     // dd($request->all());
       event($lesson_id = $this->createQuiz($request->all()));
-      return redirect()->route('admin.activities.quiz.list')->with("success","Tetapan quiz baru telah disimpan");
+      return redirect()->route('admin.activities.quiz.list')->with("success","New quiz settings have been saved");
   }
 
   public function createQuiz(array $data){
     $status = "1";
+    // dd($data);
     return Quiz::Create([
       'lesson_id' => $data['lesson_id'],
       'time' => $data['time'],
@@ -71,14 +72,14 @@ class QuizController extends Controller
     $quiz->percentage_to_pass = $request->percentage_to_pass;
     $quiz->save();
 
-    return redirect()->route('admin.activities.quiz.list')->with("success","Tetapan kuiz telah dikemaskini");
+    return redirect()->route('admin.activities.quiz.list')->with("success","Quiz settings have been updated");
   }
 
   public function removeQuiz(Request $request){
     $quiz = Quiz::findOrFail($request->quiz_id);
     $quiz->status = "0";
     $quiz->save();
-    return redirect()->route('admin.activities.quiz.list')->with("success","Quiz telah dipadam");
+    return redirect()->route('admin.activities.quiz.list')->with("success","Quiz has been deleted");
   }
 
   public function viewQuestionBank($lesson_id)
@@ -101,7 +102,7 @@ class QuizController extends Controller
 
       event($answer_false_id = $this->createAnswerFalse($request->all(), $question_id));
 
-      return redirect()->route('admin.activities.quiz.question-banks.list', $request->lesson_id)->with("success","Soalan anda telah disimpan");
+      return redirect()->route('admin.activities.quiz.question-banks.list', $request->lesson_id)->with("success","Your question has been saved");
   }
 
   public function createQuestion(array $data){
@@ -110,6 +111,7 @@ class QuizController extends Controller
     return QuestionBank::Create([
       'question' => $data['question'],
       'status' => $status,
+      'language' => 'en',
       'lesson_id' => $data['lesson_id'],
       ]);
   }
@@ -162,7 +164,7 @@ class QuizController extends Controller
       $option->save();
     }
 
-    return redirect()->route('admin.activities.quiz.question-banks.list', $request->lesson_id)->with("success","Soalan telah dikemaskini");
+    return redirect()->route('admin.activities.quiz.question-banks.list', $request->lesson_id)->with("success","Question has been updated");
   }
 
   public function removeQuestionBank(Request $request)
@@ -173,7 +175,7 @@ class QuizController extends Controller
       $question->save();
       // dd($question);
 
-      return redirect()->route('admin.activities.quiz.question-banks.list', $question->lesson_id)->with("success","Soalan telah dipadam");
+      return redirect()->route('admin.activities.quiz.question-banks.list', $question->lesson_id)->with("success","The question has been deleted");
   }
 
   public function chooseQuiz()

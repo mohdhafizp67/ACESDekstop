@@ -598,7 +598,7 @@ class LessonController extends Controller
     $lesson->video_link_3 = $request->link3;
     $lesson->save();
 
-    return redirect()->route('admin.activities.lesson.list')->with("success","Pautan video telah dikemaskini!");
+    return redirect()->route('admin.activities.lesson.list')->with("success","Video link has been updated!");
   }
 
   public function addLesson()
@@ -609,7 +609,7 @@ class LessonController extends Controller
   public function saveLesson(Request $request){
     // dd($request->all());
     event($lesson_id = $this->createLesson($request->all()));
-    return redirect()->route('admin.activities.lesson.add')->with("success","Pelajaran baru telah disimpan");
+    return redirect()->route('admin.activities.lesson.add')->with("success","New lessons have been saved");
   }
 
   public function createLesson(array $data){
