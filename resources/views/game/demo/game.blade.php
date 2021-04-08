@@ -433,7 +433,7 @@
 
               <div class="slider-single">
 
-                <a href="http://161.35.227.188/ACES-Games/APK/ACES-Circuit-5.apk" onclick="ajaxGame(5)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit05.png') }}" alt="5" /></a>
+                <a href="http://161.35.227.188/ACES-Games/APK/ACES-Circuit-5.apk" onclick="ajaxGame(5)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit5.png') }}" alt="5" /></a>
                 <a href="http://161.35.227.188/drone_circuit_5?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(6)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit5.png') }}" alt="5" /></a>
                   <!-- <a href="" onclick="ajaxGame(6)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit05.png') }}" alt="5" /></a> -->
                   <!-- <h1 class="slider-single-title">Circuit 05 - Cloud Computing</h1> -->
@@ -445,7 +445,7 @@
 
                 <div class="slider-single">
 
-                    <a href="http://161.35.227.188/ACES-Games/APK/ACES-Circuit-6.apk" onclick="ajaxGame(5)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit06.png') }}" alt="6" /></a>
+                    <a href="http://161.35.227.188/ACES-Games/APK/ACES-Circuit-6.apk" onclick="ajaxGame(5)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit6.png') }}" alt="6" /></a>
                   <a href="http://161.35.227.188/drone_circuit_6?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(7)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit6.png') }}" alt="6" /></a>
 
                   <!-- <a href="" onclick="ajaxGame(7)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit06.png') }}" alt="6" /></a> -->
@@ -458,7 +458,7 @@
 
             <div class="slider-single">
 
-                <a href="http://161.35.227.188/ACES-Games/APK/ACES-Circuit-7.apk" onclick="ajaxGame(5)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit07.png') }}" alt="7" /></a>
+                <a href="http://161.35.227.188/ACES-Games/APK/ACES-Circuit-7.apk" onclick="ajaxGame(5)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit7Monumen.png') }}" alt="7" /></a>
                 <a href="http://161.35.227.188/drone_circuit_7?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(8)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit7Monumen.png') }}" alt="7" /></a>
 
                   <!-- <a href="" onclick="ajaxGame(8)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit07.png') }}" alt="7" /></a> -->
@@ -471,7 +471,7 @@
 
             <div class="slider-single">
 
-                <a href="http://161.35.227.188/ACES-Games/APK/ACES-Circuit-8.apk" onclick="ajaxGame(5)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit08.png') }}" alt="8" /></a>
+                <a href="http://161.35.227.188/ACES-Games/APK/ACES-Circuit-8.apk" onclick="ajaxGame(5)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit8.png') }}" alt="8" /></a>
               <a href="http://161.35.227.188/drone_circuit_8?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(9)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit8.png') }}" alt="8" /></a>
 
                 <!-- <a href="" onclick="ajaxGame(9)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit08.png') }}" alt="8" /></a> -->
@@ -484,7 +484,7 @@
 
               <div class="slider-single">
 
-                <a href="http://161.35.227.188/ACES-Games/APK/ACES-Circuit-9.apk" onclick="ajaxGame(5)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit09.png') }}" alt="9" /></a>
+                <a href="http://161.35.227.188/ACES-Games/APK/ACES-Circuit-9.apk" onclick="ajaxGame(5)"><img id="mobile" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit9ecerhq.png') }}" alt="9" /></a>
                 <a href="http://161.35.227.188/drone_circuit_9?secret={{base64_encode(auth()->user()->ic_number)}}" onclick="ajaxGame(10)"><img id="desktop" class="slider-single-image" src="{{ asset('concept/images/permainan/Circuit9ecerhq.png') }}" alt="9" /></a>
 
                     <!-- <a href="" onclick="ajaxGame(10)"><img class="slider-single-image" src="{{ asset('concept/images/comingsoon/circuit09.png') }}" alt="9" /></a> -->
