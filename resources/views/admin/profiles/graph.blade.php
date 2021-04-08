@@ -1,13 +1,11 @@
-@extends('layouts.app-index-admin')
+@extends('layouts.app-index-admin-dashboardstat')
 
 @section('content')
 
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            4 widgets
-        </title>
+
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" rel="stylesheet" type="text/css">
         <script src="https://code.highcharts.com/maps/highmaps.js"></script>

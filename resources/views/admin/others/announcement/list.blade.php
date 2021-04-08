@@ -6,7 +6,7 @@
             <div class="container-fluid dashboard-content ">
               @if ($message = Session::get('success'))
               <div id=alert>
-                  <div class="alert alert-card  alert-success" role="alert">
+                  <div class="alert alert-card alert-success" role="alert">
                       <strong>Operation Successful! </strong>
                       {{$message}}
                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -16,7 +16,7 @@
               </div>
               @elseif ($message = Session::get('error'))
               <div id="alert">
-                <div class="alert alert-card  alert-danger" role="alert">
+                <div class="alert alert-card alert-danger" role="alert">
                     <strong>Error! </strong>
                     {{$message}}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -31,7 +31,7 @@
 
                     <!-- <div style="padding: 5px;"></div> -->
                       <h2 class="card-header" style="text-align: center;"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbspANNOUNCEMENT</h2>
-                      <div class="card-body p-0">
+                      <div class="p-0 card-body">
                         <div style="padding: 10px;"></div>
                         <a href="{{route('admin.others.announcement.create')}}" class="btn btn-primary"><i class="fa fa-plus-square" aria-hidden="true"></i> &nbsp Add New Announcement</a> &nbsp &nbsp
                         <hr>
@@ -43,8 +43,9 @@
                                 <th>Name</th>
                                 <th>Message</th>
                                 <th>Date</th>
-                                <th>Action</th>
-
+                                @if(!auth()->user()->is_ecerdb_personnel)
+                                    <th>Action</th>
+                                @endif
 
                             </thead>
                             <tbody style="text-align: center;">
@@ -54,8 +55,9 @@
                                 <td>{{$datas->users->name}}</td>
                                 <td>{{$datas->user_message}}</td>
                                 <td>{{$datas->created_at}}</td>
-                                <td> <a href="#" onclick="pass_id_delete({{ $datas->id  }})" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal2">Delete</button></td>
-
+                                @if(!auth()->user()->is_ecerdb_personnel)
+                                    <td> <a href="#" onclick="pass_id_delete({{ $datas->id  }})" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal2">Delete</button></td>
+                                @endif
                                 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">

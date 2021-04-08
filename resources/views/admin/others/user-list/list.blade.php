@@ -6,7 +6,7 @@
             <div class="container-fluid dashboard-content ">
               @if ($message = Session::get('success'))
               <div id=alert>
-                  <div class="alert alert-card  alert-success" role="alert">
+                  <div class="alert alert-card alert-success" role="alert">
                       <strong>Operasi Berjaya! </strong>
                       {{$message}}
                       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -16,7 +16,7 @@
               </div>
               @elseif ($message = Session::get('error'))
               <div id="alert">
-                <div class="alert alert-card  alert-danger" role="alert">
+                <div class="alert alert-card alert-danger" role="alert">
                     <strong>Ralat! </strong>
                     {{$message}}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -29,7 +29,7 @@
 
                     <div style="padding: 5px;"></div>
                       <h2 class="card-header" style="text-align: center;"><i class="fa fa-users" aria-hidden="true"></i>Users List</h2>
-                      <div class="card-body p-0">
+                      <div class="p-0 card-body">
                         <div style="padding: 10px;"></div>
                         <div class="table-responsive">
                           <table id="table_data" class="table table-striped table-bordered second" style="width:100%">
@@ -41,7 +41,9 @@
                                 <th>DISTRICT</th>
                                 <th>ROLE</th>
                                 <th>STATUS</th>
-                                <th>ACTION</th>
+                                @if(!auth()->user()->is_ecerdb_personnel)
+                                    <th>ACTION</th>
+                                @endif
                               </tr>
                             </thead>
                             <tbody style="text-align: center;">
@@ -66,14 +68,16 @@
                             <td><span class="badge badge-pill badge-danger">Not Active</span></td>
                             @endif
 
-                            <td>
-                              <a href="{{route('admin.others.user-list.edit', $data->id)}}" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                              @if($data->is_active == 1)
-                              <a href="#" class="btn btn-danger" onclick="pass_id_disable({{ $data->id  }})" data-toggle="modal" data-target="#diactivate_modal"><i class="fa fa-times" aria-hidden="true"></i></a>
-                              @else
-                              <a href="#" class="btn btn-success" onclick="pass_id_activate({{ $data->id  }})" data-toggle="modal" data-target="#activate_modal"><i class="fa fa-check" aria-hidden="true"></i></a>
-                              @endif
-                            </td>
+                            @if(!auth()->user()->is_ecerdb_personnel)
+                                <td>
+                                <a href="{{route('admin.others.user-list.edit', $data->id)}}" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                @if($data->is_active == 1)
+                                <a href="#" class="btn btn-danger" onclick="pass_id_disable({{ $data->id  }})" data-toggle="modal" data-target="#diactivate_modal"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                @else
+                                <a href="#" class="btn btn-success" onclick="pass_id_activate({{ $data->id  }})" data-toggle="modal" data-target="#activate_modal"><i class="fa fa-check" aria-hidden="true"></i></a>
+                                @endif
+                                </td>
+                            @endif
 
                           </tr>
                           @endforeach
