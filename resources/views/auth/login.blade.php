@@ -301,7 +301,7 @@ a {
   </div>
   <div class="row">
     <div class="footer">
-    <span>&copy; {{ __('landing_page.login.copyright', [ 'year' => date('Y')]) }}</span>&nbsp&nbsp&nbsp&nbsp<span><font color="white">{{ __('landing_page.tnc_full') }}</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">{{ __('landing_page.privacy') }}</font></span>
+    <span>&copy; {{ __('landing_page.login.copyright', [ 'year' => date('Y')]) }}</span>
     </div>
   </div>
 </div>
