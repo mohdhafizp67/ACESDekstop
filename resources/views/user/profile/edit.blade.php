@@ -47,7 +47,7 @@
 
               @if ($message = Session::get('success'))
               <div id=alert>
-                  <div class="alert alert-card  alert-success" role="alert">
+                  <div class="alert alert-card alert-success" role="alert">
                       <strong>Operation Successful! </strong>
                       {{$message}}
                       <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="color: #fff;">
@@ -57,7 +57,7 @@
               </div>
               @elseif ($message = Session::get('error'))
               <div id="alert">
-                <div class="alert alert-card  alert-danger" role="alert">
+                <div class="alert alert-card alert-danger" role="alert">
                     <strong>Error! </strong>
                     {{$message}}
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="color: #fff;">
@@ -131,87 +131,8 @@
                     </div>
                     <div class="col-md">
                       <div class="form-group" style="color: white !important;">
-                        <label class="col-form-label">ADDRESS</label>
-                        <textarea class="form-control" id="feedback" name="address" rows="2" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);" required>{{Auth::user()->address}}</textarea>
-                      </div>
-                    </div>
-                    <div class="col-md-1">
-
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-1">
-
-                    </div>
-                    <div class="col-md-5">
-                      <div class="form-group" style="color: white !important;">
-                        <label class="col-form-label">POSTCODE</label>
-                        <input id="name" type="text"name="postcode" maxlength="5" minlength="5" value="{{Auth::user()->postcode}}" onkeypress="return onlyNumberKey(event)" class="form-control" >
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="form-group" style="color: white !important;">
-                          <label class="col-form-label">STATE</label>
-                          <select class="custom-select  bg-light @error('state') is-invalid @enderror" id="state" name="state" value="{{ Auth::user()->state }}"  required>
-                                <option value="" selected disabled hidden>Choose State</option>
-                                <option value="Johor" {{ Auth::user()->state == "Johor" ? 'selected' : '' }}>Johor</option>
-                                <option value="Kedah" {{ Auth::user()->state == "Kedah" ? 'selected' : '' }}>Kedah</option>
-                                <option value="Kelantan" {{ Auth::user()->state == "Kelantan" ? 'selected' : '' }}>Kelantan</option>
-                                <option value="Melaka" {{ Auth::user()->state == "Melaka" ? 'selected' : '' }}>Melaka</option>
-                                <option value="Negeri Sembilan" {{ Auth::user()->state == "Negeri Sembilan" ? 'selected' : '' }}>Negeri Sembilan</option>
-                                <option value="Pahang" {{ Auth::user()->state == "Pahang" ? 'selected' : '' }}>Pahang</option>
-                                <option value="Pulau Pinang" {{ Auth::user()->state == "Pulau Pinang" ? 'selected' : '' }}>Pulau Pinang</option>
-                                <option value="Perak" {{ Auth::user()->state == "Perak" ? 'selected' : '' }}>Perak</option>
-                                <option value="Perlis" {{ Auth::user()->state == "Perlis" ? 'selected' : '' }}>Perlis</option>
-                                <option value="Sabah" {{ Auth::user()->state == "Sabah" ? 'selected' : '' }}>Sabah</option>
-                                <option value="Sarawak" {{ Auth::user()->state == "Sarawak" ? 'selected' : '' }}>Sarawak</option>
-                                <option value="Selangor" {{ Auth::user()->state == "Selangor" ? 'selected' : '' }}>Selangor</option>
-                                <option value="Terengganu" {{ Auth::user()->state == "Terengganu" ? 'selected' : '' }}>Terengganu</option>
-                                <option value="WP Kuala Lumpur" {{ Auth::user()->state == "WP Kuala Lumpur" ? 'selected' : '' }}>WP Kuala Lumpur</option>
-                                <option value="WP Putrajaya" {{ Auth::user()->state == "WP Putrajaya" ? 'selected' : '' }}>WP Putrajaya</option>
-                                <option value="WP Labuan" {{ Auth::user()->state == "WP Labuan" ? 'selected' : '' }}>WP Labuan</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-1">
-
-                    </div>
-                    <div class="col-md">
-                      <div class="form-group" style="color: white !important;">
-                        <label class="col-form-label">DISTRICT</label>
-                        <input id="district" type="text"name="district" value="{{Auth::user()->district}}" class="form-control" >
-
-                        <!-- <select class="custom-select  bg-light @error('district') is-invalid @enderror" id="district" name="district" value="{{ Auth::user()->district }}"  required>
-                              <option value="" selected disabled hidden>Choose District</option>
-
-                              @foreach($district as $data)
-                                @if($data->negeri == Auth::user()->state)
-                                  <option value="{{$data->daerah}}" {{ Auth::user()->district == $data->daerah ? 'selected' : '' }}>{{$data->daerah}}</option>
-                                @endif
-                              @endforeach
-                          </select> -->
-                      </div>
-                    </div>
-                    <div class="col-md-1">
-
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-1">
-
-                    </div>
-                    <div class="col-md">
-                      <div class="form-group" style="color: white !important;">
                         <label class="col-form-label">SCHOOL NAME</label>
-                        <input id="school" type="text"name="school" value="{{Auth::user()->school}}" class="form-control" >
+                        <input id="school" type="text"name="school" value="{{Auth::user()->school}}" class="form-control" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);">
 
                         <!-- <select class="custom-select  bg-light @error('school') is-invalid @enderror" id="school" name="school" value="{{ Auth::user()->school }}"  required>
                               <option value="" selected disabled hidden>Choose School</option>
@@ -235,7 +156,88 @@
                     </div>
                     <div class="col-md">
                       <div class="form-group" style="color: white !important;">
-                        <label class="col-form-label">UPLOAD PROFILE PICTURE <span style="font-size: 80%;"> : 150 x 150 pixels</span></label>
+                        <label class="col-form-label">SCHOOL ADDRESS</label>
+                        <textarea class="form-control" id="feedback" name="address" rows="2" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);" required>{{Auth::user()->address}}</textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md">
+                      <div class="form-group" style="color: white !important;">
+                        <label class="col-form-label">DISTRICT</label>
+                        <input id="district" type="text"name="district" value="{{Auth::user()->district}}" class="form-control" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);" >
+
+                        <!-- <select class="custom-select  bg-light @error('district') is-invalid @enderror" id="district" name="district" value="{{ Auth::user()->district }}"  required>
+                              <option value="" selected disabled hidden>Choose District</option>
+
+                              @foreach($district as $data)
+                                @if($data->negeri == Auth::user()->state)
+                                  <option value="{{$data->daerah}}" {{ Auth::user()->district == $data->daerah ? 'selected' : '' }}>{{$data->daerah}}</option>
+                                @endif
+                              @endforeach
+                          </select> -->
+                      </div>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md-5">
+                      <div class="form-group" style="color: white !important;">
+                        <label class="col-form-label">POSTCODE</label>
+                        <input id="name" type="text"name="postcode" maxlength="5" minlength="5" value="{{Auth::user()->postcode}}" onkeypress="return onlyNumberKey(event)" class="form-control" >
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group" style="color: white !important;">
+                          <label class="col-form-label">STATE</label>
+                          <select class="custom-select  bg-light @error('state') is-invalid @enderror" id="state" name="state" value="{{ Auth::user()->state }}"  required>
+                                <option value="" selected disabled hidden>SELECT STATE</option>
+                                <option value="Johor" {{ Auth::user()->state == "Johor" ? 'selected' : '' }}>JOHOR</option>
+                                <option value="Kedah" {{ Auth::user()->state == "Kedah" ? 'selected' : '' }}>KEDAH</option>
+                                <option value="Kelantan" {{ Auth::user()->state == "Kelantan" ? 'selected' : '' }}>KELANTAN</option>
+                                <option value="Melaka" {{ Auth::user()->state == "Melaka" ? 'selected' : '' }}>MELAKA</option>
+                                <option value="Negeri Sembilan" {{ Auth::user()->state == "Negeri Sembilan" ? 'selected' : '' }}>NEGERI SEMBILAN</option>
+                                <option value="Pahang" {{ Auth::user()->state == "Pahang" ? 'selected' : '' }}>PAHANG</option>
+                                <option value="Pulau Pinang" {{ Auth::user()->state == "Pulau Pinang" ? 'selected' : '' }}>PULAU PINANG</option>
+                                <option value="Perak" {{ Auth::user()->state == "Perak" ? 'selected' : '' }}>PERAK</option>
+                                <option value="Perlis" {{ Auth::user()->state == "Perlis" ? 'selected' : '' }}>PERLIS</option>
+                                <option value="Sabah" {{ Auth::user()->state == "Sabah" ? 'selected' : '' }}>SABAH</option>
+                                <option value="Sarawak" {{ Auth::user()->state == "Sarawak" ? 'selected' : '' }}>SARAWAK</option>
+                                <option value="Selangor" {{ Auth::user()->state == "Selangor" ? 'selected' : '' }}>SELANGOR</option>
+                                <option value="Terengganu" {{ Auth::user()->state == "Terengganu" ? 'selected' : '' }}>TERENGGANU</option>
+                                <option value="WP Kuala Lumpur" {{ Auth::user()->state == "WP Kuala Lumpur" ? 'selected' : '' }}>WP KUALA LUMPUR</option>
+                                <option value="WP Putrajaya" {{ Auth::user()->state == "WP Putrajaya" ? 'selected' : '' }}>WP PUTRAJAYA</option>
+                                <option value="WP Labuan" {{ Auth::user()->state == "WP Labuan" ? 'selected' : '' }}>WP LABUAN</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                  </div>
+
+
+
+                  <div class="row">
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md">
+                      <div class="form-group" style="color: white !important;">
+                        <label class="col-form-label">UPLOAD PROFILE PICTURE <span style="font-size: 80%;"> : *size limit not exceeds 2MB</S></span></label>
 
                           <div class="custom-file">
                               <input type="file" class="custom-file-input" id="gambar_profile" onchange="return fileValidation('gambar_profile')" name="gambar_profile">

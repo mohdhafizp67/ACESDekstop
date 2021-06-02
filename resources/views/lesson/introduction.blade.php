@@ -177,6 +177,7 @@
         color: red;
     }
 
+
     </style>
   </head>
   <body>
@@ -203,10 +204,10 @@
                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="font-size: 100%;">Introduction</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"  style="font-size: 100%;">Pillars of I 4.0</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"  style="font-size: 100%;">Pillars of I4.0</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#link" role="tab" aria-controls="profile" aria-selected="false"  style="font-size: 100%;">I 4.0 Application</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#link" role="tab" aria-controls="profile" aria-selected="false"  style="font-size: 100%;">I4.0 Application</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
@@ -217,6 +218,8 @@
                               <iframe class="embed-responsive-item" width="95%" height="350px" src="https://www.youtube.com/embed/zv4e_DN62io?cc_load_policy=1&autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:350px;">
+
+                                <span style="color: rgb(255, 0, 0)">*For more information about IR 4.0, click the link below</span>
 
                               <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;pointer-events: none;">What is the Fourth Industrial Revolution?<span></p>
 
@@ -351,9 +354,9 @@
 
   <div class="row" style="padding-top: 1%; padding-bottom: 5%">
     <div class="col-md-2">
-      <div class="button-container">
+      {{-- <div class="button-container">
         <div class="button" ><i class="fas fa-angle-left" style="margin-left: 45%;"></i></div>
-      </div>
+      </div> --}}
 		</div>
     <div class="col-md-8">
       <div class="items">
@@ -387,8 +390,10 @@
                 <div class="modal-body">
                 <!-- <img alt="Bootstrap Image Preview" src="{{asset('concept/images/pelajaran/lokasi.jpg')}}" style="width: 100%; height: auto;"> -->
 
-              <div class="w3-content w3-display-container">
+              <div class="w3-content w3-display-container" style="text-align: center">
                 <img class="mySlides" src="{{asset('concept/images/pelajaran/infocompany.jpg')}}" style="width:100%">
+
+                <span>This slides will be play automatically</span>
                 <!-- <img class="mySlides" src="{{asset('concept/images/pelajaran/2.jpg')}}" style="width:100%">
                 <img class="mySlides" src="{{asset('concept/images/pelajaran/3.jpg')}}" style="width:100%"> -->
 
@@ -455,9 +460,9 @@
 
     </div>
     <div class="col-md-2">
-      <div class="button-container">
+      {{-- <div class="button-container">
         <div class="button" ><i class="fas fa-angle-right" style="margin-left: 45%;"></i></div>
-      </div>
+      </div> --}}
     </div>
   </div>
 </div>

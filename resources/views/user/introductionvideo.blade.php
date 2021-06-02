@@ -219,7 +219,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
         </div>
-        <div class="modal-body text-center">
+        <div class="text-center modal-body">
 
           <span style="font-size: 15px; color: #fff;">It's available for Desktop view only for now.</span>
         </div>
@@ -252,16 +252,16 @@
 
     <ul class="social content">
       <li>
-        <a><span style="color: #000;">Select the options to proceed:</span></a>
+        <a><span style="color: #000; font-size: 25px">Select the options to proceed:</span></a>
       </li>
       <li>
-        <a href="{{route('login')}}">Login</a>
+        <a href="{{route('login')}}" style="font-size: 25px">Login</a>
       </li>
       <li>
         <span>|</span>
       </li>
       <li>
-        <a href="{{route('register')}}"><span>Register</span></a>
+        <a href="{{route('register')}}" style="font-size: 25px"><span>Register</span></a>
       </li>
         <li>
           <a href="#" onclick="pauseVid()"><i class="fas fa-pause"></i></a>

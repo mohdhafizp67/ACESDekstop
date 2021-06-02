@@ -207,7 +207,8 @@
 
           </div>
           <div class="col-md-3" >
-            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
+            <a href="{{route('lesson.courses')}}">
+                <div class="mb-3 text-white card bg-success" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <div class="card-body list-group" style="padding: 5%;">
                 <div class="progressbar1">
                 <div class="second circle" data-percent="{{$lesson_progress}}">
@@ -217,9 +218,11 @@
                 </div>
               </div>
             </div>
+            </a>
           </div>
           <div class="col-md-3">
-            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
+            <a href="{{route('quiz.choose-quiz')}}">
+                <div class="mb-3 text-white card bg-success" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <div class="card-body list-group" style="padding: 5%;">
                 <div class="progressbar1">
                 <div class="second circle" data-percent="{{$quiz_progress}}">
@@ -229,9 +232,10 @@
                 </div>
               </div>
             </div>
+            </a>
           </div>
           <div class="col-md-3">
-            <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
+            <a href="{{route('user.game.demo')}}"><div class="mb-3 text-white card bg-success" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/box1.png')}}); background-repeat: no-repeat;background-size: 100% 100%">
               <!-- <div class="text-block">
                 <img src="{{ asset('concept/images/coming.png') }}" style="width: 170px;">
               </div> -->
@@ -244,6 +248,7 @@
                 </div>
               </div>
             </div>
+        </a>
           </div>
         </div>
 
@@ -253,14 +258,14 @@
       		<div class="col-md-12">
       			<div class="row" style="margin-top: -2%;">
       				<div class="col-md-4" style="margin-left: -5%;">
-                <span style="color: #45e9b5; margin-left: 8%;font-size: 150%;">
+                {{-- <span style="color: #45e9b5; margin-left: 8%;font-size: 150%;">
                   @if(count($splitName) > 2 )
                   {{$splitName[0].' '.$splitName[1]}}
                   @else
                   {{$splitName[0]}}
                   @endif
-                </span><br>
-                <span style="color: #45e9b5; margin-left: 8%;font-size: 150%;">{{Auth::user()->school}}</span>
+                </span><br> --}}
+                {{-- <span style="color: #45e9b5; margin-left: 8%;font-size: 150%;">{{Auth::user()->school}}</span> --}}
                 <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="100%" height="auto" style="margin-top: -10%;margin-left: 3%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;">
 
 
@@ -328,9 +333,9 @@
       				</div> -->
 
               <div class="col-md-8" style="margin-left: -3%;">
-                <div class="card text-white bg-success mb-3" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/dashboardv2.png')}}); background-repeat: no-repeat;background-size: 100% 100%; padding: 3%; width: 111%;">
+                <div class="mb-3 text-white card bg-success" style=" background-color: transparent !important; border: transparent; background-image: url({{asset('concept/images/galaxy/dashboardv2.png')}}); background-repeat: no-repeat;background-size: 100% 100%; padding: 3%; width: 111%;">
                   <div class="card-header" style="background-color: transparent; border: transparent; font-weight: bold; font-size: 150%;">ANNOUNCEMENT</div>
-                  <div class="card-body list-group p-2" style="overflow:auto;height:150px;width:80%; margin: 0 auto; border: transparent;">
+                  <div class="p-2 card-body list-group" style="overflow:auto;height:150px;width:80%; margin: 0 auto; border: transparent;">
                     @foreach($announcement as $data)
 
                       <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">

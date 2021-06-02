@@ -346,8 +346,9 @@ class QuizController extends Controller
     return redirect()->route('quiz.result-quiz', $quiz->id);
   }
 
-  public function resultQuiz($id)
+  public function resultQuiz($id, Request $request)
   {
+
       $student_quiz = Student_Quiz::findOrFail($id);
       return view('quiz.result-quiz', compact('student_quiz'));
 

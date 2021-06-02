@@ -304,6 +304,24 @@
              display:none;
          }
       }
+
+       /* glow */
+       .glow {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60000, 0 0 40px #e60000, 0 0 50px #e60000, 0 0 60px #e60000, 0 0 70px #e60000;
+        }
+
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ff4d4d, 0 0 40px #ff4d4d, 0 0 50px #ff4d4d, 0 0 60px #ff4d4d, 0 0 70px #ff4d4d, 0 0 80px #ff4d4d;
+        }
+        }
       </style>
 
   </head>
@@ -320,7 +338,51 @@
 
     <div class="row">
       <div class="col-md-4">
-        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="90%" style="margin-top: 36%;background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-left: 0%;">
+
+        <!-- Trigger/Open The Modal -->
+
+        <span id="myBtn"><i class="far fa-question-circle glow" style="font-size: 35px; color: #fff; padding-left: 38%; margin-top: 36.5%"></i></span>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content" style="padding: 5%; margin-left: 30%; margin-top: 20%; width: 50%; text-align: center">
+            <p style="font-size: 20px;">Some text in the Modal..</p>
+            <p style="font-size: 15px;">Click anywhere to dismiss the information</p>
+        </div>
+
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+
+
+        <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="90%" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-left: 0%;">
 
         <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="margin-left: 17%;width: 25.5%; height: 5.3%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up"></i></button>
         <button onclick="replay()" class="button buttonsound" type="button" style="color: #fff; width: 25.5%; height: 5.3%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo"></i></button>

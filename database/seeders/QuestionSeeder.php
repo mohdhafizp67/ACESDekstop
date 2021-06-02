@@ -19049,7 +19049,7 @@ class QuestionSeeder extends Seeder
 
       DB::table('answer_banks')-> insert(
               [
-                'answer' => 'None of the above',
+                'answer' => 'None of the choices',
                 'status' => 'False',
                 'language' => 'en',
                 'question_id' => '399',
@@ -19852,7 +19852,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'None of the above',
+                      'answer' => 'None of the choices',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '416',
@@ -19993,7 +19993,7 @@ class QuestionSeeder extends Seeder
 
             DB::table('answer_banks')-> insert(
                     [
-                      'answer' => 'None of the above',
+                      'answer' => 'None of the choices',
                       'status' => 'False',
                       'language' => 'en',
                       'question_id' => '419',
