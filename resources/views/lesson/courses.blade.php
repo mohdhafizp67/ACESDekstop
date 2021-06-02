@@ -341,7 +341,7 @@
             <ul>
               <li style="font-size: 15px;">The lessons in ACES I4.0 contain 10 lessons on the industrial revolution.</li>
               <li style="font-size: 15px;">Students can choose lessons that students are interested in in the field of insdustrial revolution.</li>
-              <li style="font-size: 15px;">There are additional resources in each lesson for students to follow about the latest industrial revolution</li>
+              <li style="font-size: 15px;">There are additional resources in each lesson for students to follow about the latest industrial revolution.</li>
             </ul>
 
         </div>

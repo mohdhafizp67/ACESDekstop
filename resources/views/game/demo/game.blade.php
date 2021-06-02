@@ -353,7 +353,7 @@
             <ul>
               <li style="font-size: 15px;">The game in ACES I4.0 contains 10 different places for students to explore in east cost Malaysia.</li>
               <li style="font-size: 15px;">Each game, students have to play 3 rounds to complete missions and earn points.</li>
-              <li style="font-size: 15px;">Each game, students will operate a drone and have to pass obstacles to get points as well as have to get the fastest time to get extra points</li>
+              <li style="font-size: 15px;">Each game, students will operate a drone and have to pass obstacles to get points as well as have to get the fastest time to get extra points.</li>
             </ul>
 
         </div>
