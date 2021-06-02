@@ -2,7 +2,7 @@
 @extends('layouts.app-login-register')
 
 @section('content')
-<html>
+<html style="background-color: #130e29 !important;">
 <head>
   <link rel="stylesheet" href="{{ asset('css/Login.css') }} ">
 

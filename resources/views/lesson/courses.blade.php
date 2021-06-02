@@ -335,9 +335,15 @@
         <div id="myModal" class="modal">
 
         <!-- Modal content -->
-        <div class="modal-content" style="padding: 5%; margin-left: 30%; margin-top: 20%; width: 50%; text-align: center">
-            <p style="font-size: 20px;">Some text in the Modal..</p>
-            <p style="font-size: 15px;">Click anywhere to dismiss the information</p>
+        <div class="modal-content" style="padding: 2%; margin-left: 35%; margin-top: 10%; width: 50%; text-align: center">
+            <p style="font-size: 20px;color: red; font-weight: bold">Important Notice!</p>
+            <hr style="border-top: 1px solid #ff0000;">
+            <ul>
+              <li style="font-size: 15px;">The lessons in ACES I4.0 contain 10 lessons on the industrial revolution.</li>
+              <li style="font-size: 15px;">Students can choose lessons that students are interested in in the field of insdustrial revolution.</li>
+              <li style="font-size: 15px;">There are additional resources in each lesson for students to follow about the latest industrial revolution</li>
+            </ul>
+
         </div>
 
         </div>

@@ -2,7 +2,7 @@
 @extends('layouts.app-login-register')
 
 @section('content')
-<html>
+<html style="background-color: #000c15 !important;">
 <head>
   <link rel="stylesheet" href="{{ asset('css/Login.css') }} ">
 
@@ -112,12 +112,14 @@
               @enderror
             </div>
             <div class="form-group pt-1" style="text-align: center;">
-              <button type="submit" class="btn" style="padding: 5%;width: 50%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">Reset Password</button>
+              <button type="submit" class="btn" style="padding: 5%;width: 45%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">Reset Password</button>
               <!-- <div class="form-group pt-1" style="text-align: center;"><a class="btn" href="../index.html" style="padding: 5%;width: 50%;background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover;">Reset Password</a></div> -->
             </div>
-              <div class="btn" style="margin-left: 25%;">
-                  <span style="font-size: 80%;">Don't have an account? <a href="{{route('register')}}">Sign Up</a></span>
+            <center>
+              <div class="btn">
+                  <span style="font-size: 80%;"><a href="{{route('register')}}">Don't have an account? Sign Up</a></span>
               </div>
+              <center>
           </div>
         </div>
       </form>

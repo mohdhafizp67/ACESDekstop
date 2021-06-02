@@ -334,9 +334,14 @@
         <div id="myModal" class="modal">
 
         <!-- Modal content -->
-        <div class="modal-content" style="padding: 5%; margin-left: 30%; margin-top: 20%; width: 50%; text-align: center">
-            <p style="font-size: 20px;">Some text in the Modal..</p>
-            <p style="font-size: 15px;">Click anywhere to dismiss the information</p>
+        <div class="modal-content" style="padding: 2%; margin-left: 35%; margin-top: 10%; width: 50%; text-align: center">
+            <p style="font-size: 20px;color: red; font-weight: bold">Important Notice!</p>
+            <hr style="border-top: 1px solid #ff0000;">
+            <ul>
+              <li style="font-size: 15px;">The quiz in ACES I4.0 contains 10 quiz sections that students can answer.</li>
+              <li style="font-size: 15px;">Students are given 10 minutes to answer 10 questions about the industrial revolution lessons learned by students.</li>
+            </ul>
+
         </div>
 
         </div>

@@ -1,7 +1,7 @@
 @extends('layouts.app-login-register')
 
 @section('content')
-<html style="background-color: #130e29 !important;">
+<html style="background-color: #000c15 !important;">
 <head>
   <link rel="stylesheet" href="{{ asset('css/Register.css') }} ">
   <link rel="icon" href="{{ asset('concept/images/logo.png') }}" type="image/icon type">
@@ -422,8 +422,7 @@
 
       <div class="row">
         <div class="footer">
-        <span>&copy; {{ __('landing_page.login.copyright', [ 'year' => date('Y')]) }}</span>&nbsp&nbsp&nbsp&nbsp<span><font color="white">{{ __('landing_page.tnc_full') }}</font></span>&nbsp&nbsp&nbsp&nbsp<span style="text-align: right;"><font color="white">{{ __('landing_page.privacy') }}</font></span>
-        </div>
+        <span>&copy; {{ __('landing_page.login.copyright', [ 'year' => date('Y')]) }}</span>
       </div>
 
 </div>
