@@ -46,6 +46,7 @@
   <div class="col-md-12">
     <h1 style="text-align: center; color: #fff; font-weight: bold;padding-top: 3%;margin-top: -3%;font-size: 450%;">START QUIZ</h1>
     <p style="padding-top: 0%;text-align: center; color: #fff;font-size: 200%;">Answer all the question based on lessons</p>
+    <p style="padding-top: 0%;text-align: center; color: #fff;font-size: 200%;">You are given 10 minutes to answer all questions</p>
   </div>
 
 

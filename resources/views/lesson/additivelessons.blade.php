@@ -236,7 +236,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#link" role="tab" aria-controls="profile" aria-selected="false" style="font-size: 100%;">I 4.0 Application</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#link" role="tab" aria-controls="profile" aria-selected="false" style="font-size: 100%;">I4.0 Application</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
@@ -245,6 +245,8 @@
                             </div>
 
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:350px;">
+
+                                <span style="color: rgb(255, 0, 0)">*For more information about IR 4.0, click the link below</span>
 
                               <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;">Industry 4.0: Additive Manufacturing/3D Printing<span></p>
 
@@ -383,10 +385,10 @@
                 <div class="modal-body">
                 <!-- <img alt="Bootstrap Image Preview" src="{{asset('concept/images/pelajaran/lokasi.jpg')}}" style="width: 100%; height: auto;"> -->
 
-              <div class="w3-content w3-display-container">
+              <div class="w3-content w3-display-container" style="text-align: center">
                 <img class="career" src="{{asset('concept/images/pelajaran/courses/additivecourseshd.jpg')}}" style="width:100%">
 
-
+                <span>This slides will be play automatically</span>
 
                 <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
@@ -407,8 +409,9 @@
                 </button>
                 </div> -->
                 <div class="modal-body">
-                  <div class="display-container">
+                  <div class="display-container" style="text-align: center">
                     <img class="mySlides2" src="{{asset('concept/images/pelajaran/addictive/addictiveskills.jpg')}}" style="width:100%">
+                    <span>This slides will be play automatically</span>
                   </div>
                   <!-- <div class="w3-content w3-display-container">
 
@@ -434,8 +437,9 @@
                 </button>
                 </div> -->
                 <div class="modal-body">
-                  <div class="display-container">
+                  <div class="display-container" style="text-align: center">
                     <img class="mySlides1" src="{{asset('concept/images/pelajaran/addictive/addictivecareer.jpg')}}" style="width:100%">
+                    <span>This slides will be play automatically</span>
                   </div>
                   <!-- <div class="w3-content w3-display-container">
 

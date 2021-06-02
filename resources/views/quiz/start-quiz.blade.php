@@ -105,7 +105,7 @@ label {
           @csrf
           <input type="hidden" name="quiz_id" value="{{$quiz->id}}">
         <div class="pills-regular">
-            <ul class="nav nav-pills m-1" id="pills-tab" role="tablist" style="padding-bottom: 3%; padding-left: 15%;">
+            <ul class="m-1 nav nav-pills" id="pills-tab" role="tablist" style="padding-bottom: 3%; padding-left: 15%;">
 
                 @foreach($question as $data)
                   @if ($loop->first)
