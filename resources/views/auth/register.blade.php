@@ -350,6 +350,7 @@
                           </div>
                       @endif
                   </div>
+                  <span style="color: red; font-size: 12px">*minimum 8 character</span>
                 </div>
               </div>
               <div class="col-md-6">
@@ -384,6 +385,7 @@
                           </div>
                       @endif
                   </div>
+                  <span style="color: red; font-size: 12px">*minimum 8 character</span>
                 </div>
 
               </div>
