@@ -239,6 +239,10 @@
                             </li>
 
                             <li class="nav-item">
+                                <a class="nav-link" id="home3-tab" data-toggle="tab" href="#home3" role="tab" aria-controls="home3" aria-selected="false" style="font-size: 100%;">VR vs AR</a>
+                            </li>
+
+                            <li class="nav-item">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#link" role="tab" aria-controls="profile" aria-selected="false" style="font-size: 100%;">I4.0 Application</a>
                             </li>
                         </ul>
@@ -253,6 +257,11 @@
                               <iframe class="embed-responsive-item" width="95%" height="350px" src="https://www.youtube.com/embed/CUpa_nNHlfo?cc_load_policy=1&autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                               </div>
+
+                              <div class="tab-pane fade" id="home3" role="tabpanel" aria-labelledby="home3-tab">
+                                <iframe class="embed-responsive-item" width="95%" height="350px" src="https://www.youtube.com/embed/hEKxSuJvErI?cc_load_policy=1&autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </div>
 
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:350px;">
 
@@ -666,12 +675,12 @@
 
         window.onload = function () {
           //display timer
-          var fiveMinutes = 115 * 1,
+          var fiveMinutes = 325 * 1,
               display = document.querySelector('#time');
           startTimer(fiveMinutes, display);
 
           //timer for auto submit form/quiz
-          var setTimer = (1 * 115) * 1000;
+          var setTimer = (1 * 325) * 1000;
           // var setTimer = 5000;
           window.setTimeout(function() {
             $.ajax({
