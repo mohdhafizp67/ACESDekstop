@@ -8,7 +8,7 @@
 <html lang="en" style="background-color: #000a11 !important;">
   <head>
     <meta charset="utf-8">
-    <title>PELAJARAN I 4.0</title>
+    <title>PERMAINAN I 4.0</title>
 
       <style>
 
