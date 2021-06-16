@@ -161,6 +161,8 @@ a {
           aud.currentTime=0;
           aud.play();
         }
+        var audio = document.getElementById("myaudio");
+        aud.volume = 0.2;
         </script>
         <!-- <div class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
