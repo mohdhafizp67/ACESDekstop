@@ -11,9 +11,6 @@
 
     <title>Kemaskini Profil</title>
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/kemaskiniprofil.css') }} ">
@@ -24,7 +21,7 @@
   <div class="container-fluid" >
 	<div class="row">
 		<div class="col-md-12" style=" background-color: transparent !important; background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-repeat: no-repeat;background-size: cover;">
-      
+
       <div class="row">
         <div class="col-md-2">
 

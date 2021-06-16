@@ -13,9 +13,6 @@
 
     <title>Tukar Kata Laluan</title>
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/kemaskiniprofil.css') }} ">

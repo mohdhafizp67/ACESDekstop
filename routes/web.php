@@ -15,8 +15,8 @@ use App\Events\WebsocketDemoEvent;
 */
 
 Route::get('/', function () {
-    broadcast(new WebsocketDemoEvent('test'));
-    return view('welcome');
+    // broadcast(new WebsocketDemoEvent('test'));
+    view('user.introductionvideo');
 });
 
 Auth::routes();

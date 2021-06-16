@@ -10,9 +10,6 @@
 
     <title>ACES I 4.0</title>
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
-
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="css/style.css" rel="stylesheet">
     <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->

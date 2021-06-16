@@ -11,9 +11,6 @@
 
     <title>Bootstrap 4, from LayoutIt!</title>
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="{{ asset('css/HeaderStudent.css') }} "> -->
