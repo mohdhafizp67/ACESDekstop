@@ -233,6 +233,10 @@
                             </li>
 
                             <li class="nav-item">
+                                <a class="nav-link" id="home2-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="false" style="font-size: 100%;">IoT Smart Home</a>
+                            </li>
+
+                            <li class="nav-item">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#link" role="tab" aria-controls="profile" aria-selected="false" style="font-size: 100%;">I4.0 Application</a>
                             </li>
                         </ul>
@@ -240,6 +244,11 @@
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                               <iframe class="embed-responsive-item" width="95%" height="350px" src="https://www.youtube.com/embed/QH-5zjwdZBA?cc_load_policy=1&autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
+
+                            <div class="tab-pane fade" id="home2" role="tabpanel" aria-labelledby="home2-tab">
+                              <iframe class="embed-responsive-item" width="95%" height="350px" src="https://www.youtube.com/embed/Q63_lXSfhzw?cc_load_policy=1&autoplay=0&controls=0&disablekb=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                              </div>
 
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:350px;">
 
