@@ -418,6 +418,8 @@
           aud.currentTime=0;
           aud.play();
         }
+        var audio = document.getElementById("myaudio");
+        aud.volume = 0.2;
         </script>
       </div>
       <div class="col-md-8" style="margin-left: -15%;">
