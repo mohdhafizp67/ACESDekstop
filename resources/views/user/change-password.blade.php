@@ -115,7 +115,7 @@
                                  id="new_password"
                                  name="new_password"
                                  class="form-control {{ $errors->has('new_password') ? 'is-invalid' : '' }}"
-                                 placeholder="New Password"
+                                 placeholder="New Password *minimum 8 character"
                                  required>
                           <div class="input-group-append">
                               <div class="input-group-text">
@@ -130,6 +130,7 @@
                               </div>
                           @endif
                       </div>
+                      
                     </div>
 
                     <div class="col-md-1">
@@ -147,7 +148,7 @@
                                  id="password_confirmation"
                                  name="password_confirmation"
                                  class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}"
-                                 placeholder="Confirm New Password"
+                                 placeholder="Confirm New Password *minimum 8 character"
                                  required>
 
                           <div class="input-group-append">
@@ -168,6 +169,7 @@
                               </div>
                           @endif
                       </div>
+
                     </div>
 
                     <div class="col-md-1">

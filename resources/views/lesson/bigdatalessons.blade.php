@@ -580,12 +580,12 @@
 
       window.onload = function () {
         //display timer
-        var fiveMinutes = 117 * 1,
+        var fiveMinutes = 208 * 1,
             display = document.querySelector('#time');
         startTimer(fiveMinutes, display);
 
         //timer for auto submit form/quiz
-        var setTimer = (1 * 117) * 1000;
+        var setTimer = (1 * 208) * 1000;
         // var setTimer = 5000;
         window.setTimeout(function() {
           $.ajax({

@@ -567,12 +567,12 @@
 
         window.onload = function () {
           //display timer
-          var fiveMinutes = 113 * 1,
+          var fiveMinutes = 238 * 1,
               display = document.querySelector('#time');
           startTimer(fiveMinutes, display);
 
           //timer for auto submit form/quiz
-          var setTimer = (1 * 113) * 1000;
+          var setTimer = (1 * 238) * 1000;
           // var setTimer = 5000;
           window.setTimeout(function() {
             $.ajax({
