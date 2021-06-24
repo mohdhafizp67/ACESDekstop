@@ -601,12 +601,12 @@
 
         window.onload = function () {
           //display timer
-          var fiveMinutes = 111 * 1,
+          var fiveMinutes = 255 * 1,
               display = document.querySelector('#time');
           startTimer(fiveMinutes, display);
 
           //timer for auto submit form/quiz
-          var setTimer = (1 * 111) * 1000;
+          var setTimer = (1 * 255) * 1000;
           // var setTimer = 5000;
           window.setTimeout(function() {
             $.ajax({

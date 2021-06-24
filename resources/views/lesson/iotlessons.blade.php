@@ -605,12 +605,12 @@
 
       window.onload = function () {
         //display timer
-        var fiveMinutes = 140 * 1,
+        var fiveMinutes = 230 * 1,
             display = document.querySelector('#time');
         startTimer(fiveMinutes, display);
 
         //timer for auto submit form/quiz
-        var setTimer = (1 * 140) * 1000;
+        var setTimer = (1 * 230) * 1000;
         // var setTimer = 5000;
         window.setTimeout(function() {
           $.ajax({

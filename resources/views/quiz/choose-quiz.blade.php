@@ -340,6 +340,7 @@
             <ul>
               <li style="font-size: 15px;">The quiz in ACES I4.0 contains 10 quiz sections that students can answer.</li>
               <li style="font-size: 15px;">Students are given 10 minutes to answer 10 questions about the industrial revolution lessons learned by students.</li>
+              <li style="font-size: 15px;">Students must get at least 50 percent to pass each quiz.</li>
             </ul>
 
         </div>
