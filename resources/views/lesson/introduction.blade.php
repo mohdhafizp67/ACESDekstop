@@ -216,7 +216,7 @@
                             </div>
                             <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="profile-tab" style="width:95%; height:350px;">
 
-                                <span style="color: rgb(255, 0, 0)">*For more information about IR 4.0, click the link below</span>
+                                <span style="color: rgb(255, 0, 0)">*For more information about I4.0, we have provided some links regarding I4.0</span>
 
                               <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;pointer-events: none;">What is the Fourth Industrial Revolution?<span></p>
 
