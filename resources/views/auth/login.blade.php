@@ -303,7 +303,7 @@ a {
   </div>
   <div class="row">
     <div class="footer">
-    <span>&copy; {{ __('landing_page.login.copyright', [ 'year' => date('Y')]) }}</span>
+      <span>Copyright © 2021 EAST COAST ECONOMIC REGION DEVELOPMENT COUNCIL (ECERDC). All rights reserved.</span>&nbsp&nbsp&nbsp<a href="{{route('disclaimer')}}">Disclaimer</a>&nbsp&nbsp&nbsp<a href="{{route('tnc')}}">T&C</a>&nbsp&nbsp&nbsp<a href="{{route('privacy')}}">Privacy</a>
     </div>
   </div>
 </div>

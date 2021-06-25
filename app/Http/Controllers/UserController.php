@@ -17,6 +17,16 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+
+  public function disclaimer(){
+    return view('disclaimer');
+  }
+  public function tnc(){
+    return view('tnc');
+  }
+  public function privacy(){
+    return view('privacy');
+  }
   public function editProfile()
   {
     $user_id = Auth::user()->id;
