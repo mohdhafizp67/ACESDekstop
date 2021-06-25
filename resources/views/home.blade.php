@@ -50,7 +50,7 @@
       .circle strong {
       position: absolute;
       top: 35%;
-      left: -22%;
+      left: -25%;
       width: 100%;
       text-align: center;
       line-height: 25px;
@@ -120,8 +120,10 @@
       }
 
       .fontnew{
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
-        font-family: 'Roboto Mono', monospace;
+        font-family: 'futuraheavy', Futura, sans-serif;
+        font-weight:bolder;
+        font-style:normal;
+        color: #ff0000;
       }
 
       /* .avatar {
@@ -178,11 +180,16 @@
 	<div class="row">
 		<div class="col-md-12" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding: 5%;">
 
+      <div class="row">
+        <div class="col-md" style="margin-top: -1%; padding-bottom: 4%; padding-left: 9%">
+          <span class="fontnew" style="font-size: 65px; margin-left: -2%"><img src="{{ asset('concept/images/dashboardaces.png') }}" style="width: 225px; height: auto; margin-top: -2%"> I4.0</span>
+        </div>
+      </div>
 
-        <h1 style="text-align: center; font-size: 450%; color: #fff; font-weight:bold; padding-top: 0%; padding-left: 9%;margin-top: -3%; padding-bottom: 2%;">
+        <!-- <h1 style="text-align: center; font-size: 60px; color: #fff; font-weight:bold; padding-left: 9%;margin-top: -3%; padding-bottom: 2%;">
 
-  				ACES <font color="#ff0000"><span class="fontnew"> I4.0</span></font> <br>
-  			</h1>
+  			<img src="{{ asset('concept/images/dashboardaces.png') }}" style="width: 200px; height: auto; margin-top: -1%"><font color="#ff0000"><span class="fontnew"> I4.0</span></font> <br>
+  			</h1> -->
 
         <!-- <div style="position: absolute;  top: 70px;  right: 1px;">
           <a href="https://aces.ecerdc.com.my/aces2/">
