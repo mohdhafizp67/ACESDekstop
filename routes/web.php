@@ -18,7 +18,9 @@ Route::get('/', function () {
     // broadcast(new WebsocketDemoEvent('test'));
     return view('user.introductionvideo');
 });
-
+Route::get('/disclaimer', [App\Http\Controllers\UserController::class, 'disclaimer'])->name('disclaimer');
+Route::get('/term-and-condition', [App\Http\Controllers\UserController::class, 'tnc'])->name('tnc');
+Route::get('/privacy-policy', [App\Http\Controllers\UserController::class, 'privacy'])->name('privacy');
 Auth::routes();
 
 Route::get('/password/resets/{token}/{email}', [App\Http\Controllers\Auth\ResetPasswordController::class, 'showResetForm'])->name('password.reset');
