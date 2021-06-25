@@ -234,7 +234,7 @@
     <header>
       <div class="toggle"></div>
     </header>
-    <video id="myVideo" src="{{asset('concept/video/mascotv7.mp4')}}" autoplay type="video/mp4"></video>
+    <video id="myVideo" src="{{asset('concept/video/intromascot.mp4')}}" autoplay type="video/mp4"></video>
 
 
 
