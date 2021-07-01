@@ -334,7 +334,7 @@
         <div id="myModal" class="modal">
 
         <!-- Modal content -->
-        <div class="modal-content" style="padding: 2%; margin-left: 35%; margin-top: 10%; width: 50%; text-align: center">
+        <div class="modal-content" style="padding: 2%; margin-left: 30%; margin-top: 10%; width: 50%; text-align: center">
             <p style="font-size: 20px;color: red; font-weight: bold">Important Notice!</p>
             <hr style="border-top: 1px solid #ff0000;">
             <ul>
