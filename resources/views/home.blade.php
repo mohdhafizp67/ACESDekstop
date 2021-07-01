@@ -50,7 +50,7 @@
       .circle strong {
       position: absolute;
       top: 35%;
-      left: -25%;
+      left: -23%;
       width: 100%;
       text-align: center;
       line-height: 25px;
@@ -178,10 +178,10 @@
 
     <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12" style="background-image: url({{asset('concept/images/galaxy/background_blue.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; padding: 5%;">
+		<div class="col-md-12" style="padding: 5%;">
 
       <div class="row">
-        <div class="col-md" style="margin-top: -1%; padding-bottom: 4%; padding-left: 9%">
+        <div class="col-md" style="margin-top: -3%; padding-bottom: 0%; padding-left: 9%">
           <span class="fontnew" style="font-size: 65px; margin-left: -2%"><img src="{{ asset('concept/images/dashboardaces.png') }}" style="width: 225px; height: auto; margin-top: -2%"> I4.0</span>
         </div>
       </div>
