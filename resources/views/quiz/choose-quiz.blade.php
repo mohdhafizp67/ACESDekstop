@@ -377,8 +377,8 @@
         <img src="{{asset('concept/images/galaxy/mascot.gif')}}" width="90%" style="background-position: 100% 100%;background-repeat: no-repeat;background-size: cover;margin-left: -3%;">
 
 
-        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="padding: 1%;margin-left: 13.8%;width: 27%; height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up" style="font-size: 16px;"></i></button>
-        <button onclick="replay()" class="button buttonsound" type="button" style="padding: 1%;color: #fff; width: 27%; height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo" style="font-size: 16px;"></i></button>
+        <button id="mute_button" class="button buttonsound" onclick="mute()" type="button" style="padding: 1%;margin-left: 13.8%;width: 30%; height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-volume-up" style="font-size: 16px;"></i></button>
+        <button onclick="replay()" class="button buttonsound" type="button" style="padding: 1%;color: #fff; width: 30%; height: 5.5%; background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;"><i class="fas fa-undo" style="font-size: 16px;"></i></button>
 
         <audio id="myAudio" controls autoplay hidden="true">
 
