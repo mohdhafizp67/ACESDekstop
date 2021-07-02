@@ -108,7 +108,7 @@
     </style>
     <meta name="theme-color" content="#fafafa">
 </head>
-<body onload="loadFullScreen();desktop()" id="container" class="position-relative" style="background-color: #130e29 !important;">
+<body onload="loadFullscreen();desktop()" id="container" class="position-relative" style="background-color: #130e29 !important;">
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
