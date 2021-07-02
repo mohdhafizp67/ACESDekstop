@@ -108,7 +108,7 @@
     </style>
     <meta name="theme-color" content="#fafafa">
 </head>
-<body class="position-relative" style="background-color: #130e29 !important;">
+<body onload="desktop()" id="container" class="position-relative" style="background-color: #130e29 !important;">
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
@@ -386,4 +386,29 @@ $("document").ready(function(){
   }, 5000 ); // 5 secs
 
 });
+</script>
+
+<script>
+    public function desktop() {
+         // element which needs to enter full-screen mode
+var element = document.querySelector("#container");
+
+// make the element go to full-screen mode
+element.requestFullscreen()
+	.then(function() {
+		// element has entered fullscreen mode successfully
+	})
+	.catch(function(error) {
+		// element could not enter fullscreen mode
+	});
+    var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
+    }
+
+
+
 </script>
