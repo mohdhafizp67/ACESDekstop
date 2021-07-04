@@ -54,73 +54,87 @@
                         </form>
                         <br>
                         <div class="table-responsive">
-                          <table class="table table-striped table-bordered" id="table_data" style="width: 100%;">
+                          <table class="table table-striped table-bordered" id="table_data_audit" style="width: 100%;">
                             <!-- Table head -->
                             <thead>
                                 <tr>
-                                  <th class="all">No</th>
-                                  <th class="all">User name</th>
-                                  <th class="all">Email</th>
-                                  <th class="all">IP address</th>
-                                  <th class="all">Time</th>
-                                  <th class="all">Database</th>
-                                  <th class="all">Event</th>
-                                  <th class="all">Previous Data</th>
-                                  <th class="all">New Data</th>
-
+                                    <th class="all">No</th>
+                                    <th class="all">User Name</th>
+                                    <th class="all">IC Number</th>
+                                    <th class="all">Email</th>
+                                    <th class="all">Phone</th>
+                                    <th class="all">School</th>
+                                    <th class="all">District</th>
+                                    <th class="all">IP Address</th>
+                                    <th class="all">Time</th>
+                                    <th class="all">Database</th>
+                                    <th class="all">Event</th>
+                                    <th class="all">Previous Data</th>
+                                    <th class="all">New Data</th>
                                 </tr>
                             </thead>
                             <!-- Table body -->
                             <tbody>
                               @foreach($data as $datas)
-                                @if( $datas->user_id != NULL)
-                                <tr>
-                                @if($datas->user->name == NULL)
-                                <td>Tiada</td>
-                                @else
-                                <td>{{ $datas->id }}</td>
-                                <td>{{  ucfirst($datas->user->name) }}</td>
-                                @endif
-                                <td>{{ $datas->user->email }}</td>
-                                @if($datas->ip_address == NULL)
-                                <td>-</td>
-                                @else
-                                <td>{{ $datas->ip_address }}</td>
-                                @endif
-                                <!-- <td>{!!  Carbon\Carbon::parse($datas->updated_at)->format('M-d-Y h:i:s')  !!}</td> -->
-                                <td>{{  Carbon\Carbon::parse($datas->updated_at)->format('Y-m-d h:i:s')  }}</td>
-                                <td>{{ substr($datas->auditable_type, strpos($datas->auditable_type, "/") + 11) }}</td>
-                                <td>{{  ucfirst($datas->event) }}</td>
+                                @if ($datas->user_id != null)
+                                        <tr>
+                                            @if ($datas->user->name == null)
+                                                <td>Tiada</td>
+                                            @else
+                                                <td>{{ $datas->id }}</td>
+                                                <td>{{ ucfirst($datas->user->name) }}</td>
+                                            @endif
+                                            @if ($datas->user->ic_number == null)
+                                                <td>Tiada</td>
+                                            @else
+                                                <td>{{ $datas->user->ic_number }}</td>
+                                            @endif
+                                            <td>{{ $datas->user->email }}</td>
+                                            <td>{{ $datas->user->phone }}</td>
+                                            <td>{{ $datas->user->school }}</td>
+                                            <td>{{ $datas->user->district }}</td>
 
-                                @if( $datas->old_values == "[]")
-                                <td>-</td>
-                                @else
-                                  <td>
-                                  <table>
-                                    @foreach(explode(',', $datas->old_values) as $info)
-                                      <tr>
-                                        <td>{{  preg_replace('/[{}]/',"",$info) }}</td>
-                                      </tr>
-                                    @endforeach
-                                  </table>
-                                  </td>
-                                @endif
-                                @if( $datas->new_values == "[]")
-                                <td>-</td>
-                                @else
-                                  <td>
-                                  <table>
-                                    @foreach(explode(',', $datas->new_values) as $info)
-                                      <tr>
-                                        <td>{{  preg_replace('/[{}]/',"",$info) }}</td>
-                                      </tr>
-                                    @endforeach
-                                  </table>
-                                  </td>
-                                @endif
+                                            @if ($datas->ip_address == null)
+                                                <td>-</td>
+                                            @else
+                                                <td>{{ $datas->ip_address }}</td>
+                                            @endif
+                                            <!-- <td>{!! Carbon\Carbon::parse($datas->updated_at)->format('M-d-Y h:i:s') !!}</td> -->
+                                            <td>{{ Carbon\Carbon::parse($datas->updated_at)->format('Y-m-d h:i:s') }}
+                                            </td>
+                                            <td>{{ substr($datas->auditable_type, strpos($datas->auditable_type, '/') + 11) }}
+                                            </td>
+                                            <td>{{ ucfirst($datas->event) }}</td>
 
-                              </tr>
-                                @endif
+                                            @if ($datas->old_values == '[]')
+                                                <td>-</td>
+                                            @else
+                                                <td>
+                                                    <table>
+                                                        @foreach (explode(',', $datas->old_values) as $info)
+                                                            <tr>
+                                                                <td>{{ preg_replace('/[{}]/', '', $info) }}</td>
+                                                            </tr>
+                                                        @endforeach
+                                                    </table>
+                                                </td>
+                                            @endif
+                                            @if ($datas->new_values == '[]')
+                                                <td>-</td>
+                                            @else
+                                                <td>
+                                                    <table>
+                                                        @foreach (explode(',', $datas->new_values) as $info)
+                                                            <tr>
+                                                                <td>{{ preg_replace('/[{}]/', '', $info) }}</td>
+                                                            </tr>
+                                                        @endforeach
+                                                    </table>
+                                                </td>
+                                            @endif
+
+                                        </tr>
+                                    @endif
                               @endforeach
                             </tbody>
                           </table>
