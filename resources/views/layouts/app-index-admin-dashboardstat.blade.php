@@ -573,7 +573,7 @@
     });
 
     $(function () {
-        var table = $('#table_data_audit').DataTable({
+        var tables = $('#table_data_audit').DataTable({
           "responsive" : true,
           "dom": 'Bfrtip',
           "order": [[ 4, "desc" ]],
@@ -583,8 +583,8 @@
           "scrollX": true,
 
         });
-        table.on( 'order.dt search.dt', function () {
-        table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+        tables.on( 'order.dt search.dt', function () {
+        tables.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
             cell.innerHTML = i+1;
         } );
     } ).draw();
