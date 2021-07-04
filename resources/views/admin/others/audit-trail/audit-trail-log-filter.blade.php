@@ -54,7 +54,7 @@
                         </form>
                         <br>
                         <div class="table-responsive">
-                          <table class="table table-striped table-bordered" id="table_data_audit" style="width: 100%;">
+                          <table class="table table-striped table-bordered" id="table_data" style="width: 100%;">
                             <!-- Table head -->
                             <thead>
                                 <tr>
