@@ -38,6 +38,7 @@
                                 <th>BIL</th>
                                 <th>NAME</th>
                                 <th>IDENTIFICATION NUMBER</th>
+                                <th>SCHOOL</th>
                                 <th>STATE</th>
                                 <th>DISTRICT</th>
                                 <th>ROLE</th>
@@ -53,6 +54,7 @@
                             <td>{{ $data->id  }}</td>
                             <td>{{ $data->name  }}</td>
                             <td>{{ $data->ic_number  }}</td>
+                            <td>{{ $data->school  }}</td>
                             <td>{{ $data->state  }}</td>
                             <td>{{ $data->district  }}</td>
 
