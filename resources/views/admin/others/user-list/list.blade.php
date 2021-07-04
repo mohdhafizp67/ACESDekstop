@@ -35,6 +35,7 @@
                           <table id="table_data" class="table table-striped table-bordered second" style="width:100%">
                             <thead style="text-align: center;">
                               <tr>
+                                <th>BIL</th>
                                 <th>NAME</th>
                                 <th>IDENTIFICATION NUMBER</th>
                                 <th>STATE</th>
@@ -49,6 +50,7 @@
                             <tbody style="text-align: center;">
                               @foreach($user_list as $data)
                           <tr>
+                            <td>{{ $data->id  }}</td>
                             <td>{{ $data->name  }}</td>
                             <td>{{ $data->ic_number  }}</td>
                             <td>{{ $data->state  }}</td>
