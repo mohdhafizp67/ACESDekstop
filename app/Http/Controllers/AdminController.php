@@ -194,7 +194,7 @@ class AdminController extends Controller
     $user->address = $request->address;
     $user->postcode = $request->postcode;
     $user->state = $request->state;
-    $user->district = $request->district;
+    // $user->district = $request->district;
 
     //updating role
     if($request->role == "Admin" ){
