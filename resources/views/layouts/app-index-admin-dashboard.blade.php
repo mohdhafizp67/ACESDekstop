@@ -571,6 +571,24 @@
     } ).draw();
     });
 
+        $(function () {
+        var table = $('#table_data_list').DataTable({
+          "responsive" : true,
+          "dom": 'Bfrtip',
+          "order": [[ 9, "desc" ]],
+          "buttons": [
+              'excel', 'pdf', 'print'
+          ],
+          "scrollX": true,
+
+        });
+        table.on( 'order.dt search.dt', function () {
+        table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+        } );
+    } ).draw();
+    });
+
 </script>
 
 </html>
