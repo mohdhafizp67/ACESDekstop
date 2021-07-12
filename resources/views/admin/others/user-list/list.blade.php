@@ -45,7 +45,7 @@
                                     <th>LESSON PROGRESS (%)</th>
                                     <th>QUIZ PROGRESS (%)</th>
                                     <th>GAME PROGRESS (%)</th>
-                                    <th>TOTAL PROGRESS (%)</th>
+                                    {{-- <th>TOTAL PROGRESS (%)</th> --}}
                                     <th>ROLE</th>
                                     <th>STATUS</th>
                                     @if (!auth()->user()->is_ecerdb_personnel)
@@ -66,13 +66,13 @@
                                             <td>{{ $data->lesson_progress ?? 0 }}</td>
                                             <td>{{ $data->quiz_progress ?? 0 }}</td>
                                             <td>{{ $data->games_progress ?? 0 }}</td>
-                                            <td>{{ number_format($data->total_progress ?? 0, 2) }}
+                                            {{-- <td>{{ number_format($data->total_progress ?? 0, 2) }} --}}
                                             </td>
                                         @else
                                             <td> 0 </td>
                                             <td> 0 </td>
                                             <td> 0 </td>
-                                            <td> 0.00 </td>
+                                            {{-- <td> 0.00 </td> --}}
                                         @endif
                                         @if ($data->is_admin == 1)
                                             <td><span class="badge badge-pill badge-brand">Admin</span></td>
