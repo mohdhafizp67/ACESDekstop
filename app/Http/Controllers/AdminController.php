@@ -170,6 +170,7 @@ class AdminController extends Controller
                 $data->save();
             }
         }
+        // dd($user_list);
       return view('admin.others.user-list.list', compact('user_list'));
   }
 
