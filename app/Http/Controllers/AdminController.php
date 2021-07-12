@@ -167,8 +167,8 @@ class AdminController extends Controller
                 $data->lesson_progress = $lesson_progress;
                 $data->quiz_progress = $quiz_progress;
                 $data->game_progress = $game_progress;
-                // $total_progress = ((($data->lesson_progress + $data->quiz_progress + $data->game_progress) / 3) / 100) * 100;
-                // $data->total_progress = number_format( $total_progress ?? 0, 2);
+                $total_progress = ((($data->lesson_progress + $data->quiz_progress + $data->game_progress) / 3) / 100) * 100;
+                $data->total_progress = number_format( $total_progress ?? 0, 2);
                 $data->save();
             }
         }
