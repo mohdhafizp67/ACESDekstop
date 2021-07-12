@@ -216,6 +216,7 @@
                                     <input type="text" name="district" placeholder="District"
                                         value="{{ $user->district }}"
                                         class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('district') ? 'is-invalid' : '' }}"
+                                        oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"
                                         required>
                                     @if ($errors->has('district'))
                                         <div class="invalid-feedback">
