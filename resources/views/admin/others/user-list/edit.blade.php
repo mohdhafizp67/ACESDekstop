@@ -80,10 +80,28 @@
                              <div class="row">
                                <div class="col-md-2">
 
+
                                </div>
                                <div class="col-md-8">
                                  <div class="form-group">
-                                    <label>Alamat</label>
+                                    <label>School</label>
+                                    <!-- <input type="text" name="phone" class="form-control bg-light" placeholder="Input Phone Number" value=""> -->
+                                    <textarea name="school" class="form-control bg-light" rows="2" cols="20" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);" required>{{$user->school}}</textarea>
+                                 </div>
+                               </div>
+                               <div class="col-md-2">
+
+                               </div>
+                             </div>
+
+                             <div class="row">
+                               <div class="col-md-2">
+
+
+                               </div>
+                               <div class="col-md-8">
+                                 <div class="form-group">
+                                    <label>Address</label>
                                     <!-- <input type="text" name="phone" class="form-control bg-light" placeholder="Input Phone Number" value=""> -->
                                     <textarea name="address" class="form-control bg-light" rows="2" cols="20" oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);" required>{{$user->address}}</textarea>
                                  </div>
