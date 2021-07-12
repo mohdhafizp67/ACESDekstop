@@ -166,6 +166,8 @@ class AdminController extends Controller
                 $data->lesson_progress = $lesson_progress;
                 $data->quiz_progress = $quiz_progress;
                 $data->game_progress = $game_progress;
+
+                $data->save();
             }
         }
       return view('admin.others.user-list.list', compact('user_list'));
