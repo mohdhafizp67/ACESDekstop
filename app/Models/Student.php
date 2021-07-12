@@ -28,6 +28,11 @@ class Student extends Model
       return $this->hasMany('App\Models\Student_Game', 'student_id', 'student_game_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
     }
 
+    public function student_quiz()
+    {
+        return $this->hasMany('App\Models\Student_Quiz', 'student_id', 'student_quiz_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+    }
+
     public function leaderboard(){
       return $this->hasOne('App\Models\Leaderboard', 'id', 'leaderboard_id')->orderBy('scores');; //return $this->hasMany('Model', 'foreign_key', 'local_key');
     }

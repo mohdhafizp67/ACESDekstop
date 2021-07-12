@@ -150,7 +150,8 @@ class AdminController extends Controller
 
   public function viewUserList()
   {
-      $user_list = User::get();
+      $user_list = User::with('student.student_lesson', 'student.student_quiz', 'student.student_game')->get();
+        // dd($user_list);
       return view('admin.others.user-list.list', compact('user_list'));
   }
 

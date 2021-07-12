@@ -41,6 +41,9 @@
                                 <th>SCHOOL</th>
                                 <th>STATE</th>
                                 <th>DISTRICT</th>
+                                <th>LESSON PROGRESS</th>
+                                <th>QUIZ PROGRESS</th>
+                                <th>GAME PROGRESS</th>
                                 <th>ROLE</th>
                                 <th>STATUS</th>
                                 @if(!auth()->user()->is_ecerdb_personnel)
@@ -57,6 +60,9 @@
                             <td>{{ $data->school  }}</td>
                             <td>{{ $data->state  }}</td>
                             <td>{{ $data->district  }}</td>
+                            <td>{{ $data->student->student_lesson->calculateLessonProgress  }}</td>
+                            <td>{{ $data->student->student_quiz->calculateQuizProgress  }}</td>
+                            <td>{{ $data->student->student_game->calculateGameProgress  }}</td>
 
                             @if($data->is_admin == 1)
                             <td><span class="badge badge-pill badge-brand">Admin</span></td>

@@ -23,4 +23,9 @@ class Student_Game extends Model
     public function student(){
       return $this->belongsTo('App\Models\Student', 'id', 'student_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
     }
+    public function calculateGameProgress()
+    {
+        $game_progress = $this->distinct('game_id')->count();
+        return ($game_progress / 10) * 100;
+    }
 }
