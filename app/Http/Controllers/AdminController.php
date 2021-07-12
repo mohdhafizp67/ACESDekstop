@@ -237,7 +237,8 @@ class AdminController extends Controller
 
   public function viewAuditList()
   {
-      $data = Audit::get();
+      $data = Audit::where('created_at', now())->get();
+    //   dd($data);
       return view('admin.others.audit-trail.audit-trail-log', compact('data'));
   }
 
