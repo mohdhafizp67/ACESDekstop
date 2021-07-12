@@ -557,7 +557,7 @@
         var table = $('#table_data').DataTable({
           "responsive" : true,
           "dom": 'Bfrtip',
-          "order": [[ 8, "desc" ]],
+          "order": [[ 0, "desc" ]],
           "buttons": [
               'excel', 'pdf', 'print'
           ],
