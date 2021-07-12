@@ -65,7 +65,7 @@
                                         @if ($data->student)
                                             <td>{{ $data->lesson_progress ?? 0 }}</td>
                                             <td>{{ $data->quiz_progress ?? 0 }}</td>
-                                            <td>{{ $data->games_progress ?? 0 }}</td>
+                                            <td>{{ $data->game_progress ?? 0 }}</td>
                                             {{-- <td>{{ number_format($data->total_progress ?? 0, 2) }} --}}
                                             </td>
                                         @else
