@@ -60,10 +60,15 @@
                             <td>{{ $data->school  }}</td>
                             <td>{{ $data->state  }}</td>
                             <td>{{ $data->district  }}</td>
-                            <td>{{ $data->student->student_lesson->calculateLessonProgress  }}</td>
-                            <td>{{ $data->student->student_quiz->calculateQuizProgress  }}</td>
-                            <td>{{ $data->student->student_game->calculateGameProgress  }}</td>
-
+                            @if($data->student){}
+                            <td>{{ $data->lessonProgress ?? 0  }}</td>
+                            <td>{{ $data->quizProgress ?? 0  }}</td>
+                            <td>{{ $data->gamesProgress ?? 0  }}</td>
+                            @else
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            @endif
                             @if($data->is_admin == 1)
                             <td><span class="badge badge-pill badge-brand">Admin</span></td>
                             @elseif($data->is_student == 1)
