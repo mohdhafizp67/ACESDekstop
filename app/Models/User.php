@@ -36,7 +36,10 @@ class User extends Authenticatable implements Auditable
         'is_ecerdb_personnel',
         'profile_picture',
         'first_time_login',
-        'screenshots'
+        'screenshots',
+        'game_progress',
+        'lesson_progress',
+        'quiz_progress',
 
     ];
 
