@@ -24,10 +24,11 @@ class Student_Quiz extends Model
       return $this->belongsTo('App\Models\Quiz', 'quiz_id', 'id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
     }
     public function student(){
-      return $this->belongsTo('App\Models\Student', 'student_id', 'id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+      return $this->belongsTo('App\Models\Student', 'student_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
     }
     public function calculateQuizProgress()
     {
+        dd('test');
         $quiz_progress = $this->where('result_status', "Lulus")->distinct('quiz_id')->count();
         return ($quiz_progress / 10) * 100;
     }

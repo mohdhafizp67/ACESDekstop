@@ -150,8 +150,24 @@ class AdminController extends Controller
 
   public function viewUserList()
   {
-      $user_list = User::with('student.student_lesson', 'student.student_quiz', 'student.student_game')->get();
+      $user_list = User::with('student')->get();
         // dd($user_list);
+        foreach ($user_list as $data) {
+            # code...
+            if($data->student){
+                $lesson_progress = Student_Lesson::where('student_id', $data->student->id)->count();
+                $lesson_progress = ($lesson_progress / 10) * 100;
+
+                $quiz_progress = Student_Quiz::where('result_status', "Lulus")->where('student_id', $data->student->id)->distinct('quiz_id')->count();
+                $quiz_progress = ($quiz_progress / 10) * 100;
+                $game_progress = Student_Game::where('student_id', $data->student->id)->distinct('game_id')->count();
+                $game_progress = ($game_progress / 10) * 100;
+
+                $data->lesson_progress = $lesson_progress;
+                $data->quiz_progress = $quiz_progress;
+                $data->game_progress = $game_progress;
+            }
+        }
       return view('admin.others.user-list.list', compact('user_list'));
   }
 
