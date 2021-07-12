@@ -60,7 +60,7 @@
                             <td>{{ $data->school  }}</td>
                             <td>{{ $data->state  }}</td>
                             <td>{{ $data->district  }}</td>
-                            @if($data->student){}
+                            @if($data->student)
                             <td>{{ $data->lessonProgress ?? 0  }}</td>
                             <td>{{ $data->quizProgress ?? 0  }}</td>
                             <td>{{ $data->gamesProgress ?? 0  }}</td>
