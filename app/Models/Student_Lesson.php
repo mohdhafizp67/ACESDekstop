@@ -7,20 +7,27 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student_Lesson extends Model
 {
-  use HasFactory;
-  
-  protected $table = 'students_lessons';
+    use HasFactory;
 
-  protected $fillable = [
-    'lesson_id',
-    'student_id',
-    'student_completion'
-  ];
+    protected $table = 'students_lessons';
 
-  public function lesson(){
-    return $this->belongsTo('App\Models\Lesson', 'id', 'lesson_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
-  }
-  public function student(){
-    return $this->belongsTo('App\Models\Student', 'id', 'student_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
-  }
+    protected $fillable = [
+        'lesson_id',
+        'student_id',
+        'student_completion'
+    ];
+
+    public function lesson()
+    {
+        return $this->belongsTo('App\Models\Lesson', 'id', 'lesson_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+    }
+    public function student()
+    {
+        return $this->belongsTo('App\Models\Student', 'id', 'student_id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
+    }
+    public function calculateLessonProgress()
+    {
+        $lesson_progress = $this->count();
+        return ($lesson_progress / 10) * 100;
+    }
 }

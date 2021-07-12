@@ -26,4 +26,9 @@ class Student_Quiz extends Model
     public function student(){
       return $this->belongsTo('App\Models\Student', 'student_id', 'id'); //return $this->hasMany('Model', 'foreign_key', 'local_key');
     }
+    public function calculateQuizProgress()
+    {
+        $quiz_progress = $this->where('result_status', "Lulus")->distinct('quiz_id')->count();
+        return ($quiz_progress / 10) * 100;
+    }
 }
