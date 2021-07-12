@@ -66,7 +66,7 @@
                                             <td>{{ $data->lesson_progress ?? 0 }}</td>
                                             <td>{{ $data->quiz_progress ?? 0 }}</td>
                                             <td>{{ $data->games_progress ?? 0 }}</td>
-                                            <td>{{ ((($data->lesson_progress ?? 0 + $data->quiz_progress ?? 0 + $data->games_progress)/3)/100) * 100 }}
+                                            <td>{{ ((($data->lesson_progress ?? 0 + $data->quiz_progress ?? 0 + $data->games_progress ?? 0)/3)/100) * 100 }}
                                             </td>
                                         @else
                                             <td> 0 </td>
