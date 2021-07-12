@@ -160,6 +160,7 @@ class AdminController extends Controller
 
                 $quiz_progress = Student_Quiz::where('result_status', "Lulus")->where('student_id', $data->student->id)->distinct('quiz_id')->count();
                 $quiz_progress = ($quiz_progress / 10) * 100;
+
                 $game_progress = Student_Game::where('student_id', $data->student->id)->distinct('game_id')->count();
                 $game_progress = ($game_progress / 10) * 100;
 
