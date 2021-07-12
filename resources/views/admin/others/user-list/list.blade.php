@@ -66,8 +66,12 @@
                                             <td>{{ $data->lesson_progress ?? 0 }}</td>
                                             <td>{{ $data->quiz_progress ?? 0 }}</td>
                                             <td>{{ $data->game_progress ?? 0 }}</td>
-                                            <td>{{ number_format($data->total_progress, 2) }}
-                                            </td>
+                                            @if ($data->total_progress)
+                                                <td>{{ number_format($data->total_progress, 2) }}
+                                                </td>
+                                            @else
+                                                <td> 0 </td>
+                                            @endif
                                         @else
                                             <td> 0 </td>
                                             <td> 0 </td>
