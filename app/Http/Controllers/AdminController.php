@@ -239,9 +239,10 @@ class AdminController extends Controller
   public function viewAuditList()
   {
     //   dd(now()->format('Y-m-d') . ' 00:00:00');
-      $data = Audit::where('created_at','>', now()->format('Y-m-d') . ' 00:00:00')
+      $data = Audit::with('user')->where('created_at','>', now()->format('Y-m-d') . ' 00:00:00')
             ->where('created_at', '<', now()->format('Y-m-d') . ' 23:59:59')
             ->get();
+
     //   dd($data);
       return view('admin.others.audit-trail.audit-trail-log', compact('data'));
   }
