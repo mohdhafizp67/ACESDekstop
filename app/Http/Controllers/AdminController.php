@@ -20,6 +20,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
+ini_set('memory_limit', '-1');
+
 class AdminController extends Controller
 {
   public function index()
