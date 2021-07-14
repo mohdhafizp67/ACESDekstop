@@ -188,13 +188,14 @@
                   <label for="exampleInputEmail1" style="color: #fff">
                     IC Number
                   </label>
-                  <input type="text" placeholder="IC Number" name="ic_number" value="{{ old('ic_number') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('ic_number') ? 'is-invalid' : '' }}" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" autofocus/>
+                  <input type="text" placeholder="IC Number" name="ic_number" value="{{ old('ic_number') }}" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control {{ $errors->has('ic_number') ? 'is-invalid' : '' }}" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" autocomplete="off" autofocus/>
                   @if($errors->has('ic_number'))
                       <div class="invalid-feedback">
                           <strong>{{ $errors->first('ic_number') }}</strong>
                       </div>
                   @endif
                 </div>
+                <span style="color: red; font-size: 12px">Please do not put "-"</span>
               </div>
             </div>
 

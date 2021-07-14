@@ -6,10 +6,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="target-densitydpi=device-dpi">
+
 
     <title>ACES I 4.0</title>
-    
+
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- <link href="css/style.css" rel="stylesheet"> -->
     <style media="screen">
@@ -93,7 +94,7 @@
                     <div class="col-md">
                         <div class="form-group" style="color: white !important;">
                           <label class="col-form-label">IDENTIFICATION NUMBER</label>
-                          <input id="email" type="text"name="ic_number" maxlength="12" minlength="12" onkeypress="return onlyNumberKey(event)" value="{{Auth::user()->ic_number}}" class="form-control" >
+                          <input id="email" type="text" name="ic_number" maxlength="12" minlength="12" onkeypress="return onlyNumberKey(event)" value="{{Auth::user()->ic_number}}" class="form-control" >
                         </div>
                     </div>
                     <div class="col-md-1">

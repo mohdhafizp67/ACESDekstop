@@ -107,7 +107,7 @@
     </style>
     <meta name="theme-color" content="#fafafa">
 </head>
-<body onload="loadFullscreen();desktop()" id="container" class="position-relative" style="background-color: #130e29 !important;">
+<body class="position-relative" style="background-color: #130e29 !important;">
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
@@ -411,24 +411,4 @@ if(viewMode == "desktop"){
 
 
 
-</script>
-<script class="">
-    // Find the right method, call on correct element
-    function launchIntoFullscreen(element) {
-    if(element.requestFullscreen) {
-        element.requestFullscreen();
-    } else if(element.mozRequestFullScreen) {
-        element.mozRequestFullScreen();
-    } else if(element.webkitRequestFullscreen) {
-        element.webkitRequestFullscreen();
-    } else if(element.msRequestFullscreen) {
-        element.msRequestFullscreen();
-    }
-    }
-
-    // Launch fullscreen for browsers that support it!
-    function loadFullscreen() {
-        launchIntoFullscreen(document.documentElement); // the whole page
-        // launchIntoFullscreen(document.getElementById("videoElement")); // any individual element
-    }
 </script>
