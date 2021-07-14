@@ -186,7 +186,7 @@
                                         </a>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Are you sure you want to reset password this user?</p>
+                                        <p>Are you sure you want to reset this user's password  to '1234567890' ?</p>
                                     </div>
                                     <div class="modal-footer">
                                         <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
