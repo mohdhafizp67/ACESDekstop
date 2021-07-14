@@ -108,6 +108,10 @@
                                                         data-target="#activate_modal"><i class="fa fa-check"
                                                             aria-hidden="true"></i></a>
                                                 @endif
+                                                    <a href="#" class="btn btn-success"
+                                                            onclick="pass_id_reset({{ $data->id }})" data-toggle="modal"
+                                                            data-target="#reset_modal"><i class="fa fa-unlock"
+                                                                aria-hidden="true"></i></a>
                                             </td>
                                         @endif
 
@@ -170,6 +174,33 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="modal fade" id="reset_modal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                                        <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </a>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Are you sure you want to reset password this user?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#" class="btn btn-secondary" data-dismiss="modal">Cancel</a>
+                                        <form class="" action="{{ route('admin.others.user-list.reset-password') }}"
+                                            method="post">
+                                            @csrf
+                                            <button type="submit" name="button" class="btn btn-primary">Reset
+                                                Password</button>
+                                            <input type="hidden" id="id_reset" name="user_id">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,6 +214,10 @@
 
         function pass_id_activate(id) {
             $(".modal-footer #id_activate").val(id);
+        }
+
+        function pass_id_reset(id) {
+            $(".modal-footer #id_reset").val(id);
         }
     </script>
 

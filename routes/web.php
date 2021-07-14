@@ -202,6 +202,8 @@ Route::middleware('student')->group(function () {
 
     Route::post('/admin/others/user-list/activate', [App\Http\Controllers\AdminController::class, 'activateStatus'])->name('admin.others.user-list.activate');
 
+    Route::post('/admin/others/user-list/reset-password', [App\Http\Controllers\AdminController::class, 'resetPasswordUser'])->name('admin.others.user-list.reset-password');
+
     Route::get('/admin/others/audit/list', [App\Http\Controllers\AdminController::class, 'viewAuditList'])->name('admin.others.audit-trail.audit-trail-log');
 
     Route::post('/admin/others/audit/list/filter', [App\Http\Controllers\AdminController::class, 'viewAuditListFilter'])->name('admin.others.audit-trail.audit-trail-log.filter');
