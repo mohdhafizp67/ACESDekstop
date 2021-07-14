@@ -108,7 +108,7 @@
                                                         data-target="#activate_modal"><i class="fa fa-check"
                                                             aria-hidden="true"></i></a>
                                                 @endif
-                                                    <a href="#" class="btn btn-success"
+                                                    <a href="#" class="btn btn-warning"
                                                             onclick="pass_id_reset({{ $data->id }})" data-toggle="modal"
                                                             data-target="#reset_modal"><i class="fa fa-unlock"
                                                                 aria-hidden="true"></i></a>
