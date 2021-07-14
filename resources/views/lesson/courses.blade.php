@@ -5,6 +5,7 @@
 <html lang="en" style="background-color: #000a11 !important;">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi">
     <title>PELAJARAN I 4.0</title>
 
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">

@@ -244,7 +244,7 @@ a {
       					<label for="exampleInputEmail1" style="color: #fff">
       						{{ __('landing_page.login.ic_number') }}
       					</label>
-      					<input type="text" placeholder="IC Number" id="ic_number" name="ic_number" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" value="{{ old('ic_number') }}" required autocomplete="ic_number" autofocus/>
+      					<input type="text" placeholder="IC Number" id="ic_number" name="ic_number" class="u-border-1 u-border-grey-80 u-grey-75 u-input u-input-rectangle form-control @error('ic_number') is-invalid @enderror" minlength="12" maxlength="12" onkeypress="return onlyNumberKey(event)" value="{{ old('ic_number') }}" required autocomplete="off" autofocus/>
                         @error('ic_number')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
