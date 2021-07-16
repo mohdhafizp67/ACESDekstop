@@ -52,7 +52,7 @@
       border: 1px solid rgba(0,0,0,.2);
       border-radius: .3rem;
       outline: 0;
-      margin-left: 20%;
+      /* margin-left: 20%; */
     }
 
 
@@ -169,8 +169,8 @@
     outline: 0;
     width: 800px;
     display: block;
-    margin-left: 30%;
-    margin-top: 5%;
+    /* margin-left: 30%; */
+    /* margin-top: 5%; */
 
     }
     .w3-display-topright {
@@ -581,12 +581,12 @@
 
       window.onload = function () {
         //display timer
-        var fiveMinutes = 208 * 1,
+        var fiveMinutes = 198 * 1,
             display = document.querySelector('#time');
         startTimer(fiveMinutes, display);
 
         //timer for auto submit form/quiz
-        var setTimer = (1 * 208) * 1000;
+        var setTimer = (1 * 198) * 1000;
         // var setTimer = 5000;
         window.setTimeout(function() {
           $.ajax({
