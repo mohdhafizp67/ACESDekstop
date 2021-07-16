@@ -32,7 +32,7 @@
   background-color: #000c15;
   padding: 10px;
   text-align: center;
-  font-size: 80%;
+  font-size: 70%;
   padding: 10px 0px 10px;
 }
 
@@ -87,18 +87,18 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	font-size: 1.2rem;
-	font-weight: 600;
+	font-size: 80%;
+	font-weight: normal;
 	color: white;
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 25px 20px;
+	padding: 15px 10px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .content {
 	background: rgba(255, 255, 255, 0.2);
-	font-size: 1rem;
+	font-size: 50%;
 	height: 0;
 	overflow: hidden;
 	-webkit-transition: all 1s ease;
@@ -122,25 +122,25 @@ a {
 
 <div class="row">
   <div class="col-md">
-    <a href="{{ url()->previous() }}" class="m-2 btn btn-outline-primary" style="font-size:150%; color: #fff;"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back</a>
+    <a href="{{ url()->previous() }}" class="m-2 btn btn-outline-primary" style="font-size:100%; color: #fff;"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back</a>
 
-    <a href="{{route('login')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; font-size: 20px; width: 10%; color: #fff">Login</a>
+    <a href="{{route('login')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; font-size: 100%; width: 12%; color: #fff">Login</a>
 
-    <a href="{{route('register')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; font-size: 20px; width: 10%; color: #fff">Register</a>
+    <a href="{{route('register')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; font-size: 100%; width: 12%; color: #fff">Register</a>
 
   </div>
 </div>
 <div class="row">
   <div class="col-md" style="text-align: center">
-    <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 250px; height: auto;">
+    <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 20%; height: auto;">
   </div>
 </div>
   <div class="row" style="padding: 8%;color: #fff;margin-top: -10%;">
-    <div class="col-md">
+    <div class="col-md" style="padding-top: 60px; padding-bottom: 165px;">
 
     <div class="wrapper">
       <button class="toggle">Scam Warning<i class="fas fa-plus icon"></i></button>
-      <div class="content">
+      <div class="content" style="font-size: 50%;">
         <li style="padding:1%">The trademarks, names, images, symbols and pictures identifying the East Coast Economic Region and all web site design, text and graphics are proprietary to ECERDC.</li>
       </div>
     </div>

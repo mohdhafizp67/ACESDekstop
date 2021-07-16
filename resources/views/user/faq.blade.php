@@ -39,7 +39,7 @@
       border: none;
       text-align: left;
       outline: none;
-      font-size: 15px;
+      font-size: 100%;
       transition: 0.4s;
       font-size: 12px;
     }
@@ -56,7 +56,7 @@
       background-color: #02142c4d;
       /* overflow: hidden; */
       color: white;
-      font-size: 10px;
+      font-size: 100%;
     }
     </style>
   </head>
