@@ -106,7 +106,8 @@ Route::middleware('student')->group(function () {
 
     Route::get('/quiz/result-quiz/{id}', [App\Http\Controllers\QuizController::class, 'resultQuiz'])->name('quiz.result-quiz');
 
-
+    //FAQ
+    Route::get('/user/faq', [App\Http\Controllers\UserController::class, 'faq'])->name('user.faq');
     //student
     Route::get('/statistik', [App\Http\Controllers\UserController::class, 'statistik'])->name('user.student.statistik');
 
@@ -188,6 +189,7 @@ Route::middleware('student')->group(function () {
     Route::post('/admin/activities/quiz/question-banks/edit/updating', [App\Http\Controllers\QuizController::class, 'updateQuestionBank'])->name('admin.activities.question-banks.edit.updating');
 
     Route::post('/admin/activities/quiz/question-banks/remove', [App\Http\Controllers\QuizController::class, 'removeQuestionBank'])->name('admin.activities.question-banks.remove');
+
 
 
 
