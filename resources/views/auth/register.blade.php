@@ -27,7 +27,7 @@
     background-color: #000c15;
     padding: 10px;
     text-align: center;
-    font-size: 80%;
+    font-size: 70%;
     padding: 10px 0px 10px;
   }
 

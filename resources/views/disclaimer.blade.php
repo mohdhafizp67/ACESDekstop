@@ -32,7 +32,7 @@
   background-color: #000c15;
   padding: 10px;
   text-align: center;
-  font-size: 80%;
+  font-size: 70%;
   padding: 10px 0px 10px;
 }
 
@@ -87,18 +87,18 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	font-size: 1.2rem;
-	font-weight: 600;
+	font-size: 80%;
+	font-weight: normal;
 	color: white;
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 25px 20px;
+	padding: 15px 10px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .content {
 	background: rgba(255, 255, 255, 0.2);
-	font-size: 1rem;
+	font-size: 50%;
 	height: 0;
 	overflow: hidden;
 	-webkit-transition: all 1s ease;
@@ -122,26 +122,26 @@ a {
 
   <div class="row">
     <div class="col-md">
-      <a href="{{ url()->previous() }}" class="m-2 btn btn-outline-primary" style="font-size:150%; color: #fff;"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back</a>
+      <a href="{{ url()->previous() }}" class="m-2 btn btn-outline-primary" style="font-size:100%; color: #fff;"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back</a>
 
-      <a href="{{route('login')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; font-size: 20px; width: 10%; color: #fff">Login</a>
+      <a href="{{route('login')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; font-size: 100%; width: 12%; color: #fff">Login</a>
 
-      <a href="{{route('register')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; font-size: 20px; width: 10%; color: #fff">Register</a>
+      <a href="{{route('register')}}" class="btn" style="background-image: url({{asset('concept/images/galaxy/button_submit.png')}}); background-position: 40% 40%;background-repeat: no-repeat;background-size: cover; font-size: 100%; width: 12%; color: #fff">Register</a>
 
     </div>
   </div>
 <div class="row">
   <div class="col-md" style="text-align: center">
-    <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 250px; height: auto;">
+    <img src="{{ asset('concept/images/StudentDashboard/Logo.png') }}" alt="bran_name" class="brand-img" style="width: 20%; height: auto;">
   </div>
 </div>
   <div class="row" style="padding: 8%;color: #fff;margin-top: -10%;">
-    <div class="col-md">
+    <div class="col-md" style="padding-top: 25px;">
 
 
 		<div class="wrapper">
 			<button class="toggle">Warranties and Exclusion of Liability<i class="fas fa-plus icon"></i></button>
-			<div class="content">
+			<div class="content" style="font-size: 50%">
 				<p class="contentText">
           <li style="padding:1%">The information on this website is provided by the East Coast Economic Region Development Council (ECERDC) as a service to the public and is intended merely to give a general overview of the East Coast Economic Region (ECER). The information is provided on an “as is” basis and all statements and representations (other than fraudulent misrepresentation) warranties, terms, limitations, including any implied by statute, consumer law or otherwise, are hereby excluded to the maximum extent permissible by the Law of Malaysia. Accordingly, you should neither rely nor act upon any of the information contained in these pages and, if you choose to do so, it will be entirely at your own risk.</li>
           <li style="padding:1%">While care has been taken in ensuring the correctness of information, statements, text, articles, data, images, screens, web pages and other materials contained and appearing on this website (hereinafter referred to as “the MATERIALS”), ECERDC and its Council members, officers and employees (hereinafter referred to as “We”) make no representations, guarantees or warranties as to the accuracy, reliability, quality, truth, suitability and completeness of the said MATERIALS. We reserve the right to add, delete or make any changes to the MATERIALS without prior notice.</li>
@@ -154,7 +154,7 @@ a {
 		</div>
 		<div class="wrapper">
 			<button class="toggle">Forward Looking Statement and Associated Risk<i class="fas fa-plus icon"></i></button>
-			<div class="content">
+			<div class="content" style="font-size: 50%">
         <li style="padding:1%">Statements in this website may contain certain risks and uncertainties, including statements regarding the intent, belief or current expectations pertaining to the East Coast Economic Region. The statements that contain words such as “believe”, “plan”, “expect” and “anticipate” and similar expressions thereof may constitute forward looking statements.</li>
         <li style="padding:1%">Such statements are subject to certain risks and uncertainties such as the economic situation, increases in regulatory burdens and changes in import control or import duties, levies or taxes. Such forward looking statements are also subject to the risks of increased costs in related technologies and such technologies producing expected results, and performance by third parties in accordance with contractual terms and specifications.</li>
         <li style="padding:1%">Should one or more of these uncertainties or risks, amongst others, materialise, actual results may vary materially from those estimated, anticipated or projected. Specifically, but without limitation, capital costs could increase, projects could be delayed, and anticipated improvements in capacity or performance may not be fully realised. Although we believe that the expectations of our management as reflected by such forward looking statements are reasonable based on information currently available, no assurances can be given that such expectations will prove to have been correct.</li>
@@ -163,26 +163,26 @@ a {
 		</div>
 		<div class="wrapper">
 			<button class="toggle">Restriction on Use<i class="fas fa-plus icon"></i></button>
-			<div class="content">
+			<div class="content" style="font-size: 50%">
         <li style="padding:1%">The contents of this website are © 2007 East Coast Economic Region Development Council (ECERDC). All rights reserved. You may not reproduce in any form all or any part of this website other than extracts which you may print or download to a local hard disk for your personal use only. You may not recopy any of the materials you have printed or downloaded nor give it nor copy it to anyone else.</li>
         <li style="padding:1%">The MATERIALS contained in this website are protected by Laws of Malaysia related to the trademark, patent, copyright, international treaties and other applicable intellectual property laws. Unless otherwise noted, the MATERIALS appearing on this website are the exclusive property of ECERDC. You are permitted to access this website and copy information as is reasonable from this website for personal, non-commercial use, nonprofit or educational use only, provided that each page includes any copyright or trade mark notice or attribution as they appear on the pages copied. No part of this website may be copied, republished, performed in public, broadcast, uploaded, transmitted, distributed, modified or dealt with in any manner at all, without our prior written permission, and, then, only in such a way that the source and intellectual property rights are acknowledged.</li>
 			</div>
 		</div>
     <div class="wrapper">
       <button class="toggle">Trademark<i class="fas fa-plus icon"></i></button>
-      <div class="content">
+      <div class="content" style="font-size: 50%">
         <li style="padding:1%">The trademarks, names, images, symbols and pictures identifying the East Coast Economic Region and all web site design, text and graphics are proprietary to ECERDC.</li>
       </div>
     </div>
     <div class="wrapper">
       <button class="toggle">Viruses and Other Harmful Elements<i class="fas fa-plus icon"></i></button>
-      <div class="content">
+      <div class="content" style="font-size: 50%">
         <li style="padding:1%">Whilst we make all reasonable attempts to exclude viruses or other harmful elements from this website, it cannot ensure such exclusion and no liability is accepted for viruses or other harmful elements. Thus, you are recommended to take all appropriate safeguards before downloading information from this website. This applies to the software codes provided in the web pages provided by this website.</li>
       </div>
     </div>
     <div class="wrapper">
       <button class="toggle">Linkage and Framing<i class="fas fa-plus icon"></i></button>
-      <div class="content">
+      <div class="content" style="font-size: 50%">
         <li style="padding:1%">This website may contain links to other sites owned by third parties as a convenience to users. We have no control over and are not responsible for the content found on external sites that do not belong to us. You shall be responsible to abide by any privacy statement or any terms and conditions of use of the linked site as a result of viewing the same. The linked sites are provided to you only for convenience and the inclusion of any such site does not necessarily imply our endorsement of the site, the entity operating such site or any product or service of that organization.</li>
         <li style="padding:1%">You may not frame this website nor link to a page other than the home page without obtaining express permission. All requests for permission together with the details of the URL(s) of the web page(s) from which you are proposing to link to this website should be directed to:</li>
         <li style="padding:1%">e-mail: secretariat@ecerdc.com.my</li>
