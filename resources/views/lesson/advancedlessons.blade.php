@@ -51,7 +51,7 @@
       border: 1px solid rgba(0,0,0,.2);
       border-radius: .3rem;
       outline: 0;
-      margin-left: 20%;
+      /* margin-left: 20%; */
     }
 
 
@@ -168,8 +168,8 @@
     outline: 0;
     width: 800px;
     display: block;
-    margin-left: 30%;
-    margin-top: 5%;
+    /* margin-left: 30%; */
+    /* margin-top: 5%; */
 
     }
     .w3-display-topright {
