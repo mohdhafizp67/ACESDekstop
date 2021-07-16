@@ -175,6 +175,13 @@ class UserController extends Controller
       return redirect()->route('user.change-password')->with("success","Password has been changed");
   }
 
+  public function faq()
+  {
+
+    return view('user.faq');
+
+  }
+
   public function profil()
   {
 
