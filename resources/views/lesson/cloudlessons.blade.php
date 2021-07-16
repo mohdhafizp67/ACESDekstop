@@ -254,9 +254,9 @@
 
                                 <span style="color: rgb(255, 0, 0)">*For more information about I4.0, we have provided some links regarding I4.0</span>
 
-                              <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;pointer-events: none;">What is Cloud Computing?<span></p>
+                              <!-- <p onclick="document.getElementById('id01').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;pointer-events: none;">What is Cloud Computing?<span></p> -->
 
-                              <div id="id01" class="w3-modal">
+                              <!-- <div id="id01" class="w3-modal">
                                 <div class="w3-modal-content w3-card-4">
                                   <header class="">
                                     <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
@@ -266,19 +266,19 @@
                                   </div>
 
                                 </div>
-                              </div>
+                              </div> -->
 
-                              <script>
-                                // Get the modal
+                              <!-- <script>
+
                                 var modal = document.getElementById('id01');
 
-                                // When the user clicks anywhere outside of the modal, close it
+
                                 window.onclick = function(event) {
                                   if (event.target == modal) {
                                     modal.style.display = "none";
                                   }
                                 }
-                                </script>
+                                </script> -->
 
                                 <p onclick="document.getElementById('id02').style.display='block'" style="color: #fff;"><i class="fas fa-arrow-circle-right" style="font-size: 150%; color: #00f0ff; margin-top: 2%;"></i><span style="margin-left: 2%;font-size: 150%;pointer-events: none;">Cloud Computing Job Roles<span></p>
 
