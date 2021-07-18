@@ -127,7 +127,7 @@
                 <p style="color: red">Contoh: Cloud Computing, ada dua video wajib di tonton sampai habis iaitu Introduction dan Public vs Private vs Hybrid.</p>
               </div>
 
-              <button class="accordion">4. Saya refresh semula page video Lesson semasa saya menonton video tersebut, adakah saya perlu menonton semula video tersebut?</button>
+              <button class="accordion">4. Saya muat semula page video Lesson semasa saya menonton video tersebut, adakah saya perlu menonton semula video tersebut?</button>
               <div class="panel">
                 <p>Ya anda perlu menonton semula kedua-dua video tersebut untuk mendapatkan markah di halaman Dashboard.</p>
               </div>
@@ -171,7 +171,7 @@
 
               <button class="accordion">12. Saya tidak boleh muat turun Game di Android.</button>
               <div class="panel">
-                <p>Pelajar perlu membenarkan access third party installation di setting telefon masing-masing.</p>
+                <p>Pelajar perlu membenarkan "third party installation" di tetapan telefon masing-masing.</p>
               </div>
 
 
