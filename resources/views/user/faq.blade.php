@@ -174,6 +174,11 @@
                 <p>Pelajar perlu membenarkan "third party installation" di tetapan telefon masing-masing.</p>
               </div>
 
+              <button class="accordion">13. Saya memerlukan internet untuk bermain Permainan?</button>
+              <div class="panel">
+                <p>Ya untuk permainan memerlukan internet semasa bermain.</p>
+              </div>
+
 
             </div>
             <div class="col-md-2">
